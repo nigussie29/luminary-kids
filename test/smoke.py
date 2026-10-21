@@ -2,7 +2,7 @@
 import sys, json
 from playwright.sync_api import sync_playwright
 OUT = sys.argv[1]
-URL = 'file:///home/claude/luminary-kids/dist/luminary-kids.html'
+URL = 'file:///home/claude/lk-repo/dist/luminary-kids.html'
 errors = []
 def run(page, label):
     page.on('pageerror', lambda e: errors.append(f'{label}: {e}'))

@@ -175,3 +175,21 @@ test('build game and character art render', () => {
   for (const s of LK.art.sceneIds) assert.match(LK.art.scene(s, s), /aria-label/);
   for (const k of LK.art.kidIds) assert.match(LK.art.kid(k), /clip-path/);
 });
+
+test('every narration clip the app can request is in the recording script', () => {
+  require('../src/narration.js');
+  const keys = new Set(LK.narr.script().map((r) => r.key));
+  const rng = LK.rng(11);
+  const need = (k) => assert.ok(keys.has(k), 'missing clip ' + k);
+  for (const sk of LK.SKILLS) for (let l = 1; l <= 3; l++) for (let i = 0; i < 300; i++) {
+    const it = LK.generate(sk.id, l, rng);
+    LK.narr.tplKeys('prompt.' + it.prompt, LK.prompts[it.prompt].am, it.vars, it.thing).forEach(need);
+    LK.narr.tplKeys('hint.' + it.hint, LK.hints[it.hint].am, it.vars, it.thing).forEach(need);
+    LK.narr.tplKeys('ui.reveal', LK.ui.am.reveal, { ans: it.answer }).forEach(need);
+  }
+  const b = LK.buildItem(rng); LK.narr.tplKeys('prompt.build', LK.prompts.build.am, b.vars).forEach(need);
+  for (let n = 0; n <= 20; n++) need('num.' + n);
+  LK.ui.am.correct.forEach((_, i) => need('ui.correct.' + i));
+  ['ui.tryAgain', 'ui.diagnosticIntro', 'ui.lessonDone'].forEach(need);
+  LK.lessons.forEach((x) => ['title', 'story', 'example'].forEach((p) => need(`lesson.${x.id}.${p}`)));
+});

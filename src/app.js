@@ -36,18 +36,41 @@
   const uiBi = (key) => bi({ am: LK.ui.am[key], en: LK.ui.en[key] });
 
   // ---------- narration ----------
-  // Recorded clips go in LK.audio[key] = url once educators have approved them. Until then, the device voice is used if it has one.
-  LK.audio = LK.audio || {};
-  let voices = [];
+  // A "line" is { am, en, keys }. Recorded Amharic clips play first (LK.narr); without them the
+  // device voice reads the line; with no Amharic voice it reads the English line instead.
+  const NR = LK.narr;
+  let voices = [], warned = false;
   function loadVoices() { try { voices = window.speechSynthesis ? speechSynthesis.getVoices() : []; } catch (e) { voices = []; } }
   loadVoices();
   try { if (window.speechSynthesis) speechSynthesis.onvoiceschanged = loadVoices; } catch (e) { /* ignore */ }
   const voiceFor = (l) => voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(l === 'am' ? 'am' : 'en'));
-  function speak(text, key, quiet = true) {
-    if (key && LK.audio[key]) { try { new Audio(LK.audio[key]).play(); return; } catch (e) { /* fall through */ } }
-    const v = voiceFor(lang());
-    if (!window.speechSynthesis || !v) { if (!quiet) toast(lang() === 'am' ? LK.ui.am.noVoice : 'Narration is not available on this device yet.'); return; }
-    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.voice = v; u.lang = v.lang; u.rate = 0.85; speechSynthesis.speak(u); } catch (e) { /* ignore */ }
+  function tts(text, v) {
+    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.voice = v; u.lang = v.lang; u.rate = 0.85; speechSynthesis.speak(u); return true; } catch (e) { return false; }
+  }
+  function say(line, fromButton = false) {
+    if (!line) return;
+    NR.stop();
+    if (lang() === 'am') {
+      if (NR.hasAll(line.keys)) { NR.playKeys(line.keys); return; }
+      const am = voiceFor('am');
+      if (am && tts(line.am, am)) return;
+      const en = voiceFor('en');
+      if (en && line.en && tts(line.en, en)) {
+        if (fromButton && !warned) { warned = true; toast(LK.ui.am.noVoiceEn); }
+        return;
+      }
+    } else {
+      const en = voiceFor('en');
+      if (en && tts(line.en, en)) return;
+    }
+    if (fromButton) toast(lang() === 'am' ? LK.ui.am.noVoice : 'This device has no voice for reading aloud.');
+  }
+  const lineFixed = (key, am, en) => ({ am, en, keys: [key] });
+  function lineTpl(base, src, vars, thing) {
+    const l = lang();
+    const t = thing ? LK.things[thing] : null;
+    const v = (lg) => Object.assign({ thing: t ? t[lg][0] : '', things: t ? t[lg][1] : '' }, vars || {});
+    return { am: LK.fill(src.am, v('am')), en: LK.fill(src.en, v('en')), keys: NR.tplKeys(base, src.am, vars, thing), cur: l };
   }
   let toastTimer;
   function toast(msg) {
@@ -363,18 +386,19 @@
     if (ok) {
       R.state = 'right';
       const c = LK.ui.am.correct, ce = LK.ui.en.correct, k = Math.floor(Math.random() * c.length);
-      R.msg = { am: c[k], en: ce[k] };
+      R.msg = { am: c[k], en: ce[k] }; R.line = lineFixed('ui.correct.' + k, c[k], ce[k]);
       finishItem(true);
     } else if (R.tries < 2) {
-      R.state = 'retry'; R.msg = { am: LK.ui.am.tryAgain, en: LK.ui.en.tryAgain };
+      R.state = 'retry'; R.msg = { am: LK.ui.am.tryAgain, en: LK.ui.en.tryAgain }; say(lineFixed('ui.tryAgain', R.msg.am, R.msg.en));
     } else {
       R.state = 'shown'; R.hintOn = true;
       const shown = it.input === 'pick' ? (it.answer === 'left' ? U().left : U().right) : it.answer;
       R.msg = { am: LK.fill(LK.ui.am.reveal, { ans: it.input === 'pick' ? LK.ui.am[it.answer] : shown }), en: LK.fill(LK.ui.en.reveal, { ans: it.input === 'pick' ? LK.ui.en[it.answer] : shown }) };
+      R.line = { am: R.msg.am, en: R.msg.en, keys: NR.tplKeys('ui.reveal', LK.ui.am.reveal, { ans: it.answer }) };
       finishItem(false);
     }
     render();
-    if (R.state === 'right' || R.state === 'shown') speak(lang() === 'am' ? R.msg.am : R.msg.en, null, true);
+    if (R.state === 'right' || R.state === 'shown') say(R.line);
   }
   function persist() {
     const R = S.run;
@@ -468,7 +492,7 @@
           const g = document.createElementNS(ns, 'g'); g.appendChild(c); g.appendChild(t); obj.parentNode.insertBefore(g, obj.nextSibling);
           g.setAttribute('transform', obj.getAttribute('transform'));
           const lbl = $('.counted', root); if (lbl) lbl.textContent = R.tapped.length;
-          if (lang() === 'am') speak(LK.numWords.am[R.tapped.length] || String(R.tapped.length)); else speak(LK.numWords.en[R.tapped.length] || String(R.tapped.length));
+          { const n = R.tapped.length; say({ am: LK.numWords.am[n] || String(n), en: LK.numWords.en[n] || String(n), keys: ['num.' + n] }); }
         }
         return;
       }
@@ -494,9 +518,9 @@
     if (act === 'diag') { newRun('diag', null); return; }
     if (act === 'next') { R.i = Math.min(R.i + 1, R.steps.length - 1); if (R.steps[R.i].k === 'done') closeRun(); enterStep(); window.scrollTo(0, 0); return; }
     if (act === 'answer') { const v = b.getAttribute('data-v'); answer(R.item.input === 'pick' ? v : Number(v)); return; }
-    if (act === 'hint') { R.hints += 1; R.hintOn = true; render(); speak(textFor(R.item, 'hint').cur); return; }
+    if (act === 'hint') { R.hints += 1; R.hintOn = true; render(); say(itemLine(R.item, 'hint')); return; }
     if (act === 'buildcheck') { answer(R.built.size); return; }
-    if (act === 'speak') { speak(currentSpeech(), null, false); return; }
+    if (act === 'speak') { say(currentLine(), true); return; }
     if (act === 'reserve') { S.reserve = true; render(); const el = $('#pilot'); if (el) el.scrollIntoView({ block: 'start' }); return; }
     if (act === 'copy') { const el = document.getElementById(b.getAttribute('data-target')); copyText(el.textContent, el); return; }
     if (act === 'pick-kid') { DB.activeId = b.getAttribute('data-id'); save(); render(); return; }
@@ -557,15 +581,20 @@
     }
     const lbl = $('.counted', root); if (lbl) lbl.textContent = `${R.built.size} / 10`;
   }
-  function currentSpeech() {
-    const R = S.run; if (!R) return '';
-    const step = R.steps[R.i], l = lang();
+  function itemLine(it, which) {
+    const src = which === 'hint' ? LK.hints[it.hint] : LK.prompts[it.prompt];
+    return lineTpl((which === 'hint' ? 'hint.' + it.hint : 'prompt.' + it.prompt), src, it.vars, it.thing);
+  }
+  function currentLine() {
+    const R = S.run; if (!R) return null;
+    const step = R.steps[R.i];
     const lesson = R.skill ? LK.lessons.find((x) => x.id === R.skill) : null;
-    if (step.k === 'intro') return U().diagnosticIntro;
-    if (step.k === 'story') return lesson.title[l] + '. ' + lesson.story[l];
-    if (step.k === 'example') return lesson.example[l];
-    if (step.k === 'item') return textFor(R.item, 'prompt').cur;
-    return '';
+    if (step.k === 'intro') return lineFixed('ui.diagnosticIntro', LK.ui.am.diagnosticIntro, LK.ui.en.diagnosticIntro);
+    if (step.k === 'story') return { am: lesson.title.am + '። ' + lesson.story.am, en: lesson.title.en + '. ' + lesson.story.en, keys: ['lesson.' + lesson.id + '.title', 'lesson.' + lesson.id + '.story'] };
+    if (step.k === 'example') return lineFixed('lesson.' + lesson.id + '.example', lesson.example.am, lesson.example.en);
+    if (step.k === 'item') return itemLine(R.item, 'prompt');
+    if (step.k === 'done') return lineFixed('ui.lessonDone', LK.ui.am.lessonDone, LK.ui.en.lessonDone);
+    return null;
   }
   function copyText(text, el) {
     const done = () => toast('Copied');
@@ -582,5 +611,6 @@
   if (location.hash === '#parents') S.gate = { a: 7, b: 8, err: false }, S.view = 'gate';
   else if (active()) S.view = 'home';
   render();
+  NR.load().then((n) => { if (n) S.clips = n; });
   LK.app = { S, DB, render, newRun };
 })();

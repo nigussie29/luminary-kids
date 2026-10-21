@@ -45,6 +45,7 @@
       left: 'ግራ', right: 'ቀኝ', tapToCount: 'እያንዳንዱን ነካ አድርገን እንቁጠር።', counted: 'ተቆጥሯል',
       buildN: '{n} ጠጠሮችን በአስር ሳጥኑ ላይ እናስቀምጥ።', tapLine: 'በቁጥር መስመሩ ላይ መልሱን እንንካ።',
       noVoice: 'በዚህ መሣሪያ ላይ የአማርኛ ድምፅ የለም። የተቀዳ ድምፅ በቅርቡ ይመጣል።',
+      noVoiceEn: 'የአማርኛ ድምፅ እስኪቀዳ ድረስ እንግሊዝኛውን እናነባለን። (No Amharic voice yet, so the English line is read aloud.)',
       showEnglish: 'እንግሊዝኛም አሳይ', unitDone: 'ሁሉንም ጨርሰናል! አሁን ክለሳ እንሥራ።',
       reviewDue: 'ለክለሳ የደረሰ', mastered: 'ተችሏል', learning: 'በመማር ላይ', notStarted: 'ገና አልተጀመረም'
     },
