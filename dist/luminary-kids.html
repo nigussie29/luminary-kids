@@ -1,0 +1,1631 @@
+<title>Luminary Kids</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Luminary Kids — Amharic-first Grade 1 math adventure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Baloo+2:wght@700;800&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap">
+<style>/* Layout: one narrow play column (max 720px) for children; wider bands (max 1040px) for the grown-up landing page.
+   Palette from the Ethiopian highlands: mist ground, indigo ink, Adey Abeba marigold, lake teal, field green, coffee-berry. */
+:root {
+  --bg: #f2f6f3;
+  --surface: #ffffff;
+  --tray: #e9f0ea;
+  --ink: #1d2540;
+  --muted: #586178;
+  --line: #d3dcdb;
+  --adey: #f2b705;
+  --adey-soft: #fff1c2;
+  --adey-ink: #5a4300;
+  --lake: #1f7a8c;
+  --lake-soft: #d9eef2;
+  --field: #2f8f5b;
+  --field-soft: #dcf1e4;
+  --berry: #b8456e;
+  --berry-soft: #f8e1ea;
+  --shadow: 0 1px 0 rgba(29, 37, 64, .06), 0 8px 24px -12px rgba(29, 37, 64, .25);
+  --f-body: 'Andika', 'Noto Sans Ethiopic', 'Nyala', system-ui, sans-serif;
+  --f-display: 'Baloo 2', 'Noto Sans Ethiopic', 'Nyala', system-ui, sans-serif;
+  --f-eth: 'Noto Sans Ethiopic', 'Abyssinica SIL', 'Nyala', sans-serif;
+  --r: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11182a; --surface: #1a2338; --tray: #222c45; --ink: #eef1f7; --muted: #a6afc4; --line: #2f3a56;
+    --adey: #f5c33b; --adey-soft: #3d3313; --adey-ink: #ffe6a0; --lake: #56b6c9; --lake-soft: #173a44;
+    --field: #5cc48a; --field-soft: #183a29; --berry: #e483a8; --berry-soft: #43222f;
+    --shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 10px 26px -14px rgba(0, 0, 0, .7); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11182a; --surface: #1a2338; --tray: #222c45; --ink: #eef1f7; --muted: #a6afc4; --line: #2f3a56;
+  --adey: #f5c33b; --adey-soft: #3d3313; --adey-ink: #ffe6a0; --lake: #56b6c9; --lake-soft: #173a44;
+  --field: #5cc48a; --field-soft: #183a29; --berry: #e483a8; --berry-soft: #43222f;
+  --shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 10px 26px -14px rgba(0, 0, 0, .7); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+:lang(am), .am { font-family: var(--f-eth); line-height: 1.7; }
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 800; letter-spacing: -.01em; }
+h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 700; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+p { margin: 0; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--lake); outline-offset: 3px; border-radius: 8px; }
+.wrap { width: 100%; max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.play { max-width: 720px; }
+.eyebrow { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--lake); }
+.muted { color: var(--muted); }
+.en-sub { display: block; font-family: var(--f-body); font-size: .82em; color: var(--muted); line-height: 1.4; margin-top: 2px; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* header */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 10px; background: none; border: 0; cursor: pointer; padding: 0; text-align: left; min-width: 0; }
+.brand-mark { width: 40px; height: 40px; flex: none; }
+.brand b { font-family: var(--f-display); font-size: 1.15rem; display: block; line-height: 1; }
+.brand small { font-family: var(--f-eth); color: var(--muted); font-size: .8rem; display: block; }
+.top .spacer { flex: 1; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--bg); }
+.seg button { border: 0; background: none; border-radius: 999px; padding: 6px 12px; min-height: 36px; cursor: pointer; font-weight: 700; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.linkbtn { background: none; border: 0; color: var(--lake); font-weight: 700; cursor: pointer; padding: 8px 4px; min-height: 44px; }
+.stars { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; background: var(--adey-soft); color: var(--adey-ink); border-radius: 999px; padding: 4px 12px; }
+.stars svg { width: 18px; height: 18px; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 14px; padding: 12px 22px; min-height: 52px; font-weight: 700; font-size: 1.05rem; cursor: pointer; background: var(--ink); color: var(--bg); transition: transform .12s; }
+.btn:active { transform: translateY(1px); }
+.btn.alt { background: var(--surface); color: var(--ink); border: 2px solid var(--line); }
+.btn.adey { background: var(--adey); color: #2a2000; }
+.btn.small { min-height: 44px; padding: 8px 14px; font-size: .95rem; }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+.icon { width: 20px; height: 20px; flex: none; }
+
+/* landing */
+.hero { padding-block: 40px 28px; }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; align-items: center; }
+.hero h1 .am { display: block; font-size: .62em; color: var(--lake); margin-bottom: 6px; font-weight: 700; }
+.hero p.lead { font-size: 1.15rem; margin-top: 14px; max-width: 34em; }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.hero-art { position: relative; border-radius: 28px; overflow: hidden; background: var(--tray); }
+.hero-art .scene { display: block; width: 100%; height: auto; }
+.hero-art .wali { position: absolute; width: 46%; right: 4%; bottom: 0; }
+.hero-art .bubble { position: absolute; left: 5%; top: 8%; max-width: 54%; }
+.bubble { background: var(--surface); border-radius: 16px; padding: 10px 14px; box-shadow: var(--shadow); font-size: .98rem; }
+.band { padding-block: 36px; }
+.band.tint { background: var(--surface); border-block: 1px solid var(--line); }
+.band h2 { margin-bottom: 8px; }
+.band .intro { max-width: 40em; margin-bottom: 20px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.point { display: grid; gap: 6px; }
+.point .dot { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-weight: 800; font-family: var(--f-display); }
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; counter-reset: s; list-style: none; padding: 0; margin: 0; }
+.steps li { background: var(--bg); border-radius: var(--r); padding: 16px; counter-increment: s; }
+.steps li::before { content: counter(s); display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--adey); color: #2a2000; font-weight: 800; margin-bottom: 8px; }
+.lessons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.lcard { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; display: grid; text-align: left; padding: 0; cursor: pointer; }
+.lcard .scene { width: 100%; height: auto; display: block; }
+.lcard .body { padding: 12px 14px 14px; display: grid; gap: 2px; }
+.lcard .num { font-size: .78rem; font-weight: 700; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+.report-demo { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; }
+.offer { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; align-items: start; }
+.price { background: var(--surface); border: 2px solid var(--adey); border-radius: 22px; padding: 22px; display: grid; gap: 12px; }
+.price .amt { font-family: var(--f-display); font-size: 2.6rem; font-weight: 800; line-height: 1; }
+.tag { display: inline-block; font-size: .78rem; font-weight: 700; border-radius: 999px; padding: 3px 10px; background: var(--adey-soft); color: var(--adey-ink); }
+.tag.lake { background: var(--lake-soft); color: var(--lake); }
+.tag.field { background: var(--field-soft); color: var(--field); }
+.tag.berry { background: var(--berry-soft); color: var(--berry); }
+.tag.plain { background: var(--tray); color: var(--muted); }
+.checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.checks li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; }
+.checks li::before { content: ""; width: 18px; height: 18px; margin-top: 4px; border-radius: 50%; background: var(--field-soft); box-shadow: inset 0 0 0 5px var(--field); }
+.terms { font-size: .92rem; color: var(--muted); display: grid; gap: 6px; }
+.panel { background: var(--lake-soft); border-radius: 14px; padding: 14px; display: grid; gap: 8px; }
+.copyrow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.copyrow code { background: var(--surface); padding: 6px 10px; border-radius: 8px; user-select: all; overflow-wrap: anywhere; }
+details.faq { border-top: 1px solid var(--line); padding-block: 12px; }
+details.faq summary { cursor: pointer; font-weight: 700; min-height: 32px; }
+details.faq p { margin-top: 8px; max-width: 46em; }
+footer { padding-block: 28px 40px; color: var(--muted); font-size: .9rem; }
+
+/* child home */
+.home { padding-block: 18px 40px; display: grid; gap: 18px; }
+.greet { display: grid; grid-template-columns: 130px 1fr; gap: 14px; align-items: end; }
+.greet .wali { width: 130px; height: auto; }
+.next-card { background: var(--surface); border-radius: 22px; box-shadow: var(--shadow); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; }
+.next-card .scene { width: 100%; height: 100%; object-fit: cover; display: block; }
+.next-card .body { padding: 18px; display: grid; gap: 10px; align-content: center; }
+.path { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.stone { width: 100%; display: grid; grid-template-columns: 64px 1fr auto; gap: 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 8px 12px 8px 8px; cursor: pointer; text-align: left; min-height: 72px; }
+.stone .badge { width: 56px; height: 56px; }
+.stone[data-locked="1"] { opacity: .75; }
+.lv { display: inline-flex; gap: 4px; }
+.lv i { width: 12px; height: 12px; border-radius: 50%; background: var(--line); display: block; }
+.lv i.on { background: var(--field); }
+.garden { background: var(--field-soft); border-radius: 22px; padding: 14px; }
+.garden .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.garden .badge { width: 54px; height: 54px; }
+
+/* lesson player */
+.player { padding-block: 14px 40px; display: grid; gap: 14px; }
+.bar { display: flex; align-items: center; gap: 10px; }
+.progress { flex: 1; height: 12px; background: var(--tray); border-radius: 999px; overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--field); border-radius: 999px; transition: width .3s; }
+.card { background: var(--surface); border-radius: 24px; box-shadow: var(--shadow); padding: 18px; display: grid; gap: 14px; }
+.prompt-row { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: start; }
+.prompt { font-size: clamp(1.25rem, 4.6vw, 1.6rem); font-weight: 700; }
+.listen { width: 52px; height: 52px; border-radius: 16px; border: 0; background: var(--lake-soft); color: var(--lake); cursor: pointer; display: grid; place-items: center; }
+.listen .icon { width: 26px; height: 26px; }
+.visual { display: grid; place-items: center; background: var(--tray); border-radius: 18px; padding: 12px; overflow-x: auto; }
+.visual svg { width: 100%; max-width: 420px; height: auto; display: block; }
+.visual svg.line { max-width: 640px; }
+.visual svg.scene { max-width: 100%; border-radius: 12px; }
+.visual-wrap { overflow-x: auto; }
+.opts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.opts.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.opt { min-height: 72px; border-radius: 18px; border: 2px solid var(--line); background: var(--surface); font-family: var(--f-display); font-size: 2rem; font-weight: 800; cursor: pointer; }
+.opt.word { font-family: var(--f-eth); font-size: 1.3rem; }
+.opt:hover { border-color: var(--lake); }
+.opt.right { background: var(--field-soft); border-color: var(--field); color: var(--field); }
+.opt.wrong { background: var(--berry-soft); border-color: var(--berry); color: var(--berry); }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.actions .grow { flex: 1; }
+.feedback { display: grid; grid-template-columns: 76px 1fr; gap: 12px; align-items: center; border-radius: 18px; padding: 10px 14px; }
+.feedback .wali { width: 76px; height: auto; }
+.feedback.ok { background: var(--field-soft); }
+.feedback.retry { background: var(--adey-soft); }
+.feedback.show { background: var(--lake-soft); }
+.hintbox { background: var(--adey-soft); color: var(--adey-ink); border-radius: 14px; padding: 10px 14px; }
+.story { display: grid; gap: 12px; }
+.story .stage { position: relative; }
+.story .stage .scene { width: 100%; height: auto; border-radius: 18px; display: block; }
+.story .stage .wali { position: absolute; width: 34%; right: 2%; bottom: -4px; }
+.counted { font-weight: 700; color: var(--lake); }
+.done { text-align: center; justify-items: center; }
+.done .wali { width: 180px; }
+.done .badge { width: 120px; }
+.kids { display: flex; gap: 10px; flex-wrap: wrap; }
+.kidbtn { border: 3px solid transparent; border-radius: 50%; padding: 0; background: none; cursor: pointer; width: 76px; height: 76px; }
+.kidbtn[aria-pressed="true"] { border-color: var(--adey); }
+.kidbtn svg { width: 100%; height: 100%; }
+
+/* svg math visuals — theme aware */
+.mv .mv-frame { fill: var(--surface); stroke: var(--ink); stroke-width: 3; }
+.mv .mv-cell { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+.mv .mv-counter { fill: var(--lake); }
+.mv .mv-counter.cb, .mv .cb .mv-counter { fill: var(--berry); }
+.mv .mv-tray { fill: var(--surface); stroke: var(--line); stroke-width: 2; }
+.mv .mv-tray.dashed { stroke-dasharray: 8 6; stroke: var(--muted); }
+.mv .mv-line { stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
+.mv .mv-num { fill: var(--ink); font-family: var(--f-display); font-weight: 700; font-size: 22px; }
+.mv .mv-num.small { font-size: 15px; }
+.mv text.mv-num[text-anchor] { font-size: 40px; }
+.mv .tick text.mv-num { font-size: 30px; }
+.mv .tick text.mv-num.small { font-size: 15px; }
+.mv .mv-mark { fill: var(--adey); stroke: var(--ink); stroke-width: 2; }
+.mv .mv-start { fill: var(--lake); stroke: var(--surface); stroke-width: 3; }
+.mv .mv-hop { fill: none; stroke: var(--berry); stroke-width: 3; }
+.mv .mv-arrowhead { fill: var(--berry); }
+.mv .mv-cross { stroke: var(--berry); stroke-width: 5; stroke-linecap: round; }
+.mv .hit { fill: transparent; }
+.mv .tap { cursor: pointer; }
+.mv .tick.sel .mv-num { fill: var(--lake); }
+.mv .tick.sel line { stroke: var(--lake); }
+.mv .tick.right .mv-num { fill: var(--field); }
+.mv .side.sel .mv-tray { stroke: var(--lake); stroke-width: 4; }
+.mv .obj.tapped { opacity: .55; }
+.mv .tapnum { fill: var(--bg); font: 700 15px var(--f-display); }
+.mv .tapdot { fill: var(--ink); }
+.mv .cell.tap:hover .mv-cell { fill: var(--lake-soft); }
+
+/* toast */
+.toast { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; max-width: calc(100% - 32px); z-index: 20; font-size: .95rem; }
+
+/* grown-ups */
+.parents { padding-block: 20px 48px; display: grid; gap: 18px; }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 12px; }
+.tile b { display: block; font-family: var(--f-display); font-size: 1.8rem; line-height: 1.1; }
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+th { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+.formrow { display: grid; gap: 6px; }
+input[type="text"], input[type="number"], textarea { font: inherit; color: var(--ink); background: var(--surface); border: 2px solid var(--line); border-radius: 12px; padding: 10px 12px; min-height: 48px; width: 100%; }
+textarea { min-height: 90px; }
+.toggle { display: flex; align-items: center; gap: 10px; min-height: 44px; }
+.toggle input { width: 22px; height: 22px; }
+.section { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 16px; display: grid; gap: 12px; }
+.confirm { background: var(--berry-soft); border-radius: 12px; padding: 12px; display: grid; gap: 8px; }
+
+@media (max-width: 760px) {
+  .hero .wrap, .offer { grid-template-columns: 1fr; }
+  .grid3, .lessons { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .next-card { grid-template-columns: 1fr; }
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .opts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .greet { grid-template-columns: 96px 1fr; }
+  .greet .wali { width: 96px; }
+  .brand small { display: none; }
+}
+@media (max-width: 420px) {
+  .top .linkbtn { font-size: .9rem; }
+  .seg button { padding: 6px 9px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+.reduce * { transition: none !important; animation: none !important; }
+@keyframes pop { 0% { transform: scale(.85); opacity: .4 } 100% { transform: scale(1); opacity: 1 } }
+.pop { animation: pop .35s ease-out; }
+
+.kidbtn:has(input:checked) { border-color: var(--adey); }
+.kidbtn:focus-within { outline: 3px solid var(--lake); outline-offset: 2px; }
+.mv .mv-frame { pointer-events: none; }
+.mv .cell.tap .mv-cell { fill: transparent; }
+.mv .cell.tap .mv-cell:hover { fill: var(--lake-soft); }
+
+.brand > span { min-width: 0; }
+@media (max-width: 480px) { .hide-sm { display: none; } .brand b { font-size: 1rem; } }
+.mv .mv-marknum { fill: var(--ink); font-family: var(--f-display); font-weight: 800; font-size: 44px; }
+</style>
+<div id="app"></div>
+<script>/* Luminary Kids — strings. Every Amharic string here is a DRAFT awaiting
+   review by an Ethiopian Grade 1 teacher (see docs: Amharic review log).
+   House rule: address the child with gender-neutral "let's" forms
+   (እንቁጠር, እንሞክር) instead of masculine/feminine imperatives. */
+(function (G) {
+  const LK = (G.LK = G.LK || {});
+
+  // Number words 0–20. Spelling choice (አስር vs አሥር, ሶስት vs ሦስት) is flagged for educator decision.
+  LK.numWords = {
+    am: ['ዜሮ', 'አንድ', 'ሁለት', 'ሶስት', 'አራት', 'አምስት', 'ስድስት', 'ሰባት', 'ስምንት', 'ዘጠኝ', 'አስር',
+      'አስራ አንድ', 'አስራ ሁለት', 'አስራ ሶስት', 'አስራ አራት', 'አስራ አምስት', 'አስራ ስድስት', 'አስራ ሰባት', 'አስራ ስምንት', 'አስራ ዘጠኝ', 'ሃያ'],
+    en: ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+      'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty']
+  };
+
+  // Countable things: singular / plural in each language.
+  LK.things = {
+    orange: { am: ['ብርቱካን', 'ብርቱካኖች'], en: ['orange', 'oranges'] },
+    mango: { am: ['ማንጎ', 'ማንጎዎች'], en: ['mango', 'mangoes'] },
+    cup: { am: ['ስኒ', 'ስኒዎች'], en: ['coffee cup', 'coffee cups'] },
+    chicken: { am: ['ዶሮ', 'ዶሮዎች'], en: ['chicken', 'chickens'] },
+    flower: { am: ['አበባ', 'አበቦች'], en: ['flower', 'flowers'] },
+    child: { am: ['ልጅ', 'ልጆች'], en: ['child', 'children'] },
+    counter: { am: ['ጠጠር', 'ጠጠሮች'], en: ['counter', 'counters'] }
+  };
+
+  // Mathematical vocabulary — one term per idea, used everywhere (glossary in docs).
+  LK.glossary = [
+    ['count', 'መቁጠር'], ['number', 'ቁጥር'], ['add / addition', 'መደመር'], ['subtract / subtraction', 'መቀነስ'],
+    ['plus (+)', 'ሲደመር'], ['minus (−)', 'ሲቀነስ'], ['equals (=)', 'እኩል ነው'], ['sum / total', 'ድምር'],
+    ['difference', 'ልዩነት'], ['more', 'ብዙ'], ['fewer', 'ጥቂት'], ['greater than', 'ይበልጣል'], ['less than', 'ያንሳል'],
+    ['ten', 'አስር'], ['ones', 'አንዶች'], ['tens', 'አስሮች'], ['ten frame', 'የአስር ሳጥን'], ['number line', 'የቁጥር መስመር'],
+    ['left (remaining)', 'ቀሩ'], ['how many?', 'ስንት?'], ['empty space', 'ባዶ ቦታ'], ['hint', 'ፍንጭ']
+  ];
+
+  LK.ui = {
+    am: {
+      appName: 'የሂሳብ ጀብዱ', start: 'እንጀምር', next: 'ቀጣይ', hint: 'ፍንጭ', listen: 'ድምፅ', home: 'መነሻ',
+      lessons: 'ትምህርቶች', parents: 'ለወላጆች', stars: 'ኮከቦች', check: 'እንፈትሽ', review: 'ክለሳ',
+      diagnostic: 'የመነሻ ጨዋታ', diagnosticIntro: 'ሰላም! እኔ ዋሊ ነኝ። ስድስት አጭር ጥያቄዎችን አብረን እንጫወት።',
+      welcome: 'እንኳን ደህና መጣችሁ!', chooseLesson: 'የዛሬው ጀብዱ', recommended: 'ዋሊ የሚመክረው',
+      correct: ['ጎበዝ!', 'በጣም ጥሩ!', 'ልክ ነው!'], tryAgain: 'እንደገና እንሞክር። ሥዕሉን በደንብ እንመልከት።',
+      reveal: 'መልሱ {ans} ነው። አብረን እንየው።', example: 'ምሳሌ', practice: 'ልምምድ', game: 'ጨዋታ',
+      lessonDone: 'ትምህርቱ ተጠናቀቀ!', badgeEarned: 'አዲስ ሽልማት!', keepGoing: 'ልምምዱን እንቀጥል።',
+      left: 'ግራ', right: 'ቀኝ', tapToCount: 'እያንዳንዱን ነካ አድርገን እንቁጠር።', counted: 'ተቆጥሯል',
+      buildN: '{n} ጠጠሮችን በአስር ሳጥኑ ላይ እናስቀምጥ።', tapLine: 'በቁጥር መስመሩ ላይ መልሱን እንንካ።',
+      noVoice: 'በዚህ መሣሪያ ላይ የአማርኛ ድምፅ የለም። የተቀዳ ድምፅ በቅርቡ ይመጣል።',
+      showEnglish: 'እንግሊዝኛም አሳይ', unitDone: 'ሁሉንም ጨርሰናል! አሁን ክለሳ እንሥራ።',
+      reviewDue: 'ለክለሳ የደረሰ', mastered: 'ተችሏል', learning: 'በመማር ላይ', notStarted: 'ገና አልተጀመረም'
+    },
+    en: {
+      appName: 'Math Adventure', start: "Let's start", next: 'Next', hint: 'Hint', listen: 'Listen', home: 'Home',
+      lessons: 'Lessons', parents: 'For grown-ups', stars: 'stars', check: 'Check', review: 'Review',
+      diagnostic: 'Starting game', diagnosticIntro: "Hello! I'm Wali. Let's play six short questions together.",
+      welcome: 'Welcome!', chooseLesson: "Today's adventure", recommended: 'Wali suggests',
+      correct: ['Well done!', 'Great thinking!', "That's right!"], tryAgain: "Let's try again. Let's look at the picture carefully.",
+      reveal: "The answer is {ans}. Let's look at it together.", example: 'Example', practice: 'Practice', game: 'Game',
+      lessonDone: 'Lesson complete!', badgeEarned: 'New badge!', keepGoing: "Let's keep practising.",
+      left: 'Left', right: 'Right', tapToCount: "Let's tap each one as we count.", counted: 'counted',
+      buildN: "Let's put {n} counters in the ten frame.", tapLine: "Let's tap the answer on the number line.",
+      noVoice: 'No Amharic voice on this device. Recorded narration is coming soon.',
+      showEnglish: 'Show English too', unitDone: "We finished them all! Now let's review.",
+      reviewDue: 'Due for review', mastered: 'Mastered', learning: 'Learning', notStarted: 'Not started'
+    }
+  };
+
+  // Lessons: story, worked example, prompts. {plural} etc. are filled at run time.
+  LK.lessons = [
+    { id: 'count10', n: 1, scene: 'garden', thing: 'flower',
+      title: { am: 'የአትክልት ቦታ ቆጠራ', en: 'Counting in the garden' },
+      story: { am: 'ሰላም ልጆች! በአያቴ የአትክልት ቦታ ብዙ አበቦች አሉ። እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።',
+        en: "Hello, friends! Grandma's garden is full of flowers. Let's count each one just once." },
+      example: { am: 'አንድ፣ ሁለት፣ ሶስት፣ አራት፣ አምስት፣ ስድስት። የመጨረሻው ቁጥር ስድስት ነው፤ ስለዚህ ስድስት አበቦች አሉ።',
+        en: 'One, two, three, four, five, six. The last number we say is six, so there are six flowers.' } },
+    { id: 'teens', n: 2, scene: 'market', thing: 'orange',
+      title: { am: 'የገበያ አስሮች', en: 'Market tens' },
+      story: { am: 'ዛሬ ገበያ ነን። ነጋዴዋ ብርቱካኖችን በአስር በአስር ታስቀምጣለች። አስር እና ጥቂት አንዶች ስንት ይሆናሉ?',
+        en: 'Today we are at the market. The seller packs oranges in tens. How many is one ten and some more?' },
+      example: { am: 'አንድ ሙሉ አስር ሳጥን አለ፤ ያ አስር ነው። ከዚያ አራት ተጨማሪ። አስር እና አራት አስራ አራት ነው።',
+        en: 'One full ten frame is ten. Then four more. Ten and four is fourteen.' } },
+    { id: 'compare', n: 3, scene: 'school', thing: 'cup',
+      title: { am: 'ብዙ ወይስ ጥቂት?', en: 'More or fewer?' },
+      story: { am: 'በትምህርት ቤታችን የቡና ሥነ ሥርዓት ትርዒት አለ። የትኛው ትሪ ብዙ ስኒዎች አሉት?',
+        en: 'Our school has a coffee ceremony show. Which tray has more cups?' },
+      example: { am: 'ስኒዎቹን አንድ ለአንድ እናገናኝ። ጓደኛ የሌለው ስኒ ያለበት ትሪ ብዙ አለው።',
+        en: 'Match the cups one to one. The tray with cups left over has more.' } },
+    { id: 'add10', n: 4, scene: 'road', thing: 'child',
+      title: { am: 'የባጃጅ ጉዞ', en: 'The bajaj ride' },
+      story: { am: 'ባጃጁ ልጆችን ወደ ትምህርት ቤት ይወስዳል። በየማቆሚያው ተጨማሪ ልጆች ይገባሉ።',
+        en: 'The bajaj takes children to school. More children get in at each stop.' },
+      example: { am: 'ሶስት ልጆች አሉ። ሁለት ልጆች ገቡ። ከሶስት ጀምረን እንቁጠር፦ አራት፣ አምስት። ሶስት ሲደመር ሁለት እኩል ነው አምስት።',
+        en: 'Three children are inside. Two more get in. Start at three and count on: four, five. Three plus two equals five.' } },
+    { id: 'sub10', n: 5, scene: 'tree', thing: 'mango',
+      title: { am: 'የማንጎ ዛፍ', en: 'The mango tree' },
+      story: { am: 'ነፋስ ነፈሰ! አንዳንድ ማንጎዎች ከዛፉ ወደቁ። ስንት ማንጎዎች ዛፉ ላይ ቀሩ?',
+        en: 'The wind blows! Some mangoes fall from the tree. How many are left on the tree?' },
+      example: { am: 'ሰባት ማንጎዎች ነበሩ። ሶስቱ ወደቁ። የወደቁትን እናቋርጥ። የቀሩት አራት ናቸው። ሰባት ሲቀነስ ሶስት እኩል ነው አራት።',
+        en: 'There were seven mangoes. Three fell. Cross out the ones that fell. Four are left. Seven minus three equals four.' } },
+    { id: 'make10', n: 6, scene: 'meadow', thing: 'counter',
+      title: { am: 'አስር እንሙላ', en: 'Make ten' },
+      story: { am: 'የአደይ አበባ ጊዜ ነው! አስር መሙላት ትልልቅ ቁጥሮችን መደመር ቀላል ያደርጋል።',
+        en: 'It is Adey Abeba season! Filling a ten makes big additions easy.' },
+      example: { am: 'ስምንት ሲደመር አምስት። ሁለቱን ወደ ስምንት እንውሰድና አስር እንሙላ። አስር እና ሶስት አስራ ሶስት ነው።',
+        en: 'Eight plus five. Move two over to fill the ten. Ten and three is thirteen.' } }
+  ];
+
+  // Prompt templates by item type. Variables: {a} {b} {n} {thing} {things}.
+  LK.prompts = {
+    count: { am: 'ስንት {things} አሉ?', en: 'How many {things} are there?' },
+    teen: { am: 'ስንት {things} አሉ?', en: 'How many {things} are there?' },
+    teenSplit: { am: '{n} እኩል ነው አስር ሲደመር ስንት?', en: '{n} is ten and how many more?' },
+    compareMore: { am: 'የትኛው ብዙ {things} አለው?', en: 'Which has more {things}?' },
+    compareFewer: { am: 'የትኛው ጥቂት {things} አለው?', en: 'Which has fewer {things}?' },
+    compareNum: { am: 'የትኛው ቁጥር ይበልጣል?', en: 'Which number is greater?' },
+    add: { am: '{a} ልጆች ባጃጁ ውስጥ አሉ። {b} ልጆች ገቡ። አሁን ስንት ልጆች አሉ?',
+      en: '{a} children are in the bajaj. {b} more get in. How many children are there now?' },
+    addLine: { am: '{a} ሲደመር {b} ስንት ነው?', en: 'What is {a} plus {b}?' },
+    sub: { am: '{a} ማንጎዎች ዛፉ ላይ ነበሩ። {b} ወደቁ። ስንት ቀሩ?',
+      en: 'There were {a} mangoes on the tree. {b} fell. How many are left?' },
+    subLine: { am: '{a} ሲቀነስ {b} ስንት ነው?', en: 'What is {a} minus {b}?' },
+    missingTen: { am: '{a} ሲደመር ስንት አስር ይሆናል?', en: '{a} plus what makes ten?' },
+    addTwenty: { am: '{a} ሲደመር {b} ስንት ነው?', en: 'What is {a} plus {b}?' },
+    build: { am: '{n} ጠጠሮችን በአስር ሳጥኑ ላይ እናስቀምጥ።', en: "Let's put {n} counters in the ten frame." }
+  };
+
+  LK.hints = {
+    count: { am: 'እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር። የመጨረሻው ቁጥር መልሱ ነው።', en: 'Count each one just once. The last number you say is the answer.' },
+    teen: { am: 'አንድ ሙሉ አስር አለ። ከአስር ጀምረን የቀሩትን እንቁጠር።', en: 'There is one full ten. Start at ten and count on the rest.' },
+    teenSplit: { am: 'ሙሉውን አስር ሳጥን እንለፈው። በሁለተኛው ሳጥን ስንት አሉ?', en: 'Skip the full ten. How many are in the second frame?' },
+    compare: { am: 'አንድ ለአንድ እናገናኝ። የተረፈ ያለበት ብዙ አለው።', en: 'Match them one to one. The side with some left over has more.' },
+    compareNum: { am: 'በቁጥር መስመሩ ላይ በስተቀኝ ያለው ቁጥር ይበልጣል።', en: 'On the number line, the number further right is greater.' },
+    add: { am: 'ከትልቁ ቁጥር ጀምረን ወደ ፊት እንቁጠር።', en: 'Start from the bigger number and count on.' },
+    sub: { am: 'የወደቁትን እናቋርጥ፤ የቀሩትን እንቁጠር።', en: 'Cross out the ones that fell, then count the ones left.' },
+    subLine: { am: 'ከ{a} ጀምረን {b} ጊዜ ወደ ኋላ እንዝለል።', en: 'Start at {a} and hop back {b} times.' },
+    missingTen: { am: 'ስንት ባዶ ቦታ ቀረ? እነሱን እንቁጠር።', en: 'How many empty spaces are left? Count them.' },
+    addTwenty: { am: 'መጀመሪያ አስር እንሙላ፤ ከዚያ የቀሩትን እንጨምር።', en: 'First fill the ten, then add what is left.' },
+    build: { am: 'አንድ አንድ እያልን እንንካ። አምስት የላይኛውን ረድፍ ይሞላል።', en: 'Tap one at a time. Five fills the top row.' }
+  };
+
+  LK.badges = {
+    count10: { am: 'የአበባ ቆጣሪ', en: 'Flower counter' },
+    teens: { am: 'የገበያ አስር', en: 'Market tens' },
+    compare: { am: 'ብልህ አወዳዳሪ', en: 'Clever comparer' },
+    add10: { am: 'የመደመር ጀግና', en: 'Addition hero' },
+    sub10: { am: 'የመቀነስ ጀግና', en: 'Subtraction hero' },
+    make10: { am: 'የአስር ጀግና', en: 'Ten hero' }
+  };
+
+  LK.fill = function (tpl, vars) {
+    return String(tpl).replace(/\{(\w+)\}/g, (m, k) => (vars && vars[k] !== undefined ? vars[k] : m));
+  };
+})(typeof globalThis !== 'undefined' ? globalThis : window);
+if (typeof module !== 'undefined') module.exports = globalThis.LK;
+
+;
+/* Luminary Kids — learning engine (pure functions, no DOM).
+   Item generation, scoring, difficulty, mastery, spaced review, recommendations.
+   All rules are programmed and deterministic given a seed, so they can be tested. */
+(function (G) {
+  const LK = (G.LK = G.LK || {});
+
+  // ---------- seeded random ----------
+  LK.rng = function (seed) {
+    let a = seed >>> 0;
+    const next = () => {
+      a = (a + 0x6d2b79f5) >>> 0;
+      let t = a;
+      t = Math.imul(t ^ (t >>> 15), t | 1);
+      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+    next.int = (lo, hi) => lo + Math.floor(next() * (hi - lo + 1)); // inclusive
+    next.pick = (arr) => arr[Math.floor(next() * arr.length)];
+    next.shuffle = (arr) => {
+      const out = arr.slice();
+      for (let i = out.length - 1; i > 0; i--) {
+        const j = Math.floor(next() * (i + 1));
+        [out[i], out[j]] = [out[j], out[i]];
+      }
+      return out;
+    };
+    return next;
+  };
+
+  // ---------- skill map ----------
+  LK.SKILLS = [
+    { id: 'count10', prereq: [], levels: 3 },
+    { id: 'teens', prereq: ['count10'], levels: 3 },
+    { id: 'compare', prereq: ['count10'], levels: 3 },
+    { id: 'add10', prereq: ['count10'], levels: 3 },
+    { id: 'sub10', prereq: ['add10'], levels: 3 },
+    { id: 'make10', prereq: ['teens', 'add10'], levels: 3 }
+  ];
+  LK.skill = (id) => LK.SKILLS.find((s) => s.id === id);
+
+  // Numeric answer options: the answer plus three near distractors, unique, within [0, 20].
+  LK.numberOptions = function (answer, rng, lo = 0, hi = 20, tens = false) {
+    const set = new Set([answer]);
+    const near = [answer - 1, answer + 1, answer - 2, answer + 2, answer + 3, answer - 3];
+    // ±10 distractors only where tens-and-ones confusion is the point (teen numbers).
+    const cands = tens ? [answer - 10, answer + 10].filter((c) => c >= lo && c <= hi).slice(0, 1).concat(rng.shuffle(near)) : rng.shuffle(near);
+    for (const c of cands) {
+      if (set.size >= 4) break;
+      if (c >= lo && c <= hi) set.add(c);
+    }
+    let k = 0;
+    while (set.size < 4) { if (!set.has(k)) set.add(k); k++; }
+    return rng.shuffle([...set]);
+  };
+
+  // Scatter positions on a coarse grid with no two in the same cell → never overlap.
+  function scatter(n, rng) {
+    const cells = rng.shuffle(Array.from({ length: 20 }, (_, i) => i)).slice(0, n);
+    return cells.map((c) => ({ col: c % 5, row: Math.floor(c / 5), jx: rng.int(-6, 6), jy: rng.int(-6, 6) }));
+  }
+
+  // ---------- item generators: (level, rng) -> item ----------
+  const GEN = {
+    count10(level, rng) {
+      const n = level === 1 ? rng.int(1, 5) : rng.int(6, 10);
+      const thing = rng.pick(['flower', 'orange', 'chicken']);
+      const layout = level === 3 ? 'scatter' : 'rows';
+      return {
+        type: 'count', input: 'choose', prompt: 'count', hint: 'count', thing,
+        visual: { kind: 'group', thing, n, layout, positions: layout === 'scatter' ? scatter(n, rng) : null, tappable: true },
+        answer: n, options: LK.numberOptions(n, rng, 0, 12)
+      };
+    },
+    teens(level, rng) {
+      if (level === 3) {
+        const n = rng.int(11, 19);
+        return {
+          type: 'teenSplit', input: 'choose', prompt: 'teenSplit', hint: 'teenSplit', thing: 'orange', vars: { n },
+          visual: { kind: 'tenframes', filled: n, thing: 'orange' }, answer: n - 10, options: LK.numberOptions(n - 10, rng, 0, 10)
+        };
+      }
+      const n = level === 1 ? rng.int(11, 15) : rng.int(11, 19);
+      return {
+        type: 'teen', input: 'choose', prompt: 'teen', hint: 'teen', thing: 'orange',
+        visual: { kind: 'tenframes', filled: n, thing: 'orange' }, answer: n, options: LK.numberOptions(n, rng, 0, 20, true)
+      };
+    },
+    compare(level, rng) {
+      if (level === 3) {
+        let a = rng.int(2, 20), b = rng.int(2, 20);
+        while (a === b) b = rng.int(2, 20);
+        return {
+          type: 'compareNum', input: 'choose', prompt: 'compareNum', hint: 'compareNum', vars: { a, b },
+          visual: { kind: 'numberline', min: 0, max: 20, marks: [a, b] }, answer: Math.max(a, b), options: [a, b]
+        };
+      }
+      const gap = level === 1 ? rng.int(3, 5) : rng.int(1, 2);
+      const small = rng.int(1, 10 - gap), big = small + gap;
+      const bigLeft = rng() < 0.5;
+      const askFewer = level === 2 && rng() < 0.5;
+      const left = bigLeft ? big : small, right = bigLeft ? small : big;
+      const answer = askFewer ? (bigLeft ? 'right' : 'left') : (bigLeft ? 'left' : 'right');
+      return {
+        type: 'compare', input: 'pick', prompt: askFewer ? 'compareFewer' : 'compareMore', hint: 'compare', thing: 'cup',
+        visual: { kind: 'compare', thing: 'cup', left, right }, answer, options: ['left', 'right']
+      };
+    },
+    add10(level, rng) {
+      const max = level === 1 ? 5 : 10;
+      const a = rng.int(1, max - 1), b = rng.int(1, max - a);
+      if (level === 3) {
+        return {
+          type: 'addLine', input: 'line', prompt: 'addLine', hint: 'add', vars: { a, b },
+          visual: { kind: 'numberline', min: 0, max: 10, start: a, hops: b, dir: 1, showHops: false }, answer: a + b, options: null
+        };
+      }
+      return {
+        type: 'add', input: 'choose', prompt: 'add', hint: 'add', thing: 'child', vars: { a, b },
+        visual: { kind: 'join', thing: 'child', a, b }, answer: a + b, options: LK.numberOptions(a + b, rng, 0, 12)
+      };
+    },
+    sub10(level, rng) {
+      const max = level === 1 ? 5 : 10;
+      const a = rng.int(2, max), b = rng.int(1, a - 1);
+      if (level === 3) {
+        return {
+          type: 'subLine', input: 'line', prompt: 'subLine', hint: 'subLine', vars: { a, b },
+          visual: { kind: 'numberline', min: 0, max: 10, start: a, hops: b, dir: -1, showHops: false }, answer: a - b, options: null
+        };
+      }
+      return {
+        type: 'sub', input: 'choose', prompt: 'sub', hint: 'sub', thing: 'mango', vars: { a, b },
+        visual: { kind: 'takeaway', thing: 'mango', a, b }, answer: a - b, options: LK.numberOptions(a - b, rng, 0, 10)
+      };
+    },
+    make10(level, rng) {
+      if (level === 1) {
+        const a = rng.int(1, 9);
+        return {
+          type: 'missingTen', input: 'choose', prompt: 'missingTen', hint: 'missingTen', vars: { a },
+          visual: { kind: 'tenframe', filled: a }, answer: 10 - a, options: LK.numberOptions(10 - a, rng, 0, 10)
+        };
+      }
+      const a = level === 2 ? rng.pick([8, 9]) : rng.int(6, 9);
+      const b = rng.int(11 - a, 9);
+      return {
+        type: 'addTwenty', input: 'choose', prompt: 'addTwenty', hint: 'addTwenty', vars: { a, b },
+        visual: { kind: 'maketen', a, b }, answer: a + b, options: LK.numberOptions(a + b, rng, 0, 20)
+      };
+    }
+  };
+
+  // Game round: build a number on a ten frame by tapping cells (answer = number of filled cells).
+  LK.buildItem = function (rng, max = 10) {
+    const n = rng.int(3, max);
+    return { type: 'build', input: 'build', prompt: 'build', hint: 'build', vars: { n }, visual: { kind: 'buildframe', cells: 10 }, answer: n, options: null };
+  };
+
+  let uid = 0;
+  LK.generate = function (skillId, level, rng) {
+    const g = GEN[skillId];
+    if (!g) throw new Error('Unknown skill ' + skillId);
+    const item = g(Math.min(3, Math.max(1, level)), rng);
+    item.skill = skillId;
+    item.level = level;
+    item.id = skillId + '-' + level + '-' + (++uid);
+    return item;
+  };
+
+  LK.check = function (item, response) {
+    if (item.input === 'pick') return response === item.answer;
+    return Number(response) === item.answer;
+  };
+
+  // ---------- learner model ----------
+  const DAY = 864e5;
+  LK.REVIEW_DAYS = [1, 3, 7, 14, 30];
+
+  LK.newLearner = function () {
+    const skills = {};
+    for (const s of LK.SKILLS) skills[s.id] = { level: 1, status: 'new', history: [], reviewStep: 0, reviewDue: null, masteredAt: null, needsExample: false, badge: false };
+    return { version: 1, created: Date.now(), diagnosticDone: false, stars: 0, sessions: [], skills };
+  };
+
+  // Score one finished item: 1 = right first try without a hint, 0.5 = right after a hint or a retry, 0 = not solved.
+  LK.scoreAttempt = function ({ correct, tries, hints }) {
+    if (!correct) return 0;
+    return tries === 1 && hints === 0 ? 1 : 0.5;
+  };
+
+  // Record a finished item and apply difficulty, mastery and review rules. Returns events for the UI.
+  LK.record = function (learner, item, result, now = Date.now(), mode = 'practice') {
+    const sk = learner.skills[item.skill];
+    const score = LK.scoreAttempt(result);
+    const events = [];
+    sk.history.push({ t: now, level: item.level, score, tries: result.tries, hints: result.hints, mode });
+    if (result.correct) learner.stars += 1;
+
+    if (mode === 'review') {
+      if (score === 1) {
+        sk.reviewStep = Math.min(sk.reviewStep + 1, LK.REVIEW_DAYS.length - 1);
+        sk.reviewDue = now + LK.REVIEW_DAYS[sk.reviewStep] * DAY;
+        events.push('review-pass');
+      } else {
+        sk.status = 'learning';
+        sk.level = Math.max(1, sk.level - 1);
+        sk.reviewStep = 0;
+        sk.reviewDue = null;
+        events.push('review-fail');
+      }
+      return { score, events };
+    }
+
+    if (sk.status === 'new') sk.status = 'learning';
+    const atLevel = sk.history.filter((h) => h.level === sk.level && h.mode !== 'review').slice(-5);
+    const firstTry = atLevel.filter((h) => h.score === 1).length;
+    const lastTwo = atLevel.slice(-2);
+
+    if (atLevel.length >= 4 && firstTry >= 4) {
+      if (sk.level < 3) {
+        sk.level += 1;
+        events.push('level-up');
+      } else if (sk.status !== 'mastered') {
+        sk.status = 'mastered';
+        sk.masteredAt = now;
+        sk.reviewStep = 0;
+        sk.reviewDue = now + LK.REVIEW_DAYS[0] * DAY;
+        if (!sk.badge) { sk.badge = true; events.push('badge'); }
+        events.push('mastered');
+      }
+    } else if (lastTwo.length === 2 && lastTwo.every((h) => h.score === 0)) {
+      if (sk.level > 1) { sk.level -= 1; events.push('level-down'); }
+      sk.needsExample = true;
+      events.push('show-example');
+    }
+    return { score, events };
+  };
+
+  // Diagnostic: one item per skill at level 2. Right first try → start at level 3; otherwise level 1.
+  LK.diagnosticItems = function (rng) {
+    return LK.SKILLS.map((s) => LK.generate(s.id, 2, rng));
+  };
+  LK.applyDiagnostic = function (learner, results, now = Date.now()) {
+    for (const { item, result } of results) {
+      const sk = learner.skills[item.skill];
+      const score = LK.scoreAttempt(result);
+      sk.history.push({ t: now, level: item.level, score, tries: result.tries, hints: result.hints, mode: 'diagnostic' });
+      sk.level = score === 1 ? 3 : score === 0.5 ? 2 : 1;
+      sk.diagnosed = score;
+    }
+    learner.diagnosticDone = true;
+  };
+
+  LK.prereqsMet = function (learner, id) {
+    return LK.skill(id).prereq.every((p) => {
+      const s = learner.skills[p];
+      return s.status === 'mastered' || s.level >= 2;
+    });
+  };
+
+  // Next activity: diagnostic → due review → first unmastered skill whose prerequisites are met → weakest review.
+  LK.recommend = function (learner, now = Date.now()) {
+    if (!learner.diagnosticDone) return { kind: 'diagnostic' };
+    const due = LK.SKILLS.filter((s) => {
+      const sk = learner.skills[s.id];
+      return sk.status === 'mastered' && sk.reviewDue && sk.reviewDue <= now;
+    }).sort((x, y) => learner.skills[x.id].reviewDue - learner.skills[y.id].reviewDue);
+    if (due.length) return { kind: 'review', skill: due[0].id };
+    const open = LK.SKILLS.find((s) => learner.skills[s.id].status !== 'mastered' && LK.prereqsMet(learner, s.id));
+    if (open) return { kind: 'lesson', skill: open.id };
+    const any = LK.SKILLS.find((s) => learner.skills[s.id].status !== 'mastered');
+    if (any) return { kind: 'lesson', skill: any.id };
+    const weakest = LK.SKILLS.map((s) => ({ id: s.id, acc: LK.accuracy(learner.skills[s.id]) })).sort((x, y) => x.acc - y.acc)[0];
+    return { kind: 'complete', skill: weakest.id };
+  };
+
+  LK.accuracy = function (sk, last = 10) {
+    const h = sk.history.filter((x) => x.mode !== 'diagnostic').slice(-last);
+    if (!h.length) return null;
+    return h.reduce((a, x) => a + x.score, 0) / h.length;
+  };
+
+  // Parent report numbers per skill.
+  LK.report = function (learner, now = Date.now()) {
+    return LK.SKILLS.map((s) => {
+      const sk = learner.skills[s.id];
+      const h = sk.history.filter((x) => x.mode !== 'diagnostic');
+      return {
+        id: s.id, status: sk.status, level: sk.level, attempts: h.length,
+        firstTry: h.filter((x) => x.score === 1).length,
+        hints: h.reduce((a, x) => a + (x.hints || 0), 0),
+        accuracy: LK.accuracy(sk),
+        reviewDue: sk.reviewDue, dueNow: !!(sk.reviewDue && sk.reviewDue <= now)
+      };
+    });
+  };
+
+  // Practice set for a lesson: mostly the current level, one item from the level below for confidence.
+  LK.practiceSet = function (learner, skillId, rng, size = 6) {
+    const lvl = learner.skills[skillId].level;
+    return Array.from({ length: size }, (_, i) => LK.generate(skillId, i === 0 && lvl > 1 ? lvl - 1 : lvl, rng));
+  };
+})(typeof globalThis !== 'undefined' ? globalThis : window);
+if (typeof module !== 'undefined') module.exports = globalThis.LK;
+
+;
+/* Luminary Kids — original artwork drawn in code (SVG strings, no DOM).
+   Characters, scenes and badges use a fixed illustration palette.
+   Math visuals use CSS classes (mv-*) so they follow the page theme, and every
+   counted object carries data-obj / data-filled / data-crossed so tests can
+   prove the picture matches the numbers in the question. */
+(function (G) {
+  const LK = (G.LK = G.LK || {});
+  const A = (LK.art = {});
+
+  const P = {
+    fur: '#b4733a', furDark: '#7a4a22', light: '#f3dfc3', hoof: '#3b2a20', horn: '#8f7c63', ridge: '#6a5a46',
+    eye: '#2b1d14', cheek: '#e58f74', gold: '#f2b705', teal: '#1f7a8c', leaf: '#2f8f5b', berry: '#b8456e',
+    cloth: '#fbf7ef', sky: '#bfe3f2', sky2: '#e3f3f8', hill: '#7fbf6a', hill2: '#5aa65a', soil: '#d9b27c'
+  };
+  A.palette = P;
+
+  const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const svg = (w, h, label, body, cls = '') =>
+    `<svg viewBox="0 0 ${w} ${h}" class="${cls}" role="img" aria-label="${esc(label)}" xmlns="http://www.w3.org/2000/svg"><title>${esc(label)}</title>${body}</svg>`;
+  A.svg = svg;
+
+  // ---------------- Wali, the Walia ibex guide ----------------
+  // Poses: welcome, think, explain, encourage, celebrate.
+  A.wali = function (pose = 'welcome', label = 'Wali the Walia ibex') {
+    const arm = (d, hx, hy) =>
+      `<path d="${d}" stroke="${P.fur}" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="${hx}" cy="${hy}" r="9" fill="${P.hoof}"/>`;
+    const arms = {
+      down: arm('M66 142 Q58 162 56 182', 56, 184) + arm('M134 142 Q142 162 144 182', 144, 184),
+      waveR: arm('M66 142 Q58 162 56 182', 56, 184) + arm('M134 140 Q158 120 166 88', 167, 84),
+      chinR: arm('M66 142 Q58 162 56 182', 56, 184) + arm('M134 142 Q132 128 116 120', 112, 120),
+      pointR: arm('M66 142 Q58 162 56 182', 56, 184) + arm('M134 140 Q160 132 184 122', 188, 120),
+      upR: arm('M66 142 Q58 162 56 182', 56, 184) + arm('M134 140 Q152 124 152 102', 152, 98),
+      bothUp: arm('M66 140 Q44 116 40 88', 39, 84) + arm('M134 140 Q156 116 160 88', 161, 84)
+    };
+    const eyesOpen = (dx = 0, dy = 0) =>
+      `<circle cx="82" cy="80" r="7.5" fill="${P.eye}"/><circle cx="118" cy="80" r="7.5" fill="${P.eye}"/>` +
+      `<circle cx="${84 + dx}" cy="${77 + dy}" r="2.4" fill="#fff"/><circle cx="${120 + dx}" cy="${77 + dy}" r="2.4" fill="#fff"/>`;
+    const eyesHappy = `<path d="M74 82 Q82 72 90 82" stroke="${P.eye}" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M110 82 Q118 72 126 82" stroke="${P.eye}" stroke-width="3.5" fill="none" stroke-linecap="round"/>`;
+    const smile = `<path d="M89 107 Q100 116 111 107" stroke="${P.eye}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+    const talk = `<path d="M91 105 Q100 119 109 105 Z" fill="${P.eye}"/><path d="M95 111 Q100 115 105 111" stroke="#e07a7a" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+    const hmm = `<path d="M93 109 Q100 106 107 110" stroke="${P.eye}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+    const big = `<path d="M88 104 Q100 122 112 104 Z" fill="${P.eye}"/><path d="M94 112 Q100 117 106 112" stroke="#e07a7a" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+
+    const cfg = {
+      welcome: { arms: arms.waveR, eyes: eyesOpen(), mouth: smile, extra: '' },
+      think: { arms: arms.chinR, eyes: eyesOpen(-2, -2) + `<path d="M74 66 Q82 61 90 65" stroke="${P.furDark}" stroke-width="3" fill="none" stroke-linecap="round"/>`, mouth: hmm,
+        extra: `<circle cx="150" cy="58" r="5" fill="#fff" stroke="${P.ridge}" stroke-width="2"/><circle cx="162" cy="42" r="8" fill="#fff" stroke="${P.ridge}" stroke-width="2"/><circle cx="178" cy="22" r="13" fill="#fff" stroke="${P.ridge}" stroke-width="2"/><circle cx="172" cy="22" r="2.5" fill="${P.ridge}"/><circle cx="179" cy="22" r="2.5" fill="${P.ridge}"/><circle cx="186" cy="22" r="2.5" fill="${P.ridge}"/>`, armsFront: true },
+      explain: { arms: arms.pointR, eyes: eyesOpen(2, 0), mouth: talk, extra: `<path d="M188 104 l4 -8 l4 8 l8 4 l-8 4 l-4 8 l-4 -8 l-8 -4 z" fill="${P.gold}"/>` },
+      encourage: { arms: arms.upR, eyes: eyesOpen(), mouth: smile,
+        extra: `<path d="M168 70 c-6 -8 -18 -2 -12 8 l12 12 l12 -12 c6 -10 -6 -16 -12 -8 z" fill="${P.berry}"/>` },
+      celebrate: { arms: arms.bothUp, eyes: eyesHappy, mouth: big,
+        extra: flowerAt(22, 40, 9) + flowerAt(178, 46, 8) + flowerAt(30, 120, 6) + flowerAt(172, 128, 7) +
+          `<rect x="58" y="14" width="8" height="4" rx="2" fill="${P.teal}" transform="rotate(25 62 16)"/><rect x="138" y="10" width="8" height="4" rx="2" fill="${P.berry}" transform="rotate(-20 142 12)"/><rect x="100" y="4" width="8" height="4" rx="2" fill="${P.leaf}"/>` }
+    }[pose] || {};
+
+    const head =
+      // horns (behind head)
+      `<path d="M86 54 C76 30 58 20 48 34" stroke="${P.horn}" stroke-width="10" fill="none" stroke-linecap="round"/>` +
+      `<path d="M114 54 C124 30 142 20 152 34" stroke="${P.horn}" stroke-width="10" fill="none" stroke-linecap="round"/>` +
+      `<path d="M74 36 l6 4 M64 30 l5 5 M126 36 l-6 4 M136 30 l-5 5" stroke="${P.ridge}" stroke-width="2.5" stroke-linecap="round"/>` +
+      // ears
+      `<ellipse cx="54" cy="76" rx="18" ry="9" fill="${P.fur}" transform="rotate(-18 54 76)"/><ellipse cx="56" cy="76" rx="10" ry="4.5" fill="${P.light}" transform="rotate(-18 56 76)"/>` +
+      `<ellipse cx="146" cy="76" rx="18" ry="9" fill="${P.fur}" transform="rotate(18 146 76)"/><ellipse cx="144" cy="76" rx="10" ry="4.5" fill="${P.light}" transform="rotate(18 144 76)"/>` +
+      // head, forehead mark, muzzle, beard
+      `<ellipse cx="100" cy="82" rx="44" ry="41" fill="${P.fur}"/>` +
+      `<ellipse cx="100" cy="58" rx="8" ry="15" fill="${P.furDark}" opacity="0.45"/>` +
+      `<ellipse cx="100" cy="102" rx="27" ry="20" fill="${P.light}"/>` +
+      `<path d="M95 120 Q100 134 105 120 Z" fill="${P.furDark}"/>` +
+      `<circle cx="70" cy="97" r="6.5" fill="${P.cheek}" opacity="0.55"/><circle cx="130" cy="97" r="6.5" fill="${P.cheek}" opacity="0.55"/>` +
+      `<path d="M94 95 Q100 90 106 95 Q100 102 94 95 Z" fill="${P.eye}"/>` +
+      (cfg.eyes || '') + (cfg.mouth || '');
+
+    // tibeb-patterned scarf: a woven border of small diamonds
+    let diamonds = '';
+    for (let i = 0; i < 6; i++) {
+      const x = 74 + i * 10.4, c = i % 2 ? P.leaf : P.gold;
+      diamonds += `<path d="M${x} 129 l4 -4 l4 4 l-4 4 z" fill="${c}"/>`;
+    }
+    const scarf = `<rect x="66" y="119" width="68" height="20" rx="10" fill="${P.cloth}" stroke="${P.teal}" stroke-width="2"/>${diamonds}` +
+      `<path d="M116 136 l10 22 l-12 2 z" fill="${P.cloth}" stroke="${P.teal}" stroke-width="2"/><path d="M118 148 h6" stroke="${P.gold}" stroke-width="3"/>`;
+
+    const body =
+      `<rect x="77" y="184" width="18" height="30" rx="8" fill="${P.fur}"/><rect x="105" y="184" width="18" height="30" rx="8" fill="${P.fur}"/>` +
+      `<rect x="77" y="206" width="18" height="10" rx="4" fill="${P.hoof}"/><rect x="105" y="206" width="18" height="10" rx="4" fill="${P.hoof}"/>` +
+      `<ellipse cx="144" cy="150" rx="8" ry="6" fill="${P.furDark}"/>` +
+      `<ellipse cx="100" cy="160" rx="45" ry="40" fill="${P.fur}"/><ellipse cx="100" cy="168" rx="27" ry="27" fill="${P.light}"/>`;
+
+    const back = cfg.armsFront ? '' : cfg.arms;
+    const front = cfg.armsFront ? cfg.arms : '';
+    return svg(210, 224, label, `<g>${back}${body}${scarf}${head}${front}${cfg.extra || ''}</g>`, 'wali');
+  };
+
+  // ---------------- children (inclusive avatars) ----------------
+  const KIDS = {
+    selam: { skin: '#8d5a3b', shirt: P.gold, hair: 'braids', name: 'Selam' },
+    dawit: { skin: '#5e3a24', shirt: P.teal, hair: 'short', name: 'Dawit' },
+    amira: { skin: '#a8714d', shirt: P.leaf, hair: 'hijab', name: 'Amira' },
+    yonas: { skin: '#74472b', shirt: P.berry, hair: 'curls', name: 'Yonas' }
+  };
+  A.kidIds = Object.keys(KIDS);
+  A.kid = function (id, label) {
+    const k = KIDS[id] || KIDS.selam;
+    const face = `<circle cx="50" cy="50" r="24" fill="${k.skin}"/><circle cx="41" cy="50" r="3" fill="${P.eye}"/><circle cx="59" cy="50" r="3" fill="${P.eye}"/><path d="M42 60 Q50 66 58 60" stroke="${P.eye}" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="35" cy="57" r="3.5" fill="${P.cheek}" opacity="0.5"/><circle cx="65" cy="57" r="3.5" fill="${P.cheek}" opacity="0.5"/>`;
+    const shirt = `<path d="M18 100 Q22 78 50 76 Q78 78 82 100 Z" fill="${k.shirt}"/>`;
+    let hair = '', over = '';
+    if (k.hair === 'braids') {
+      hair = `<path d="M26 48 Q26 22 50 22 Q74 22 74 48 Q70 34 50 32 Q30 34 26 48 Z" fill="#1d130d"/><path d="M38 24 v12 M50 22 v12 M62 24 v12" stroke="#3a2a20" stroke-width="2"/><path d="M27 48 q-4 14 -2 26" stroke="#1d130d" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M73 48 q4 14 2 26" stroke="#1d130d" stroke-width="6" stroke-linecap="round" fill="none"/><circle cx="25" cy="76" r="3.5" fill="${P.gold}"/><circle cx="75" cy="76" r="3.5" fill="${P.gold}"/>`;
+    } else if (k.hair === 'short') {
+      hair = `<path d="M27 46 Q26 24 50 24 Q74 24 73 46 Q66 34 50 34 Q34 34 27 46 Z" fill="#1d130d"/>`;
+    } else if (k.hair === 'hijab') {
+      hair = `<path d="M22 60 Q20 20 50 20 Q80 20 78 60 Q80 84 64 90 L36 90 Q20 84 22 60 Z" fill="${P.leaf}"/><path d="M30 56 Q30 34 50 34 Q70 34 70 56" fill="none" stroke="#256f47" stroke-width="2"/>`;
+    } else {
+      hair = `<circle cx="34" cy="32" r="10" fill="#1d130d"/><circle cx="50" cy="26" r="11" fill="#1d130d"/><circle cx="66" cy="32" r="10" fill="#1d130d"/>`;
+      over = `<circle cx="41" cy="50" r="7" fill="none" stroke="#2c3e50" stroke-width="2.2"/><circle cx="59" cy="50" r="7" fill="none" stroke="#2c3e50" stroke-width="2.2"/><path d="M48 50 h4" stroke="#2c3e50" stroke-width="2.2"/><path d="M75 50 q5 2 3 8 q-2 4 -5 2" fill="#d8d0c4" stroke="#8a7f70" stroke-width="1.2"/>`;
+    }
+    const bg = `<circle cx="50" cy="50" r="48" fill="${P.sky2}"/>`;
+    const body = k.hair === 'hijab' ? bg + shirt + hair + face : bg + shirt + hair + face + over;
+    return svg(100, 100, label || k.name, `<clipPath id="kc-${id}"><circle cx="50" cy="50" r="48"/></clipPath><g clip-path="url(#kc-${id})">${body}</g>`, 'kid');
+  };
+
+  // ---------------- countable objects (unit ≈ 44×44, centred on 0,0) ----------------
+  function flowerAt(x, y, r) {
+    let p = '';
+    for (let i = 0; i < 8; i++) {
+      const a = (i * Math.PI) / 4;
+      p += `<ellipse cx="${(x + Math.cos(a) * r).toFixed(1)}" cy="${(y + Math.sin(a) * r).toFixed(1)}" rx="${(r * 0.62).toFixed(1)}" ry="${(r * 0.38).toFixed(1)}" fill="${P.gold}" transform="rotate(${i * 45} ${(x + Math.cos(a) * r).toFixed(1)} ${(y + Math.sin(a) * r).toFixed(1)})"/>`;
+    }
+    return p + `<circle cx="${x}" cy="${y}" r="${(r * 0.55).toFixed(1)}" fill="#6b4a1a"/>`;
+  }
+  A.flowerAt = flowerAt;
+
+  const OBJ = {
+    flower: () => `<path d="M0 6 q-2 10 0 16" stroke="${P.leaf}" stroke-width="3" fill="none"/><ellipse cx="6" cy="16" rx="6" ry="3" fill="${P.leaf}" transform="rotate(-30 6 16)"/>` + flowerAt(0, -4, 11),
+    orange: () => `<circle cx="0" cy="2" r="16" fill="#f28c28"/><circle cx="-5" cy="-3" r="4" fill="#ffd08a" opacity="0.7"/><ellipse cx="5" cy="-15" rx="7" ry="3.5" fill="${P.leaf}" transform="rotate(-25 5 -15)"/>`,
+    mango: () => `<ellipse cx="0" cy="2" rx="13" ry="17" fill="#f2b33d" transform="rotate(20)"/><ellipse cx="4" cy="6" rx="9" ry="12" fill="#e9762f" opacity="0.55" transform="rotate(20)"/><path d="M-3 -15 q2 -5 6 -6" stroke="#6b4a1a" stroke-width="2.5" fill="none"/><ellipse cx="8" cy="-19" rx="7" ry="3" fill="${P.leaf}" transform="rotate(-15 8 -19)"/>`,
+    cup: () => `<ellipse cx="0" cy="14" rx="18" ry="4" fill="#e7dccb"/><path d="M-13 -8 L13 -8 L9 12 L-9 12 Z" fill="#fffdf8" stroke="#bfae8e" stroke-width="1.5"/><ellipse cx="0" cy="-8" rx="13" ry="3.5" fill="#5a3418"/><path d="M-11 0 h22" stroke="${P.teal}" stroke-width="2.5"/>`,
+    chicken: () => `<ellipse cx="0" cy="6" rx="15" ry="12" fill="#f5ead6" stroke="#b08a5a" stroke-width="1.5"/><circle cx="10" cy="-8" r="8" fill="#f5ead6" stroke="#b08a5a" stroke-width="1.5"/><path d="M6 -16 q2 -6 5 0 q2 -6 5 1" fill="#d6453d"/><path d="M17 -8 l6 2 l-6 2 z" fill="${P.gold}"/><circle cx="11" cy="-9" r="1.6" fill="${P.eye}"/><path d="M-4 18 v6 M4 18 v6" stroke="${P.gold}" stroke-width="2"/>`,
+    child: (i = 0) => {
+      const shirts = [P.gold, P.teal, P.leaf, P.berry], skins = ['#8d5a3b', '#5e3a24', '#a8714d', '#74472b'];
+      return `<rect x="-11" y="2" width="22" height="20" rx="8" fill="${shirts[i % 4]}"/><circle cx="0" cy="-8" r="10" fill="${skins[(i + 1) % 4]}"/><path d="M-10 -11 Q0 -22 10 -11 Q0 -15 -10 -11 Z" fill="#1d130d"/><circle cx="-3.5" cy="-8" r="1.4" fill="${P.eye}"/><circle cx="3.5" cy="-8" r="1.4" fill="${P.eye}"/>`;
+    },
+    counter: () => `<circle cx="0" cy="0" r="15" class="mv-counter"/>`
+  };
+  A.object = (thing, x, y, i = 0, extra = '') => `<g data-obj="${thing}" data-i="${i}" class="obj" transform="translate(${x} ${y})"${extra}>${OBJ[thing](i)}</g>`;
+
+  // ---------------- math visuals ----------------
+  const cross = `<g data-crossed="1"><path d="M-16 -16 L16 16 M16 -16 L-16 16" class="mv-cross"/></g>`;
+
+  // A group of n objects: rows of five (five-structure) or a non-overlapping scatter.
+  A.group = function ({ thing, n, layout = 'rows', positions }, label) {
+    let body = '', w, h;
+    if (layout === 'scatter' && positions) {
+      w = 5 * 64 + 16; h = 4 * 60 + 16;
+      positions.forEach((p, i) => { body += A.object(thing, 40 + p.col * 64 + p.jx, 38 + p.row * 60 + p.jy, i); });
+    } else {
+      const rows = Math.ceil(n / 5);
+      w = 5 * 58 + 18; h = rows * 58 + 16;
+      for (let i = 0; i < n; i++) body += A.object(thing, 38 + (i % 5) * 58, 36 + Math.floor(i / 5) * 58, i);
+    }
+    return svg(w, h, label, body, 'mv');
+  };
+
+  // One ten frame (5 × 2). Cells carry data-filled; filled cells show a counter or object.
+  function frame(x, y, filled, opts = {}) {
+    const c = 50; let out = `<g class="tenframe" transform="translate(${x} ${y})">`;
+    out += `<rect x="0" y="0" width="${5 * c}" height="${2 * c}" rx="6" class="mv-frame"/>`;
+    for (let i = 0; i < 10; i++) {
+      const cx = (i % 5) * c, cy = Math.floor(i / 5) * c, on = i < filled;
+      out += `<g data-cell="${i}" data-filled="${on ? 1 : 0}"${opts.tap ? ' class="cell tap" tabindex="0" role="button"' : ' class="cell"'}><rect x="${cx}" y="${cy}" width="${c}" height="${c}" class="mv-cell"/>`;
+      if (on) {
+        const thing = opts.thingFor ? opts.thingFor(i) : opts.thing;
+        if (thing && thing !== 'counter') out += A.object(thing, cx + c / 2, cy + c / 2 + 2, i);
+        else out += `<g data-obj="counter" class="obj ${opts.cls ? opts.cls(i) : ''}" transform="translate(${cx + c / 2} ${cy + c / 2})"><circle r="16" class="mv-counter ${opts.cls ? opts.cls(i) : ''}"/></g>`;
+      }
+      out += `</g>`;
+    }
+    return out + `</g>`;
+  }
+  A.tenframe = ({ filled }, label) => svg(270, 120, label, frame(10, 10, filled), 'mv');
+  A.tenframes = ({ filled, thing }, label) =>
+    svg(270, 236, label, frame(10, 10, Math.min(10, filled), { thing }) + frame(10, 126, Math.max(0, filled - 10), { thing }), 'mv');
+  A.buildframe = (_, label) => svg(270, 120, label, frame(10, 10, 0, { tap: true }), 'mv build');
+  // Make ten: a counters in frame 1, b in frame 2 (second colour). Hint state shows the move.
+  A.maketen = ({ a, b }, label, showMove = false) => {
+    let s = frame(10, 10, a, { cls: () => 'ca' }) + frame(10, 126, b, { cls: () => 'cb' });
+    if (showMove) {
+      const need = 10 - a;
+      s += `<path d="M260 160 C 300 140, 300 80, 262 64" class="mv-hop" marker-end="url(#mk)"/><text x="292" y="118" class="mv-num small">${need}</text>`;
+      s = `<defs><marker id="mk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" class="mv-arrowhead"/></marker></defs>` + s;
+    }
+    return svg(showMove ? 320 : 270, 236, label, s, 'mv');
+  };
+
+  // Two trays to compare. Each side is a tappable group.
+  A.compare = ({ thing, left, right }, label, labels = ['', '']) => {
+    const tray = (x, n, side, lab) => {
+      let o = `<g data-side="${side}" class="side tap" tabindex="0" role="button" aria-label="${esc(lab)}"><rect x="${x}" y="8" width="150" height="${Math.ceil(10 / 2) * 46 + 20}" rx="14" class="mv-tray"/>`;
+      for (let i = 0; i < n; i++) o += A.object(thing, x + 40 + (i % 2) * 70, 36 + Math.floor(i / 2) * 46, i);
+      return o + `</g>`;
+    };
+    return svg(330, 268, label, tray(8, left, 'left', labels[0]) + tray(172, right, 'right', labels[1]), 'mv');
+  };
+
+  // Joining two groups (addition story): a children already in the bajaj, b getting in.
+  A.join = ({ thing, a, b }, label) => {
+    const col = (n, x0, part, off) => {
+      let o = `<g data-part="${part}">`;
+      for (let i = 0; i < n; i++) o += A.object(thing, x0 + (i % 2) * 44, 40 + Math.floor(i / 2) * 50, i + off);
+      return o + '</g>';
+    };
+    const rowsA = Math.ceil(a / 2), rowsB = Math.ceil(b / 2), h = Math.max(rowsA, rowsB) * 50 + 30;
+    return svg(300, h, label,
+      `<rect x="6" y="6" width="120" height="${h - 12}" rx="16" class="mv-tray"/>` + col(a, 44, 'a', 0) +
+      `<text x="150" y="${h / 2 + 10}" class="mv-num" text-anchor="middle">+</text>` +
+      `<rect x="174" y="6" width="120" height="${h - 12}" rx="16" class="mv-tray dashed"/>` + col(b, 212, 'b', a), 'mv');
+  };
+
+  // Take away (subtraction story): a mangoes, the last b crossed out.
+  A.takeaway = ({ thing, a, b }, label) => {
+    let o = '';
+    const rows = Math.ceil(a / 5), h = rows * 58 + 16;
+    for (let i = 0; i < a; i++) {
+      const gone = i >= a - b;
+      o += A.object(thing, 38 + (i % 5) * 58, 36 + Math.floor(i / 5) * 58, i, gone ? ' opacity="0.45"' : '');
+      if (gone) o += `<g transform="translate(${38 + (i % 5) * 58} ${36 + Math.floor(i / 5) * 58})">${cross}</g>`;
+    }
+    return svg(5 * 58 + 18, h, label, o, 'mv');
+  };
+
+  // Number line with tappable ticks. hops shown only in the hint state.
+  A.numberline = ({ min, max, start, hops, dir = 1, marks }, label, showHops = false) => {
+    const span = max - min, step = span > 10 ? 34 : 56, x0 = 26, w = x0 * 2 + span * step, y = 84;
+    const X = (n) => x0 + (n - min) * step;
+    let o = `<defs><marker id="nl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" class="mv-arrowhead"/></marker></defs>`;
+    o += `<line x1="${x0 - 14}" y1="${y}" x2="${w - x0 + 14}" y2="${y}" class="mv-line"/>`;
+    for (let n = min; n <= max; n++) {
+      const big = span <= 10 || n % 5 === 0;
+      o += `<g data-n="${n}" class="tick tap" tabindex="0" role="button" aria-label="${n}"><rect x="${X(n) - step / 2}" y="${y - 30}" width="${step}" height="70" class="hit"/><line x1="${X(n)}" y1="${y - (big ? 12 : 8)}" x2="${X(n)}" y2="${y + (big ? 12 : 8)}" class="mv-line"/>` +
+        (span <= 10 || n % 5 === 0 ? `<text x="${X(n)}" y="${y + 44}" text-anchor="middle" class="mv-num">${n}</text>` : '') + `</g>`;
+    }
+    if (marks) marks.forEach((m) => { o += `<circle cx="${X(m)}" cy="${y}" r="9" class="mv-mark" data-mark="${m}"/><text x="${X(m)}" y="${y - 22}" text-anchor="middle" class="mv-marknum">${m}</text>`; });
+    if (start !== undefined) {
+      o += `<circle cx="${X(start)}" cy="${y}" r="9" class="mv-start" data-start="${start}"/>`;
+      if (showHops) {
+        for (let k = 0; k < hops; k++) {
+          const a = X(start + dir * k), b = X(start + dir * (k + 1));
+          o += `<path data-hop="${k}" d="M${a} ${y - 10} Q ${(a + b) / 2} ${y - 46} ${b} ${y - 10}" class="mv-hop" marker-end="url(#nl)"/>`;
+        }
+      }
+    }
+    return svg(w, 138, label, o, 'mv line');
+  };
+
+  A.visual = function (v, label, hintState = false) {
+    switch (v.kind) {
+      case 'group': return A.group(v, label);
+      case 'tenframe': return A.tenframe(v, label);
+      case 'tenframes': return A.tenframes(v, label);
+      case 'compare': return A.compare(v, label, v.labels);
+      case 'join': return A.join(v, label);
+      case 'takeaway': return A.takeaway(v, label);
+      case 'numberline': return A.numberline(v, label, hintState);
+      case 'maketen': return A.maketen(v, label, hintState);
+      case 'buildframe': return A.buildframe(v, label);
+      default: return '';
+    }
+  };
+
+  // ---------------- scenes (lesson covers / story backdrops) ----------------
+  const sky = (top = P.sky) => `<rect width="360" height="200" fill="${top}"/><circle cx="300" cy="44" r="22" fill="#ffd45c"/>`;
+  const hills = `<path d="M0 140 Q60 96 130 128 T260 118 T360 126 V200 H0 Z" fill="${P.hill}"/><path d="M0 162 Q90 132 180 156 T360 150 V200 H0 Z" fill="${P.hill2}"/>`;
+  const SCENES = {
+    garden: () => sky() + hills +
+      `<path d="M20 150 h320" stroke="#a5784a" stroke-width="4"/>` + Array.from({ length: 9 }, (_, i) => `<path d="M${30 + i * 36} 150 v-14" stroke="#a5784a" stroke-width="4"/>`).join('') +
+      Array.from({ length: 8 }, (_, i) => `<g transform="translate(${36 + i * 40} ${176 - (i % 2) * 8})">${OBJ.flower()}</g>`).join(''),
+    market: () => sky() + `<rect y="140" width="360" height="60" fill="${P.soil}"/>` +
+      [20, 130, 240].map((x, k) => `<rect x="${x}" y="82" width="100" height="60" fill="#fff6e6"/><path d="M${x - 6} 82 h112 l-10 -24 h-92 z" fill="${[P.teal, P.gold, P.berry][k]}"/>` +
+        Array.from({ length: 5 }, (_, i) => `<path d="M${x + 4 + i * 20} 82 l10 -24" stroke="#fff" stroke-width="5" opacity="0.5"/>`).join('') +
+        `<rect x="${x + 6}" y="118" width="88" height="24" rx="4" fill="#a5784a"/>` +
+        `<g transform="translate(${x + 30} 112) scale(0.55)">${OBJ.orange()}</g><g transform="translate(${x + 50} 112) scale(0.55)">${OBJ.orange()}</g><g transform="translate(${x + 40} 98) scale(0.55)">${OBJ.orange()}</g><g transform="translate(${x + 70} 112) scale(0.55)">${OBJ.mango()}</g>`).join(''),
+    school: () => sky() + hills + `<rect x="70" y="76" width="200" height="86" rx="4" fill="#f4ead8"/><path d="M60 80 L170 40 L280 80 Z" fill="${P.berry}"/>` +
+      [92, 132, 208, 248].map((x) => `<rect x="${x - 12}" y="96" width="24" height="22" rx="3" fill="${P.sky}" stroke="#a5784a" stroke-width="2"/>`).join('') +
+      `<rect x="156" y="120" width="28" height="42" rx="4" fill="#a5784a"/><circle cx="320" cy="140" r="26" fill="${P.leaf}"/><rect x="316" y="150" width="8" height="30" fill="#7a4a22"/><path d="M150 200 L162 162 h16 L190 200 Z" fill="${P.soil}"/>`,
+    road: () => sky() + hills + `<rect y="160" width="360" height="40" fill="#8a8f98"/><path d="M0 180 h360" stroke="#f4ead8" stroke-width="3" stroke-dasharray="18 14"/>` +
+      `<g transform="translate(140 118)"><path d="M0 46 V14 Q0 0 20 0 H62 Q80 0 84 20 L92 46 Z" fill="${P.teal}"/><rect x="8" y="8" width="30" height="20" rx="4" fill="${P.sky2}"/><rect x="44" y="8" width="30" height="20" rx="4" fill="${P.sky2}"/><path d="M84 20 L98 26 L98 46 L92 46" fill="${P.teal}"/><rect x="-4" y="40" width="100" height="8" rx="3" fill="#2b2f36"/><circle cx="16" cy="50" r="10" fill="#2b2f36"/><circle cx="16" cy="50" r="4" fill="#ccc"/><circle cx="80" cy="50" r="10" fill="#2b2f36"/><circle cx="80" cy="50" r="4" fill="#ccc"/><rect x="0" y="-6" width="80" height="8" rx="4" fill="${P.gold}"/></g>`,
+    tree: () => sky() + hills + `<rect x="168" y="96" width="24" height="84" rx="6" fill="#7a4a22"/><circle cx="180" cy="78" r="58" fill="#3f9a5a"/><circle cx="136" cy="96" r="34" fill="#4aa866"/><circle cx="226" cy="96" r="34" fill="#4aa866"/>` +
+      [[150, 70], [196, 56], [212, 92], [160, 106], [184, 92]].map(([x, y]) => `<g transform="translate(${x} ${y}) scale(0.6)">${OBJ.mango()}</g>`).join('') +
+      `<g transform="translate(120 176) scale(0.6)">${OBJ.mango()}</g><g transform="translate(236 182) scale(0.6) rotate(60)">${OBJ.mango()}</g>`,
+    meadow: () => sky(P.sky2) + `<path d="M0 120 L60 70 L110 110 L170 56 L240 112 L300 74 L360 116 V200 H0 Z" fill="#9db7c9"/>` + hills +
+      Array.from({ length: 22 }, (_, i) => `<g transform="translate(${10 + ((i * 53) % 350)} ${150 + ((i * 17) % 44)}) scale(${0.45 + (i % 3) * 0.1})">${flowerAt(0, 0, 11)}</g>`).join('')
+  };
+  A.scene = (id, label) => svg(360, 200, label, SCENES[id] ? SCENES[id]() : '', 'scene');
+  A.sceneIds = Object.keys(SCENES);
+
+  // ---------------- badges ----------------
+  const BADGE_COLORS = [P.gold, P.teal, P.berry, P.leaf, '#e9762f', '#6a5acd'];
+  A.badge = (n, earned, label) => {
+    const c = earned ? BADGE_COLORS[(n - 1) % 6] : '#c9c4ba';
+    let petals = '';
+    for (let i = 0; i < 12; i++) petals += `<ellipse cx="50" cy="14" rx="8" ry="14" fill="${c}" opacity="${earned ? 1 : 0.6}" transform="rotate(${i * 30} 50 50)"/>`;
+    return svg(100, 100, label, petals + `<circle cx="50" cy="50" r="28" fill="${earned ? '#fffaf0' : '#eeebe5'}" stroke="${c}" stroke-width="4"/>` +
+      `<text x="50" y="62" text-anchor="middle" font-size="32" font-weight="700" fill="${earned ? '#3b2a20' : '#9a958c'}" font-family="Andika, sans-serif">${n}</text>`, 'badge');
+  };
+})(typeof globalThis !== 'undefined' ? globalThis : window);
+if (typeof module !== 'undefined') module.exports = globalThis.LK;
+
+;
+/* Luminary Kids — interface. Depends on LK (i18n, engine, art). */
+(function () {
+  const LK = window.LK, A = LK.art;
+  const $ = (sel, el = document) => el.querySelector(sel);
+  const root = document.getElementById('app');
+  const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const STORE = 'luminary-kids-v1';
+
+  // ---------- storage (best effort; the app works without it) ----------
+  function load() {
+    try { const raw = localStorage.getItem(STORE); if (raw) return JSON.parse(raw); } catch (e) { /* storage unavailable */ }
+    return null;
+  }
+  function save() {
+    try { localStorage.setItem(STORE, JSON.stringify(DB)); return true; } catch (e) { return false; }
+  }
+  const DB = load() || { profiles: [], activeId: null, settings: { lang: 'am', showEn: true, reduce: false } };
+
+  const S = { view: 'landing', guest: null, run: null, gate: null, confirm: null, parentMsg: '', reserve: false };
+  const st = () => DB.settings;
+  const lang = () => st().lang;
+  const U = () => LK.ui[lang()];
+  const active = () => DB.profiles.find((p) => p.id === DB.activeId) || null;
+  const learner = () => (S.run && S.run.guest ? S.guest : active() ? active().learner : S.guest);
+
+  function applySettings() {
+    document.documentElement.lang = lang() === 'am' ? 'am' : 'en';
+    document.documentElement.classList.toggle('reduce', !!st().reduce);
+  }
+
+  // Bilingual text: Amharic first with optional English line underneath.
+  function bi(obj, tag = 'span') {
+    if (lang() === 'en') return `<${tag}>${esc(obj.en)}</${tag}>`;
+    return `<${tag} class="am" lang="am">${esc(obj.am)}${st().showEn ? `<span class="en-sub" lang="en">${esc(obj.en)}</span>` : ''}</${tag}>`;
+  }
+  const uiBi = (key) => bi({ am: LK.ui.am[key], en: LK.ui.en[key] });
+
+  // ---------- narration ----------
+  // Recorded clips go in LK.audio[key] = url once educators have approved them. Until then, the device voice is used if it has one.
+  LK.audio = LK.audio || {};
+  let voices = [];
+  function loadVoices() { try { voices = window.speechSynthesis ? speechSynthesis.getVoices() : []; } catch (e) { voices = []; } }
+  loadVoices();
+  try { if (window.speechSynthesis) speechSynthesis.onvoiceschanged = loadVoices; } catch (e) { /* ignore */ }
+  const voiceFor = (l) => voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(l === 'am' ? 'am' : 'en'));
+  function speak(text, key, quiet = true) {
+    if (key && LK.audio[key]) { try { new Audio(LK.audio[key]).play(); return; } catch (e) { /* fall through */ } }
+    const v = voiceFor(lang());
+    if (!window.speechSynthesis || !v) { if (!quiet) toast(lang() === 'am' ? LK.ui.am.noVoice : 'Narration is not available on this device yet.'); return; }
+    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.voice = v; u.lang = v.lang; u.rate = 0.85; speechSynthesis.speak(u); } catch (e) { /* ignore */ }
+  }
+  let toastTimer;
+  function toast(msg) {
+    let t = $('.toast');
+    if (!t) { t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.textContent = msg; t.hidden = false;
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 3200);
+  }
+
+  const ICON = {
+    speaker: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>',
+    star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" fill="var(--adey)" stroke="var(--adey-ink)" stroke-width="1"/></svg>',
+    back: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    bulb: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>'
+  };
+  const mark = `<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="var(--ink)"/>${A.flowerAt(20, 20, 9).replace(/#6b4a1a/g, 'var(--ink)')}</svg>`;
+
+  // ---------- header ----------
+  function header() {
+    const inApp = S.view !== 'landing';
+    const L = learner();
+    return `<header class="top"><div class="wrap">
+      <button class="brand" data-act="${inApp ? 'home' : 'landing'}" aria-label="Luminary Kids">${mark}<span><b>Luminary Kids</b><small lang="am">የሂሳብ ጀብዱ · KingNigUs Academy</small></span></button>
+      <span class="spacer"></span>
+      ${S.view === 'home' && L ? `<span class="stars tnum hide-sm" title="${esc(U().stars)}">${ICON.star}${L.stars}</span>` : ''}
+      <div class="seg" role="group" aria-label="Language"><button data-act="lang" data-v="am" aria-pressed="${lang() === 'am'}" lang="am">አማ</button><button data-act="lang" data-v="en" aria-pressed="${lang() === 'en'}">EN</button></div>
+      <button class="linkbtn" data-act="gate">${lang() === 'am' ? '<span lang="am">ለወላጆች</span>' : 'Grown-ups'}</button>
+    </div></header>`;
+  }
+
+  // ---------- landing (grown-up facing) ----------
+  const LAND = {
+    am: {
+      h1a: 'ሂሳብ በአማርኛ', h1b: 'በትንንሽ ጀብዱዎች።',
+      lead: 'ሉሚናሪ ኪድስ ከ5–8 ዓመት ያሉ ልጆች እስከ 20 ያሉ ቁጥሮችን እንዲለማመዱ ይረዳል። መሪያቸው ዋሊ የተባለ የዋልያ ግልገል ሲሆን እያንዳንዱን እርምጃ በአማርኛ ያብራራል፤ እንግሊዝኛም አብሮ ይገኛል።',
+      play: 'የናሙና ትምህርት ይሞክሩ', setup: 'ለልጅዎ ያዘጋጁ', bubble: 'ሰላም! እኔ ዋሊ ነኝ። አብረን እንቁጠር?'
+    },
+    en: {
+      h1a: 'Math in Amharic,', h1b: 'one small adventure at a time.',
+      lead: 'Luminary Kids helps children aged 5 to 8 practise numbers to 20 with Wali, a young Walia ibex who explains every step in Amharic, with English on tap.',
+      play: 'Play a sample lesson', setup: 'Set up for your child', bubble: "Hello! I'm Wali. Shall we count together?"
+    }
+  };
+  function landing() {
+    const T = LAND[lang()];
+    const lessonsHtml = LK.lessons.map((l) => `<button class="lcard" data-act="sample" data-skill="${l.id}">${A.scene(l.scene, l.title.en)}<span class="body"><span class="num">Lesson ${l.n}</span><b class="am" lang="am">${esc(l.title.am)}</b><span class="muted">${esc(l.title.en)}</span></span></button>`).join('');
+    const reserve = S.reserve ? `<div class="panel" role="status"><b>Pilot checkout opens with wave 1.</b><p>To reserve a place now, email the Luminary Academy team with your child's grade and your city. We reply within two working days.</p><div class="copyrow"><code id="mail">support@theluminaryacademy.net</code><button class="btn small alt" data-act="copy" data-target="mail">Copy address</button></div></div>` : '';
+    return `<main>
+    <section class="hero"><div class="wrap">
+      <div><span class="eyebrow">Grade 1 pilot · Numbers to 20</span>
+        <h1>${lang() === 'am' ? `<span class="am" lang="am">${T.h1a}</span><span class="am" lang="am" style="display:block">${T.h1b}</span>` : `<span class="am" lang="am">ሂሳብ በአማርኛ</span>${T.h1a} ${T.h1b}`}</h1>
+        <p class="lead ${lang() === 'am' ? 'am' : ''}">${esc(T.lead)}</p>
+        <div class="ctas"><button class="btn adey" data-act="sample" data-skill="count10">${esc(T.play)}</button><button class="btn alt" data-act="gate">${esc(T.setup)}</button></div>
+      </div>
+      <div class="hero-art">${A.scene('garden', 'A garden with flowers on Ethiopian hills')}${A.wali('welcome', 'Wali waving hello')}<div class="bubble ${lang() === 'am' ? 'am' : ''}">${esc(T.bubble)}</div></div>
+    </div></section>
+
+    <section class="band tint"><div class="wrap">
+      <h2>Built for Amharic-speaking families</h2>
+      <p class="intro">Most math apps are English-only. Weekend Amharic schools rarely have time for math. Luminary Kids gives your child both, in short sessions they can do on a phone.</p>
+      <div class="grid3">
+        <div class="point"><span class="dot" style="background:var(--adey-soft);color:var(--adey-ink)">አ</span><h3>Amharic first</h3><p>Clear Amharic instructions with the same math words every time, English underneath when you want it, and a listen button on every question.</p></div>
+        <div class="point"><span class="dot" style="background:var(--lake-soft);color:var(--lake)">1</span><h3>Starts where your child is</h3><p>A six-question starting game places each skill. Questions get harder after four first-try answers and easier after two misses.</p></div>
+        <div class="point"><span class="dot" style="background:var(--field-soft);color:var(--field)">✓</span><h3>You see the progress</h3><p>The grown-ups page shows each skill, how many questions were right on the first try, hints used, and what Wali suggests next.</p></div>
+      </div>
+    </div></section>
+
+    <section class="band"><div class="wrap">
+      <h2>How a lesson works</h2><p class="intro">Each lesson takes about 10 minutes and follows the same four steps.</p>
+      <ol class="steps"><li><b>Story</b><p>A short scene from home, the market or school sets up the problem.</p></li><li><b>Example</b><p>Wali works one problem out loud with a picture.</p></li><li><b>Practice</b><p>Six questions that adjust to your child, with hints and a second try.</p></li><li><b>Game</b><p>Your child builds numbers on a ten frame by tapping.</p></li></ol>
+    </div></section>
+
+    <section class="band tint"><div class="wrap">
+      <h2>The pilot unit: six lessons</h2><p class="intro">Tap any lesson to play a sample. Pictures always show exactly the numbers in the question.</p>
+      <div class="lessons">${lessonsHtml}</div>
+    </div></section>
+
+    <section class="band"><div class="wrap">
+      <h2>What grown-ups see</h2><p class="intro">An example report. Your own child's report appears on the grown-ups page once they start playing.</p>
+      <div class="report-demo"><div class="tablewrap"><table><thead><tr><th>Skill</th><th>Status</th><th>First try</th><th>Hints</th></tr></thead><tbody>
+        <tr><td>Counting to 10</td><td><span class="tag field">Mastered</span></td><td class="tnum">9 of 11</td><td class="tnum">1</td></tr>
+        <tr><td>Teen numbers</td><td><span class="tag lake">Learning</span></td><td class="tnum">4 of 7</td><td class="tnum">3</td></tr>
+        <tr><td>Adding within 10</td><td><span class="tag plain">Not started</span></td><td class="tnum">—</td><td class="tnum">—</td></tr>
+      </tbody></table></div><p class="muted" style="margin-top:10px">Example data. Practice records show where to help; they are not test scores.</p></div>
+    </div></section>
+
+    <section class="band tint" id="pilot"><div class="wrap offer">
+      <div><h2>Founding Families pilot</h2><p class="intro">We are inviting a small group of families to use the Grade 1 unit for six weeks and tell us what works. Your feedback decides what we build next.</p>
+        <ul class="checks"><li>Six lessons, the starting game and spaced review for up to two children</li><li>Amharic first, English on tap</li><li>A weekly progress email and a 20-minute call with our team in week 1</li><li>A feedback call in week 6</li></ul>
+      </div>
+      <div class="price"><span class="tag">Founding-family test price</span><span class="amt tnum">$29</span><span>one payment for 6 weeks · no automatic renewal</span>
+        <button class="btn adey" data-act="reserve">Reserve a pilot place</button>${reserve}
+        <div class="terms"><p><b>Refunds:</b> full refund within 14 days of payment, for any reason.</p><p><b>After the pilot:</b> nothing renews automatically. If you choose a monthly or yearly plan later, it renews until you cancel, and you can cancel any time from your account.</p><p>For parents and guardians only. Children under 13 use Luminary Kids through a profile a parent creates.</p></div>
+      </div>
+    </div></section>
+
+    <section class="band"><div class="wrap">
+      <h2>Questions parents ask</h2>
+      <details class="faq"><summary>Does my child need to read Amharic?</summary><p>No. Every question has a picture, and a listen button reads it aloud. Today the listen button uses your device's Amharic voice when it has one; recorded narration by an Amharic-speaking teacher is being added during the pilot.</p></details>
+      <details class="faq"><summary>Which curriculum does it follow?</summary><p>The unit covers Grade 1 number skills found in international standards such as the US Common Core. Ethiopian teachers are reviewing how each lesson lines up with the Ethiopian Grade 1 syllabus, and we will publish that mapping once it is checked.</p></details>
+      <details class="faq"><summary>What ages is it for?</summary><p>Children about 5 to 8, or anyone working on numbers to 20. The starting game finds the right level.</p></details>
+      <details class="faq"><summary>Does it work on a phone with weak internet?</summary><p>Yes, it runs in a phone browser and the whole lesson loads at once, so it keeps working if the signal drops mid-lesson. Full offline use is not available yet.</p></details>
+      <details class="faq"><summary>What information do you collect?</summary><p>In the pilot, progress is saved only in this browser on this device, under a nickname you choose. We do not ask for your child's full name, photo or email. You can copy a backup code or delete everything from the grown-ups page.</p></details>
+      <details class="faq"><summary>Can our Saturday school or tutoring center use it?</summary><p>Yes. Class accounts with teacher assignments are planned after the family pilot. Email us to join the school waiting list.</p></details>
+    </div></section>
+    <footer><div class="wrap">© 2026 Luminary Kids · KingNigUs Academy · Luminary Academy. Original characters and illustrations. Pilot version: results and testimonials will be shared only after families have used it.</div></footer>
+    </main>`;
+  }
+
+  // ---------- child home ----------
+  function statusOf(sk) { return sk.status === 'mastered' ? 'mastered' : sk.history.length ? 'learning' : 'notStarted'; }
+  function levelStones(sk) {
+    const n = sk.status === 'mastered' ? 3 : sk.level - 1;
+    return `<span class="lv" aria-label="level ${sk.level} of 3">${[0, 1, 2].map((i) => `<i class="${i < n ? 'on' : ''}"></i>`).join('')}</span>`;
+  }
+  function home() {
+    const L = learner(); const p = active();
+    const rec = LK.recommend(L);
+    const recLesson = rec.skill ? LK.lessons.find((l) => l.id === rec.skill) : null;
+    const recTitle = rec.kind === 'diagnostic' ? { am: LK.ui.am.diagnostic, en: LK.ui.en.diagnostic } : recLesson.title;
+    const recLabel = rec.kind === 'review' ? { am: LK.ui.am.review, en: LK.ui.en.review } : rec.kind === 'complete' ? { am: LK.ui.am.unitDone, en: LK.ui.en.unitDone } : { am: LK.ui.am.recommended, en: LK.ui.en.recommended };
+    const hello = p ? { am: `ሰላም ${p.name}!`, en: `Hello ${p.name}!` } : { am: 'ሰላም!', en: 'Hello!' };
+    const stones = LK.lessons.map((l) => {
+      const sk = L.skills[l.id], locked = L.diagnosticDone && !LK.prereqsMet(L, l.id) && sk.status !== 'mastered';
+      return `<li><button class="stone" data-act="lesson" data-skill="${l.id}" data-locked="${locked ? 1 : 0}">${A.badge(l.n, sk.badge, l.title.en)}<span>${bi(l.title)}</span>${levelStones(sk)}</button></li>`;
+    }).join('');
+    const badges = LK.lessons.filter((l) => L.skills[l.id].badge).map((l) => A.badge(l.n, true, LK.badges[l.id].en)).join('');
+    return `<main class="wrap play home">
+      <div class="greet">${A.wali('welcome', 'Wali waving')}<div><h1 style="font-size:1.9rem">${bi(hello)}</h1></div></div>
+      <div class="next-card">${A.scene(recLesson ? recLesson.scene : 'garden', 'Lesson scene')}<div class="body"><span class="eyebrow">${bi(recLabel)}</span><h2>${bi(recTitle)}</h2>
+        <button class="btn adey" data-act="${rec.kind === 'diagnostic' ? 'diag' : rec.kind === 'review' ? 'review' : 'lesson'}" data-skill="${rec.skill || ''}">${uiBi('start')}</button></div></div>
+      <h2 style="font-size:1.3rem">${uiBi('lessons')}</h2>
+      <ol class="path">${stones}</ol>
+      <div class="garden"><b>${bi({ am: 'የዋሊ የአበባ ቦታ', en: "Wali's flower garden" })}</b><div class="row">${badges || `<span class="muted">${bi({ am: 'ትምህርት ሲችሉ አበባ ይበቅላል።', en: 'A flower grows for every lesson you master.' })}</span>`}</div></div>
+      ${S.run && S.run.guest ? '' : ''}
+    </main>`;
+  }
+
+  // ---------- runs: lesson, review, diagnostic ----------
+  function newRun(kind, skill, guest = false) {
+    const L = guest ? S.guest : learner();
+    const rng = LK.rng((Date.now() ^ (Math.random() * 1e9)) >>> 0);
+    const steps = [];
+    if (kind === 'lesson') {
+      steps.push({ k: 'story' }, { k: 'example' });
+      for (let i = 0; i < 6; i++) steps.push({ k: 'item', src: 'practice' });
+      for (let i = 0; i < 3; i++) steps.push({ k: 'item', src: 'game' });
+      steps.push({ k: 'done' });
+    } else if (kind === 'review') {
+      for (let i = 0; i < 3; i++) steps.push({ k: 'item', src: 'review' });
+      steps.push({ k: 'done' });
+    } else {
+      steps.push({ k: 'intro' });
+      LK.diagnosticItems(rng).forEach((it) => steps.push({ k: 'item', src: 'diag', item: it }));
+      steps.push({ k: 'done' });
+    }
+    S.run = { kind, skill, guest, rng, steps, i: 0, stars0: L.stars, events: [], diag: [], started: Date.now(), answered: 0, correct: 0 };
+    S.view = 'run';
+    enterStep();
+  }
+  function enterStep() {
+    const R = S.run, step = R.steps[R.i];
+    R.item = null; R.tries = 0; R.hints = 0; R.state = 'ask'; R.picked = null; R.tapped = []; R.built = new Set(); R.hintOn = false; R.msg = null;
+    if (step.k === 'item') {
+      const L = learner();
+      if (step.item) R.item = step.item;
+      else if (step.src === 'game') R.item = Object.assign(LK.buildItem(R.rng, R.skill === 'count10' ? 10 : 10), { skill: R.skill, level: L.skills[R.skill].level, id: 'build-' + R.i });
+      else if (step.src === 'review') R.item = LK.generate(R.skill, 3, R.rng);
+      else R.item = LK.generate(R.skill, L.skills[R.skill].level, R.rng);
+    }
+    render();
+    const h = $('.player h2, .player .prompt'); if (h) h.focus && h.focus({ preventScroll: true });
+  }
+  function textFor(item, which) {
+    const l = lang();
+    const t = item.thing ? LK.things[item.thing] : null;
+    const vars = (lg) => Object.assign({ thing: t ? t[lg][0] : '', things: t ? t[lg][1] : '' }, item.vars || {});
+    const src = which === 'hint' ? LK.hints[item.hint] : LK.prompts[item.prompt];
+    return { am: LK.fill(src.am, vars('am')), en: LK.fill(src.en, vars('en')), cur: LK.fill(src[l], vars(l)) };
+  }
+  function visualLabel(item) {
+    const v = item.visual, en = {
+      group: () => `${v.n} ${LK.things[v.thing].en[v.n === 1 ? 0 : 1]}`,
+      tenframes: () => `Two ten frames with ${v.filled} oranges: one full ten and ${v.filled - 10} more`,
+      tenframe: () => `A ten frame with ${v.filled} counters and ${10 - v.filled} empty spaces`,
+      compare: () => `Left tray has ${v.left} cups, right tray has ${v.right} cups`,
+      join: () => `${v.a} children in the bajaj and ${v.b} more getting in`,
+      takeaway: () => `${v.a} mangoes, ${v.b} crossed out because they fell`,
+      numberline: () => v.marks ? `Number line from ${v.min} to ${v.max} with ${v.marks[0]} and ${v.marks[1]} marked` : `Number line from ${v.min} to ${v.max}, starting at ${v.start}`,
+      maketen: () => `Ten frame with ${v.a} blue counters and a second ten frame with ${v.b} pink counters`,
+      buildframe: () => 'An empty ten frame. Tap a space to place a counter.'
+    }[v.kind];
+    return en ? en() : 'Math picture';
+  }
+
+  function itemView() {
+    const R = S.run, it = R.item, txt = textFor(it, 'prompt');
+    const v = Object.assign({}, it.visual);
+    if (v.kind === 'compare') v.labels = [U().left, U().right];
+    let vis = A.visual(v, visualLabel(it), R.hintOn || R.state === 'shown');
+    let answer = '';
+    if (it.input === 'choose') {
+      const isWordy = false;
+      answer = `<div class="opts ${it.options.length === 2 ? 'two' : ''}">${it.options.map((o) => {
+        const cls = R.state !== 'ask' && o === it.answer && (R.state === 'right' || R.state === 'shown') ? 'right' : R.picked === o && R.state !== 'right' ? 'wrong' : '';
+        return `<button class="opt tnum ${isWordy ? 'word' : ''} ${cls}" data-act="answer" data-v="${o}" ${R.state === 'right' || R.state === 'shown' ? 'disabled' : ''}>${o}</button>`;
+      }).join('')}</div>`;
+    } else if (it.input === 'pick') {
+      answer = `<div class="opts two">${['left', 'right'].map((s) => {
+        const cls = (R.state === 'right' || R.state === 'shown') && s === it.answer ? 'right' : R.picked === s && R.state !== 'right' ? 'wrong' : '';
+        return `<button class="opt word ${cls}" data-act="answer" data-v="${s}" ${R.state === 'right' || R.state === 'shown' ? 'disabled' : ''}>${s === 'left' ? '← ' : ''}${esc(U()[s])}${s === 'right' ? ' →' : ''}</button>`;
+      }).join('')}</div>`;
+    } else if (it.input === 'line') {
+      answer = `<p class="muted">${bi({ am: LK.ui.am.tapLine, en: LK.ui.en.tapLine })}</p>`;
+    } else if (it.input === 'build') {
+      answer = `<div class="actions"><span class="counted tnum" aria-live="polite">${R.built.size} / 10</span><span class="grow"></span><button class="btn" data-act="buildcheck" ${R.state === 'right' || R.state === 'shown' ? 'disabled' : ''}>${uiBi('check')}</button></div>`;
+    }
+    if (it.type === 'count' && R.state === 'ask') answer = `<p class="muted">${bi({ am: LK.ui.am.tapToCount, en: LK.ui.en.tapToCount })} <span class="counted tnum" aria-live="polite">${R.tapped.length ? R.tapped.length : ''}</span></p>` + answer;
+
+    const hint = R.hintOn ? `<div class="hintbox">${bi({ am: textFor(it, 'hint').am, en: textFor(it, 'hint').en })}</div>` : '';
+    let fb = '';
+    if (R.msg) {
+      const pose = R.state === 'right' ? 'celebrate' : R.state === 'shown' ? 'explain' : 'encourage';
+      fb = `<div class="feedback ${R.state === 'right' ? 'ok' : R.state === 'shown' ? 'show' : 'retry'} pop" role="status">${A.wali(pose, 'Wali')}<div>${bi(R.msg)}</div></div>`;
+    }
+    const done = R.state === 'right' || R.state === 'shown';
+    return `<div class="card">
+      <div class="prompt-row"><h2 class="prompt" tabindex="-1">${bi({ am: txt.am, en: txt.en })}</h2><button class="listen" data-act="speak" aria-label="${esc(U().listen)}">${ICON.speaker}</button></div>
+      <div class="visual" data-input="${it.input}" data-type="${it.type}">${vis}</div>
+      ${hint}${answer}${fb}
+      <div class="actions">${!done && it.input !== 'build' && !R.hintOn ? `<button class="btn alt small" data-act="hint">${ICON.bulb}${uiBi('hint')}</button>` : ''}${!done && it.input === 'build' && !R.hintOn ? `<button class="btn alt small" data-act="hint">${ICON.bulb}${uiBi('hint')}</button>` : ''}<span class="grow"></span>${done ? `<button class="btn adey" data-act="next">${uiBi('next')}</button>` : ''}</div>
+    </div>`;
+  }
+
+  function runView() {
+    const R = S.run, step = R.steps[R.i], L = learner();
+    const lesson = R.skill ? LK.lessons.find((l) => l.id === R.skill) : null;
+    const pct = Math.round((R.i / (R.steps.length - 1)) * 100);
+    let body = '';
+    if (step.k === 'intro') {
+      body = `<div class="card story"><div class="stage">${A.scene('meadow', 'A meadow of yellow Adey Abeba flowers')}${A.wali('welcome', 'Wali waving')}</div>
+        <div class="prompt-row"><h2 class="prompt" tabindex="-1">${uiBi('diagnosticIntro')}</h2><button class="listen" data-act="speak" aria-label="${esc(U().listen)}">${ICON.speaker}</button></div>
+        <div class="actions"><span class="grow"></span><button class="btn adey" data-act="next">${uiBi('start')}</button></div></div>`;
+    } else if (step.k === 'story') {
+      body = `<div class="card story"><span class="eyebrow">${bi({ am: `ትምህርት ${lesson.n}`, en: `Lesson ${lesson.n}` })}</span><h2 tabindex="-1">${bi(lesson.title)}</h2>
+        <div class="stage">${A.scene(lesson.scene, lesson.title.en)}${A.wali('welcome', 'Wali waving')}</div>
+        <div class="prompt-row"><p class="prompt" style="font-weight:400">${bi(lesson.story)}</p><button class="listen" data-act="speak" aria-label="${esc(U().listen)}">${ICON.speaker}</button></div>
+        <div class="actions"><span class="grow"></span><button class="btn adey" data-act="next">${uiBi('next')}</button></div></div>`;
+    } else if (step.k === 'example') {
+      body = `<div class="card"><span class="eyebrow">${uiBi('example')}</span>
+        <div class="feedback show">${A.wali('explain', 'Wali explaining')}<div class="prompt" style="font-weight:400;font-size:1.15rem">${bi(lesson.example)}</div></div>
+        <div class="visual">${exampleVisual(lesson.id)}</div>
+        <div class="actions"><button class="listen" data-act="speak" aria-label="${esc(U().listen)}">${ICON.speaker}</button><span class="grow"></span><button class="btn adey" data-act="next">${uiBi('practice')}</button></div></div>`;
+    } else if (step.k === 'item') {
+      const tag = step.src === 'game' ? uiBi('game') : step.src === 'review' ? uiBi('review') : step.src === 'diag' ? uiBi('diagnostic') : uiBi('practice');
+      body = `<span class="eyebrow">${tag}</span>` + itemView();
+    } else if (step.k === 'done') {
+      body = doneView();
+    }
+    return `<main class="wrap play player">
+      <div class="bar"><button class="btn alt small" data-act="home" aria-label="${esc(U().home)}">${ICON.back}</button><div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><i style="width:${pct}%"></i></div><span class="stars tnum">${ICON.star}${L.stars}</span></div>
+      ${body}</main>`;
+  }
+  function exampleVisual(id) {
+    switch (id) {
+      case 'count10': return A.group({ thing: 'flower', n: 6, layout: 'rows' }, '6 flowers');
+      case 'teens': return A.tenframes({ filled: 14, thing: 'orange' }, 'One full ten frame and four more oranges: 14');
+      case 'compare': return A.compare({ thing: 'cup', left: 6, right: 4 }, 'Left tray 6 cups, right tray 4 cups', [U().left, U().right]);
+      case 'add10': return A.join({ thing: 'child', a: 3, b: 2 }, '3 children and 2 more');
+      case 'sub10': return A.takeaway({ thing: 'mango', a: 7, b: 3 }, '7 mangoes with 3 crossed out');
+      case 'make10': return A.maketen({ a: 8, b: 5 }, '8 and 5: move 2 to make ten', true);
+    }
+    return '';
+  }
+  function doneView() {
+    const R = S.run, L = learner();
+    const earned = L.stars - R.stars0;
+    if (R.kind === 'diag') {
+      return `<div class="card done">${A.wali('celebrate', 'Wali celebrating')}<h2>${bi({ am: 'በጣም ጥሩ! ከየት እንደምንጀምር አሁን አውቀናል።', en: 'Great! Now we know where to start.' })}</h2>
+        <button class="btn adey" data-act="home">${uiBi('next')}</button></div>`;
+    }
+    const lesson = LK.lessons.find((l) => l.id === R.skill);
+    const badge = R.events.includes('badge');
+    return `<div class="card done">${badge ? A.badge(lesson.n, true, LK.badges[lesson.id].en) : A.wali('celebrate', 'Wali celebrating')}
+      <h2>${badge ? uiBi('badgeEarned') : uiBi('lessonDone')}</h2>
+      ${badge ? `<p>${bi(LK.badges[lesson.id])}</p>` : `<p>${uiBi('keepGoing')}</p>`}
+      <p class="stars tnum" style="justify-self:center">${ICON.star}+${earned}</p>
+      <div class="actions" style="justify-content:center"><button class="btn alt" data-act="lesson" data-skill="${R.skill}">${bi({ am: 'እንደገና', en: 'Play again' })}</button><button class="btn adey" data-act="home">${uiBi('home')}</button></div>
+      ${R.guest ? `<p class="muted">${bi({ am: 'ይህ ናሙና ነው። ለልጅዎ መገለጫ በማዘጋጀት እድገትን ያስቀምጡ።', en: 'This was a sample. Set up a profile for your child on the grown-ups page to save progress.' })}</p>` : ''}
+    </div>`;
+  }
+
+  // ---------- answering ----------
+  function finishItem(correct) {
+    const R = S.run, it = R.item, step = R.steps[R.i];
+    const result = { correct, tries: R.tries, hints: R.hints };
+    const L = learner();
+    if (step.src === 'diag') { R.diag.push({ item: it, result }); if (correct) L.stars += 1; }
+    else if (step.src === 'game') { if (correct) L.stars += 1; }
+    else {
+      const out = LK.record(L, it, result, Date.now(), step.src === 'review' ? 'review' : 'practice');
+      R.events.push(...out.events);
+      if (out.events.includes('show-example') && R.kind === 'lesson') R.steps.splice(R.i + 1, 0, { k: 'example' });
+    }
+    R.answered += 1; if (correct) R.correct += 1;
+    persist();
+  }
+  function answer(val) {
+    const R = S.run, it = R.item;
+    if (R.state === 'right' || R.state === 'shown') return;
+    R.tries += 1; R.picked = val;
+    const ok = LK.check(it, val);
+    if (ok) {
+      R.state = 'right';
+      const c = LK.ui.am.correct, ce = LK.ui.en.correct, k = Math.floor(Math.random() * c.length);
+      R.msg = { am: c[k], en: ce[k] };
+      finishItem(true);
+    } else if (R.tries < 2) {
+      R.state = 'retry'; R.msg = { am: LK.ui.am.tryAgain, en: LK.ui.en.tryAgain };
+    } else {
+      R.state = 'shown'; R.hintOn = true;
+      const shown = it.input === 'pick' ? (it.answer === 'left' ? U().left : U().right) : it.answer;
+      R.msg = { am: LK.fill(LK.ui.am.reveal, { ans: it.input === 'pick' ? LK.ui.am[it.answer] : shown }), en: LK.fill(LK.ui.en.reveal, { ans: it.input === 'pick' ? LK.ui.en[it.answer] : shown }) };
+      finishItem(false);
+    }
+    render();
+    if (R.state === 'right' || R.state === 'shown') speak(lang() === 'am' ? R.msg.am : R.msg.en, null, true);
+  }
+  function persist() {
+    const R = S.run;
+    if (R && R.guest) return;
+    save();
+  }
+  function closeRun() {
+    const R = S.run; if (!R || R.closed) return;
+    R.closed = true;
+    const L = learner();
+    if (R.kind === 'diag' && R.diag.length) LK.applyDiagnostic(L, R.diag);
+    if (R.answered) L.sessions.push({ start: R.started, end: Date.now(), kind: R.kind, skill: R.skill || null, answered: R.answered, correct: R.correct });
+    if (!R.guest) save();
+  }
+
+  // ---------- grown-ups ----------
+  function gateView() {
+    const g = S.gate;
+    return `<main class="wrap play parents"><div class="section"><h2>Grown-ups only</h2><p>To open this page, answer this question. It keeps children on the playing side.</p>
+      <form data-form="gate" class="formrow"><label for="gate-answer">What is ${g.a} × ${g.b}?</label><input id="gate-answer" type="number" inputmode="numeric" autocomplete="off" required>
+      ${g.err ? '<p style="color:var(--berry)">That is not right. Try again, or ask a grown-up.</p>' : ''}
+      <div class="actions"><button class="btn" type="submit">Open</button><button class="btn alt" type="button" data-act="${active() ? 'home' : 'landing'}">Back</button></div></form></div></main>`;
+  }
+  function fmtDate(t) { return t ? new Date(t).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : '—'; }
+  function parentsView() {
+    const p = active(); const s = st();
+    const kidsList = DB.profiles.map((k) => `<button class="kidbtn" data-act="pick-kid" data-id="${k.id}" aria-pressed="${k.id === DB.activeId}" aria-label="${esc(k.name)}">${A.kid(k.avatar, k.name)}</button>`).join('');
+    let report = '<p class="muted">Add a child profile to see a progress report.</p>';
+    if (p) {
+      const L = p.learner, rows = LK.report(L), rec = LK.recommend(L);
+      const answered = rows.reduce((a, r) => a + r.attempts, 0), first = rows.reduce((a, r) => a + r.firstTry, 0);
+      const mins = Math.round(L.sessions.reduce((a, x) => a + Math.min(30 * 6e4, x.end - x.start), 0) / 6e4);
+      const recText = rec.kind === 'diagnostic' ? 'Play the starting game' : rec.kind === 'review' ? `Review: ${LK.lessons.find((l) => l.id === rec.skill).title.en}` : rec.kind === 'complete' ? 'Unit complete — keep reviewing' : `Lesson ${LK.lessons.find((l) => l.id === rec.skill).n}: ${LK.lessons.find((l) => l.id === rec.skill).title.en}`;
+      const tagFor = (r) => r.status === 'mastered' ? (r.dueNow ? '<span class="tag adey">Review due</span>' : '<span class="tag field">Mastered</span>') : r.attempts ? '<span class="tag lake">Learning</span>' : '<span class="tag plain">Not started</span>';
+      report = `<div class="tiles"><div class="tile"><b class="tnum">${L.sessions.length}</b>sessions</div><div class="tile"><b class="tnum">${mins}</b>minutes</div><div class="tile"><b class="tnum">${answered}</b>questions</div><div class="tile"><b class="tnum">${answered ? Math.round((first / answered) * 100) + '%' : '—'}</b>right first try, no hint</div></div>
+        <p><b>Next:</b> ${esc(recText)}</p>
+        <div class="tablewrap"><table><thead><tr><th>Skill</th><th>Status</th><th>Level</th><th>First try</th><th>Hints</th><th>Next review</th></tr></thead><tbody>
+        ${rows.map((r) => { const l = LK.lessons.find((x) => x.id === r.id); return `<tr><td>${l.n}. ${esc(l.title.en)}<span class="en-sub am" lang="am">${esc(l.title.am)}</span></td><td>${tagFor(r)}</td><td class="tnum">${r.status === 'mastered' ? '3 ✓' : r.level + ' of 3'}${!r.attempts && p.learner.diagnosticDone ? '<span class="en-sub">set by starting game</span>' : ''}</td><td class="tnum">${r.attempts ? `${r.firstTry} of ${r.attempts}` : '—'}</td><td class="tnum">${r.attempts ? r.hints : '—'}</td><td class="tnum">${r.status === 'mastered' ? fmtDate(r.reviewDue) : '—'}</td></tr>`; }).join('')}
+        </tbody></table></div><p class="muted">Practice records show where to help. They are not test scores. Level rises after 4 of the last 5 questions are right on the first try without a hint, and drops after two unsolved questions in a row.</p>`;
+    }
+    const confirm = S.confirm ? `<div class="confirm" role="alert"><b>${S.confirm === 'wipe' ? 'Delete all profiles and progress on this device?' : `Remove ${esc((DB.profiles.find((k) => k.id === S.confirm) || {}).name || '')}'s profile and progress?`}</b><p>This cannot be undone unless you copied a backup code.</p><div class="actions"><button class="btn small" style="background:var(--berry);color:#fff" data-act="confirm-yes">Delete</button><button class="btn alt small" data-act="confirm-no">Keep</button></div></div>` : '';
+    return `<main class="wrap play parents">
+      <div class="actions"><h1 style="font-size:1.8rem" class="grow">Grown-ups</h1><button class="btn adey small" data-act="home" ${p ? '' : 'disabled'}>Back to playing</button></div>
+      ${S.parentMsg ? `<p class="panel" role="status">${esc(S.parentMsg)}</p>` : ''}
+      <div class="section"><h2 style="font-size:1.3rem">Children</h2><div class="kids">${kidsList || '<p class="muted">No profiles yet.</p>'}</div>
+        <form data-form="addkid" class="formrow"><label for="kid-name">Add a child: nickname only</label><input id="kid-name" type="text" maxlength="20" placeholder="e.g. Selam" autocomplete="off" required>
+          <span class="muted">Choose a picture</span><div class="kids" role="radiogroup">${A.kidIds.map((k, i) => `<label class="kidbtn" style="display:inline-block"><input type="radio" name="avatar" value="${k}" ${i === 0 ? 'checked' : ''} style="position:absolute;opacity:0">${A.kid(k, k)}</label>`).join('')}</div>
+          <div class="actions"><button class="btn" type="submit">Add child</button>${p ? `<button class="btn alt small" type="button" data-act="remove-kid" data-id="${p.id}">Remove ${esc(p.name)}</button>` : ''}</div></form></div>
+      ${confirm}
+      <div class="section"><h2 style="font-size:1.3rem">${p ? `${esc(p.name)}'s progress` : 'Progress'}</h2>${report}</div>
+      <div class="section"><h2 style="font-size:1.3rem">Settings</h2>
+        <label class="toggle"><input type="checkbox" id="set-en" data-set="showEn" ${s.showEn ? 'checked' : ''}> Show English under Amharic</label>
+        <label class="toggle"><input type="checkbox" id="set-motion" data-set="reduce" ${s.reduce ? 'checked' : ''}> Reduce motion</label>
+        <p class="muted">Narration: ${voiceFor('am') ? 'an Amharic voice was found on this device.' : 'this device has no Amharic voice, so the listen button shows a note instead. Recorded narration is being added.'}</p>
+      </div>
+      <div class="section"><h2 style="font-size:1.3rem">Backup and privacy</h2>
+        <p>Progress is saved only in this browser on this device. Nothing is sent to us during this pilot build. Copy a backup code to move progress to another device or browser.</p>
+        <div class="actions"><button class="btn alt small" data-act="backup">Copy backup code</button></div>
+        <form data-form="restore" class="formrow"><label for="restore-code">Restore from a backup code</label><textarea id="restore-code" required></textarea><div class="actions"><button class="btn alt small" type="submit">Restore</button><button class="btn alt small" type="button" data-act="wipe">Delete everything on this device</button></div></form>
+      </div></main>`;
+  }
+
+  // ---------- render ----------
+  function render() {
+    applySettings();
+    let main = '';
+    if (S.view === 'landing') main = landing();
+    else if (S.view === 'home') main = home();
+    else if (S.view === 'run') main = runView();
+    else if (S.view === 'gate') main = gateView();
+    else if (S.view === 'parents') main = parentsView();
+    root.innerHTML = header() + main;
+  }
+  function go(view) { S.view = view; render(); window.scrollTo(0, 0); }
+
+  // ---------- events ----------
+  root.addEventListener('click', (e) => {
+    const R = S.run;
+    // Taps inside math pictures
+    const vis = e.target.closest('.visual');
+    if (vis && R && R.item && R.state !== 'right' && R.state !== 'shown') {
+      const it = R.item;
+      const obj = e.target.closest('[data-obj]');
+      if (it.type === 'count' && obj) {
+        const i = obj.getAttribute('data-i');
+        if (!R.tapped.includes(i)) {
+          R.tapped.push(i); obj.classList.add('tapped');
+          const ns = 'http://www.w3.org/2000/svg';
+          const c = document.createElementNS(ns, 'circle'); c.setAttribute('r', '11'); c.setAttribute('class', 'tapdot'); c.setAttribute('cy', '-2');
+          const t = document.createElementNS(ns, 'text'); t.setAttribute('class', 'tapnum'); t.setAttribute('text-anchor', 'middle'); t.setAttribute('y', '3'); t.textContent = R.tapped.length;
+          const g = document.createElementNS(ns, 'g'); g.appendChild(c); g.appendChild(t); obj.parentNode.insertBefore(g, obj.nextSibling);
+          g.setAttribute('transform', obj.getAttribute('transform'));
+          const lbl = $('.counted', root); if (lbl) lbl.textContent = R.tapped.length;
+          if (lang() === 'am') speak(LK.numWords.am[R.tapped.length] || String(R.tapped.length)); else speak(LK.numWords.en[R.tapped.length] || String(R.tapped.length));
+        }
+        return;
+      }
+      const side = e.target.closest('[data-side]');
+      if (it.input === 'pick' && side) { answer(side.getAttribute('data-side')); return; }
+      const tick = e.target.closest('[data-n]');
+      if (it.input === 'line' && tick) { answer(Number(tick.getAttribute('data-n'))); return; }
+      const cell = e.target.closest('[data-cell]');
+      if (it.input === 'build' && cell) { toggleCell(cell); return; }
+    }
+    const b = e.target.closest('[data-act]'); if (!b) return;
+    const act = b.getAttribute('data-act');
+    if (act === 'lang') { st().lang = b.getAttribute('data-v'); save(); render(); return; }
+    if (act === 'landing') { S.run = null; go('landing'); return; }
+    if (act === 'home') {
+      if (R) { closeRun(); const wasGuest = R.guest; S.run = null; if (wasGuest && !active()) { go('landing'); return; } }
+      go(active() || S.guest ? 'home' : 'landing'); return;
+    }
+    if (act === 'gate') { S.gate = { a: 6 + Math.floor(Math.random() * 4), b: 6 + Math.floor(Math.random() * 4), err: false }; if (R) { closeRun(); S.run = null; } go('gate'); return; }
+    if (act === 'sample') { S.guest = LK.newLearner(); S.guest.diagnosticDone = true; newRun('lesson', b.getAttribute('data-skill'), true); window.scrollTo(0, 0); return; }
+    if (act === 'lesson') { const sk = b.getAttribute('data-skill'); if (R) closeRun(); newRun('lesson', sk, R ? R.guest : !active()); window.scrollTo(0, 0); return; }
+    if (act === 'review') { newRun('review', b.getAttribute('data-skill')); return; }
+    if (act === 'diag') { newRun('diag', null); return; }
+    if (act === 'next') { R.i = Math.min(R.i + 1, R.steps.length - 1); if (R.steps[R.i].k === 'done') closeRun(); enterStep(); window.scrollTo(0, 0); return; }
+    if (act === 'answer') { const v = b.getAttribute('data-v'); answer(R.item.input === 'pick' ? v : Number(v)); return; }
+    if (act === 'hint') { R.hints += 1; R.hintOn = true; render(); speak(textFor(R.item, 'hint').cur); return; }
+    if (act === 'buildcheck') { answer(R.built.size); return; }
+    if (act === 'speak') { speak(currentSpeech(), null, false); return; }
+    if (act === 'reserve') { S.reserve = true; render(); const el = $('#pilot'); if (el) el.scrollIntoView({ block: 'start' }); return; }
+    if (act === 'copy') { const el = document.getElementById(b.getAttribute('data-target')); copyText(el.textContent, el); return; }
+    if (act === 'pick-kid') { DB.activeId = b.getAttribute('data-id'); save(); render(); return; }
+    if (act === 'remove-kid') { S.confirm = b.getAttribute('data-id'); render(); return; }
+    if (act === 'wipe') { S.confirm = 'wipe'; render(); return; }
+    if (act === 'confirm-no') { S.confirm = null; render(); return; }
+    if (act === 'confirm-yes') {
+      if (S.confirm === 'wipe') { DB.profiles = []; DB.activeId = null; try { localStorage.removeItem(STORE); } catch (err) { /* ignore */ } S.parentMsg = 'Everything on this device was deleted.'; }
+      else { DB.profiles = DB.profiles.filter((k) => k.id !== S.confirm); if (DB.activeId === S.confirm) DB.activeId = DB.profiles[0] ? DB.profiles[0].id : null; save(); S.parentMsg = 'Profile removed.'; }
+      S.confirm = null; render(); return;
+    }
+    if (act === 'backup') {
+      let code = '';
+      try { code = btoa(unescape(encodeURIComponent(JSON.stringify(DB)))); } catch (err) { code = ''; }
+      copyText(code, null); S.parentMsg = 'Backup code copied. Paste it somewhere safe, such as a note to yourself.'; render(); return;
+    }
+  });
+  root.addEventListener('keydown', (e) => {
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('.tap[tabindex]')) { e.preventDefault(); e.target.dispatchEvent(new MouseEvent('click', { bubbles: true })); }
+  });
+  root.addEventListener('change', (e) => {
+    const k = e.target.getAttribute('data-set'); if (!k) return;
+    st()[k] = e.target.checked; save(); render();
+  });
+  root.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = e.target.getAttribute('data-form');
+    if (f === 'gate') {
+      const v = Number($('#gate-answer').value);
+      if (v === S.gate.a * S.gate.b) { S.parentMsg = ''; go('parents'); } else { S.gate.err = true; render(); }
+    } else if (f === 'addkid') {
+      const name = $('#kid-name').value.trim().slice(0, 20); if (!name) return;
+      const av = (e.target.querySelector('input[name="avatar"]:checked') || {}).value || 'selam';
+      const id = 'k' + Date.now().toString(36);
+      DB.profiles.push({ id, name, avatar: av, learner: LK.newLearner() }); DB.activeId = id;
+      S.parentMsg = save() ? `${name} was added. Tap “Back to playing” to start with the starting game.` : `${name} was added for this visit, but this browser is not saving data, so progress will be lost when the page closes.`;
+      render();
+    } else if (f === 'restore') {
+      try {
+        const data = JSON.parse(decodeURIComponent(escape(atob($('#restore-code').value.trim()))));
+        if (!data || !Array.isArray(data.profiles)) throw new Error('bad');
+        DB.profiles = data.profiles; DB.activeId = data.activeId; DB.settings = Object.assign(DB.settings, data.settings || {});
+        save(); S.parentMsg = `Restored ${data.profiles.length} profile(s).`;
+      } catch (err) { S.parentMsg = 'That code could not be read. Copy the whole code and try again.'; }
+      render();
+    }
+  });
+
+  function toggleCell(cell) {
+    const R = S.run, i = cell.getAttribute('data-cell');
+    const ns = 'http://www.w3.org/2000/svg';
+    if (R.built.has(i)) { R.built.delete(i); const g = cell.querySelector('[data-obj]'); if (g) g.remove(); cell.setAttribute('data-filled', '0'); }
+    else {
+      R.built.add(i); cell.setAttribute('data-filled', '1');
+      const r = cell.querySelector('rect'); const x = +r.getAttribute('x') + 25, y = +r.getAttribute('y') + 25;
+      const g = document.createElementNS(ns, 'g'); g.setAttribute('data-obj', 'counter'); g.setAttribute('transform', `translate(${x} ${y})`);
+      const c = document.createElementNS(ns, 'circle'); c.setAttribute('r', '16'); c.setAttribute('class', 'mv-counter'); g.appendChild(c); cell.appendChild(g);
+    }
+    const lbl = $('.counted', root); if (lbl) lbl.textContent = `${R.built.size} / 10`;
+  }
+  function currentSpeech() {
+    const R = S.run; if (!R) return '';
+    const step = R.steps[R.i], l = lang();
+    const lesson = R.skill ? LK.lessons.find((x) => x.id === R.skill) : null;
+    if (step.k === 'intro') return U().diagnosticIntro;
+    if (step.k === 'story') return lesson.title[l] + '. ' + lesson.story[l];
+    if (step.k === 'example') return lesson.example[l];
+    if (step.k === 'item') return textFor(R.item, 'prompt').cur;
+    return '';
+  }
+  function copyText(text, el) {
+    const done = () => toast('Copied');
+    try {
+      navigator.clipboard.writeText(text).then(done, () => fallback());
+    } catch (err) { fallback(); }
+    function fallback() {
+      if (el) { const r = document.createRange(); r.selectNodeContents(el); const s = window.getSelection(); s.removeAllRanges(); s.addRange(r); toast('Press copy on your keyboard or menu'); }
+      else { S.parentMsg = 'Copy did not work here. Your code: ' + text; render(); }
+    }
+  }
+
+  // ---------- start ----------
+  if (location.hash === '#parents') S.gate = { a: 7, b: 8, err: false }, S.view = 'gate';
+  else if (active()) S.view = 'home';
+  render();
+  LK.app = { S, DB, render, newRun };
+})();
+</script>
