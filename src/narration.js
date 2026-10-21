@@ -78,7 +78,7 @@
 
   // Load the list of recorded clips (fails quietly where there is no server).
   N.load = function () {
-    if (typeof fetch === 'undefined') return Promise.resolve(0);
+    if (typeof fetch === 'undefined' || (G.location && G.location.protocol === 'file:')) return Promise.resolve(0);
     return fetch('audio/manifest.json', { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : { files: [] }))
       .then((m) => { (m.files || []).forEach((f) => { N.clips[f.key] = 'audio/am/' + f.file; }); return Object.keys(N.clips).length; })
