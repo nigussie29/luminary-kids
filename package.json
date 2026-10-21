@@ -1,0 +1,14 @@
+{
+  "name": "luminary-kids",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Luminary Kids — Amharic-first Grade 1 math pilot",
+  "scripts": {
+    "build": "node build.js",
+    "test": "node --test test/engine.test.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
