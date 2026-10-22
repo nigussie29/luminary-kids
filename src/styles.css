@@ -266,3 +266,17 @@ textarea { min-height: 90px; }
 .brand > span { min-width: 0; }
 @media (max-width: 480px) { .hide-sm { display: none; } .brand b { font-size: 1rem; } }
 .mv .mv-marknum { fill: var(--ink); font-family: var(--f-display); font-weight: 800; font-size: 44px; }
+
+/* legal pages */
+.legal { padding-block: 20px 48px; display: grid; gap: 16px; max-width: 760px; }
+.legal h1 { font-size: clamp(1.7rem, 5vw, 2.3rem); }
+.legal-sec { display: grid; gap: 6px; }
+.legal-sec h2 { font-size: 1.15rem; }
+.legal-sec p { max-width: 65ch; }
+.legal mark { background: var(--adey-soft); color: var(--adey-ink); border-radius: 4px; padding: 0 3px; }
+.draft-note { background: var(--berry-soft); color: var(--ink); border-radius: 12px; padding: 10px 14px; }
+.footer-row { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
+.footer-row > span { flex: 1 1 320px; min-width: 0; }
+.footer-links { display: flex; gap: 12px; }
+.linkbtn.inline { min-height: 0; padding: 0; text-decoration: underline; font-weight: 600; }
+.copyable { user-select: all; }

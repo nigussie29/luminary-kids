@@ -272,6 +272,20 @@ textarea { min-height: 90px; }
 .brand > span { min-width: 0; }
 @media (max-width: 480px) { .hide-sm { display: none; } .brand b { font-size: 1rem; } }
 .mv .mv-marknum { fill: var(--ink); font-family: var(--f-display); font-weight: 800; font-size: 44px; }
+
+/* legal pages */
+.legal { padding-block: 20px 48px; display: grid; gap: 16px; max-width: 760px; }
+.legal h1 { font-size: clamp(1.7rem, 5vw, 2.3rem); }
+.legal-sec { display: grid; gap: 6px; }
+.legal-sec h2 { font-size: 1.15rem; }
+.legal-sec p { max-width: 65ch; }
+.legal mark { background: var(--adey-soft); color: var(--adey-ink); border-radius: 4px; padding: 0 3px; }
+.draft-note { background: var(--berry-soft); color: var(--ink); border-radius: 12px; padding: 10px 14px; }
+.footer-row { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
+.footer-row > span { flex: 1 1 320px; min-width: 0; }
+.footer-links { display: flex; gap: 12px; }
+.linkbtn.inline { min-height: 0; padding: 0; text-decoration: underline; font-weight: 600; }
+.copyable { user-select: all; }
 </style>
 <div id="app"></div>
 <script>/* Luminary Kids — strings. Every Amharic string here is a DRAFT awaiting
@@ -1133,6 +1147,71 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
 if (typeof module !== 'undefined') module.exports = globalThis.LK;
 
 ;
+/* Luminary Kids — privacy notice and terms (DRAFT for lawyer review).
+   Fill the COMPANY fields once the business is registered. Bracketed values render highlighted. */
+(function (G) {
+  const LK = (G.LK = G.LK || {});
+  const COMPANY = {
+    name: '[Company legal name, e.g. Luminary EdTech LLC]',
+    state: '[State of registration]',
+    address: '[Mailing address]',
+    email: 'support@theluminaryacademy.net',
+    effective: '[Effective date]'
+  };
+  LK.company = COMPANY;
+
+  const C = COMPANY;
+  LK.legal = {
+    privacy: {
+      title: 'Privacy notice for parents',
+      am: {
+        title: 'ለወላጆች የግላዊነት ማሳሰቢያ (አጭር)',
+        points: [
+          'ሉሚናሪ ኪድስን ልጆች የሚጠቀሙት ወላጅ ወይም አሳዳጊ በሚያዘጋጀው መገለጫ ብቻ ነው።',
+          'በአሁኑ የሙከራ ስሪት የልጅዎ ቅጽል ስምና የልምምድ መረጃ በዚህ መሣሪያ ላይ ብቻ ይቀመጣል፤ ወደ እኛ አይላክም።',
+          'የልጅዎን ሙሉ ስም፣ ፎቶ፣ ኢሜይል ወይም አድራሻ አንጠይቅም።',
+          'ማስታወቂያ የለም። የልጆችን መረጃ አንሸጥም፤ የኤአይ ሞዴሎችን ለማሰልጠን አንጠቀምበትም።',
+          'መረጃውን ለማየት ወይም ለማጥፋት በኢሜይል ይጻፉልን፦ ' + C.email
+        ]
+      },
+      sections: [
+        ['Who we are', `Luminary Kids (የሂሳብ ጀብዱ) is a math practice app offered by ${C.name}, registered in ${C.state}, under the names Luminary Academy and KingNigUs Academy. Contact us at ${C.email} or ${C.address}.`],
+        ['Who this notice is for', 'This notice is written for parents and guardians. Children use Luminary Kids only through a profile that a parent or guardian creates and supervises. Purchases are made by adults only.'],
+        ['What the current pilot version collects', 'In the current version, everything your child does stays in the browser on your device: the nickname you choose, the picture you pick, and practice records (questions answered, hints used, level per skill). None of it is sent to us. We do not ask for a child\'s full name, photo, email, phone number, address or location, and the app has no advertising or tracking tools.'],
+        ['Services that see technical information', 'When the app loads, two services receive the technical information any website receives, such as your device\'s IP address and browser type: our hosting provider (Railway), which serves the app, and Google Fonts, which supplies the lettering for Amharic and English. Neither receives your child\'s nickname or practice records.'],
+        ['When paid pilot accounts start', 'When we add parent accounts, we will collect your email address and keep your child\'s nickname and practice records on our servers so progress follows your child across devices and appears in your weekly report. Payments are handled by Stripe; we never see or store your full card number. We will ask for your consent before any child information leaves your device, and we will update this notice before that happens.'],
+        ['How we use information', 'Only to run Luminary Kids: to show lessons at the right level, schedule review, produce your progress report, provide support, and improve the lessons using combined, non-identifying statistics.'],
+        ['What we never do', 'We do not sell personal information. We do not show advertising. We do not use children\'s information to train artificial intelligence models. We do not share children\'s information with third parties except the service providers that run the app for us, under contracts that limit their use to that purpose. If that ever needs to change, we will ask for your separate consent first.'],
+        ['How long we keep it', 'Information stored on your device stays until you delete it from the grown-ups page or clear your browser. Once accounts exist, we will delete a child\'s records 12 months after the last activity, or within 30 days of your request. We keep payment records as long as tax law requires.'],
+        ['Your choices and rights', `You can review, copy or delete your child's information at any time on the grown-ups page. Once accounts exist, you can also ask us by email to review or delete your child's information or to stop collecting it. Write to ${C.email}; we reply within 10 working days.`],
+        ['Children\'s privacy laws', 'We design Luminary Kids to meet the US Children\'s Online Privacy Protection Act (COPPA), including verifiable parental consent, a written retention policy and a written information security program, and we follow the UK Age Appropriate Design Code principles for children in the UK.'],
+        ['Families outside the United States', 'Once accounts exist, information will be stored in the United States. For families in Ethiopia and elsewhere, we will explain this and ask for your consent to the transfer when you create an account.'],
+        ['Security', 'We limit access to children\'s information to the people who need it to run the service, encrypt it in transit, and review our safeguards at least once a year.'],
+        ['Changes to this notice', 'We will tell parents about important changes before they take effect, by email once accounts exist and on this page.']
+      ]
+    },
+    terms: {
+      title: 'Terms of use and pilot terms',
+      sections: [
+        ['Who we are', `These terms are an agreement between you and ${C.name} ("we"), which offers Luminary Kids. Contact: ${C.email}.`],
+        ['Who may use Luminary Kids', 'Purchases and account set-up are for adults aged 18 or over. Children may use Luminary Kids only through a profile created and supervised by their parent or guardian.'],
+        ['The Founding Families pilot', 'The pilot is a single payment of USD 29 for 6 weeks of access to the Grade 1 unit for up to two children in one family, a weekly progress email, and two calls with our team. It does not renew automatically and there is nothing to cancel. The price is a test price for the pilot and may differ for later plans.'],
+        ['Refunds', `You can get a full refund within 14 days of payment, for any reason, by emailing ${C.email}. Refunds go back to the original payment method.`],
+        ['Future subscriptions', 'If you later choose a monthly or yearly plan, we will show the price, billing date and renewal terms before you pay. Plans renew until you cancel. You can cancel at any time from your account, and cancellation takes effect at the end of the paid period. We will email a reminder before each yearly renewal.'],
+        ['Pilot software', 'Luminary Kids is in an early pilot. Lessons, Amharic wording and features are still being reviewed and may change. Some features, such as recorded narration and syncing across devices, may not be available during the pilot.'],
+        ['Educational purpose', 'Luminary Kids is a practice tool. It does not replace a teacher or school, and we do not promise specific test results. Progress records are practice information, not test scores.'],
+        ['Acceptable use', 'Please do not copy, resell or redistribute the app, try to access other families\' information, or disrupt the service.'],
+        ['Our content', `The characters (including Wali), illustrations, lessons and software are owned by ${C.name} or its licensors. Your purchase gives your family a personal, non-transferable right to use them for the paid period.`],
+        ['Liability', '[To be completed with legal advice: limitation of liability and disclaimer appropriate to the state of registration.]'],
+        ['Governing law', `These terms are governed by the laws of ${C.state}, except where the law where you live gives you rights that cannot be waived.`],
+        ['Changes', 'If we change these terms, we will post the new version here and tell current customers before the change takes effect.']
+      ]
+    }
+  };
+})(typeof globalThis !== 'undefined' ? globalThis : window);
+if (typeof module !== 'undefined') module.exports = globalThis.LK;
+
+;
 /* Luminary Kids — interface. Depends on LK (i18n, engine, art). */
 (function () {
   const LK = window.LK, A = LK.art;
@@ -1298,7 +1377,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
       </div>
       <div class="price"><span class="tag">Founding-family test price</span><span class="amt tnum">$29</span><span>one payment for 6 weeks · no automatic renewal</span>
         <button class="btn adey" data-act="reserve">Reserve a pilot place</button>${reserve}
-        <div class="terms"><p><b>Refunds:</b> full refund within 14 days of payment, for any reason.</p><p><b>After the pilot:</b> nothing renews automatically. If you choose a monthly or yearly plan later, it renews until you cancel, and you can cancel any time from your account.</p><p>For parents and guardians only. Children under 13 use Luminary Kids through a profile a parent creates.</p></div>
+        <div class="terms"><p><b>Refunds:</b> full refund within 14 days of payment, for any reason.</p><p><b>After the pilot:</b> nothing renews automatically. If you choose a monthly or yearly plan later, it renews until you cancel, and you can cancel any time from your account.</p><p>For parents and guardians only. Children under 13 use Luminary Kids through a profile a parent creates.</p><p>Read the <button class="linkbtn inline" data-act="legal" data-v="terms">pilot terms</button> and <button class="linkbtn inline" data-act="legal" data-v="privacy">privacy notice</button>.</p></div>
       </div>
     </div></section>
 
@@ -1308,10 +1387,10 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
       <details class="faq"><summary>Which curriculum does it follow?</summary><p>The unit covers Grade 1 number skills found in international standards such as the US Common Core. Ethiopian teachers are reviewing how each lesson lines up with the Ethiopian Grade 1 syllabus, and we will publish that mapping once it is checked.</p></details>
       <details class="faq"><summary>What ages is it for?</summary><p>Children about 5 to 8, or anyone working on numbers to 20. The starting game finds the right level.</p></details>
       <details class="faq"><summary>Does it work on a phone with weak internet?</summary><p>Yes, it runs in a phone browser and the whole lesson loads at once, so it keeps working if the signal drops mid-lesson. Full offline use is not available yet.</p></details>
-      <details class="faq"><summary>What information do you collect?</summary><p>In the pilot, progress is saved only in this browser on this device, under a nickname you choose. We do not ask for your child's full name, photo or email. You can copy a backup code or delete everything from the grown-ups page.</p></details>
+      <details class="faq"><summary>What information do you collect?</summary><p>In the pilot, progress is saved only in this browser on this device, under a nickname you choose. We do not ask for your child's full name, photo or email. You can copy a backup code or delete everything from the grown-ups page. Details are in our <button class="linkbtn inline" data-act="legal" data-v="privacy">privacy notice</button>.</p></details>
       <details class="faq"><summary>Can our Saturday school or tutoring center use it?</summary><p>Yes. Class accounts with teacher assignments are planned after the family pilot. Email us to join the school waiting list.</p></details>
     </div></section>
-    <footer><div class="wrap">© 2026 Luminary Kids · KingNigUs Academy · Luminary Academy. Original characters and illustrations. Pilot version: results and testimonials will be shared only after families have used it.</div></footer>
+    <footer><div class="wrap footer-row"><span>© 2026 Luminary Kids · KingNigUs Academy · Luminary Academy. Original characters and illustrations. Pilot version: results and testimonials will be shared only after families have used it.</span><nav class="footer-links" aria-label="Legal"><button class="linkbtn" data-act="legal" data-v="privacy">Privacy notice</button><button class="linkbtn" data-act="legal" data-v="terms">Terms</button></nav></div></footer>
     </main>`;
   }
 
@@ -1596,6 +1675,23 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
       </div></main>`;
   }
 
+  // ---------- privacy notice and terms ----------
+  function legalView(kind) {
+    const L = LK.legal[kind];
+    const mark = (t) => esc(t).replace(/\[([^\]]+)\]/g, '<mark>[$1]</mark>');
+    const am = L.am ? `<section class="section am-summary" lang="am"><h2 style="font-size:1.25rem">${esc(L.am.title)}</h2><ul class="checks">${L.am.points.map((x) => `<li class="am">${esc(x)}</li>`).join('')}</ul><p class="muted" lang="en">Amharic summary: draft awaiting review by an Amharic-speaking educator.</p></section>` : '';
+    return `<main class="wrap play legal">
+      <div class="actions"><button class="btn alt small" data-act="${active() ? 'home' : 'landing'}">${ICON.back}Back</button></div>
+      <p class="draft-note" role="note"><b>Draft.</b> This ${kind === 'privacy' ? 'notice' : 'agreement'} is being reviewed by a lawyer and is not yet in effect. Highlighted details are added once the company is registered.</p>
+      <h1>${esc(L.title)}</h1>
+      <p class="muted">Effective date: ${mark(LK.company.effective)}</p>
+      ${am}
+      ${L.sections.map(([h, t]) => `<section class="legal-sec"><h2>${esc(h)}</h2><p>${mark(t)}</p></section>`).join('')}
+      <p class="muted">Questions: <span class="copyable">${esc(LK.company.email)}</span></p>
+      <div class="actions"><button class="linkbtn" data-act="legal" data-v="${kind === 'privacy' ? 'terms' : 'privacy'}">${kind === 'privacy' ? 'Read the terms' : 'Read the privacy notice'}</button></div>
+    </main>`;
+  }
+
   // ---------- render ----------
   function render() {
     applySettings();
@@ -1605,6 +1701,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     else if (S.view === 'run') main = runView();
     else if (S.view === 'gate') main = gateView();
     else if (S.view === 'parents') main = parentsView();
+    else if (S.view === 'privacy' || S.view === 'terms') main = legalView(S.view);
     root.innerHTML = header() + main;
   }
   function go(view) { S.view = view; render(); window.scrollTo(0, 0); }
@@ -1642,6 +1739,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     const act = b.getAttribute('data-act');
     if (act === 'lang') { st().lang = b.getAttribute('data-v'); save(); render(); return; }
     if (act === 'landing') { S.run = null; go('landing'); return; }
+    if (act === 'legal') { if (R) { closeRun(); S.run = null; } go(b.getAttribute('data-v')); return; }
     if (act === 'home') {
       if (R) { closeRun(); const wasGuest = R.guest; S.run = null; if (wasGuest && !active()) { go('landing'); return; } }
       go(active() || S.guest ? 'home' : 'landing'); return;
@@ -1743,7 +1841,9 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
   }
 
   // ---------- start ----------
-  if (location.hash === '#parents') S.gate = { a: 7, b: 8, err: false }, S.view = 'gate';
+  const route = (location.hash || '').slice(1) || location.pathname.replace(/^\//, '');
+  if (route === 'privacy' || route === 'terms') S.view = route;
+  else if (route === 'parents') S.gate = { a: 7, b: 8, err: false }, S.view = 'gate';
   else if (active()) S.view = 'home';
   render();
   NR.load().then((n) => { if (n) S.clips = n; });

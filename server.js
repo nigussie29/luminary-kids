@@ -43,7 +43,7 @@ http.createServer((req, res) => {
     if (req.method === 'HEAD') { res.end(); return; }
     fs.createReadStream(file).pipe(res); return;
   }
-  if (url !== '/' && url !== '/index.html') { res.writeHead(302, { Location: '/' }); res.end(); return; }
+  if (!['/', '/index.html', '/privacy', '/terms'].includes(url)) { res.writeHead(302, { Location: '/' }); res.end(); return; }
   const gz = /\bgzip\b/.test(req.headers['accept-encoding'] || '');
   res.writeHead(200, Object.assign({ 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-cache' }, security, gz ? { 'Content-Encoding': 'gzip', Vary: 'Accept-Encoding' } : {}));
   res.end(req.method === 'HEAD' ? undefined : gz ? pageGz : page);

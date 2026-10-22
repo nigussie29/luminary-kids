@@ -163,7 +163,7 @@
       </div>
       <div class="price"><span class="tag">Founding-family test price</span><span class="amt tnum">$29</span><span>one payment for 6 weeks · no automatic renewal</span>
         <button class="btn adey" data-act="reserve">Reserve a pilot place</button>${reserve}
-        <div class="terms"><p><b>Refunds:</b> full refund within 14 days of payment, for any reason.</p><p><b>After the pilot:</b> nothing renews automatically. If you choose a monthly or yearly plan later, it renews until you cancel, and you can cancel any time from your account.</p><p>For parents and guardians only. Children under 13 use Luminary Kids through a profile a parent creates.</p></div>
+        <div class="terms"><p><b>Refunds:</b> full refund within 14 days of payment, for any reason.</p><p><b>After the pilot:</b> nothing renews automatically. If you choose a monthly or yearly plan later, it renews until you cancel, and you can cancel any time from your account.</p><p>For parents and guardians only. Children under 13 use Luminary Kids through a profile a parent creates.</p><p>Read the <button class="linkbtn inline" data-act="legal" data-v="terms">pilot terms</button> and <button class="linkbtn inline" data-act="legal" data-v="privacy">privacy notice</button>.</p></div>
       </div>
     </div></section>
 
@@ -173,10 +173,10 @@
       <details class="faq"><summary>Which curriculum does it follow?</summary><p>The unit covers Grade 1 number skills found in international standards such as the US Common Core. Ethiopian teachers are reviewing how each lesson lines up with the Ethiopian Grade 1 syllabus, and we will publish that mapping once it is checked.</p></details>
       <details class="faq"><summary>What ages is it for?</summary><p>Children about 5 to 8, or anyone working on numbers to 20. The starting game finds the right level.</p></details>
       <details class="faq"><summary>Does it work on a phone with weak internet?</summary><p>Yes, it runs in a phone browser and the whole lesson loads at once, so it keeps working if the signal drops mid-lesson. Full offline use is not available yet.</p></details>
-      <details class="faq"><summary>What information do you collect?</summary><p>In the pilot, progress is saved only in this browser on this device, under a nickname you choose. We do not ask for your child's full name, photo or email. You can copy a backup code or delete everything from the grown-ups page.</p></details>
+      <details class="faq"><summary>What information do you collect?</summary><p>In the pilot, progress is saved only in this browser on this device, under a nickname you choose. We do not ask for your child's full name, photo or email. You can copy a backup code or delete everything from the grown-ups page. Details are in our <button class="linkbtn inline" data-act="legal" data-v="privacy">privacy notice</button>.</p></details>
       <details class="faq"><summary>Can our Saturday school or tutoring center use it?</summary><p>Yes. Class accounts with teacher assignments are planned after the family pilot. Email us to join the school waiting list.</p></details>
     </div></section>
-    <footer><div class="wrap">© 2026 Luminary Kids · KingNigUs Academy · Luminary Academy. Original characters and illustrations. Pilot version: results and testimonials will be shared only after families have used it.</div></footer>
+    <footer><div class="wrap footer-row"><span>© 2026 Luminary Kids · KingNigUs Academy · Luminary Academy. Original characters and illustrations. Pilot version: results and testimonials will be shared only after families have used it.</span><nav class="footer-links" aria-label="Legal"><button class="linkbtn" data-act="legal" data-v="privacy">Privacy notice</button><button class="linkbtn" data-act="legal" data-v="terms">Terms</button></nav></div></footer>
     </main>`;
   }
 
@@ -461,6 +461,23 @@
       </div></main>`;
   }
 
+  // ---------- privacy notice and terms ----------
+  function legalView(kind) {
+    const L = LK.legal[kind];
+    const mark = (t) => esc(t).replace(/\[([^\]]+)\]/g, '<mark>[$1]</mark>');
+    const am = L.am ? `<section class="section am-summary" lang="am"><h2 style="font-size:1.25rem">${esc(L.am.title)}</h2><ul class="checks">${L.am.points.map((x) => `<li class="am">${esc(x)}</li>`).join('')}</ul><p class="muted" lang="en">Amharic summary: draft awaiting review by an Amharic-speaking educator.</p></section>` : '';
+    return `<main class="wrap play legal">
+      <div class="actions"><button class="btn alt small" data-act="${active() ? 'home' : 'landing'}">${ICON.back}Back</button></div>
+      <p class="draft-note" role="note"><b>Draft.</b> This ${kind === 'privacy' ? 'notice' : 'agreement'} is being reviewed by a lawyer and is not yet in effect. Highlighted details are added once the company is registered.</p>
+      <h1>${esc(L.title)}</h1>
+      <p class="muted">Effective date: ${mark(LK.company.effective)}</p>
+      ${am}
+      ${L.sections.map(([h, t]) => `<section class="legal-sec"><h2>${esc(h)}</h2><p>${mark(t)}</p></section>`).join('')}
+      <p class="muted">Questions: <span class="copyable">${esc(LK.company.email)}</span></p>
+      <div class="actions"><button class="linkbtn" data-act="legal" data-v="${kind === 'privacy' ? 'terms' : 'privacy'}">${kind === 'privacy' ? 'Read the terms' : 'Read the privacy notice'}</button></div>
+    </main>`;
+  }
+
   // ---------- render ----------
   function render() {
     applySettings();
@@ -470,6 +487,7 @@
     else if (S.view === 'run') main = runView();
     else if (S.view === 'gate') main = gateView();
     else if (S.view === 'parents') main = parentsView();
+    else if (S.view === 'privacy' || S.view === 'terms') main = legalView(S.view);
     root.innerHTML = header() + main;
   }
   function go(view) { S.view = view; render(); window.scrollTo(0, 0); }
@@ -507,6 +525,7 @@
     const act = b.getAttribute('data-act');
     if (act === 'lang') { st().lang = b.getAttribute('data-v'); save(); render(); return; }
     if (act === 'landing') { S.run = null; go('landing'); return; }
+    if (act === 'legal') { if (R) { closeRun(); S.run = null; } go(b.getAttribute('data-v')); return; }
     if (act === 'home') {
       if (R) { closeRun(); const wasGuest = R.guest; S.run = null; if (wasGuest && !active()) { go('landing'); return; } }
       go(active() || S.guest ? 'home' : 'landing'); return;
@@ -608,7 +627,9 @@
   }
 
   // ---------- start ----------
-  if (location.hash === '#parents') S.gate = { a: 7, b: 8, err: false }, S.view = 'gate';
+  const route = (location.hash || '').slice(1) || location.pathname.replace(/^\//, '');
+  if (route === 'privacy' || route === 'terms') S.view = route;
+  else if (route === 'parents') S.gate = { a: 7, b: 8, err: false }, S.view = 'gate';
   else if (active()) S.view = 'home';
   render();
   NR.load().then((n) => { if (n) S.clips = n; });
