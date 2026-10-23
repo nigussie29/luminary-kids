@@ -6,7 +6,9 @@
   "scripts": {
     "build": "node build.js",
     "test": "node --test test/engine.test.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "voice:sample": "node tools/azure-tts.js --sample",
+    "voice": "node tools/azure-tts.js"
   },
   "engines": {
     "node": ">=20"

@@ -132,7 +132,7 @@
     compareNum: { am: 'በቁጥር መስመሩ ላይ በስተቀኝ ያለው ቁጥር ይበልጣል።', en: 'On the number line, the number further right is greater.' },
     add: { am: 'ከትልቁ ቁጥር ጀምረን ወደ ፊት እንቁጠር።', en: 'Start from the bigger number and count on.' },
     sub: { am: 'የወደቁትን እናቋርጥ፤ የቀሩትን እንቁጠር።', en: 'Cross out the ones that fell, then count the ones left.' },
-    subLine: { am: 'ከ{a} ጀምረን {b} ጊዜ ወደ ኋላ እንዝለል።', en: 'Start at {a} and hop back {b} times.' },
+    subLine: { am: 'ከቁጥር {a} ጀምረን {b} ጊዜ ወደ ኋላ እንዝለል።', en: 'Start at {a} and hop back {b} times.' },
     missingTen: { am: 'ስንት ባዶ ቦታ ቀረ? እነሱን እንቁጠር።', en: 'How many empty spaces are left? Count them.' },
     addTwenty: { am: 'መጀመሪያ አስር እንሙላ፤ ከዚያ የቀሩትን እንጨምር።', en: 'First fill the ten, then add what is left.' },
     build: { am: 'አንድ አንድ እያልን እንንካ። አምስት የላይኛውን ረድፍ ይሞላል።', en: 'Tap one at a time. Five fills the top row.' }

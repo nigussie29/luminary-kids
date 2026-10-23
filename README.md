@@ -35,6 +35,13 @@ loudness, then writes the clips to `audio/am/`. Push, and Railway redeploys.
 A line plays from recordings when all its clips exist; otherwise the device's Amharic voice
 reads it, and on devices without one, the English line is read aloud.
 
+## AI narration (until a human narrator records)
+
+`tools/azure-tts.js` makes all clips with Microsoft Azure's Amharic neural voice (Mekdes by default),
+slightly slower and brighter for children. Set `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION`, then run
+`npm run voice:sample` (5 audition lines in `audio/sample/`) and `npm run voice` (all clips in `audio/am/`).
+When human recordings arrive, delete the AI `.mp3` clips they replace.
+
 ## Not built yet
 
 Parent accounts and sync, checkout, weekly email, teacher and admin tools, offline install.
