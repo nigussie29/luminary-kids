@@ -24,6 +24,7 @@
   const learner = () => (S.run && S.run.guest ? S.guest : active() ? active().learner : S.guest);
 
   function applySettings() {
+    LK.sfx.on = st().sfx !== false;
     document.documentElement.lang = lang() === 'am' ? 'am' : 'en';
     document.documentElement.classList.toggle('reduce', !!st().reduce);
   }
@@ -43,9 +44,15 @@
   function loadVoices() { try { voices = window.speechSynthesis ? speechSynthesis.getVoices() : []; } catch (e) { voices = []; } }
   loadVoices();
   try { if (window.speechSynthesis) speechSynthesis.onvoiceschanged = loadVoices; } catch (e) { /* ignore */ }
-  const voiceFor = (l) => voices.find((v) => v.lang && v.lang.toLowerCase().startsWith(l === 'am' ? 'am' : 'en'));
+  // Prefer the warmest voice on the device: neural/natural voices first, then known friendly voices.
+  const WARM = /natural|neural|enhanced|premium|google|samantha|ava|aria|jenny|libby|sonia|karen|moira|tessa|zira/i;
+  const voiceFor = (l) => {
+    const pre = l === 'am' ? 'am' : 'en';
+    const list = voices.filter((v) => v.lang && v.lang.toLowerCase().startsWith(pre));
+    return list.find((v) => /natural|neural|enhanced|premium/i.test(v.name)) || list.find((v) => WARM.test(v.name)) || list[0];
+  };
   function tts(text, v) {
-    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.voice = v; u.lang = v.lang; u.rate = 0.85; speechSynthesis.speak(u); return true; } catch (e) { return false; }
+    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.voice = v; u.lang = v.lang; u.rate = 0.9; u.pitch = 1.2; u.volume = 1; speechSynthesis.speak(u); return true; } catch (e) { return false; }
   }
   function say(line, fromButton = false) {
     if (!line) return;
@@ -384,14 +391,14 @@
     R.tries += 1; R.picked = val;
     const ok = LK.check(it, val);
     if (ok) {
-      R.state = 'right';
+      R.state = 'right'; LK.sfx.correct();
       const c = LK.ui.am.correct, ce = LK.ui.en.correct, k = Math.floor(Math.random() * c.length);
       R.msg = { am: c[k], en: ce[k] }; R.line = lineFixed('ui.correct.' + k, c[k], ce[k]);
       finishItem(true);
     } else if (R.tries < 2) {
-      R.state = 'retry'; R.msg = { am: LK.ui.am.tryAgain, en: LK.ui.en.tryAgain }; say(lineFixed('ui.tryAgain', R.msg.am, R.msg.en));
+      R.state = 'retry'; LK.sfx.retry(); R.msg = { am: LK.ui.am.tryAgain, en: LK.ui.en.tryAgain }; say(lineFixed('ui.tryAgain', R.msg.am, R.msg.en));
     } else {
-      R.state = 'shown'; R.hintOn = true;
+      R.state = 'shown'; R.hintOn = true; LK.sfx.reveal();
       const shown = it.input === 'pick' ? (it.answer === 'left' ? U().left : U().right) : it.answer;
       R.msg = { am: LK.fill(LK.ui.am.reveal, { ans: it.input === 'pick' ? LK.ui.am[it.answer] : shown }), en: LK.fill(LK.ui.en.reveal, { ans: it.input === 'pick' ? LK.ui.en[it.answer] : shown }) };
       R.line = { am: R.msg.am, en: R.msg.en, keys: NR.tplKeys('ui.reveal', LK.ui.am.reveal, { ans: it.answer }) };
@@ -452,6 +459,7 @@
       <div class="section"><h2 style="font-size:1.3rem">Settings</h2>
         <label class="toggle"><input type="checkbox" id="set-en" data-set="showEn" ${s.showEn ? 'checked' : ''}> Show English under Amharic</label>
         <label class="toggle"><input type="checkbox" id="set-motion" data-set="reduce" ${s.reduce ? 'checked' : ''}> Reduce motion</label>
+        <label class="toggle"><input type="checkbox" id="set-sfx" data-set="sfx" ${s.sfx !== false ? 'checked' : ''}> Sound effects (gentle chimes for answers and counting)</label>
         <p class="muted">Narration: ${voiceFor('am') ? 'an Amharic voice was found on this device.' : 'this device has no Amharic voice, so the listen button shows a note instead. Recorded narration is being added.'}</p>
       </div>
       <div class="section"><h2 style="font-size:1.3rem">Backup and privacy</h2>
@@ -503,7 +511,7 @@
       if (it.type === 'count' && obj) {
         const i = obj.getAttribute('data-i');
         if (!R.tapped.includes(i)) {
-          R.tapped.push(i); obj.classList.add('tapped');
+          R.tapped.push(i); obj.classList.add('tapped'); LK.sfx.count(R.tapped.length);
           const ns = 'http://www.w3.org/2000/svg';
           const c = document.createElementNS(ns, 'circle'); c.setAttribute('r', '11'); c.setAttribute('class', 'tapdot'); c.setAttribute('cy', '-2');
           const t = document.createElementNS(ns, 'text'); t.setAttribute('class', 'tapnum'); t.setAttribute('text-anchor', 'middle'); t.setAttribute('y', '3'); t.textContent = R.tapped.length;
@@ -535,7 +543,7 @@
     if (act === 'lesson') { const sk = b.getAttribute('data-skill'); if (R) closeRun(); newRun('lesson', sk, R ? R.guest : !active()); window.scrollTo(0, 0); return; }
     if (act === 'review') { newRun('review', b.getAttribute('data-skill')); return; }
     if (act === 'diag') { newRun('diag', null); return; }
-    if (act === 'next') { R.i = Math.min(R.i + 1, R.steps.length - 1); if (R.steps[R.i].k === 'done') closeRun(); enterStep(); window.scrollTo(0, 0); return; }
+    if (act === 'next') { R.i = Math.min(R.i + 1, R.steps.length - 1); if (R.steps[R.i].k === 'done') { closeRun(); if (R.events.includes('badge')) setTimeout(() => LK.sfx.badge(), 250); } enterStep(); window.scrollTo(0, 0); return; }
     if (act === 'answer') { const v = b.getAttribute('data-v'); answer(R.item.input === 'pick' ? v : Number(v)); return; }
     if (act === 'hint') { R.hints += 1; R.hintOn = true; render(); say(itemLine(R.item, 'hint')); return; }
     if (act === 'buildcheck') { answer(R.built.size); return; }
@@ -589,6 +597,7 @@
   });
 
   function toggleCell(cell) {
+    LK.sfx.tap();
     const R = S.run, i = cell.getAttribute('data-cell');
     const ns = 'http://www.w3.org/2000/svg';
     if (R.built.has(i)) { R.built.delete(i); const g = cell.querySelector('[data-obj]'); if (g) g.remove(); cell.setAttribute('data-filled', '0'); }
