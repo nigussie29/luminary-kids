@@ -496,7 +496,13 @@
     if (kind === 'match') return { a, answer:a, label:{am:'ተመሳሳይ ቁጥር ምረጥ',en:'Match the number of dots'},display:Array.from({length:a},()=>'<span aria-hidden="true">🟣</span>').join('') };
     return { a, b, answer:a+b, label:{am:'ደምር።',en:'Add the numbers'},display:`${a} + ${b} = ?` };
   }
+  function miniUnlocked(kind) {
+    const scores = DB.miniBest || {};
+    return kind === 'count' || (kind === 'match' && (scores.count || 0) >= 3) ||
+      (kind === 'add' && (scores.match || 0) >= 3);
+  }
   function miniStart(kind) {
+    if (!miniUnlocked(kind)) { toast(lang()==='am'?'መጀመሪያ ያለፈውን ደረጃ ጨርስ።':'Complete the previous adventure first.'); return; }
     S.mini = { kind, round:1, score:0, q:miniQuestion(kind), picked:null, done:false };
     go('mini');
   }
@@ -518,8 +524,28 @@
       </div></main>`;
   }
   function miniHub() {
-    const games=[['count','🌟','የቆጠራ ጀብዱ','Counting Adventure'],['match','🟣','ቁጥር አዛምድ','Number Matching'],['add','➕','የመደመር ፈተና','Addition Challenge']];
-    return `<section class="mini-hub"><h2>${lang()==='am'?'🎮 የሂሳብ ጨዋታዎች':'🎮 Math Game Arcade'}</h2><p class="muted">${lang()==='am'?'ለመለማመድ ከሶስቱ ጨዋታዎች አንዱን ምረጥ።':'Pick a five-question bonus game. Lessons track mastery separately.'}</p><div class="mini-grid">${games.map(g=>`<button class="mini-tile" data-act="mini-start" data-v="${g[0]}"><span aria-hidden="true">${g[1]}</span><b>${lang()==='am'?g[2]:g[3]}</b></button>`).join('')}</div></section>`;
+    const games=[
+      ['count','🌟','የቆጠራ ጀብዱ','Counting Adventure','🌼'],
+      ['match','🟣','ቁጥር አዛምድ','Number Matching','🏞️'],
+      ['add','➕','የመደመር ፈተና','Addition Challenge','🏔️']
+    ];
+    const scores=DB.miniBest||{};
+    return `<section class="mini-hub" aria-label="Math adventure map">
+      <h2>${lang()==='am'?'🗺️ የሂሳብ ጀብዱ ካርታ':'🗺️ Math Adventure Map'}</h2>
+      <p class="muted">${lang()==='am'?'በእያንዳንዱ ደረጃ ከ5 ቢያንስ 3 ኮከቦችን ሰብስብ።':'Earn at least 3 out of 5 stars to unlock the next adventure.'}</p>
+      <div class="adventure-map">${games.map((g,i)=>{
+        const unlocked=miniUnlocked(g[0]),best=scores[g[0]]||0;
+        return `<div class="adventure-stop ${unlocked?'':'locked'}">
+          <span class="adventure-scene" aria-hidden="true">${g[4]}</span>
+          <span class="adventure-step">${i+1}</span>
+          <button class="mini-tile" data-act="mini-start" data-v="${g[0]}" ${unlocked?'':'disabled'} aria-label="${g[3]} ${unlocked?'':'locked'}">
+            <span aria-hidden="true">${unlocked?g[1]:'🔒'}</span><b>${lang()==='am'?g[2]:g[3]}</b>
+            <small>${unlocked?'⭐ '+best+' / 5':(lang()==='am'?'ዝግ ነው':'Locked')}</small>
+          </button>
+        </div>`;
+      }).join('<span class="adventure-trail" aria-hidden="true">···</span>')}</div>
+      <p class="muted">${lang()==='am'?'ዋሊ ከአንተ ጋር ይጓዛል!':'Wali travels with you through every level!'}</p>
+    </section>`;
   }
 
   // ---------- render ----------
@@ -579,7 +605,7 @@
     }
     if (act === 'mini-next') {
       const M=S.mini; if (!M || M.picked!==M.q.answer) return;
-      if (M.round===5) M.done=true;
+      if (M.round===5) { M.done=true; DB.miniBest=DB.miniBest||{}; DB.miniBest[M.kind]=Math.max(DB.miniBest[M.kind]||0,M.score); save(); }
       else { M.round++; M.q=miniQuestion(M.kind); M.picked=null; }
       render(); return;
     }
