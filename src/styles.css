@@ -280,3 +280,44 @@ textarea { min-height: 90px; }
 .footer-links { display: flex; gap: 12px; }
 .linkbtn.inline { min-height: 0; padding: 0; text-decoration: underline; font-weight: 600; }
 .copyable { user-select: all; }
+
+
+/* Playful UI refresh: motion enhances learning but never hides math content. */
+:root {
+  --play-ring: 0 0 0 4px color-mix(in srgb, var(--lake) 22%, transparent);
+  --play-lift: 0 14px 28px -17px rgba(29,37,64,.36);
+}
+.hero {
+  background: radial-gradient(circle at 85% 15%, var(--adey-soft), transparent 38%),
+              radial-gradient(circle at 5% 95%, var(--lake-soft), transparent 36%),
+              var(--bg);
+}
+.hero-art .wali { transform-origin: 50% 90%; animation: wali-welcome 3.2s ease-in-out infinite; }
+.hero-art .bubble { animation: bubble-arrive .6s ease-out both; }
+.lcard, .opt, .kidbtn, .btn { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease; }
+.lcard:hover, .lcard:focus-visible { transform: translateY(-4px); box-shadow: var(--play-lift); }
+.btn:hover, .opt:hover { transform: translateY(-2px); box-shadow: var(--play-lift); }
+.btn:active, .opt:active, .lcard:active, .kidbtn:active { transform: scale(.97); }
+.opt { min-height: 80px; border-width: 3px; box-shadow: 0 4px 0 var(--line); touch-action: manipulation; }
+.opt:focus-visible, .lcard:focus-visible, .btn:focus-visible, .kidbtn:focus-visible,
+.mv .tap:focus-visible { outline: 4px solid var(--lake); outline-offset: 3px; }
+.opt.right { animation: answer-celebrate .48s ease-out both; }
+.opt.wrong { animation: answer-try-again .36s ease-out both; }
+.feedback.ok .wali, .done .wali { transform-origin: 50% 90%; animation: wali-cheer .7s ease-out both; }
+.done .badge { animation: badge-bloom .65s cubic-bezier(.2,1.5,.4,1) both; }
+.mv .cell.tap { touch-action: manipulation; }
+.mv .cell.tap:active .mv-cell { fill: var(--lake-soft); }
+.mv .obj.tapped { transition: opacity .2s ease; }
+@keyframes wali-welcome { 0%,100% { transform: rotate(-2deg) translateY(0); } 50% { transform: rotate(2deg) translateY(-7px); } }
+@keyframes bubble-arrive { from { opacity:0; transform: translateY(14px) scale(.95); } to { opacity:1; transform: translateY(0) scale(1); } }
+@keyframes answer-celebrate { 0% { transform: scale(.94); } 60% { transform: scale(1.07); } 100% { transform: scale(1); } }
+@keyframes answer-try-again { 0%,100% { transform:translateX(0); } 25% { transform:translateX(-4px); } 75% { transform:translateX(4px); } }
+@keyframes wali-cheer { 0% { transform: scale(.92) rotate(-4deg); } 55% { transform: scale(1.08) rotate(4deg); } 100% { transform: scale(1) rotate(0); } }
+@keyframes badge-bloom { from { transform:scale(.6) rotate(-10deg); opacity:.5; } to { transform:scale(1) rotate(0); opacity:1; } }
+@media (hover:none) { .lcard:hover, .opt:hover, .btn:hover { transform:none; box-shadow:none; } }
+@media (prefers-reduced-motion:reduce) {
+  .hero-art .wali, .hero-art .bubble, .opt.right, .opt.wrong,
+  .feedback.ok .wali, .done .wali, .done .badge { animation:none !important; }
+}
+.reduce .hero-art .wali, .reduce .hero-art .bubble, .reduce .opt.right, .reduce .opt.wrong,
+.reduce .feedback.ok .wali, .reduce .done .wali, .reduce .done .badge { animation:none !important; }
