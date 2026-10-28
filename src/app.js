@@ -503,14 +503,14 @@
   }
   function miniStart(kind) {
     if (!miniUnlocked(kind)) { toast(lang()==='am'?'መጀመሪያ ያለፈውን ደረጃ ጨርስ።':'Complete the previous adventure first.'); return; }
-    S.mini = { kind, round:1, score:0, q:miniQuestion(kind), picked:null, done:false };
+    S.mini = { kind, round:1, score:0, q:miniQuestion(kind), picked:null, mistakes:0, done:false };
     go('mini');
   }
   function miniView() {
     const M=S.mini;
     const names={count:{am:'የቆጠራ ጀብዱ',en:'Counting Adventure'},match:{am:'ቁጥር አዛምድ',en:'Number Matching'},add:{am:'የመደመር ፈተና',en:'Addition Challenge'}};
     const name=names[M.kind];
-    const msg=M.picked===null?'':M.picked===M.q.answer?(lang()==='am'?'በጣም ጥሩ! 🌟':'Great job! 🌟'):(lang()==='am'?'እንደገና ሞክር።':'Try again!');
+    const msg=M.picked===null?'':M.picked===M.q.answer?(M.mistakes===0?(lang()==='am'?'በጣም ጥሩ! 🌟':'Great job! 🌟'):(lang()==='am'?'ጥሩ! በመሞከር ተማርክ።':'Nice recovery! Keep practicing.')):(lang()==='am'?'እንደገና ሞክር።':'Try again!');
     const choices=[M.q.answer,M.q.answer-1,M.q.answer+1,M.q.answer+2].filter(n=>n>=0&&n<=20);
     return `<main class="wrap play mini-game">
       <button class="btn alt small" data-act="mini-exit">${ICON.back}${lang()==='am'?'ተመለስ':'Back'}</button>
@@ -600,13 +600,14 @@
     if (act === 'mini-answer') {
       const M=S.mini; if (!M||M.done||M.picked===M.q.answer) return;
       M.picked=Number(b.getAttribute('data-v'));
-      if (M.picked===M.q.answer) { M.score++; LK.sfx.correct && LK.sfx.correct(); }
+      if (M.picked===M.q.answer) { if (M.mistakes===0) M.score++; LK.sfx.correct && LK.sfx.correct(); }
+      else M.mistakes++;
       render(); return;
     }
     if (act === 'mini-next') {
       const M=S.mini; if (!M || M.picked!==M.q.answer) return;
       if (M.round===5) { M.done=true; DB.miniBest=DB.miniBest||{}; DB.miniBest[M.kind]=Math.max(DB.miniBest[M.kind]||0,M.score); save(); }
-      else { M.round++; M.q=miniQuestion(M.kind); M.picked=null; }
+      else { M.round++; M.q=miniQuestion(M.kind); M.picked=null; M.mistakes=0; }
       render(); return;
     }
     if (act === 'lang') { st().lang = b.getAttribute('data-v'); save(); render(); return; }
