@@ -206,10 +206,21 @@
     }).join('');
     const badges = LK.lessons.filter((l) => L.skills[l.id].badge).map((l) => A.badge(l.n, true, LK.badges[l.id].en)).join('');
     return `<main class="wrap play home">
-      <div class="greet">${A.wali('welcome', 'Wali waving')}<div><h1 style="font-size:1.9rem">${bi(hello)}</h1></div></div>
-      <div class="next-card">${A.scene(recLesson ? recLesson.scene : 'garden', 'Lesson scene')}<div class="body"><span class="eyebrow">${bi(recLabel)}</span><h2>${bi(recTitle)}</h2>
-        <button class="btn adey" data-act="${rec.kind === 'diagnostic' ? 'diag' : rec.kind === 'review' ? 'review' : 'lesson'}" data-skill="${rec.skill || ''}">${uiBi('start')}</button></div></div>
-      ${miniHub()}
+      <section class="unified-adventure" aria-label="Luminary Kids learning adventure">
+        <div class="unified-welcome">
+          <div class="unified-copy"><span class="eyebrow">${lang()==='am'?'✨ የሂሳብ ጀብዱ':'✨ Your Math Adventure'}</span>
+            <h1>${bi(hello)}</h1>
+            <p>${lang()==='am'?'ከዋሊ ጋር ቁጥሮችን እንማር፣ እንጫወት እና ኮከቦችን እንሰብስብ!':'Learn, play, and collect stars with Wali!'}</p>
+            <span class="unified-stars" aria-label="Stars earned">⭐ ${L.stars || 0} ${lang()==='am'?'ኮከቦች':'lesson stars'}</span>
+          </div>
+          <div class="unified-scene">${A.scene('garden','Colorful garden in the Ethiopian highlands')}${A.wali('welcome','Wali welcomes children')}</div>
+        </div>
+        <div class="unified-next">
+          <div><span class="eyebrow">${bi(recLabel)}</span><h2>${bi(recTitle)}</h2></div>
+          ${rec.kind==='complete' ? '' : `<button class="btn adey" data-act="${rec.kind === 'diagnostic' ? 'diag' : rec.kind === 'review' ? 'review' : 'lesson'}" data-skill="${rec.skill || ''}">${uiBi('start')}</button>`}
+        </div>
+        ${miniHub()}
+      </section>
       <h2 style="font-size:1.3rem">${uiBi('lessons')}</h2>
       <ol class="path">${stones}</ol>
       <div class="garden"><b>${bi({ am: 'የዋሊ የአበባ ቦታ', en: "Wali's flower garden" })}</b><div class="row">${badges || `<span class="muted">${bi({ am: 'ትምህርት ሲችሉ አበባ ይበቅላል።', en: 'A flower grows for every lesson you master.' })}</span>`}</div></div>
@@ -496,6 +507,24 @@
     if (kind === 'match') return { a, answer:a, label:{am:'ተመሳሳይ ቁጥር ምረጥ',en:'Match the number of dots'},display:Array.from({length:a},()=>'<span aria-hidden="true">🟣</span>').join('') };
     return { a, b, answer:a+b, label:{am:'ደምር።',en:'Add the numbers'},display:`${a} + ${b} = ?` };
   }
+  // Create one stable, shuffled answer set per question; never shuffle during a retry or re-render.
+  function miniChoices(answer) {
+    const choices = [answer];
+    for (let d = 1; choices.length < 4 && d <= 20; d++) {
+      if (answer - d >= 0) choices.push(answer - d);
+      if (choices.length < 4 && answer + d <= 20) choices.push(answer + d);
+    }
+    for (let i = choices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [choices[i], choices[j]] = [choices[j], choices[i]];
+    }
+    return choices;
+  }
+  function miniNewQuestion(kind) {
+    const q = miniQuestion(kind);
+    q.choices = miniChoices(q.answer);
+    return q;
+  }
   function miniUnlocked(kind) {
     const scores = DB.miniBest || {};
     return kind === 'count' || (kind === 'match' && (scores.count || 0) >= 3) ||
@@ -503,7 +532,7 @@
   }
   function miniStart(kind) {
     if (!miniUnlocked(kind)) { toast(lang()==='am'?'መጀመሪያ ያለፈውን ደረጃ ጨርስ።':'Complete the previous adventure first.'); return; }
-    S.mini = { kind, round:1, score:0, q:miniQuestion(kind), picked:null, mistakes:0, done:false };
+    S.mini = { kind, round:1, score:0, q:miniNewQuestion(kind), picked:null, mistakes:0, done:false };
     go('mini');
   }
   function miniView() {
@@ -511,7 +540,7 @@
     const names={count:{am:'የቆጠራ ጀብዱ',en:'Counting Adventure'},match:{am:'ቁጥር አዛምድ',en:'Number Matching'},add:{am:'የመደመር ፈተና',en:'Addition Challenge'}};
     const name=names[M.kind];
     const msg=M.picked===null?'':M.picked===M.q.answer?(M.mistakes===0?(lang()==='am'?'በጣም ጥሩ! 🌟':'Great job! 🌟'):(lang()==='am'?'ጥሩ! በመሞከር ተማርክ።':'Nice recovery! Keep practicing.')):(lang()==='am'?'እንደገና ሞክር።':'Try again!');
-    const choices=[M.q.answer,M.q.answer-1,M.q.answer+1,M.q.answer+2].filter(n=>n>=0&&n<=20);
+    const choices=M.q.choices;
     return `<main class="wrap play mini-game">
       <button class="btn alt small" data-act="mini-exit">${ICON.back}${lang()==='am'?'ተመለስ':'Back'}</button>
       <div class="mini-card"><div class="mini-top"><h1>${bi(name)}</h1><strong>${M.round}/5 · ⭐ ${M.score}</strong></div>
@@ -607,7 +636,7 @@
     if (act === 'mini-next') {
       const M=S.mini; if (!M || M.picked!==M.q.answer) return;
       if (M.round===5) { M.done=true; DB.miniBest=DB.miniBest||{}; DB.miniBest[M.kind]=Math.max(DB.miniBest[M.kind]||0,M.score); save(); }
-      else { M.round++; M.q=miniQuestion(M.kind); M.picked=null; M.mistakes=0; }
+      else { M.round++; M.q=miniNewQuestion(M.kind); M.picked=null; M.mistakes=0; }
       render(); return;
     }
     if (act === 'lang') { st().lang = b.getAttribute('data-v'); save(); render(); return; }
