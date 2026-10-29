@@ -206,10 +206,21 @@
     }).join('');
     const badges = LK.lessons.filter((l) => L.skills[l.id].badge).map((l) => A.badge(l.n, true, LK.badges[l.id].en)).join('');
     return `<main class="wrap play home">
-      <div class="greet">${A.wali('welcome', 'Wali waving')}<div><h1 style="font-size:1.9rem">${bi(hello)}</h1></div></div>
-      <div class="next-card">${A.scene(recLesson ? recLesson.scene : 'garden', 'Lesson scene')}<div class="body"><span class="eyebrow">${bi(recLabel)}</span><h2>${bi(recTitle)}</h2>
-        <button class="btn adey" data-act="${rec.kind === 'diagnostic' ? 'diag' : rec.kind === 'review' ? 'review' : 'lesson'}" data-skill="${rec.skill || ''}">${uiBi('start')}</button></div></div>
-      ${miniHub()}
+      <section class="unified-adventure" aria-label="Luminary Kids learning adventure">
+        <div class="unified-welcome">
+          <div class="unified-copy"><span class="eyebrow">${lang()==='am'?'✨ የሂሳብ ጀብዱ':'✨ Your Math Adventure'}</span>
+            <h1>${bi(hello)}</h1>
+            <p>${lang()==='am'?'ከዋሊ ጋር ቁጥሮችን እንማር፣ እንጫወት እና ኮከቦችን እንሰብስብ!':'Learn, play, and collect stars with Wali!'}</p>
+            <span class="unified-stars" aria-label="Stars earned">⭐ ${L.stars || 0} ${lang()==='am'?'ኮከቦች':'lesson stars'}</span>
+          </div>
+          <div class="unified-scene">${A.scene('garden','Colorful garden in the Ethiopian highlands')}${A.wali('welcome','Wali welcomes children')}</div>
+        </div>
+        <div class="unified-next">
+          <div><span class="eyebrow">${bi(recLabel)}</span><h2>${bi(recTitle)}</h2></div>
+          ${rec.kind==='complete' ? '' : `<button class="btn adey" data-act="${rec.kind === 'diagnostic' ? 'diag' : rec.kind === 'review' ? 'review' : 'lesson'}" data-skill="${rec.skill || ''}">${uiBi('start')}</button>`}
+        </div>
+        ${miniHub()}
+      </section>
       <h2 style="font-size:1.3rem">${uiBi('lessons')}</h2>
       <ol class="path">${stones}</ol>
       <div class="garden"><b>${bi({ am: 'የዋሊ የአበባ ቦታ', en: "Wali's flower garden" })}</b><div class="row">${badges || `<span class="muted">${bi({ am: 'ትምህርት ሲችሉ አበባ ይበቅላል።', en: 'A flower grows for every lesson you master.' })}</span>`}</div></div>
