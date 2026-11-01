@@ -41,7 +41,19 @@ def lesson(lesson_id):
     return next(l for l in data()["lessons"] if l["id"] == lesson_id)
 
 
-def am(text, size=40, color=INK, weight="NORMAL"):
+def number_word(n, lang="am"):
+    """Number word 0–100 in Amharic ('ሰላሳ አራት') or English ('thirty-four')."""
+    d = data()
+    if n <= 20:
+        return d["numWords"][lang][n]
+    tens, ones = divmod(n, 10)
+    t = d["tensWords"][lang][tens]
+    if not ones:
+        return t
+    return f"{t} {d['numWords'][lang][ones]}" if lang == "am" else f"{t}-{d['numWords'][lang][ones]}"
+
+
+def am(text,size=40, color=INK, weight="NORMAL"):
     """Amharic text. Pango shapes the Ethiopic syllables correctly."""
     return Text(text, font=FONT_ETH, font_size=size, color=color, weight=weight)
 
@@ -90,7 +102,9 @@ def caption_bar(am_text, en_text=None, **kw):
 
 def title_card(l):
     """Lesson number, Amharic title and English title."""
-    eyebrow = en(f"ትምህርት {l['n']} · Lesson {l['n']}", size=24, color=LAKE, weight="BOLD")
+    g = l.get("grade", 1)
+    eyebrow = en(f"{g}ኛ ክፍል · ትምህርት {l['n']}  ·  Grade {g} · Lesson {l['n']}",
+                 size=24, color=LAKE, weight="BOLD")
     title = am(l["title"]["am"], size=64, weight="BOLD")
     sub = en(l["title"]["en"], size=30)
     return VGroup(eyebrow, title, sub).arrange(DOWN, buff=0.3)
