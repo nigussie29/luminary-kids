@@ -35,7 +35,18 @@ loudness, then writes the clips to `audio/am/`. Push, and Railway redeploys.
 A line plays from recordings when all its clips exist; otherwise the device's Amharic voice
 reads it, and on devices without one, the English line is read aloud.
 
-## AI narration (until a human narrator records)
+## AI narration — girl's voice, free (until a human narrator records)
+
+```
+pip install edge-tts
+python3 tools/girl-voice.py --sample   # 6 audition lines in audio/sample/ — listen first
+python3 tools/girl-voice.py            # all 137 Grade 1 + Grade 2 clips → audio/am/
+```
+Uses the Amharic neural voice Mekdes, pitched up (+22Hz) and a little slower so she sounds like a
+friendly young girl. Adjust with `--pitch +15Hz … +30Hz` and `--rate`. Clips a person recorded
+(.m4a/.wav) are never overwritten. Then `python3 animations/render.py --all` puts the voice in the videos.
+
+## AI narration with an Azure key
 
 `tools/azure-tts.js` makes all clips with Microsoft Azure's Amharic neural voice (Mekdes by default),
 slightly slower and brighter for children. Set `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION`, then run
