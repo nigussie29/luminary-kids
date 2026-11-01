@@ -42,6 +42,11 @@ slightly slower and brighter for children. Set `AZURE_SPEECH_KEY` and `AZURE_SPE
 `npm run voice:sample` (5 audition lines in `audio/sample/`) and `npm run voice` (all clips in `audio/am/`).
 When human recordings arrive, delete the AI `.mp3` clips they replace.
 
+## Lesson videos
+
+`python3 animations/render.py count10` draws a lesson video with Manim and finishes it with FFmpeg.
+See `animations/README.md`.
+
 ## Not built yet
 
 Parent accounts and sync, checkout, weekly email, teacher and admin tools, offline install.
