@@ -3,9 +3,9 @@
   "title": 0.0,
   "story": 4.467,
   "step0": 10.433,
-  "step1": 14.567,
-  "step2": 18.7,
-  "step3": 22.333
+  "step1": 13.233,
+  "step2": 15.933,
+  "step3": 19.233
  },
  "cues": [
   {
@@ -24,27 +24,27 @@
    "start": 10.433,
    "am": "ሶስት ልጆች አሉ።",
    "en": "Three children are inside.",
-   "end": 14.567
+   "end": 13.233
   },
   {
-   "start": 14.567,
+   "start": 13.233,
    "am": "ሁለት ልጆች ገቡ።",
    "en": "Two more get in.",
-   "end": 18.7
+   "end": 15.933
   },
   {
-   "start": 18.7,
+   "start": 15.933,
    "am": "ከሶስት ጀምረን እንቁጠር፦ አራት፣ አምስት።",
    "en": "Start at three and count on: four, five.",
-   "end": 22.333
+   "end": 19.233
   },
   {
-   "start": 22.333,
+   "start": 19.233,
    "am": "ሶስት ሲደመር ሁለት እኩል ነው አምስት።",
    "en": "Three plus two equals five.",
-   "end": 26.267
+   "end": 22.933
   }
  ],
- "duration": 29.767,
+ "duration": 26.433,
  "lesson": "add10"
 }

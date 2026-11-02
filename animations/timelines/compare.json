@@ -3,7 +3,7 @@
   "title": 0.0,
   "story": 4.767,
   "step0": 11.033,
-  "step1": 15.167
+  "step1": 14.7
  },
  "cues": [
   {
@@ -22,15 +22,15 @@
    "start": 11.033,
    "am": "ስኒዎቹን አንድ ለአንድ እናገናኝ።",
    "en": "Match the cups one to one.",
-   "end": 15.167
+   "end": 14.7
   },
   {
-   "start": 15.167,
+   "start": 14.7,
    "am": "ጓደኛ የሌለው ስኒ ያለበት ትሪ ብዙ አለው።",
    "en": "The tray with cups left over has more.",
-   "end": 19.1
+   "end": 18.667
   }
  ],
- "duration": 22.0,
+ "duration": 21.567,
  "lesson": "compare"
 }

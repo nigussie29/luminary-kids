@@ -16,10 +16,10 @@
       "am": "video/add10.am.vtt",
       "en": "video/add10.en.vtt"
     },
-    "duration": 29.767,
+    "duration": 26.433,
     "checkpoints": [
       {
-        "t": 14.52,
+        "t": 13.18,
         "at": "step:1",
         "exercise": {
           "id": "add10.01",
@@ -54,7 +54,7 @@
         }
       },
       {
-        "t": 18.65,
+        "t": 15.88,
         "at": "step:2",
         "exercise": {
           "id": "add10.02",
@@ -91,7 +91,7 @@
     ],
     "reteach": {
       "start": 10.38,
-      "end": 29.767,
+      "end": 26.433,
       "at": [
         "step:0",
         "end"

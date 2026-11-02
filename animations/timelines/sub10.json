@@ -3,10 +3,10 @@
   "title": 0.0,
   "story": 4.433,
   "step0": 11.333,
-  "step1": 14.967,
-  "step2": 19.1,
-  "step3": 23.233,
-  "step4": 26.867
+  "step1": 14.0,
+  "step2": 16.9,
+  "step3": 19.9,
+  "step4": 22.4
  },
  "cues": [
   {
@@ -25,33 +25,33 @@
    "start": 11.333,
    "am": "ሰባት ማንጎዎች ነበሩ።",
    "en": "There were seven mangoes.",
-   "end": 14.967
+   "end": 14.0
   },
   {
-   "start": 14.967,
+   "start": 14.0,
    "am": "ሶስቱ ወደቁ።",
    "en": "Three fell.",
-   "end": 19.1
+   "end": 16.9
   },
   {
-   "start": 19.1,
+   "start": 16.9,
    "am": "የወደቁትን እናቋርጥ።",
    "en": "Cross out the ones that fell.",
-   "end": 23.233
+   "end": 19.9
   },
   {
-   "start": 23.233,
+   "start": 19.9,
    "am": "የቀሩት አራት ናቸው።",
    "en": "Four are left.",
-   "end": 26.867
+   "end": 22.4
   },
   {
-   "start": 26.867,
+   "start": 22.4,
    "am": "ሰባት ሲቀነስ ሶስት እኩል ነው አራት።",
    "en": "Seven minus three equals four.",
-   "end": 30.8
+   "end": 25.967
   }
  ],
- "duration": 33.5,
+ "duration": 28.667,
  "lesson": "sub10"
 }

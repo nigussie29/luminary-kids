@@ -3,8 +3,8 @@
   "title": 0.0,
   "story": 4.533,
   "step0": 11.367,
-  "step1": 15.5,
-  "step2": 19.933
+  "step1": 14.5,
+  "step2": 18.933
  },
  "cues": [
   {
@@ -23,21 +23,21 @@
    "start": 11.367,
    "am": "ስምንት ሲደመር አምስት።",
    "en": "Eight plus five.",
-   "end": 15.5
+   "end": 14.5
   },
   {
-   "start": 15.5,
+   "start": 14.5,
    "am": "ሁለቱን ወደ ስምንት እንውሰድና አስር እንሙላ።",
    "en": "Move two over to fill the ten.",
-   "end": 19.933
+   "end": 18.933
   },
   {
-   "start": 19.933,
+   "start": 18.933,
    "am": "አስር እና ሶስት አስራ ሶስት ነው።",
    "en": "Ten and three is thirteen.",
-   "end": 23.867
+   "end": 22.267
   }
  ],
- "duration": 26.567,
+ "duration": 24.967,
  "lesson": "make10"
 }

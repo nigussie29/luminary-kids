@@ -16,10 +16,10 @@
       "am": "video/make10.am.vtt",
       "en": "video/make10.en.vtt"
     },
-    "duration": 26.567,
+    "duration": 24.967,
     "checkpoints": [
       {
-        "t": 15.45,
+        "t": 14.45,
         "at": "step:1",
         "exercise": {
           "id": "make10.01",
@@ -54,7 +54,7 @@
         }
       },
       {
-        "t": 19.88,
+        "t": 18.88,
         "at": "step:2",
         "exercise": {
           "id": "make10.02",
@@ -91,7 +91,7 @@
     ],
     "reteach": {
       "start": 11.32,
-      "end": 26.567,
+      "end": 24.967,
       "at": [
         "step:0",
         "end"

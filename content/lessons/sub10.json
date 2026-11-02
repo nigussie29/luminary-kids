@@ -16,10 +16,10 @@
       "am": "video/sub10.am.vtt",
       "en": "video/sub10.en.vtt"
     },
-    "duration": 33.5,
+    "duration": 28.667,
     "checkpoints": [
       {
-        "t": 19.05,
+        "t": 16.85,
         "at": "step:2",
         "exercise": {
           "id": "sub10.01",
@@ -54,7 +54,7 @@
         }
       },
       {
-        "t": 23.18,
+        "t": 19.85,
         "at": "step:3",
         "exercise": {
           "id": "sub10.02",
@@ -91,7 +91,7 @@
     ],
     "reteach": {
       "start": 11.28,
-      "end": 33.5,
+      "end": 28.667,
       "at": [
         "step:0",
         "end"

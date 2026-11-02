@@ -70,7 +70,7 @@ Re-teach clip after two misses: 13.6–31.3 s
 
 ## Grade 1 · Lesson 2 — የገበያ አስሮች (Market tens)
 
-Place on the map: market · Mini-game: memory · Hook video: `video/teens.mp4` (27.7 s) · Manim code: `animations/lessons/teens.py`
+Place on the map: market · Mini-game: memory · Hook video: `video/teens.mp4` (25.7 s) · Manim code: `animations/lessons/teens.py`
 
 ### 1. Hook video script
 
@@ -79,17 +79,17 @@ Place on the map: market · Mini-game: memory · Hook video: `video/teens.mp4` (
 | 0.0 s | የገበያ አስሮች | Market tens | `lesson.teens.title` |
 | 5.3 s | ዛሬ ገበያ ነን። ነጋዴዋ ብርቱካኖችን በአስር በአስር ታስቀምጣለች። አስር እና ጥቂት አንዶች ስንት ይሆናሉ? | Today we are at the market. The seller packs oranges in tens. How many is one ten and some more? | `lesson.teens.story` |
 | 13.1 s | አንድ ሙሉ አስር ሳጥን አለ፤ ያ አስር ነው። | One full ten frame is ten. | `lesson.teens.example.0` |
-| 16.8 s | ከዚያ አራት ተጨማሪ። | Then four more. | `lesson.teens.example.1` |
-| 20.9 s | አስር እና አራት አስራ አራት ነው። | Ten and four is fourteen. | `lesson.teens.example.2` |
+| 16.6 s | ከዚያ አራት ተጨማሪ። | Then four more. | `lesson.teens.example.1` |
+| 19.6 s | አስር እና አራት አስራ አራት ነው። | Ten and four is fourteen. | `lesson.teens.example.2` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
 | 13.1 s | tap_choose | አንድ ሙሉ የአስር ሳጥን ስንት ብርቱካኖች አሉት?<br><small>How many oranges fill one ten frame?</small> | 10 | `ex.teens.01.mp3` |
-| 20.9 s | tap_choose | አስር እና አራት ስንት ነው?<br><small>What is ten and four?</small> | 14 | `ex.teens.02.mp3` |
+| 19.6 s | tap_choose | አስር እና አራት ስንት ነው?<br><small>What is ten and four?</small> | 14 | `ex.teens.02.mp3` |
 
-Re-teach clip after two misses: 13.1–27.7 s
+Re-teach clip after two misses: 13.1–25.7 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -137,7 +137,7 @@ Re-teach clip after two misses: 13.1–27.7 s
 
 ## Grade 1 · Lesson 3 — ብዙ ወይስ ጥቂት? (More or fewer?)
 
-Place on the map: school · Mini-game: race · Hook video: `video/compare.mp4` (22.0 s) · Manim code: `animations/lessons/compare.py`
+Place on the map: school · Mini-game: race · Hook video: `video/compare.mp4` (21.6 s) · Manim code: `animations/lessons/compare.py`
 
 ### 1. Hook video script
 
@@ -146,16 +146,16 @@ Place on the map: school · Mini-game: race · Hook video: `video/compare.mp4` (
 | 0.0 s | ብዙ ወይስ ጥቂት? | More or fewer? | `lesson.compare.title` |
 | 4.8 s | በትምህርት ቤታችን የቡና ሥነ ሥርዓት ትርዒት አለ። የትኛው ትሪ ብዙ ስኒዎች አሉት? | Our school has a coffee ceremony show. Which tray has more cups? | `lesson.compare.story` |
 | 11.0 s | ስኒዎቹን አንድ ለአንድ እናገናኝ። | Match the cups one to one. | `lesson.compare.example.0` |
-| 15.2 s | ጓደኛ የሌለው ስኒ ያለበት ትሪ ብዙ አለው። | The tray with cups left over has more. | `lesson.compare.example.1` |
+| 14.7 s | ጓደኛ የሌለው ስኒ ያለበት ትሪ ብዙ አለው። | The tray with cups left over has more. | `lesson.compare.example.1` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
 | 11.0 s | tap_choose | የትኛው ትሪ ብዙ ስኒዎች አሉት?<br><small>Which tray has more cups?</small> | top | `ex.compare.01.mp3` |
-| 15.1 s | tap_choose | ስንት ስኒዎች ጓደኛ የላቸውም?<br><small>How many cups have no partner?</small> | 2 | `ex.compare.02.mp3` |
+| 14.7 s | tap_choose | ስንት ስኒዎች ጓደኛ የላቸውም?<br><small>How many cups have no partner?</small> | 2 | `ex.compare.02.mp3` |
 
-Re-teach clip after two misses: 11.0–22.0 s
+Re-teach clip after two misses: 11.0–21.6 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -202,7 +202,7 @@ Re-teach clip after two misses: 11.0–22.0 s
 
 ## Grade 1 · Lesson 4 — የባጃጅ ጉዞ (The bajaj ride)
 
-Place on the map: road · Mini-game: balloon · Hook video: `video/add10.mp4` (29.8 s) · Manim code: `animations/lessons/add10.py`
+Place on the map: road · Mini-game: balloon · Hook video: `video/add10.mp4` (26.4 s) · Manim code: `animations/lessons/add10.py`
 
 ### 1. Hook video script
 
@@ -211,18 +211,18 @@ Place on the map: road · Mini-game: balloon · Hook video: `video/add10.mp4` (2
 | 0.0 s | የባጃጅ ጉዞ | The bajaj ride | `lesson.add10.title` |
 | 4.5 s | ባጃጁ ልጆችን ወደ ትምህርት ቤት ይወስዳል። በየማቆሚያው ተጨማሪ ልጆች ይገባሉ። | The bajaj takes children to school. More children get in at each stop. | `lesson.add10.story` |
 | 10.4 s | ሶስት ልጆች አሉ። | Three children are inside. | `lesson.add10.example.0` |
-| 14.6 s | ሁለት ልጆች ገቡ። | Two more get in. | `lesson.add10.example.1` |
-| 18.7 s | ከሶስት ጀምረን እንቁጠር፦ አራት፣ አምስት። | Start at three and count on: four, five. | `lesson.add10.example.2` |
-| 22.3 s | ሶስት ሲደመር ሁለት እኩል ነው አምስት። | Three plus two equals five. | `lesson.add10.example.3` |
+| 13.2 s | ሁለት ልጆች ገቡ። | Two more get in. | `lesson.add10.example.1` |
+| 15.9 s | ከሶስት ጀምረን እንቁጠር፦ አራት፣ አምስት። | Start at three and count on: four, five. | `lesson.add10.example.2` |
+| 19.2 s | ሶስት ሲደመር ሁለት እኩል ነው አምስት። | Three plus two equals five. | `lesson.add10.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 14.5 s | tap_choose | ባጃጁ ውስጥ ስንት ልጆች አሉ?<br><small>How many children are in the bajaj?</small> | 3 | `ex.add10.01.mp3` |
-| 18.6 s | tap_choose | አሁን ባጃጁ ውስጥ ስንት ልጆች አሉ?<br><small>How many children are in the bajaj now?</small> | 5 | `ex.add10.02.mp3` |
+| 13.2 s | tap_choose | ባጃጁ ውስጥ ስንት ልጆች አሉ?<br><small>How many children are in the bajaj?</small> | 3 | `ex.add10.01.mp3` |
+| 15.9 s | tap_choose | አሁን ባጃጁ ውስጥ ስንት ልጆች አሉ?<br><small>How many children are in the bajaj now?</small> | 5 | `ex.add10.02.mp3` |
 
-Re-teach clip after two misses: 10.4–29.8 s
+Re-teach clip after two misses: 10.4–26.4 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -269,7 +269,7 @@ Re-teach clip after two misses: 10.4–29.8 s
 
 ## Grade 1 · Lesson 5 — የማንጎ ዛፍ (The mango tree)
 
-Place on the map: tree · Mini-game: race · Hook video: `video/sub10.mp4` (33.5 s) · Manim code: `animations/lessons/sub10.py`
+Place on the map: tree · Mini-game: race · Hook video: `video/sub10.mp4` (28.7 s) · Manim code: `animations/lessons/sub10.py`
 
 ### 1. Hook video script
 
@@ -278,19 +278,19 @@ Place on the map: tree · Mini-game: race · Hook video: `video/sub10.mp4` (33.5
 | 0.0 s | የማንጎ ዛፍ | The mango tree | `lesson.sub10.title` |
 | 4.4 s | ነፋስ ነፈሰ! አንዳንድ ማንጎዎች ከዛፉ ወደቁ። ስንት ማንጎዎች ዛፉ ላይ ቀሩ? | The wind blows! Some mangoes fall from the tree. How many are left on the tree? | `lesson.sub10.story` |
 | 11.3 s | ሰባት ማንጎዎች ነበሩ። | There were seven mangoes. | `lesson.sub10.example.0` |
-| 15.0 s | ሶስቱ ወደቁ። | Three fell. | `lesson.sub10.example.1` |
-| 19.1 s | የወደቁትን እናቋርጥ። | Cross out the ones that fell. | `lesson.sub10.example.2` |
-| 23.2 s | የቀሩት አራት ናቸው። | Four are left. | `lesson.sub10.example.3` |
-| 26.9 s | ሰባት ሲቀነስ ሶስት እኩል ነው አራት። | Seven minus three equals four. | `lesson.sub10.example.4` |
+| 14.0 s | ሶስቱ ወደቁ። | Three fell. | `lesson.sub10.example.1` |
+| 16.9 s | የወደቁትን እናቋርጥ። | Cross out the ones that fell. | `lesson.sub10.example.2` |
+| 19.9 s | የቀሩት አራት ናቸው። | Four are left. | `lesson.sub10.example.3` |
+| 22.4 s | ሰባት ሲቀነስ ሶስት እኩል ነው አራት። | Seven minus three equals four. | `lesson.sub10.example.4` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 19.1 s | tap_choose | ስንት ማንጎዎች ወደቁ?<br><small>How many mangoes fell?</small> | 3 | `ex.sub10.01.mp3` |
-| 23.2 s | tap_choose | ስንት ማንጎዎች ቀሩ?<br><small>How many mangoes are left?</small> | 4 | `ex.sub10.02.mp3` |
+| 16.9 s | tap_choose | ስንት ማንጎዎች ወደቁ?<br><small>How many mangoes fell?</small> | 3 | `ex.sub10.01.mp3` |
+| 19.9 s | tap_choose | ስንት ማንጎዎች ቀሩ?<br><small>How many mangoes are left?</small> | 4 | `ex.sub10.02.mp3` |
 
-Re-teach clip after two misses: 11.3–33.5 s
+Re-teach clip after two misses: 11.3–28.7 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -337,7 +337,7 @@ Re-teach clip after two misses: 11.3–33.5 s
 
 ## Grade 1 · Lesson 6 — አስር እንሙላ (Make ten)
 
-Place on the map: meadow · Mini-game: balloon · Hook video: `video/make10.mp4` (26.6 s) · Manim code: `animations/lessons/make10.py`
+Place on the map: meadow · Mini-game: balloon · Hook video: `video/make10.mp4` (25.0 s) · Manim code: `animations/lessons/make10.py`
 
 ### 1. Hook video script
 
@@ -346,17 +346,17 @@ Place on the map: meadow · Mini-game: balloon · Hook video: `video/make10.mp4`
 | 0.0 s | አስር እንሙላ | Make ten | `lesson.make10.title` |
 | 4.5 s | የአደይ አበባ ጊዜ ነው! አስር መሙላት ትልልቅ ቁጥሮችን መደመር ቀላል ያደርጋል። | It is Adey Abeba season! Filling a ten makes big additions easy. | `lesson.make10.story` |
 | 11.4 s | ስምንት ሲደመር አምስት። | Eight plus five. | `lesson.make10.example.0` |
-| 15.5 s | ሁለቱን ወደ ስምንት እንውሰድና አስር እንሙላ። | Move two over to fill the ten. | `lesson.make10.example.1` |
-| 19.9 s | አስር እና ሶስት አስራ ሶስት ነው። | Ten and three is thirteen. | `lesson.make10.example.2` |
+| 14.5 s | ሁለቱን ወደ ስምንት እንውሰድና አስር እንሙላ። | Move two over to fill the ten. | `lesson.make10.example.1` |
+| 18.9 s | አስር እና ሶስት አስራ ሶስት ነው። | Ten and three is thirteen. | `lesson.make10.example.2` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 15.4 s | tap_choose | ስምንት አስር እንዲሆን ስንት ያስፈልገዋል?<br><small>How many more does eight need to make ten?</small> | 2 | `ex.make10.01.mp3` |
-| 19.9 s | tap_choose | አስር እና ሶስት ስንት ነው?<br><small>What is ten and three?</small> | 13 | `ex.teens.18.mp3` |
+| 14.4 s | tap_choose | ስምንት አስር እንዲሆን ስንት ያስፈልገዋል?<br><small>How many more does eight need to make ten?</small> | 2 | `ex.make10.01.mp3` |
+| 18.9 s | tap_choose | አስር እና ሶስት ስንት ነው?<br><small>What is ten and three?</small> | 13 | `ex.teens.18.mp3` |
 
-Re-teach clip after two misses: 11.3–26.6 s
+Re-teach clip after two misses: 11.3–25.0 s
 
 ### 3. Guided practice (three levels per slot)
 
