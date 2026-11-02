@@ -182,7 +182,8 @@ class Column(VGroup):
 
     def pos(self, col, row):
         # col 0 = tens, 1 = ones; row 0 = first number, 1 = second, 2 = answer, -1 = carry line
-        return self.origin.get_center() + RIGHT * self.dx * col + DOWN * row * 0.95
+        extra = 0.22 if row >= 2 else 0    # answer row sits clear of the line
+        return self.origin.get_center() + RIGHT * self.dx * col + DOWN * (row * 0.95 + extra)
 
     def digits(self, n, row, color=None):
         t, o = divmod(n, 10)

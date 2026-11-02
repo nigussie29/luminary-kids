@@ -60,6 +60,7 @@ class G2Add2d(LessonScene):
         rods = VGroup(*rods_a, *rods_b, new_rod)
         rods_target = VGroup(*[Rod() for _ in range(4)]).arrange(RIGHT, buff=0.12).move_to(tt)
         answer = col.digits(42, 2, color=INK)
+        self.play(FadeOut(ones_note), run_time=0.3)       # make room: the answer goes where the note was
         self.step(L, 3,
                   *[r.animate.move_to(t) for r, t in zip(rods, rods_target)],
                   rest.animate.move_to(ot),
@@ -69,6 +70,6 @@ class G2Add2d(LessonScene):
         self.clear_step()
         words = VGroup(num(42, 96, BERRY), am(number_word(42), 44, BERRY), en(number_word(42, "en"), 24)) \
             .arrange(RIGHT, buff=0.35).to_edge(DOWN, buff=0.6)
-        self.play(FadeOut(ones_note), FadeIn(words, shift=UP * 0.2), Circumscribe(answer, color=BERRY), run_time=1.0)
+        self.play(FadeIn(words, shift=UP * 0.2), Circumscribe(answer, color=BERRY), run_time=1.0)
         self.wait(2.0)
         self.play(FadeOut(VGroup(mat, rods, rest, col, carry, answer, words)), run_time=0.8)
