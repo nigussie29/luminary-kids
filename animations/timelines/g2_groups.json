@@ -1,0 +1,43 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.133,
+  "step0": 10.4,
+  "step1": 13.4,
+  "step2": 17.467
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "እኩል ቡድኖች",
+   "en": "Equal groups",
+   "end": 2.633
+  },
+  {
+   "start": 4.133,
+   "am": "ለቡና ሥነ ሥርዓቱ ሶስት ትሪዎች ተዘጋጅተዋል። በእያንዳንዱ ትሪ ላይ አራት ስኒዎች አሉ።",
+   "en": "Three trays are ready for the coffee ceremony. Each tray has four cups.",
+   "end": 10.4
+  },
+  {
+   "start": 10.4,
+   "am": "አራት፣ ስምንት፣ አስራ ሁለት።",
+   "en": "Four, eight, twelve.",
+   "end": 13.4
+  },
+  {
+   "start": 13.4,
+   "am": "ሶስት ቡድኖች በአራት በአራት አስራ ሁለት ናቸው።",
+   "en": "Three groups of four make twelve.",
+   "end": 17.467
+  },
+  {
+   "start": 17.467,
+   "am": "ሶስት ጊዜ አራት እኩል ነው አስራ ሁለት።",
+   "en": "Three times four equals twelve.",
+   "end": 21.067
+  }
+ ],
+ "duration": 24.867,
+ "lesson": "g2_groups"
+}

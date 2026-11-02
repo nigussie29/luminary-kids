@@ -1,8 +1,11 @@
-# End-to-end smoke test in headless Chromium: plays a sample lesson, the starting game, and opens the grown-ups report.
+# End-to-end smoke test in headless Chromium for the quick-practice runs (the original lesson runs), the starting game
+# and the grown-ups report. The hands-on lessons have their own test: test/lessons_e2e.py.
+#   python3 test/smoke.py <screenshot folder> [app url]
 import sys, json
 from playwright.sync_api import sync_playwright
 OUT = sys.argv[1]
-URL = 'file:///home/claude/lk-repo/dist/luminary-kids.html'
+import os
+URL = sys.argv[2] if len(sys.argv) > 2 else 'file://' + os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'dist', 'luminary-kids.html'))
 errors = []
 def run(page, label):
     page.on('pageerror', lambda e: errors.append(f'{label}: {e}'))
@@ -34,7 +37,7 @@ with sync_playwright() as p:
         page.screenshot(path=f'{OUT}/{name}-landing.png', full_page=(name == 'desktop'))
         sw = page.evaluate('document.documentElement.scrollWidth'); assert sw <= vp['width'], f'{name} horizontal scroll {sw}'
         # sample lesson 1
-        page.click('.hero [data-act="sample"]')
+        page.evaluate("LK.app.S.guest = LK.newLearner(); LK.app.S.guest.diagnosticDone = true; LK.app.newRun('lesson', 'count10', true); LK.app.render()")
         page.screenshot(path=f'{OUT}/{name}-story.png')
         page.click('[data-act="next"]'); page.screenshot(path=f'{OUT}/{name}-example.png')
         page.click('[data-act="next"]')
@@ -66,7 +69,7 @@ with sync_playwright() as p:
             for k in range(6): play_item(page)
             page.click('.done [data-act="home"]')
             page.screenshot(path=f'{OUT}/phone-home.png', full_page=True)
-            page.click('.stone[data-skill="make10"]'); page.click('[data-act="next"]'); page.click('[data-act="next"]')
+            page.evaluate("LK.app.newRun('lesson', 'make10'); LK.app.render()"); page.click('[data-act="next"]'); page.click('[data-act="next"]')
             page.click('[data-act="hint"]'); page.screenshot(path=f'{OUT}/phone-hint.png')
             play_item(page)
             page.evaluate("LK.app.S.run.item = LK.generate('add10', 3, LK.rng(4)); LK.app.render()"); page.click('[data-act="hint"]'); page.screenshot(path=f'{OUT}/phone-line.png')

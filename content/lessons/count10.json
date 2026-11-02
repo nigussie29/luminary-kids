@@ -1,0 +1,1046 @@
+{
+  "id": "count10",
+  "grade": 1,
+  "n": 1,
+  "title": {
+    "am": "የአትክልት ቦታ ቆጠራ",
+    "en": "Counting in the garden",
+    "audio_url": "audio/am/lesson.count10.title.mp3"
+  },
+  "place": "garden",
+  "video": {
+    "src": "video/count10.mp4",
+    "src_low": "video/low/count10.mp4",
+    "poster": "video/count10.jpg",
+    "captions": {
+      "am": "video/count10.am.vtt",
+      "en": "video/count10.en.vtt"
+    },
+    "duration": 31.3,
+    "checkpoints": [
+      {
+        "t": 16.82,
+        "at": "mark:after3",
+        "exercise": {
+          "id": "count10.01",
+          "type": "tap_choose",
+          "prompt_am": "እስካሁን ስንት አበቦችን ቆጠርን?",
+          "prompt_en": "How many flowers have we counted so far?",
+          "audio_url": "audio/am/ex.count10.01.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            }
+          ],
+          "answer": 3,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 20.62,
+        "at": "mark:total",
+        "exercise": {
+          "id": "count10.02",
+          "type": "tap_choose",
+          "prompt_am": "በአጠቃላይ ስንት አበቦች አሉ?",
+          "prompt_en": "How many flowers are there in all?",
+          "audio_url": "audio/am/ex.count10.04.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 7
+            }
+          ],
+          "answer": 6,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 13.62,
+      "end": 31.3,
+      "at": [
+        "mark:count1",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "count10.03",
+          "type": "drag_drop_count",
+          "prompt_am": "አራት ብርቱካኖችን ወደ ቅርጫቱ እናስገባ።",
+          "prompt_en": "Let's put 4 oranges in the basket.",
+          "audio_url": "audio/am/ex.count10.05.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 0,
+              "need": 4
+            }
+          ],
+          "answer": 4,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "count10.04",
+          "type": "drag_drop_count",
+          "prompt_am": "ሰባት ብርቱካኖችን ወደ ቅርጫቱ እናስገባ።",
+          "prompt_en": "Let's put 7 oranges in the basket.",
+          "audio_url": "audio/am/ex.count10.08.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 0,
+              "need": 7
+            }
+          ],
+          "answer": 7,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "count10.05",
+          "type": "drag_drop_count",
+          "prompt_am": "አስር ብርቱካኖችን ወደ ቅርጫቱ እናስገባ።",
+          "prompt_en": "Let's put 10 oranges in the basket.",
+          "audio_url": "audio/am/ex.count10.09.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 13,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 0,
+              "need": 10
+            }
+          ],
+          "answer": 10,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "count10.06",
+          "type": "tap_count",
+          "prompt_am": "እያንዳንዱን ነካ አድርገን እንቁጠር። ስንት የቡና ፍሬዎች አሉ?",
+          "prompt_en": "Let's tap each one as we count. How many coffee beans are there?",
+          "audio_url": "audio/am/ex.count10.10.mp3",
+          "items": {
+            "thing": "bean",
+            "n": 5
+          },
+          "options": [
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            },
+            {
+              "v": 6
+            }
+          ],
+          "answer": 5,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "count10.07",
+          "type": "tap_count",
+          "prompt_am": "እያንዳንዱን ነካ አድርገን እንቁጠር። ስንት የቡና ፍሬዎች አሉ?",
+          "prompt_en": "Let's tap each one as we count. How many coffee beans are there?",
+          "audio_url": "audio/am/ex.count10.10.mp3",
+          "items": {
+            "thing": "bean",
+            "n": 8
+          },
+          "options": [
+            {
+              "v": 7
+            },
+            {
+              "v": 8
+            },
+            {
+              "v": 9
+            }
+          ],
+          "answer": 8,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "count10.08",
+          "type": "tap_count",
+          "prompt_am": "እያንዳንዱን ነካ አድርገን እንቁጠር። ስንት የቡና ፍሬዎች አሉ?",
+          "prompt_en": "Let's tap each one as we count. How many coffee beans are there?",
+          "audio_url": "audio/am/ex.count10.10.mp3",
+          "items": {
+            "thing": "bean",
+            "n": 9
+          },
+          "options": [
+            {
+              "v": 8
+            },
+            {
+              "v": 9
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 9,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "count10.09",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its number.",
+          "audio_url": "audio/am/ex.count10.11.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "አንድ",
+              "lang": "am",
+              "audio_url": "audio/am/num.1.mp3"
+            },
+            {
+              "id": "w1",
+              "label": "ሁለት",
+              "lang": "am",
+              "audio_url": "audio/am/num.2.mp3"
+            },
+            {
+              "id": "w2",
+              "label": "ሶስት",
+              "lang": "am",
+              "audio_url": "audio/am/num.3.mp3"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "2"
+            },
+            {
+              "id": "t2",
+              "label": "3"
+            },
+            {
+              "id": "t0",
+              "label": "1"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "count10.10",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its number.",
+          "audio_url": "audio/am/ex.count10.11.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "አራት",
+              "lang": "am",
+              "audio_url": "audio/am/num.4.mp3"
+            },
+            {
+              "id": "w1",
+              "label": "አምስት",
+              "lang": "am",
+              "audio_url": "audio/am/num.5.mp3"
+            },
+            {
+              "id": "w2",
+              "label": "ስድስት",
+              "lang": "am",
+              "audio_url": "audio/am/num.6.mp3"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "5"
+            },
+            {
+              "id": "t2",
+              "label": "6"
+            },
+            {
+              "id": "t0",
+              "label": "4"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "count10.11",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its number.",
+          "audio_url": "audio/am/ex.count10.11.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "ሰባት",
+              "lang": "am",
+              "audio_url": "audio/am/num.7.mp3"
+            },
+            {
+              "id": "w1",
+              "label": "ስምንት",
+              "lang": "am",
+              "audio_url": "audio/am/num.8.mp3"
+            },
+            {
+              "id": "w2",
+              "label": "ዘጠኝ",
+              "lang": "am",
+              "audio_url": "audio/am/num.9.mp3"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "8"
+            },
+            {
+              "id": "t2",
+              "label": "9"
+            },
+            {
+              "id": "t0",
+              "label": "7"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "count10.12",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "labels": "ends"
+          },
+          "items": [
+            "3",
+            "5"
+          ],
+          "answer": [
+            "3",
+            "5"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "count10.13",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "labels": "ends"
+          },
+          "items": [
+            "2",
+            "6",
+            "8"
+          ],
+          "answer": [
+            "2",
+            "6",
+            "8"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "count10.14",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "labels": "none"
+          },
+          "items": [
+            "4",
+            "7",
+            "9"
+          ],
+          "answer": [
+            "4",
+            "7",
+            "9"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "count10.15",
+          "type": "listen_choose",
+          "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+          "prompt_en": "Let's listen, then tap the number we hear.",
+          "audio_url": "audio/am/ex.count10.17.mp3",
+          "say": {
+            "am": "ሶስት",
+            "en": "three",
+            "audio_url": "audio/am/num.3.mp3"
+          },
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 5
+            },
+            {
+              "v": 8
+            }
+          ],
+          "answer": 3,
+          "hints": [
+            {
+              "am": "እንደገና እናዳምጥ።",
+              "en": "Listen again.",
+              "audio_url": "audio/am/ex.count10.18.mp3"
+            },
+            {
+              "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+              "en": "Whisper the number back to yourself.",
+              "audio_url": "audio/am/ex.count10.19.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "count10.16",
+          "type": "listen_choose",
+          "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+          "prompt_en": "Let's listen, then tap the number we hear.",
+          "audio_url": "audio/am/ex.count10.17.mp3",
+          "say": {
+            "am": "ስድስት",
+            "en": "six",
+            "audio_url": "audio/am/num.6.mp3"
+          },
+          "options": [
+            {
+              "v": 6
+            },
+            {
+              "v": 9
+            },
+            {
+              "v": 2
+            }
+          ],
+          "answer": 6,
+          "hints": [
+            {
+              "am": "እንደገና እናዳምጥ።",
+              "en": "Listen again.",
+              "audio_url": "audio/am/ex.count10.18.mp3"
+            },
+            {
+              "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+              "en": "Whisper the number back to yourself.",
+              "audio_url": "audio/am/ex.count10.19.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "count10.17",
+          "type": "listen_choose",
+          "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+          "prompt_en": "Let's listen, then tap the number we hear.",
+          "audio_url": "audio/am/ex.count10.17.mp3",
+          "say": {
+            "am": "ዘጠኝ",
+            "en": "nine",
+            "audio_url": "audio/am/num.9.mp3"
+          },
+          "options": [
+            {
+              "v": 6
+            },
+            {
+              "v": 9
+            },
+            {
+              "v": 7
+            }
+          ],
+          "answer": 9,
+          "hints": [
+            {
+              "am": "እንደገና እናዳምጥ።",
+              "en": "Listen again.",
+              "audio_url": "audio/am/ex.count10.18.mp3"
+            },
+            {
+              "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+              "en": "Whisper the number back to yourself.",
+              "audio_url": "audio/am/ex.count10.19.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "count10.18",
+          "type": "drag_drop_count",
+          "prompt_am": "ስድስት የቡና ፍሬዎችን ወደ ቅርጫቱ እናስገባ።",
+          "prompt_en": "Let's put 6 coffee beans in the basket.",
+          "audio_url": "audio/am/ex.count10.20.mp3",
+          "items": {
+            "thing": "bean",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 0,
+              "need": 6
+            }
+          ],
+          "answer": 6,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "count10.19",
+          "type": "drag_drop_count",
+          "prompt_am": "ስምንት የቡና ፍሬዎችን ወደ ቅርጫቱ እናስገባ።",
+          "prompt_en": "Let's put 8 coffee beans in the basket.",
+          "audio_url": "audio/am/ex.count10.21.mp3",
+          "items": {
+            "thing": "bean",
+            "supply": 11,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 0,
+              "need": 8
+            }
+          ],
+          "answer": 8,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "count10.20",
+          "type": "drag_drop_count",
+          "prompt_am": "አስር የቡና ፍሬዎችን ወደ ቅርጫቱ እናስገባ።",
+          "prompt_en": "Let's put 10 coffee beans in the basket.",
+          "audio_url": "audio/am/ex.count10.22.mp3",
+          "items": {
+            "thing": "bean",
+            "supply": 13,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 0,
+              "need": 10
+            }
+          ],
+          "answer": 10,
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [
+    {
+      "id": "count10.21",
+      "type": "speak",
+      "prompt_am": "«አምስት» ብለን ጮክ ብለን እንናገር።",
+      "prompt_en": "Let's say «five» out loud.",
+      "audio_url": "audio/am/ex.count10.23.mp3",
+      "say": {
+        "am": "አምስት",
+        "en": "five",
+        "audio_url": "audio/am/num.5.mp3"
+      },
+      "answer": 5,
+      "optional": true,
+      "hints": [
+        {
+          "am": "ቀስ ብለን እንናገር።",
+          "en": "Say it slowly.",
+          "audio_url": "audio/am/ex.count10.24.mp3"
+        }
+      ]
+    }
+  ],
+  "play": {
+    "game": "coffee",
+    "rounds": [
+      {
+        "n": 3
+      },
+      {
+        "n": 5
+      },
+      {
+        "n": 7
+      }
+    ],
+    "intro": {
+      "am": "ለእንግዶቹ ቡና እንቅዳ! የተጠየቅነውን ያህል ስኒዎች እንሙላ።",
+      "en": "Let's pour coffee for the guests! Fill as many cups as asked.",
+      "audio_url": "audio/am/ex.count10.34.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "count10.22",
+      "type": "drag_drop_count",
+      "prompt_am": "ዘጠኝ የቡና ፍሬዎችን ወደ ቅርጫቱ እናስገባ።",
+      "prompt_en": "Let's put 9 coffee beans in the basket.",
+      "audio_url": "audio/am/ex.count10.25.mp3",
+      "items": {
+        "thing": "bean",
+        "supply": 12,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "basket",
+          "kind": "basket",
+          "start": 0,
+          "need": 9
+        }
+      ],
+      "answer": 9,
+      "hints": [
+        {
+          "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+          "en": "Count each one just once.",
+          "audio_url": "audio/am/ex.count10.06.mp3"
+        },
+        {
+          "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+          "en": "The last number we say tells how many.",
+          "audio_url": "audio/am/ex.count10.07.mp3"
+        }
+      ]
+    },
+    {
+      "id": "count10.23",
+      "type": "drag_match_word",
+      "prompt_am": "እያንዳንዱን የግዕዝ ቁጥር ከቁጥሩ ጋር እናገናኝ።",
+      "prompt_en": "Let's match each Ge'ez numeral to its number.",
+      "audio_url": "audio/am/ex.count10.26.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "፭",
+          "lang": "geez"
+        },
+        {
+          "id": "w1",
+          "label": "፫",
+          "lang": "geez"
+        },
+        {
+          "id": "w2",
+          "label": "፰",
+          "lang": "geez"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "label": "3"
+        },
+        {
+          "id": "t2",
+          "label": "8"
+        },
+        {
+          "id": "t0",
+          "label": "5"
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1",
+        "w2": "t2"
+      },
+      "hints": [
+        {
+          "am": "፩ አንድ፣ ፭ አምስት፣ ፲ አስር ነው።",
+          "en": "፩ is one, ፭ is five, ፲ is ten.",
+          "audio_url": "audio/am/ex.count10.27.mp3"
+        },
+        {
+          "am": "የግዕዝ ቁጥሮች በቅደም ተከተል ፩ ፪ ፫ ፬ ፭ ፮ ፯ ፰ ፱ ፲ ናቸው።",
+          "en": "Ge'ez numerals in order are ፩ ፪ ፫ ፬ ፭ ፮ ፯ ፰ ፱ ፲.",
+          "audio_url": "audio/am/ex.count10.28.mp3"
+        }
+      ]
+    },
+    {
+      "id": "count10.24",
+      "type": "numpad",
+      "prompt_am": "ስንት ስኒዎች አሉ?",
+      "prompt_en": "How many cups are there?",
+      "audio_url": "audio/am/ex.count10.29.mp3",
+      "answer": 8,
+      "visual": {
+        "kind": "group",
+        "thing": "cup",
+        "n": 8
+      },
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+          "en": "Count each one just once.",
+          "audio_url": "audio/am/ex.count10.06.mp3"
+        },
+        {
+          "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+          "en": "The last number we say tells how many.",
+          "audio_url": "audio/am/ex.count10.07.mp3"
+        }
+      ]
+    },
+    {
+      "id": "count10.25",
+      "type": "trace",
+      "prompt_am": "ቁጥር አምስትን በጣታችን እንጻፍ።",
+      "prompt_en": "Let's trace the number 5 with a finger.",
+      "audio_url": "audio/am/ex.count10.30.mp3",
+      "text": "5",
+      "script": "digits",
+      "answer": "5",
+      "hints": [
+        {
+          "am": "ከትልቁ ነጥብ እንጀምር።",
+          "en": "Start at the big dot.",
+          "audio_url": "audio/am/ex.count10.31.mp3"
+        },
+        {
+          "am": "መስመሩን ተከትለን ቀስ ብለን እንሳል።",
+          "en": "Follow the line slowly.",
+          "audio_url": "audio/am/ex.count10.32.mp3"
+        }
+      ]
+    },
+    {
+      "id": "count10.26",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ስድስት ማንጎዎች አሉ።",
+      "prompt_en": "True or not? There are six mangoes.",
+      "audio_url": "audio/am/ex.count10.33.mp3",
+      "statement_am": "ስድስት ማንጎዎች አሉ።",
+      "statement_en": "There are six mangoes.",
+      "visual": {
+        "kind": "group",
+        "thing": "mango",
+        "n": 6
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 3.4,
+  "step0": 10.4,
+  "step1": 13.533,
+  "step2": 18.333,
+  "step3": 22.2,
+  "step4": 28.367
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "አስርን ፈትተን እንቀንሳለን",
+   "en": "Subtracting by breaking a ten",
+   "end": 3.4
+  },
+  {
+   "start": 3.4,
+   "am": "በገበያው ቅርጫት ውስጥ አርባ ሁለት እንቁላሎች አሉ። አንድ ደንበኛ አስራ ሰባት እንቁላሎች ገዛ።",
+   "en": "There are forty-two eggs in the market basket. A customer buys seventeen eggs.",
+   "end": 9.9
+  },
+  {
+   "start": 10.4,
+   "am": "አርባ ሁለት ሲቀነስ አስራ ሰባት።",
+   "en": "Forty-two minus seventeen.",
+   "end": 13.533
+  },
+  {
+   "start": 13.533,
+   "am": "ከሁለት ሰባት መውሰድ አንችልም፤ ስለዚህ አንድ አስር እንፈታለን።",
+   "en": "We cannot take seven from two, so we break one ten.",
+   "end": 18.333
+  },
+  {
+   "start": 18.333,
+   "am": "አሁን ሶስት አስሮች እና አስራ ሁለት አንዶች አሉ።",
+   "en": "Now there are three tens and twelve ones.",
+   "end": 22.2
+  },
+  {
+   "start": 22.2,
+   "am": "አስራ ሁለት ሲቀነስ ሰባት አምስት ነው፤ ሶስት ሲቀነስ አንድ ሁለት ነው።",
+   "en": "Twelve minus seven is five; three tens minus one ten is two tens.",
+   "end": 28.367
+  },
+  {
+   "start": 28.367,
+   "am": "መልሱ ሃያ አምስት ነው።",
+   "en": "The answer is twenty-five.",
+   "end": 31.167
+  }
+ ],
+ "duration": 34.667,
+ "lesson": "g2_sub2d"
+}

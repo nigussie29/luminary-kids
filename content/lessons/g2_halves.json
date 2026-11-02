@@ -1,0 +1,1227 @@
+{
+  "id": "g2_halves",
+  "grade": 2,
+  "n": 6,
+  "title": {
+    "am": "ግማሽ እና ሩብ",
+    "en": "Halves and quarters",
+    "audio_url": "audio/am/lesson.g2_halves.title.mp3"
+  },
+  "place": "kitchen",
+  "video": {
+    "src": "video/g2_halves.mp4",
+    "src_low": "video/low/g2_halves.mp4",
+    "poster": "video/g2_halves.jpg",
+    "captions": {
+      "am": "video/g2_halves.am.vtt",
+      "en": "video/g2_halves.en.vtt"
+    },
+    "duration": 24.333,
+    "checkpoints": [
+      {
+        "t": 13.52,
+        "at": "step:1",
+        "exercise": {
+          "id": "g2_halves.01",
+          "type": "tap_choose",
+          "prompt_am": "ሁለቱ ክፍሎች እኩል ናቸው?",
+          "prompt_en": "Are the two parts equal?",
+          "audio_url": "audio/am/ex.g2_halves.01.mp3",
+          "options": [
+            {
+              "v": "yes",
+              "am": "አዎ",
+              "en": "Yes"
+            },
+            {
+              "v": "no",
+              "am": "አይ",
+              "en": "No"
+            }
+          ],
+          "answer": "yes",
+          "visual": {
+            "kind": "injera",
+            "parts": 2,
+            "filled": 1,
+            "equal": true
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 17.42,
+        "at": "step:2",
+        "exercise": {
+          "id": "g2_halves.02",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ሩቦች አንድ ሙሉ እንጀራ ይሆናሉ?",
+          "prompt_en": "How many quarters make a whole injera?",
+          "audio_url": "audio/am/ex.g2_halves.02.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 8
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "injera",
+            "parts": 4,
+            "filled": 1,
+            "equal": true
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 8.95,
+      "end": 24.333,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g2_halves.03",
+          "type": "drag_fraction",
+          "prompt_am": "እንጀራውን ግማሽ እንዲሆን በሩብ ቁርጥራጮች እንሙላ።",
+          "prompt_en": "Let's fill half of the injera with quarter pieces.",
+          "audio_url": "audio/am/ex.g2_halves.03.mp3",
+          "shape": "injera",
+          "parts": 4,
+          "items": [
+            {
+              "piece": "quarter",
+              "count": 4
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 2,
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_halves.04",
+          "type": "drag_fraction",
+          "prompt_am": "እንጀራውን በሙሉ በግማሽ ቁርጥራጮች እንሙላ።",
+          "prompt_en": "Let's fill the whole injera with half pieces.",
+          "audio_url": "audio/am/ex.g2_halves.06.mp3",
+          "shape": "injera",
+          "parts": 4,
+          "items": [
+            {
+              "piece": "half",
+              "count": 3
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 4,
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_halves.05",
+          "type": "drag_fraction",
+          "prompt_am": "እንጀራውን ሶስት ሩብ እንዲሆን እንሙላ።",
+          "prompt_en": "Let's fill three quarters of the injera.",
+          "audio_url": "audio/am/ex.g2_halves.07.mp3",
+          "shape": "injera",
+          "parts": 4,
+          "items": [
+            {
+              "piece": "quarter",
+              "count": 3
+            },
+            {
+              "piece": "half",
+              "count": 1
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 3,
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g2_halves.06",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው በሁለት እኩል ክፍሎች ተከፍሏል?",
+          "prompt_en": "Which one is cut into two equal parts?",
+          "audio_url": "audio/am/ex.g2_halves.08.mp3",
+          "options": [
+            {
+              "v": "a",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 0,
+                "equal": true
+              }
+            },
+            {
+              "v": "b",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 0,
+                "equal": false
+              }
+            }
+          ],
+          "answer": "a",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_halves.07",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው በአራት እኩል ክፍሎች ተከፍሏል?",
+          "prompt_en": "Which one is cut into four equal parts?",
+          "audio_url": "audio/am/ex.g2_halves.09.mp3",
+          "options": [
+            {
+              "v": "a",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 0,
+                "equal": false
+              }
+            },
+            {
+              "v": "b",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 0,
+                "equal": true
+              }
+            }
+          ],
+          "answer": "b",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_halves.08",
+          "type": "tap_choose",
+          "prompt_am": "ሩብ የቀለመው የትኛው ነው?",
+          "prompt_en": "Which one has a quarter coloured?",
+          "audio_url": "audio/am/ex.g2_halves.10.mp3",
+          "options": [
+            {
+              "v": "a",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "v": "b",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "v": "c",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 2,
+                "equal": true
+              }
+            }
+          ],
+          "answer": "b",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g2_halves.09",
+          "type": "drag_fraction",
+          "prompt_am": "አንድ ሩብ እናስቀምጥ።",
+          "prompt_en": "Let's put one quarter.",
+          "audio_url": "audio/am/ex.g2_halves.11.mp3",
+          "shape": "injera",
+          "parts": 4,
+          "items": [
+            {
+              "piece": "quarter",
+              "count": 3
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 1,
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_halves.10",
+          "type": "drag_fraction",
+          "prompt_am": "አንድ ግማሽ እናስቀምጥ።",
+          "prompt_en": "Let's put one half.",
+          "audio_url": "audio/am/ex.g2_halves.12.mp3",
+          "shape": "injera",
+          "parts": 4,
+          "items": [
+            {
+              "piece": "half",
+              "count": 2
+            },
+            {
+              "piece": "quarter",
+              "count": 2
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 2,
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_halves.11",
+          "type": "drag_fraction",
+          "prompt_am": "አንድ ሩብ ተቀምጧል። ግማሽ እንዲሆን እንሙላ።",
+          "prompt_en": "One quarter is there. Let's fill it to make a half.",
+          "audio_url": "audio/am/ex.g2_halves.13.mp3",
+          "shape": "injera",
+          "parts": 4,
+          "items": [
+            {
+              "piece": "quarter",
+              "count": 3
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 1
+            }
+          ],
+          "answer": 2,
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g2_halves.12",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከሥዕሉ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its picture.",
+          "audio_url": "audio/am/ex.g2_halves.14.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "ግማሽ",
+              "lang": "am"
+            },
+            {
+              "id": "w1",
+              "label": "ሩብ",
+              "lang": "am"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 1,
+                "equal": true
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_halves.13",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከሥዕሉ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its picture.",
+          "audio_url": "audio/am/ex.g2_halves.14.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "ግማሽ",
+              "lang": "am"
+            },
+            {
+              "id": "w1",
+              "label": "ሩብ",
+              "lang": "am"
+            },
+            {
+              "id": "w2",
+              "label": "ሙሉ",
+              "lang": "am"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "t2",
+              "visual": {
+                "kind": "injera",
+                "parts": 1,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 1,
+                "equal": true
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_halves.14",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its number.",
+          "audio_url": "audio/am/ex.count10.11.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "ግማሽ",
+              "lang": "am"
+            },
+            {
+              "id": "w1",
+              "label": "ሩብ",
+              "lang": "am"
+            },
+            {
+              "id": "w2",
+              "label": "ሶስት ሩብ",
+              "lang": "am"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "¼"
+            },
+            {
+              "id": "t2",
+              "label": "¾"
+            },
+            {
+              "id": "t0",
+              "label": "½"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g2_halves.15",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ይህ በሁለት እኩል ክፍሎች ተከፍሏል።",
+          "prompt_en": "True or not? This is cut into two equal parts.",
+          "audio_url": "audio/am/ex.g2_halves.15.mp3",
+          "statement_am": "ይህ በሁለት እኩል ክፍሎች ተከፍሏል።",
+          "statement_en": "This is cut into two equal parts.",
+          "visual": {
+            "kind": "injera",
+            "parts": 2,
+            "filled": 0,
+            "equal": true
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_halves.16",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ይህ በሁለት እኩል ክፍሎች ተከፍሏል።",
+          "prompt_en": "True or not? This is cut into two equal parts.",
+          "audio_url": "audio/am/ex.g2_halves.15.mp3",
+          "statement_am": "ይህ በሁለት እኩል ክፍሎች ተከፍሏል።",
+          "statement_en": "This is cut into two equal parts.",
+          "visual": {
+            "kind": "injera",
+            "parts": 2,
+            "filled": 0,
+            "equal": false
+          },
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_halves.17",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? የቀለመው ክፍል ሩብ ነው።",
+          "prompt_en": "True or not? The coloured part is a quarter.",
+          "audio_url": "audio/am/ex.g2_halves.16.mp3",
+          "statement_am": "የቀለመው ክፍል ሩብ ነው።",
+          "statement_en": "The coloured part is a quarter.",
+          "visual": {
+            "kind": "injera",
+            "parts": 4,
+            "filled": 2,
+            "equal": true
+          },
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g2_halves.18",
+          "type": "drag_sort",
+          "prompt_am": "ግማሾችን እና ግማሽ ያልሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: halves, not halves.",
+          "audio_url": "audio/am/ex.g2_halves.17.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "ግማሽ",
+              "en": "Half"
+            },
+            {
+              "id": "no",
+              "am": "ግማሽ አይደለም",
+              "en": "Not a half"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 2,
+                "equal": true
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 1,
+                "equal": false
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_halves.19",
+          "type": "drag_sort",
+          "prompt_am": "ግማሾችን እና ግማሽ ያልሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: halves, not halves.",
+          "audio_url": "audio/am/ex.g2_halves.17.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "ግማሽ",
+              "en": "Half"
+            },
+            {
+              "id": "no",
+              "am": "ግማሽ አይደለም",
+              "en": "Not a half"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 2,
+                "equal": true
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 3,
+                "equal": true
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": true
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_halves.20",
+          "type": "drag_sort",
+          "prompt_am": "ሩቦችን እና ሩብ ያልሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: quarters, not quarters.",
+          "audio_url": "audio/am/ex.g2_halves.18.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "ሩብ",
+              "en": "Quarter"
+            },
+            {
+              "id": "no",
+              "am": "ሩብ አይደለም",
+              "en": "Not a quarter"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 2,
+                "filled": 1,
+                "equal": true
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": false
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 3,
+                "equal": true
+              }
+            },
+            {
+              "id": "e",
+              "label": "",
+              "visual": {
+                "kind": "injera",
+                "parts": 4,
+                "filled": 1,
+                "equal": true
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "no",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+              "en": "The parts must be equal.",
+              "audio_url": "audio/am/ex.g2_halves.04.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+              "en": "Two quarters make one half.",
+              "audio_url": "audio/am/ex.g2_halves.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "memory",
+    "pairs": [
+      {
+        "n": "½",
+        "am": "ግማሽ",
+        "visual": {
+          "kind": "injera",
+          "parts": 2,
+          "filled": 1,
+          "equal": true
+        }
+      },
+      {
+        "n": "¼",
+        "am": "ሩብ",
+        "visual": {
+          "kind": "injera",
+          "parts": 4,
+          "filled": 1,
+          "equal": true
+        }
+      },
+      {
+        "n": "¾",
+        "am": "ሶስት ሩብ",
+        "visual": {
+          "kind": "injera",
+          "parts": 4,
+          "filled": 3,
+          "equal": true
+        }
+      },
+      {
+        "n": "1",
+        "am": "ሙሉ",
+        "visual": {
+          "kind": "injera",
+          "parts": 1,
+          "filled": 1,
+          "equal": true
+        }
+      }
+    ],
+    "intro": {
+      "am": "የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና ሥዕል።",
+      "en": "Let's find matching cards: number, word and picture.",
+      "audio_url": "audio/am/ex.g2_halves.25.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g2_halves.21",
+      "type": "drag_fraction",
+      "prompt_am": "በሩብ ቁርጥራጮች ግማሽ እንሥራ።",
+      "prompt_en": "Let's make a half with quarter pieces.",
+      "audio_url": "audio/am/ex.g2_halves.19.mp3",
+      "shape": "injera",
+      "parts": 4,
+      "items": [
+        {
+          "piece": "quarter",
+          "count": 4
+        }
+      ],
+      "targets": [
+        {
+          "id": "injera",
+          "start": 0
+        }
+      ],
+      "answer": 2,
+      "hints": [
+        {
+          "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+          "en": "The parts must be equal.",
+          "audio_url": "audio/am/ex.g2_halves.04.mp3"
+        },
+        {
+          "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+          "en": "Two quarters make one half.",
+          "audio_url": "audio/am/ex.g2_halves.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_halves.22",
+      "type": "drag_match_word",
+      "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+      "prompt_en": "Let's match each word to its number.",
+      "audio_url": "audio/am/ex.count10.11.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "ግማሽ",
+          "lang": "am"
+        },
+        {
+          "id": "w1",
+          "label": "ሩብ",
+          "lang": "am"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "label": "¼"
+        },
+        {
+          "id": "t0",
+          "label": "½"
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1"
+      },
+      "hints": [
+        {
+          "am": "ቃሉን ቀስ ብለን እናንብብ።",
+          "en": "Read the word slowly.",
+          "audio_url": "audio/am/ex.count10.12.mp3"
+        },
+        {
+          "am": "በድምፅ ቁልፉ እናዳምጥ።",
+          "en": "Tap the sound button to listen.",
+          "audio_url": "audio/am/ex.count10.13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_halves.23",
+      "type": "numpad",
+      "prompt_am": "ስንት ግማሾች አንድ ሙሉ እንጀራ ይሆናሉ?",
+      "prompt_en": "How many halves make a whole injera?",
+      "audio_url": "audio/am/ex.g2_halves.20.mp3",
+      "answer": 2,
+      "visual": {
+        "kind": "injera",
+        "parts": 2,
+        "filled": 0,
+        "equal": true
+      },
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+          "en": "The parts must be equal.",
+          "audio_url": "audio/am/ex.g2_halves.04.mp3"
+        },
+        {
+          "am": "ሁለት ሩብ አንድ ግማሽ ይሆናሉ።",
+          "en": "Two quarters make one half.",
+          "audio_url": "audio/am/ex.g2_halves.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_halves.24",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ሁለት ግማሾች አንድ ሙሉ ናቸው።",
+      "prompt_en": "True or not? Two halves make one whole.",
+      "audio_url": "audio/am/ex.g2_halves.21.mp3",
+      "statement_am": "ሁለት ግማሾች አንድ ሙሉ ናቸው።",
+      "statement_en": "Two halves make one whole.",
+      "visual": {
+        "kind": "injera",
+        "parts": 2,
+        "filled": 2,
+        "equal": true
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_halves.25",
+      "type": "clock",
+      "prompt_am": "ሰዓቱን ሶስት ተኩል እናድርግ፤ ትንሹ መርፌ በ3 እና በ4 መካከል፣ ትልቁ መርፌ 6 ላይ።",
+      "prompt_en": "Set the clock to half past three: short hand between 3 and 4, long hand on 6.",
+      "audio_url": "audio/am/ex.g2_halves.22.mp3",
+      "answer": {
+        "h": 3,
+        "m": 30
+      },
+      "hints": [
+        {
+          "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+          "en": "The short hand shows the hour, the long hand the minutes.",
+          "audio_url": "audio/am/ex.g2_halves.23.mp3"
+        },
+        {
+          "am": "ተኩል ሲሆን ትልቁ መርፌ 6 ላይ ነው።",
+          "en": "At half past, the long hand points to 6.",
+          "audio_url": "audio/am/ex.g2_halves.24.mp3"
+        }
+      ]
+    }
+  ]
+}

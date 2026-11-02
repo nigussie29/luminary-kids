@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.467,
+  "step0": 10.433,
+  "step1": 14.567,
+  "step2": 18.7,
+  "step3": 22.333
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "የባጃጅ ጉዞ",
+   "en": "The bajaj ride",
+   "end": 2.567
+  },
+  {
+   "start": 4.467,
+   "am": "ባጃጁ ልጆችን ወደ ትምህርት ቤት ይወስዳል። በየማቆሚያው ተጨማሪ ልጆች ይገባሉ።",
+   "en": "The bajaj takes children to school. More children get in at each stop.",
+   "end": 10.433
+  },
+  {
+   "start": 10.433,
+   "am": "ሶስት ልጆች አሉ።",
+   "en": "Three children are inside.",
+   "end": 14.567
+  },
+  {
+   "start": 14.567,
+   "am": "ሁለት ልጆች ገቡ።",
+   "en": "Two more get in.",
+   "end": 18.7
+  },
+  {
+   "start": 18.7,
+   "am": "ከሶስት ጀምረን እንቁጠር፦ አራት፣ አምስት።",
+   "en": "Start at three and count on: four, five.",
+   "end": 22.333
+  },
+  {
+   "start": 22.333,
+   "am": "ሶስት ሲደመር ሁለት እኩል ነው አምስት።",
+   "en": "Three plus two equals five.",
+   "end": 26.267
+  }
+ ],
+ "duration": 29.767,
+ "lesson": "add10"
+}

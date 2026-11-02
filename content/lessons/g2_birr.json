@@ -1,0 +1,1280 @@
+{
+  "id": "g2_birr",
+  "grade": 2,
+  "n": 5,
+  "title": {
+    "am": "ብር እንቁጠር",
+    "en": "Counting birr",
+    "audio_url": "audio/am/lesson.g2_birr.title.mp3"
+  },
+  "place": "shop",
+  "video": {
+    "src": "video/g2_birr.mp4",
+    "src_low": "video/low/g2_birr.mp4",
+    "poster": "video/g2_birr.jpg",
+    "captions": {
+      "am": "video/g2_birr.am.vtt",
+      "en": "video/g2_birr.en.vtt"
+    },
+    "duration": 24.967,
+    "checkpoints": [
+      {
+        "t": 10.62,
+        "at": "step:1",
+        "exercise": {
+          "id": "g2_birr.01",
+          "type": "tap_choose",
+          "prompt_am": "ሁለት የአስር ብር ኖቶች ስንት ብር ናቸው?",
+          "prompt_en": "How much are two ten-birr notes?",
+          "audio_url": "audio/am/ex.g2_birr.01.mp3",
+          "options": [
+            {
+              "v": 12
+            },
+            {
+              "v": 20
+            },
+            {
+              "v": 100
+            }
+          ],
+          "answer": 20,
+          "visual": {
+            "kind": "birr",
+            "notes": [
+              10,
+              10
+            ]
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 17.55,
+        "at": "step:3",
+        "exercise": {
+          "id": "g2_birr.02",
+          "type": "tap_choose",
+          "prompt_am": "ሃያ አምስት ብር ሲደመር አንድ ብር ስንት ነው?",
+          "prompt_en": "What is twenty-five birr plus one birr?",
+          "audio_url": "audio/am/ex.g2_birr.02.mp3",
+          "options": [
+            {
+              "v": 24
+            },
+            {
+              "v": 26
+            },
+            {
+              "v": 35
+            }
+          ],
+          "answer": 26,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 8.38,
+      "end": 24.967,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g2_birr.03",
+          "type": "drag_make_change",
+          "prompt_am": "ዳቦው አስራ አምስት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The bread costs 15 birr. Let's pay exactly 15 birr.",
+          "audio_url": "audio/am/ex.g2_birr.03.mp3",
+          "price": 15,
+          "item": {
+            "am": "ዳቦው",
+            "en": "bread",
+            "pic": "bread"
+          },
+          "items": [
+            10,
+            5,
+            5,
+            1,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 15,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_birr.04",
+          "type": "drag_make_change",
+          "prompt_am": "ዳቦው ሃያ ስድስት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The bread costs 26 birr. Let's pay exactly 26 birr.",
+          "audio_url": "audio/am/ex.g2_birr.06.mp3",
+          "price": 26,
+          "item": {
+            "am": "ዳቦው",
+            "en": "bread",
+            "pic": "bread"
+          },
+          "items": [
+            10,
+            10,
+            10,
+            5,
+            1,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 26,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_birr.05",
+          "type": "drag_make_change",
+          "prompt_am": "ጫማው ሰላሳ ስምንት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The pair of shoes costs 38 birr. Let's pay exactly 38 birr.",
+          "audio_url": "audio/am/ex.g2_birr.07.mp3",
+          "price": 38,
+          "item": {
+            "am": "ጫማው",
+            "en": "pair of shoes",
+            "pic": "shoes"
+          },
+          "items": [
+            10,
+            10,
+            10,
+            10,
+            5,
+            5,
+            1,
+            1,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 38,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g2_birr.06",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ብዙ ገንዘብ ነው?",
+          "prompt_en": "Which is more money?",
+          "audio_url": "audio/am/ex.g2_birr.08.mp3",
+          "options": [
+            {
+              "v": "left",
+              "am": "ግራ",
+              "en": "Left",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  5
+                ]
+              }
+            },
+            {
+              "v": "right",
+              "am": "ቀኝ",
+              "en": "Right",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  5,
+                  5,
+                  1
+                ]
+              }
+            }
+          ],
+          "answer": "left",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_birr.07",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ብዙ ገንዘብ ነው?",
+          "prompt_en": "Which is more money?",
+          "audio_url": "audio/am/ex.g2_birr.08.mp3",
+          "options": [
+            {
+              "v": "left",
+              "am": "ግራ",
+              "en": "Left",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "v": "right",
+              "am": "ቀኝ",
+              "en": "Right",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  5,
+                  5,
+                  5
+                ]
+              }
+            }
+          ],
+          "answer": "right",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_birr.08",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ብዙ ገንዘብ ነው?",
+          "prompt_en": "Which is more money?",
+          "audio_url": "audio/am/ex.g2_birr.08.mp3",
+          "options": [
+            {
+              "v": "left",
+              "am": "ግራ",
+              "en": "Left",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  10,
+                  1
+                ]
+              }
+            },
+            {
+              "v": "right",
+              "am": "ቀኝ",
+              "en": "Right",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              }
+            }
+          ],
+          "answer": "right",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g2_birr.09",
+          "type": "drag_make_change",
+          "prompt_am": "እስክሪብቶው አስራ ሁለት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The pen costs 12 birr. Let's pay exactly 12 birr.",
+          "audio_url": "audio/am/ex.g2_birr.09.mp3",
+          "price": 12,
+          "item": {
+            "am": "እስክሪብቶው",
+            "en": "pen",
+            "pic": "pen"
+          },
+          "items": [
+            10,
+            1,
+            1,
+            1,
+            5
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 12,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_birr.10",
+          "type": "drag_make_change",
+          "prompt_am": "ደብተሩ ሃያ ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The exercise book costs 20 birr. Let's pay exactly 20 birr.",
+          "audio_url": "audio/am/ex.g2_birr.10.mp3",
+          "price": 20,
+          "item": {
+            "am": "ደብተሩ",
+            "en": "exercise book",
+            "pic": "book"
+          },
+          "items": [
+            5,
+            5,
+            5,
+            5,
+            1,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 20,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_birr.11",
+          "type": "drag_make_change",
+          "prompt_am": "ቦርሳው አርባ አምስት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The school bag costs 45 birr. Let's pay exactly 45 birr.",
+          "audio_url": "audio/am/ex.g2_birr.11.mp3",
+          "price": 45,
+          "item": {
+            "am": "ቦርሳው",
+            "en": "school bag",
+            "pic": "bag"
+          },
+          "items": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            5,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 45,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g2_birr.12",
+          "type": "drag_sort",
+          "prompt_am": "ሃያ ብር ያለውን ዳቦ ለመግዛት በቂ የሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: enough for the 20-birr bread, not enough.",
+          "audio_url": "audio/am/ex.g2_birr.12.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "በቂ ነው",
+              "en": "Enough"
+            },
+            {
+              "id": "no",
+              "am": "በቂ አይደለም",
+              "en": "Not enough"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  10
+                ]
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  5
+                ]
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  5,
+                  5,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  5,
+                  5,
+                  5,
+                  1
+                ]
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_birr.13",
+          "type": "drag_sort",
+          "prompt_am": "ሃያ ብር ያለውን ዳቦ ለመግዛት በቂ የሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: enough for the 20-birr bread, not enough.",
+          "audio_url": "audio/am/ex.g2_birr.12.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "በቂ ነው",
+              "en": "Enough"
+            },
+            {
+              "id": "no",
+              "am": "በቂ አይደለም",
+              "en": "Not enough"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  10,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  5,
+                  5,
+                  5,
+                  1,
+                  1
+                ]
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_birr.14",
+          "type": "drag_sort",
+          "prompt_am": "ሰላሳ ብር ያለውን ዕቃ ለመግዛት በቂ የሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: enough for the 30-birr item, not enough.",
+          "audio_url": "audio/am/ex.g2_birr.13.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "በቂ ነው",
+              "en": "Enough"
+            },
+            {
+              "id": "no",
+              "am": "በቂ አይደለም",
+              "en": "Not enough"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  10,
+                  5,
+                  5
+                ]
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  10,
+                  5,
+                  1
+                ]
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  10,
+                  10,
+                  10
+                ]
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "birr",
+                "notes": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  1,
+                  1
+                ]
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g2_birr.15",
+          "type": "numpad",
+          "prompt_am": "ስንት ብር ነው?",
+          "prompt_en": "How many birr is this?",
+          "audio_url": "audio/am/ex.g2_birr.14.mp3",
+          "answer": 27,
+          "visual": {
+            "kind": "birr",
+            "notes": [
+              10,
+              10,
+              5,
+              1,
+              1
+            ]
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_birr.16",
+          "type": "numpad",
+          "prompt_am": "ስንት ብር ነው?",
+          "prompt_en": "How many birr is this?",
+          "audio_url": "audio/am/ex.g2_birr.14.mp3",
+          "answer": 36,
+          "visual": {
+            "kind": "birr",
+            "notes": [
+              10,
+              10,
+              10,
+              5,
+              1
+            ]
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_birr.17",
+          "type": "numpad",
+          "prompt_am": "ስንት ብር ነው?",
+          "prompt_en": "How many birr is this?",
+          "audio_url": "audio/am/ex.g2_birr.14.mp3",
+          "answer": 58,
+          "visual": {
+            "kind": "birr",
+            "notes": [
+              50,
+              5,
+              1,
+              1,
+              1
+            ]
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g2_birr.18",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "10",
+            "+",
+            "10",
+            "+",
+            "5",
+            "=",
+            "__"
+          ],
+          "items": [
+            "25",
+            "20",
+            "30"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "25",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_birr.19",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "10",
+            "+",
+            "5",
+            "+",
+            "5",
+            "=",
+            "__"
+          ],
+          "items": [
+            "20",
+            "15",
+            "25"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "20",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_birr.20",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "50",
+            "+",
+            "10",
+            "+",
+            "5",
+            "=",
+            "__"
+          ],
+          "items": [
+            "65",
+            "60",
+            "75"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "65",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "market",
+    "budget_currency": "birr",
+    "rounds": [
+      {
+        "budget": 20,
+        "goods": [
+          {
+            "pic": "bread",
+            "am": "ዳቦ",
+            "en": "Bread",
+            "price": 15
+          },
+          {
+            "pic": "banana",
+            "am": "ሙዝ",
+            "en": "Banana",
+            "price": 5
+          },
+          {
+            "pic": "egg",
+            "am": "እንቁላል",
+            "en": "Egg",
+            "price": 8
+          }
+        ]
+      },
+      {
+        "budget": 30,
+        "goods": [
+          {
+            "pic": "pen",
+            "am": "እስክሪብቶ",
+            "en": "Pen",
+            "price": 12
+          },
+          {
+            "pic": "book",
+            "am": "ደብተር",
+            "en": "Exercise book",
+            "price": 18
+          },
+          {
+            "pic": "banana",
+            "am": "ሙዝ",
+            "en": "Banana",
+            "price": 7
+          }
+        ]
+      },
+      {
+        "budget": 50,
+        "goods": [
+          {
+            "pic": "bag",
+            "am": "ቦርሳ",
+            "en": "Bag",
+            "price": 35
+          },
+          {
+            "pic": "pen",
+            "am": "እስክሪብቶ",
+            "en": "Pen",
+            "price": 15
+          },
+          {
+            "pic": "bread",
+            "am": "ዳቦ",
+            "en": "Bread",
+            "price": 20
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።",
+      "en": "Let's go to the market! Buy things that use up exactly all our birr.",
+      "audio_url": "audio/am/ex.g2_birr.19.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g2_birr.21",
+      "type": "drag_make_change",
+      "prompt_am": "ደብተሩ ሰላሳ ሶስት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+      "prompt_en": "The exercise book costs 33 birr. Let's pay exactly 33 birr.",
+      "audio_url": "audio/am/ex.g2_birr.15.mp3",
+      "price": 33,
+      "item": {
+        "am": "ደብተሩ",
+        "en": "exercise book",
+        "pic": "book"
+      },
+      "items": [
+        10,
+        10,
+        10,
+        5,
+        1,
+        1,
+        1
+      ],
+      "targets": [
+        {
+          "id": "counter"
+        }
+      ],
+      "answer": 33,
+      "hints": [
+        {
+          "am": "ከትልቁ ገንዘብ እንጀምር።",
+          "en": "Start with the biggest money.",
+          "audio_url": "audio/am/ex.g2_birr.04.mp3"
+        },
+        {
+          "am": "ድምሩን እየቆጠርን እንጨምር።",
+          "en": "Keep a running total as you add.",
+          "audio_url": "audio/am/ex.g2_birr.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_birr.22",
+      "type": "drag_make_change",
+      "prompt_am": "ቦርሳው አርባ ሰባት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+      "prompt_en": "The school bag costs 47 birr. Let's pay exactly 47 birr.",
+      "audio_url": "audio/am/ex.g2_birr.16.mp3",
+      "price": 47,
+      "item": {
+        "am": "ቦርሳው",
+        "en": "school bag",
+        "pic": "bag"
+      },
+      "items": [
+        10,
+        10,
+        10,
+        10,
+        5,
+        5,
+        1,
+        1
+      ],
+      "targets": [
+        {
+          "id": "counter"
+        }
+      ],
+      "answer": 47,
+      "hints": [
+        {
+          "am": "ከትልቁ ገንዘብ እንጀምር።",
+          "en": "Start with the biggest money.",
+          "audio_url": "audio/am/ex.g2_birr.04.mp3"
+        },
+        {
+          "am": "ድምሩን እየቆጠርን እንጨምር።",
+          "en": "Keep a running total as you add.",
+          "audio_url": "audio/am/ex.g2_birr.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_birr.23",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሃያ አምስት ብር",
+        "en": "twenty-five birr",
+        "audio_url": "audio/am/ex.g2_birr.17.mp3"
+      },
+      "options": [
+        {
+          "v": 25
+        },
+        {
+          "v": 52
+        },
+        {
+          "v": 20
+        }
+      ],
+      "answer": 25,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_birr.24",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ይህ ሃያ ብር ነው።",
+      "prompt_en": "True or not? This is twenty birr.",
+      "audio_url": "audio/am/ex.g2_birr.18.mp3",
+      "statement_am": "ይህ ሃያ ብር ነው።",
+      "statement_en": "This is twenty birr.",
+      "visual": {
+        "kind": "birr",
+        "notes": [
+          10,
+          5,
+          5
+        ]
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_birr.25",
+      "type": "numpad",
+      "prompt_am": "ስንት ብር ነው?",
+      "prompt_en": "How many birr is this?",
+      "audio_url": "audio/am/ex.g2_birr.14.mp3",
+      "answer": 31,
+      "visual": {
+        "kind": "birr",
+        "notes": [
+          10,
+          10,
+          10,
+          1
+        ]
+      },
+      "max_digits": 3,
+      "hints": [
+        {
+          "am": "ከትልቁ ገንዘብ እንጀምር።",
+          "en": "Start with the biggest money.",
+          "audio_url": "audio/am/ex.g2_birr.04.mp3"
+        },
+        {
+          "am": "ድምሩን እየቆጠርን እንጨምር።",
+          "en": "Keep a running total as you add.",
+          "audio_url": "audio/am/ex.g2_birr.05.mp3"
+        }
+      ]
+    }
+  ]
+}

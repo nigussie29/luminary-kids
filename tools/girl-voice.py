@@ -9,7 +9,7 @@ Run on your own computer, from the luminary-kids folder:
 
     pip install edge-tts
     python3 tools/girl-voice.py --sample     # 6 audition lines → audio/sample/  (listen first)
-    python3 tools/girl-voice.py              # every Grade 1 + Grade 2 clip → audio/am/
+    python3 tools/girl-voice.py              # every clip for the app, videos and exercises → audio/am/
 
 Then push: the app and the lesson videos (python3 animations/render.py --all) use the clips.
 
@@ -43,19 +43,25 @@ fs.writeFileSync(path.resolve('dist', 'narration-script.csv'), csv);
 HUMAN = (".m4a", ".wav", ".ogg", ".webm", ".aac")   # treated as real recordings: never replaced
 
 
-def rows(grade):
-    # Make sure both recording scripts are fresh.
-    # Grade 1 list straight from the app's narration script (without rebuilding the app page).
+def rows(grade=None):
+    """Every clip the app and the videos use: the app's own lines, each video sentence, and every
+    exercise sentence and number word (content/build.js). Shared sentences are listed once."""
     subprocess.run(["node", "-e", G1_SCRIPT], cwd=ROOT, check=True, capture_output=True)
     subprocess.run(["node", "animations/export_lessons.js"], cwd=ROOT, check=True, capture_output=True)
-    files = {1: ROOT / "dist" / "narration-script.csv", 2: ROOT / "dist" / "narration-script-g2.csv"}
-    out = []
-    for g, f in files.items():
-        if grade and g != grade:
-            continue
-        with open(f, encoding="utf-8-sig", newline="") as fh:
+    subprocess.run(["node", "content/build.js"], cwd=ROOT, check=True, capture_output=True)
+    out, seen = [], set()
+    for name in ("narration-script.csv", "narration-script-videos.csv", "narration-script-exercises.csv"):
+        with open(ROOT / "dist" / name, encoding="utf-8-sig", newline="") as fh:
             for r in csv.DictReader(fh):
-                out.append((Path(r["file name"]).stem, r["Amharic to read"]))
+                key = Path(r["file name"]).stem
+                if key in seen:
+                    continue
+                if grade == 1 and ("g2_" in key):
+                    continue
+                if grade == 2 and key.startswith(("lesson.", "ex.")) and "g2_" not in key:
+                    continue
+                seen.add(key)
+                out.append((key, r["Amharic to read"]))
     return out
 
 

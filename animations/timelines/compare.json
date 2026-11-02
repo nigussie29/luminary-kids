@@ -1,0 +1,36 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.767,
+  "step0": 11.033,
+  "step1": 15.167
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ብዙ ወይስ ጥቂት?",
+   "en": "More or fewer?",
+   "end": 2.667
+  },
+  {
+   "start": 4.767,
+   "am": "በትምህርት ቤታችን የቡና ሥነ ሥርዓት ትርዒት አለ። የትኛው ትሪ ብዙ ስኒዎች አሉት?",
+   "en": "Our school has a coffee ceremony show. Which tray has more cups?",
+   "end": 10.533
+  },
+  {
+   "start": 11.033,
+   "am": "ስኒዎቹን አንድ ለአንድ እናገናኝ።",
+   "en": "Match the cups one to one.",
+   "end": 15.167
+  },
+  {
+   "start": 15.167,
+   "am": "ጓደኛ የሌለው ስኒ ያለበት ትሪ ብዙ አለው።",
+   "en": "The tray with cups left over has more.",
+   "end": 19.1
+  }
+ ],
+ "duration": 22.0,
+ "lesson": "compare"
+}

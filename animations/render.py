@@ -10,6 +10,7 @@ Output: dist/video/<lesson>.mp4 (H.264, AAC, fast-start for streaming)
 Narration clips still to record are listed in animations/media/missing/<Scene>.txt.
 """
 import argparse
+import json
 import re
 import subprocess
 import sys
@@ -28,6 +29,22 @@ def scene_name(py):
     if not m:
         sys.exit(f"{py.name}: no LessonScene class found")
     return m.group(1)
+
+
+def timeline(lesson_id):
+    f = ANIM / "timelines" / f"{lesson_id}.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else None
+
+
+def vtt(cues, lang):
+    def ts(t):
+        h, rem = divmod(max(t, 0), 3600)
+        m, sec = divmod(rem, 60)
+        return f"{int(h):02d}:{int(m):02d}:{sec:06.3f}"
+    out = ["WEBVTT", ""]
+    for i, c in enumerate(cues, 1):
+        out += [str(i), f"{ts(c['start'])} --> {ts(c['end'])}", c[lang], ""]
+    return "\n".join(out)
 
 
 def run(cmd):
@@ -56,10 +73,26 @@ def render(lesson_id, q):
     # Narration evened out to -16 LUFS, same target as tools/process-audio.sh.
     cmd += ["-af", "loudnorm=I=-16:TP=-1.5:LRA=7", "-c:a", "aac", "-b:a", "96k"] if has_audio else ["-an"]
     run(cmd + [mp4])
-    # Poster: a frame from the counting section (falls back to the first frame on short clips).
-    run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "8", "-i", mp4, "-frames:v", "1", "-q:v", "3", jpg])
+    # Small copy for slow connections: 360p, lower bitrate, mono narration.
+    (OUT / "low").mkdir(exist_ok=True)
+    low = ["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-vf", "scale=-2:360", "-r", "24",
+           "-c:v", "libx264", "-preset", "veryfast", "-crf", "30", "-pix_fmt", "yuv420p", "-movflags", "+faststart"]
+    low += ["-c:a", "aac", "-b:a", "48k", "-ac", "1"] if has_audio else ["-an"]
+    run(low + [OUT / "low" / f"{lesson_id}.mp4"])
+    # Poster: the first moment of the story (after the title card).
+    tl = timeline(lesson_id)
+    at = str(round((tl["marks"].get("story", 3) + 1.5), 2)) if tl else "8"
+    run(["ffmpeg", "-y", "-loglevel", "error", "-ss", at, "-i", mp4, "-frames:v", "1", "-q:v", "3", jpg])
     if not jpg.exists():
         run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-frames:v", "1", "-q:v", "3", jpg])
+    # Captions: Amharic (also burned into the picture) and optional English subtitles.
+    if tl:
+        for lang in ("am", "en"):
+            (OUT / f"{lesson_id}.{lang}.vtt").write_text(vtt(tl["cues"], lang), encoding="utf-8")
+        dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", mp4],
+                                   capture_output=True, text=True).stdout.strip() or 0)
+        if dur > 60:
+            print(f"! {lesson_id} is {dur:.1f}s — hook videos should stay under 60 seconds")
 
     missing = MEDIA / "missing" / f"{scene}.txt"
     note = f" · {len(missing.read_text().split())} narration clip(s) not recorded yet" if missing.exists() else ""
@@ -80,6 +113,9 @@ def main():
     q = "hd" if a.hd else "std" if a.std else "draft"
     for i in ids:
         render(i, q)
+    # checkpoint times in the lesson files come from the timelines just written
+    run(["node", ROOT / "content" / "build.js"])
+    run(["node", ROOT / "build.js"])
 
 
 if __name__ == "__main__":

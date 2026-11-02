@@ -192,3 +192,61 @@ class Column(VGroup):
 
     def small(self, d, col, row=-0.55, color=BERRY):
         return num(d, int(self.size * 0.55), color).move_to(self.pos(col, row))
+
+
+# ---------------- Grade 1 hook-video pictures ----------------
+class Kid(VGroup):
+    """A small child (head, hair, shirt) for the bajaj ride."""
+    SHIRTS = [ADEY, LAKE, FIELD, BERRY, "#7a5bb5"]
+    SKINS = ["#8d5a3b", "#5e3a24", "#a8714d", "#74472b", "#6b4228"]
+
+    def __init__(self, i=0, s=0.5, **kw):
+        super().__init__(**kw)
+        body = RoundedRectangle(width=0.9 * s, height=0.8 * s, corner_radius=0.3 * s, fill_color=self.SHIRTS[i % 5],
+                                fill_opacity=1, stroke_width=0).shift(DOWN * 0.45 * s)
+        head = Circle(radius=0.36 * s, fill_color=self.SKINS[i % 5], fill_opacity=1, stroke_width=0).shift(UP * 0.25 * s)
+        hair = Ellipse(width=0.74 * s, height=0.34 * s, fill_color="#1d130d", fill_opacity=1, stroke_width=0).shift(UP * 0.5 * s)
+        eyes = VGroup(Dot(radius=0.045 * s * 1.6, color="#2b1d14").shift(LEFT * 0.12 * s + UP * 0.25 * s),
+                      Dot(radius=0.045 * s * 1.6, color="#2b1d14").shift(RIGHT * 0.12 * s + UP * 0.25 * s))
+        self.add(body, head, hair, eyes)
+
+
+class Bajaj(VGroup):
+    """A three-wheeled bajaj (auto-rickshaw), seen from the side, with five seats."""
+
+    def __init__(self, s=1.0, **kw):
+        super().__init__(**kw)
+        cab = RoundedRectangle(width=5.6 * s, height=2.3 * s, corner_radius=0.7 * s, fill_color="#2a6fb0", fill_opacity=1,
+                               stroke_color=INK, stroke_width=3)
+        roof = RoundedRectangle(width=5.0 * s, height=0.35 * s, corner_radius=0.15 * s, fill_color="#1d2540", fill_opacity=1,
+                                stroke_width=0).next_to(cab, UP, buff=-0.12 * s)
+        win = RoundedRectangle(width=4.4 * s, height=1.15 * s, corner_radius=0.3 * s, fill_color="#d9eef2", fill_opacity=1,
+                               stroke_color=INK, stroke_width=2).move_to(cab).shift(UP * 0.35 * s + RIGHT * 0.2 * s)
+        wheels = VGroup(*[Circle(radius=0.42 * s, fill_color="#1d2540", fill_opacity=1, stroke_color="#586178", stroke_width=4)
+                          .move_to(cab.get_bottom() + RIGHT * x * s) for x in (-1.9, 2.0)])
+        lamp = Circle(radius=0.16 * s, fill_color=ADEY, fill_opacity=1, stroke_width=0).move_to(cab.get_right() + LEFT * 0.25 * s)
+        self.window = win
+        self.add(cab, roof, win, wheels, lamp)
+
+    def seat(self, k, n=5):
+        w = self.window
+        return w.get_left() + RIGHT * (w.width * (k + 0.5) / n) + DOWN * 0.05
+
+
+class MangoTree(VGroup):
+    """A tree with a round canopy; .spot(i) gives places for mangoes."""
+
+    def __init__(self, s=1.0, **kw):
+        super().__init__(**kw)
+        trunk = Rectangle(width=0.55 * s, height=2.0 * s, fill_color="#7a4a22", fill_opacity=1, stroke_width=0).shift(DOWN * 1.2 * s)
+        canopy = VGroup(*[Circle(radius=r * s, fill_color=FIELD, fill_opacity=1, stroke_width=0).shift(np.array([x, y, 0]) * s)
+                          for r, x, y in ((1.3, 0, 0.5), (1.0, -1.1, 0.1), (1.0, 1.1, 0.1), (0.9, 0, 1.3))])
+        self.canopy = canopy
+        self.s = s
+        self.add(trunk, canopy)
+
+    SPOTS = [(-1.3, 0.2), (-0.6, 0.9), (0.2, 1.4), (0.9, 0.8), (1.5, 0.1), (-0.3, 0.1), (0.6, -0.1), (-0.9, -0.4), (1.1, -0.5), (0.0, 0.7)]
+
+    def spot(self, i):
+        x, y = self.SPOTS[i]
+        return self.canopy[0].get_center() + np.array([x, y - 0.5, 0]) * self.s

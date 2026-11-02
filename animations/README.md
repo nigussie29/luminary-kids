@@ -26,30 +26,28 @@ Output goes to `dist/video/<lesson>.mp4` (H.264 + AAC, fast-start for phones) an
 
 - `lk/style.py` — colours, Amharic/English text, captions, title card
 - `lk/parts.py` — TenFrame, Counter, NumberLine, Flower, Mango, Orange, badges
-- `lk/parts2.py` — base-ten rods and ones, place-value mat, written columns, stick bundles, trays and cups, birr notes and coins, injera fractions
+- `lk/parts2.py` — base-ten rods and ones, place-value mat, written columns, stick bundles, trays and cups, birr notes and coins, injera fractions, children, the bajaj, the mango tree
 - `lk/voice.py` — narration clips and timing
 - `lessons/<id>.py` — one `LessonScene` per lesson (file name = lesson id); `self.title`, `self.story`, `self.step` give every lesson the same rhythm
 - `render.py` — Manim render, then FFmpeg finishing and poster
 
 ## Lessons
 
-| Grade | Lesson | File | Idea |
-|---|---|---|---|
-| 1 | 1 | `count10` | count each thing once; the last number tells how many |
-| 2 | 1 | `g2_placevalue` | tens and ones: 3 bundles + 4 sticks = 34 |
-| 2 | 2 | `g2_add2d` | 27 + 15 = 42, ten ones make a new ten |
-| 2 | 3 | `g2_sub2d` | 42 − 17 = 25, break a ten when ones run short |
-| 2 | 4 | `g2_groups` | 3 groups of 4 = 3 × 4 = 12 (coffee-ceremony trays) |
-| 2 | 5 | `g2_birr` | count birr from the biggest note: 10 + 10 + 5 + 1 = 26 |
-| 2 | 6 | `g2_halves` | halves and quarters of injera; parts must be equal |
+Every lesson has a hook video (all under 60 s): `count10`, `teens`, `compare`, `add10`, `sub10`, `make10`
+(Grade 1) and `g2_placevalue`, `g2_add2d`, `g2_sub2d`, `g2_groups`, `g2_birr`, `g2_halves` (Grade 2).
 
-Still to animate: Grade 1 `teens`, `compare`, `add10`, `sub10`, `make10`.
+While a video renders, `LessonScene` writes `animations/timelines/<lesson>.json`: when the title, story and
+each worked-example sentence (`step0`, `step1`, …) start, plus any `self.mark("name")`, and the caption
+text. `render.py` turns that into the caption files and then rebuilds the lesson files, so a checkpoint
+written as `"at": "step:2"` in `content/build.js` pauses the video just before sentence 2 — and stays
+right when the narration changes length. Captions burned into the picture are Amharic only
+(`LK_BURN_EN=1` adds English); English is a separate subtitle track.
 
-Grade 2 text lives in `src/lessons-g2.js` (draft — needs review by an Amharic-speaking teacher).
-It is not in the app build yet; only the animations use it. Each worked example is split into
-sentences, and each sentence has its own clip `lesson.<id>.example.<n>` so the picture for that
-sentence appears while it is spoken. `render.py` writes the Grade 2 recording list to
-`dist/narration-script-g2.csv` (34 clips).
+Each render writes `dist/video/<id>.mp4` (720p), `dist/video/low/<id>.mp4` (360p for slow connections),
+`<id>.jpg` (poster), `<id>.am.vtt` and `<id>.en.vtt`.
+
+Worked examples are split into sentences; each has its own clip `lesson.<id>.example.<n>`
+(listed in `dist/narration-script-videos.csv`) so the picture for that sentence appears as it is spoken.
 
 ## Setup
 

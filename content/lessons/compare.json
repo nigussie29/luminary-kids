@@ -1,0 +1,1279 @@
+{
+  "id": "compare",
+  "grade": 1,
+  "n": 3,
+  "title": {
+    "am": "ብዙ ወይስ ጥቂት?",
+    "en": "More or fewer?",
+    "audio_url": "audio/am/lesson.compare.title.mp3"
+  },
+  "place": "school",
+  "video": {
+    "src": "video/compare.mp4",
+    "src_low": "video/low/compare.mp4",
+    "poster": "video/compare.jpg",
+    "captions": {
+      "am": "video/compare.am.vtt",
+      "en": "video/compare.en.vtt"
+    },
+    "duration": 22,
+    "checkpoints": [
+      {
+        "t": 10.98,
+        "at": "step:0",
+        "exercise": {
+          "id": "compare.01",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ትሪ ብዙ ስኒዎች አሉት?",
+          "prompt_en": "Which tray has more cups?",
+          "audio_url": "audio/am/ex.compare.01.mp3",
+          "options": [
+            {
+              "v": "top",
+              "am": "ላይኛው",
+              "en": "Top"
+            },
+            {
+              "v": "bottom",
+              "am": "ታችኛው",
+              "en": "Bottom"
+            }
+          ],
+          "answer": "top",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 15.12,
+        "at": "step:1",
+        "exercise": {
+          "id": "compare.02",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ስኒዎች ጓደኛ የላቸውም?",
+          "prompt_en": "How many cups have no partner?",
+          "audio_url": "audio/am/ex.compare.02.mp3",
+          "options": [
+            {
+              "v": 1
+            },
+            {
+              "v": 2
+            },
+            {
+              "v": 4
+            }
+          ],
+          "answer": 2,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 10.98,
+      "end": 22,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "compare.03",
+          "type": "drag_sort",
+          "prompt_am": "ከአምስት የሚበልጡትን እና የሚያንሱትን እንለይ።",
+          "prompt_en": "Let's sort: more than five, fewer than five.",
+          "audio_url": "audio/am/ex.compare.03.mp3",
+          "targets": [
+            {
+              "id": "more",
+              "am": "ከ5 ይበልጣል",
+              "en": "More than 5"
+            },
+            {
+              "id": "less",
+              "am": "ከ5 ያንሳል",
+              "en": "Fewer than 5"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "7",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 7
+              }
+            },
+            {
+              "id": "b",
+              "label": "3",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 3
+              }
+            },
+            {
+              "id": "c",
+              "label": "8",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 8
+              }
+            },
+            {
+              "id": "d",
+              "label": "2",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 2
+              }
+            }
+          ],
+          "answer": {
+            "a": "more",
+            "b": "less",
+            "c": "more",
+            "d": "less"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "compare.04",
+          "type": "drag_sort",
+          "prompt_am": "ከአምስት የሚበልጡትን እና የሚያንሱትን እንለይ።",
+          "prompt_en": "Let's sort: more than five, fewer than five.",
+          "audio_url": "audio/am/ex.compare.03.mp3",
+          "targets": [
+            {
+              "id": "more",
+              "am": "ከ5 ይበልጣል",
+              "en": "More than 5"
+            },
+            {
+              "id": "less",
+              "am": "ከ5 ያንሳል",
+              "en": "Fewer than 5"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "6",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 6
+              }
+            },
+            {
+              "id": "b",
+              "label": "4",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 4
+              }
+            },
+            {
+              "id": "c",
+              "label": "9",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 9
+              }
+            },
+            {
+              "id": "d",
+              "label": "1",
+              "visual": {
+                "kind": "group",
+                "thing": "cup",
+                "n": 1
+              }
+            }
+          ],
+          "answer": {
+            "a": "more",
+            "b": "less",
+            "c": "more",
+            "d": "less"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "compare.05",
+          "type": "drag_sort",
+          "prompt_am": "ከስድስት የሚበልጡትን እና የሚያንሱትን እንለይ።",
+          "prompt_en": "Let's sort: more than six, fewer than six.",
+          "audio_url": "audio/am/ex.compare.04.mp3",
+          "targets": [
+            {
+              "id": "more",
+              "am": "ከ6 ይበልጣል",
+              "en": "More than 6"
+            },
+            {
+              "id": "less",
+              "am": "ከ6 ያንሳል",
+              "en": "Fewer than 6"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "7"
+            },
+            {
+              "id": "b",
+              "label": "5"
+            },
+            {
+              "id": "c",
+              "label": "9"
+            },
+            {
+              "id": "d",
+              "label": "4"
+            },
+            {
+              "id": "e",
+              "label": "10"
+            }
+          ],
+          "answer": {
+            "a": "more",
+            "b": "less",
+            "c": "more",
+            "d": "less",
+            "e": "more"
+          },
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "compare.06",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ብዙ ብርቱካኖች አሉት?",
+          "prompt_en": "Which has more oranges?",
+          "audio_url": "audio/am/ex.compare.05.mp3",
+          "options": [
+            {
+              "v": "left",
+              "am": "ግራ",
+              "en": "Left"
+            },
+            {
+              "v": "right",
+              "am": "ቀኝ",
+              "en": "Right"
+            }
+          ],
+          "answer": "right",
+          "visual": {
+            "kind": "compare",
+            "thing": "orange",
+            "left": 3,
+            "right": 5
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "compare.07",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ጥቂት ብርቱካኖች አሉት?",
+          "prompt_en": "Which has fewer oranges?",
+          "audio_url": "audio/am/ex.compare.06.mp3",
+          "options": [
+            {
+              "v": "left",
+              "am": "ግራ",
+              "en": "Left"
+            },
+            {
+              "v": "right",
+              "am": "ቀኝ",
+              "en": "Right"
+            }
+          ],
+          "answer": "left",
+          "visual": {
+            "kind": "compare",
+            "thing": "orange",
+            "left": 6,
+            "right": 7
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "compare.08",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ቁጥር ይበልጣል?",
+          "prompt_en": "Which number is greater?",
+          "audio_url": "audio/am/ex.compare.07.mp3",
+          "options": [
+            {
+              "v": 9
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 8
+            }
+          ],
+          "answer": 9,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "compare.09",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "labels": "ends"
+          },
+          "items": [
+            "2",
+            "7"
+          ],
+          "answer": [
+            "2",
+            "7"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "compare.10",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "labels": "ends"
+          },
+          "items": [
+            "3",
+            "6",
+            "9"
+          ],
+          "answer": [
+            "3",
+            "6",
+            "9"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "compare.11",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "labels": "none"
+          },
+          "items": [
+            "1",
+            "5",
+            "8"
+          ],
+          "answer": [
+            "1",
+            "5",
+            "8"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "compare.12",
+          "type": "drag_drop_count",
+          "prompt_am": "በቀኙ ትሪ ላይ ከግራው ጋር እኩል ስኒዎችን እናስቀምጥ።",
+          "prompt_en": "Let's put the same number of cups on the right tray as on the left.",
+          "audio_url": "audio/am/ex.compare.08.mp3",
+          "items": {
+            "thing": "cup",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "tray",
+              "kind": "tray",
+              "start": 0,
+              "need": 4,
+              "match": 4
+            }
+          ],
+          "answer": [
+            4
+          ],
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "compare.13",
+          "type": "drag_drop_count",
+          "prompt_am": "በቀኙ ትሪ ላይ ከግራው ጋር እኩል ስኒዎችን እናስቀምጥ።",
+          "prompt_en": "Let's put the same number of cups on the right tray as on the left.",
+          "audio_url": "audio/am/ex.compare.08.mp3",
+          "items": {
+            "thing": "cup",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "tray",
+              "kind": "tray",
+              "start": 0,
+              "need": 6,
+              "match": 6
+            }
+          ],
+          "answer": [
+            6
+          ],
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "compare.14",
+          "type": "drag_drop_count",
+          "prompt_am": "በቀኙ ትሪ ላይ ከግራው አንድ የሚበልጡ ስኒዎችን እናስቀምጥ።",
+          "prompt_en": "Let's put one more cup on the right tray than on the left.",
+          "audio_url": "audio/am/ex.compare.09.mp3",
+          "items": {
+            "thing": "cup",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "tray",
+              "kind": "tray",
+              "start": 0,
+              "need": 7,
+              "match": 6
+            }
+          ],
+          "answer": [
+            7
+          ],
+          "hints": [
+            {
+              "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+              "en": "Count each one just once.",
+              "audio_url": "audio/am/ex.count10.06.mp3"
+            },
+            {
+              "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+              "en": "The last number we say tells how many.",
+              "audio_url": "audio/am/ex.count10.07.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "compare.15",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ስምንት ከአምስት ይበልጣል።",
+          "prompt_en": "True or not? Eight is more than five.",
+          "audio_url": "audio/am/ex.compare.10.mp3",
+          "statement_am": "ስምንት ከአምስት ይበልጣል።",
+          "statement_en": "Eight is more than five.",
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "compare.16",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሶስት ከአራት ይበልጣል።",
+          "prompt_en": "True or not? Three is more than four.",
+          "audio_url": "audio/am/ex.compare.11.mp3",
+          "statement_am": "ሶስት ከአራት ይበልጣል።",
+          "statement_en": "Three is more than four.",
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "compare.17",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ዘጠኝ ከአስር ያንሳል።",
+          "prompt_en": "True or not? Nine is less than ten.",
+          "audio_url": "audio/am/ex.compare.12.mp3",
+          "statement_am": "ዘጠኝ ከአስር ያንሳል።",
+          "statement_en": "Nine is less than ten.",
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "compare.18",
+          "type": "drag_sort",
+          "prompt_am": "ከአስር የሚበልጡትን እና የሚያንሱትን እንለይ።",
+          "prompt_en": "Let's sort: more than ten, less than ten.",
+          "audio_url": "audio/am/ex.compare.13.mp3",
+          "targets": [
+            {
+              "id": "more",
+              "am": "ከ10 ይበልጣል",
+              "en": "More than 10"
+            },
+            {
+              "id": "less",
+              "am": "ከ10 ያንሳል",
+              "en": "Less than 10"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "12"
+            },
+            {
+              "id": "b",
+              "label": "4"
+            },
+            {
+              "id": "c",
+              "label": "15"
+            },
+            {
+              "id": "d",
+              "label": "9"
+            }
+          ],
+          "answer": {
+            "a": "more",
+            "b": "less",
+            "c": "more",
+            "d": "less"
+          },
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "compare.19",
+          "type": "drag_sort",
+          "prompt_am": "ከአስር የሚበልጡትን እና የሚያንሱትን እንለይ።",
+          "prompt_en": "Let's sort: more than ten, less than ten.",
+          "audio_url": "audio/am/ex.compare.13.mp3",
+          "targets": [
+            {
+              "id": "more",
+              "am": "ከ10 ይበልጣል",
+              "en": "More than 10"
+            },
+            {
+              "id": "less",
+              "am": "ከ10 ያንሳል",
+              "en": "Less than 10"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "11"
+            },
+            {
+              "id": "b",
+              "label": "7"
+            },
+            {
+              "id": "c",
+              "label": "18"
+            },
+            {
+              "id": "d",
+              "label": "6"
+            },
+            {
+              "id": "e",
+              "label": "13"
+            }
+          ],
+          "answer": {
+            "a": "more",
+            "b": "less",
+            "c": "more",
+            "d": "less",
+            "e": "more"
+          },
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "compare.20",
+          "type": "drag_sort",
+          "prompt_am": "ከአስራ አምስት የሚበልጡትን እና የሚያንሱትን እንለይ።",
+          "prompt_en": "Let's sort: more than fifteen, less than fifteen.",
+          "audio_url": "audio/am/ex.compare.14.mp3",
+          "targets": [
+            {
+              "id": "more",
+              "am": "ከ15 ይበልጣል",
+              "en": "More than 15"
+            },
+            {
+              "id": "less",
+              "am": "ከ15 ያንሳል",
+              "en": "Less than 15"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "19"
+            },
+            {
+              "id": "b",
+              "label": "14"
+            },
+            {
+              "id": "c",
+              "label": "16"
+            },
+            {
+              "id": "d",
+              "label": "11"
+            },
+            {
+              "id": "e",
+              "label": "20"
+            }
+          ],
+          "answer": {
+            "a": "more",
+            "b": "less",
+            "c": "more",
+            "d": "less",
+            "e": "more"
+          },
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "race",
+    "questions": [
+      {
+        "id": "compare.26",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is more?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": 4
+          },
+          {
+            "v": 7
+          }
+        ],
+        "answer": 7,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "compare.27",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ያንሳል?",
+        "prompt_en": "Which is less?",
+        "audio_url": "audio/am/ex.compare.19.mp3",
+        "options": [
+          {
+            "v": 9
+          },
+          {
+            "v": 5
+          }
+        ],
+        "answer": 5,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "compare.28",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is more?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": 12
+          },
+          {
+            "v": 10
+          }
+        ],
+        "answer": 12,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "compare.29",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ያንሳል?",
+        "prompt_en": "Which is less?",
+        "audio_url": "audio/am/ex.compare.19.mp3",
+        "options": [
+          {
+            "v": 3
+          },
+          {
+            "v": 8
+          }
+        ],
+        "answer": 3,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "compare.30",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is more?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": 15
+          },
+          {
+            "v": 18
+          }
+        ],
+        "answer": 18,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።",
+      "en": "Let's race to Grandma's house! Each right answer moves us forward.",
+      "audio_url": "audio/am/ex.compare.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "compare.21",
+      "type": "drag_sort",
+      "prompt_am": "ከስድስት የሚበልጡትን እና የሚያንሱትን እንለይ።",
+      "prompt_en": "Let's sort: more than six, fewer than six.",
+      "audio_url": "audio/am/ex.compare.04.mp3",
+      "targets": [
+        {
+          "id": "more",
+          "am": "ከ6 ይበልጣል",
+          "en": "More than 6"
+        },
+        {
+          "id": "less",
+          "am": "ከ6 ያንሳል",
+          "en": "Fewer than 6"
+        }
+      ],
+      "items": [
+        {
+          "id": "a",
+          "label": "8",
+          "visual": {
+            "kind": "group",
+            "thing": "orange",
+            "n": 8
+          }
+        },
+        {
+          "id": "b",
+          "label": "2",
+          "visual": {
+            "kind": "group",
+            "thing": "orange",
+            "n": 2
+          }
+        },
+        {
+          "id": "c",
+          "label": "9",
+          "visual": {
+            "kind": "group",
+            "thing": "orange",
+            "n": 9
+          }
+        },
+        {
+          "id": "d",
+          "label": "5",
+          "visual": {
+            "kind": "group",
+            "thing": "orange",
+            "n": 5
+          }
+        }
+      ],
+      "answer": {
+        "a": "more",
+        "b": "less",
+        "c": "more",
+        "d": "less"
+      },
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "compare.22",
+      "type": "drag_drop_count",
+      "prompt_am": "በቀኙ ትሪ ላይ ከግራው ሁለት የሚበልጡ ስኒዎችን እናስቀምጥ።",
+      "prompt_en": "Let's put two more cups on the right tray than on the left.",
+      "audio_url": "audio/am/ex.compare.15.mp3",
+      "items": {
+        "thing": "cup",
+        "supply": 10,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "tray",
+          "kind": "tray",
+          "start": 0,
+          "need": 6,
+          "match": 4
+        }
+      ],
+      "answer": [
+        6
+      ],
+      "hints": [
+        {
+          "am": "እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+          "en": "Count each one just once.",
+          "audio_url": "audio/am/ex.count10.06.mp3"
+        },
+        {
+          "am": "ስንቆጥር የመጨረሻው ቁጥር ስንት እንዳሉ ይነግረናል።",
+          "en": "The last number we say tells how many.",
+          "audio_url": "audio/am/ex.count10.07.mp3"
+        }
+      ]
+    },
+    {
+      "id": "compare.23",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሰባት",
+        "en": "seven",
+        "audio_url": "audio/am/num.7.mp3"
+      },
+      "options": [
+        {
+          "v": 7
+        },
+        {
+          "v": 1
+        },
+        {
+          "v": 17
+        }
+      ],
+      "answer": 7,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "compare.24",
+      "type": "tap_choose",
+      "prompt_am": "ከእነዚህ ትልቁ ቁጥር የትኛው ነው?",
+      "prompt_en": "Which is the biggest number?",
+      "audio_url": "audio/am/ex.compare.16.mp3",
+      "options": [
+        {
+          "v": 6
+        },
+        {
+          "v": 10
+        },
+        {
+          "v": 8
+        }
+      ],
+      "answer": 10,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "compare.25",
+      "type": "numpad",
+      "prompt_am": "ግራው ስንት ተጨማሪ ስኒዎች አሉት?",
+      "prompt_en": "How many more cups does the left tray have?",
+      "audio_url": "audio/am/ex.compare.17.mp3",
+      "answer": 2,
+      "visual": {
+        "kind": "compare",
+        "thing": "cup",
+        "left": 6,
+        "right": 4
+      },
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    }
+  ]
+}

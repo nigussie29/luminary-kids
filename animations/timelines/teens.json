@@ -1,0 +1,43 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 5.267,
+  "step0": 13.133,
+  "step1": 16.767,
+  "step2": 20.9
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "የገበያ አስሮች",
+   "en": "Market tens",
+   "end": 2.667
+  },
+  {
+   "start": 5.267,
+   "am": "ዛሬ ገበያ ነን። ነጋዴዋ ብርቱካኖችን በአስር በአስር ታስቀምጣለች። አስር እና ጥቂት አንዶች ስንት ይሆናሉ?",
+   "en": "Today we are at the market. The seller packs oranges in tens. How many is one ten and some more?",
+   "end": 12.633
+  },
+  {
+   "start": 13.133,
+   "am": "አንድ ሙሉ አስር ሳጥን አለ፤ ያ አስር ነው።",
+   "en": "One full ten frame is ten.",
+   "end": 16.767
+  },
+  {
+   "start": 16.767,
+   "am": "ከዚያ አራት ተጨማሪ።",
+   "en": "Then four more.",
+   "end": 20.9
+  },
+  {
+   "start": 20.9,
+   "am": "አስር እና አራት አስራ አራት ነው።",
+   "en": "Ten and four is fourteen.",
+   "end": 24.833
+  }
+ ],
+ "duration": 27.733,
+ "lesson": "teens"
+}

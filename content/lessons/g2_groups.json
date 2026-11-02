@@ -1,0 +1,1263 @@
+{
+  "id": "g2_groups",
+  "grade": 2,
+  "n": 4,
+  "title": {
+    "am": "እኩል ቡድኖች",
+    "en": "Equal groups",
+    "audio_url": "audio/am/lesson.g2_groups.title.mp3"
+  },
+  "place": "ceremony",
+  "video": {
+    "src": "video/g2_groups.mp4",
+    "src_low": "video/low/g2_groups.mp4",
+    "poster": "video/g2_groups.jpg",
+    "captions": {
+      "am": "video/g2_groups.am.vtt",
+      "en": "video/g2_groups.en.vtt"
+    },
+    "duration": 24.867,
+    "checkpoints": [
+      {
+        "t": 10.35,
+        "at": "step:0",
+        "exercise": {
+          "id": "g2_groups.01",
+          "type": "tap_choose",
+          "prompt_am": "በአንድ ትሪ ላይ ስንት ስኒዎች አሉ?",
+          "prompt_en": "How many cups are on one tray?",
+          "audio_url": "audio/am/ex.g2_groups.01.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 12
+            }
+          ],
+          "answer": 4,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 17.42,
+        "at": "step:2",
+        "exercise": {
+          "id": "g2_groups.02",
+          "type": "tap_choose",
+          "prompt_am": "ከሶስት ቡድኖች በአራት በአራት ጋር የሚመሳሰለው የትኛው ነው?",
+          "prompt_en": "Which is the same as three groups of four?",
+          "audio_url": "audio/am/ex.g2_groups.02.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "3 × 4"
+            },
+            {
+              "v": "b",
+              "label": "3 + 4"
+            },
+            {
+              "v": "c",
+              "label": "4 − 3"
+            }
+          ],
+          "answer": "a",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              4,
+              4,
+              4
+            ],
+            "thing": "cup"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 10.35,
+      "end": 24.867,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g2_groups.03",
+          "type": "drag_drop_count",
+          "prompt_am": "በእያንዳንዱ ትሪ ላይ ሶስት ስኒዎችን እናስቀምጥ።",
+          "prompt_en": "Let's put 3 cups on each tray.",
+          "audio_url": "audio/am/ex.g2_groups.03.mp3",
+          "items": {
+            "thing": "cup",
+            "supply": 8,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "tray1",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "tray2",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "እያንዳንዱ ትሪ እኩል ቁጥር ሊኖረው ይገባል።",
+              "en": "Every tray must have the same number.",
+              "audio_url": "audio/am/ex.g2_groups.04.mp3"
+            },
+            {
+              "am": "በአንዱ ትሪ ላይ ሶስት ብቻ።",
+              "en": "Only 3 on each tray.",
+              "audio_url": "audio/am/ex.g2_groups.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_groups.04",
+          "type": "drag_drop_count",
+          "prompt_am": "በእያንዳንዱ ትሪ ላይ ሶስት ስኒዎችን እናስቀምጥ።",
+          "prompt_en": "Let's put 3 cups on each tray.",
+          "audio_url": "audio/am/ex.g2_groups.03.mp3",
+          "items": {
+            "thing": "cup",
+            "supply": 11,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "tray1",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "tray2",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "tray3",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "እያንዳንዱ ትሪ እኩል ቁጥር ሊኖረው ይገባል።",
+              "en": "Every tray must have the same number.",
+              "audio_url": "audio/am/ex.g2_groups.04.mp3"
+            },
+            {
+              "am": "በአንዱ ትሪ ላይ ሶስት ብቻ።",
+              "en": "Only 3 on each tray.",
+              "audio_url": "audio/am/ex.g2_groups.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_groups.05",
+          "type": "drag_drop_count",
+          "prompt_am": "በእያንዳንዱ ትሪ ላይ አራት ስኒዎችን እናስቀምጥ።",
+          "prompt_en": "Let's put 4 cups on each tray.",
+          "audio_url": "audio/am/ex.g2_groups.06.mp3",
+          "items": {
+            "thing": "cup",
+            "supply": 14,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "tray1",
+              "kind": "tray",
+              "start": 0,
+              "need": 4
+            },
+            {
+              "id": "tray2",
+              "kind": "tray",
+              "start": 0,
+              "need": 4
+            },
+            {
+              "id": "tray3",
+              "kind": "tray",
+              "start": 0,
+              "need": 4
+            }
+          ],
+          "answer": [
+            4,
+            4,
+            4
+          ],
+          "hints": [
+            {
+              "am": "እያንዳንዱ ትሪ እኩል ቁጥር ሊኖረው ይገባል።",
+              "en": "Every tray must have the same number.",
+              "audio_url": "audio/am/ex.g2_groups.04.mp3"
+            },
+            {
+              "am": "በአንዱ ትሪ ላይ አራት ብቻ።",
+              "en": "Only 4 on each tray.",
+              "audio_url": "audio/am/ex.g2_groups.07.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g2_groups.06",
+          "type": "tap_choose",
+          "prompt_am": "ይህ የትኛው ነው?",
+          "prompt_en": "Which one is this?",
+          "audio_url": "audio/am/ex.g2_groups.08.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "2 × 5"
+            },
+            {
+              "v": "b",
+              "label": "2 + 5"
+            },
+            {
+              "v": "c",
+              "label": "5 × 5"
+            }
+          ],
+          "answer": "a",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              5,
+              5
+            ],
+            "thing": "cup"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_groups.07",
+          "type": "tap_choose",
+          "prompt_am": "ይህ የትኛው ነው?",
+          "prompt_en": "Which one is this?",
+          "audio_url": "audio/am/ex.g2_groups.08.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "3 + 3"
+            },
+            {
+              "v": "b",
+              "label": "4 × 3"
+            },
+            {
+              "v": "c",
+              "label": "3 × 4"
+            }
+          ],
+          "answer": "b",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "thing": "cup"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_groups.08",
+          "type": "tap_choose",
+          "prompt_am": "ይህ የትኛው ነው?",
+          "prompt_en": "Which one is this?",
+          "audio_url": "audio/am/ex.g2_groups.08.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "5 × 2"
+            },
+            {
+              "v": "b",
+              "label": "2 × 2"
+            },
+            {
+              "v": "c",
+              "label": "5 + 2"
+            }
+          ],
+          "answer": "a",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "thing": "cup"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g2_groups.09",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "2",
+            "×",
+            "__",
+            "=",
+            "6"
+          ],
+          "items": [
+            "3",
+            "4",
+            "12"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "3",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_groups.10",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "3",
+            "×",
+            "__",
+            "=",
+            "12"
+          ],
+          "items": [
+            "4",
+            "9",
+            "15"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_groups.11",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "4",
+            "×",
+            "__",
+            "=",
+            "20"
+          ],
+          "items": [
+            "5",
+            "16",
+            "24"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "5",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g2_groups.12",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን መደመር ከማባዛቱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each addition to its multiplication.",
+          "audio_url": "audio/am/ex.g2_groups.09.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "2 + 2 + 2"
+            },
+            {
+              "id": "w1",
+              "label": "5 + 5"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "2 × 5"
+            },
+            {
+              "id": "t0",
+              "label": "3 × 2"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_groups.13",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን መደመር ከማባዛቱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each addition to its multiplication.",
+          "audio_url": "audio/am/ex.g2_groups.09.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "4 + 4 + 4"
+            },
+            {
+              "id": "w1",
+              "label": "3 + 3 + 3 + 3"
+            },
+            {
+              "id": "w2",
+              "label": "2 + 2"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "4 × 3"
+            },
+            {
+              "id": "t2",
+              "label": "2 × 2"
+            },
+            {
+              "id": "t0",
+              "label": "3 × 4"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_groups.14",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን መደመር ከማባዛቱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each addition to its multiplication.",
+          "audio_url": "audio/am/ex.g2_groups.09.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "5 + 5 + 5"
+            },
+            {
+              "id": "w1",
+              "label": "3 + 3 + 3 + 3 + 3"
+            },
+            {
+              "id": "w2",
+              "label": "4 + 4"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "5 × 3"
+            },
+            {
+              "id": "t2",
+              "label": "2 × 4"
+            },
+            {
+              "id": "t0",
+              "label": "3 × 5"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g2_groups.15",
+          "type": "numpad",
+          "prompt_am": "አምስት ቡድኖች በሁለት በሁለት ስንት ናቸው?",
+          "prompt_en": "How many are five groups of two?",
+          "audio_url": "audio/am/ex.g2_groups.10.mp3",
+          "answer": 10,
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "thing": "cup"
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_groups.16",
+          "type": "numpad",
+          "prompt_am": "ሶስት ቡድኖች በአምስት በአምስት ስንት ናቸው?",
+          "prompt_en": "How many are three groups of five?",
+          "audio_url": "audio/am/ex.g2_groups.11.mp3",
+          "answer": 15,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_groups.17",
+          "type": "numpad",
+          "prompt_am": "አራት ቡድኖች በአራት በአራት ስንት ናቸው?",
+          "prompt_en": "How many are four groups of four?",
+          "audio_url": "audio/am/ex.g2_groups.12.mp3",
+          "answer": 16,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g2_groups.18",
+          "type": "drag_sort",
+          "prompt_am": "እኩል ቡድኖችን እና እኩል ያልሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: equal groups, not equal groups.",
+          "audio_url": "audio/am/ex.g2_groups.13.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "እኩል",
+              "en": "Equal"
+            },
+            {
+              "id": "no",
+              "am": "እኩል አይደለም",
+              "en": "Not equal"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  3,
+                  3,
+                  3
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  3,
+                  2,
+                  4
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  2,
+                  2
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  4,
+                  1
+                ],
+                "thing": "cup"
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_groups.19",
+          "type": "drag_sort",
+          "prompt_am": "እኩል ቡድኖችን እና እኩል ያልሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: equal groups, not equal groups.",
+          "audio_url": "audio/am/ex.g2_groups.13.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "እኩል",
+              "en": "Equal"
+            },
+            {
+              "id": "no",
+              "am": "እኩል አይደለም",
+              "en": "Not equal"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  4,
+                  4,
+                  4
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  4,
+                  4,
+                  3
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  5,
+                  5
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  2,
+                  3,
+                  2
+                ],
+                "thing": "cup"
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_groups.20",
+          "type": "drag_sort",
+          "prompt_am": "እኩል ቡድኖችን እና እኩል ያልሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: equal groups, not equal groups.",
+          "audio_url": "audio/am/ex.g2_groups.13.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "እኩል",
+              "en": "Equal"
+            },
+            {
+              "id": "no",
+              "am": "እኩል አይደለም",
+              "en": "Not equal"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "b",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  3,
+                  3,
+                  2,
+                  3
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "c",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  5,
+                  5,
+                  5
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "d",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  4,
+                  5
+                ],
+                "thing": "cup"
+              }
+            },
+            {
+              "id": "e",
+              "label": "",
+              "visual": {
+                "kind": "groups",
+                "groups": [
+                  1,
+                  1,
+                  1
+                ],
+                "thing": "cup"
+              }
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "coffee",
+    "rounds": [
+      {
+        "n": 6,
+        "trays": [
+          3,
+          3
+        ]
+      },
+      {
+        "n": 8,
+        "trays": [
+          4,
+          4
+        ]
+      },
+      {
+        "n": 12,
+        "trays": [
+          4,
+          4,
+          4
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።",
+      "en": "Let's pour coffee for the guests! Every tray gets the same number of cups.",
+      "audio_url": "audio/am/ex.g2_groups.19.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g2_groups.21",
+      "type": "drag_drop_count",
+      "prompt_am": "በእያንዳንዱ ትሪ ላይ አምስት ስኒዎችን እናስቀምጥ።",
+      "prompt_en": "Let's put 5 cups on each tray.",
+      "audio_url": "audio/am/ex.g2_groups.14.mp3",
+      "items": {
+        "thing": "cup",
+        "supply": 12,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "tray1",
+          "kind": "tray",
+          "start": 0,
+          "need": 5
+        },
+        {
+          "id": "tray2",
+          "kind": "tray",
+          "start": 0,
+          "need": 5
+        }
+      ],
+      "answer": [
+        5,
+        5
+      ],
+      "hints": [
+        {
+          "am": "እያንዳንዱ ትሪ እኩል ቁጥር ሊኖረው ይገባል።",
+          "en": "Every tray must have the same number.",
+          "audio_url": "audio/am/ex.g2_groups.04.mp3"
+        },
+        {
+          "am": "በአንዱ ትሪ ላይ አምስት ብቻ።",
+          "en": "Only 5 on each tray.",
+          "audio_url": "audio/am/ex.g2_groups.15.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_groups.22",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "2",
+        "×",
+        "__",
+        "=",
+        "10"
+      ],
+      "items": [
+        "5",
+        "8",
+        "12"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "5",
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_groups.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ሶስት ቡድኖች በሁለት በሁለት አምስት ናቸው።",
+      "prompt_en": "True or not? Three groups of two make five.",
+      "audio_url": "audio/am/ex.g2_groups.16.mp3",
+      "statement_am": "ሶስት ቡድኖች በሁለት በሁለት አምስት ናቸው።",
+      "statement_en": "Three groups of two make five.",
+      "visual": {
+        "kind": "groups",
+        "groups": [
+          2,
+          2,
+          2
+        ],
+        "thing": "cup"
+      },
+      "answer": false,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_groups.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሶስት ጊዜ አራት",
+        "en": "three times four",
+        "audio_url": "audio/am/ex.g2_groups.17.mp3"
+      },
+      "options": [
+        {
+          "v": 12
+        },
+        {
+          "v": 7
+        },
+        {
+          "v": 34
+        }
+      ],
+      "answer": 12,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_groups.25",
+      "type": "numpad",
+      "prompt_am": "አራት ቡድኖች በሶስት በሶስት ስንት ናቸው?",
+      "prompt_en": "How many are four groups of three?",
+      "audio_url": "audio/am/ex.g2_groups.18.mp3",
+      "answer": 12,
+      "visual": {
+        "kind": "groups",
+        "groups": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "thing": "cup"
+      },
+      "max_digits": 3,
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1115 @@
+{
+  "id": "g2_sub2d",
+  "grade": 2,
+  "n": 3,
+  "title": {
+    "am": "አስርን ፈትተን እንቀንሳለን",
+    "en": "Subtracting by breaking a ten",
+    "audio_url": "audio/am/lesson.g2_sub2d.title.mp3"
+  },
+  "place": "market",
+  "video": {
+    "src": "video/g2_sub2d.mp4",
+    "src_low": "video/low/g2_sub2d.mp4",
+    "poster": "video/g2_sub2d.jpg",
+    "captions": {
+      "am": "video/g2_sub2d.am.vtt",
+      "en": "video/g2_sub2d.en.vtt"
+    },
+    "duration": 34.667,
+    "checkpoints": [
+      {
+        "t": 13.48,
+        "at": "step:1",
+        "exercise": {
+          "id": "g2_sub2d.01",
+          "type": "tap_choose",
+          "prompt_am": "ከሁለት አንዶች ሰባት መውሰድ እንችላለን?",
+          "prompt_en": "Can we take seven ones from two ones?",
+          "audio_url": "audio/am/ex.g2_sub2d.01.mp3",
+          "options": [
+            {
+              "v": "yes",
+              "am": "አዎ",
+              "en": "Yes"
+            },
+            {
+              "v": "no",
+              "am": "አይ",
+              "en": "No"
+            }
+          ],
+          "answer": "no",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 22.15,
+        "at": "step:3",
+        "exercise": {
+          "id": "g2_sub2d.02",
+          "type": "tap_choose",
+          "prompt_am": "አስራ ሁለት ሲቀነስ ሰባት ስንት ነው?",
+          "prompt_en": "What is twelve minus seven?",
+          "audio_url": "audio/am/ex.g2_sub2d.02.mp3",
+          "options": [
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            },
+            {
+              "v": 6
+            }
+          ],
+          "answer": 5,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 13.48,
+      "end": 34.667,
+      "at": [
+        "step:1",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g2_sub2d.03",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "48",
+            "−",
+            "23",
+            "=",
+            "__"
+          ],
+          "items": [
+            "25",
+            "71",
+            "35"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "25",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_sub2d.04",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "42",
+            "−",
+            "17",
+            "=",
+            "__"
+          ],
+          "items": [
+            "25",
+            "35",
+            "59"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "25",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_sub2d.05",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "61",
+            "−",
+            "28",
+            "=",
+            "__"
+          ],
+          "items": [
+            "33",
+            "47",
+            "89"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "33",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g2_sub2d.06",
+          "type": "tap_choose",
+          "prompt_am": "አራት አስሮች እና ሁለት አንዶች = ሶስት አስሮች እና ስንት አንዶች?",
+          "prompt_en": "4 tens and 2 ones = 3 tens and how many ones?",
+          "audio_url": "audio/am/ex.g2_sub2d.03.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 10
+            },
+            {
+              "v": 12
+            }
+          ],
+          "answer": 12,
+          "visual": {
+            "kind": "tens_ones",
+            "tens": 4,
+            "ones": 2
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_sub2d.07",
+          "type": "tap_choose",
+          "prompt_am": "አምስት አስሮች እና አንድ አንድ = አራት አስሮች እና ስንት አንዶች?",
+          "prompt_en": "5 tens and 1 one = 4 tens and how many ones?",
+          "audio_url": "audio/am/ex.g2_sub2d.04.mp3",
+          "options": [
+            {
+              "v": 1
+            },
+            {
+              "v": 11
+            },
+            {
+              "v": 15
+            }
+          ],
+          "answer": 11,
+          "visual": {
+            "kind": "tens_ones",
+            "tens": 5,
+            "ones": 1
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_sub2d.08",
+          "type": "tap_choose",
+          "prompt_am": "ስድስት አስሮች = አምስት አስሮች እና ስንት አንዶች?",
+          "prompt_en": "6 tens = 5 tens and how many ones?",
+          "audio_url": "audio/am/ex.g2_sub2d.05.mp3",
+          "options": [
+            {
+              "v": 0
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 10,
+          "visual": {
+            "kind": "tens_ones",
+            "tens": 6,
+            "ones": 0
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g2_sub2d.09",
+          "type": "drag_placevalue",
+          "prompt_am": "አርባ ሁለትን በሶስት አስሮች ብቻ እንሥራ።",
+          "prompt_en": "Let's build forty-two using only three tens.",
+          "audio_url": "audio/am/ex.g2_sub2d.06.mp3",
+          "items": {
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat",
+              "tens": 3
+            }
+          ],
+          "answer": 42,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ አስር ወደ አስር አንዶች ይቀየራል።",
+              "en": "One ten changes into ten ones.",
+              "audio_url": "audio/am/ex.g2_sub2d.07.mp3"
+            },
+            {
+              "am": "ሶስት አስሮች ሰላሳ ናቸው፤ ስንት አንዶች ይቀራሉ?",
+              "en": "Three tens are thirty; how many ones are left?",
+              "audio_url": "audio/am/ex.g2_sub2d.08.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_sub2d.10",
+          "type": "drag_placevalue",
+          "prompt_am": "ሰላሳ አምስትን በሁለት አስሮች ብቻ እንሥራ።",
+          "prompt_en": "Let's build thirty-five using only two tens.",
+          "audio_url": "audio/am/ex.g2_sub2d.09.mp3",
+          "items": {
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat",
+              "tens": 2
+            }
+          ],
+          "answer": 35,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ አስር ወደ አስር አንዶች ይቀየራል።",
+              "en": "One ten changes into ten ones.",
+              "audio_url": "audio/am/ex.g2_sub2d.07.mp3"
+            },
+            {
+              "am": "ሁለት አስሮች ሃያ ናቸው፤ ስንት አንዶች ይቀራሉ?",
+              "en": "Two tens are twenty; how many ones are left?",
+              "audio_url": "audio/am/ex.g2_sub2d.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_sub2d.11",
+          "type": "drag_placevalue",
+          "prompt_am": "ሃምሳ ሶስትን በአራት አስሮች ብቻ እንሥራ።",
+          "prompt_en": "Let's build fifty-three using only four tens.",
+          "audio_url": "audio/am/ex.g2_sub2d.11.mp3",
+          "items": {
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat",
+              "tens": 4
+            }
+          ],
+          "answer": 53,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ አስር ወደ አስር አንዶች ይቀየራል።",
+              "en": "One ten changes into ten ones.",
+              "audio_url": "audio/am/ex.g2_sub2d.07.mp3"
+            },
+            {
+              "am": "አራት አስሮች አርባ ናቸው፤ ስንት አንዶች ይቀራሉ?",
+              "en": "Four tens are forty; how many ones are left?",
+              "audio_url": "audio/am/ex.g2_sub2d.12.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g2_sub2d.12",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "50",
+            "−",
+            "__",
+            "=",
+            "30"
+          ],
+          "items": [
+            "20",
+            "80",
+            "2"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "20",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_sub2d.13",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "50",
+            "−",
+            "__",
+            "=",
+            "32"
+          ],
+          "items": [
+            "18",
+            "28",
+            "82"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "18",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_sub2d.14",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "70",
+            "−",
+            "__",
+            "=",
+            "26"
+          ],
+          "items": [
+            "44",
+            "54",
+            "96"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "44",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g2_sub2d.15",
+          "type": "numpad",
+          "prompt_am": "ስልሳ ሶስት ሲቀነስ ሃያ ስንት ነው?",
+          "prompt_en": "What is sixty-three minus twenty?",
+          "audio_url": "audio/am/ex.g2_sub2d.13.mp3",
+          "answer": 43,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_sub2d.16",
+          "type": "numpad",
+          "prompt_am": "ስልሳ ሶስት ሲቀነስ ሃያ አምስት ስንት ነው?",
+          "prompt_en": "What is sixty-three minus twenty-five?",
+          "audio_url": "audio/am/ex.g2_sub2d.14.mp3",
+          "answer": 38,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_sub2d.17",
+          "type": "numpad",
+          "prompt_am": "ሰማንያ አራት ሲቀነስ አርባ ሰባት ስንት ነው?",
+          "prompt_en": "What is eighty-four minus forty-seven?",
+          "audio_url": "audio/am/ex.g2_sub2d.15.mp3",
+          "answer": 37,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g2_sub2d.18",
+          "type": "drag_sort",
+          "prompt_am": "አስር መፍታት የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: must break a ten, doesn't.",
+          "audio_url": "audio/am/ex.g2_sub2d.16.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አስር እንፈታለን",
+              "en": "Break a ten"
+            },
+            {
+              "id": "no",
+              "am": "አያስፈልግም",
+              "en": "No need"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "42 − 17"
+            },
+            {
+              "id": "b",
+              "label": "58 − 23"
+            },
+            {
+              "id": "c",
+              "label": "30 − 14"
+            },
+            {
+              "id": "d",
+              "label": "67 − 5"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.teens.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ አስሮቹን፣ ከዚያ አንዶቹን እናስቀምጥ።",
+              "en": "Put the tens first, then the ones.",
+              "audio_url": "audio/am/ex.teens.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_sub2d.19",
+          "type": "drag_sort",
+          "prompt_am": "አስር መፍታት የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: must break a ten, doesn't.",
+          "audio_url": "audio/am/ex.g2_sub2d.16.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አስር እንፈታለን",
+              "en": "Break a ten"
+            },
+            {
+              "id": "no",
+              "am": "አያስፈልግም",
+              "en": "No need"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "51 − 9"
+            },
+            {
+              "id": "b",
+              "label": "76 − 34"
+            },
+            {
+              "id": "c",
+              "label": "63 − 28"
+            },
+            {
+              "id": "d",
+              "label": "89 − 7"
+            },
+            {
+              "id": "e",
+              "label": "40 − 15"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.teens.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ አስሮቹን፣ ከዚያ አንዶቹን እናስቀምጥ።",
+              "en": "Put the tens first, then the ones.",
+              "audio_url": "audio/am/ex.teens.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_sub2d.20",
+          "type": "drag_sort",
+          "prompt_am": "አስር መፍታት የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: must break a ten, doesn't.",
+          "audio_url": "audio/am/ex.g2_sub2d.16.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አስር እንፈታለን",
+              "en": "Break a ten"
+            },
+            {
+              "id": "no",
+              "am": "አያስፈልግም",
+              "en": "No need"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "82 − 47"
+            },
+            {
+              "id": "b",
+              "label": "95 − 42"
+            },
+            {
+              "id": "c",
+              "label": "71 − 36"
+            },
+            {
+              "id": "d",
+              "label": "64 − 31"
+            },
+            {
+              "id": "e",
+              "label": "50 − 23"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.teens.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ አስሮቹን፣ ከዚያ አንዶቹን እናስቀምጥ።",
+              "en": "Put the tens first, then the ones.",
+              "audio_url": "audio/am/ex.teens.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "race",
+    "questions": [
+      {
+        "id": "g2_sub2d.26",
+        "type": "tap_choose",
+        "prompt_am": "ሰላሳ ሲቀነስ አስር?",
+        "prompt_en": "Thirty minus ten?",
+        "audio_url": "audio/am/ex.g2_sub2d.18.mp3",
+        "options": [
+          {
+            "v": 20
+          },
+          {
+            "v": 40
+          }
+        ],
+        "answer": 20,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_sub2d.27",
+        "type": "tap_choose",
+        "prompt_am": "አርባ ሁለት ሲቀነስ ሁለት?",
+        "prompt_en": "Forty-two minus two?",
+        "audio_url": "audio/am/ex.g2_sub2d.19.mp3",
+        "options": [
+          {
+            "v": 40
+          },
+          {
+            "v": 44
+          }
+        ],
+        "answer": 40,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_sub2d.28",
+        "type": "tap_choose",
+        "prompt_am": "ሃምሳ ሲቀነስ አምስት?",
+        "prompt_en": "Fifty minus five?",
+        "audio_url": "audio/am/ex.g2_sub2d.20.mp3",
+        "options": [
+          {
+            "v": 45
+          },
+          {
+            "v": 55
+          }
+        ],
+        "answer": 45,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_sub2d.29",
+        "type": "tap_choose",
+        "prompt_am": "ሰላሳ ሶስት ሲቀነስ አስራ አራት?",
+        "prompt_en": "Thirty-three minus fourteen?",
+        "audio_url": "audio/am/ex.g2_sub2d.21.mp3",
+        "options": [
+          {
+            "v": 19
+          },
+          {
+            "v": 21
+          }
+        ],
+        "answer": 19,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_sub2d.30",
+        "type": "tap_choose",
+        "prompt_am": "ስልሳ ሲቀነስ ሃያ አምስት?",
+        "prompt_en": "Sixty minus twenty-five?",
+        "audio_url": "audio/am/ex.g2_sub2d.22.mp3",
+        "options": [
+          {
+            "v": 35
+          },
+          {
+            "v": 45
+          }
+        ],
+        "answer": 35,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።",
+      "en": "Let's race to Grandma's house! Each right answer moves us forward.",
+      "audio_url": "audio/am/ex.compare.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g2_sub2d.21",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "71",
+        "−",
+        "36",
+        "=",
+        "__"
+      ],
+      "items": [
+        "35",
+        "45",
+        "107"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "35",
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_sub2d.22",
+      "type": "drag_numberline",
+      "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+      "prompt_en": "Let's put the numbers in their places on the number line.",
+      "audio_url": "audio/am/ex.count10.14.mp3",
+      "line": {
+        "min": 20,
+        "max": 50,
+        "step": 5,
+        "labels": "tens"
+      },
+      "items": [
+        "25",
+        "40"
+      ],
+      "answer": [
+        "25",
+        "40"
+      ],
+      "hints": [
+        {
+          "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+          "en": "Small numbers are on the left, big numbers on the right.",
+          "audio_url": "audio/am/ex.count10.15.mp3"
+        },
+        {
+          "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+          "en": "Count the marks from zero.",
+          "audio_url": "audio/am/ex.count10.16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_sub2d.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ሃምሳ ሲቀነስ አስራ ስምንት ሰላሳ ሁለት ነው።",
+      "prompt_en": "True or not? Fifty minus eighteen is thirty-two.",
+      "audio_url": "audio/am/ex.g2_sub2d.17.mp3",
+      "statement_am": "ሃምሳ ሲቀነስ አስራ ስምንት ሰላሳ ሁለት ነው።",
+      "statement_en": "Fifty minus eighteen is thirty-two.",
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_sub2d.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሃያ አምስት",
+        "en": "twenty-five",
+        "audio_url": "audio/am/num.25.mp3"
+      },
+      "options": [
+        {
+          "v": 25
+        },
+        {
+          "v": 52
+        },
+        {
+          "v": 35
+        }
+      ],
+      "answer": 25,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_sub2d.25",
+      "type": "numpad",
+      "prompt_am": "ሰማንያ አራት ሲቀነስ አርባ ሰባት ስንት ነው?",
+      "prompt_en": "What is eighty-four minus forty-seven?",
+      "audio_url": "audio/am/ex.g2_sub2d.15.mp3",
+      "answer": 37,
+      "max_digits": 3,
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 3.567,
+  "step0": 9.0,
+  "step1": 13.567,
+  "step2": 17.467
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ግማሽ እና ሩብ",
+   "en": "Halves and quarters",
+   "end": 2.567
+  },
+  {
+   "start": 3.567,
+   "am": "እናቴ እንጀራ ለቤተሰቡ ታካፍላለች። ሁሉም እኩል ድርሻ ማግኘት አለበት።",
+   "en": "Mother shares injera with the family. Everyone should get an equal share.",
+   "end": 9.0
+  },
+  {
+   "start": 9.0,
+   "am": "እንጀራውን ለሁለት እኩል ስንከፍል እያንዳንዱ ክፍል ግማሽ ነው።",
+   "en": "When we cut the injera into two equal parts, each part is a half.",
+   "end": 13.567
+  },
+  {
+   "start": 13.567,
+   "am": "ለአራት እኩል ስንከፍል እያንዳንዱ ክፍል ሩብ ነው።",
+   "en": "Into four equal parts, each part is a quarter.",
+   "end": 17.467
+  },
+  {
+   "start": 17.467,
+   "am": "ክፍሎቹ እኩል መሆን አለባቸው።",
+   "en": "The parts must be equal.",
+   "end": 20.733
+  }
+ ],
+ "duration": 24.333,
+ "lesson": "g2_halves"
+}
