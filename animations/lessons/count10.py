@@ -46,12 +46,14 @@ class Count10(LessonScene):
                               en(WORDS["en"][k], size=24)).arrange(RIGHT, buff=0.35).to_edge(DOWN, buff=0.7)
             anims = [FadeIn(b, scale=1.6), Indicate(f.head, color=ADEY, scale_factor=1.25)]
             anims.append(ReplacementTransform(word, new_word) if word else FadeIn(new_word, shift=UP * 0.2))
+            # she says the number just as its badge pops up
+            talk = say(self, f"num.{k}", fallback=0.55, gap=0, wait=False, offset=0.15)
             self.play(*anims, run_time=0.45)
             self.add(dot)
             self.play(dot.animate.scale(100).move_to(frame.slot(k - 1)), run_time=0.45, rate_func=smooth)
             badges.add(b)
             word = new_word
-            say(self, f"num.{k}", fallback=0.55, gap=0.15)
+            self.wait(max(0.15 + talk - 0.9, 0) + 0.15)
 
         # 4 · the last number tells how many
         six = VGroup(num(6, size=110, color=BERRY), am(WORDS["am"][6], size=44, color=BERRY)) \

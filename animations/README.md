@@ -16,8 +16,9 @@ Output goes to `dist/video/<lesson>.mp4` (H.264 + AAC, fast-start for phones) an
 
 - **Text** comes from `src/i18n.js`. `render.py` runs `export_lessons.js` first, so lesson titles,
   stories, examples and number words are written and reviewed in one place.
-- **Voice** uses the same clips as the app (`audio/am/<key>.m4a`). `say(self, "num.3")` adds the clip
-  and waits exactly its length, so pictures stay in step with the narrator. Missing clips fall back
+- **Voice** uses the same clips as the app (`audio/am/<key>.m4a`/`.mp3`). In `self.step(...)` the picture
+  starts first and her voice follows 0.45 s later; the picture keeps building while she speaks and the
+  next step waits until she has finished (`LEAD`, `MAX_RUN` in `lk/__init__.py`). Missing clips fall back
   to a timed pause and are listed in `animations/media/missing/<Scene>.txt`.
 - **Look** uses the app's palette (`lk/style.py`) and Noto Sans Ethiopic for Amharic.
 

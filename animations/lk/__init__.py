@@ -39,23 +39,34 @@ class LessonScene(Scene):
         voice.say(self, f"lesson.{L['id']}.example", fallback=fallback)
         return cap
 
-    def step(self, L, i, *anims, run_time=1.5, fallback=2.6):
-        """Sentence i of the worked example: caption + its own clip (lesson.<id>.example.<i>),
-        with `anims` (the picture for that sentence) playing while the voice speaks.
-        Waits until both the voice and the animation are done."""
+    # Picture first, voice right behind it: the picture for a sentence starts LEAD seconds
+    # before she begins that sentence, keeps building while she speaks (stretched up to
+    # MAX_RUN seconds for long sentences), and the next step waits until she has finished.
+    LEAD = 0.45
+    CAPTION = 0.3
+    MAX_RUN = 4.0
+
+    def step(self, L, i, *anims, run_time=1.5, fallback=2.6, gap=0.3):
+        """Sentence i of the worked example (clip lesson.<id>.example.<i>) with `anims`,
+        the picture for that sentence."""
         from manim import UP, FadeIn, FadeOut
         s = L["steps"][i]
+        key = f"lesson.{L['id']}.example.{i}"
         cap = caption_bar(s["am"], s["en"], am_size=30, en_size=20, max_chars=46)  # noqa: F405
         old = getattr(self, "_step_cap", None)
-        self.play(FadeIn(cap, shift=UP * 0.1), *([FadeOut(old)] if old is not None else []), run_time=0.4)
+        talk = voice.length(key, fallback)
+        # voice starts after the caption appears and the picture has begun moving
+        voice.say(self, key, fallback=fallback, wait=False, offset=self.CAPTION + (self.LEAD if anims else 0))
+        self.play(FadeIn(cap, shift=UP * 0.1), *([FadeOut(old)] if old is not None else []),
+                  run_time=self.CAPTION)
         self._step_cap = cap
-        length = voice.say(self, f"lesson.{L['id']}.example.{i}", fallback=fallback, wait=False)
-        spent = 0.0
         if anims:
-            self.play(*anims, run_time=run_time)
-            spent = run_time
-        if length > spent:
-            self.wait(length - spent)
+            run = max(run_time, min(self.LEAD + 0.8 * talk, self.MAX_RUN))
+            self.play(*anims, run_time=run)
+            rest = self.LEAD + talk - run
+        else:
+            rest = talk
+        self.wait(max(rest, 0) + gap)
         return cap
 
     def clear_step(self):

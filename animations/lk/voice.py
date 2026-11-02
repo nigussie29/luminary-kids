@@ -32,20 +32,26 @@ def duration(path):
     return float(json.loads(out.stdout)["format"]["duration"])
 
 
-def say(scene, key, fallback=2.0, gap=0.25, wait=True):
-    """Play clip `key` now. Returns its length in seconds. With wait=False the caller animates
-    during the clip (pass the returned length as run_time)."""
+def length(key, fallback=2.0):
+    """Seconds of speech in clip `key` (or `fallback` if it isn't recorded yet)."""
+    p = clip(key)
+    return duration(p) if p else fallback
+
+
+def say(scene, key, fallback=2.0, gap=0.25, wait=True, offset=0.0):
+    """Start clip `key` `offset` seconds from now. Returns its length + gap (without the offset).
+    With wait=False the caller animates while she speaks."""
     p = clip(key)
     if p:
-        scene.add_sound(str(p))
-        length = duration(p)
+        scene.add_sound(str(p), time_offset=offset)
+        n = duration(p)
     else:
         if key not in MISSING:
             MISSING.append(key)
-        length = fallback
+        n = fallback
     if wait:
-        scene.wait(length + gap)
-    return length + gap
+        scene.wait(offset + n + gap)
+    return n + gap
 
 
 def write_missing(out_dir):
