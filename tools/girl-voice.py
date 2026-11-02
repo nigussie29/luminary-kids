@@ -81,8 +81,10 @@ async def main():
     a = ap.parse_args()
     try:
         import edge_tts  # noqa: F401
-    except ImportError:
-        sys.exit("First run:  pip install edge-tts")
+    except ImportError as e:
+        sys.exit(f"Could not load edge-tts: {e}\n"
+                 f"Install it for this Python ({sys.executable}) with:\n"
+                 f'    "{sys.executable}" -m pip install edge-tts')
     have_ffmpeg = subprocess.run(["ffmpeg", "-version"], capture_output=True).returncode == 0
 
     todo = rows(a.grade)
