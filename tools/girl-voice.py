@@ -22,6 +22,7 @@ Options:
 import argparse
 import asyncio
 import csv
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -95,7 +96,9 @@ async def main():
         sys.exit(f"Could not load edge-tts: {e}\n"
                  f"Install it for this Python ({sys.executable}) with:\n"
                  f'    "{sys.executable}" -m pip install edge-tts')
-    have_ffmpeg = subprocess.run(["ffmpeg", "-version"], capture_output=True).returncode == 0
+    have_ffmpeg = shutil.which("ffmpeg") is not None   # optional: trims and evens loudness
+    if not have_ffmpeg:
+        print("(FFmpeg not found: clips are made without trimming; that is fine)")
 
     todo = rows(a.grade)
     if a.sample:
