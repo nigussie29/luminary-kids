@@ -30,12 +30,22 @@ ROOT = Path(__file__).resolve().parents[1]
 VOICE = "am-ET-MekdesNeural"
 AUDITION = ["lesson.count10.story", "num.7", "ui.correct.0", "lesson.g2_add2d.example.1",
             "lesson.g2_groups.example.2", "lesson.g2_halves.title"]
+G1_SCRIPT = r"""
+const fs = require('fs'), path = require('path');
+for (const f of ['i18n.js', 'engine.js', 'art.js', 'narration.js']) require(path.resolve('src', f));
+const rows = globalThis.LK.narr.script();
+const q = (v) => '"' + String(v).replace(/"/g, '""') + '"';
+const csv = '\ufeff' + ['n,file name,Amharic to read,English meaning,note']
+  .concat(rows.map((r, i) => [i + 1, r.key + '.m4a', r.am, r.en, r.note].map(q).join(','))).join('\r\n');
+fs.writeFileSync(path.resolve('dist', 'narration-script.csv'), csv);
+"""
 HUMAN = (".m4a", ".wav", ".ogg", ".webm", ".aac")   # treated as real recordings: never replaced
 
 
 def rows(grade):
     # Make sure both recording scripts are fresh.
-    subprocess.run(["node", "build.js"], cwd=ROOT, check=True, capture_output=True)
+    # Grade 1 list straight from the app's narration script (without rebuilding the app page).
+    subprocess.run(["node", "-e", G1_SCRIPT], cwd=ROOT, check=True, capture_output=True)
     subprocess.run(["node", "animations/export_lessons.js"], cwd=ROOT, check=True, capture_output=True)
     files = {1: ROOT / "dist" / "narration-script.csv", 2: ROOT / "dist" / "narration-script-g2.csv"}
     out = []
