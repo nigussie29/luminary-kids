@@ -73,11 +73,14 @@ def solve(pg, e, scope='#adv-stage'):
         for v in e['items']:
             drag(pg, q(f'.tiles .tile[data-v="{v}"]'), q(f'.slot[data-v="{v}"]'))
     elif t == 'drag_placevalue':
-        fixed = e['targets'][0].get('tens')
-        tens = fixed if fixed is not None else e['answer'] // 10
+        tg, n = e['targets'][0], e['answer']
+        hund = tg.get('hundreds') if tg.get('hundreds') is not None else (n // 100 if n >= 100 else 0)
+        tens = tg.get('tens') if tg.get('tens') is not None else (n - 100 * hund) // 10
+        for _ in range(hund):
+            drag(pg, q('.src-flat'), q('.pv-col.hundreds'), 0.3)
         for _ in range(tens):
             drag(pg, q('.src-rod'), q('.pv-col.tens'), 0.3)
-        for _ in range(e['answer'] - 10 * tens):
+        for _ in range(n - 100 * hund - 10 * tens):
             drag(pg, q('.src-cube'), q('.pv-col.ones'), 0.25)
     elif t == 'drag_match_word':
         for it in e['items']:
@@ -92,10 +95,11 @@ def solve(pg, e, scope='#adv-stage'):
                 break
     elif t == 'drag_fraction':
         need = e['answer'] - (e['targets'][0].get('start') or 0)
+        half = (e.get('parts') or 4) // 2
         while need:
-            kind = 'half' if need >= 2 and pg.query_selector(q('.fpiece.half')) else 'quarter'
-            drag(pg, q(f'.fpiece.{kind}'), q('.inj'))
-            need -= 2 if kind == 'half' else 1
+            big = need >= half and pg.query_selector(q('.fpiece.half'))
+            drag(pg, q('.fpiece.half' if big else '.fpiece:not(.half)'), q('.inj'))
+            need -= half if big else 1
     elif t in ('tap_choose', 'listen_choose'):
         pg.click(q(f'.opt[data-v="{e["answer"]}"]'))
     elif t == 'tap_count':

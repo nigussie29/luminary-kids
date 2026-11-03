@@ -56,10 +56,10 @@ moves on.
 | `drag_equation` | `equation: ["3", "+", "__", "=", "7"]`, `items: ["4", "3", "10"]` (tiles) | the tile that fills `__` |
 | `drag_sort` | `targets: [{ id, am, en }]` (bins), `items: [{ id, label?, visual? }]` (cards) | `{ cardId: binId }` |
 | `drag_numberline` | `line: { min, max, step, labels: ends \| tens \| none }`, `items: ["12", "15"]` | the same values |
-| `drag_placevalue` | `items: { rods, cubes }`, `targets: [{ id: "mat", tens? }]` (`tens` = build it with exactly that many tens) | the number |
+| `drag_placevalue` | `items: { flats?, rods, cubes }`, `targets: [{ id: "mat", tens?, hundreds? }]` (`tens` / `hundreds` = build it with exactly that many; numbers from 100 get a hundreds column) | the number |
 | `drag_match_word` | `items: [{ id, label, lang: am \| geez, audio_url? }]`, `targets: [{ id, label? , visual? }]` | `{ cardId: slotId }` |
 | `drag_make_change` | `price`, `item: { am, en, pic }`, `items: [10, 5, 5, 1]` (the wallet) | the price |
-| `drag_fraction` | `items: [{ piece: half \| quarter, count }]`, `targets: [{ id: "injera", start }]` | quarters to fill (2 = a half) |
+| `drag_fraction` | `parts` (4 by default; 3 for thirds, 6 for sixths), `items: [{ piece: half \| quarter \| third \| sixth, count }]`, `targets: [{ id: "injera", start }]` | parts to fill (a half covers parts ÷ 2) |
 
 ### Other types
 
@@ -76,9 +76,10 @@ moves on.
 
 ### Pictures (`visual`)
 
-`group {thing, n}` · `takeaway {thing, n, gone}` · `compare {thing, left, right}` · `tens_ones {tens, ones}` ·
+`group {thing, n}` · `takeaway {thing, n, gone}` · `compare {thing, left, right}` · `tens_ones {hundreds?, tens, ones}` · `array {rows, cols, thing}` ·
 `tenframe {n}` · `birr {notes}` · `injera {parts, filled, equal}` · `groups {groups, thing}` · `text {text}`.
-Things: orange, mango, cup, flower, child, counter, bean, egg, book.
+Things: orange, mango, cup, flower, child, counter, bean, egg, book, seedling.
+`drag_drop_count` targets can also be `row` (a strip of soil, for planting in rows); `drag_equation` understands `÷`.
 
 ### Mini-games (`play`)
 

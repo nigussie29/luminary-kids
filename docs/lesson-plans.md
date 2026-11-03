@@ -802,3 +802,410 @@ Re-teach clip after two misses: 8.9–24.3 s
 
 **Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
 
+## Grade 3 · Lesson 1 — መቶዎች፣ አስሮች እና አንዶች (Hundreds, tens and ones)
+
+Place on the map: store · Mini-game: memory · Hook video: `video/g3_hundreds.mp4` (30.0 s) · Manim code: `animations/lessons/g3_hundreds.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | መቶዎች፣ አስሮች እና አንዶች | Hundreds, tens and ones | `lesson.g3_hundreds.title` |
+| 4.3 s | ዛሬ በትልልቅ ቁጥሮች እንጫወታለን። አስር አስሮች ሲሰባሰቡ አንድ መቶ ይሆናሉ። | Today we play with big numbers. When ten tens come together, they make one hundred. | `lesson.g3_hundreds.story` |
+| 10.4 s | አስር አስሮች አንድ መቶ ይሆናሉ። | Ten tens make one hundred. | `lesson.g3_hundreds.example.0` |
+| 15.0 s | እዚህ ሁለት መቶዎች፣ አራት አስሮች እና አምስት አንዶች አሉ። | Here are two hundreds, four tens and five ones. | `lesson.g3_hundreds.example.1` |
+| 18.6 s | ሁለት መቶ፣ አርባ እና አምስት። | Two hundred, forty and five. | `lesson.g3_hundreds.example.2` |
+| 22.3 s | ቁጥሩ ሁለት መቶ አርባ አምስት ነው። | The number is two hundred forty-five. | `lesson.g3_hundreds.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 10.3 s | tap_choose | ስንት አስሮች አንድ መቶ ይሆናሉ?<br><small>How many tens make one hundred?</small> | 10 | `ex.g3_hundreds.01.mp3` |
+| 22.2 s | tap_choose | ቁጥሩ ስንት ነው?<br><small>What is the number?</small> | 245 | `ex.g3_hundreds.02.mp3` |
+
+Re-teach clip after two misses: 10.3–30.0 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_placevalue | መቶ ሰላሳ ሁለትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 132 with hundreds, tens and ones.</small> | 132 | `ex.g3_hundreds.03.mp3` |
+| 1 · L2 | drag_placevalue | ሁለት መቶ አርባ አምስትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 245 with hundreds, tens and ones.</small> | 245 | `ex.g3_hundreds.06.mp3` |
+| 1 · L3 | drag_placevalue | አራት መቶ ስድስትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 406 with hundreds, tens and ones.</small> | 406 | `ex.g3_hundreds.07.mp3` |
+| 2 · L1 | tap_choose | ስንት ነው?<br><small>How many is this?</small> | 213 | `ex.teens.08.mp3` |
+| 2 · L2 | tap_choose | ስንት ነው?<br><small>How many is this?</small> | 341 | `ex.teens.08.mp3` |
+| 2 · L3 | tap_choose | ስንት ነው?<br><small>How many is this?</small> | 507 | `ex.teens.08.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each word to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.11.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each word to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.11.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each word to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.11.mp3` |
+| 4 · L1 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["100","300"] | `ex.count10.14.mp3` |
+| 4 · L2 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["400","600","900"] | `ex.count10.14.mp3` |
+| 4 · L3 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["230","250","280"] | `ex.count10.14.mp3` |
+| 5 · L1 | numpad | ሶስት መቶዎች፣ አምስት አስሮች እና ሁለት አንዶች ስንት ናቸው?<br><small>What is three hundreds, five tens and two ones?</small> | 352 | `ex.g3_hundreds.08.mp3` |
+| 5 · L2 | numpad | ስድስት መቶዎች፣ ዜሮ አስሮች እና አራት አንዶች ስንት ናቸው?<br><small>What is six hundreds, zero tens and four ones?</small> | 604 | `ex.g3_hundreds.09.mp3` |
+| 5 · L3 | numpad | ስምንት መቶዎች እና ዘጠኝ አስሮች ስንት ናቸው?<br><small>What is eight hundreds and nine tens?</small> | 890 | `ex.g3_hundreds.10.mp3` |
+| 6 · L1 | drag_sort | ከአምስት መቶ የሚበልጡትን እና የሚያንሱትን እንለይ።<br><small>Let's sort: more than 500, less than 500.</small> | {"a":"more","b":"less","c":"more","d":"less"} | `ex.g3_hundreds.11.mp3` |
+| 6 · L2 | drag_sort | ከአምስት መቶ የሚበልጡትን እና የሚያንሱትን እንለይ።<br><small>Let's sort: more than 500, less than 500.</small> | {"a":"more","b":"less","c":"more","d":"less","e":"more"} | `ex.g3_hundreds.11.mp3` |
+| 6 · L3 | drag_sort | መቶዎቹ ሶስት የሆኑትን እና ያልሆኑትን እንለይ።<br><small>Let's sort: three hundreds, not three hundreds.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_hundreds.12.mp3` |
+| optional | speak | «ሁለት መቶ አርባ አምስት» ብለን ጮክ ብለን እንናገር።<br><small>Let's say «two hundred forty-five» out loud.</small> | 245 | `ex.g3_hundreds.13.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና የግዕዝ ቁጥር።<br><small>Let's find matching cards: number, word and Ge'ez numeral.</small> · `ex.teens.24.mp3`
+
+```json
+[{"n":100,"am":"መቶ","geez":"፻"},{"n":250,"am":"ሁለት መቶ ሃምሳ","geez":"፪፻፶"},{"n":408,"am":"አራት መቶ ስምንት","geez":"፬፻፰"},{"n":760,"am":"ሰባት መቶ ስልሳ","geez":"፯፻፷"}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_placevalue | ሶስት መቶ አስራ ስምንትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 318 with hundreds, tens and ones.</small> | 318 | `ex.g3_hundreds.14.mp3` |
+| 2 | drag_match_word | እያንዳንዱን የግዕዝ ቁጥር ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each Ge'ez numeral to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.26.mp3` |
+| 3 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 405 | `ex.count10.17.mp3` |
+| 4 | true_false | ልክ ነው ወይስ አይደለም? ሶስት መቶዎች እና ሁለት አንዶች ሶስት መቶ ሃያ ነው።<br><small>True or not? Three hundreds and two ones is three hundred twenty.</small> | false | `ex.g3_hundreds.15.mp3` |
+| 5 | trace | ቁጥር ሁለት መቶ አርባ አምስትን በጣታችን እንጻፍ።<br><small>Let's trace the number 245 with a finger.</small> | 245 | `ex.g3_hundreds.16.mp3` |
+
+**Counts:** 6 drag-and-drop · 5 other exercise types · 17 interactions in all.
+
+## Grade 3 · Lesson 2 — ባለ ሶስት አሃዝ ቁጥሮችን መደመር (Adding three-digit numbers)
+
+Place on the map: orchard · Mini-game: balloon · Hook video: `video/g3_add3d.mp4` (35.9 s) · Manim code: `animations/lessons/g3_add3d.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ባለ ሶስት አሃዝ ቁጥሮችን መደመር | Adding three-digit numbers | `lesson.g3_add3d.title` |
+| 4.5 s | ገበሬው በመጀመሪያው ቀን ሁለት መቶ ሰላሳ ስምንት ብርቱካኖችን፣ በሁለተኛው ቀን መቶ አርባ አምስት ብርቱካኖችን ለቀመ። | The farmer picked two hundred thirty-eight oranges on the first day and one hundred forty-five on the second day. | `lesson.g3_add3d.story` |
+| 10.2 s | ሁለት መቶ ሰላሳ ስምንት ሲደመር መቶ አርባ አምስት። | Two hundred thirty-eight plus one hundred forty-five. | `lesson.g3_add3d.example.0` |
+| 13.8 s | መጀመሪያ አንዶቹን እንደምር፦ ስምንት እና አምስት አስራ ሶስት ነው። | First add the ones: eight and five is thirteen. | `lesson.g3_add3d.example.1` |
+| 17.4 s | ሶስቱን እንጽፋለን፤ አንዱን አስር ወደ አስሮቹ እንወስዳለን። | We write the three and carry one ten to the tens. | `lesson.g3_add3d.example.2` |
+| 21.1 s | አስሮች፦ አንድ፣ ሶስት እና አራት ስምንት ናቸው። | Tens: one, three and four make eight. | `lesson.g3_add3d.example.3` |
+| 24.7 s | መቶዎች፦ ሁለት እና አንድ ሶስት ናቸው። | Hundreds: two and one make three. | `lesson.g3_add3d.example.4` |
+| 28.3 s | መልሱ ሶስት መቶ ሰማንያ ሶስት ነው። | The answer is three hundred eighty-three. | `lesson.g3_add3d.example.5` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ስምንት እና አምስት ስንት ነው?<br><small>What is eight and five?</small> | 13 | `ex.g3_add3d.01.mp3` |
+| 21.0 s | tap_choose | አንድ፣ ሶስት እና አራት ስንት ናቸው?<br><small>What are one, three and four together?</small> | 8 | `ex.g3_add3d.02.mp3` |
+
+Re-teach clip after two misses: 13.8–35.9 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 358 | `ex.teens.09.mp3` |
+| 1 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 383 | `ex.teens.09.mp3` |
+| 1 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 752 | `ex.teens.09.mp3` |
+| 2 · L1 | tap_choose | ሁለት መቶ ሲደመር ሶስት መቶ ስንት ነው?<br><small>What is two hundred plus three hundred?</small> | 500 | `ex.g3_add3d.05.mp3` |
+| 2 · L2 | tap_choose | ሶስት መቶ አርባ ሲደመር ሁለት መቶ ሃያ ስንት ነው?<br><small>What is three hundred forty plus two hundred twenty?</small> | 560 | `ex.g3_add3d.06.mp3` |
+| 2 · L3 | tap_choose | አራት መቶ ሰማንያ ሲደመር ሁለት መቶ ሃምሳ ስንት ነው?<br><small>What is four hundred eighty plus two hundred fifty?</small> | 730 | `ex.g3_add3d.07.mp3` |
+| 3 · L1 | drag_placevalue | ሶስት መቶ ሃምሳ ስምንትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 358 with hundreds, tens and ones.</small> | 358 | `ex.g3_add3d.08.mp3` |
+| 3 · L2 | drag_placevalue | ሶስት መቶ ሰማንያ ሶስትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 383 with hundreds, tens and ones.</small> | 383 | `ex.g3_add3d.09.mp3` |
+| 3 · L3 | drag_placevalue | አምስት መቶ አስራ ሰባትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 517 with hundreds, tens and ones.</small> | 517 | `ex.g3_add3d.10.mp3` |
+| 4 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 150 | `ex.teens.09.mp3` |
+| 4 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 250 | `ex.teens.09.mp3` |
+| 4 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 225 | `ex.teens.09.mp3` |
+| 5 · L1 | numpad | ሁለት መቶ ሃያ አራት ሲደመር መቶ ሰላሳ አምስት ስንት ነው?<br><small>What is two hundred twenty-four plus one hundred thirty-five?</small> | 359 | `ex.g3_add3d.11.mp3` |
+| 5 · L2 | numpad | ሶስት መቶ አርባ ስድስት ሲደመር መቶ ሃያ ስምንት ስንት ነው?<br><small>What is three hundred forty-six plus one hundred twenty-eight?</small> | 474 | `ex.g3_add3d.12.mp3` |
+| 5 · L3 | numpad | አምስት መቶ ሰማንያ ሰባት ሲደመር ሁለት መቶ ሰላሳ ስድስት ስንት ነው?<br><small>What is five hundred eighty-seven plus two hundred thirty-six?</small> | 823 | `ex.g3_add3d.13.mp3` |
+| 6 · L1 | drag_sort | አዲስ አስር የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: needs a new ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g2_add2d.12.mp3` |
+| 6 · L2 | drag_sort | አዲስ አስር የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: needs a new ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g2_add2d.12.mp3` |
+| 6 · L3 | drag_sort | አዲስ መቶ የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: needs a new hundred, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_add3d.14.mp3` |
+
+### 4. Play — balloon
+
+ሁለት ፊኛዎችን ፈንድተን የተጠየቀውን ቁጥር እንሥራ።<br><small>Pop two balloons that add up to the number.</small> · `ex.add10.16.mp3`
+
+```json
+[{"target":500,"balloons":[250,120,380,310,190,75]},{"target":700,"balloons":[350,260,440,125,515,90]},{"target":1000,"balloons":[600,450,400,275,725,150]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 634 | `ex.teens.09.mp3` |
+| 2 | drag_placevalue | አራት መቶ ሰባ ሁለትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 472 with hundreds, tens and ones.</small> | 472 | `ex.g3_add3d.15.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? መቶ ዘጠና ሲደመር አስር ሁለት መቶ ነው።<br><small>True or not? One hundred ninety plus ten is two hundred.</small> | true | `ex.g3_add3d.16.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 634 | `ex.count10.17.mp3` |
+| 5 | numpad | ሶስት መቶ ሃምሳ ሲደመር ሁለት መቶ ስልሳ ስንት ነው?<br><small>What is three hundred fifty plus two hundred sixty?</small> | 610 | `ex.g3_add3d.17.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 3 — ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ (Subtracting three-digit numbers)
+
+Place on the map: schoolyard · Mini-game: market · Hook video: `video/g3_sub3d.mp4` (36.5 s) · Manim code: `animations/lessons/g3_sub3d.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ | Subtracting three-digit numbers | `lesson.g3_sub3d.title` |
+| 4.5 s | በትምህርት ቤታችን አራት መቶ ሃምሳ ሁለት ተማሪዎች አሉ። ዛሬ ሁለት መቶ ሃያ ስምንት ተማሪዎች ለሽርሽር ሄዱ። ስንት ተማሪዎች ቀሩ? | Our school has four hundred fifty-two students. Today two hundred twenty-eight students went on a trip. How many students stayed? | `lesson.g3_sub3d.story` |
+| 10.8 s | አራት መቶ ሃምሳ ሁለት ሲቀነስ ሁለት መቶ ሃያ ስምንት። | Four hundred fifty-two minus two hundred twenty-eight. | `lesson.g3_sub3d.example.0` |
+| 14.4 s | ከሁለት ስምንት መውሰድ አንችልም፤ ስለዚህ አንድ አስር እንፈታለን። | We cannot take eight from two, so we break one ten. | `lesson.g3_sub3d.example.1` |
+| 18.0 s | አሁን አራት አስሮች እና አስራ ሁለት አንዶች አሉ። | Now there are four tens and twelve ones. | `lesson.g3_sub3d.example.2` |
+| 21.7 s | አስራ ሁለት ሲቀነስ ስምንት አራት ነው። | Twelve minus eight is four. | `lesson.g3_sub3d.example.3` |
+| 25.3 s | አራት አስሮች ሲቀነስ ሁለት አስሮች ሁለት አስሮች ናቸው፤ አራት መቶዎች ሲቀነስ ሁለት መቶዎች ሁለት መቶዎች ናቸው። | Four tens minus two tens is two tens; four hundreds minus two hundreds is two hundreds. | `lesson.g3_sub3d.example.4` |
+| 28.9 s | መልሱ ሁለት መቶ ሃያ አራት ነው። | The answer is two hundred twenty-four. | `lesson.g3_sub3d.example.5` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 14.3 s | tap_choose | ከሁለት አንዶች ስምንት መውሰድ እንችላለን?<br><small>Can we take eight ones from two ones?</small> | no | `ex.g3_sub3d.01.mp3` |
+| 21.6 s | tap_choose | አስራ ሁለት ሲቀነስ ስምንት ስንት ነው?<br><small>What is twelve minus eight?</small> | 4 | `ex.g3_sub3d.02.mp3` |
+
+Re-teach clip after two misses: 14.3–36.5 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 353 | `ex.teens.09.mp3` |
+| 1 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 224 | `ex.teens.09.mp3` |
+| 1 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 374 | `ex.teens.09.mp3` |
+| 2 · L1 | tap_choose | አራት መቶዎች፣ አምስት አስሮች እና ሁለት አንዶች = አራት መቶዎች፣ አራት አስሮች እና ስንት አንዶች?<br><small>4 hundreds, 5 tens and 2 ones = 4 hundreds, 4 tens and how many ones?</small> | 12 | `ex.g3_sub3d.05.mp3` |
+| 2 · L2 | tap_choose | ሶስት መቶዎች እና ስድስት አስሮች = ሶስት መቶዎች፣ አምስት አስሮች እና ስንት አንዶች?<br><small>3 hundreds and 6 tens = 3 hundreds, 5 tens and how many ones?</small> | 10 | `ex.g3_sub3d.06.mp3` |
+| 2 · L3 | tap_choose | አምስት መቶዎች = አራት መቶዎች እና ስንት አስሮች?<br><small>5 hundreds = 4 hundreds and how many tens?</small> | 10 | `ex.g3_sub3d.07.mp3` |
+| 3 · L1 | drag_placevalue | መቶ አስራ ሁለትን ያለ አስሮች እንሥራ።<br><small>Let's build one hundred twelve without any tens.</small> | 112 | `ex.g3_sub3d.08.mp3` |
+| 3 · L2 | drag_placevalue | መቶ ሰላሳ ሁለትን በሁለት አስሮች ብቻ እንሥራ።<br><small>Let's build one hundred thirty-two using only two tens.</small> | 132 | `ex.g3_sub3d.10.mp3` |
+| 3 · L3 | drag_placevalue | መቶ ሰላሳን ያለ መቶ፣ በአስሮች ብቻ እንሥራ።<br><small>Let's build one hundred thirty with tens only, no hundred.</small> | 130 | `ex.g3_sub3d.12.mp3` |
+| 4 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 200 | `ex.teens.09.mp3` |
+| 4 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 250 | `ex.teens.09.mp3` |
+| 4 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 425 | `ex.teens.09.mp3` |
+| 5 · L1 | numpad | አራት መቶ ሰባ አምስት ሲቀነስ መቶ ሰላሳ ሁለት ስንት ነው?<br><small>What is four hundred seventy-five minus one hundred thirty-two?</small> | 343 | `ex.g3_sub3d.15.mp3` |
+| 5 · L2 | numpad | አምስት መቶ ስልሳ ሶስት ሲቀነስ ሁለት መቶ አርባ ሰባት ስንት ነው?<br><small>What is five hundred sixty-three minus two hundred forty-seven?</small> | 316 | `ex.g3_sub3d.16.mp3` |
+| 5 · L3 | numpad | ሰባት መቶ ሲቀነስ ሶስት መቶ ስልሳ አምስት ስንት ነው?<br><small>What is seven hundred minus three hundred sixty-five?</small> | 335 | `ex.g3_sub3d.17.mp3` |
+| 6 · L1 | drag_sort | አስር መፍታት የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: must break a ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g2_sub2d.16.mp3` |
+| 6 · L2 | drag_sort | አስር መፍታት የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: must break a ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g2_sub2d.16.mp3` |
+| 6 · L3 | drag_sort | መቶ መፍታት የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: must break a hundred, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_sub3d.18.mp3` |
+
+### 4. Play — market
+
+ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።<br><small>Let's go to the market! Buy things that use up exactly all our birr.</small> · `ex.g2_birr.19.mp3`
+
+```json
+[{"budget":200,"goods":[{"pic":"book","am":"መጽሐፍ","en":"Book","price":120},{"pic":"pen","am":"እስክሪብቶ","en":"Pen","price":80},{"pic":"bread","am":"ዳቦ","en":"Bread","price":150}]},{"budget":350,"goods":[{"pic":"shoes","am":"ጫማ","en":"Shoes","price":250},{"pic":"bag","am":"ቦርሳ","en":"Bag","price":175},{"pic":"banana","am":"ሙዝ","en":"Bananas","price":100}]},{"budget":500,"goods":[{"pic":"bag","am":"ቦርሳ","en":"Bag","price":325},{"pic":"book","am":"መጽሐፍ","en":"Book","price":175},{"pic":"egg","am":"እንቁላል","en":"Eggs","price":90}]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 356 | `ex.teens.09.mp3` |
+| 2 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["320","370"] | `ex.count10.14.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? አምስት መቶ ሲቀነስ መቶ አራት መቶ ነው።<br><small>True or not? Five hundred minus one hundred is four hundred.</small> | true | `ex.g3_sub3d.19.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 356 | `ex.count10.17.mp3` |
+| 5 | numpad | ስምንት መቶ ሲቀነስ ሶስት መቶ ሃምሳ ስንት ነው?<br><small>What is eight hundred minus three hundred fifty?</small> | 450 | `ex.g3_sub3d.20.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 4 — በረድፍ እናባዛ (Multiplying in rows)
+
+Place on the map: field · Mini-game: coffee · Hook video: `video/g3_times.mp4` (28.2 s) · Manim code: `animations/lessons/g3_times.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | በረድፍ እናባዛ | Multiplying in rows | `lesson.g3_times.title` |
+| 3.9 s | አባቴ በእርሻው ላይ የቡና ችግኞችን በረድፍ ተከለ። በእያንዳንዱ ረድፍ እኩል ችግኞች አሉ። | Father planted coffee seedlings in rows on the farm. Every row has the same number of seedlings. | `lesson.g3_times.story` |
+| 9.6 s | ሶስት ረድፎች አሉ፤ በእያንዳንዱ ረድፍ አምስት ችግኞች አሉ። | There are three rows, with five seedlings in each row. | `lesson.g3_times.example.0` |
+| 13.2 s | አምስት፣ አስር፣ አስራ አምስት። | Five, ten, fifteen. | `lesson.g3_times.example.1` |
+| 16.8 s | ሶስት ጊዜ አምስት እኩል ነው አስራ አምስት። | Three times five equals fifteen. | `lesson.g3_times.example.2` |
+| 20.5 s | ስናዞረው አምስት ረድፎች በሶስት በሶስት ይሆናሉ፤ አሁንም አስራ አምስት ነው። | When we turn it around, there are five rows of three; it is still fifteen. | `lesson.g3_times.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.2 s | tap_choose | ሶስት ረድፎች በአምስት በአምስት ስንት ችግኞች ናቸው?<br><small>How many seedlings are three rows of five?</small> | 15 | `ex.g3_times.01.mp3` |
+| 20.4 s | tap_choose | ስናዞረው ስንት ችግኞች ይሆናሉ?<br><small>When we turn it around, how many seedlings are there?</small> | 15 | `ex.g3_times.04.mp3` |
+
+Re-teach clip after two misses: 9.5–28.2 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።<br><small>Let's plant 3 seedlings in each row.</small> | [3,3] | `ex.g3_times.05.mp3` |
+| 1 · L2 | drag_drop_count | በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።<br><small>Let's plant 3 seedlings in each row.</small> | [3,3,3] | `ex.g3_times.05.mp3` |
+| 1 · L3 | drag_drop_count | በእያንዳንዱ ረድፍ አራት ችግኞችን እንትከል።<br><small>Let's plant 4 seedlings in each row.</small> | [4,4,4] | `ex.g3_times.06.mp3` |
+| 2 · L1 | tap_choose | ይህ የትኛው ነው?<br><small>Which one is this?</small> | a | `ex.g2_groups.08.mp3` |
+| 2 · L2 | tap_choose | ይህ የትኛው ነው?<br><small>Which one is this?</small> | b | `ex.g2_groups.08.mp3` |
+| 2 · L3 | tap_choose | ይህ የትኛው ነው?<br><small>Which one is this?</small> | c | `ex.g2_groups.08.mp3` |
+| 3 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 12 | `ex.teens.09.mp3` |
+| 3 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 30 | `ex.teens.09.mp3` |
+| 3 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 4 | `ex.teens.09.mp3` |
+| 4 · L1 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_times.07.mp3` |
+| 4 · L2 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_times.07.mp3` |
+| 4 · L3 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_times.07.mp3` |
+| 5 · L1 | numpad | አራት ጊዜ አምስት ስንት ነው?<br><small>What is four times five?</small> | 20 | `ex.g3_times.08.mp3` |
+| 5 · L2 | numpad | ስድስት ጊዜ ሶስት ስንት ነው?<br><small>What is six times three?</small> | 18 | `ex.g3_times.09.mp3` |
+| 5 · L3 | numpad | ስምንት ጊዜ አራት ስንት ነው?<br><small>What is eight times four?</small> | 32 | `ex.g3_times.10.mp3` |
+| 6 · L1 | drag_sort | አስራ ሁለት የሚሆኑትን እና የማይሆኑትን እንለይ።<br><small>Let's sort: makes 12, doesn't make 12.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g3_times.11.mp3` |
+| 6 · L2 | drag_sort | ሃያ አራት የሚሆኑትን እና የማይሆኑትን እንለይ።<br><small>Let's sort: makes 24, doesn't make 24.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_times.12.mp3` |
+| 6 · L3 | drag_sort | ሰላሳ ስድስት የሚሆኑትን እና የማይሆኑትን እንለይ።<br><small>Let's sort: makes 36, doesn't make 36.</small> | {"a":"yes","b":"yes","c":"no","d":"yes","e":"no"} | `ex.g3_times.13.mp3` |
+
+### 4. Play — coffee
+
+ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።<br><small>Let's pour coffee for the guests! Every tray gets the same number of cups.</small> · `ex.g2_groups.19.mp3`
+
+```json
+[{"n":8,"trays":[4,4]},{"n":12,"trays":[3,3,3,3]},{"n":15,"trays":[5,5,5]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | በእያንዳንዱ ረድፍ አምስት ችግኞችን እንትከል።<br><small>Let's plant 5 seedlings in each row.</small> | [5,5] | `ex.g3_times.14.mp3` |
+| 2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 4 | `ex.teens.09.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? ሶስት ጊዜ ስድስት ከስድስት ጊዜ ሶስት ጋር እኩል ነው።<br><small>True or not? Three times six equals six times three.</small> | true | `ex.g3_times.15.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 24 | `ex.count10.17.mp3` |
+| 5 | numpad | ዘጠኝ ጊዜ አምስት ስንት ነው?<br><small>What is nine times five?</small> | 45 | `ex.g3_times.17.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 5 — እኩል ማካፈል (Sharing equally)
+
+Place on the map: village · Mini-game: race · Hook video: `video/g3_share.mp4` (29.6 s) · Manim code: `animations/lessons/g3_share.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | እኩል ማካፈል | Sharing equally | `lesson.g3_share.title` |
+| 4.7 s | እማማ አስራ ሁለት ብርቱካኖችን ለሶስት ልጆች በእኩል ማካፈል ትፈልጋለች። ማንም ከሌላው መብለጥ የለበትም። | Mama wants to share twelve oranges equally among three children. Nobody should get more than anyone else. | `lesson.g3_share.story` |
+| 10.4 s | አንድ ለአንተ፣ አንድ ለአንቺ፣ አንድ ለእሱ፤ በዙር እናካፍላለን። | One for you, one for you, one for him: we share in turns. | `lesson.g3_share.example.0` |
+| 14.0 s | ሁሉም እስኪያልቁ እንቀጥላለን። | We keep going until they are all gone. | `lesson.g3_share.example.1` |
+| 18.2 s | እያንዳንዱ ልጅ አራት ብርቱካኖች አገኘ። | Each child gets four oranges. | `lesson.g3_share.example.2` |
+| 21.8 s | አስራ ሁለት ሲካፈል ለሶስት እኩል ነው አራት። | Twelve divided by three equals four. | `lesson.g3_share.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.9 s | tap_choose | ከአንድ ዙር በኋላ ስንት ብርቱካኖች ተሰጡ?<br><small>After one turn, how many oranges have been given out?</small> | 3 | `ex.g3_share.01.mp3` |
+| 18.1 s | tap_choose | እያንዳንዱ ልጅ ስንት ብርቱካኖች ያገኛል?<br><small>How many oranges does each child get?</small> | 4 | `ex.g3_share.04.mp3` |
+
+Re-teach clip after two misses: 10.3–29.6 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | ስድስት ብርቱካኖችን ለሁለት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 6 oranges equally on 2 plates.</small> | [3,3] | `ex.g3_share.05.mp3` |
+| 1 · L2 | drag_drop_count | ዘጠኝ ብርቱካኖችን ለሶስት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 9 oranges equally on 3 plates.</small> | [3,3,3] | `ex.g3_share.06.mp3` |
+| 1 · L3 | drag_drop_count | አስራ ሁለት ብርቱካኖችን ለአራት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 12 oranges equally on 4 plates.</small> | [3,3,3,3] | `ex.g3_share.07.mp3` |
+| 2 · L1 | tap_choose | ስምንት ሲካፈል ለሁለት ስንት ነው?<br><small>What is eight divided by two?</small> | 4 | `ex.g3_share.08.mp3` |
+| 2 · L2 | tap_choose | አስራ አምስት ሲካፈል ለሶስት ስንት ነው?<br><small>What is fifteen divided by three?</small> | 5 | `ex.g3_share.11.mp3` |
+| 2 · L3 | tap_choose | ሃያ ሲካፈል ለአራት ስንት ነው?<br><small>What is twenty divided by four?</small> | 5 | `ex.g3_share.12.mp3` |
+| 3 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 5 | `ex.teens.09.mp3` |
+| 3 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 6 | `ex.teens.09.mp3` |
+| 3 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 4 | `ex.teens.09.mp3` |
+| 4 · L1 | drag_match_word | እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።<br><small>Let's match each division to its answer.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_share.13.mp3` |
+| 4 · L2 | drag_match_word | እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።<br><small>Let's match each division to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_share.13.mp3` |
+| 4 · L3 | drag_match_word | እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።<br><small>Let's match each division to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_share.13.mp3` |
+| 5 · L1 | numpad | አስራ ሁለት ብርቱካኖች ለአራት ልጆች ሲካፈሉ እያንዳንዱ ልጅ ስንት ያገኛል?<br><small>Twelve oranges are shared by four children. How many does each child get?</small> | 3 | `ex.g3_share.14.mp3` |
+| 5 · L2 | numpad | ሃያ ሲካፈል ለአምስት ስንት ነው?<br><small>What is twenty divided by five?</small> | 4 | `ex.g3_share.15.mp3` |
+| 5 · L3 | numpad | ሰላሳ ስድስት ሲካፈል ለአራት ስንት ነው?<br><small>What is thirty-six divided by four?</small> | 9 | `ex.g3_share.16.mp3` |
+| 6 · L1 | drag_sort | ለሶስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።<br><small>Let's sort: shares equally into 3, has some left over.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g3_share.17.mp3` |
+| 6 · L2 | drag_sort | ለአራት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።<br><small>Let's sort: shares equally into 4, has some left over.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_share.18.mp3` |
+| 6 · L3 | drag_sort | ለአምስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።<br><small>Let's sort: shares equally into 5, has some left over.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_share.19.mp3` |
+
+### 4. Play — race
+
+ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።<br><small>Let's race to Grandma's house! Each right answer moves us forward.</small> · `ex.compare.20.mp3`
+
+```json
+[{"q":"ስምንት ሲካፈል ለሁለት?","options":[4,6],"answer":4},{"q":"አስራ አምስት ሲካፈል ለአምስት?","options":[3,10],"answer":3},{"q":"አስራ ሁለት ሲካፈል ለሶስት?","options":[4,9],"answer":4},{"q":"ሃያ ሲካፈል ለሁለት?","options":[10,18],"answer":10},{"q":"አስራ ስምንት ሲካፈል ለስድስት?","options":[3,12],"answer":3}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | አስር ብርቱካኖችን ለአምስት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 10 oranges equally on 5 plates.</small> | [2,2,2,2,2] | `ex.g3_share.20.mp3` |
+| 2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 7 | `ex.teens.09.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? አስራ ስድስት ሲካፈል ለአራት አራት ነው።<br><small>True or not? Sixteen divided by four is four.</small> | true | `ex.g3_share.21.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 6 | `ex.count10.17.mp3` |
+| 5 | numpad | ሰላሳ ሲካፈል ለአምስት ስንት ነው?<br><small>What is thirty divided by five?</small> | 6 | `ex.g3_share.23.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 18 interactions in all.
+
+## Grade 3 · Lesson 6 — ሶስተኛ እና ሌሎች ክፍልፋዮች (Thirds and other fractions)
+
+Place on the map: feast · Mini-game: memory · Hook video: `video/g3_fractions.mp4` (28.8 s) · Manim code: `animations/lessons/g3_fractions.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ሶስተኛ እና ሌሎች ክፍልፋዮች | Thirds and other fractions | `lesson.g3_fractions.title` |
+| 4.5 s | እናቴ አንድ እንጀራ ለሶስት ልጆች በእኩል ታካፍላለች። እያንዳንዱ ልጅ ስንት ያገኛል? | Mother shares one injera equally among three children. How much does each child get? | `lesson.g3_fractions.story` |
+| 10.2 s | እንጀራውን በሶስት እኩል ክፍሎች ከፈለችው። | She divided the injera into three equal parts. | `lesson.g3_fractions.example.0` |
+| 13.8 s | እያንዳንዱ ክፍል አንድ ሶስተኛ ነው፤ እንዲህ እንጽፈዋለን፦ አንድ በሶስት። | Each part is one third; we write it like this: one over three. | `lesson.g3_fractions.example.1` |
+| 17.4 s | ሁለት ክፍሎች ሁለት ሶስተኛ ናቸው። | Two parts are two thirds. | `lesson.g3_fractions.example.2` |
+| 21.1 s | ሶስት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ። | Three thirds make one whole injera. | `lesson.g3_fractions.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ስንት እኩል ክፍሎች አሉ?<br><small>How many equal parts are there?</small> | 3 | `ex.g3_fractions.01.mp3` |
+| 21.0 s | tap_choose | ስንት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?<br><small>How many thirds make one whole injera?</small> | 3 | `ex.g3_fractions.03.mp3` |
+
+Re-teach clip after two misses: 10.1–28.8 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_fraction | አንድ ሶስተኛ እናስቀምጥ።<br><small>Let's put one third.</small> | 1 | `ex.g3_fractions.04.mp3` |
+| 1 · L2 | drag_fraction | ሁለት ሶስተኛ እናስቀምጥ።<br><small>Let's put two thirds.</small> | 2 | `ex.g3_fractions.05.mp3` |
+| 1 · L3 | drag_fraction | ግማሹን እንጀራ በስድስተኛ ቁርጥራጮች እንሙላ።<br><small>Let's fill half of the injera with sixth pieces.</small> | 3 | `ex.g3_fractions.06.mp3` |
+| 2 · L1 | tap_choose | አንድ ሶስተኛ የቀለመው የትኛው ነው?<br><small>Which one has one third coloured?</small> | b | `ex.g3_fractions.09.mp3` |
+| 2 · L2 | tap_choose | ሁለት ሶስተኛ የቀለመው የትኛው ነው?<br><small>Which one has two thirds coloured?</small> | a | `ex.g3_fractions.10.mp3` |
+| 2 · L3 | tap_choose | በሶስት እኩል ክፍሎች የተከፈለው የትኛው ነው?<br><small>Which one is cut into three equal parts?</small> | c | `ex.g3_fractions.11.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_fractions.12.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_fractions.12.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_fractions.12.mp3` |
+| 4 · L1 | numpad | የአስራ ሁለት ብርቱካኖች አንድ ሶስተኛ ስንት ነው?<br><small>What is one third of twelve oranges?</small> | 4 | `ex.g3_fractions.13.mp3` |
+| 4 · L2 | numpad | የስምንት ብርቱካኖች ሩብ ስንት ነው?<br><small>What is one quarter of eight oranges?</small> | 2 | `ex.g3_fractions.14.mp3` |
+| 4 · L3 | numpad | የአስራ አምስት ብርቱካኖች ሁለት ሶስተኛ ስንት ነው?<br><small>What is two thirds of fifteen oranges?</small> | 10 | `ex.g3_fractions.15.mp3` |
+| 5 · L1 | true_false | ልክ ነው ወይስ አይደለም? ይህ በሶስት እኩል ክፍሎች ተከፍሏል።<br><small>True or not? This is cut into three equal parts.</small> | true | `ex.g3_fractions.16.mp3` |
+| 5 · L2 | true_false | ልክ ነው ወይስ አይደለም? ይህ በሶስት እኩል ክፍሎች ተከፍሏል።<br><small>True or not? This is cut into three equal parts.</small> | false | `ex.g3_fractions.16.mp3` |
+| 5 · L3 | true_false | ልክ ነው ወይስ አይደለም? የቀለመው ክፍል አንድ ሶስተኛ ነው።<br><small>True or not? The coloured part is one third.</small> | false | `ex.g3_fractions.17.mp3` |
+| 6 · L1 | drag_sort | ሶስተኛዎችን እና ሶስተኛ ያልሆኑትን እንለይ።<br><small>Let's sort: thirds, not thirds.</small> | {"a":"yes","b":"no","c":"no","d":"yes"} | `ex.g3_fractions.18.mp3` |
+| 6 · L2 | drag_sort | እኩል ክፍሎችን እና እኩል ያልሆኑትን እንለይ።<br><small>Let's sort: equal parts, not equal parts.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_fractions.19.mp3` |
+| 6 · L3 | drag_sort | ከግማሽ የሚበልጡትን እና የሚያንሱትን እንለይ።<br><small>Let's sort: more than a half, less than a half.</small> | {"a":"more","b":"less","c":"more","d":"less","e":"more"} | `ex.g3_fractions.20.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና ሥዕል።<br><small>Let's find matching cards: number, word and picture.</small> · `ex.g2_halves.25.mp3`
+
+```json
+[{"n":"1/2","am":"ግማሽ","visual":{"kind":"injera","parts":2,"filled":1,"equal":true}},{"n":"1/3","am":"አንድ ሶስተኛ","visual":{"kind":"injera","parts":3,"filled":1,"equal":true}},{"n":"1/4","am":"ሩብ","visual":{"kind":"injera","parts":4,"filled":1,"equal":true}},{"n":"2/3","am":"ሁለት ሶስተኛ","visual":{"kind":"injera","parts":3,"filled":2,"equal":true}}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_fraction | ሁለት ሶስተኛ እናስቀምጥ።<br><small>Let's put two thirds.</small> | 2 | `ex.g3_fractions.05.mp3` |
+| 2 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_fractions.12.mp3` |
+| 3 | drag_fraction | ሶስት ስድስተኛ እናስቀምጥ።<br><small>Let's put three sixths.</small> | 3 | `ex.g3_fractions.21.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | a | `ex.count10.17.mp3` |
+| 5 | numpad | ስንት ስድስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?<br><small>How many sixths make one whole injera?</small> | 6 | `ex.g3_fractions.23.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
+

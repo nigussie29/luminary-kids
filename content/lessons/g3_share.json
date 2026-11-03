@@ -1,0 +1,1262 @@
+{
+  "id": "g3_share",
+  "grade": 3,
+  "n": 5,
+  "title": {
+    "am": "እኩል ማካፈል",
+    "en": "Sharing equally",
+    "audio_url": "audio/am/lesson.g3_share.title.mp3"
+  },
+  "place": "village",
+  "video": {
+    "src": "video/g3_share.mp4",
+    "src_low": "video/low/g3_share.mp4",
+    "poster": "video/g3_share.jpg",
+    "captions": {
+      "am": "video/g3_share.am.vtt",
+      "en": "video/g3_share.en.vtt"
+    },
+    "duration": 29.567,
+    "checkpoints": [
+      {
+        "t": 13.95,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_share.01",
+          "type": "tap_choose",
+          "prompt_am": "ከአንድ ዙር በኋላ ስንት ብርቱካኖች ተሰጡ?",
+          "prompt_en": "After one turn, how many oranges have been given out?",
+          "audio_url": "audio/am/ex.g3_share.01.mp3",
+          "options": [
+            {
+              "v": 1
+            },
+            {
+              "v": 3
+            },
+            {
+              "v": 12
+            }
+          ],
+          "answer": 3,
+          "visual": null,
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 18.15,
+        "at": "step:2",
+        "exercise": {
+          "id": "g3_share.02",
+          "type": "tap_choose",
+          "prompt_am": "እያንዳንዱ ልጅ ስንት ብርቱካኖች ያገኛል?",
+          "prompt_en": "How many oranges does each child get?",
+          "audio_url": "audio/am/ex.g3_share.04.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 12
+            }
+          ],
+          "answer": 4,
+          "visual": null,
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 10.32,
+      "end": 29.567,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_share.03",
+          "type": "drag_drop_count",
+          "prompt_am": "ስድስት ብርቱካኖችን ለሁለት ሳህኖች በእኩል እናካፍል።",
+          "prompt_en": "Let's share 6 oranges equally on 2 plates.",
+          "audio_url": "audio/am/ex.g3_share.05.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 6,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_share.04",
+          "type": "drag_drop_count",
+          "prompt_am": "ዘጠኝ ብርቱካኖችን ለሶስት ሳህኖች በእኩል እናካፍል።",
+          "prompt_en": "Let's share 9 oranges equally on 3 plates.",
+          "audio_url": "audio/am/ex.g3_share.06.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 9,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate3",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_share.05",
+          "type": "drag_drop_count",
+          "prompt_am": "አስራ ሁለት ብርቱካኖችን ለአራት ሳህኖች በእኩል እናካፍል።",
+          "prompt_en": "Let's share 12 oranges equally on 4 plates.",
+          "audio_url": "audio/am/ex.g3_share.07.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 12,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate3",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate4",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_share.06",
+          "type": "tap_choose",
+          "prompt_am": "ስምንት ሲካፈል ለሁለት ስንት ነው?",
+          "prompt_en": "What is eight divided by two?",
+          "audio_url": "audio/am/ex.g3_share.08.mp3",
+          "options": [
+            {
+              "v": 4
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              4,
+              4
+            ],
+            "thing": "orange"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_share.07",
+          "type": "tap_choose",
+          "prompt_am": "አስራ አምስት ሲካፈል ለሶስት ስንት ነው?",
+          "prompt_en": "What is fifteen divided by three?",
+          "audio_url": "audio/am/ex.g3_share.11.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 12
+            },
+            {
+              "v": 18
+            }
+          ],
+          "answer": 5,
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              5,
+              5,
+              5
+            ],
+            "thing": "orange"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_share.08",
+          "type": "tap_choose",
+          "prompt_am": "ሃያ ሲካፈል ለአራት ስንት ነው?",
+          "prompt_en": "What is twenty divided by four?",
+          "audio_url": "audio/am/ex.g3_share.12.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 16
+            },
+            {
+              "v": 24
+            }
+          ],
+          "answer": 5,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_share.09",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "10",
+            "÷",
+            "2",
+            "=",
+            "__"
+          ],
+          "items": [
+            "5",
+            "8",
+            "12"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "5",
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_share.10",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "18",
+            "÷",
+            "3",
+            "=",
+            "__"
+          ],
+          "items": [
+            "6",
+            "15",
+            "21"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "6",
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_share.11",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "24",
+            "÷",
+            "__",
+            "=",
+            "6"
+          ],
+          "items": [
+            "4",
+            "18",
+            "30"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_share.12",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each division to its answer.",
+          "audio_url": "audio/am/ex.g3_share.13.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "6 ÷ 2"
+            },
+            {
+              "id": "w1",
+              "label": "10 ÷ 5"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "2"
+            },
+            {
+              "id": "t0",
+              "label": "3"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_share.13",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each division to its answer.",
+          "audio_url": "audio/am/ex.g3_share.13.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "12 ÷ 4"
+            },
+            {
+              "id": "w1",
+              "label": "16 ÷ 2"
+            },
+            {
+              "id": "w2",
+              "label": "20 ÷ 5"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "8"
+            },
+            {
+              "id": "t2",
+              "label": "4"
+            },
+            {
+              "id": "t0",
+              "label": "3"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_share.14",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each division to its answer.",
+          "audio_url": "audio/am/ex.g3_share.13.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "24 ÷ 3"
+            },
+            {
+              "id": "w1",
+              "label": "30 ÷ 6"
+            },
+            {
+              "id": "w2",
+              "label": "28 ÷ 4"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "5"
+            },
+            {
+              "id": "t2",
+              "label": "7"
+            },
+            {
+              "id": "t0",
+              "label": "8"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_share.15",
+          "type": "numpad",
+          "prompt_am": "አስራ ሁለት ብርቱካኖች ለአራት ልጆች ሲካፈሉ እያንዳንዱ ልጅ ስንት ያገኛል?",
+          "prompt_en": "Twelve oranges are shared by four children. How many does each child get?",
+          "audio_url": "audio/am/ex.g3_share.14.mp3",
+          "answer": 3,
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "thing": "orange"
+          },
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_share.16",
+          "type": "numpad",
+          "prompt_am": "ሃያ ሲካፈል ለአምስት ስንት ነው?",
+          "prompt_en": "What is twenty divided by five?",
+          "audio_url": "audio/am/ex.g3_share.15.mp3",
+          "answer": 4,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_share.17",
+          "type": "numpad",
+          "prompt_am": "ሰላሳ ስድስት ሲካፈል ለአራት ስንት ነው?",
+          "prompt_en": "What is thirty-six divided by four?",
+          "audio_url": "audio/am/ex.g3_share.16.mp3",
+          "answer": 9,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_share.18",
+          "type": "drag_sort",
+          "prompt_am": "ለሶስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።",
+          "prompt_en": "Let's sort: shares equally into 3, has some left over.",
+          "audio_url": "audio/am/ex.g3_share.17.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "ለ3 እኩል",
+              "en": "Equal into 3"
+            },
+            {
+              "id": "no",
+              "am": "ይተርፋል",
+              "en": "Some left over"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "9"
+            },
+            {
+              "id": "b",
+              "label": "7"
+            },
+            {
+              "id": "c",
+              "label": "12"
+            },
+            {
+              "id": "d",
+              "label": "10"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_share.19",
+          "type": "drag_sort",
+          "prompt_am": "ለአራት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።",
+          "prompt_en": "Let's sort: shares equally into 4, has some left over.",
+          "audio_url": "audio/am/ex.g3_share.18.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "ለ4 እኩል",
+              "en": "Equal into 4"
+            },
+            {
+              "id": "no",
+              "am": "ይተርፋል",
+              "en": "Some left over"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "8"
+            },
+            {
+              "id": "b",
+              "label": "14"
+            },
+            {
+              "id": "c",
+              "label": "20"
+            },
+            {
+              "id": "d",
+              "label": "18"
+            },
+            {
+              "id": "e",
+              "label": "16"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_share.20",
+          "type": "drag_sort",
+          "prompt_am": "ለአምስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።",
+          "prompt_en": "Let's sort: shares equally into 5, has some left over.",
+          "audio_url": "audio/am/ex.g3_share.19.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "ለ5 እኩል",
+              "en": "Equal into 5"
+            },
+            {
+              "id": "no",
+              "am": "ይተርፋል",
+              "en": "Some left over"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "25"
+            },
+            {
+              "id": "b",
+              "label": "32"
+            },
+            {
+              "id": "c",
+              "label": "40"
+            },
+            {
+              "id": "d",
+              "label": "21"
+            },
+            {
+              "id": "e",
+              "label": "35"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+              "en": "One for this one, one for that one: share in turns.",
+              "audio_url": "audio/am/ex.g3_share.02.mp3"
+            },
+            {
+              "am": "ሁሉም እኩል መሆን አለባቸው።",
+              "en": "Everyone must get the same number.",
+              "audio_url": "audio/am/ex.g3_share.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "race",
+    "questions": [
+      {
+        "id": "g3_share.26",
+        "type": "tap_choose",
+        "prompt_am": "ስምንት ሲካፈል ለሁለት?",
+        "prompt_en": "Eight divided by two?",
+        "audio_url": "audio/am/ex.g3_share.24.mp3",
+        "options": [
+          {
+            "v": 4
+          },
+          {
+            "v": 6
+          }
+        ],
+        "answer": 4,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_share.27",
+        "type": "tap_choose",
+        "prompt_am": "አስራ አምስት ሲካፈል ለአምስት?",
+        "prompt_en": "Fifteen divided by five?",
+        "audio_url": "audio/am/ex.g3_share.25.mp3",
+        "options": [
+          {
+            "v": 3
+          },
+          {
+            "v": 10
+          }
+        ],
+        "answer": 3,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_share.28",
+        "type": "tap_choose",
+        "prompt_am": "አስራ ሁለት ሲካፈል ለሶስት?",
+        "prompt_en": "Twelve divided by three?",
+        "audio_url": "audio/am/ex.g3_share.26.mp3",
+        "options": [
+          {
+            "v": 4
+          },
+          {
+            "v": 9
+          }
+        ],
+        "answer": 4,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_share.29",
+        "type": "tap_choose",
+        "prompt_am": "ሃያ ሲካፈል ለሁለት?",
+        "prompt_en": "Twenty divided by two?",
+        "audio_url": "audio/am/ex.g3_share.27.mp3",
+        "options": [
+          {
+            "v": 10
+          },
+          {
+            "v": 18
+          }
+        ],
+        "answer": 10,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_share.30",
+        "type": "tap_choose",
+        "prompt_am": "አስራ ስምንት ሲካፈል ለስድስት?",
+        "prompt_en": "Eighteen divided by six?",
+        "audio_url": "audio/am/ex.g3_share.28.mp3",
+        "options": [
+          {
+            "v": 3
+          },
+          {
+            "v": 12
+          }
+        ],
+        "answer": 3,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።",
+      "en": "Let's race to Grandma's house! Each right answer moves us forward.",
+      "audio_url": "audio/am/ex.compare.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_share.21",
+      "type": "drag_drop_count",
+      "prompt_am": "አስር ብርቱካኖችን ለአምስት ሳህኖች በእኩል እናካፍል።",
+      "prompt_en": "Let's share 10 oranges equally on 5 plates.",
+      "audio_url": "audio/am/ex.g3_share.20.mp3",
+      "items": {
+        "thing": "orange",
+        "supply": 10,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "plate1",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate2",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate3",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate4",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate5",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        }
+      ],
+      "answer": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "hints": [
+        {
+          "am": "አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።",
+          "en": "One for this one, one for that one: share in turns.",
+          "audio_url": "audio/am/ex.g3_share.02.mp3"
+        },
+        {
+          "am": "ሁሉም እኩል መሆን አለባቸው።",
+          "en": "Everyone must get the same number.",
+          "audio_url": "audio/am/ex.g3_share.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_share.22",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "21",
+        "÷",
+        "3",
+        "=",
+        "__"
+      ],
+      "items": [
+        "7",
+        "18",
+        "24"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "7",
+      "hints": [
+        {
+          "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+          "en": "Think how many groups there are.",
+          "audio_url": "audio/am/ex.g3_share.09.mp3"
+        },
+        {
+          "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+          "en": "Remember the times table: three times four is twelve.",
+          "audio_url": "audio/am/ex.g3_share.10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_share.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? አስራ ስድስት ሲካፈል ለአራት አራት ነው።",
+      "prompt_en": "True or not? Sixteen divided by four is four.",
+      "audio_url": "audio/am/ex.g3_share.21.mp3",
+      "statement_am": "አስራ ስድስት ሲካፈል ለአራት አራት ነው።",
+      "statement_en": "Sixteen divided by four is four.",
+      "visual": {
+        "kind": "groups",
+        "groups": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "thing": "orange"
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_share.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "አስራ ስምንት ሲካፈል ለሶስት",
+        "en": "eighteen divided by three",
+        "audio_url": "audio/am/ex.g3_share.22.mp3"
+      },
+      "options": [
+        {
+          "v": 6
+        },
+        {
+          "v": 9
+        },
+        {
+          "v": 3
+        }
+      ],
+      "answer": 6,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_share.25",
+      "type": "numpad",
+      "prompt_am": "ሰላሳ ሲካፈል ለአምስት ስንት ነው?",
+      "prompt_en": "What is thirty divided by five?",
+      "audio_url": "audio/am/ex.g3_share.23.mp3",
+      "answer": 6,
+      "visual": null,
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+          "en": "Think how many groups there are.",
+          "audio_url": "audio/am/ex.g3_share.09.mp3"
+        },
+        {
+          "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+          "en": "Remember the times table: three times four is twelve.",
+          "audio_url": "audio/am/ex.g3_share.10.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -10,6 +10,7 @@ const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
 require(path.join(ROOT, 'src', 'i18n.js'));
 require(path.join(ROOT, 'src', 'lessons-g2.js'));
+require(path.join(ROOT, 'src', 'lessons-g3.js'));
 const LK = globalThis.LK;
 
 // ---------- words ----------
@@ -17,13 +18,16 @@ const ones = LK.numWords, tens = LK.tensWords;
 function word(n, lang = 'am') {
   if (n <= 20) return ones[lang][n];
   if (n === 100) return tens[lang][10];
+  if (n > 100) return LK.numberWord(n, lang); // ሁለት መቶ አርባ አምስት · two hundred forty-five
   const t = Math.floor(n / 10), o = n % 10;
   if (!o) return tens[lang][t];
   return lang === 'am' ? `${tens.am[t]} ${ones.am[o]}` : `${tens.en[t]}-${ones.en[o]}`;
 }
 const GEEZ_1 = ['', '፩', '፪', '፫', '፬', '፭', '፮', '፯', '፰', '፱'];
 const GEEZ_10 = ['', '፲', '፳', '፴', '፵', '፶', '፷', '፸', '፹', '፺'];
-const geez = (n) => (n === 100 ? '፻' : GEEZ_10[Math.floor(n / 10)] + GEEZ_1[n % 10]);
+// Ge'ez: 245 = ፪፻፵፭ (two, hundred, forty, five); 100 = ፻
+const geez = (n) => (n >= 100 ? (Math.floor(n / 100) > 1 ? GEEZ_1[Math.floor(n / 100)] : '') + '፻' + (n % 100 ? geez(n % 100) : '')
+  : GEEZ_10[Math.floor(n / 10)] + GEEZ_1[n % 10]);
 
 const THINGS = {
   orange: ['ብርቱካን', 'ብርቱካኖች', 'orange', 'oranges'],
@@ -34,7 +38,8 @@ const THINGS = {
   counter: ['ጠጠር', 'ጠጠሮች', 'counter', 'counters'],
   bean: ['የቡና ፍሬ', 'የቡና ፍሬዎች', 'coffee bean', 'coffee beans'],
   egg: ['እንቁላል', 'እንቁላሎች', 'egg', 'eggs'],
-  book: ['መጽሐፍ', 'መጻሕፍት', 'book', 'books']
+  book: ['መጽሐፍ', 'መጻሕፍት', 'book', 'books'],
+  seedling: ['ችግኝ', 'ችግኞች', 'seedling', 'seedlings']
 };
 const th = (t) => ({ am: THINGS[t][1], en: THINGS[t][3] });
 
@@ -77,7 +82,22 @@ const H = {
   tf: [['ሥዕሉን በደንብ እንመልከት።', 'Look at the picture carefully.'], ['ቆጥረን እንፈትሽ።', 'Count to check.']],
   money: [['ከትልቁ ገንዘብ እንጀምር።', 'Start with the biggest money.'], ['ድምሩን እየቆጠርን እንጨምር።', 'Keep a running total as you add.']],
   trace: [['ከትልቁ ነጥብ እንጀምር።', 'Start at the big dot.'], ['መስመሩን ተከትለን ቀስ ብለን እንሳል።', 'Follow the line slowly.']],
-  frac: [['ክፍሎቹ እኩል መሆን አለባቸው።', 'The parts must be equal.'], ['ሁለት ሩብ አንድ ግማሽ ይሆናሉ።', 'Two quarters make one half.']]
+  frac: [['ክፍሎቹ እኩል መሆን አለባቸው።', 'The parts must be equal.'], ['ሁለት ሩብ አንድ ግማሽ ይሆናሉ።', 'Two quarters make one half.']],
+  // Grade 3
+  hundreds: [['አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።', 'One flat is a hundred; one rod is ten; one cube is one.'],
+    ['መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።', 'Put the hundreds first, then the tens, then the ones.']],
+  column: [['ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።', 'Start with the ones, then the tens, then the hundreds.'],
+    ['አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።', 'When we make ten, we carry it to the next place.']],
+  borrow: [['ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።', 'When the top digit is smaller, we break one ten.'],
+    ['መልሳችንን በመደመር እንፈትሽ።', 'Check the answer by adding back.']],
+  times: [['በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።', 'Count row by row; every row has the same number.'],
+    ['በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።', 'Skip count, for example five, ten, fifteen.']],
+  share: [['አንድ ለዚህ፣ አንድ ለዚያ፤ በዙር እናካፍል።', 'One for this one, one for that one: share in turns.'],
+    ['ሁሉም እኩል መሆን አለባቸው።', 'Everyone must get the same number.']],
+  divide: [['ስንት ቡድኖች እንደሆኑ እናስብ።', 'Think how many groups there are.'],
+    ['የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።', 'Remember the times table: three times four is twelve.']],
+  thirds: [['ክፍሎቹ እኩል መሆን አለባቸው።', 'The parts must be equal.'],
+    ['ሶስት ሶስተኛዎች አንድ ሙሉ ናቸው።', 'Three thirds make one whole.']]
 };
 const pick = (opts) => opts.map((v) => (typeof v === 'object' ? v : { v }));
 
@@ -116,8 +136,10 @@ const line = (min, max, step, vals, o = {}) => ex('drag_numberline',
   o.prompt || ['ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።', "Let's put the numbers in their places on the number line."],
   { line: { min, max, step, labels: o.labels || 'ends' }, items: vals.map(String), answer: vals.map(String) }, H.numberline);
 const build = (n, o = {}) => ex('drag_placevalue',
-  o.prompt || [`${word(n)}ን በአስሮች እና በአንዶች እንሥራ።`, `Let's build ${n} with tens and ones.`],
-  { items: { rods: true, cubes: true }, targets: [{ id: 'mat', tens: o.tens }], answer: n, max_tens: 9 }, o.hints || H.place);
+  o.prompt || (n >= 100 ? [`${word(n)}ን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።`, `Let's build ${n} with hundreds, tens and ones.`]
+    : [`${word(n)}ን በአስሮች እና በአንዶች እንሥራ።`, `Let's build ${n} with tens and ones.`]),
+  { items: { flats: n >= 100, rods: true, cubes: true }, targets: [{ id: 'mat', tens: o.tens, hundreds: o.hundreds }], answer: n, max_tens: 9 },
+  o.hints || (n >= 100 ? H.hundreds : H.place));
 const matchWords = (nums, o = {}) => ex('drag_match_word',
   o.geez ? ['እያንዳንዱን የግዕዝ ቁጥር ከቁጥሩ ጋር እናገናኝ።', "Let's match each Ge'ez numeral to its number."]
     : o.prompt || ['እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።', "Let's match each word to its number."],
@@ -135,16 +157,20 @@ const pay = (price, itemAm, itemEn, wallet, o = {}) => ex('drag_make_change',
   [`${itemAm} ${word(price)} ብር ነው። ትክክለኛውን ብር እንክፈል።`, `The ${itemEn} costs ${price} birr. Let's pay exactly ${price} birr.`],
   { price, item: { am: itemAm, en: itemEn, pic: o.pic || 'bread' }, items: wallet, targets: [{ id: 'counter' }], answer: price }, H.money);
 const frac = (prompt, pieces, answer, o = {}) => ex('drag_fraction', prompt,
-  { shape: 'injera', parts: 4, items: pieces, targets: [{ id: 'injera', start: o.start || 0 }], answer }, H.frac);
+  { shape: 'injera', parts: o.parts || 4, items: pieces, targets: [{ id: 'injera', start: o.start || 0 }], answer }, o.hints || H.frac);
 
-const choose = (prompt, options, answer, visual, hints) => ex('tap_choose', prompt, { options: pick(options), answer, visual }, hints || H.tf);
+// numbers on the buttons are read out when tapped, so each needs its number-word clip
+const choose = (prompt, options, answer, visual, hints) => {
+  options.forEach((v) => { if (typeof v === 'number' && v > 20 && v <= 1000) NUMS.add(v); });
+  return ex('tap_choose', prompt, { options: pick(options), answer, visual }, hints || H.tf);
+};
 const tapCount = (thing, n, options) => ex('tap_count',
   [`እያንዳንዱን ነካ አድርገን እንቁጠር። ስንት ${th(thing).am} አሉ?`, `Let's tap each one as we count. How many ${th(thing).en} are there?`],
   { items: { thing, n }, options: pick(options), answer: n }, H.count);
-const numpad = (prompt, answer, visual, hints) => ex('numpad', prompt, { answer, visual, max_digits: String(answer).length > 1 ? 3 : 2 }, hints || H.equation);
-const listen = (n, options, o = {}) => ex('listen_choose',
+const numpad = (prompt, answer, visual, hints) => ex('numpad', prompt, { answer, visual, max_digits: String(answer).length > 2 ? 4 : String(answer).length > 1 ? 3 : 2 }, hints || H.equation);
+const listen = (n, options, o = {}) => (options.forEach((v) => { if (typeof v === 'number' && v > 20 && v <= 1000) NUMS.add(v); }), ex('listen_choose',
   ['እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።', "Let's listen, then tap the number we hear."],
-  { say: o.say || { am: word(n), en: word(n, 'en'), audio_url: url(numKey(n)) }, options: pick(options), answer: o.answer !== undefined ? o.answer : n }, H.listen);
+  { say: o.say || { am: word(n), en: word(n, 'en'), audio_url: url(numKey(n)) }, options: pick(options), answer: o.answer !== undefined ? o.answer : n }, H.listen));
 const tf = (am, en, answer, visual) => ex('true_false', [`ልክ ነው ወይስ አይደለም? ${am}`, `True or not? ${en}`],
   { statement_am: am, statement_en: en, visual, answer }, H.tf);
 const trace = (text, o = {}) => ex('trace',
@@ -158,7 +184,18 @@ const clock = (h, m, am, en) => ex('clock', [am, en], { answer: { h, m } },
   [['ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።', 'The short hand shows the hour, the long hand the minutes.'],
     ['ተኩል ሲሆን ትልቁ መርፌ 6 ላይ ነው።', 'At half past, the long hand points to 6.']]);
 
-// number-word clips num.N (0–100); 0–20 already exist from the app's own script
+// Grade 3: plant seedlings in rows; share things equally on plates
+const rowsEx = (r, each, o = {}) => dragCount('seedling', r * each, {
+  prompt: o.prompt || [`በእያንዳንዱ ረድፍ ${word(each)} ችግኞችን እንትከል።`, `Let's plant ${each} seedlings in each row.`],
+  targets: Array.from({ length: r }, (_, i) => ({ id: 'row' + (i + 1), kind: 'row', start: 0, need: each })),
+  supply: r * each + 2, hints: H.times });
+const share = (total, plates, thing = 'orange') => dragCount(thing, total, {
+  prompt: [`${word(total)} ${th(thing).am}ን ለ${word(plates)} ሳህኖች በእኩል እናካፍል።`, `Let's share ${total} ${th(thing).en} equally on ${plates} plates.`],
+  targets: Array.from({ length: plates }, (_, i) => ({ id: 'plate' + (i + 1), kind: 'tray', start: 0, need: total / plates })),
+  supply: total, hints: H.share });
+const say = (am, en) => ({ am, en, audio_url: url(clip(am, en)) });
+
+// number-word clips num.N (0–1000); 0–20 already exist from the app's own script
 const NUMS = new Set();
 function numKey(n) { NUMS.add(n); return `num.${n}`; }
 const N = (n) => { NUMS.add(n); return n; };
@@ -166,7 +203,8 @@ const N = (n) => { NUMS.add(n); return n; };
 // visual descriptors (drawn by src/activities.js)
 const V = {
   group: (thing, n) => ({ kind: 'group', thing, n }),
-  tensOnes: (t, o) => ({ kind: 'tens_ones', tens: t, ones: o }),
+  tensOnes: (t, o, hu) => (hu ? { kind: 'tens_ones', hundreds: hu, tens: t, ones: o } : { kind: 'tens_ones', tens: t, ones: o }),
+  array: (r, c, thing = 'seedling') => ({ kind: 'array', rows: r, cols: c, thing }),
   compare: (thing, left, right) => ({ kind: 'compare', thing, left, right }),
   takeaway: (thing, n, gone) => ({ kind: 'takeaway', thing, n, gone }),
   frame: (n) => ({ kind: 'tenframe', n }),
@@ -536,12 +574,217 @@ const PLANS = {
     play: { game: 'memory', pairs: [
       { n: '½', am: 'ግማሽ', visual: V.injera(2, 1) }, { n: '¼', am: 'ሩብ', visual: V.injera(4, 1) }, { n: '¾', am: 'ሶስት ሩብ', visual: V.injera(4, 3) }, { n: '1', am: 'ሙሉ', visual: V.injera(1, 1) }],
       intro: T('የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና ሥዕል።', "Let's find matching cards: number, word and picture.") }
-  })
+  }),
+  // ---------------- Grade 3 ----------------
+  g3_hundreds: () => ({
+    place: 'store', game: 'memory',
+    checkpoints: [
+      { at: 'step:0', ex: choose(['ስንት አስሮች አንድ መቶ ይሆናሉ?', 'How many tens make one hundred?'], [5, 10, 100], 10, V.tensOnes(10, 0)) },
+      { at: 'step:3', ex: choose(['ቁጥሩ ስንት ነው?', 'What is the number?'], [245, 2045, 452], 245, V.tensOnes(4, 5, 2)) }],
+    reteach: ['step:0', 'end'],
+    guided: [
+      [build(132), build(245), build(406)],
+      [choose(['ስንት ነው?', 'How many is this?'], [213, 312, 23], 213, V.tensOnes(1, 3, 2)),
+        choose(['ስንት ነው?', 'How many is this?'], [143, 341, 3041], 341, V.tensOnes(4, 1, 3)),
+        choose(['ስንት ነው?', 'How many is this?'], [57, 570, 507], 507, V.tensOnes(0, 7, 5), H.hundreds)],
+      [matchWords([N(120), N(210), N(201)]), matchWords([N(345), N(354), N(435)]), matchWords([N(608), N(680), N(806)])],
+      [line(0, 500, 100, [100, 300]), line(0, 1000, 100, [400, 600, 900]), line(200, 300, 10, [230, 250, 280])],
+      [numpad(['ሶስት መቶዎች፣ አምስት አስሮች እና ሁለት አንዶች ስንት ናቸው?', 'What is three hundreds, five tens and two ones?'], 352, V.tensOnes(5, 2, 3), H.hundreds),
+        numpad(['ስድስት መቶዎች፣ ዜሮ አስሮች እና አራት አንዶች ስንት ናቸው?', 'What is six hundreds, zero tens and four ones?'], 604, null, H.hundreds),
+        numpad(['ስምንት መቶዎች እና ዘጠኝ አስሮች ስንት ናቸው?', 'What is eight hundreds and nine tens?'], 890, null, H.hundreds)],
+      [sortEx(['ከአምስት መቶ የሚበልጡትን እና የሚያንሱትን እንለይ።', "Let's sort: more than 500, less than 500."], [['more', 'ከ500 ይበልጣል', 'More than 500'], ['less', 'ከ500 ያንሳል', 'Less than 500']],
+        [['a', '620', 'more'], ['b', '480', 'less'], ['c', '705', 'more'], ['d', '99', 'less']], H.hundreds),
+      sortEx(['ከአምስት መቶ የሚበልጡትን እና የሚያንሱትን እንለይ።', "Let's sort: more than 500, less than 500."], [['more', 'ከ500 ይበልጣል', 'More than 500'], ['less', 'ከ500 ያንሳል', 'Less than 500']],
+        [['a', '551', 'more'], ['b', '455', 'less'], ['c', '509', 'more'], ['d', '490', 'less'], ['e', '600', 'more']], H.hundreds),
+      sortEx(['መቶዎቹ ሶስት የሆኑትን እና ያልሆኑትን እንለይ።', "Let's sort: three hundreds, not three hundreds."], [['yes', '3 መቶዎች', '3 hundreds'], ['no', '3 መቶዎች አይደሉም', 'Not 3 hundreds']],
+        [['a', '345', 'yes'], ['b', '435', 'no'], ['c', '309', 'yes'], ['d', '543', 'no'], ['e', '390', 'yes']], H.hundreds)]],
+    extra: [speak(N(245))],
+    challenge: [build(318), matchWords([100, 245, 300], { geez: true }), listen(N(405), [405, 450, 45]),
+      tf('ሶስት መቶዎች እና ሁለት አንዶች ሶስት መቶ ሃያ ነው።', 'Three hundreds and two ones is three hundred twenty.', false, V.tensOnes(0, 2, 3)), trace('245')],
+    play: { game: 'memory', pairs: [100, 250, 408, 760].map((n) => ({ n, am: word(N(n)), geez: geez(n) })),
+      intro: T('የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና የግዕዝ ቁጥር።', "Let's find matching cards: number, word and Ge'ez numeral.") }
+  }),
+  g3_add3d: () => {
+    const plus = (a, b) => [`${word(a)} ሲደመር ${word(b)} ስንት ነው?`, `What is ${word(a, 'en')} plus ${word(b, 'en')}?`];
+    const newTen = (cards) => sortEx(['አዲስ አስር የሚያስፈልጋቸውን እንለይ።', "Let's sort: needs a new ten, doesn't."], [['yes', 'አዲስ አስር', 'New ten'], ['no', 'አዲስ አስር የለም', 'No new ten']], cards, H.column);
+    return {
+      place: 'orchard', game: 'balloon',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ስምንት እና አምስት ስንት ነው?', 'What is eight and five?'], [12, 13, 14], 13) },
+        { at: 'step:3', ex: choose(['አንድ፣ ሶስት እና አራት ስንት ናቸው?', 'What are one, three and four together?'], [7, 8, 9], 8) }],
+      reteach: ['step:1', 'end'],
+      guided: [
+        [eqn([213, '+', 145, '=', '__'], 358, [358, 368, 258], { hints: H.column }), eqn([238, '+', 145, '=', '__'], 383, [383, 373, 3713], { hints: H.column }),
+          eqn([467, '+', 285, '=', '__'], 752, [752, 642, 652], { hints: H.column })],
+        [choose(['ሁለት መቶ ሲደመር ሶስት መቶ ስንት ነው?', 'What is two hundred plus three hundred?'], [5, 50, 500], 500, null, H.hundreds),
+          choose(['ሶስት መቶ አርባ ሲደመር ሁለት መቶ ሃያ ስንት ነው?', 'What is three hundred forty plus two hundred twenty?'], [560, 650, 56], 560, null, H.hundreds),
+          choose(['አራት መቶ ሰማንያ ሲደመር ሁለት መቶ ሃምሳ ስንት ነው?', 'What is four hundred eighty plus two hundred fifty?'], [630, 730, 6130], 730, null, H.column)],
+        [build(358), build(383), build(517)],
+        [eqn([300, '+', '__', '=', 450], 150, [150, 750, 15]), eqn([250, '+', '__', '=', 500], 250, [250, 350, 750]), eqn([375, '+', '__', '=', 600], 225, [225, 325, 975])],
+        [numpad(plus(224, 135), 359, null, H.column), numpad(plus(346, 128), 474, null, H.column), numpad(plus(587, 236), 823, null, H.column)],
+        [newTen([['a', '238 + 145', 'yes'], ['b', '213 + 145', 'no'], ['c', '306 + 117', 'yes'], ['d', '420 + 356', 'no']]),
+          newTen([['a', '129 + 243', 'yes'], ['b', '512 + 136', 'no'], ['c', '455 + 327', 'yes'], ['d', '601 + 294', 'no'], ['e', '348 + 236', 'yes']]),
+          sortEx(['አዲስ መቶ የሚያስፈልጋቸውን እንለይ።', "Let's sort: needs a new hundred, doesn't."], [['yes', 'አዲስ መቶ', 'New hundred'], ['no', 'አዲስ መቶ የለም', 'No new hundred']],
+            [['a', '250 + 360', 'yes'], ['b', '120 + 340', 'no'], ['c', '475 + 150', 'yes'], ['d', '610 + 280', 'no'], ['e', '380 + 430', 'yes']], H.column)]],
+      challenge: [eqn([356, '+', 278, '=', '__'], 634, [634, 524, 5214], { hints: H.column }), build(472),
+        tf('መቶ ዘጠና ሲደመር አስር ሁለት መቶ ነው።', 'One hundred ninety plus ten is two hundred.', true), listen(N(634), [634, 436, 364]),
+        numpad(plus(350, 260), 610, null, H.column)],
+      play: { game: 'balloon', rounds: [{ target: N(500), balloons: [250, 120, 380, 310, 190, 75].map(N) }, { target: N(700), balloons: [350, 260, 440, 125, 515, 90].map(N) },
+        { target: N(1000), balloons: [600, 450, 400, 275, 725, 150].map(N) }],
+        intro: T('ሁለት ፊኛዎችን ፈንድተን የተጠየቀውን ቁጥር እንሥራ።', "Pop two balloons that add up to the number.") }
+    };
+  },
+  g3_sub3d: () => {
+    const minus = (a, b) => [`${word(a)} ሲቀነስ ${word(b)} ስንት ነው?`, `What is ${word(a, 'en')} minus ${word(b, 'en')}?`];
+    const breakTen = (cards) => sortEx(['አስር መፍታት የሚያስፈልጋቸውን እንለይ።', "Let's sort: must break a ten, doesn't."], [['yes', 'አስር እንፈታለን', 'Break a ten'], ['no', 'አያስፈልግም', 'No need']], cards, H.borrow);
+    const fixedHints = (am, en) => [['አንድ አስር ወደ አስር አንዶች ይቀየራል።', 'One ten changes into ten ones.'], [am, en]];
+    return {
+      place: 'schoolyard', game: 'market',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ከሁለት አንዶች ስምንት መውሰድ እንችላለን?', 'Can we take eight ones from two ones?'], [{ v: 'yes', am: 'አዎ', en: 'Yes' }, { v: 'no', am: 'አይ', en: 'No' }], 'no') },
+        { at: 'step:3', ex: choose(['አስራ ሁለት ሲቀነስ ስምንት ስንት ነው?', 'What is twelve minus eight?'], [3, 4, 5], 4) }],
+      reteach: ['step:1', 'end'],
+      guided: [
+        [eqn([485, '−', 132, '=', '__'], 353, [353, 617, 343], { hints: H.borrow }), eqn([452, '−', 228, '=', '__'], 224, [224, 236, 680], { hints: H.borrow }),
+          eqn([631, '−', 257, '=', '__'], 374, [374, 486, 384], { hints: H.borrow })],
+        [choose(['አራት መቶዎች፣ አምስት አስሮች እና ሁለት አንዶች = አራት መቶዎች፣ አራት አስሮች እና ስንት አንዶች?', '4 hundreds, 5 tens and 2 ones = 4 hundreds, 4 tens and how many ones?'], [2, 10, 12], 12, V.tensOnes(5, 2, 4), H.borrow),
+          choose(['ሶስት መቶዎች እና ስድስት አስሮች = ሶስት መቶዎች፣ አምስት አስሮች እና ስንት አንዶች?', '3 hundreds and 6 tens = 3 hundreds, 5 tens and how many ones?'], [0, 6, 10], 10, V.tensOnes(6, 0, 3), H.borrow),
+          choose(['አምስት መቶዎች = አራት መቶዎች እና ስንት አስሮች?', '5 hundreds = 4 hundreds and how many tens?'], [0, 5, 10], 10, V.tensOnes(0, 0, 5), H.hundreds)],
+        [build(112, { tens: 0, prompt: ['መቶ አስራ ሁለትን ያለ አስሮች እንሥራ።', "Let's build one hundred twelve without any tens."], hints: fixedHints('አንድ መቶ እና አስራ ሁለት አንዶች።', 'One hundred and twelve ones.') }),
+          build(132, { tens: 2, prompt: ['መቶ ሰላሳ ሁለትን በሁለት አስሮች ብቻ እንሥራ።', "Let's build one hundred thirty-two using only two tens."], hints: fixedHints('አንድ መቶ፣ ሁለት አስሮች፤ ስንት አንዶች ይቀራሉ?', 'One hundred and two tens; how many ones are left?') }),
+          build(130, { hundreds: 0, prompt: ['መቶ ሰላሳን ያለ መቶ፣ በአስሮች ብቻ እንሥራ።', "Let's build one hundred thirty with tens only, no hundred."], hints: [['አንድ መቶ ወደ አስር አስሮች ይቀየራል።', 'One hundred changes into ten tens.'], ['አስር አስሮች እና ሶስት አስሮች ስንት አስሮች ናቸው?', 'Ten tens and three tens: how many tens?']] })],
+        [eqn([500, '−', '__', '=', 300], 200, [200, 800, 3]), eqn([600, '−', '__', '=', 350], 250, [250, 350, 950]), eqn([900, '−', '__', '=', 475], 425, [425, 535, 1375])],
+        [numpad(minus(475, 132), 343, null, H.borrow), numpad(minus(563, 247), 316, null, H.borrow), numpad(minus(700, 365), 335, null, H.borrow)],
+        [breakTen([['a', '452 − 228', 'yes'], ['b', '485 − 132', 'no'], ['c', '360 − 125', 'yes'], ['d', '597 − 264', 'no']]),
+          breakTen([['a', '541 − 319', 'yes'], ['b', '768 − 245', 'no'], ['c', '723 − 416', 'yes'], ['d', '856 − 431', 'no'], ['e', '470 − 135', 'yes']]),
+          sortEx(['መቶ መፍታት የሚያስፈልጋቸውን እንለይ።', "Let's sort: must break a hundred, doesn't."], [['yes', 'መቶ እንፈታለን', 'Break a hundred'], ['no', 'አያስፈልግም', 'No need']],
+            [['a', '524 − 281', 'yes'], ['b', '765 − 432', 'no'], ['c', '418 − 275', 'yes'], ['d', '659 − 324', 'no'], ['e', '806 − 350', 'yes']], H.borrow)]],
+      challenge: [eqn([614, '−', 258, '=', '__'], 356, [356, 444, 346], { hints: H.borrow }), line(300, 400, 10, [320, 370]),
+        tf('አምስት መቶ ሲቀነስ መቶ አራት መቶ ነው።', 'Five hundred minus one hundred is four hundred.', true), listen(N(356), [356, 365, 536]),
+        numpad(minus(800, 350), 450, null, H.borrow)],
+      play: { game: 'market', budget_currency: 'birr', rounds: [
+        { budget: N(200), goods: [{ pic: 'book', am: 'መጽሐፍ', en: 'Book', price: 120 }, { pic: 'pen', am: 'እስክሪብቶ', en: 'Pen', price: 80 }, { pic: 'bread', am: 'ዳቦ', en: 'Bread', price: 150 }] },
+        { budget: N(350), goods: [{ pic: 'shoes', am: 'ጫማ', en: 'Shoes', price: 250 }, { pic: 'bag', am: 'ቦርሳ', en: 'Bag', price: 175 }, { pic: 'banana', am: 'ሙዝ', en: 'Bananas', price: 100 }] },
+        { budget: N(500), goods: [{ pic: 'bag', am: 'ቦርሳ', en: 'Bag', price: 325 }, { pic: 'book', am: 'መጽሐፍ', en: 'Book', price: 175 }, { pic: 'egg', am: 'እንቁላል', en: 'Eggs', price: 90 }] }],
+        intro: T('ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።', "Let's go to the market! Buy things that use up exactly all our birr.") }
+    };
+  },
+  g3_times: () => {
+    const times = (a, b) => [`${word(a)} ጊዜ ${word(b)} ስንት ነው?`, `What is ${word(a, 'en')} times ${word(b, 'en')}?`];
+    const which = ['ይህ የትኛው ነው?', 'Which one is this?'];
+    const is = (n, cards) => sortEx([`${word(n)} የሚሆኑትን እና የማይሆኑትን እንለይ።`, `Let's sort: makes ${n}, doesn't make ${n}.`], [['yes', `${n} ነው`, `Makes ${n}`], ['no', `${n} አይደለም`, `Not ${n}`]], cards, H.times);
+    const facts = (pairs) => matchWords([], { prompt: ['እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።', "Let's match each multiplication to its answer."],
+      custom: pairs.map(([a, b]) => ({ item: { label: `${a} × ${b}` }, target: { label: String(a * b) } })), hints: H.times });
+    return {
+      place: 'field', game: 'coffee',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ሶስት ረድፎች በአምስት በአምስት ስንት ችግኞች ናቸው?', 'How many seedlings are three rows of five?'], [8, 15, 35], 15, V.array(3, 5), H.times) },
+        { at: 'step:3', ex: choose(['ስናዞረው ስንት ችግኞች ይሆናሉ?', 'When we turn it around, how many seedlings are there?'], [8, 15, 53], 15, V.array(5, 3), H.times) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [rowsEx(2, 3), rowsEx(3, 3), rowsEx(3, 4)],
+        [choose(which, [{ v: 'a', label: '2 × 4' }, { v: 'b', label: '2 + 4' }, { v: 'c', label: '4 × 4' }], 'a', V.array(2, 4), H.times),
+          choose(which, [{ v: 'a', label: '3 + 5' }, { v: 'b', label: '3 × 5' }, { v: 'c', label: '5 × 5' }], 'b', V.array(3, 5), H.times),
+          choose(which, [{ v: 'a', label: '4 × 4' }, { v: 'b', label: '4 + 6' }, { v: 'c', label: '4 × 6' }], 'c', V.array(4, 6), H.times)],
+        [eqn([3, '×', 4, '=', '__'], 12, [12, 7, 34], { hints: H.times }), eqn([5, '×', 6, '=', '__'], 30, [30, 11, 35], { hints: H.times }),
+          eqn([7, '×', '__', '=', 28], 4, [4, 21, 5], { hints: H.times })],
+        [facts([[2, 5], [3, 3]]), facts([[4, 5], [3, 6], [2, 7]]), facts([[6, 6], [4, 8], [7, 5]])],
+        [numpad(times(4, 5), 20, V.array(4, 5), H.times), numpad(times(6, 3), 18, null, H.times), numpad(times(8, 4), 32, null, H.times)],
+        [is(12, [['a', '3 × 4', 'yes'], ['b', '2 × 5', 'no'], ['c', '2 × 6', 'yes'], ['d', '3 × 3', 'no']]),
+          is(24, [['a', '4 × 6', 'yes'], ['b', '3 × 7', 'no'], ['c', '8 × 3', 'yes'], ['d', '5 × 5', 'no'], ['e', '6 × 4', 'yes']]),
+          is(36, [['a', '4 × 9', 'yes'], ['b', '6 × 6', 'yes'], ['c', '5 × 7', 'no'], ['d', '9 × 4', 'yes'], ['e', '8 × 5', 'no']])]],
+      challenge: [rowsEx(2, 5), eqn([4, '×', 5, '=', 5, '×', '__'], 4, [4, 5, 20], { hints: H.times }),
+        tf('ሶስት ጊዜ ስድስት ከስድስት ጊዜ ሶስት ጋር እኩል ነው።', 'Three times six equals six times three.', true, V.array(3, 6)),
+        listen(24, [24, 42, 10], { say: say('ስድስት ጊዜ አራት', 'six times four') }),
+        numpad(times(9, 5), 45, null, H.times)],
+      play: { game: 'coffee', rounds: [{ n: 8, trays: [4, 4] }, { n: 12, trays: [3, 3, 3, 3] }, { n: 15, trays: [5, 5, 5] }],
+        intro: T('ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።', "Let's pour coffee for the guests! Every tray gets the same number of cups.") }
+    };
+  },
+  g3_share: () => {
+    const div = (a, b) => [`${word(a)} ሲካፈል ለ${word(b)} ስንት ነው?`, `What is ${word(a, 'en')} divided by ${word(b, 'en')}?`];
+    const by = (n, cards) => sortEx([`ለ${word(n)} በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።`, `Let's sort: shares equally into ${n}, has some left over.`],
+      [['yes', `ለ${n} እኩል`, `Equal into ${n}`], ['no', 'ይተርፋል', 'Some left over']], cards.map(([id, n2, bin]) => [id, String(n2), bin]), H.share);
+    const facts = (pairs) => matchWords([], { prompt: ['እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።', "Let's match each division to its answer."],
+      custom: pairs.map(([a, b]) => ({ item: { label: `${a} ÷ ${b}` }, target: { label: String(a / b) } })), hints: H.divide });
+    return {
+      place: 'village', game: 'race',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ከአንድ ዙር በኋላ ስንት ብርቱካኖች ተሰጡ?', 'After one turn, how many oranges have been given out?'], [1, 3, 12], 3, null, H.share) },
+        { at: 'step:2', ex: choose(['እያንዳንዱ ልጅ ስንት ብርቱካኖች ያገኛል?', 'How many oranges does each child get?'], [3, 4, 12], 4, null, H.share) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [share(6, 2), share(9, 3), share(12, 4)],
+        [choose(div(8, 2), [4, 6, 10], 4, V.groups([4, 4], 'orange'), H.divide), choose(div(15, 3), [5, 12, 18], 5, V.groups([5, 5, 5], 'orange'), H.divide),
+          choose(div(20, 4), [5, 16, 24], 5, null, H.divide)],
+        [eqn([10, '÷', 2, '=', '__'], 5, [5, 8, 12], { hints: H.divide }), eqn([18, '÷', 3, '=', '__'], 6, [6, 15, 21], { hints: H.divide }),
+          eqn([24, '÷', '__', '=', 6], 4, [4, 18, 30], { hints: H.divide })],
+        [facts([[6, 2], [10, 5]]), facts([[12, 4], [16, 2], [20, 5]]), facts([[24, 3], [30, 6], [28, 4]])],
+        [numpad(['አስራ ሁለት ብርቱካኖች ለአራት ልጆች ሲካፈሉ እያንዳንዱ ልጅ ስንት ያገኛል?', 'Twelve oranges are shared by four children. How many does each child get?'], 3, V.groups([3, 3, 3, 3], 'orange'), H.share),
+          numpad(div(20, 5), 4, null, H.divide), numpad(div(36, 4), 9, null, H.divide)],
+        [by(3, [['a', 9, 'yes'], ['b', 7, 'no'], ['c', 12, 'yes'], ['d', 10, 'no']]),
+          by(4, [['a', 8, 'yes'], ['b', 14, 'no'], ['c', 20, 'yes'], ['d', 18, 'no'], ['e', 16, 'yes']]),
+          by(5, [['a', 25, 'yes'], ['b', 32, 'no'], ['c', 40, 'yes'], ['d', 21, 'no'], ['e', 35, 'yes']])]],
+      challenge: [share(10, 5), eqn([21, '÷', 3, '=', '__'], 7, [7, 18, 24], { hints: H.divide }),
+        tf('አስራ ስድስት ሲካፈል ለአራት አራት ነው።', 'Sixteen divided by four is four.', true, V.groups([4, 4, 4, 4], 'orange')),
+        listen(6, [6, 9, 3], { say: say('አስራ ስምንት ሲካፈል ለሶስት', 'eighteen divided by three') }),
+        numpad(div(30, 5), 6, null, H.divide)],
+      play: { game: 'race', questions: [
+        choose(['ስምንት ሲካፈል ለሁለት?', 'Eight divided by two?'], [4, 6], 4), choose(['አስራ አምስት ሲካፈል ለአምስት?', 'Fifteen divided by five?'], [3, 10], 3),
+        choose(['አስራ ሁለት ሲካፈል ለሶስት?', 'Twelve divided by three?'], [4, 9], 4), choose(['ሃያ ሲካፈል ለሁለት?', 'Twenty divided by two?'], [10, 18], 10),
+        choose(['አስራ ስምንት ሲካፈል ለስድስት?', 'Eighteen divided by six?'], [3, 12], 3)],
+        intro: T('ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።', "Let's race to Grandma's house! Each right answer moves us forward.") }
+    };
+  },
+  g3_fractions: () => {
+    const third = (n) => ({ piece: 'third', count: n }), sixth = (n) => ({ piece: 'sixth', count: n });
+    const words = (pairs, prompt) => matchWords([], { prompt: prompt || ['እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።', "Let's match each word to its fraction."],
+      custom: pairs.map(([am, f]) => ({ item: { label: am, lang: 'am' }, target: { label: f } })), hints: H.thirds });
+    return {
+      place: 'feast', game: 'memory',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ስንት እኩል ክፍሎች አሉ?', 'How many equal parts are there?'], [2, 3, 4], 3, V.injera(3, 0), H.thirds) },
+        { at: 'step:3', ex: choose(['ስንት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?', 'How many thirds make one whole injera?'], [2, 3, 6], 3, V.injera(3, 1), H.thirds) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [frac(['አንድ ሶስተኛ እናስቀምጥ።', "Let's put one third."], [third(3)], 1, { parts: 3, hints: H.thirds }),
+          frac(['ሁለት ሶስተኛ እናስቀምጥ።', "Let's put two thirds."], [third(3)], 2, { parts: 3, hints: H.thirds }),
+          frac(['ግማሹን እንጀራ በስድስተኛ ቁርጥራጮች እንሙላ።', "Let's fill half of the injera with sixth pieces."], [sixth(4), { piece: 'half', count: 1 }], 3,
+            { parts: 6, hints: [['ስድስት ስድስተኛዎች አንድ ሙሉ ናቸው።', 'Six sixths make one whole.'], ['ሶስት ስድስተኛዎች ግማሽ ናቸው።', 'Three sixths are one half.']] })],
+        [choose(['አንድ ሶስተኛ የቀለመው የትኛው ነው?', 'Which one has one third coloured?'], [{ v: 'a', visual: V.injera(4, 1) }, { v: 'b', visual: V.injera(3, 1) }, { v: 'c', visual: V.injera(2, 1) }], 'b', null, H.thirds),
+          choose(['ሁለት ሶስተኛ የቀለመው የትኛው ነው?', 'Which one has two thirds coloured?'], [{ v: 'a', visual: V.injera(3, 2) }, { v: 'b', visual: V.injera(4, 2) }, { v: 'c', visual: V.injera(3, 1) }], 'a', null, H.thirds),
+          choose(['በሶስት እኩል ክፍሎች የተከፈለው የትኛው ነው?', 'Which one is cut into three equal parts?'], [{ v: 'a', visual: V.injera(3, 0, false) }, { v: 'b', visual: V.injera(4, 0) }, { v: 'c', visual: V.injera(3, 0) }], 'c', null, H.thirds)],
+        [words([['አንድ ሶስተኛ', '1/3'], ['ግማሽ', '1/2']]), words([['አንድ ሶስተኛ', '1/3'], ['ሩብ', '1/4'], ['ሁለት ሶስተኛ', '2/3']]),
+          words([['አንድ ስድስተኛ', '1/6'], ['ሁለት ሶስተኛ', '2/3'], ['ሶስት ሩብ', '3/4']])],
+        [numpad(['የአስራ ሁለት ብርቱካኖች አንድ ሶስተኛ ስንት ነው?', 'What is one third of twelve oranges?'], 4, V.groups([4, 4, 4], 'orange'), H.share),
+          numpad(['የስምንት ብርቱካኖች ሩብ ስንት ነው?', 'What is one quarter of eight oranges?'], 2, V.groups([2, 2, 2, 2], 'orange'), H.share),
+          numpad(['የአስራ አምስት ብርቱካኖች ሁለት ሶስተኛ ስንት ነው?', 'What is two thirds of fifteen oranges?'], 10, V.groups([5, 5, 5], 'orange'), H.share)],
+        [tf('ይህ በሶስት እኩል ክፍሎች ተከፍሏል።', 'This is cut into three equal parts.', true, V.injera(3, 0)),
+          tf('ይህ በሶስት እኩል ክፍሎች ተከፍሏል።', 'This is cut into three equal parts.', false, V.injera(3, 0, false)),
+          tf('የቀለመው ክፍል አንድ ሶስተኛ ነው።', 'The coloured part is one third.', false, V.injera(4, 1))],
+        [sortEx(['ሶስተኛዎችን እና ሶስተኛ ያልሆኑትን እንለይ።', "Let's sort: thirds, not thirds."], [['yes', 'አንድ ሶስተኛ', 'One third'], ['no', 'ሶስተኛ አይደለም', 'Not a third']],
+          [['a', '', 'yes', V.injera(3, 1)], ['b', '', 'no', V.injera(4, 1)], ['c', '', 'no', V.injera(2, 1)], ['d', '', 'yes', V.injera(3, 1)]], H.thirds),
+        sortEx(['እኩል ክፍሎችን እና እኩል ያልሆኑትን እንለይ።', "Let's sort: equal parts, not equal parts."], [['yes', 'እኩል', 'Equal'], ['no', 'እኩል አይደለም', 'Not equal']],
+          [['a', '', 'yes', V.injera(3, 0)], ['b', '', 'no', V.injera(3, 0, false)], ['c', '', 'yes', V.injera(6, 0)], ['d', '', 'no', V.injera(4, 0, false)], ['e', '', 'yes', V.injera(2, 0)]], H.thirds),
+        sortEx(['ከግማሽ የሚበልጡትን እና የሚያንሱትን እንለይ።', "Let's sort: more than a half, less than a half."], [['more', 'ከግማሽ ይበልጣል', 'More than ½'], ['less', 'ከግማሽ ያንሳል', 'Less than ½']],
+          [['a', '', 'more', V.injera(3, 2)], ['b', '', 'less', V.injera(3, 1)], ['c', '', 'more', V.injera(4, 3)], ['d', '', 'less', V.injera(6, 1)], ['e', '', 'more', V.injera(6, 4)]], H.thirds)]],
+      challenge: [frac(['ሁለት ሶስተኛ እናስቀምጥ።', "Let's put two thirds."], [third(3)], 2, { parts: 3, hints: H.thirds }),
+        words([['አንድ ሶስተኛ', '1/3'], ['ሁለት ሶስተኛ', '2/3']]),
+        frac(['ሶስት ስድስተኛ እናስቀምጥ።', "Let's put three sixths."], [sixth(5)], 3, { parts: 6, hints: H.thirds }),
+        listen('a', [{ v: 'a', visual: V.injera(3, 2) }, { v: 'b', visual: V.injera(3, 1) }, { v: 'c', visual: V.injera(4, 2) }], { say: say('ሁለት ሶስተኛ', 'two thirds'), answer: 'a' }),
+        numpad(['ስንት ስድስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?', 'How many sixths make one whole injera?'], 6, V.injera(6, 0), H.thirds)],
+      play: { game: 'memory', pairs: [
+        { n: '1/2', am: 'ግማሽ', visual: V.injera(2, 1) }, { n: '1/3', am: 'አንድ ሶስተኛ', visual: V.injera(3, 1) },
+        { n: '1/4', am: 'ሩብ', visual: V.injera(4, 1) }, { n: '2/3', am: 'ሁለት ሶስተኛ', visual: V.injera(3, 2) }],
+        intro: T('የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና ሥዕል።', "Let's find matching cards: number, word and picture.") }
+    };
+  }
 };
 
 // ---------- assemble ----------
-const META = Object.fromEntries([...LK.lessons.map((l) => [l.id, Object.assign({ grade: 1 }, l)]), ...LK.lessonsG2.map((l) => [l.id, l])]);
-const ORDER = ['count10', 'teens', 'compare', 'add10', 'sub10', 'make10', 'g2_placevalue', 'g2_add2d', 'g2_sub2d', 'g2_groups', 'g2_birr', 'g2_halves'];
+const META = Object.fromEntries([...LK.lessons.map((l) => [l.id, Object.assign({ grade: 1 }, l)]), ...LK.lessonsG2.map((l) => [l.id, l]), ...LK.lessonsG3.map((l) => [l.id, l])]);
+const ORDER = ['count10', 'teens', 'compare', 'add10', 'sub10', 'make10', 'g2_placevalue', 'g2_add2d', 'g2_sub2d', 'g2_groups', 'g2_birr', 'g2_halves',
+  'g3_hundreds', 'g3_add3d', 'g3_sub3d', 'g3_times', 'g3_share', 'g3_fractions'];
 function timeline(id) {
   const f = path.join(ROOT, 'animations', 'timelines', `${id}.json`);
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null;

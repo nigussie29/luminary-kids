@@ -347,6 +347,7 @@
           "prompt_en": "Let's build 37 with tens and ones.",
           "audio_url": "audio/am/ex.g2_add2d.06.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -378,6 +379,7 @@
           "prompt_en": "Let's build 42 with tens and ones.",
           "audio_url": "audio/am/ex.g2_add2d.07.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -409,6 +411,7 @@
           "prompt_en": "Let's build 61 with tens and ones.",
           "audio_url": "audio/am/ex.g2_add2d.08.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -898,6 +901,7 @@
       "prompt_en": "Let's build 53 with tens and ones.",
       "audio_url": "audio/am/ex.g2_add2d.13.mp3",
       "items": {
+        "flats": false,
         "rods": true,
         "cubes": true
       },

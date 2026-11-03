@@ -345,6 +345,7 @@
           "prompt_en": "Let's build forty-two using only three tens.",
           "audio_url": "audio/am/ex.g2_sub2d.06.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -377,6 +378,7 @@
           "prompt_en": "Let's build thirty-five using only two tens.",
           "audio_url": "audio/am/ex.g2_sub2d.09.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -409,6 +411,7 @@
           "prompt_en": "Let's build fifty-three using only four tens.",
           "audio_url": "audio/am/ex.g2_sub2d.11.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },

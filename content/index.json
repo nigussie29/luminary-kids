@@ -143,6 +143,78 @@
         "audio_url": "audio/am/lesson.g2_halves.title.mp3"
       },
       "game": "memory"
+    },
+    {
+      "id": "g3_hundreds",
+      "grade": 3,
+      "n": 1,
+      "place": "store",
+      "title": {
+        "am": "መቶዎች፣ አስሮች እና አንዶች",
+        "en": "Hundreds, tens and ones",
+        "audio_url": "audio/am/lesson.g3_hundreds.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_add3d",
+      "grade": 3,
+      "n": 2,
+      "place": "orchard",
+      "title": {
+        "am": "ባለ ሶስት አሃዝ ቁጥሮችን መደመር",
+        "en": "Adding three-digit numbers",
+        "audio_url": "audio/am/lesson.g3_add3d.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g3_sub3d",
+      "grade": 3,
+      "n": 3,
+      "place": "schoolyard",
+      "title": {
+        "am": "ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ",
+        "en": "Subtracting three-digit numbers",
+        "audio_url": "audio/am/lesson.g3_sub3d.title.mp3"
+      },
+      "game": "market"
+    },
+    {
+      "id": "g3_times",
+      "grade": 3,
+      "n": 4,
+      "place": "field",
+      "title": {
+        "am": "በረድፍ እናባዛ",
+        "en": "Multiplying in rows",
+        "audio_url": "audio/am/lesson.g3_times.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "g3_share",
+      "grade": 3,
+      "n": 5,
+      "place": "village",
+      "title": {
+        "am": "እኩል ማካፈል",
+        "en": "Sharing equally",
+        "audio_url": "audio/am/lesson.g3_share.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_fractions",
+      "grade": 3,
+      "n": 6,
+      "place": "feast",
+      "title": {
+        "am": "ሶስተኛ እና ሌሎች ክፍልፋዮች",
+        "en": "Thirds and other fractions",
+        "audio_url": "audio/am/lesson.g3_fractions.title.mp3"
+      },
+      "game": "memory"
     }
   ],
   "common": {

@@ -17,7 +17,8 @@
   const EXTRA = {
     bean: () => '<ellipse cx="0" cy="0" rx="11" ry="15" fill="#5a3418" transform="rotate(25)"/><path d="M-3 -12 Q4 0 -3 12" stroke="#2e1a0c" stroke-width="2.5" fill="none" transform="rotate(25)"/>',
     egg: () => '<ellipse cx="0" cy="2" rx="13" ry="17" fill="#fbf3e4" stroke="#c9b48c" stroke-width="1.5"/><ellipse cx="-4" cy="-4" rx="4" ry="6" fill="#fff" opacity=".8"/>',
-    book: () => '<rect x="-15" y="-12" width="30" height="24" rx="3" fill="#1f7a8c"/><rect x="-12" y="-9" width="24" height="18" rx="2" fill="#fbf7ef"/><path d="M0 -9 v18" stroke="#1f7a8c" stroke-width="2"/>'
+    book: () => '<rect x="-15" y="-12" width="30" height="24" rx="3" fill="#1f7a8c"/><rect x="-12" y="-9" width="24" height="18" rx="2" fill="#fbf7ef"/><path d="M0 -9 v18" stroke="#1f7a8c" stroke-width="2"/>',
+    seedling: () => '<path d="M-14 16 Q0 8 14 16 Z" fill="#7a4a22"/><path d="M0 14 V-6" stroke="#2f6b3b" stroke-width="3" stroke-linecap="round"/><path d="M0 -2 Q-14 -6 -15 -17 Q-3 -15 0 -2 Z" fill="#2f8f5b"/><path d="M0 -6 Q12 -9 14 -19 Q3 -18 0 -6 Z" fill="#3fa86c"/>'
   };
   const thingBody = (thing, i = 0) => (EXTRA[thing] ? `<g class="obj">${EXTRA[thing](i)}</g>` : A.object ? A.object(thing, 0, 0, i) : '');
   const objSVG = (thing, i = 0, size = 56) => `<svg viewBox="-24 -24 48 48" width="${size}" height="${size}" aria-hidden="true">${thingBody(thing, i)}</svg>`;
@@ -27,6 +28,11 @@
     let s = ''; for (let k = 0; k < 10; k++) s += `<rect x="0" y="${k * 10}" width="10" height="10" fill="#1f7a8c" stroke="#123f4a" stroke-width="1"/>`;
     return `<svg viewBox="-1 -1 12 102" width="${14 * scale}" height="${120 * scale}" aria-hidden="true">${s}</svg>`;
   }
+  function flat(scale = 1) { // a hundred: ten rods side by side
+    let s = ''; for (let i = 0; i < 10; i++) for (let k = 0; k < 10; k++) s += `<rect x="${i * 10}" y="${k * 10}" width="10" height="10" fill="#b8456e" stroke="#6e2241" stroke-width="1"/>`;
+    return `<svg viewBox="-1 -1 102 102" width="${56 * scale}" height="${56 * scale}" aria-hidden="true">${s}</svg>`;
+  }
+  ACT.flat = flat;
   const cube = (scale = 1) => `<svg viewBox="-1 -1 12 12" width="${22 * scale}" height="${22 * scale}" aria-hidden="true"><rect width="10" height="10" fill="#f2b705" stroke="#8a6a00" stroke-width="1"/></svg>`;
   ACT.rod = rod; ACT.cube = cube;
 
@@ -38,7 +44,7 @@
   }
   ACT.money = money;
 
-  // injera cut into `parts` (1, 2 or 4). filled = parts coloured. equal=false draws an uneven cut.
+  // injera cut into `parts` (1, 2, 3, 4, 6 or 8). filled = parts coloured. equal=false draws an uneven cut.
   function injera(parts, filled, equal = true, size = 96) {
     const r = 44, c = 48, col = '#f2b705';
     let s = `<circle cx="${c}" cy="${c}" r="${r}" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/>`;
@@ -51,6 +57,7 @@
       if (filled) s += `<path d="M${x} ${c - dy} A${r} ${r} 0 0 1 ${x} ${c + dy} Z" fill="${col}" opacity=".9"/>`;
       s += `<path d="M${x} ${c - dy} V${c + dy}" stroke="#1d2540" stroke-width="3"/>`;
       if (parts === 4) s += `<path d="M${c - r} ${c + 8} H${c + r}" stroke="#1d2540" stroke-width="3"/>`;
+      if (parts === 3) { const x2 = c - 30, dy2 = Math.sqrt(r * r - (x2 - c) * (x2 - c)); s += `<path d="M${x2} ${c - dy2} V${c + dy2}" stroke="#1d2540" stroke-width="3"/>`; }
     } else if (parts > 1) {
       const step = 360 / parts;
       for (let k = 0; k < filled; k++) {
@@ -88,10 +95,18 @@
       }
       case 'tens_ones': {
         let s = '';
-        for (let t = 0; t < v.tens; t++) s += `<g transform="translate(${8 + t * 18} 6)">${rodBody()}</g>`;
-        const x0 = 8 + v.tens * 18 + 14;
+        // hundreds flats in up to two rows, so a picture with several hundreds stays readable on a phone
+        const hs = v.hundreds || 0, hr = hs > 2 ? 2 : 1, hc = Math.ceil(hs / hr), hx = 8 + hc * 124;
+        for (let k = 0; k < hs; k++) s += `<g transform="translate(${8 + (k % hc) * 124} ${6 + Math.floor(k / hc) * 124})">${flatBody()}</g>`;
+        for (let t = 0; t < v.tens; t++) s += `<g transform="translate(${hx + t * 18} 6)">${rodBody()}</g>`;
+        const x0 = hx + v.tens * 18 + 14;
         for (let o = 0; o < v.ones; o++) s += `<rect x="${x0 + (o % 5) * 14}" y="${6 + Math.floor(o / 5) * 14}" width="12" height="12" fill="#f2b705" stroke="#8a6a00"/>`;
-        return `<svg class="vis" viewBox="0 0 ${x0 + 80} 130" role="img" aria-label="${v.tens} tens ${v.ones} ones">${s}</svg>`;
+        return `<svg class="vis ${hs ? 'wide' : ''}" viewBox="0 0 ${x0 + 80} ${hr > 1 ? 254 : 130}" role="img" aria-label="${hs ? hs + ' hundreds ' : ''}${v.tens} tens ${v.ones} ones">${s}</svg>`;
+      }
+      case 'array': { // rows × cols of things, e.g. seedlings planted in rows
+        const sz = opts.small ? 26 : v.cols > 6 ? 30 : 40; let s = '';
+        for (let r = 0; r < v.rows; r++) for (let c = 0; c < v.cols; c++) s += `<g transform="translate(${sz / 2 + 4 + c * sz} ${sz / 2 + 4 + r * sz}) scale(${sz / 48})">${thingBody(v.thing || 'seedling', r * v.cols + c)}</g>`;
+        return `<svg class="vis" viewBox="0 0 ${v.cols * sz + 8} ${v.rows * sz + 8}" style="max-width:${v.cols * sz + 8}px" role="img" aria-label="${v.rows} rows of ${v.cols}">${s}</svg>`;
       }
       case 'tenframe': {
         let s = '<rect x="4" y="4" width="250" height="100" rx="6" fill="#fff" stroke="#1d2540" stroke-width="3"/>';
@@ -107,6 +122,7 @@
       default: return '';
     }
   }
+  function flatBody() { let s = ''; for (let i = 0; i < 10; i++) for (let k = 0; k < 10; k++) s += `<rect x="${i * 11.5}" y="${k * 11.5}" width="11.5" height="11.5" fill="#b8456e" stroke="#6e2241"/>`; return s; }
   function rodBody() { let s = ''; for (let k = 0; k < 10; k++) s += `<rect x="0" y="${k * 11.5}" width="12" height="11.5" fill="#1f7a8c" stroke="#123f4a"/>`; return s; }
   ACT.visual = visual;
 
@@ -328,6 +344,8 @@
     targets.filter((t) => t.match).forEach((t) => {
       wrap.appendChild(h(`<div class="dd-ref"><div class="dd-target tray static">${Array.from({ length: t.match }, (_, i) => `<span class="piece static">${objSVG(thing, i, 46)}</span>`).join('')}</div><span class="dd-count">${t.match}</span></div>`));
     });
+    // three or more trays / plates sit two to a row, so every plate and the supply fit on a phone screen
+    const group = targets.filter((t) => t.kind === 'tray').length >= 3 ? wrap.appendChild(h('<div class="dd-group"></div>')) : null;
     const zones = targets.map((t) => {
       const kind = t.kind || 'basket';
       const z = h(`<div class="dd-target ${kind}" data-id="${t.id}" aria-label="${esc(kind)}"><div class="dd-in"></div>${kind === 'basket' ? '<div class="basket-front" aria-hidden="true"></div>' : ''}${kind === 'bajaj' ? '<i class="wheel l" aria-hidden="true"></i><i class="wheel r" aria-hidden="true"></i>' : ''}<span class="dd-count" aria-live="polite">${t.count}</span></div>`);
@@ -338,7 +356,7 @@
         place(z, inner, p, kind);
         if (remove) dragPiece(p);
       }
-      wrap.appendChild(z); ACT.zone(z); z._t = t; return z;
+      (group || wrap).appendChild(z); ACT.zone(z); z._t = t; return z;
     });
     function place(z, inner, p, kind) {
       if (kind === 'tenframe') { const cell = [...inner.children].find((c) => !c.firstChild); if (cell) cell.appendChild(p); else inner.appendChild(p); }
@@ -461,60 +479,76 @@
     return { demo, solve: () => demo().then(() => api.right()) };
   };
 
-  // Build a number with tens rods and ones cubes. Ten loose cubes bundle themselves into a rod.
+  // Build a number with (hundreds flats,) tens rods and ones cubes. Ten loose cubes bundle themselves
+  // into a rod and ten rods into a flat, unless the exercise fixes how many tens / hundreds to use
+  // (targets[0].tens / .hundreds — "build 342 with only 2 hundreds" practises breaking a hundred).
   TYPES.drag_placevalue = (api) => {
-    const { ex, body } = api, fixed = ex.targets[0].tens;
-    body.innerHTML = `<div class="pv">
-      <div class="pv-src"><span class="src-rod" aria-label="ten">${rod()}</span><span class="src-cube" aria-label="one">${cube(2)}</span></div>
-      <div class="pv-mat"><div class="pv-col tens"><b>${api.T('አስሮች', 'Tens')}</b><div class="pv-in"></div><span class="pv-n">0</span></div>
-        <div class="pv-col ones"><b>${api.T('አንዶች', 'Ones')}</b><div class="pv-in"></div><span class="pv-n">0</span></div></div>
+    const { ex, body } = api, tg = ex.targets[0], fixT = tg.tens, fixH = tg.hundreds;
+    const hasH = !!(ex.items && ex.items.flats) || ex.answer >= 100;
+    const col = (k, am, en) => `<div class="pv-col ${k}"><b>${api.T(am, en)}</b><div class="pv-in"></div><span class="pv-n">0</span></div>`;
+    body.innerHTML = `<div class="pv ${hasH ? 'h3' : ''}">
+      <div class="pv-src">${hasH ? `<span class="src-flat" aria-label="hundred">${flat(1.15)}</span>` : ''}<span class="src-rod" aria-label="ten">${rod()}</span><span class="src-cube" aria-label="one">${cube(2)}</span></div>
+      <div class="pv-mat">${hasH ? col('hundreds', 'መቶዎች', 'Hundreds') : ''}${col('tens', 'አስሮች', 'Tens')}${col('ones', 'አንዶች', 'Ones')}</div>
       <div class="pv-total" dir="ltr"><span class="t">0</span></div></div>`;
-    const tensCol = body.querySelector('.pv-col.tens'), onesCol = body.querySelector('.pv-col.ones');
-    const tIn = tensCol.querySelector('.pv-in'), oIn = onesCol.querySelector('.pv-in');
-    const st = { t: 0, o: 0 };
-    [tensCol, onesCol].forEach((c) => ACT.zone(c));
+    const cols = { flat: body.querySelector('.pv-col.hundreds'), rod: body.querySelector('.pv-col.tens'), cube: body.querySelector('.pv-col.ones') };
+    const ins = Object.fromEntries(Object.entries(cols).map(([k, c]) => [k, c && c.querySelector('.pv-in')]));
+    const st = { flat: 0, rod: 0, cube: 0 };
+    const VAL = { flat: 100, rod: 10, cube: 1 };
+    Object.values(cols).forEach((c) => c && ACT.zone(c));
     const home = body.querySelector('.pv-src'); ACT.zone(home);
-    const total = () => st.t * 10 + st.o;
+    const total = () => st.flat * 100 + st.rod * 10 + st.cube;
     function show() {
-      tensCol.querySelector('.pv-n').textContent = st.t; onesCol.querySelector('.pv-n').textContent = st.o;
+      for (const k in cols) if (cols[k]) cols[k].querySelector('.pv-n').textContent = st[k];
       body.querySelector('.pv-total .t').textContent = total();
     }
-    function addPiece(kind) {
-      const p = h(`<span class="piece ${kind}">${kind === 'rod' ? rod(0.9) : cube(1.4)}</span>`);
-      (kind === 'rod' ? tIn : oIn).appendChild(p); pop(p);
+    const pic = (k) => (k === 'flat' ? flat(hasH ? 0.62 : 0.8) : k === 'rod' ? rod(hasH ? 0.62 : 0.9) : cube(hasH ? 1.05 : 1.4));
+    function addPiece(k) {
+      const p = h(`<span class="piece ${k}">${pic(k)}</span>`);
+      ins[k].appendChild(p); pop(p);
       ACT.drag(p, { zones: () => [home], drop: () => { // drag back off the mat to remove
-        p.remove(); if (kind === 'rod') st.t--; else st.o--; show(); return 'keep-place';
+        p.remove(); st[k]--; show(); return 'keep-place';
       } });
     }
-    async function bundle() { // ten ones → one ten
-      const cubes = [...oIn.querySelectorAll('.piece.cube')].slice(0, 10);
-      cubes.forEach((c) => c.classList.add('bundling'));
+    async function bundle(from, to, line) { // ten ones → one ten; ten tens → one hundred
+      const ps = [...ins[from].querySelectorAll('.piece.' + from)].slice(0, 10);
+      ps.forEach((c) => c.classList.add('bundling'));
       await wait(reduce() ? 0 : 500);
-      cubes.forEach((c) => c.remove()); st.o -= 10; st.t++; addPiece('rod'); show();
-      api.say && api.say({ am: 'አስር አንዶች አንድ አስር ይሆናሉ።', en: 'Ten ones make one ten.', audio_url: 'audio/am/lesson.g2_add2d.example.2.mp3' });
+      ps.forEach((c) => c.remove()); st[from] -= 10; st[to]++; addPiece(to); show();
+      api.say && api.say(line);
     }
-    function accept(kind) {
-      if (kind === 'rod') {
-        if ((fixed != null && st.t >= fixed) || (fixed == null && total() + 10 > ex.answer)) { api.wrong(); return false; }
-        st.t++; addPiece('rod');
-      } else {
-        if (total() + 1 > ex.answer) { api.wrong(); return false; }
-        st.o++; addPiece('cube');
-      }
-      show(); api.progress(Math.min(10, kind === 'rod' ? st.t : st.o));
-      if (fixed == null && st.o === 10) bundle().then(check); else check();
+    const ONE_TEN = { am: 'አስር አንዶች አንድ አስር ይሆናሉ።', en: 'Ten ones make one ten.', audio_url: 'audio/am/lesson.g2_add2d.example.2.mp3' };
+    const ONE_HUNDRED = { am: 'አስር አስሮች አንድ መቶ ይሆናሉ።', en: 'Ten tens make one hundred.', audio_url: 'audio/am/lesson.g3_hundreds.example.0.mp3' };
+    function accept(k) {
+      const fixed = k === 'flat' ? fixH : k === 'rod' ? fixT : null;
+      if (fixed != null ? st[k] >= fixed : total() + VAL[k] > ex.answer) { api.wrong(); return false; }
+      if (total() + VAL[k] > ex.answer) { api.wrong(); return false; }
+      st[k]++; addPiece(k);
+      show(); api.progress(Math.min(10, st[k]));
+      (async () => {
+        if (k === 'cube' && fixT == null && st.cube === 10) await bundle('cube', 'rod', ONE_TEN);
+        if (hasH && fixH == null && st.rod === 10) await bundle('rod', 'flat', ONE_HUNDRED);
+        check();
+      })();
       return true;
     }
-    function check() { if (total() === ex.answer && (fixed == null ? st.o < 10 : st.t === fixed)) api.right(); }
-    const srcRod = body.querySelector('.src-rod'), srcCube = body.querySelector('.src-cube');
-    ACT.drag(srcRod, { clone: true, zones: () => [tensCol, onesCol], drop: (z) => (z === tensCol ? accept('rod') : (api.wrong(), false)) });
-    ACT.drag(srcCube, { clone: true, zones: () => [tensCol, onesCol], drop: (z) => (z === onesCol ? accept('cube') : (api.wrong(), false)) });
-    const want = () => ({ t: fixed != null ? fixed : Math.floor(ex.answer / 10), o: ex.answer - 10 * (fixed != null ? fixed : Math.floor(ex.answer / 10)) });
+    function check() {
+      if (total() !== ex.answer) return;
+      if (fixT == null ? st.cube >= 10 : st.rod !== fixT) return;
+      if (hasH && (fixH == null ? st.rod >= 10 : st.flat !== fixH)) return;
+      api.right();
+    }
+    const src = { flat: body.querySelector('.src-flat'), rod: body.querySelector('.src-rod'), cube: body.querySelector('.src-cube') };
+    for (const k in src) if (src[k]) ACT.drag(src[k], { clone: true, zones: () => Object.values(cols).filter(Boolean), drop: (z) => (z === cols[k] ? accept(k) : (api.wrong(), false)) });
+    function want() {
+      const hh = hasH ? (fixH != null ? fixH : Math.floor(ex.answer / 100)) : 0;
+      const t = fixT != null ? fixT : Math.floor((ex.answer - 100 * hh) / 10);
+      return { flat: hh, rod: t, cube: ex.answer - 100 * hh - 10 * t };
+    }
     async function demo() {
-      tIn.innerHTML = ''; oIn.innerHTML = ''; st.t = 0; st.o = 0; show();
+      for (const k in ins) if (ins[k]) ins[k].innerHTML = '';
+      st.flat = 0; st.rod = 0; st.cube = 0; show();
       const w = want();
-      for (let i = 0; i < w.t; i++) { st.t++; addPiece('rod'); show(); await wait(reduce() ? 0 : 280); }
-      for (let i = 0; i < w.o; i++) { st.o++; addPiece('cube'); show(); await wait(reduce() ? 0 : 160); }
+      for (const k of ['flat', 'rod', 'cube']) for (let i = 0; i < w[k]; i++) { st[k]++; addPiece(k); show(); await wait(reduce() ? 0 : k === 'cube' ? 160 : 280); }
     }
     return { demo, solve: () => demo().then(() => api.right()) };
   };
@@ -573,34 +607,42 @@
     return { demo, solve: () => demo().then(() => api.right()) };
   };
 
-  // Fill an injera with half and quarter pieces.
+  // Fill an injera with fraction pieces. `parts` (default 4) is how many equal parts make the whole;
+  // a "half" piece covers parts/2 of them, every other piece (quarter, third, sixth…) covers one.
   TYPES.drag_fraction = (api) => {
-    const { ex, body } = api;
-    const filled = [false, false, false, false];
+    const { ex, body } = api, P = ex.parts || 4;
+    const filled = Array.from({ length: P }, () => false);
     for (let i = 0; i < (ex.targets[0].start || 0); i++) filled[i] = true;
     body.innerHTML = `<div class="frac"><div class="inj zone">${injera(1, 0, true, 200)}<svg class="inj-fill" viewBox="0 0 96 96" width="200" height="200" aria-hidden="true"></svg></div><div class="pieces zone-home"></div></div>
-      <p class="frac-count" dir="ltr"><b>0</b>/4</p>`;
+      <p class="frac-count" dir="ltr"><b>0</b>/${P}</p>`;
     const inj = body.querySelector('.inj'), fillSvg = body.querySelector('.inj-fill'), pieces = body.querySelector('.pieces');
     ACT.zone(inj);
-    const sector = (k) => { const c = 48, r = 44, a1 = (k * 90 - 90) * Math.PI / 180, a2 = ((k + 1) * 90 - 90) * Math.PI / 180; return `M${c} ${c} L${(c + r * Math.cos(a1)).toFixed(1)} ${(c + r * Math.sin(a1)).toFixed(1)} A${r} ${r} 0 0 1 ${(c + r * Math.cos(a2)).toFixed(1)} ${(c + r * Math.sin(a2)).toFixed(1)} Z`; };
+    const ang = (k) => (k * 360 / P - 90) * Math.PI / 180;
+    const sector = (k, n = 1, c = 48, r = 44) => `M${c} ${c} L${(c + r * Math.cos(ang(k))).toFixed(1)} ${(c + r * Math.sin(ang(k))).toFixed(1)} A${r} ${r} 0 ${n * 360 / P > 180 ? 1 : 0} 1 ${(c + r * Math.cos(ang(k + n))).toFixed(1)} ${(c + r * Math.sin(ang(k + n))).toFixed(1)} Z`;
     function draw() {
       fillSvg.innerHTML = filled.map((f, k) => (f ? `<path d="${sector(k)}" fill="#f2b705" opacity=".9"/>` : '')).join('') +
-        [0, 1, 2, 3].map((k) => `<path d="M48 48 L${(48 + 44 * Math.cos((k * 90 - 90) * Math.PI / 180)).toFixed(1)} ${(48 + 44 * Math.sin((k * 90 - 90) * Math.PI / 180)).toFixed(1)}" stroke="#1d2540" stroke-width="1.5" stroke-dasharray="3 3"/>`).join('');
+        filled.map((_, k) => `<path d="M48 48 L${(48 + 44 * Math.cos(ang(k))).toFixed(1)} ${(48 + 44 * Math.sin(ang(k))).toFixed(1)}" stroke="#1d2540" stroke-width="1.5" stroke-dasharray="3 3"/>`).join('');
       body.querySelector('.frac-count b').textContent = filled.filter(Boolean).length;
     }
     draw();
-    const pieceSVG = (kind) => (kind === 'half'
-      ? '<svg viewBox="0 0 96 52" width="96" height="52" aria-hidden="true"><path d="M4 48 A44 44 0 0 1 92 48 Z" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/><circle cx="30" cy="34" r="2" fill="#c9b68e"/><circle cx="58" cy="26" r="2" fill="#c9b68e"/></svg>'
-      : '<svg viewBox="0 0 52 52" width="58" height="58" aria-hidden="true"><path d="M4 48 L4 4 A44 44 0 0 1 48 48 Z" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/><circle cx="18" cy="30" r="2" fill="#c9b68e"/></svg>');
+    const sizeOf = (kind) => (kind === 'half' ? P / 2 : 1);
+    function pieceSVG(kind) { // the piece on its own, cropped to its shape, at the size it has on the injera
+      const n = sizeOf(kind), pts = [[48, 48]];
+      for (let i = 0; i <= 24; i++) { const a = ang(0) + (i / 24) * n * 2 * Math.PI / P; pts.push([48 + 44 * Math.cos(a), 48 + 44 * Math.sin(a)]); }
+      const xs = pts.map((q) => q[0]), ys = pts.map((q) => q[1]);
+      const x0 = Math.min(...xs) - 3, y0 = Math.min(...ys) - 3, w = Math.max(...xs) + 3 - x0, hh = Math.max(...ys) + 3 - y0;
+      const k = 200 / 96; // same scale as the 200px injera
+      return `<svg viewBox="${x0.toFixed(1)} ${y0.toFixed(1)} ${w.toFixed(1)} ${hh.toFixed(1)}" width="${Math.round(w * k * 0.62)}" height="${Math.round(hh * k * 0.62)}" aria-hidden="true"><path d="${sector(0, n)}" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/><circle cx="${(48 + 26 * Math.cos(ang(0) + n * Math.PI / P)).toFixed(1)}" cy="${(48 + 26 * Math.sin(ang(0) + n * Math.PI / P)).toFixed(1)}" r="2" fill="#c9b68e"/></svg>`;
+    }
     function slotFor(kind) {
-      if (kind === 'quarter') { const k = filled.indexOf(false); return k < 0 ? null : [k]; }
-      for (let k = 0; k < 4; k++) if (!filled[k] && !filled[(k + 1) % 4]) return [k, (k + 1) % 4];
+      const n = sizeOf(kind);
+      for (let k = 0; k < P; k++) { let ok = true; for (let j = 0; j < n; j++) if (filled[(k + j) % P]) ok = false; if (ok) return Array.from({ length: n }, (_, j) => (k + j) % P); }
       return null;
     }
     ex.items.forEach((p) => { for (let i = 0; i < p.count; i++) {
       const el = h(`<span class="fpiece ${p.piece}" data-kind="${p.piece}" aria-label="${p.piece}">${pieceSVG(p.piece)}</span>`); pieces.appendChild(el);
       ACT.drag(el, { zones: () => [inj], drop: (z, e2) => {
-        const size = p.piece === 'half' ? 2 : 1, now = filled.filter(Boolean).length, s = slotFor(p.piece);
+        const size = sizeOf(p.piece), now = filled.filter(Boolean).length, s = slotFor(p.piece);
         if (!s || now + size > ex.answer) { api.wrong(); return false; }
         s.forEach((k) => { filled[k] = true; }); e2.remove(); draw(); pop(inj); api.progress(now + size);
         if (now + size === ex.answer) api.right();
@@ -610,7 +652,7 @@
     async function demo() {
       let need = ex.answer - filled.filter(Boolean).length;
       for (const el of [...pieces.querySelectorAll('.fpiece')]) {
-        const size = el.dataset.kind === 'half' ? 2 : 1; if (size > need) continue;
+        const size = sizeOf(el.dataset.kind); if (size > need) continue;
         const s = slotFor(el.dataset.kind); if (!s) continue;
         await flyTo(el, inj); s.forEach((k) => { filled[k] = true; }); el.remove(); draw(); need -= size; if (!need) break;
       }
@@ -634,7 +676,7 @@
     let done = false;
     const el = options(api, opts, (o, b) => {
       if (done) return;
-      if (typeof o.v === 'number' && o.v <= 100) api.sayNum(o.v);
+      if (typeof o.v === 'number' && o.v <= 1000) api.sayNum(o.v);
       if (String(o.v) === String(answer)) { done = true; b.classList.add('right'); pop(b); api.right(); }
       else { b.classList.add('nope'); b.disabled = true; api.wrong(); }
     });

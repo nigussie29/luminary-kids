@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.533,
+  "step0": 10.167,
+  "step1": 13.8,
+  "step2": 17.433,
+  "step3": 21.067
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ሶስተኛ እና ሌሎች ክፍልፋዮች",
+   "en": "Thirds and other fractions",
+   "end": 3.333
+  },
+  {
+   "start": 4.533,
+   "am": "እናቴ አንድ እንጀራ ለሶስት ልጆች በእኩል ታካፍላለች። እያንዳንዱ ልጅ ስንት ያገኛል?",
+   "en": "Mother shares one injera equally among three children. How much does each child get?",
+   "end": 10.167
+  },
+  {
+   "start": 10.167,
+   "am": "እንጀራውን በሶስት እኩል ክፍሎች ከፈለችው።",
+   "en": "She divided the injera into three equal parts.",
+   "end": 13.8
+  },
+  {
+   "start": 13.8,
+   "am": "እያንዳንዱ ክፍል አንድ ሶስተኛ ነው፤ እንዲህ እንጽፈዋለን፦ አንድ በሶስት።",
+   "en": "Each part is one third; we write it like this: one over three.",
+   "end": 17.433
+  },
+  {
+   "start": 17.433,
+   "am": "ሁለት ክፍሎች ሁለት ሶስተኛ ናቸው።",
+   "en": "Two parts are two thirds.",
+   "end": 21.067
+  },
+  {
+   "start": 21.067,
+   "am": "ሶስት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ።",
+   "en": "Three thirds make one whole injera.",
+   "end": 25.0
+  }
+ ],
+ "duration": 28.8,
+ "lesson": "g3_fractions"
+}

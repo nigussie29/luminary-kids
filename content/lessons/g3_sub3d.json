@@ -1,0 +1,1055 @@
+{
+  "id": "g3_sub3d",
+  "grade": 3,
+  "n": 3,
+  "title": {
+    "am": "ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ",
+    "en": "Subtracting three-digit numbers",
+    "audio_url": "audio/am/lesson.g3_sub3d.title.mp3"
+  },
+  "place": "schoolyard",
+  "video": {
+    "src": "video/g3_sub3d.mp4",
+    "src_low": "video/low/g3_sub3d.mp4",
+    "poster": "video/g3_sub3d.jpg",
+    "captions": {
+      "am": "video/g3_sub3d.am.vtt",
+      "en": "video/g3_sub3d.en.vtt"
+    },
+    "duration": 36.467,
+    "checkpoints": [
+      {
+        "t": 14.35,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_sub3d.01",
+          "type": "tap_choose",
+          "prompt_am": "ከሁለት አንዶች ስምንት መውሰድ እንችላለን?",
+          "prompt_en": "Can we take eight ones from two ones?",
+          "audio_url": "audio/am/ex.g3_sub3d.01.mp3",
+          "options": [
+            {
+              "v": "yes",
+              "am": "አዎ",
+              "en": "Yes"
+            },
+            {
+              "v": "no",
+              "am": "አይ",
+              "en": "No"
+            }
+          ],
+          "answer": "no",
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 21.62,
+        "at": "step:3",
+        "exercise": {
+          "id": "g3_sub3d.02",
+          "type": "tap_choose",
+          "prompt_am": "አስራ ሁለት ሲቀነስ ስምንት ስንት ነው?",
+          "prompt_en": "What is twelve minus eight?",
+          "audio_url": "audio/am/ex.g3_sub3d.02.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            }
+          ],
+          "answer": 4,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 14.35,
+      "end": 36.467,
+      "at": [
+        "step:1",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_sub3d.03",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "485",
+            "−",
+            "132",
+            "=",
+            "__"
+          ],
+          "items": [
+            "353",
+            "617",
+            "343"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "353",
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_sub3d.04",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "452",
+            "−",
+            "228",
+            "=",
+            "__"
+          ],
+          "items": [
+            "224",
+            "236",
+            "680"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "224",
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_sub3d.05",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "631",
+            "−",
+            "257",
+            "=",
+            "__"
+          ],
+          "items": [
+            "374",
+            "486",
+            "384"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "374",
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_sub3d.06",
+          "type": "tap_choose",
+          "prompt_am": "አራት መቶዎች፣ አምስት አስሮች እና ሁለት አንዶች = አራት መቶዎች፣ አራት አስሮች እና ስንት አንዶች?",
+          "prompt_en": "4 hundreds, 5 tens and 2 ones = 4 hundreds, 4 tens and how many ones?",
+          "audio_url": "audio/am/ex.g3_sub3d.05.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 10
+            },
+            {
+              "v": 12
+            }
+          ],
+          "answer": 12,
+          "visual": {
+            "kind": "tens_ones",
+            "hundreds": 4,
+            "tens": 5,
+            "ones": 2
+          },
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_sub3d.07",
+          "type": "tap_choose",
+          "prompt_am": "ሶስት መቶዎች እና ስድስት አስሮች = ሶስት መቶዎች፣ አምስት አስሮች እና ስንት አንዶች?",
+          "prompt_en": "3 hundreds and 6 tens = 3 hundreds, 5 tens and how many ones?",
+          "audio_url": "audio/am/ex.g3_sub3d.06.mp3",
+          "options": [
+            {
+              "v": 0
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 10,
+          "visual": {
+            "kind": "tens_ones",
+            "hundreds": 3,
+            "tens": 6,
+            "ones": 0
+          },
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_sub3d.08",
+          "type": "tap_choose",
+          "prompt_am": "አምስት መቶዎች = አራት መቶዎች እና ስንት አስሮች?",
+          "prompt_en": "5 hundreds = 4 hundreds and how many tens?",
+          "audio_url": "audio/am/ex.g3_sub3d.07.mp3",
+          "options": [
+            {
+              "v": 0
+            },
+            {
+              "v": 5
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 10,
+          "visual": {
+            "kind": "tens_ones",
+            "hundreds": 5,
+            "tens": 0,
+            "ones": 0
+          },
+          "hints": [
+            {
+              "am": "አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One flat is a hundred; one rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.g3_hundreds.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።",
+              "en": "Put the hundreds first, then the tens, then the ones.",
+              "audio_url": "audio/am/ex.g3_hundreds.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_sub3d.09",
+          "type": "drag_placevalue",
+          "prompt_am": "መቶ አስራ ሁለትን ያለ አስሮች እንሥራ።",
+          "prompt_en": "Let's build one hundred twelve without any tens.",
+          "audio_url": "audio/am/ex.g3_sub3d.08.mp3",
+          "items": {
+            "flats": true,
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat",
+              "tens": 0
+            }
+          ],
+          "answer": 112,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ አስር ወደ አስር አንዶች ይቀየራል።",
+              "en": "One ten changes into ten ones.",
+              "audio_url": "audio/am/ex.g2_sub2d.07.mp3"
+            },
+            {
+              "am": "አንድ መቶ እና አስራ ሁለት አንዶች።",
+              "en": "One hundred and twelve ones.",
+              "audio_url": "audio/am/ex.g3_sub3d.09.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_sub3d.10",
+          "type": "drag_placevalue",
+          "prompt_am": "መቶ ሰላሳ ሁለትን በሁለት አስሮች ብቻ እንሥራ።",
+          "prompt_en": "Let's build one hundred thirty-two using only two tens.",
+          "audio_url": "audio/am/ex.g3_sub3d.10.mp3",
+          "items": {
+            "flats": true,
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat",
+              "tens": 2
+            }
+          ],
+          "answer": 132,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ አስር ወደ አስር አንዶች ይቀየራል።",
+              "en": "One ten changes into ten ones.",
+              "audio_url": "audio/am/ex.g2_sub2d.07.mp3"
+            },
+            {
+              "am": "አንድ መቶ፣ ሁለት አስሮች፤ ስንት አንዶች ይቀራሉ?",
+              "en": "One hundred and two tens; how many ones are left?",
+              "audio_url": "audio/am/ex.g3_sub3d.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_sub3d.11",
+          "type": "drag_placevalue",
+          "prompt_am": "መቶ ሰላሳን ያለ መቶ፣ በአስሮች ብቻ እንሥራ።",
+          "prompt_en": "Let's build one hundred thirty with tens only, no hundred.",
+          "audio_url": "audio/am/ex.g3_sub3d.12.mp3",
+          "items": {
+            "flats": true,
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat",
+              "hundreds": 0
+            }
+          ],
+          "answer": 130,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ መቶ ወደ አስር አስሮች ይቀየራል።",
+              "en": "One hundred changes into ten tens.",
+              "audio_url": "audio/am/ex.g3_sub3d.13.mp3"
+            },
+            {
+              "am": "አስር አስሮች እና ሶስት አስሮች ስንት አስሮች ናቸው?",
+              "en": "Ten tens and three tens: how many tens?",
+              "audio_url": "audio/am/ex.g3_sub3d.14.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_sub3d.12",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "500",
+            "−",
+            "__",
+            "=",
+            "300"
+          ],
+          "items": [
+            "200",
+            "800",
+            "3"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "200",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_sub3d.13",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "600",
+            "−",
+            "__",
+            "=",
+            "350"
+          ],
+          "items": [
+            "250",
+            "350",
+            "950"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "250",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_sub3d.14",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "900",
+            "−",
+            "__",
+            "=",
+            "475"
+          ],
+          "items": [
+            "425",
+            "535",
+            "1375"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "425",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_sub3d.15",
+          "type": "numpad",
+          "prompt_am": "አራት መቶ ሰባ አምስት ሲቀነስ መቶ ሰላሳ ሁለት ስንት ነው?",
+          "prompt_en": "What is four hundred seventy-five minus one hundred thirty-two?",
+          "audio_url": "audio/am/ex.g3_sub3d.15.mp3",
+          "answer": 343,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_sub3d.16",
+          "type": "numpad",
+          "prompt_am": "አምስት መቶ ስልሳ ሶስት ሲቀነስ ሁለት መቶ አርባ ሰባት ስንት ነው?",
+          "prompt_en": "What is five hundred sixty-three minus two hundred forty-seven?",
+          "audio_url": "audio/am/ex.g3_sub3d.16.mp3",
+          "answer": 316,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_sub3d.17",
+          "type": "numpad",
+          "prompt_am": "ሰባት መቶ ሲቀነስ ሶስት መቶ ስልሳ አምስት ስንት ነው?",
+          "prompt_en": "What is seven hundred minus three hundred sixty-five?",
+          "audio_url": "audio/am/ex.g3_sub3d.17.mp3",
+          "answer": 335,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_sub3d.18",
+          "type": "drag_sort",
+          "prompt_am": "አስር መፍታት የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: must break a ten, doesn't.",
+          "audio_url": "audio/am/ex.g2_sub2d.16.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አስር እንፈታለን",
+              "en": "Break a ten"
+            },
+            {
+              "id": "no",
+              "am": "አያስፈልግም",
+              "en": "No need"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "452 − 228"
+            },
+            {
+              "id": "b",
+              "label": "485 − 132"
+            },
+            {
+              "id": "c",
+              "label": "360 − 125"
+            },
+            {
+              "id": "d",
+              "label": "597 − 264"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_sub3d.19",
+          "type": "drag_sort",
+          "prompt_am": "አስር መፍታት የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: must break a ten, doesn't.",
+          "audio_url": "audio/am/ex.g2_sub2d.16.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አስር እንፈታለን",
+              "en": "Break a ten"
+            },
+            {
+              "id": "no",
+              "am": "አያስፈልግም",
+              "en": "No need"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "541 − 319"
+            },
+            {
+              "id": "b",
+              "label": "768 − 245"
+            },
+            {
+              "id": "c",
+              "label": "723 − 416"
+            },
+            {
+              "id": "d",
+              "label": "856 − 431"
+            },
+            {
+              "id": "e",
+              "label": "470 − 135"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_sub3d.20",
+          "type": "drag_sort",
+          "prompt_am": "መቶ መፍታት የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: must break a hundred, doesn't.",
+          "audio_url": "audio/am/ex.g3_sub3d.18.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "መቶ እንፈታለን",
+              "en": "Break a hundred"
+            },
+            {
+              "id": "no",
+              "am": "አያስፈልግም",
+              "en": "No need"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "524 − 281"
+            },
+            {
+              "id": "b",
+              "label": "765 − 432"
+            },
+            {
+              "id": "c",
+              "label": "418 − 275"
+            },
+            {
+              "id": "d",
+              "label": "659 − 324"
+            },
+            {
+              "id": "e",
+              "label": "806 − 350"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+              "en": "When the top digit is smaller, we break one ten.",
+              "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+            },
+            {
+              "am": "መልሳችንን በመደመር እንፈትሽ።",
+              "en": "Check the answer by adding back.",
+              "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "market",
+    "budget_currency": "birr",
+    "rounds": [
+      {
+        "budget": 200,
+        "goods": [
+          {
+            "pic": "book",
+            "am": "መጽሐፍ",
+            "en": "Book",
+            "price": 120
+          },
+          {
+            "pic": "pen",
+            "am": "እስክሪብቶ",
+            "en": "Pen",
+            "price": 80
+          },
+          {
+            "pic": "bread",
+            "am": "ዳቦ",
+            "en": "Bread",
+            "price": 150
+          }
+        ]
+      },
+      {
+        "budget": 350,
+        "goods": [
+          {
+            "pic": "shoes",
+            "am": "ጫማ",
+            "en": "Shoes",
+            "price": 250
+          },
+          {
+            "pic": "bag",
+            "am": "ቦርሳ",
+            "en": "Bag",
+            "price": 175
+          },
+          {
+            "pic": "banana",
+            "am": "ሙዝ",
+            "en": "Bananas",
+            "price": 100
+          }
+        ]
+      },
+      {
+        "budget": 500,
+        "goods": [
+          {
+            "pic": "bag",
+            "am": "ቦርሳ",
+            "en": "Bag",
+            "price": 325
+          },
+          {
+            "pic": "book",
+            "am": "መጽሐፍ",
+            "en": "Book",
+            "price": 175
+          },
+          {
+            "pic": "egg",
+            "am": "እንቁላል",
+            "en": "Eggs",
+            "price": 90
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።",
+      "en": "Let's go to the market! Buy things that use up exactly all our birr.",
+      "audio_url": "audio/am/ex.g2_birr.19.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_sub3d.21",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "614",
+        "−",
+        "258",
+        "=",
+        "__"
+      ],
+      "items": [
+        "356",
+        "444",
+        "346"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "356",
+      "hints": [
+        {
+          "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+          "en": "When the top digit is smaller, we break one ten.",
+          "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+        },
+        {
+          "am": "መልሳችንን በመደመር እንፈትሽ።",
+          "en": "Check the answer by adding back.",
+          "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_sub3d.22",
+      "type": "drag_numberline",
+      "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+      "prompt_en": "Let's put the numbers in their places on the number line.",
+      "audio_url": "audio/am/ex.count10.14.mp3",
+      "line": {
+        "min": 300,
+        "max": 400,
+        "step": 10,
+        "labels": "ends"
+      },
+      "items": [
+        "320",
+        "370"
+      ],
+      "answer": [
+        "320",
+        "370"
+      ],
+      "hints": [
+        {
+          "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+          "en": "Small numbers are on the left, big numbers on the right.",
+          "audio_url": "audio/am/ex.count10.15.mp3"
+        },
+        {
+          "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+          "en": "Count the marks from zero.",
+          "audio_url": "audio/am/ex.count10.16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_sub3d.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? አምስት መቶ ሲቀነስ መቶ አራት መቶ ነው።",
+      "prompt_en": "True or not? Five hundred minus one hundred is four hundred.",
+      "audio_url": "audio/am/ex.g3_sub3d.19.mp3",
+      "statement_am": "አምስት መቶ ሲቀነስ መቶ አራት መቶ ነው።",
+      "statement_en": "Five hundred minus one hundred is four hundred.",
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_sub3d.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሶስት መቶ ሃምሳ ስድስት",
+        "en": "three hundred fifty-six",
+        "audio_url": "audio/am/num.356.mp3"
+      },
+      "options": [
+        {
+          "v": 356
+        },
+        {
+          "v": 365
+        },
+        {
+          "v": 536
+        }
+      ],
+      "answer": 356,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_sub3d.25",
+      "type": "numpad",
+      "prompt_am": "ስምንት መቶ ሲቀነስ ሶስት መቶ ሃምሳ ስንት ነው?",
+      "prompt_en": "What is eight hundred minus three hundred fifty?",
+      "audio_url": "audio/am/ex.g3_sub3d.20.mp3",
+      "answer": 450,
+      "visual": null,
+      "max_digits": 4,
+      "hints": [
+        {
+          "am": "ከላይ ያለው አሃዝ ሲያንስ አንድ አስር እንፈታለን።",
+          "en": "When the top digit is smaller, we break one ten.",
+          "audio_url": "audio/am/ex.g3_sub3d.03.mp3"
+        },
+        {
+          "am": "መልሳችንን በመደመር እንፈትሽ።",
+          "en": "Check the answer by adding back.",
+          "audio_url": "audio/am/ex.g3_sub3d.04.mp3"
+        }
+      ]
+    }
+  ]
+}

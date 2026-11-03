@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.333,
+  "step0": 10.367,
+  "step1": 15.0,
+  "step2": 18.633,
+  "step3": 22.267
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "መቶዎች፣ አስሮች እና አንዶች",
+   "en": "Hundreds, tens and ones",
+   "end": 3.333
+  },
+  {
+   "start": 4.333,
+   "am": "ዛሬ በትልልቅ ቁጥሮች እንጫወታለን። አስር አስሮች ሲሰባሰቡ አንድ መቶ ይሆናሉ።",
+   "en": "Today we play with big numbers. When ten tens come together, they make one hundred.",
+   "end": 9.967
+  },
+  {
+   "start": 10.367,
+   "am": "አስር አስሮች አንድ መቶ ይሆናሉ።",
+   "en": "Ten tens make one hundred.",
+   "end": 15.0
+  },
+  {
+   "start": 15.0,
+   "am": "እዚህ ሁለት መቶዎች፣ አራት አስሮች እና አምስት አንዶች አሉ።",
+   "en": "Here are two hundreds, four tens and five ones.",
+   "end": 18.633
+  },
+  {
+   "start": 18.633,
+   "am": "ሁለት መቶ፣ አርባ እና አምስት።",
+   "en": "Two hundred, forty and five.",
+   "end": 22.267
+  },
+  {
+   "start": 22.267,
+   "am": "ቁጥሩ ሁለት መቶ አርባ አምስት ነው።",
+   "en": "The number is two hundred forty-five.",
+   "end": 26.2
+  }
+ ],
+ "duration": 30.0,
+ "lesson": "g3_hundreds"
+}
