@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 3.6,
+  "step0": 8.433,
+  "step1": 10.667,
+  "step2": 14.167,
+  "step3": 17.6
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ብር እንቁጠር",
+   "en": "Counting birr",
+   "end": 2.4
+  },
+  {
+   "start": 3.6,
+   "am": "ዛሬ ለቤተሰቡ ዳቦ ልንገዛ ነው። በኪሳችን ስንት ብር አለ?",
+   "en": "Today we are buying bread for the family. How many birr are in our pocket?",
+   "end": 8.433
+  },
+  {
+   "start": 8.433,
+   "am": "ከትልቁ እንጀምር።",
+   "en": "Start with the biggest.",
+   "end": 10.667
+  },
+  {
+   "start": 10.667,
+   "am": "ሁለት የአስር ብር ኖቶች ሃያ ብር ናቸው።",
+   "en": "Two ten-birr notes are twenty birr.",
+   "end": 14.167
+  },
+  {
+   "start": 14.167,
+   "am": "የአምስት ብር ኖት ሲጨመር ሃያ አምስት።",
+   "en": "Add a five-birr note: twenty-five.",
+   "end": 17.6
+  },
+  {
+   "start": 17.6,
+   "am": "አንድ ብር ሲጨመር ሃያ ስድስት ብር።",
+   "en": "Add one birr: twenty-six birr.",
+   "end": 21.167
+  }
+ ],
+ "duration": 24.967,
+ "lesson": "g2_birr"
+}

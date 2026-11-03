@@ -1,0 +1,37 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 5.467,
+  "count1": 13.667,
+  "count2": 14.733,
+  "count3": 15.8,
+  "after3": 16.867,
+  "count4": 17.467,
+  "count5": 18.533,
+  "count6": 19.6,
+  "total": 20.667,
+  "recap": 23.067
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "የአትክልት ቦታ ቆጠራ",
+   "en": "Counting in the garden",
+   "end": 3.067
+  },
+  {
+   "start": 5.467,
+   "am": "ሰላም ልጆች! በአያቴ የአትክልት ቦታ ብዙ አበቦች አሉ። እያንዳንዱን አንድ ጊዜ ብቻ እንቁጠር።",
+   "en": "Hello, friends! Grandma's garden is full of flowers. Let's count each one just once.",
+   "end": 13.167
+  },
+  {
+   "start": 23.067,
+   "am": "አንድ፣ ሁለት፣ ሶስት፣ አራት፣ አምስት፣ ስድስት። የመጨረሻው ቁጥር ስድስት ነው፤ ስለዚህ ስድስት አበቦች አሉ።",
+   "en": "One, two, three, four, five, six. The last number we say is six, so there are six flowers.",
+   "end": 30.2
+  }
+ ],
+ "duration": 31.3,
+ "lesson": "count10"
+}

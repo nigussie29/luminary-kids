@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 3.233,
+  "step0": 10.033,
+  "step1": 13.167,
+  "step2": 18.533,
+  "step3": 22.0
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "አስር ሲሞላ እንደምራለን",
+   "en": "Adding with a new ten",
+   "end": 3.233
+  },
+  {
+   "start": 3.233,
+   "am": "በትምህርት ቤቱ ቤተ መጽሐፍት መጻሕፍትን እናደራጃለን። ሁለት ክምሮችን አንድ ላይ እንደምር።",
+   "en": "We are sorting books in the school library. Let us add two piles together.",
+   "end": 9.533
+  },
+  {
+   "start": 10.033,
+   "am": "ሃያ ሰባት ሲደመር አስራ አምስት።",
+   "en": "Twenty-seven plus fifteen.",
+   "end": 13.167
+  },
+  {
+   "start": 13.167,
+   "am": "መጀመሪያ አንዶቹን እንደምር፦ ሰባት እና አምስት አስራ ሁለት ነው።",
+   "en": "First add the ones: seven and five is twelve.",
+   "end": 18.533
+  },
+  {
+   "start": 18.533,
+   "am": "አስር አንዶች አንድ አስር ይሆናሉ።",
+   "en": "Ten ones make one ten.",
+   "end": 22.0
+  },
+  {
+   "start": 22.0,
+   "am": "አሁን አራት አስሮች እና ሁለት አንዶች አሉ፤ አርባ ሁለት።",
+   "en": "Now there are four tens and two ones: forty-two.",
+   "end": 26.6
+  }
+ ],
+ "duration": 30.4,
+ "lesson": "g2_add2d"
+}

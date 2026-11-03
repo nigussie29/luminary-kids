@@ -1,0 +1,1005 @@
+{
+  "id": "teens",
+  "grade": 1,
+  "n": 2,
+  "title": {
+    "am": "የገበያ አስሮች",
+    "en": "Market tens",
+    "audio_url": "audio/am/lesson.teens.title.mp3"
+  },
+  "place": "market",
+  "video": {
+    "src": "video/teens.mp4",
+    "src_low": "video/low/teens.mp4",
+    "poster": "video/teens.jpg",
+    "captions": {
+      "am": "video/teens.am.vtt",
+      "en": "video/teens.en.vtt"
+    },
+    "duration": 25.733,
+    "checkpoints": [
+      {
+        "t": 13.08,
+        "at": "step:0",
+        "exercise": {
+          "id": "teens.01",
+          "type": "tap_choose",
+          "prompt_am": "አንድ ሙሉ የአስር ሳጥን ስንት ብርቱካኖች አሉት?",
+          "prompt_en": "How many oranges fill one ten frame?",
+          "audio_url": "audio/am/ex.teens.01.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 10
+            },
+            {
+              "v": 12
+            }
+          ],
+          "answer": 10,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 19.55,
+        "at": "step:2",
+        "exercise": {
+          "id": "teens.02",
+          "type": "tap_choose",
+          "prompt_am": "አስር እና አራት ስንት ነው?",
+          "prompt_en": "What is ten and four?",
+          "audio_url": "audio/am/ex.teens.02.mp3",
+          "options": [
+            {
+              "v": 13
+            },
+            {
+              "v": 14
+            },
+            {
+              "v": 41
+            }
+          ],
+          "answer": 14,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 13.08,
+      "end": 25.733,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "teens.03",
+          "type": "drag_placevalue",
+          "prompt_am": "አስራ ሶስትን በአስሮች እና በአንዶች እንሥራ።",
+          "prompt_en": "Let's build 13 with tens and ones.",
+          "audio_url": "audio/am/ex.teens.03.mp3",
+          "items": {
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat"
+            }
+          ],
+          "answer": 13,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.teens.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ አስሮቹን፣ ከዚያ አንዶቹን እናስቀምጥ።",
+              "en": "Put the tens first, then the ones.",
+              "audio_url": "audio/am/ex.teens.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "teens.04",
+          "type": "drag_placevalue",
+          "prompt_am": "አስራ ስድስትን በአስሮች እና በአንዶች እንሥራ።",
+          "prompt_en": "Let's build 16 with tens and ones.",
+          "audio_url": "audio/am/ex.teens.06.mp3",
+          "items": {
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat"
+            }
+          ],
+          "answer": 16,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.teens.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ አስሮቹን፣ ከዚያ አንዶቹን እናስቀምጥ።",
+              "en": "Put the tens first, then the ones.",
+              "audio_url": "audio/am/ex.teens.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "teens.05",
+          "type": "drag_placevalue",
+          "prompt_am": "አስራ ዘጠኝን በአስሮች እና በአንዶች እንሥራ።",
+          "prompt_en": "Let's build 19 with tens and ones.",
+          "audio_url": "audio/am/ex.teens.07.mp3",
+          "items": {
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat"
+            }
+          ],
+          "answer": 19,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.teens.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ አስሮቹን፣ ከዚያ አንዶቹን እናስቀምጥ።",
+              "en": "Put the tens first, then the ones.",
+              "audio_url": "audio/am/ex.teens.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "teens.06",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ነው?",
+          "prompt_en": "How many is this?",
+          "audio_url": "audio/am/ex.teens.08.mp3",
+          "options": [
+            {
+              "v": 15
+            },
+            {
+              "v": 51
+            },
+            {
+              "v": 6
+            }
+          ],
+          "answer": 15,
+          "visual": {
+            "kind": "tens_ones",
+            "tens": 1,
+            "ones": 5
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "teens.07",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ነው?",
+          "prompt_en": "How many is this?",
+          "audio_url": "audio/am/ex.teens.08.mp3",
+          "options": [
+            {
+              "v": 71
+            },
+            {
+              "v": 17
+            },
+            {
+              "v": 8
+            }
+          ],
+          "answer": 17,
+          "visual": {
+            "kind": "tens_ones",
+            "tens": 1,
+            "ones": 7
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "teens.08",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ነው?",
+          "prompt_en": "How many is this?",
+          "audio_url": "audio/am/ex.teens.08.mp3",
+          "options": [
+            {
+              "v": 19
+            },
+            {
+              "v": 91
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 19,
+          "visual": {
+            "kind": "tens_ones",
+            "tens": 1,
+            "ones": 9
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "teens.09",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "10",
+            "+",
+            "__",
+            "=",
+            "14"
+          ],
+          "items": [
+            "4",
+            "14",
+            "3"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "teens.10",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "10",
+            "+",
+            "__",
+            "=",
+            "17"
+          ],
+          "items": [
+            "7",
+            "17",
+            "6"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "7",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "teens.11",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "__",
+            "+",
+            "8",
+            "=",
+            "18"
+          ],
+          "items": [
+            "10",
+            "8",
+            "18"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "10",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "teens.12",
+          "type": "drag_drop_count",
+          "prompt_am": "ቅርጫቱ ውስጥ አስር ብርቱካኖች አሉ። በአጠቃላይ አስራ ሁለት እንዲሆኑ ተጨማሪ እናስገባ።",
+          "prompt_en": "There are 10 oranges in the basket. Let's add more so there are 12 in all.",
+          "audio_url": "audio/am/ex.teens.12.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 5,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 10,
+              "need": 12
+            }
+          ],
+          "answer": 12,
+          "hints": [
+            {
+              "am": "ቀድሞ ያሉትን አንቆጥርም፤ ከእነሱ ቀጥለን እንቁጠር።",
+              "en": "Start from the ones already there and count on.",
+              "audio_url": "audio/am/ex.teens.13.mp3"
+            },
+            {
+              "am": "ከቁጥሩ ቀጥለን አንድ በአንድ እንጨምር።",
+              "en": "Add one at a time and count on.",
+              "audio_url": "audio/am/ex.teens.14.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "teens.13",
+          "type": "drag_drop_count",
+          "prompt_am": "ቅርጫቱ ውስጥ አስር ብርቱካኖች አሉ። በአጠቃላይ አስራ አምስት እንዲሆኑ ተጨማሪ እናስገባ።",
+          "prompt_en": "There are 10 oranges in the basket. Let's add more so there are 15 in all.",
+          "audio_url": "audio/am/ex.teens.15.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 8,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 10,
+              "need": 15
+            }
+          ],
+          "answer": 15,
+          "hints": [
+            {
+              "am": "ቀድሞ ያሉትን አንቆጥርም፤ ከእነሱ ቀጥለን እንቁጠር።",
+              "en": "Start from the ones already there and count on.",
+              "audio_url": "audio/am/ex.teens.13.mp3"
+            },
+            {
+              "am": "ከቁጥሩ ቀጥለን አንድ በአንድ እንጨምር።",
+              "en": "Add one at a time and count on.",
+              "audio_url": "audio/am/ex.teens.14.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "teens.14",
+          "type": "drag_drop_count",
+          "prompt_am": "ቅርጫቱ ውስጥ አስር ብርቱካኖች አሉ። በአጠቃላይ አስራ ስምንት እንዲሆኑ ተጨማሪ እናስገባ።",
+          "prompt_en": "There are 10 oranges in the basket. Let's add more so there are 18 in all.",
+          "audio_url": "audio/am/ex.teens.16.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "basket",
+              "kind": "basket",
+              "start": 10,
+              "need": 18
+            }
+          ],
+          "answer": 18,
+          "hints": [
+            {
+              "am": "ቀድሞ ያሉትን አንቆጥርም፤ ከእነሱ ቀጥለን እንቁጠር።",
+              "en": "Start from the ones already there and count on.",
+              "audio_url": "audio/am/ex.teens.13.mp3"
+            },
+            {
+              "am": "ከቁጥሩ ቀጥለን አንድ በአንድ እንጨምር።",
+              "en": "Add one at a time and count on.",
+              "audio_url": "audio/am/ex.teens.14.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "teens.15",
+          "type": "numpad",
+          "prompt_am": "አስር እና ስድስት ስንት ነው?",
+          "prompt_en": "What is ten and six?",
+          "audio_url": "audio/am/ex.teens.17.mp3",
+          "answer": 16,
+          "visual": {
+            "kind": "tens_ones",
+            "tens": 1,
+            "ones": 6
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "teens.16",
+          "type": "numpad",
+          "prompt_am": "አስር እና ሶስት ስንት ነው?",
+          "prompt_en": "What is ten and three?",
+          "audio_url": "audio/am/ex.teens.18.mp3",
+          "answer": 13,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "teens.17",
+          "type": "numpad",
+          "prompt_am": "አስር እና ዘጠኝ ስንት ነው?",
+          "prompt_en": "What is ten and nine?",
+          "audio_url": "audio/am/ex.teens.19.mp3",
+          "answer": 19,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "teens.18",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its number.",
+          "audio_url": "audio/am/ex.count10.11.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "አስራ አንድ",
+              "lang": "am",
+              "audio_url": "audio/am/num.11.mp3"
+            },
+            {
+              "id": "w1",
+              "label": "አስራ ሁለት",
+              "lang": "am",
+              "audio_url": "audio/am/num.12.mp3"
+            },
+            {
+              "id": "w2",
+              "label": "አስራ ሶስት",
+              "lang": "am",
+              "audio_url": "audio/am/num.13.mp3"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "12"
+            },
+            {
+              "id": "t2",
+              "label": "13"
+            },
+            {
+              "id": "t0",
+              "label": "11"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "teens.19",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its number.",
+          "audio_url": "audio/am/ex.count10.11.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "አስራ አራት",
+              "lang": "am",
+              "audio_url": "audio/am/num.14.mp3"
+            },
+            {
+              "id": "w1",
+              "label": "አስራ አምስት",
+              "lang": "am",
+              "audio_url": "audio/am/num.15.mp3"
+            },
+            {
+              "id": "w2",
+              "label": "አስራ ስድስት",
+              "lang": "am",
+              "audio_url": "audio/am/num.16.mp3"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "15"
+            },
+            {
+              "id": "t2",
+              "label": "16"
+            },
+            {
+              "id": "t0",
+              "label": "14"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "teens.20",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each word to its number.",
+          "audio_url": "audio/am/ex.count10.11.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "አስራ ሰባት",
+              "lang": "am",
+              "audio_url": "audio/am/num.17.mp3"
+            },
+            {
+              "id": "w1",
+              "label": "አስራ ስምንት",
+              "lang": "am",
+              "audio_url": "audio/am/num.18.mp3"
+            },
+            {
+              "id": "w2",
+              "label": "አስራ ዘጠኝ",
+              "lang": "am",
+              "audio_url": "audio/am/num.19.mp3"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "18"
+            },
+            {
+              "id": "t2",
+              "label": "19"
+            },
+            {
+              "id": "t0",
+              "label": "17"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቃሉን ቀስ ብለን እናንብብ።",
+              "en": "Read the word slowly.",
+              "audio_url": "audio/am/ex.count10.12.mp3"
+            },
+            {
+              "am": "በድምፅ ቁልፉ እናዳምጥ።",
+              "en": "Tap the sound button to listen.",
+              "audio_url": "audio/am/ex.count10.13.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [
+    {
+      "id": "teens.21",
+      "type": "speak",
+      "prompt_am": "«አስራ አራት» ብለን ጮክ ብለን እንናገር።",
+      "prompt_en": "Let's say «fourteen» out loud.",
+      "audio_url": "audio/am/ex.teens.20.mp3",
+      "say": {
+        "am": "አስራ አራት",
+        "en": "fourteen",
+        "audio_url": "audio/am/num.14.mp3"
+      },
+      "answer": 14,
+      "optional": true,
+      "hints": [
+        {
+          "am": "ቀስ ብለን እንናገር።",
+          "en": "Say it slowly.",
+          "audio_url": "audio/am/ex.count10.24.mp3"
+        }
+      ]
+    }
+  ],
+  "play": {
+    "game": "memory",
+    "pairs": [
+      {
+        "n": 11,
+        "am": "አስራ አንድ",
+        "geez": "፲፩"
+      },
+      {
+        "n": 13,
+        "am": "አስራ ሶስት",
+        "geez": "፲፫"
+      },
+      {
+        "n": 15,
+        "am": "አስራ አምስት",
+        "geez": "፲፭"
+      },
+      {
+        "n": 18,
+        "am": "አስራ ስምንት",
+        "geez": "፲፰"
+      }
+    ],
+    "intro": {
+      "am": "የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና የግዕዝ ቁጥር።",
+      "en": "Let's find matching cards: number, word and Ge'ez numeral.",
+      "audio_url": "audio/am/ex.teens.24.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "teens.22",
+      "type": "drag_placevalue",
+      "prompt_am": "አስራ ሰባትን በአስሮች እና በአንዶች እንሥራ።",
+      "prompt_en": "Let's build 17 with tens and ones.",
+      "audio_url": "audio/am/ex.teens.21.mp3",
+      "items": {
+        "rods": true,
+        "cubes": true
+      },
+      "targets": [
+        {
+          "id": "mat"
+        }
+      ],
+      "answer": 17,
+      "max_tens": 9,
+      "hints": [
+        {
+          "am": "አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+          "en": "One rod is ten; one cube is one.",
+          "audio_url": "audio/am/ex.teens.04.mp3"
+        },
+        {
+          "am": "መጀመሪያ አስሮቹን፣ ከዚያ አንዶቹን እናስቀምጥ።",
+          "en": "Put the tens first, then the ones.",
+          "audio_url": "audio/am/ex.teens.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "teens.23",
+      "type": "drag_numberline",
+      "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+      "prompt_en": "Let's put the numbers in their places on the number line.",
+      "audio_url": "audio/am/ex.count10.14.mp3",
+      "line": {
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "labels": "ends"
+      },
+      "items": [
+        "12",
+        "15",
+        "18"
+      ],
+      "answer": [
+        "12",
+        "15",
+        "18"
+      ],
+      "hints": [
+        {
+          "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+          "en": "Small numbers are on the left, big numbers on the right.",
+          "audio_url": "audio/am/ex.count10.15.mp3"
+        },
+        {
+          "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+          "en": "Count the marks from zero.",
+          "audio_url": "audio/am/ex.count10.16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "teens.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "አስራ አንድ",
+        "en": "eleven",
+        "audio_url": "audio/am/num.11.mp3"
+      },
+      "options": [
+        {
+          "v": 11
+        },
+        {
+          "v": 12
+        },
+        {
+          "v": 21
+        }
+      ],
+      "answer": 11,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "teens.25",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? አንድ አስር እና ሁለት አንዶች ሃያ አንድ ነው።",
+      "prompt_en": "True or not? One ten and two ones is twenty-one.",
+      "audio_url": "audio/am/ex.teens.22.mp3",
+      "statement_am": "አንድ አስር እና ሁለት አንዶች ሃያ አንድ ነው።",
+      "statement_en": "One ten and two ones is twenty-one.",
+      "visual": {
+        "kind": "tens_ones",
+        "tens": 1,
+        "ones": 2
+      },
+      "answer": false,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "teens.26",
+      "type": "numpad",
+      "prompt_am": "አስር እና ስምንት ስንት ነው?",
+      "prompt_en": "What is ten and eight?",
+      "audio_url": "audio/am/ex.teens.23.mp3",
+      "answer": 18,
+      "max_digits": 3,
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "lessons": [
+    {
+      "id": "count10",
+      "grade": 1,
+      "n": 1,
+      "place": "garden",
+      "title": {
+        "am": "የአትክልት ቦታ ቆጠራ",
+        "en": "Counting in the garden",
+        "audio_url": "audio/am/lesson.count10.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "teens",
+      "grade": 1,
+      "n": 2,
+      "place": "market",
+      "title": {
+        "am": "የገበያ አስሮች",
+        "en": "Market tens",
+        "audio_url": "audio/am/lesson.teens.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "compare",
+      "grade": 1,
+      "n": 3,
+      "place": "school",
+      "title": {
+        "am": "ብዙ ወይስ ጥቂት?",
+        "en": "More or fewer?",
+        "audio_url": "audio/am/lesson.compare.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "add10",
+      "grade": 1,
+      "n": 4,
+      "place": "road",
+      "title": {
+        "am": "የባጃጅ ጉዞ",
+        "en": "The bajaj ride",
+        "audio_url": "audio/am/lesson.add10.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "sub10",
+      "grade": 1,
+      "n": 5,
+      "place": "tree",
+      "title": {
+        "am": "የማንጎ ዛፍ",
+        "en": "The mango tree",
+        "audio_url": "audio/am/lesson.sub10.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "make10",
+      "grade": 1,
+      "n": 6,
+      "place": "meadow",
+      "title": {
+        "am": "አስር እንሙላ",
+        "en": "Make ten",
+        "audio_url": "audio/am/lesson.make10.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g2_placevalue",
+      "grade": 2,
+      "n": 1,
+      "place": "home",
+      "title": {
+        "am": "አስሮች እና አንዶች",
+        "en": "Tens and ones",
+        "audio_url": "audio/am/lesson.g2_placevalue.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g2_add2d",
+      "grade": 2,
+      "n": 2,
+      "place": "library",
+      "title": {
+        "am": "አስር ሲሞላ እንደምራለን",
+        "en": "Adding with a new ten",
+        "audio_url": "audio/am/lesson.g2_add2d.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g2_sub2d",
+      "grade": 2,
+      "n": 3,
+      "place": "market",
+      "title": {
+        "am": "አስርን ፈትተን እንቀንሳለን",
+        "en": "Subtracting by breaking a ten",
+        "audio_url": "audio/am/lesson.g2_sub2d.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g2_groups",
+      "grade": 2,
+      "n": 4,
+      "place": "ceremony",
+      "title": {
+        "am": "እኩል ቡድኖች",
+        "en": "Equal groups",
+        "audio_url": "audio/am/lesson.g2_groups.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "g2_birr",
+      "grade": 2,
+      "n": 5,
+      "place": "shop",
+      "title": {
+        "am": "ብር እንቁጠር",
+        "en": "Counting birr",
+        "audio_url": "audio/am/lesson.g2_birr.title.mp3"
+      },
+      "game": "market"
+    },
+    {
+      "id": "g2_halves",
+      "grade": 2,
+      "n": 6,
+      "place": "kitchen",
+      "title": {
+        "am": "ግማሽ እና ሩብ",
+        "en": "Halves and quarters",
+        "audio_url": "audio/am/lesson.g2_halves.title.mp3"
+      },
+      "game": "memory"
+    }
+  ],
+  "common": {
+    "replay": {
+      "am": "ደግመህ/ደግመሽ አዳምጥ",
+      "en": "Listen again",
+      "audio_url": "audio/am/ex.common.01.mp3"
+    },
+    "praise": [
+      {
+        "am": "ጎበዝ!",
+        "en": "Well done!",
+        "audio_url": "audio/am/ex.common.02.mp3"
+      },
+      {
+        "am": "በጣም ጥሩ!",
+        "en": "Very good!",
+        "audio_url": "audio/am/ex.common.03.mp3"
+      },
+      {
+        "am": "ልክ ነው!",
+        "en": "That's right!",
+        "audio_url": "audio/am/ex.common.04.mp3"
+      },
+      {
+        "am": "አሪፍ ነው!",
+        "en": "Great!",
+        "audio_url": "audio/am/ex.common.05.mp3"
+      }
+    ],
+    "tryAgain": {
+      "am": "ተጠግተናል! እንደገና እንሞክር።",
+      "en": "So close! Let's try again.",
+      "audio_url": "audio/am/ex.common.06.mp3"
+    },
+    "watch": {
+      "am": "አብረን እንየው።",
+      "en": "Let's watch together.",
+      "audio_url": "audio/am/ex.common.07.mp3"
+    },
+    "reteach": {
+      "am": "ይህንን ክፍል እንደገና እንመልከት።",
+      "en": "Let's watch this part again.",
+      "audio_url": "audio/am/ex.common.08.mp3"
+    },
+    "celebrate": {
+      "am": "ትምህርቱን ጨረስን! በጣም ጎበዝ ነን!",
+      "en": "We finished the lesson! We did so well!",
+      "audio_url": "audio/am/ex.common.09.mp3"
+    },
+    "streak": {
+      "am": "ዛሬም ተማርን! ተከታታይ ቀናት፦",
+      "en": "We learned today too! Days in a row:",
+      "audio_url": "audio/am/ex.common.10.mp3"
+    },
+    "unlocked": {
+      "am": "አዲስ ልብስ ተከፈተ!",
+      "en": "New clothes unlocked!",
+      "audio_url": "audio/am/ex.common.11.mp3"
+    }
+  }
+}

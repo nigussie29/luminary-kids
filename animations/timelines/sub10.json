@@ -1,0 +1,57 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.433,
+  "step0": 11.333,
+  "step1": 14.0,
+  "step2": 16.9,
+  "step3": 19.9,
+  "step4": 22.4
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "የማንጎ ዛፍ",
+   "en": "The mango tree",
+   "end": 2.433
+  },
+  {
+   "start": 4.433,
+   "am": "ነፋስ ነፈሰ! አንዳንድ ማንጎዎች ከዛፉ ወደቁ። ስንት ማንጎዎች ዛፉ ላይ ቀሩ?",
+   "en": "The wind blows! Some mangoes fall from the tree. How many are left on the tree?",
+   "end": 11.333
+  },
+  {
+   "start": 11.333,
+   "am": "ሰባት ማንጎዎች ነበሩ።",
+   "en": "There were seven mangoes.",
+   "end": 14.0
+  },
+  {
+   "start": 14.0,
+   "am": "ሶስቱ ወደቁ።",
+   "en": "Three fell.",
+   "end": 16.9
+  },
+  {
+   "start": 16.9,
+   "am": "የወደቁትን እናቋርጥ።",
+   "en": "Cross out the ones that fell.",
+   "end": 19.9
+  },
+  {
+   "start": 19.9,
+   "am": "የቀሩት አራት ናቸው።",
+   "en": "Four are left.",
+   "end": 22.4
+  },
+  {
+   "start": 22.4,
+   "am": "ሰባት ሲቀነስ ሶስት እኩል ነው አራት።",
+   "en": "Seven minus three equals four.",
+   "end": 25.967
+  }
+ ],
+ "duration": 28.667,
+ "lesson": "sub10"
+}

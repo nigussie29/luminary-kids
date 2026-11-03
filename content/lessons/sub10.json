@@ -1,0 +1,1123 @@
+{
+  "id": "sub10",
+  "grade": 1,
+  "n": 5,
+  "title": {
+    "am": "የማንጎ ዛፍ",
+    "en": "The mango tree",
+    "audio_url": "audio/am/lesson.sub10.title.mp3"
+  },
+  "place": "tree",
+  "video": {
+    "src": "video/sub10.mp4",
+    "src_low": "video/low/sub10.mp4",
+    "poster": "video/sub10.jpg",
+    "captions": {
+      "am": "video/sub10.am.vtt",
+      "en": "video/sub10.en.vtt"
+    },
+    "duration": 28.667,
+    "checkpoints": [
+      {
+        "t": 16.85,
+        "at": "step:2",
+        "exercise": {
+          "id": "sub10.01",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ማንጎዎች ወደቁ?",
+          "prompt_en": "How many mangoes fell?",
+          "audio_url": "audio/am/ex.sub10.01.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            }
+          ],
+          "answer": 3,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 19.85,
+        "at": "step:3",
+        "exercise": {
+          "id": "sub10.02",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ማንጎዎች ቀሩ?",
+          "prompt_en": "How many mangoes are left?",
+          "audio_url": "audio/am/ex.sub10.02.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 4,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 11.28,
+      "end": 28.667,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "sub10.03",
+          "type": "drag_drop_count",
+          "prompt_am": "ዛፉ ላይ ስድስት ማንጎዎች አሉ። አራት ብቻ እንዲቀሩ የተወሰኑትን ወደ ቅርጫቱ እናውርድ።",
+          "prompt_en": "There are 6 mangoes on the tree. Let's take some down to the basket so only 4 are left.",
+          "audio_url": "audio/am/ex.sub10.03.mp3",
+          "items": {
+            "thing": "mango",
+            "supply": 0,
+            "mode": "remove"
+          },
+          "targets": [
+            {
+              "id": "tree",
+              "kind": "tree",
+              "start": 6,
+              "need": 4
+            }
+          ],
+          "answer": 4,
+          "hints": [
+            {
+              "am": "ስንት ማውረድ እንዳለብን እናስብ፤ ስድስት ሲቀነስ አራት።",
+              "en": "How many must come down? 6 take away 4.",
+              "audio_url": "audio/am/ex.sub10.04.mp3"
+            },
+            {
+              "am": "አንድ በአንድ እያወረድን የቀሩትን እንቁጠር።",
+              "en": "Take them down one at a time and count what is left.",
+              "audio_url": "audio/am/ex.sub10.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "sub10.04",
+          "type": "drag_drop_count",
+          "prompt_am": "ዛፉ ላይ ስምንት ማንጎዎች አሉ። አምስት ብቻ እንዲቀሩ የተወሰኑትን ወደ ቅርጫቱ እናውርድ።",
+          "prompt_en": "There are 8 mangoes on the tree. Let's take some down to the basket so only 5 are left.",
+          "audio_url": "audio/am/ex.sub10.06.mp3",
+          "items": {
+            "thing": "mango",
+            "supply": 0,
+            "mode": "remove"
+          },
+          "targets": [
+            {
+              "id": "tree",
+              "kind": "tree",
+              "start": 8,
+              "need": 5
+            }
+          ],
+          "answer": 5,
+          "hints": [
+            {
+              "am": "ስንት ማውረድ እንዳለብን እናስብ፤ ስምንት ሲቀነስ አምስት።",
+              "en": "How many must come down? 8 take away 5.",
+              "audio_url": "audio/am/ex.sub10.07.mp3"
+            },
+            {
+              "am": "አንድ በአንድ እያወረድን የቀሩትን እንቁጠር።",
+              "en": "Take them down one at a time and count what is left.",
+              "audio_url": "audio/am/ex.sub10.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "sub10.05",
+          "type": "drag_drop_count",
+          "prompt_am": "ዛፉ ላይ አስር ማንጎዎች አሉ። ሶስት ብቻ እንዲቀሩ የተወሰኑትን ወደ ቅርጫቱ እናውርድ።",
+          "prompt_en": "There are 10 mangoes on the tree. Let's take some down to the basket so only 3 are left.",
+          "audio_url": "audio/am/ex.sub10.08.mp3",
+          "items": {
+            "thing": "mango",
+            "supply": 0,
+            "mode": "remove"
+          },
+          "targets": [
+            {
+              "id": "tree",
+              "kind": "tree",
+              "start": 10,
+              "need": 3
+            }
+          ],
+          "answer": 3,
+          "hints": [
+            {
+              "am": "ስንት ማውረድ እንዳለብን እናስብ፤ አስር ሲቀነስ ሶስት።",
+              "en": "How many must come down? 10 take away 3.",
+              "audio_url": "audio/am/ex.sub10.09.mp3"
+            },
+            {
+              "am": "አንድ በአንድ እያወረድን የቀሩትን እንቁጠር።",
+              "en": "Take them down one at a time and count what is left.",
+              "audio_url": "audio/am/ex.sub10.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "sub10.06",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "5",
+            "−",
+            "2",
+            "=",
+            "__"
+          ],
+          "items": [
+            "3",
+            "7",
+            "2"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "3",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "sub10.07",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "7",
+            "−",
+            "3",
+            "=",
+            "__"
+          ],
+          "items": [
+            "4",
+            "10",
+            "3"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "sub10.08",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "9",
+            "−",
+            "5",
+            "=",
+            "__"
+          ],
+          "items": [
+            "4",
+            "5",
+            "14"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "sub10.09",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ቀሩ?",
+          "prompt_en": "How many are left?",
+          "audio_url": "audio/am/ex.sub10.10.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 3
+            },
+            {
+              "v": 5
+            }
+          ],
+          "answer": 3,
+          "visual": {
+            "kind": "takeaway",
+            "thing": "mango",
+            "n": 5,
+            "gone": 2
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "sub10.10",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ቀሩ?",
+          "prompt_en": "How many are left?",
+          "audio_url": "audio/am/ex.sub10.10.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 7
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "takeaway",
+            "thing": "mango",
+            "n": 7,
+            "gone": 3
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "sub10.11",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ቀሩ?",
+          "prompt_en": "How many are left?",
+          "audio_url": "audio/am/ex.sub10.10.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            }
+          ],
+          "answer": 5,
+          "visual": {
+            "kind": "takeaway",
+            "thing": "mango",
+            "n": 9,
+            "gone": 4
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "sub10.12",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "6",
+            "−",
+            "__",
+            "=",
+            "4"
+          ],
+          "items": [
+            "2",
+            "4",
+            "10"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "2",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "sub10.13",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "9",
+            "−",
+            "__",
+            "=",
+            "5"
+          ],
+          "items": [
+            "4",
+            "5",
+            "14"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "sub10.14",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "__",
+            "−",
+            "3",
+            "=",
+            "6"
+          ],
+          "items": [
+            "9",
+            "3",
+            "6"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "9",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "sub10.15",
+          "type": "numpad",
+          "prompt_am": "ሰባት ሲቀነስ ሁለት ስንት ነው?",
+          "prompt_en": "What is seven minus two?",
+          "audio_url": "audio/am/ex.sub10.11.mp3",
+          "answer": 5,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "sub10.16",
+          "type": "numpad",
+          "prompt_am": "አስር ሲቀነስ ስድስት ስንት ነው?",
+          "prompt_en": "What is ten minus six?",
+          "audio_url": "audio/am/ex.sub10.12.mp3",
+          "answer": 4,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "sub10.17",
+          "type": "numpad",
+          "prompt_am": "ዘጠኝ ሲቀነስ ሰባት ስንት ነው?",
+          "prompt_en": "What is nine minus seven?",
+          "audio_url": "audio/am/ex.sub10.13.mp3",
+          "answer": 2,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "sub10.18",
+          "type": "drag_sort",
+          "prompt_am": "ሶስት የሚቀሩትን እና የማይቀሩትን እንለይ።",
+          "prompt_en": "Let's sort: leaves three, doesn't leave three.",
+          "audio_url": "audio/am/ex.sub10.14.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "3 ይቀራል",
+              "en": "Leaves 3"
+            },
+            {
+              "id": "no",
+              "am": "3 አይቀርም",
+              "en": "Not 3"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "5 − 2"
+            },
+            {
+              "id": "b",
+              "label": "6 − 2"
+            },
+            {
+              "id": "c",
+              "label": "7 − 4"
+            },
+            {
+              "id": "d",
+              "label": "4 − 3"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "sub10.19",
+          "type": "drag_sort",
+          "prompt_am": "አራት የሚቀሩትን እና የማይቀሩትን እንለይ።",
+          "prompt_en": "Let's sort: leaves four, doesn't leave four.",
+          "audio_url": "audio/am/ex.sub10.15.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "4 ይቀራል",
+              "en": "Leaves 4"
+            },
+            {
+              "id": "no",
+              "am": "4 አይቀርም",
+              "en": "Not 4"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "7 − 3"
+            },
+            {
+              "id": "b",
+              "label": "8 − 3"
+            },
+            {
+              "id": "c",
+              "label": "9 − 5"
+            },
+            {
+              "id": "d",
+              "label": "6 − 1"
+            },
+            {
+              "id": "e",
+              "label": "10 − 6"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "sub10.20",
+          "type": "drag_sort",
+          "prompt_am": "አምስት የሚቀሩትን እና የማይቀሩትን እንለይ።",
+          "prompt_en": "Let's sort: leaves five, doesn't leave five.",
+          "audio_url": "audio/am/ex.sub10.16.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "5 ይቀራል",
+              "en": "Leaves 5"
+            },
+            {
+              "id": "no",
+              "am": "5 አይቀርም",
+              "en": "Not 5"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "9 − 4"
+            },
+            {
+              "id": "b",
+              "label": "10 − 4"
+            },
+            {
+              "id": "c",
+              "label": "8 − 3"
+            },
+            {
+              "id": "d",
+              "label": "7 − 3"
+            },
+            {
+              "id": "e",
+              "label": "10 − 5"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "race",
+    "questions": [
+      {
+        "id": "sub10.26",
+        "type": "tap_choose",
+        "prompt_am": "አምስት ሲቀነስ አንድ?",
+        "prompt_en": "Five minus one?",
+        "audio_url": "audio/am/ex.sub10.21.mp3",
+        "options": [
+          {
+            "v": 4
+          },
+          {
+            "v": 6
+          }
+        ],
+        "answer": 4,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "sub10.27",
+        "type": "tap_choose",
+        "prompt_am": "ሰባት ሲቀነስ ሁለት?",
+        "prompt_en": "Seven minus two?",
+        "audio_url": "audio/am/ex.sub10.22.mp3",
+        "options": [
+          {
+            "v": 5
+          },
+          {
+            "v": 9
+          }
+        ],
+        "answer": 5,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "sub10.28",
+        "type": "tap_choose",
+        "prompt_am": "ስምንት ሲቀነስ አራት?",
+        "prompt_en": "Eight minus four?",
+        "audio_url": "audio/am/ex.sub10.23.mp3",
+        "options": [
+          {
+            "v": 4
+          },
+          {
+            "v": 3
+          }
+        ],
+        "answer": 4,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "sub10.29",
+        "type": "tap_choose",
+        "prompt_am": "ስድስት ሲቀነስ ሶስት?",
+        "prompt_en": "Six minus three?",
+        "audio_url": "audio/am/ex.sub10.24.mp3",
+        "options": [
+          {
+            "v": 2
+          },
+          {
+            "v": 3
+          }
+        ],
+        "answer": 3,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "sub10.30",
+        "type": "tap_choose",
+        "prompt_am": "አስር ሲቀነስ አምስት?",
+        "prompt_en": "Ten minus five?",
+        "audio_url": "audio/am/ex.sub10.25.mp3",
+        "options": [
+          {
+            "v": 5
+          },
+          {
+            "v": 15
+          }
+        ],
+        "answer": 5,
+        "hints": [
+          {
+            "am": "ሥዕሉን በደንብ እንመልከት።",
+            "en": "Look at the picture carefully.",
+            "audio_url": "audio/am/ex.count10.02.mp3"
+          },
+          {
+            "am": "ቆጥረን እንፈትሽ።",
+            "en": "Count to check.",
+            "audio_url": "audio/am/ex.count10.03.mp3"
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።",
+      "en": "Let's race to Grandma's house! Each right answer moves us forward.",
+      "audio_url": "audio/am/ex.compare.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "sub10.21",
+      "type": "drag_drop_count",
+      "prompt_am": "ዛፉ ላይ ዘጠኝ ማንጎዎች አሉ። ስድስት ብቻ እንዲቀሩ የተወሰኑትን ወደ ቅርጫቱ እናውርድ።",
+      "prompt_en": "There are 9 mangoes on the tree. Let's take some down to the basket so only 6 are left.",
+      "audio_url": "audio/am/ex.sub10.17.mp3",
+      "items": {
+        "thing": "mango",
+        "supply": 0,
+        "mode": "remove"
+      },
+      "targets": [
+        {
+          "id": "tree",
+          "kind": "tree",
+          "start": 9,
+          "need": 6
+        }
+      ],
+      "answer": 6,
+      "hints": [
+        {
+          "am": "ስንት ማውረድ እንዳለብን እናስብ፤ ዘጠኝ ሲቀነስ ስድስት።",
+          "en": "How many must come down? 9 take away 6.",
+          "audio_url": "audio/am/ex.sub10.18.mp3"
+        },
+        {
+          "am": "አንድ በአንድ እያወረድን የቀሩትን እንቁጠር።",
+          "en": "Take them down one at a time and count what is left.",
+          "audio_url": "audio/am/ex.sub10.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sub10.22",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "8",
+        "−",
+        "__",
+        "=",
+        "5"
+      ],
+      "items": [
+        "3",
+        "5",
+        "13"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "3",
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sub10.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ስምንት ሲቀነስ ሶስት አምስት ነው።",
+      "prompt_en": "True or not? Eight minus three is five.",
+      "audio_url": "audio/am/ex.sub10.19.mp3",
+      "statement_am": "ስምንት ሲቀነስ ሶስት አምስት ነው።",
+      "statement_en": "Eight minus three is five.",
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sub10.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "አራት",
+        "en": "four",
+        "audio_url": "audio/am/num.4.mp3"
+      },
+      "options": [
+        {
+          "v": 4
+        },
+        {
+          "v": 14
+        },
+        {
+          "v": 5
+        }
+      ],
+      "answer": 4,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "sub10.25",
+      "type": "numpad",
+      "prompt_am": "አስር ሲቀነስ ሰባት ስንት ነው?",
+      "prompt_en": "What is ten minus seven?",
+      "audio_url": "audio/am/ex.sub10.20.mp3",
+      "answer": 3,
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    }
+  ]
+}

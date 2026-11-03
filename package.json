@@ -2,13 +2,16 @@
   "name": "luminary-kids",
   "version": "0.1.0",
   "private": true,
-  "description": "Luminary Kids — Amharic-first Grade 1 math pilot",
+  "description": "Luminary Kids — Amharic-first hands-on math lessons (Grades 1–2)",
   "scripts": {
     "build": "node build.js",
-    "test": "node --test test/engine.test.js",
+    "test": "node --test test/engine.test.js test/content.test.js",
     "start": "node server.js",
-    "voice:sample": "node tools/azure-tts.js --sample",
-    "voice": "node tools/azure-tts.js"
+    "voice": "python3 tools/girl-voice.py",
+    "content": "node content/build.js",
+    "e2e": "python3 test/lessons_e2e.py http://localhost:3000",
+    "videos": "python3 animations/render.py --all --std",
+    "voice:azure": "node tools/azure-tts.js"
   },
   "engines": {
     "node": ">=20"

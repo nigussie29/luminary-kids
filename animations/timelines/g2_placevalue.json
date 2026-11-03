@@ -1,0 +1,43 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.133,
+  "step0": 10.967,
+  "step1": 15.167,
+  "step2": 18.1
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "አስሮች እና አንዶች",
+   "en": "Tens and ones",
+   "end": 2.933
+  },
+  {
+   "start": 4.133,
+   "am": "አያቴ እንጨቶችን በአስር በአስር ታስራለች። እስራቶቹን ስንቆጥር ትልልቅ ቁጥሮች ቀላል ይሆናሉ።",
+   "en": "Grandma ties sticks in bundles of ten. Counting bundles makes big numbers easy.",
+   "end": 10.967
+  },
+  {
+   "start": 10.967,
+   "am": "ሶስት የአስር እስሮች እና አራት ነጠላ እንጨቶች አሉ።",
+   "en": "There are three bundles of ten and four single sticks.",
+   "end": 15.167
+  },
+  {
+   "start": 15.167,
+   "am": "ሶስት አስሮች ሰላሳ ናቸው።",
+   "en": "Three tens are thirty.",
+   "end": 18.1
+  },
+  {
+   "start": 18.1,
+   "am": "ሰላሳ እና አራት ሰላሳ አራት ነው።",
+   "en": "Thirty and four is thirty-four.",
+   "end": 21.667
+  }
+ ],
+ "duration": 26.967,
+ "lesson": "g2_placevalue"
+}

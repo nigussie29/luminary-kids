@@ -1,0 +1,1003 @@
+{
+  "id": "add10",
+  "grade": 1,
+  "n": 4,
+  "title": {
+    "am": "የባጃጅ ጉዞ",
+    "en": "The bajaj ride",
+    "audio_url": "audio/am/lesson.add10.title.mp3"
+  },
+  "place": "road",
+  "video": {
+    "src": "video/add10.mp4",
+    "src_low": "video/low/add10.mp4",
+    "poster": "video/add10.jpg",
+    "captions": {
+      "am": "video/add10.am.vtt",
+      "en": "video/add10.en.vtt"
+    },
+    "duration": 26.433,
+    "checkpoints": [
+      {
+        "t": 13.18,
+        "at": "step:1",
+        "exercise": {
+          "id": "add10.01",
+          "type": "tap_choose",
+          "prompt_am": "ባጃጁ ውስጥ ስንት ልጆች አሉ?",
+          "prompt_en": "How many children are in the bajaj?",
+          "audio_url": "audio/am/ex.add10.01.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            }
+          ],
+          "answer": 3,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 15.88,
+        "at": "step:2",
+        "exercise": {
+          "id": "add10.02",
+          "type": "tap_choose",
+          "prompt_am": "አሁን ባጃጁ ውስጥ ስንት ልጆች አሉ?",
+          "prompt_en": "How many children are in the bajaj now?",
+          "audio_url": "audio/am/ex.add10.02.mp3",
+          "options": [
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            },
+            {
+              "v": 6
+            }
+          ],
+          "answer": 5,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 10.38,
+      "end": 26.433,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "add10.03",
+          "type": "drag_drop_count",
+          "prompt_am": "ባጃጁ ውስጥ አራት ልጆች አሉ። በአጠቃላይ ስድስት እንዲሆኑ ተጨማሪ እናስገባ።",
+          "prompt_en": "There are 4 children in the bajaj. Let's add more so there are 6 in all.",
+          "audio_url": "audio/am/ex.add10.03.mp3",
+          "items": {
+            "thing": "child",
+            "supply": 6,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "bajaj",
+              "kind": "bajaj",
+              "start": 4,
+              "need": 6
+            }
+          ],
+          "answer": 6,
+          "hints": [
+            {
+              "am": "ቀድሞ ያሉትን አንቆጥርም፤ ከእነሱ ቀጥለን እንቁጠር።",
+              "en": "Start from the ones already there and count on.",
+              "audio_url": "audio/am/ex.teens.13.mp3"
+            },
+            {
+              "am": "ከቁጥሩ ቀጥለን አንድ በአንድ እንጨምር።",
+              "en": "Add one at a time and count on.",
+              "audio_url": "audio/am/ex.teens.14.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "add10.04",
+          "type": "drag_drop_count",
+          "prompt_am": "ባጃጁ ውስጥ አራት ልጆች አሉ። በአጠቃላይ ሰባት እንዲሆኑ ተጨማሪ እናስገባ።",
+          "prompt_en": "There are 4 children in the bajaj. Let's add more so there are 7 in all.",
+          "audio_url": "audio/am/ex.add10.04.mp3",
+          "items": {
+            "thing": "child",
+            "supply": 6,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "bajaj",
+              "kind": "bajaj",
+              "start": 4,
+              "need": 7
+            }
+          ],
+          "answer": 7,
+          "hints": [
+            {
+              "am": "ቀድሞ ያሉትን አንቆጥርም፤ ከእነሱ ቀጥለን እንቁጠር።",
+              "en": "Start from the ones already there and count on.",
+              "audio_url": "audio/am/ex.teens.13.mp3"
+            },
+            {
+              "am": "ከቁጥሩ ቀጥለን አንድ በአንድ እንጨምር።",
+              "en": "Add one at a time and count on.",
+              "audio_url": "audio/am/ex.teens.14.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "add10.05",
+          "type": "drag_drop_count",
+          "prompt_am": "ባጃጁ ውስጥ አምስት ልጆች አሉ። በአጠቃላይ ዘጠኝ እንዲሆኑ ተጨማሪ እናስገባ።",
+          "prompt_en": "There are 5 children in the bajaj. Let's add more so there are 9 in all.",
+          "audio_url": "audio/am/ex.add10.05.mp3",
+          "items": {
+            "thing": "child",
+            "supply": 7,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "bajaj",
+              "kind": "bajaj",
+              "start": 5,
+              "need": 9
+            }
+          ],
+          "answer": 9,
+          "hints": [
+            {
+              "am": "ቀድሞ ያሉትን አንቆጥርም፤ ከእነሱ ቀጥለን እንቁጠር።",
+              "en": "Start from the ones already there and count on.",
+              "audio_url": "audio/am/ex.teens.13.mp3"
+            },
+            {
+              "am": "ከቁጥሩ ቀጥለን አንድ በአንድ እንጨምር።",
+              "en": "Add one at a time and count on.",
+              "audio_url": "audio/am/ex.teens.14.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "add10.06",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "2",
+            "+",
+            "__",
+            "=",
+            "5"
+          ],
+          "items": [
+            "3",
+            "5",
+            "2"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "3",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "add10.07",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "3",
+            "+",
+            "__",
+            "=",
+            "7"
+          ],
+          "items": [
+            "4",
+            "3",
+            "10"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "add10.08",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "__",
+            "+",
+            "5",
+            "=",
+            "9"
+          ],
+          "items": [
+            "4",
+            "5",
+            "14"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "add10.09",
+          "type": "tap_choose",
+          "prompt_am": "ሁለት ሲደመር አራት ስንት ነው?",
+          "prompt_en": "What is two plus four?",
+          "audio_url": "audio/am/ex.add10.06.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 7
+            }
+          ],
+          "answer": 6,
+          "visual": {
+            "kind": "group",
+            "thing": "orange",
+            "n": 6
+          },
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "add10.10",
+          "type": "tap_choose",
+          "prompt_am": "አምስት ሲደመር ሶስት ስንት ነው?",
+          "prompt_en": "What is five plus three?",
+          "audio_url": "audio/am/ex.add10.07.mp3",
+          "options": [
+            {
+              "v": 7
+            },
+            {
+              "v": 8
+            },
+            {
+              "v": 9
+            }
+          ],
+          "answer": 8,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "add10.11",
+          "type": "tap_choose",
+          "prompt_am": "ስድስት ሲደመር አራት ስንት ነው?",
+          "prompt_en": "What is six plus four?",
+          "audio_url": "audio/am/ex.add10.08.mp3",
+          "options": [
+            {
+              "v": 9
+            },
+            {
+              "v": 10
+            },
+            {
+              "v": 11
+            }
+          ],
+          "answer": 10,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "add10.12",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "4",
+            "+",
+            "2",
+            "=",
+            "__"
+          ],
+          "items": [
+            "6",
+            "5",
+            "8"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "6",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "add10.13",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "5",
+            "+",
+            "4",
+            "=",
+            "__"
+          ],
+          "items": [
+            "9",
+            "8",
+            "1"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "9",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "add10.14",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "6",
+            "+",
+            "3",
+            "=",
+            "__"
+          ],
+          "items": [
+            "9",
+            "3",
+            "8"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "9",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "add10.15",
+          "type": "numpad",
+          "prompt_am": "ስድስት ሲደመር ሶስት ስንት ነው?",
+          "prompt_en": "What is six plus three?",
+          "audio_url": "audio/am/ex.add10.09.mp3",
+          "answer": 9,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "add10.16",
+          "type": "numpad",
+          "prompt_am": "ሰባት ሲደመር ሁለት ስንት ነው?",
+          "prompt_en": "What is seven plus two?",
+          "audio_url": "audio/am/ex.add10.10.mp3",
+          "answer": 9,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "add10.17",
+          "type": "numpad",
+          "prompt_am": "አራት ሲደመር አምስት ስንት ነው?",
+          "prompt_en": "What is four plus five?",
+          "audio_url": "audio/am/ex.add10.11.mp3",
+          "answer": 9,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "add10.18",
+          "type": "drag_sort",
+          "prompt_am": "ስምንት የሚሆኑትን እና የማይሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: makes eight, doesn't make eight.",
+          "audio_url": "audio/am/ex.add10.12.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "8 ነው",
+              "en": "Makes 8"
+            },
+            {
+              "id": "no",
+              "am": "8 አይደለም",
+              "en": "Not 8"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "5 + 3"
+            },
+            {
+              "id": "b",
+              "label": "4 + 3"
+            },
+            {
+              "id": "c",
+              "label": "6 + 2"
+            },
+            {
+              "id": "d",
+              "label": "2 + 5"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "add10.19",
+          "type": "drag_sort",
+          "prompt_am": "ዘጠኝ የሚሆኑትን እና የማይሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: makes nine, doesn't make nine.",
+          "audio_url": "audio/am/ex.add10.13.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "9 ነው",
+              "en": "Makes 9"
+            },
+            {
+              "id": "no",
+              "am": "9 አይደለም",
+              "en": "Not 9"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "5 + 4"
+            },
+            {
+              "id": "b",
+              "label": "6 + 2"
+            },
+            {
+              "id": "c",
+              "label": "7 + 2"
+            },
+            {
+              "id": "d",
+              "label": "3 + 5"
+            },
+            {
+              "id": "e",
+              "label": "8 + 1"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "add10.20",
+          "type": "drag_sort",
+          "prompt_am": "አስር የሚሆኑትን እና የማይሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: makes ten, doesn't make ten.",
+          "audio_url": "audio/am/ex.add10.14.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "10 ነው",
+              "en": "Makes 10"
+            },
+            {
+              "id": "no",
+              "am": "10 አይደለም",
+              "en": "Not 10"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "6 + 4"
+            },
+            {
+              "id": "b",
+              "label": "7 + 2"
+            },
+            {
+              "id": "c",
+              "label": "3 + 7"
+            },
+            {
+              "id": "d",
+              "label": "5 + 4"
+            },
+            {
+              "id": "e",
+              "label": "8 + 2"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "balloon",
+    "rounds": [
+      {
+        "target": 7,
+        "balloons": [
+          3,
+          4,
+          2,
+          6,
+          1,
+          5
+        ]
+      },
+      {
+        "target": 9,
+        "balloons": [
+          4,
+          5,
+          7,
+          3,
+          2,
+          8
+        ]
+      },
+      {
+        "target": 10,
+        "balloons": [
+          6,
+          3,
+          4,
+          8,
+          7,
+          5
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ሁለት ፊኛዎችን ፈንድተን የተጠየቀውን ቁጥር እንሥራ።",
+      "en": "Pop two balloons that add up to the number.",
+      "audio_url": "audio/am/ex.add10.16.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "add10.21",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "2",
+        "+",
+        "__",
+        "=",
+        "9"
+      ],
+      "items": [
+        "7",
+        "9",
+        "6"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "7",
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    },
+    {
+      "id": "add10.22",
+      "type": "drag_drop_count",
+      "prompt_am": "ባጃጁ ውስጥ አምስት ልጆች አሉ። በአጠቃላይ ዘጠኝ እንዲሆኑ ተጨማሪ እናስገባ።",
+      "prompt_en": "There are 5 children in the bajaj. Let's add more so there are 9 in all.",
+      "audio_url": "audio/am/ex.add10.05.mp3",
+      "items": {
+        "thing": "child",
+        "supply": 7,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "bajaj",
+          "kind": "bajaj",
+          "start": 5,
+          "need": 9
+        }
+      ],
+      "answer": 9,
+      "hints": [
+        {
+          "am": "ቀድሞ ያሉትን አንቆጥርም፤ ከእነሱ ቀጥለን እንቁጠር።",
+          "en": "Start from the ones already there and count on.",
+          "audio_url": "audio/am/ex.teens.13.mp3"
+        },
+        {
+          "am": "ከቁጥሩ ቀጥለን አንድ በአንድ እንጨምር።",
+          "en": "Add one at a time and count on.",
+          "audio_url": "audio/am/ex.teens.14.mp3"
+        }
+      ]
+    },
+    {
+      "id": "add10.23",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሰባት",
+        "en": "seven",
+        "audio_url": "audio/am/num.7.mp3"
+      },
+      "options": [
+        {
+          "v": 7
+        },
+        {
+          "v": 6
+        },
+        {
+          "v": 9
+        }
+      ],
+      "answer": 7,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "add10.24",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? አራት ሲደመር አራት ዘጠኝ ነው።",
+      "prompt_en": "True or not? Four plus four is nine.",
+      "audio_url": "audio/am/ex.add10.15.mp3",
+      "statement_am": "አራት ሲደመር አራት ዘጠኝ ነው።",
+      "statement_en": "Four plus four is nine.",
+      "answer": false,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "add10.25",
+      "type": "numpad",
+      "prompt_am": "ሰባት ሲደመር ሁለት ስንት ነው?",
+      "prompt_en": "What is seven plus two?",
+      "audio_url": "audio/am/ex.add10.10.mp3",
+      "answer": 9,
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+          "en": "Both sides must be equal.",
+          "audio_url": "audio/am/ex.teens.10.mp3"
+        },
+        {
+          "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+          "en": "Check by counting on your fingers or on a number line.",
+          "audio_url": "audio/am/ex.teens.11.mp3"
+        }
+      ]
+    }
+  ]
+}

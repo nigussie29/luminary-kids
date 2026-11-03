@@ -2,3 +2,7 @@ node_modules/
 .DS_Store
 *.log
 audio/sample/
+animations/media/
+animations/lessons.json
+__pycache__/
+data/

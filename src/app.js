@@ -112,12 +112,12 @@
   const LAND = {
     am: {
       h1a: 'ሂሳብ በአማርኛ', h1b: 'በትንንሽ ጀብዱዎች።',
-      lead: 'ሉሚናሪ ኪድስ ከ5–8 ዓመት ያሉ ልጆች እስከ 20 ያሉ ቁጥሮችን እንዲለማመዱ ይረዳል። መሪያቸው ዋሊ የተባለ የዋልያ ግልገል ሲሆን እያንዳንዱን እርምጃ በአማርኛ ያብራራል፤ እንግሊዝኛም አብሮ ይገኛል።',
+      lead: 'ሉሚናሪ ኪድስ ከ5–8 ዓመት ያሉ ልጆች ሂሳብን በእጃቸው እየሠሩ እንዲማሩ ይረዳል፦ አጭር ቪዲዮ፣ የመጎተት እና የመንካት ልምምዶች፣ ጨዋታ እና ፈተና። መሪያቸው ዋሊ የተባለ የዋልያ ግልገል ሲሆን እያንዳንዱን እርምጃ በአማርኛ ያብራራል፤ እንግሊዝኛም አብሮ ይገኛል።',
       play: 'የናሙና ትምህርት ይሞክሩ', setup: 'ለልጅዎ ያዘጋጁ', bubble: 'ሰላም! እኔ ዋሊ ነኝ። አብረን እንቁጠር?'
     },
     en: {
       h1a: 'Math in Amharic,', h1b: 'one small adventure at a time.',
-      lead: 'Luminary Kids helps children aged 5 to 8 practise numbers to 20 with Wali, a young Walia ibex who explains every step in Amharic, with English on tap.',
+      lead: 'Luminary Kids helps children aged 5 to 8 learn math by doing: a short story video, then dragging, tapping and playing their way through each idea, with Wali, a young Walia ibex who explains every step in Amharic, with English on tap.',
       play: 'Play a sample lesson', setup: 'Set up for your child', bubble: "Hello! I'm Wali. Shall we count together?"
     }
   };
@@ -127,7 +127,7 @@
     const reserve = S.reserve ? `<div class="panel" role="status"><b>Pilot checkout opens with wave 1.</b><p>To reserve a place now, email the Luminary Academy team with your child's grade and your city. We reply within two working days.</p><div class="copyrow"><code id="mail">support@theluminaryacademy.net</code><button class="btn small alt" data-act="copy" data-target="mail">Copy address</button></div></div>` : '';
     return `<main>
     <section class="hero"><div class="wrap">
-      <div><span class="eyebrow">Grade 1 pilot · Numbers to 20</span>
+      <div><span class="eyebrow">Grades 1–2 · Hands-on lessons</span>
         <h1>${lang() === 'am' ? `<span class="am" lang="am">${T.h1a}</span><span class="am" lang="am" style="display:block">${T.h1b}</span>` : `<span class="am" lang="am">ሂሳብ በአማርኛ</span>${T.h1a} ${T.h1b}`}</h1>
         <p class="lead ${lang() === 'am' ? 'am' : ''}">${esc(T.lead)}</p>
         <div class="ctas"><button class="btn adey" data-act="sample" data-skill="count10">${esc(T.play)}</button><button class="btn alt" data-act="gate">${esc(T.setup)}</button></div>
@@ -146,8 +146,8 @@
     </div></section>
 
     <section class="band"><div class="wrap">
-      <h2>How a lesson works</h2><p class="intro">Each lesson takes about 10 minutes and follows the same four steps.</p>
-      <ol class="steps"><li><b>Story</b><p>A short scene from home, the market or school sets up the problem.</p></li><li><b>Example</b><p>Wali works one problem out loud with a picture.</p></li><li><b>Practice</b><p>Six questions that adjust to your child, with hints and a second try.</p></li><li><b>Game</b><p>Your child builds numbers on a ten frame by tapping.</p></li></ol>
+      <h2>How a lesson works</h2><p class="intro">Each lesson takes about 10–15 minutes, and most of it is your child doing, not watching: 15–25 drags, taps and answers.</p>
+      <ol class="steps"><li><b>Watch &amp; tap</b><p>A story video under a minute, narrated in Amharic. It pauses to ask your child a question before it carries on.</p></li><li><b>Try it</b><p>Six hands-on exercises: drag oranges into a basket, build numbers with tens and ones, pay at the shop. They get harder or easier as your child goes, with gentle hints.</p></li><li><b>Play</b><p>A mini-game with the same skill: the coffee ceremony, the market, balloon pop, a race to Grandma's or memory match.</p></li><li><b>Challenge</b><p>Five quick questions, then stars, a badge and new clothes for your child's character.</p></li></ol>
     </div></section>
 
     <section class="band tint"><div class="wrap">
@@ -178,8 +178,8 @@
       <h2>Questions parents ask</h2>
       <details class="faq"><summary>Does my child need to read Amharic?</summary><p>No. Every question has a picture, and a listen button reads it aloud. Today the listen button uses your device's Amharic voice when it has one; recorded narration by an Amharic-speaking teacher is being added during the pilot.</p></details>
       <details class="faq"><summary>Which curriculum does it follow?</summary><p>The unit covers Grade 1 number skills found in international standards such as the US Common Core. Ethiopian teachers are reviewing how each lesson lines up with the Ethiopian Grade 1 syllabus, and we will publish that mapping once it is checked.</p></details>
-      <details class="faq"><summary>What ages is it for?</summary><p>Children about 5 to 8, or anyone working on numbers to 20. The starting game finds the right level.</p></details>
-      <details class="faq"><summary>Does it work on a phone with weak internet?</summary><p>Yes, it runs in a phone browser and the whole lesson loads at once, so it keeps working if the signal drops mid-lesson. Full offline use is not available yet.</p></details>
+      <details class="faq"><summary>What ages is it for?</summary><p>Children about 5 to 8: Grade 1 works with numbers to 20, Grade 2 with numbers to 100, money, equal groups and halves. The starting game finds the right level for quick practice.</p></details>
+      <details class="faq"><summary>Does it work on a phone with weak internet?</summary><p>Yes. It runs in a phone browser, switches to small videos on slow connections, and keeps working if the signal drops mid-lesson. On the grown-ups page you can download every lesson so it works with no internet at all.</p></details>
       <details class="faq"><summary>What information do you collect?</summary><p>In the pilot, progress is saved only in this browser on this device, under a nickname you choose. We do not ask for your child's full name, photo or email. You can copy a backup code or delete everything from the grown-ups page. Details are in our <button class="linkbtn inline" data-act="legal" data-v="privacy">privacy notice</button>.</p></details>
       <details class="faq"><summary>Can our Saturday school or tutoring center use it?</summary><p>Yes. Class accounts with teacher assignments are planned after the family pilot. Email us to join the school waiting list.</p></details>
     </div></section>
@@ -200,20 +200,12 @@
     const recTitle = rec.kind === 'diagnostic' ? { am: LK.ui.am.diagnostic, en: LK.ui.en.diagnostic } : recLesson.title;
     const recLabel = rec.kind === 'review' ? { am: LK.ui.am.review, en: LK.ui.en.review } : rec.kind === 'complete' ? { am: LK.ui.am.unitDone, en: LK.ui.en.unitDone } : { am: LK.ui.am.recommended, en: LK.ui.en.recommended };
     const hello = p ? { am: `ሰላም ${p.name}!`, en: `Hello ${p.name}!` } : { am: 'ሰላም!', en: 'Hello!' };
-    const stones = LK.lessons.map((l) => {
-      const sk = L.skills[l.id], locked = L.diagnosticDone && !LK.prereqsMet(L, l.id) && sk.status !== 'mastered';
-      return `<li><button class="stone" data-act="lesson" data-skill="${l.id}" data-locked="${locked ? 1 : 0}">${A.badge(l.n, sk.badge, l.title.en)}<span>${bi(l.title)}</span>${levelStones(sk)}</button></li>`;
-    }).join('');
-    const badges = LK.lessons.filter((l) => L.skills[l.id].badge).map((l) => A.badge(l.n, true, LK.badges[l.id].en)).join('');
     return `<main class="wrap play home">
       <div class="greet">${A.wali('welcome', 'Wali waving')}<div><h1 style="font-size:1.9rem">${bi(hello)}</h1></div></div>
-      <div class="next-card">${A.scene(recLesson ? recLesson.scene : 'garden', 'Lesson scene')}<div class="body"><span class="eyebrow">${bi(recLabel)}</span><h2>${bi(recTitle)}</h2>
-        <button class="btn adey" data-act="${rec.kind === 'diagnostic' ? 'diag' : rec.kind === 'review' ? 'review' : 'lesson'}" data-skill="${rec.skill || ''}">${uiBi('start')}</button></div></div>
+      ${LK.adv.homeHTML()}
+      <div class="next-card quick">${A.scene(recLesson ? recLesson.scene : 'garden', 'Lesson scene')}<div class="body"><span class="eyebrow">${bi({ am: 'ፈጣን ልምምድ', en: 'Quick practice' })} · ${bi(recLabel)}</span><h2>${bi(recTitle)}</h2>
+        <button class="btn alt" data-act="${rec.kind === 'diagnostic' ? 'diag' : rec.kind === 'review' ? 'review' : 'lesson'}" data-skill="${rec.skill || ''}">${uiBi('start')}</button></div></div>
       ${miniHub()}
-      <h2 style="font-size:1.3rem">${uiBi('lessons')}</h2>
-      <ol class="path">${stones}</ol>
-      <div class="garden"><b>${bi({ am: 'የዋሊ የአበባ ቦታ', en: "Wali's flower garden" })}</b><div class="row">${badges || `<span class="muted">${bi({ am: 'ትምህርት ሲችሉ አበባ ይበቅላል።', en: 'A flower grows for every lesson you master.' })}</span>`}</div></div>
-      ${S.run && S.run.guest ? '' : ''}
     </main>`;
   }
 
@@ -456,7 +448,8 @@
           <span class="muted">Choose a picture</span><div class="kids" role="radiogroup">${A.kidIds.map((k, i) => `<label class="kidbtn" style="display:inline-block"><input type="radio" name="avatar" value="${k}" ${i === 0 ? 'checked' : ''} style="position:absolute;opacity:0">${A.kid(k, k)}</label>`).join('')}</div>
           <div class="actions"><button class="btn" type="submit">Add child</button>${p ? `<button class="btn alt small" type="button" data-act="remove-kid" data-id="${p.id}">Remove ${esc(p.name)}</button>` : ''}</div></form></div>
       ${confirm}
-      <div class="section"><h2 style="font-size:1.3rem">${p ? `${esc(p.name)}'s progress` : 'Progress'}</h2>${report}</div>
+      ${LK.adv.parentHTML(p)}
+      <div class="section"><h2 style="font-size:1.3rem">${p ? `${esc(p.name)}'s practice` : 'Practice'}</h2>${report}</div>
       <div class="section"><h2 style="font-size:1.3rem">Settings</h2>
         <label class="toggle"><input type="checkbox" id="set-en" data-set="showEn" ${s.showEn ? 'checked' : ''}> Show English under Amharic</label>
         <label class="toggle"><input type="checkbox" id="set-motion" data-set="reduce" ${s.reduce ? 'checked' : ''}> Reduce motion</label>
@@ -556,10 +549,14 @@
     else if (S.view === 'home') main = home();
     else if (S.view === 'run') main = runView();
     else if (S.view === 'mini') main = miniView();
+    else if (S.view === 'adv') main = LK.adv.view();
+    else if (S.view === 'adv-wardrobe') main = LK.adv.wardrobeHTML();
     else if (S.view === 'gate') main = gateView();
     else if (S.view === 'parents') main = parentsView();
     else if (S.view === 'privacy' || S.view === 'terms') main = legalView(S.view);
     root.innerHTML = header() + main;
+    if (S.view === 'adv') LK.adv.paint();
+    if (S.view === 'parents') LK.adv.paintParents();
   }
   function go(view) { S.view = view; render(); window.scrollTo(0, 0); }
 
@@ -618,7 +615,7 @@
       go(active() || S.guest ? 'home' : 'landing'); return;
     }
     if (act === 'gate') { S.gate = { a: 6 + Math.floor(Math.random() * 4), b: 6 + Math.floor(Math.random() * 4), err: false }; if (R) { closeRun(); S.run = null; } go('gate'); return; }
-    if (act === 'sample') { S.guest = LK.newLearner(); S.guest.diagnosticDone = true; newRun('lesson', b.getAttribute('data-skill'), true); window.scrollTo(0, 0); return; }
+    if (act === 'sample') { if (!active()) { S.guest = S.guest || LK.newLearner(); S.guest.diagnosticDone = true; } LK.sfx.unlock && LK.sfx.unlock(); LK.adv.start(b.getAttribute('data-skill')); window.scrollTo(0, 0); return; }
     if (act === 'lesson') { const sk = b.getAttribute('data-skill'); if (R) closeRun(); newRun('lesson', sk, R ? R.guest : !active()); window.scrollTo(0, 0); return; }
     if (act === 'review') { newRun('review', b.getAttribute('data-skill')); return; }
     if (act === 'diag') { newRun('diag', null); return; }
@@ -714,6 +711,15 @@
     }
   }
 
+  // ---------- hands-on lessons ----------
+  LK.adv.init({
+    say, save, learner, go, render, active, toast,
+    lang: () => lang(), st: () => st(),
+    isGuest: () => !active(),
+    ensureLearner: () => { if (!learner()) { S.guest = LK.newLearner(); S.guest.diagnosticDone = true; } return learner(); },
+    homeOrLanding: () => (active() || S.guest ? 'home' : 'landing')
+  });
+
   // ---------- start ----------
   const route = (location.hash || '').slice(1) || location.pathname.replace(/^\//, '');
   if (route === 'privacy' || route === 'terms') S.view = route;
@@ -721,5 +727,5 @@
   else if (active()) S.view = 'home';
   render();
   NR.load().then((n) => { if (n) S.clips = n; });
-  LK.app = { S, DB, render, newRun };
+  LK.app = { S, DB, render, newRun, say, save, learner, go, active };
 })();
