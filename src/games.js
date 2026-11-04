@@ -101,7 +101,8 @@
     }
     function advance() { r++; if (r < rounds.length) round(); else api.end(); }
     round();
-    return { solve: () => { if (!api.foot.querySelector('button')) return; round.demo().then(() => { const b = api.foot.querySelector('button'); if (b) b.click(); }); } };
+    let busy = false; // a demo already pouring must not be restarted
+    return { solve: () => { if (busy || !api.foot.querySelector('button')) return; busy = true; round.demo().then(() => { busy = false; const b = api.foot.querySelector('button'); if (b) b.click(); }); } };
   };
 
   // ---- Market run: spend exactly the budget ----

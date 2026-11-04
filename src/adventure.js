@@ -88,11 +88,15 @@
     g2_groups: ['የቡና ቡድን', 'Coffee groups'], g2_birr: ['የብር ቆጣሪ', 'Birr counter'], g2_halves: ['የእንጀራ አካፋይ', 'Injera sharer'],
     g3_hundreds: ['የመቶዎች ጌታ', 'Hundreds master'], g3_add3d: ['የብርቱካን ደማሪ', 'Orchard adder'], g3_sub3d: ['የትምህርት ቤት ቀናሽ', 'School subtractor'],
     g3_times: ['የማባዛት ጀግና', 'Times hero'], g3_share: ['ፍትሃዊ አካፋይ', 'Fair sharer'], g3_fractions: ['የክፍልፋይ ጌታ', 'Fraction master'],
-    stars50: ['ሃምሳ ኮከቦች', '50 stars'], streak3: ['ሶስት ቀናት በተከታታይ', '3 days in a row'], streak7: ['አንድ ሳምንት በተከታታይ', '7 days in a row'], stars30: ['ሰላሳ ኮከቦች', '30 stars']
+    g3_round: ['ብልህ አጠጋጋኝ', 'Clever rounder'], g3_tables: ['የሰንጠረዥ ጌታ', 'Times-table master'], g3_divide: ['የቡድን አካፋይ', 'Team divider'],
+    g3_fracline: ['የመንገድ ክፍልፋይ', 'Fraction walker'], g3_measure: ['ጎበዝ ለኪ', 'Good measurer'], g3_time: ['የሰዓት ጠባቂ', 'Time keeper'],
+    g3_shapes: ['የቅርጽ መርማሪ', 'Shape detective'], g3_area: ['የወለል ሰሪ', 'Floor builder'], g3_graphs: ['የግራፍ አንባቢ', 'Graph reader'],
+    stars50: ['ሃምሳ ኮከቦች', '50 stars'], stars75: ['ሰባ አምስት ኮከቦች', '75 stars'], streak3: ['ሶስት ቀናት በተከታታይ', '3 days in a row'], streak7: ['አንድ ሳምንት በተከታታይ', '7 days in a row'], stars30: ['ሰላሳ ኮከቦች', '30 stars']
   };
-  const BADGE_ICON = { streak3: '🔥', streak7: '🌟', stars30: '🏅', stars50: '🏆' };
+  const BADGE_ICON = { streak3: '🔥', streak7: '🌟', stars30: '🏅', stars50: '🏆', stars75: '👑' };
   const PLACE_ICON = { garden: '🌼', market: '🍊', school: '☕', road: '🛺', tree: '🥭', meadow: '🌻', home: '🪵', library: '📚', ceremony: '🫖', shop: '💵', kitchen: '🫓',
-    store: '📦', orchard: '🧺', schoolyard: '🏫', field: '🌱', village: '🏡', feast: '🎉' };
+    store: '📦', orchard: '🧺', schoolyard: '🏫', field: '🌱', village: '🏡', feast: '🎉',
+    farm: '🍒', eggs: '🥚', playground: '⚽', path: '🛤️', scales: '⚖️', clocktower: '🕰️', house: '🏠', floor: '🧱', chart: '📊' };
   const GRADES = [1, 2, 3], MAP_END = { 1: '🏔️', 2: '🏰', 3: '🌄' };
 
   // ---------------- home: adventure map ----------------
@@ -338,6 +342,7 @@
     if (p.streak.days >= 7) add('streak7');
     if (totalStars(p) >= 30) add('stars30');
     if (totalStars(p) >= 50) add('stars50');
+    if (totalStars(p) >= 75) add('stars75');
     const unlocked = CLOTHES.filter((c) => c.stars > before && c.stars <= totalStars(p));
     unlocked.forEach((c) => { if (!p.wardrobe.owned.includes(c.id)) p.wardrobe.owned.push(c.id); });
     p.log.push({ id: s.id, at: Date.now(), stars, mins: Math.round((Date.now() - s.started) / 6e4), level: s.level, firstTry: rec.firstTry, total: rec.total });

@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.333,
+  "step0": 9.967,
+  "step1": 13.6,
+  "step2": 17.233,
+  "step3": 20.867
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ቅርጾች",
+   "en": "Shapes",
+   "end": 3.333
+  },
+  {
+   "start": 4.333,
+   "am": "በመስኮት፣ በበር እና በጣሪያ ላይ ብዙ ቅርጾች አሉ። ጎኖቻቸውን እና ማዕዘኖቻቸውን እንቁጠር።",
+   "en": "Windows, doors and roofs have many shapes. Let us count their sides and corners.",
+   "end": 9.967
+  },
+  {
+   "start": 9.967,
+   "am": "ሶስት ማዕዘን ሶስት ጎኖች እና ሶስት ማዕዘኖች አሉት።",
+   "en": "A triangle has three sides and three corners.",
+   "end": 13.6
+  },
+  {
+   "start": 13.6,
+   "am": "አራት ማዕዘን አራት ጎኖች አሉት፤ ተቃራኒ ጎኖቹ እኩል ናቸው።",
+   "en": "A rectangle has four sides, and its opposite sides are equal.",
+   "end": 17.233
+  },
+  {
+   "start": 17.233,
+   "am": "ካሬ አራት እኩል ጎኖች እና አራት ቀጥ ያሉ ማዕዘኖች አሉት።",
+   "en": "A square has four equal sides and four square corners.",
+   "end": 20.867
+  },
+  {
+   "start": 20.867,
+   "am": "አራት ጎኖች ያሉት ቅርጽ ሁሉ ባለ አራት ጎን ይባላል።",
+   "en": "Every shape with four sides is called a quadrilateral.",
+   "end": 24.8
+  }
+ ],
+ "duration": 28.4,
+ "lesson": "g3_shapes"
+}

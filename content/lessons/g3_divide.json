@@ -1,0 +1,1029 @@
+{
+  "id": "g3_divide",
+  "grade": 3,
+  "n": 9,
+  "title": {
+    "am": "ማካፈል እና ማባዛት",
+    "en": "Division and multiplication",
+    "audio_url": "audio/am/lesson.g3_divide.title.mp3"
+  },
+  "place": "playground",
+  "video": {
+    "src": "video/g3_divide.mp4",
+    "src_low": "video/low/g3_divide.mp4",
+    "poster": "video/g3_divide.jpg",
+    "captions": {
+      "am": "video/g3_divide.am.vtt",
+      "en": "video/g3_divide.en.vtt"
+    },
+    "duration": 28.6,
+    "checkpoints": [
+      {
+        "t": 13.75,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_divide.01",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ቡድኖች ሆኑ?",
+          "prompt_en": "How many teams are there?",
+          "audio_url": "audio/am/ex.g3_divide.01.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 6
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "thing": "child"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 21.02,
+        "at": "step:3",
+        "exercise": {
+          "id": "g3_divide.02",
+          "type": "tap_choose",
+          "prompt_am": "ሃያ አራት ሲካፈል ለስድስት አራት መሆኑን የሚያሳየው የትኛው ማባዛት ነው?",
+          "prompt_en": "Which multiplication shows that twenty-four divided by six is four?",
+          "audio_url": "audio/am/ex.g3_divide.02.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "4 × 6 = 24"
+            },
+            {
+              "v": "b",
+              "label": "4 + 6 = 10"
+            },
+            {
+              "v": "c",
+              "label": "6 × 6 = 36"
+            }
+          ],
+          "answer": "a",
+          "visual": null,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 10.12,
+      "end": 28.6,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_divide.03",
+          "type": "drag_drop_count",
+          "prompt_am": "ስምንት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ አራት አራት እናድርግ።",
+          "prompt_en": "Let's put 8 oranges on plates, 4 on each plate.",
+          "audio_url": "audio/am/ex.g3_divide.03.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 8,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 4
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 4
+            }
+          ],
+          "answer": [
+            4,
+            4
+          ],
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_divide.04",
+          "type": "drag_drop_count",
+          "prompt_am": "አስር ብርቱካኖችን በእያንዳንዱ ሳህን ላይ አምስት አምስት እናድርግ።",
+          "prompt_en": "Let's put 10 oranges on plates, 5 on each plate.",
+          "audio_url": "audio/am/ex.g3_divide.04.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 5
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 5
+            }
+          ],
+          "answer": [
+            5,
+            5
+          ],
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_divide.05",
+          "type": "drag_drop_count",
+          "prompt_am": "አስራ ሁለት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሶስት ሶስት እናድርግ።",
+          "prompt_en": "Let's put 12 oranges on plates, 3 on each plate.",
+          "audio_url": "audio/am/ex.g3_divide.05.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 12,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate3",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "plate4",
+              "kind": "tray",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_divide.06",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "24",
+            "÷",
+            "6",
+            "=",
+            "__"
+          ],
+          "items": [
+            "4",
+            "6",
+            "18"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_divide.07",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "35",
+            "÷",
+            "__",
+            "=",
+            "5"
+          ],
+          "items": [
+            "7",
+            "5",
+            "30"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "7",
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_divide.08",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "__",
+            "÷",
+            "8",
+            "=",
+            "6"
+          ],
+          "items": [
+            "48",
+            "14",
+            "2"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "48",
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_divide.09",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።",
+          "prompt_en": "Let's match each division to the multiplication that helps.",
+          "audio_url": "audio/am/ex.g3_divide.06.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "12 ÷ 3"
+            },
+            {
+              "id": "w1",
+              "label": "10 ÷ 2"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "5 × 2"
+            },
+            {
+              "id": "t0",
+              "label": "4 × 3"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_divide.10",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።",
+          "prompt_en": "Let's match each division to the multiplication that helps.",
+          "audio_url": "audio/am/ex.g3_divide.06.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "21 ÷ 7"
+            },
+            {
+              "id": "w1",
+              "label": "32 ÷ 8"
+            },
+            {
+              "id": "w2",
+              "label": "27 ÷ 9"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "4 × 8"
+            },
+            {
+              "id": "t2",
+              "label": "3 × 9"
+            },
+            {
+              "id": "t0",
+              "label": "3 × 7"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_divide.11",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።",
+          "prompt_en": "Let's match each division to the multiplication that helps.",
+          "audio_url": "audio/am/ex.g3_divide.06.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "42 ÷ 6"
+            },
+            {
+              "id": "w1",
+              "label": "56 ÷ 7"
+            },
+            {
+              "id": "w2",
+              "label": "63 ÷ 9"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "8 × 7"
+            },
+            {
+              "id": "t2",
+              "label": "7 × 9"
+            },
+            {
+              "id": "t0",
+              "label": "7 × 6"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_divide.12",
+          "type": "tap_choose",
+          "prompt_am": "ሰላሳ ብርቱካኖች በአምስት በአምስት በከረጢት ቢቀመጡ ስንት ከረጢቶች ያስፈልጋሉ?",
+          "prompt_en": "Thirty oranges go into bags of five. How many bags are needed?",
+          "audio_url": "audio/am/ex.g3_divide.07.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 25
+            }
+          ],
+          "answer": 6,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_divide.13",
+          "type": "tap_choose",
+          "prompt_am": "ሃያ ስምንት ልጆች በሰባት በሰባት ቡድን ቢሆኑ ስንት ቡድኖች ይሆናሉ?",
+          "prompt_en": "Twenty-eight children make teams of seven. How many teams?",
+          "audio_url": "audio/am/ex.g3_divide.08.mp3",
+          "options": [
+            {
+              "v": 4
+            },
+            {
+              "v": 7
+            },
+            {
+              "v": 21
+            }
+          ],
+          "answer": 4,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_divide.14",
+          "type": "tap_choose",
+          "prompt_am": "አርባ አምስት ብር ለዘጠኝ ልጆች በእኩል ቢካፈል እያንዳንዱ ስንት ብር ያገኛል?",
+          "prompt_en": "Forty-five birr is shared equally by nine children. How much does each get?",
+          "audio_url": "audio/am/ex.g3_divide.09.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 9
+            },
+            {
+              "v": 36
+            }
+          ],
+          "answer": 5,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_divide.15",
+          "type": "numpad",
+          "prompt_am": "አርባ ሁለት ሲካፈል ለሰባት ስንት ነው?",
+          "prompt_en": "What is forty-two divided by seven?",
+          "audio_url": "audio/am/ex.g3_divide.10.mp3",
+          "answer": 6,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_divide.16",
+          "type": "numpad",
+          "prompt_am": "ሃምሳ ስድስት ሲካፈል ለስምንት ስንት ነው?",
+          "prompt_en": "What is fifty-six divided by eight?",
+          "audio_url": "audio/am/ex.g3_divide.11.mp3",
+          "answer": 7,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_divide.17",
+          "type": "numpad",
+          "prompt_am": "ሰማንያ አንድ ሲካፈል ለዘጠኝ ስንት ነው?",
+          "prompt_en": "What is eighty-one divided by nine?",
+          "audio_url": "audio/am/ex.g3_divide.12.mp3",
+          "answer": 9,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g3_share.09.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g3_share.10.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_divide.18",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሰላሳ ሲካፈል ለስድስት አምስት ነው፤ ምክንያቱም አምስት ጊዜ ስድስት ሰላሳ ነው።",
+          "prompt_en": "True or not? Thirty divided by six is five, because five times six is thirty.",
+          "audio_url": "audio/am/ex.g3_divide.13.mp3",
+          "statement_am": "ሰላሳ ሲካፈል ለስድስት አምስት ነው፤ ምክንያቱም አምስት ጊዜ ስድስት ሰላሳ ነው።",
+          "statement_en": "Thirty divided by six is five, because five times six is thirty.",
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_divide.19",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሰባት ጊዜ አራት ሃያ ስምንት ነው፤ ስለዚህ ሃያ ስምንት ሲካፈል ለአራት ስድስት ነው።",
+          "prompt_en": "True or not? Seven times four is twenty-eight, so twenty-eight divided by four is six.",
+          "audio_url": "audio/am/ex.g3_divide.14.mp3",
+          "statement_am": "ሰባት ጊዜ አራት ሃያ ስምንት ነው፤ ስለዚህ ሃያ ስምንት ሲካፈል ለአራት ስድስት ነው።",
+          "statement_en": "Seven times four is twenty-eight, so twenty-eight divided by four is six.",
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_divide.20",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ዘጠኝ ጊዜ ስምንት ሰባ ሁለት ነው፤ ስለዚህ ሰባ ሁለት ሲካፈል ለዘጠኝ ስምንት ነው።",
+          "prompt_en": "True or not? Nine times eight is seventy-two, so seventy-two divided by nine is eight.",
+          "audio_url": "audio/am/ex.g3_divide.15.mp3",
+          "statement_am": "ዘጠኝ ጊዜ ስምንት ሰባ ሁለት ነው፤ ስለዚህ ሰባ ሁለት ሲካፈል ለዘጠኝ ስምንት ነው።",
+          "statement_en": "Nine times eight is seventy-two, so seventy-two divided by nine is eight.",
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "coffee",
+    "rounds": [
+      {
+        "n": 12,
+        "trays": [
+          6,
+          6
+        ]
+      },
+      {
+        "n": 15,
+        "trays": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "n": 14,
+        "trays": [
+          7,
+          7
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።",
+      "en": "Let's pour coffee for the guests! Every tray gets the same number of cups.",
+      "audio_url": "audio/am/ex.g2_groups.19.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_divide.21",
+      "type": "drag_drop_count",
+      "prompt_am": "አስር ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።",
+      "prompt_en": "Let's put 10 oranges on plates, 2 on each plate.",
+      "audio_url": "audio/am/ex.g3_divide.16.mp3",
+      "items": {
+        "thing": "orange",
+        "supply": 10,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "plate1",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate2",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate3",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate4",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate5",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        }
+      ],
+      "answer": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "hints": [
+        {
+          "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+          "en": "Think how many groups there are.",
+          "audio_url": "audio/am/ex.g3_share.09.mp3"
+        },
+        {
+          "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+          "en": "Remember the times table: three times four is twelve.",
+          "audio_url": "audio/am/ex.g3_share.10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_divide.22",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "36",
+        "÷",
+        "4",
+        "=",
+        "__"
+      ],
+      "items": [
+        "9",
+        "32",
+        "40"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "9",
+      "hints": [
+        {
+          "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+          "en": "Think how many groups there are.",
+          "audio_url": "audio/am/ex.g3_share.09.mp3"
+        },
+        {
+          "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+          "en": "Remember the times table: three times four is twelve.",
+          "audio_url": "audio/am/ex.g3_share.10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_divide.23",
+      "type": "drag_match_word",
+      "prompt_am": "እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።",
+      "prompt_en": "Let's match each division to the multiplication that helps.",
+      "audio_url": "audio/am/ex.g3_divide.06.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "18 ÷ 3"
+        },
+        {
+          "id": "w1",
+          "label": "20 ÷ 4"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "label": "5 × 4"
+        },
+        {
+          "id": "t0",
+          "label": "6 × 3"
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1"
+      },
+      "hints": [
+        {
+          "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+          "en": "Think how many groups there are.",
+          "audio_url": "audio/am/ex.g3_share.09.mp3"
+        },
+        {
+          "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+          "en": "Remember the times table: three times four is twelve.",
+          "audio_url": "audio/am/ex.g3_share.10.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_divide.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሃምሳ አራት ሲካፈል ለዘጠኝ",
+        "en": "fifty-four divided by nine",
+        "audio_url": "audio/am/ex.g3_divide.17.mp3"
+      },
+      "options": [
+        {
+          "v": 6
+        },
+        {
+          "v": 9
+        },
+        {
+          "v": 45
+        }
+      ],
+      "answer": 6,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_divide.25",
+      "type": "numpad",
+      "prompt_am": "ስልሳ አራት ሲካፈል ለስምንት ስንት ነው?",
+      "prompt_en": "What is sixty-four divided by eight?",
+      "audio_url": "audio/am/ex.g3_divide.18.mp3",
+      "answer": 8,
+      "visual": null,
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+          "en": "Think how many groups there are.",
+          "audio_url": "audio/am/ex.g3_share.09.mp3"
+        },
+        {
+          "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+          "en": "Remember the times table: three times four is twelve.",
+          "audio_url": "audio/am/ex.g3_share.10.mp3"
+        }
+      ]
+    }
+  ]
+}

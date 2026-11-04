@@ -28,6 +28,7 @@ Output goes to `dist/video/<lesson>.mp4` (H.264 + AAC, fast-start for phones) an
 - `lk/parts.py` — TenFrame, Counter, NumberLine, Flower, Mango, Orange, badges
 - `lk/parts2.py` — base-ten rods and ones, place-value mat, written columns, stick bundles, trays and cups, birr notes and coins, injera fractions, children, the bajaj, the mango tree
 - `lk/parts3.py` — hundred flats, the hundreds/tens/ones mat, three-digit columns, coffee seedlings in rows, plates
+- `lk/parts4.py` — egg boxes, ruler and pencil, kitchen scale, jerrycan, clock, number lines with any labels, bar charts
 - `lk/voice.py` — narration clips and timing
 - `lessons/<id>.py` — one `LessonScene` per lesson (file name = lesson id); `self.title`, `self.story`, `self.step` give every lesson the same rhythm
 - `render.py` — Manim render, then FFmpeg finishing and poster
@@ -36,7 +37,8 @@ Output goes to `dist/video/<lesson>.mp4` (H.264 + AAC, fast-start for phones) an
 
 Every lesson has a hook video (all under 60 s): `count10`, `teens`, `compare`, `add10`, `sub10`, `make10`
 (Grade 1), `g2_placevalue`, `g2_add2d`, `g2_sub2d`, `g2_groups`, `g2_birr`, `g2_halves` (Grade 2) and
-`g3_hundreds`, `g3_add3d`, `g3_sub3d`, `g3_times`, `g3_share`, `g3_fractions` (Grade 3).
+`g3_hundreds`, `g3_add3d`, `g3_sub3d`, `g3_times`, `g3_share`, `g3_fractions`, `g3_round`, `g3_tables`,
+`g3_divide`, `g3_fracline`, `g3_measure`, `g3_time`, `g3_shapes`, `g3_area`, `g3_graphs` (Grade 3).
 
 While a video renders, `LessonScene` writes `animations/timelines/<lesson>.json`: when the title, story and
 each worked-example sentence (`step0`, `step1`, …) start, plus any `self.mark("name")`, and the caption

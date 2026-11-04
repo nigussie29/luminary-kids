@@ -215,6 +215,114 @@
         "audio_url": "audio/am/lesson.g3_fractions.title.mp3"
       },
       "game": "memory"
+    },
+    {
+      "id": "g3_round",
+      "grade": 3,
+      "n": 7,
+      "place": "farm",
+      "title": {
+        "am": "ማወዳደር እና ማጠጋጋት",
+        "en": "Comparing and rounding",
+        "audio_url": "audio/am/lesson.g3_round.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_tables",
+      "grade": 3,
+      "n": 8,
+      "place": "eggs",
+      "title": {
+        "am": "የማባዛት ሰንጠረዥ እስከ አስር ጊዜ አስር",
+        "en": "Times tables to 10 × 10",
+        "audio_url": "audio/am/lesson.g3_tables.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_divide",
+      "grade": 3,
+      "n": 9,
+      "place": "playground",
+      "title": {
+        "am": "ማካፈል እና ማባዛት",
+        "en": "Division and multiplication",
+        "audio_url": "audio/am/lesson.g3_divide.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "g3_fracline",
+      "grade": 3,
+      "n": 10,
+      "place": "path",
+      "title": {
+        "am": "ክፍልፋዮች በቁጥር መስመር ላይ",
+        "en": "Fractions on a number line",
+        "audio_url": "audio/am/lesson.g3_fracline.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_measure",
+      "grade": 3,
+      "n": 11,
+      "place": "scales",
+      "title": {
+        "am": "ርዝመት፣ ክብደት እና መጠን",
+        "en": "Length, mass and liquids",
+        "audio_url": "audio/am/lesson.g3_measure.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g3_time",
+      "grade": 3,
+      "n": 12,
+      "place": "clocktower",
+      "title": {
+        "am": "ሰዓት በደቂቃ",
+        "en": "Time to the minute",
+        "audio_url": "audio/am/lesson.g3_time.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_shapes",
+      "grade": 3,
+      "n": 13,
+      "place": "house",
+      "title": {
+        "am": "ቅርጾች",
+        "en": "Shapes",
+        "audio_url": "audio/am/lesson.g3_shapes.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_area",
+      "grade": 3,
+      "n": 14,
+      "place": "floor",
+      "title": {
+        "am": "ስፋት እና ዙሪያ",
+        "en": "Area and perimeter",
+        "audio_url": "audio/am/lesson.g3_area.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_graphs",
+      "grade": 3,
+      "n": 15,
+      "place": "chart",
+      "title": {
+        "am": "ግራፎች እና የቃላት ጥያቄዎች",
+        "en": "Graphs and word problems",
+        "audio_url": "audio/am/lesson.g3_graphs.title.mp3"
+      },
+      "game": "market"
     }
   ],
   "common": {

@@ -36,9 +36,10 @@ function checkExercise(e, where) {
   switch (e.type) {
     case 'drag_equation': {
       const parts = e.equation.map((p) => (p === '__' ? e.answer : p));
-      const eq = parts.indexOf('=');
-      assert.ok(eq > 0, `${at}: no =`);
-      assert.strictEqual(evalSide(parts.slice(0, eq)), evalSide(parts.slice(eq + 1)), `${at}: ${parts.join(' ')} does not balance`);
+      const sign = parts.findIndex((p) => ['=', '<', '>'].includes(p) && p !== undefined);
+      assert.ok(sign > 0, `${at}: no = < or >`);
+      const l = evalSide(parts.slice(0, sign)), r = evalSide(parts.slice(sign + 1)), op = parts[sign];
+      assert.ok(op === '=' ? l === r : op === '<' ? l < r : l > r, `${at}: ${parts.join(' ')} is not true`);
       assert.ok(e.items.includes(e.answer), `${at}: answer tile missing`);
       assert.strictEqual(new Set(e.items).size, e.items.length, `${at}: duplicate tiles`);
       break;
@@ -64,6 +65,8 @@ function checkExercise(e, where) {
     case 'drag_numberline': {
       const { min, max, step } = e.line;
       e.items.forEach((v) => { const n = Number(v); assert.ok(n >= min && n <= max && (n - min) % step === 0, `${at}: ${v} not on the line`); });
+      if (e.line.object) assert.deepStrictEqual(e.items, [String(e.line.object.length)], `${at}: the flag must go where the object ends`);
+      if (e.item_labels) assert.strictEqual(e.item_labels.length, e.items.length, `${at}: one label per tile`);
       assert.ok((max - min) / step <= 20, `${at}: too many ticks`);
       break;
     }
@@ -109,7 +112,7 @@ function checkExercise(e, where) {
       assert.strictEqual(typeof e.answer, 'boolean', `${at}: answer`);
       break;
     case 'clock':
-      assert.ok(e.answer.h >= 1 && e.answer.h <= 12 && [0, 30].includes(e.answer.m), `${at}: time`);
+      assert.ok(e.answer.h >= 1 && e.answer.h <= 12 && Number.isInteger(e.answer.m) && e.answer.m >= 0 && e.answer.m < 60 && e.answer.m % (e.step || 5) === 0, `${at}: time`);
       break;
     case 'trace':
       assert.ok(e.text && e.text.length <= 4, `${at}: text`);
@@ -143,10 +146,11 @@ function checkGame(p, where) {
   return p.game === 'race' ? p.questions.length : p.game === 'memory' ? p.pairs.length : p.rounds.length;
 }
 
-test('index lists 18 lessons (six per grade) in order with places on the map', () => {
-  assert.strictEqual(lessons.length, 18);
-  assert.strictEqual(new Set(index.lessons.map((l) => `${l.grade}-${l.n}`)).size, 18);
-  for (const g of [1, 2, 3]) assert.deepStrictEqual(index.lessons.filter((l) => l.grade === g).map((l) => l.n), [1, 2, 3, 4, 5, 6], `grade ${g}`);
+test('index lists 27 lessons (6 + 6 + 15) in order with places on the map', () => {
+  assert.strictEqual(lessons.length, 27);
+  assert.strictEqual(new Set(index.lessons.map((l) => `${l.grade}-${l.n}`)).size, 27);
+  const seq = (n) => Array.from({ length: n }, (_, i) => i + 1);
+  for (const [g, n] of [[1, 6], [2, 6], [3, 15]]) assert.deepStrictEqual(index.lessons.filter((l) => l.grade === g).map((l) => l.n), seq(n), `grade ${g}`);
   for (const k of ['replay', 'praise', 'tryAgain', 'celebrate']) assert.ok(index.common[k], k);
   assert.strictEqual(index.common.replay.am, 'ደግመህ/ደግመሽ አዳምጥ');
 });

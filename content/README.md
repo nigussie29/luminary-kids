@@ -53,9 +53,9 @@ moves on.
 | type | fields | answer |
 |---|---|---|
 | `drag_drop_count` | `items: { thing, supply, mode: "add" \| "remove" }`, `targets: [{ id, kind: basket \| tray \| tenframe \| bajaj \| tree, start, need, match? }]` | the `need` (or a list of needs, one per target) |
-| `drag_equation` | `equation: ["3", "+", "__", "=", "7"]`, `items: ["4", "3", "10"]` (tiles) | the tile that fills `__` |
+| `drag_equation` | `equation: ["3", "+", "__", "=", "7"]`, `items: ["4", "3", "10"]` (tiles); also `["452", "__", "425"]` with `<`, `>`, `=` tiles | the tile that fills `__` |
 | `drag_sort` | `targets: [{ id, am, en }]` (bins), `items: [{ id, label?, visual? }]` (cards) | `{ cardId: binId }` |
-| `drag_numberline` | `line: { min, max, step, labels: ends \| tens \| none }`, `items: ["12", "15"]` | the same values |
+| `drag_numberline` | `line: { min, max, step, labels: ends \| tens \| all \| none, denom?, object? }`, `items: ["12", "15"]`, `item_labels?` (`denom: 4` shows values as quarters; `object: { thing, length }` makes it a ruler and the tile a flag for where the thing ends) | the same values |
 | `drag_placevalue` | `items: { flats?, rods, cubes }`, `targets: [{ id: "mat", tens?, hundreds? }]` (`tens` / `hundreds` = build it with exactly that many; numbers from 100 get a hundreds column) | the number |
 | `drag_match_word` | `items: [{ id, label, lang: am \| geez, audio_url? }]`, `targets: [{ id, label? , visual? }]` | `{ cardId: slotId }` |
 | `drag_make_change` | `price`, `item: { am, en, pic }`, `items: [10, 5, 5, 1]` (the wallet) | the price |
@@ -70,7 +70,7 @@ moves on.
 | `numpad` | `visual?`, `max_digits` | a number |
 | `listen_choose` | `say: { am, en, audio_url }`, `options` | an option's `v` |
 | `true_false` | `statement_am`, `statement_en`, `visual?` | `true` / `false` (swipe right / left) |
-| `clock` | — | `{ h, m }` (m is 0 or 30) |
+| `clock` | `step?` (minutes the long hand snaps to; 5 by default, 1 for to-the-minute) | `{ h, m }` |
 | `trace` | `text`, `script: digits \| ethiopic` | the text |
 | `speak` | `say`, `optional: true` | the number (any recording counts; the grown-ups page can play it back) |
 
@@ -79,7 +79,9 @@ moves on.
 `group {thing, n}` · `takeaway {thing, n, gone}` · `compare {thing, left, right}` · `tens_ones {hundreds?, tens, ones}` · `array {rows, cols, thing}` ·
 `tenframe {n}` · `birr {notes}` · `injera {parts, filled, equal}` · `groups {groups, thing}` · `text {text}`.
 Things: orange, mango, cup, flower, child, counter, bean, egg, book, seedling.
-`drag_drop_count` targets can also be `row` (a strip of soil, for planting in rows); `drag_equation` understands `÷`.
+`drag_drop_count` targets can also be `row` (a strip of soil), `grid` (`cols`, `rows`: cover a rectangle with square tiles) or `column`
+(with a `label`: build a bar graph); `drag_equation` understands `÷`. More pictures: `rect {w, h, grid?, labels?}`, `shape {shape}`,
+`bars {bars}`, `picto {rows, key}`, `clock {h, m}`, `scale {kg, max}`, `jug {l, max}`, `ruler {length, max, thing}`, `fline {d, at}`.
 
 ### Mini-games (`play`)
 

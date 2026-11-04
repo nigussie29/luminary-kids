@@ -150,7 +150,11 @@ def play_lesson(pg, lid, test_wrong=False):
     pg.wait_for_selector('.adv-video video')
     pg.wait_for_function('document.querySelector(".adv-video video").readyState >= 2', timeout=15000)
     pg.evaluate('document.querySelector(".adv-video video").playbackRate = 3')
-    pg.click('.vplay') if pg.is_visible('.vplay') else None
+    try:  # the play button disappears by itself once autoplay starts
+        if pg.is_visible('.vplay'):
+            pg.click('.vplay', timeout=2000)
+    except Exception:
+        pass
     cps = pg.evaluate('LK.adv.state.L.video.checkpoints.map((c) => c.exercise)')
     for k, cp in enumerate(cps):
         pg.wait_for_selector('.cp-layer:not([hidden]) .ex', timeout=40000)
