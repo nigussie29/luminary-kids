@@ -145,6 +145,78 @@
       "game": "memory"
     },
     {
+      "id": "g2_skip",
+      "grade": 2,
+      "n": 7,
+      "place": "steps",
+      "title": {
+        "am": "ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ",
+        "en": "Skip counting, even and odd",
+        "audio_url": "audio/am/lesson.g2_skip.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "g2_compare",
+      "grade": 2,
+      "n": 8,
+      "place": "eggs",
+      "title": {
+        "am": "የትኛው ይበልጣል?",
+        "en": "Which is greater?",
+        "audio_url": "audio/am/lesson.g2_compare.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g2_measure",
+      "grade": 2,
+      "n": 9,
+      "place": "desk",
+      "title": {
+        "am": "ርዝመትን መለካት",
+        "en": "Measuring length",
+        "audio_url": "audio/am/lesson.g2_measure.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g2_time",
+      "grade": 2,
+      "n": 10,
+      "place": "alarm",
+      "title": {
+        "am": "ሰዓት በአምስት ደቂቃ",
+        "en": "Time to five minutes",
+        "audio_url": "audio/am/lesson.g2_time.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g2_shapes",
+      "grade": 2,
+      "n": 11,
+      "place": "wall",
+      "title": {
+        "am": "ቅርጾች እና ጎኖቻቸው",
+        "en": "Shapes and their sides",
+        "audio_url": "audio/am/lesson.g2_shapes.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g2_graphs",
+      "grade": 2,
+      "n": 12,
+      "place": "chart",
+      "title": {
+        "am": "ሥዕላዊ ግራፍ እና አምድ ግራፍ",
+        "en": "Picture graphs and bar graphs",
+        "audio_url": "audio/am/lesson.g2_graphs.title.mp3"
+      },
+      "game": "market"
+    },
+    {
       "id": "g3_hundreds",
       "grade": 3,
       "n": 1,

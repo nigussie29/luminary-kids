@@ -289,12 +289,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 1
@@ -304,7 +304,7 @@
           "type": "tap_choose",
           "prompt_am": "አስራ አምስት ሲካፈል ለሶስት ስንት ነው?",
           "prompt_en": "What is fifteen divided by three?",
-          "audio_url": "audio/am/ex.g3_share.11.mp3",
+          "audio_url": "audio/am/ex.g3_share.09.mp3",
           "options": [
             {
               "v": 5
@@ -330,12 +330,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 2
@@ -345,7 +345,7 @@
           "type": "tap_choose",
           "prompt_am": "ሃያ ሲካፈል ለአራት ስንት ነው?",
           "prompt_en": "What is twenty divided by four?",
-          "audio_url": "audio/am/ex.g3_share.12.mp3",
+          "audio_url": "audio/am/ex.g3_share.10.mp3",
           "options": [
             {
               "v": 5
@@ -363,12 +363,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 3
@@ -406,12 +406,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 1
@@ -444,12 +444,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 2
@@ -482,12 +482,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 3
@@ -502,7 +502,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።",
           "prompt_en": "Let's match each division to its answer.",
-          "audio_url": "audio/am/ex.g3_share.13.mp3",
+          "audio_url": "audio/am/ex.g3_share.11.mp3",
           "items": [
             {
               "id": "w0",
@@ -531,12 +531,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 1
@@ -546,7 +546,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።",
           "prompt_en": "Let's match each division to its answer.",
-          "audio_url": "audio/am/ex.g3_share.13.mp3",
+          "audio_url": "audio/am/ex.g3_share.11.mp3",
           "items": [
             {
               "id": "w0",
@@ -584,12 +584,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 2
@@ -599,7 +599,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።",
           "prompt_en": "Let's match each division to its answer.",
-          "audio_url": "audio/am/ex.g3_share.13.mp3",
+          "audio_url": "audio/am/ex.g3_share.11.mp3",
           "items": [
             {
               "id": "w0",
@@ -637,12 +637,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 3
@@ -657,7 +657,7 @@
           "type": "numpad",
           "prompt_am": "አስራ ሁለት ብርቱካኖች ለአራት ልጆች ሲካፈሉ እያንዳንዱ ልጅ ስንት ያገኛል?",
           "prompt_en": "Twelve oranges are shared by four children. How many does each child get?",
-          "audio_url": "audio/am/ex.g3_share.14.mp3",
+          "audio_url": "audio/am/ex.g3_share.12.mp3",
           "answer": 3,
           "visual": {
             "kind": "groups",
@@ -689,7 +689,7 @@
           "type": "numpad",
           "prompt_am": "ሃያ ሲካፈል ለአምስት ስንት ነው?",
           "prompt_en": "What is twenty divided by five?",
-          "audio_url": "audio/am/ex.g3_share.15.mp3",
+          "audio_url": "audio/am/ex.g3_share.13.mp3",
           "answer": 4,
           "visual": null,
           "max_digits": 2,
@@ -697,12 +697,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 2
@@ -712,7 +712,7 @@
           "type": "numpad",
           "prompt_am": "ሰላሳ ስድስት ሲካፈል ለአራት ስንት ነው?",
           "prompt_en": "What is thirty-six divided by four?",
-          "audio_url": "audio/am/ex.g3_share.16.mp3",
+          "audio_url": "audio/am/ex.g3_share.14.mp3",
           "answer": 9,
           "visual": null,
           "max_digits": 2,
@@ -720,12 +720,12 @@
             {
               "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
               "en": "Think how many groups there are.",
-              "audio_url": "audio/am/ex.g3_share.09.mp3"
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
             },
             {
               "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
               "en": "Remember the times table: three times four is twelve.",
-              "audio_url": "audio/am/ex.g3_share.10.mp3"
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
             }
           ],
           "level": 3
@@ -740,7 +740,7 @@
           "type": "drag_sort",
           "prompt_am": "ለሶስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።",
           "prompt_en": "Let's sort: shares equally into 3, has some left over.",
-          "audio_url": "audio/am/ex.g3_share.17.mp3",
+          "audio_url": "audio/am/ex.g3_share.15.mp3",
           "targets": [
             {
               "id": "yes",
@@ -796,7 +796,7 @@
           "type": "drag_sort",
           "prompt_am": "ለአራት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።",
           "prompt_en": "Let's sort: shares equally into 4, has some left over.",
-          "audio_url": "audio/am/ex.g3_share.18.mp3",
+          "audio_url": "audio/am/ex.g3_share.16.mp3",
           "targets": [
             {
               "id": "yes",
@@ -857,7 +857,7 @@
           "type": "drag_sort",
           "prompt_am": "ለአምስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።",
           "prompt_en": "Let's sort: shares equally into 5, has some left over.",
-          "audio_url": "audio/am/ex.g3_share.19.mp3",
+          "audio_url": "audio/am/ex.g3_share.17.mp3",
           "targets": [
             {
               "id": "yes",
@@ -925,7 +925,7 @@
         "type": "tap_choose",
         "prompt_am": "ስምንት ሲካፈል ለሁለት?",
         "prompt_en": "Eight divided by two?",
-        "audio_url": "audio/am/ex.g3_share.24.mp3",
+        "audio_url": "audio/am/ex.g3_share.22.mp3",
         "options": [
           {
             "v": 4
@@ -953,7 +953,7 @@
         "type": "tap_choose",
         "prompt_am": "አስራ አምስት ሲካፈል ለአምስት?",
         "prompt_en": "Fifteen divided by five?",
-        "audio_url": "audio/am/ex.g3_share.25.mp3",
+        "audio_url": "audio/am/ex.g3_share.23.mp3",
         "options": [
           {
             "v": 3
@@ -981,7 +981,7 @@
         "type": "tap_choose",
         "prompt_am": "አስራ ሁለት ሲካፈል ለሶስት?",
         "prompt_en": "Twelve divided by three?",
-        "audio_url": "audio/am/ex.g3_share.26.mp3",
+        "audio_url": "audio/am/ex.g3_share.24.mp3",
         "options": [
           {
             "v": 4
@@ -1009,7 +1009,7 @@
         "type": "tap_choose",
         "prompt_am": "ሃያ ሲካፈል ለሁለት?",
         "prompt_en": "Twenty divided by two?",
-        "audio_url": "audio/am/ex.g3_share.27.mp3",
+        "audio_url": "audio/am/ex.g3_share.25.mp3",
         "options": [
           {
             "v": 10
@@ -1037,7 +1037,7 @@
         "type": "tap_choose",
         "prompt_am": "አስራ ስምንት ሲካፈል ለስድስት?",
         "prompt_en": "Eighteen divided by six?",
-        "audio_url": "audio/am/ex.g3_share.28.mp3",
+        "audio_url": "audio/am/ex.g3_share.26.mp3",
         "options": [
           {
             "v": 3
@@ -1073,7 +1073,7 @@
       "type": "drag_drop_count",
       "prompt_am": "አስር ብርቱካኖችን ለአምስት ሳህኖች በእኩል እናካፍል።",
       "prompt_en": "Let's share 10 oranges equally on 5 plates.",
-      "audio_url": "audio/am/ex.g3_share.20.mp3",
+      "audio_url": "audio/am/ex.g3_share.18.mp3",
       "items": {
         "thing": "orange",
         "supply": 10,
@@ -1159,12 +1159,12 @@
         {
           "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
           "en": "Think how many groups there are.",
-          "audio_url": "audio/am/ex.g3_share.09.mp3"
+          "audio_url": "audio/am/ex.g2_skip.08.mp3"
         },
         {
           "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
           "en": "Remember the times table: three times four is twelve.",
-          "audio_url": "audio/am/ex.g3_share.10.mp3"
+          "audio_url": "audio/am/ex.g2_skip.09.mp3"
         }
       ]
     },
@@ -1173,7 +1173,7 @@
       "type": "true_false",
       "prompt_am": "ልክ ነው ወይስ አይደለም? አስራ ስድስት ሲካፈል ለአራት አራት ነው።",
       "prompt_en": "True or not? Sixteen divided by four is four.",
-      "audio_url": "audio/am/ex.g3_share.21.mp3",
+      "audio_url": "audio/am/ex.g3_share.19.mp3",
       "statement_am": "አስራ ስድስት ሲካፈል ለአራት አራት ነው።",
       "statement_en": "Sixteen divided by four is four.",
       "visual": {
@@ -1209,7 +1209,7 @@
       "say": {
         "am": "አስራ ስምንት ሲካፈል ለሶስት",
         "en": "eighteen divided by three",
-        "audio_url": "audio/am/ex.g3_share.22.mp3"
+        "audio_url": "audio/am/ex.g3_share.20.mp3"
       },
       "options": [
         {
@@ -1241,7 +1241,7 @@
       "type": "numpad",
       "prompt_am": "ሰላሳ ሲካፈል ለአምስት ስንት ነው?",
       "prompt_en": "What is thirty divided by five?",
-      "audio_url": "audio/am/ex.g3_share.23.mp3",
+      "audio_url": "audio/am/ex.g3_share.21.mp3",
       "answer": 6,
       "visual": null,
       "max_digits": 2,
@@ -1249,12 +1249,12 @@
         {
           "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
           "en": "Think how many groups there are.",
-          "audio_url": "audio/am/ex.g3_share.09.mp3"
+          "audio_url": "audio/am/ex.g2_skip.08.mp3"
         },
         {
           "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
           "en": "Remember the times table: three times four is twelve.",
-          "audio_url": "audio/am/ex.g3_share.10.mp3"
+          "audio_url": "audio/am/ex.g2_skip.09.mp3"
         }
       ]
     }

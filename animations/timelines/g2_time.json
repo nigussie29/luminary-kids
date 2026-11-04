@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.133,
+  "step0": 9.767,
+  "step1": 13.4,
+  "step2": 17.033,
+  "step3": 20.667
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ሰዓት በአምስት ደቂቃ",
+   "en": "Time to five minutes",
+   "end": 3.333
+  },
+  {
+   "start": 4.133,
+   "am": "አያቴ ከሰዓት በኋላ ቡና ታፈላለች። ሰዓቱን አብረን እናንብብ።",
+   "en": "Grandma makes coffee in the afternoon. Let us read the clock together.",
+   "end": 9.767
+  },
+  {
+   "start": 9.767,
+   "am": "ትንሹ መርፌ ከሶስት ትንሽ አልፏል፤ ሰዓቱ ሶስት ነው።",
+   "en": "The short hand is just past three, so the hour is three.",
+   "end": 13.4
+  },
+  {
+   "start": 13.4,
+   "am": "ትልቁ መርፌ ሶስት ላይ ነው፤ አምስት፣ አስር፣ አስራ አምስት ደቂቃ።",
+   "en": "The long hand is on the three: five, ten, fifteen minutes.",
+   "end": 17.033
+  },
+  {
+   "start": 17.033,
+   "am": "ሰዓቱ ሶስት ከአስራ አምስት ነው፤ ሶስት ከሩብም እንለዋለን።",
+   "en": "The time is three fifteen; we also say quarter past three.",
+   "end": 20.667
+  },
+  {
+   "start": 20.667,
+   "am": "በኢትዮጵያ አቆጣጠር ደግሞ ዘጠኝ ሰዓት ከሩብ ነው።",
+   "en": "In Ethiopian time it is quarter past nine.",
+   "end": 24.6
+  }
+ ],
+ "duration": 28.2,
+ "lesson": "g2_time"
+}

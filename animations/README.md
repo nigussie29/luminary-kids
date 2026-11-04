@@ -36,7 +36,8 @@ Output goes to `dist/video/<lesson>.mp4` (H.264 + AAC, fast-start for phones) an
 ## Lessons
 
 Every lesson has a hook video (all under 60 s): `count10`, `teens`, `compare`, `add10`, `sub10`, `make10`
-(Grade 1), `g2_placevalue`, `g2_add2d`, `g2_sub2d`, `g2_groups`, `g2_birr`, `g2_halves` (Grade 2) and
+(Grade 1), `g2_placevalue`, `g2_add2d`, `g2_sub2d`, `g2_groups`, `g2_birr`, `g2_halves`, `g2_skip`, `g2_compare`, `g2_measure`,
+`g2_time`, `g2_shapes`, `g2_graphs` (Grade 2) and
 `g3_hundreds`, `g3_add3d`, `g3_sub3d`, `g3_times`, `g3_share`, `g3_fractions`, `g3_round`, `g3_tables`,
 `g3_divide`, `g3_fracline`, `g3_measure`, `g3_time`, `g3_shapes`, `g3_area`, `g3_graphs` (Grade 3).
 

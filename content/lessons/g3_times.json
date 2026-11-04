@@ -49,12 +49,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ]
         }
@@ -67,7 +67,7 @@
           "type": "tap_choose",
           "prompt_am": "ስናዞረው ስንት ችግኞች ይሆናሉ?",
           "prompt_en": "When we turn it around, how many seedlings are there?",
-          "audio_url": "audio/am/ex.g3_times.04.mp3",
+          "audio_url": "audio/am/ex.g3_times.02.mp3",
           "options": [
             {
               "v": 8
@@ -90,12 +90,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ]
         }
@@ -119,7 +119,7 @@
           "type": "drag_drop_count",
           "prompt_am": "በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።",
           "prompt_en": "Let's plant 3 seedlings in each row.",
-          "audio_url": "audio/am/ex.g3_times.05.mp3",
+          "audio_url": "audio/am/ex.g3_times.03.mp3",
           "items": {
             "thing": "seedling",
             "supply": 8,
@@ -147,12 +147,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 1
@@ -162,7 +162,7 @@
           "type": "drag_drop_count",
           "prompt_am": "በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።",
           "prompt_en": "Let's plant 3 seedlings in each row.",
-          "audio_url": "audio/am/ex.g3_times.05.mp3",
+          "audio_url": "audio/am/ex.g3_times.03.mp3",
           "items": {
             "thing": "seedling",
             "supply": 11,
@@ -197,12 +197,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 2
@@ -212,7 +212,7 @@
           "type": "drag_drop_count",
           "prompt_am": "በእያንዳንዱ ረድፍ አራት ችግኞችን እንትከል።",
           "prompt_en": "Let's plant 4 seedlings in each row.",
-          "audio_url": "audio/am/ex.g3_times.06.mp3",
+          "audio_url": "audio/am/ex.g3_times.04.mp3",
           "items": {
             "thing": "seedling",
             "supply": 14,
@@ -247,12 +247,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 3
@@ -293,12 +293,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 1
@@ -334,12 +334,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 2
@@ -375,12 +375,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 3
@@ -418,12 +418,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 1
@@ -456,12 +456,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 2
@@ -494,12 +494,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 3
@@ -514,7 +514,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።",
           "prompt_en": "Let's match each multiplication to its answer.",
-          "audio_url": "audio/am/ex.g3_times.07.mp3",
+          "audio_url": "audio/am/ex.g3_times.05.mp3",
           "items": [
             {
               "id": "w0",
@@ -543,12 +543,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 1
@@ -558,7 +558,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።",
           "prompt_en": "Let's match each multiplication to its answer.",
-          "audio_url": "audio/am/ex.g3_times.07.mp3",
+          "audio_url": "audio/am/ex.g3_times.05.mp3",
           "items": [
             {
               "id": "w0",
@@ -596,12 +596,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 2
@@ -611,7 +611,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።",
           "prompt_en": "Let's match each multiplication to its answer.",
-          "audio_url": "audio/am/ex.g3_times.07.mp3",
+          "audio_url": "audio/am/ex.g3_times.05.mp3",
           "items": [
             {
               "id": "w0",
@@ -649,12 +649,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 3
@@ -669,7 +669,7 @@
           "type": "numpad",
           "prompt_am": "አራት ጊዜ አምስት ስንት ነው?",
           "prompt_en": "What is four times five?",
-          "audio_url": "audio/am/ex.g3_times.08.mp3",
+          "audio_url": "audio/am/ex.g3_times.06.mp3",
           "answer": 20,
           "visual": {
             "kind": "array",
@@ -682,12 +682,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 1
@@ -697,7 +697,7 @@
           "type": "numpad",
           "prompt_am": "ስድስት ጊዜ ሶስት ስንት ነው?",
           "prompt_en": "What is six times three?",
-          "audio_url": "audio/am/ex.g3_times.09.mp3",
+          "audio_url": "audio/am/ex.g3_times.07.mp3",
           "answer": 18,
           "visual": null,
           "max_digits": 3,
@@ -705,12 +705,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 2
@@ -720,7 +720,7 @@
           "type": "numpad",
           "prompt_am": "ስምንት ጊዜ አራት ስንት ነው?",
           "prompt_en": "What is eight times four?",
-          "audio_url": "audio/am/ex.g3_times.10.mp3",
+          "audio_url": "audio/am/ex.g3_times.08.mp3",
           "answer": 32,
           "visual": null,
           "max_digits": 3,
@@ -728,12 +728,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 3
@@ -748,7 +748,7 @@
           "type": "drag_sort",
           "prompt_am": "አስራ ሁለት የሚሆኑትን እና የማይሆኑትን እንለይ።",
           "prompt_en": "Let's sort: makes 12, doesn't make 12.",
-          "audio_url": "audio/am/ex.g3_times.11.mp3",
+          "audio_url": "audio/am/ex.g3_times.09.mp3",
           "targets": [
             {
               "id": "yes",
@@ -789,12 +789,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 1
@@ -804,7 +804,7 @@
           "type": "drag_sort",
           "prompt_am": "ሃያ አራት የሚሆኑትን እና የማይሆኑትን እንለይ።",
           "prompt_en": "Let's sort: makes 24, doesn't make 24.",
-          "audio_url": "audio/am/ex.g3_times.12.mp3",
+          "audio_url": "audio/am/ex.g3_times.10.mp3",
           "targets": [
             {
               "id": "yes",
@@ -850,12 +850,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 2
@@ -865,7 +865,7 @@
           "type": "drag_sort",
           "prompt_am": "ሰላሳ ስድስት የሚሆኑትን እና የማይሆኑትን እንለይ።",
           "prompt_en": "Let's sort: makes 36, doesn't make 36.",
-          "audio_url": "audio/am/ex.g3_times.13.mp3",
+          "audio_url": "audio/am/ex.g3_times.11.mp3",
           "targets": [
             {
               "id": "yes",
@@ -911,12 +911,12 @@
             {
               "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
               "en": "Count row by row; every row has the same number.",
-              "audio_url": "audio/am/ex.g3_times.02.mp3"
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
             },
             {
               "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
               "en": "Skip count, for example five, ten, fifteen.",
-              "audio_url": "audio/am/ex.g3_times.03.mp3"
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
             }
           ],
           "level": 3
@@ -965,7 +965,7 @@
       "type": "drag_drop_count",
       "prompt_am": "በእያንዳንዱ ረድፍ አምስት ችግኞችን እንትከል።",
       "prompt_en": "Let's plant 5 seedlings in each row.",
-      "audio_url": "audio/am/ex.g3_times.14.mp3",
+      "audio_url": "audio/am/ex.g3_times.12.mp3",
       "items": {
         "thing": "seedling",
         "supply": 12,
@@ -993,12 +993,12 @@
         {
           "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
           "en": "Count row by row; every row has the same number.",
-          "audio_url": "audio/am/ex.g3_times.02.mp3"
+          "audio_url": "audio/am/ex.g2_skip.05.mp3"
         },
         {
           "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
           "en": "Skip count, for example five, ten, fifteen.",
-          "audio_url": "audio/am/ex.g3_times.03.mp3"
+          "audio_url": "audio/am/ex.g2_skip.06.mp3"
         }
       ]
     },
@@ -1032,12 +1032,12 @@
         {
           "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
           "en": "Count row by row; every row has the same number.",
-          "audio_url": "audio/am/ex.g3_times.02.mp3"
+          "audio_url": "audio/am/ex.g2_skip.05.mp3"
         },
         {
           "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
           "en": "Skip count, for example five, ten, fifteen.",
-          "audio_url": "audio/am/ex.g3_times.03.mp3"
+          "audio_url": "audio/am/ex.g2_skip.06.mp3"
         }
       ]
     },
@@ -1046,7 +1046,7 @@
       "type": "true_false",
       "prompt_am": "ልክ ነው ወይስ አይደለም? ሶስት ጊዜ ስድስት ከስድስት ጊዜ ሶስት ጋር እኩል ነው።",
       "prompt_en": "True or not? Three times six equals six times three.",
-      "audio_url": "audio/am/ex.g3_times.15.mp3",
+      "audio_url": "audio/am/ex.g3_times.13.mp3",
       "statement_am": "ሶስት ጊዜ ስድስት ከስድስት ጊዜ ሶስት ጋር እኩል ነው።",
       "statement_en": "Three times six equals six times three.",
       "visual": {
@@ -1078,7 +1078,7 @@
       "say": {
         "am": "ስድስት ጊዜ አራት",
         "en": "six times four",
-        "audio_url": "audio/am/ex.g3_times.16.mp3"
+        "audio_url": "audio/am/ex.g3_times.14.mp3"
       },
       "options": [
         {
@@ -1110,7 +1110,7 @@
       "type": "numpad",
       "prompt_am": "ዘጠኝ ጊዜ አምስት ስንት ነው?",
       "prompt_en": "What is nine times five?",
-      "audio_url": "audio/am/ex.g3_times.17.mp3",
+      "audio_url": "audio/am/ex.g3_times.15.mp3",
       "answer": 45,
       "visual": null,
       "max_digits": 3,
@@ -1118,12 +1118,12 @@
         {
           "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
           "en": "Count row by row; every row has the same number.",
-          "audio_url": "audio/am/ex.g3_times.02.mp3"
+          "audio_url": "audio/am/ex.g2_skip.05.mp3"
         },
         {
           "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
           "en": "Skip count, for example five, ten, fifteen.",
-          "audio_url": "audio/am/ex.g3_times.03.mp3"
+          "audio_url": "audio/am/ex.g2_skip.06.mp3"
         }
       ]
     }

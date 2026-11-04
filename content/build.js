@@ -116,6 +116,8 @@ const H = {
     ['ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።', 'The corners are where the sides meet.']],
   area: [['ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።', 'Area: count the squares that cover it, or multiply the rows.'],
     ['ዙሪያ፦ አራቱንም ጎኖች እንደምር።', 'Perimeter: add all four sides.']],
+  evenodd: [['ጥንድ ጥንድ እናድርጋቸው፤ አንዱ ብቻውን ከቀረ ጎዶሎ ነው።', 'Put them in pairs: if one is left on its own, the number is odd.'],
+    ['ጥንድ ቁጥሮች በ0፣ 2፣ 4፣ 6 ወይም 8 ያልቃሉ።', 'Even numbers end in 0, 2, 4, 6 or 8.']],
   graph: [['የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።', 'Follow the top of the bar across and read the number.'],
     ['ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።', 'Solve it in two steps: first one part, then the other.']]
 };
@@ -627,6 +629,192 @@ const PLANS = {
       { n: '½', am: 'ግማሽ', visual: V.injera(2, 1) }, { n: '¼', am: 'ሩብ', visual: V.injera(4, 1) }, { n: '¾', am: 'ሶስት ሩብ', visual: V.injera(4, 3) }, { n: '1', am: 'ሙሉ', visual: V.injera(1, 1) }],
       intro: T('የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና ሥዕል።', "Let's find matching cards: number, word and picture.") }
   }),
+  // ---------------- Grade 2, lessons 7–12 ----------------
+  g2_skip: () => {
+    const next = (seq, ans, opts) => choose([`ቀጥሎ የሚመጣው ቁጥር የቱ ነው? ${seq.join('፣ ')}፣ …`, `What number comes next? ${seq.join(', ')}, …`], opts, ans, null, H.times);
+    const evenOdd = (cards) => sortEx(['ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።', "Let's sort: even numbers, odd numbers."], [['even', 'ጥንድ', 'Even'], ['odd', 'ጎዶሎ', 'Odd']],
+      cards.map((n, i) => ['c' + i, String(n), n % 2 ? 'odd' : 'even']), H.evenodd);
+    return {
+      place: 'steps', game: 'coffee',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ሁሉም ብርቱካኖች ጥንድ አላቸው?', 'Does every orange have a partner?'], [opt('yes', 'አዎ', 'Yes'), opt('no', 'አይ', 'No')], 'yes', V.groups([2, 2, 2, 2, 2], 'orange'), H.evenodd) },
+        { at: 'step:3', ex: choose(['በአምስት ስንቆጥር ከአስር ቀጥሎ ምን ይመጣል?', 'Counting in fives, what comes after ten?'], [11, 15, 20], 15, null, H.times) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [groupsOf(6, 2), groupsOf(8, 2), groupsOf(10, 2)],
+        [next([2, 4, 6], 8, [7, 8, 10]), next([5, 10, 15], 20, [16, 20, 25]), next([10, 20, 30], 40, [31, 40, 50])],
+        [evenOdd([2, 5, 6, 7]), evenOdd([10, 13, 14, 9, 18]), evenOdd([21, 34, 47, 50, 16])],
+        [line(0, 10, 2, [4, 8]), line(0, 50, 5, [15, 35], { labels: 'tens' }), line(0, 100, 10, [30, 70, 90])],
+        [numpad(['ስድስት ጥንዶች ስንት ናቸው?', 'How many are six pairs?'], 12, V.groups([2, 2, 2, 2, 2, 2], 'orange'), H.times),
+          numpad(['ሶስት የአምስት ብር ኖቶች ስንት ብር ናቸው?', 'How much are three five-birr notes?'], 15, V.birr([5, 5, 5]), H.money),
+          numpad(['አራት የአስር ብር ኖቶች ስንት ብር ናቸው?', 'How much are four ten-birr notes?'], 40, V.birr([10, 10, 10, 10]), H.money)],
+        [tf('ስምንት ጥንድ ቁጥር ነው።', 'Eight is an even number.', true, V.groups([2, 2, 2, 2], 'orange')),
+          tf('ዘጠኝ ጥንድ ቁጥር ነው።', 'Nine is an even number.', false, V.group('orange', 9)),
+          tf('በአስር ስንቆጥር ከስልሳ ቀጥሎ ሰባ ይመጣል።', 'Counting in tens, seventy comes after sixty.', true)]],
+      challenge: [groupsOf(8, 2), evenOdd([11, 12, 3, 20]), line(0, 20, 2, [6, 12, 18]), listen(N(30), [30, 13, 3]),
+        numpad(['በሁለት ስንቆጥር ከአስራ ስድስት ቀጥሎ ምን ይመጣል?', 'Counting in twos, what comes after sixteen?'], 18, null, H.times)],
+      play: { game: 'coffee', rounds: [{ n: 6, trays: [2, 2, 2] }, { n: 8, trays: [2, 2, 2, 2] }, { n: 10, trays: [5, 5] }],
+        intro: T('ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።', "Let's pour coffee for the guests! Every tray gets the same number of cups.") }
+    };
+  },
+  g2_compare: () => {
+    const bigger = (a, b) => choose(['የትኛው ይበልጣል?', 'Which is greater?'], [{ v: 'a', label: String(a) }, { v: 'b', label: String(b) }], a > b ? 'a' : 'b', null, H.compare);
+    const pics = (a, b) => choose(['የትኛው ይበልጣል?', 'Which is greater?'], [{ v: 'a', visual: V.tensOnes(Math.floor(a / 10), a % 10) }, { v: 'b', visual: V.tensOnes(Math.floor(b / 10), b % 10) }], a > b ? 'a' : 'b', null, H.compare);
+    const than = (n, cards) => sortEx([`ከ${word(n)} የሚያንሱትን እና የሚበልጡትን እንለይ።`, `Let's sort: less than ${n}, more than ${n}.`], [['less', `ከ${n} ያንሳል`, `Less than ${n}`], ['more', `ከ${n} ይበልጣል`, `More than ${n}`]],
+      cards.map((v, i) => ['c' + i, String(v), v < n ? 'less' : 'more']), H.compare);
+    return {
+      place: 'eggs', game: 'race',
+      checkpoints: [
+        { at: 'step:0', ex: bigger(42, 24) },
+        { at: 'step:2', ex: choose(['ትክክለኛው ምልክት የትኛው ነው? 42 ⬜ 24', 'Which sign is right? 42 ⬜ 24'], [{ v: '<', label: '<' }, { v: '>', label: '>' }, { v: '=', label: '=' }], '>', null, H.compare) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [cmp(35, 53), cmp(67, 61), cmp(80, 80)],
+        [pics(34, 43), pics(56, 52), pics(70, 69)],
+        [than(30, [12, 45, 28, 39]), than(50, [49, 51, 15, 60, 38]), than(75, [74, 76, 90, 68, 81])],
+        [line(0, 100, 10, [20, 60]), line(40, 60, 2, [44, 52, 58]), line(0, 100, 10, [30, 50, 80], { labels: 'none' })],
+        [numpad(['በ3 እና 7 አሃዞች ትልቁን ቁጥር እንሥራ።', 'Make the biggest number with the digits 3 and 7.'], 73, null, H.compare),
+          numpad(['በ5 እና 2 አሃዞች ትንሹን ቁጥር እንሥራ።', 'Make the smallest number with the digits 5 and 2.'], 25, null, H.compare),
+          numpad(['በ8 እና 0 አሃዞች ትልቁን ቁጥር እንሥራ።', 'Make the biggest number with the digits 8 and 0.'], 80, null, H.compare)],
+        [tf('ሃምሳ ዘጠኝ ከስልሳ አንድ ይበልጣል።', 'Fifty-nine is greater than sixty-one.', false),
+          tf('አርባ ስምንት ከሰማንያ አራት ያንሳል።', 'Forty-eight is less than eighty-four.', true),
+          tf('ሰባ ሰባት እና ሰባ ሰባት እኩል ናቸው።', 'Seventy-seven and seventy-seven are equal.', true)]],
+      challenge: [cmp(91, 19), than(40, [41, 14, 39, 93]), matchWords([N(27), N(72), N(70)]), listen(N(72), [72, 27, 70]),
+        numpad(['በ9 እና 4 አሃዞች ትንሹን ቁጥር እንሥራ።', 'Make the smallest number with the digits 9 and 4.'], 49, null, H.compare)],
+      play: { game: 'race', questions: [bigger(29, 92), bigger(60, 58), bigger(33, 38), bigger(71, 17), bigger(45, 54)],
+        intro: T('ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።', "Let's race to Grandma's house! Each right answer moves us forward.") }
+    };
+  },
+  g2_measure: () => {
+    const longer = (a, ta, b, tb) => choose(['የትኛው ይረዝማል?', 'Which one is longer?'], [{ v: 'a', visual: V.ruler(a, 15, ta) }, { v: 'b', visual: V.ruler(b, 15, tb) }], a > b ? 'a' : 'b', null, H.measure);
+    const readRuler = (n, max, thing, am, en) => numpad([`${am} ስንት ሳንቲ ሜትር ነው?`, `How many centimetres long is the ${en}?`], n, V.ruler(n, max, thing), H.measure);
+    return {
+      place: 'desk', game: 'balloon',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['እርሳሱ ስንት ሳንቲ ሜትር ነው?', 'How many centimetres long is the pencil?'], [6, 8, 10], 8, V.ruler(8, 10), H.measure) },
+        { at: 'step:3', ex: choose(['የበርን ቁመት በምን እንለካለን?', 'What do we use to measure how tall a door is?'], [opt('cm', 'ሳንቲ ሜትር', 'centimetres'), opt('m', 'ሜትር', 'metres')], 'm', null, H.measure) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [ruler(5, 10, 'pencil', 'እርሳሱ', 'pencil'), ruler(7, 10, 'stick', 'ዱላው', 'stick'), ruler(9, 12, 'spoon', 'ማንኪያው', 'spoon')],
+        [longer(4, 'pencil', 7, 'ribbon'), longer(9, 'stick', 6, 'pencil'), longer(11, 'ribbon', 12, 'stick')],
+        [readRuler(6, 10, 'ribbon', 'ሪባኑ', 'ribbon'), readRuler(11, 15, 'stick', 'ዱላው', 'stick'), readRuler(14, 15, 'pencil', 'እርሳሱ', 'pencil')],
+        [eqn([8, '+', 5, '=', '__'], 13, [13, 3, 85], { prompt: ['ሁለት ዱላዎች፦ ስምንት እና አምስት ሳንቲ ሜትር። አንድ ላይ ስንት ናቸው?', 'Two sticks: eight and five centimetres. How long are they together?'], hints: H.measure }),
+          eqn([15, '−', 6, '=', '__'], 9, [9, 21, 11], { prompt: ['አስራ አምስት ሳንቲ ሜትር ያለው ሪባን ከስድስት ሳንቲ ሜትሩ በስንት ይረዝማል?', 'How much longer is a fifteen-centimetre ribbon than a six-centimetre one?'], hints: H.measure }),
+          eqn([20, '−', '__', '=', 12], 8, [8, 32, 12], { prompt: ['ሃያ ሳንቲ ሜትር ካለው ገመድ ተቆርጦ አስራ ሁለት ቀረ። ስንት ተቆረጠ?', 'Some was cut from a twenty-centimetre string and twelve is left. How much was cut?'], hints: H.measure })],
+        [sortEx(['ከአንድ ሜትር የሚያጥሩትን እና የሚረዝሙትን እንለይ።', "Let's sort: shorter than one metre, longer than one metre."], [['short', 'ከ1 ሜትር ያጥራል', 'Shorter than 1 m'], ['long', 'ከ1 ሜትር ይረዝማል', 'Longer than 1 m']],
+          [['a', '✏️ እርሳስ', 'short'], ['b', '🚪 በር', 'long'], ['c', '🥄 ማንኪያ', 'short'], ['d', '🚌 አውቶቡስ', 'long']], H.measure),
+          sortEx(['በሳንቲ ሜትር ወይስ በሜትር እንለካለን?', "Let's sort: measure in centimetres or in metres?"], [['cm', 'ሳንቲ ሜትር', 'Centimetres'], ['m', 'ሜትር', 'Metres']],
+            [['a', '✏️ እርሳስ', 'cm'], ['b', '🚪 በር', 'm'], ['c', '🧽 ላጲስ', 'cm'], ['d', '🏫 የክፍል ርዝመት', 'm'], ['e', '👆 ጣት', 'cm']], H.measure),
+          sortEx(['ከአስር ሳንቲ ሜትር የሚያጥሩትን እና የሚረዝሙትን እንለይ።', "Let's sort: shorter than ten centimetres, longer than ten centimetres."], [['short', 'ከ10 ሳ.ሜ ያጥራል', 'Shorter than 10 cm'], ['long', 'ከ10 ሳ.ሜ ይረዝማል', 'Longer than 10 cm']],
+            [['a', '7 ሳ.ሜ', 'short'], ['b', '12 ሳ.ሜ', 'long'], ['c', '9 ሳ.ሜ', 'short'], ['d', '15 ሳ.ሜ', 'long'], ['e', '3 ሳ.ሜ', 'short']], H.measure)],
+        [tf('እርሳሱ ስድስት ሳንቲ ሜትር ነው።', 'The pencil is six centimetres long.', true, V.ruler(6, 10)),
+          tf('ዱላው ዘጠኝ ሳንቲ ሜትር ነው።', 'The stick is nine centimetres long.', false, V.ruler(8, 10, 'stick')),
+          tf('መለካት ከአንድ እንጀምራለን።', 'We start measuring at one.', false)]],
+      challenge: [ruler(10, 12, 'ribbon', 'ሪባኑ', 'ribbon'),
+        eqn([12, '−', 7, '=', '__'], 5, [5, 19, 7], { prompt: ['አስራ ሁለት ሳንቲ ሜትር ያለው እርሳስ ከሰባት ሳንቲ ሜትሩ በስንት ይረዝማል?', 'How much longer is a twelve-centimetre pencil than a seven-centimetre one?'], hints: H.measure }),
+        sortEx(['በሳንቲ ሜትር ወይስ በሜትር እንለካለን?', "Let's sort: measure in centimetres or in metres?"], [['cm', 'ሳንቲ ሜትር', 'Centimetres'], ['m', 'ሜትር', 'Metres']],
+          [['a', '🥄 ማንኪያ', 'cm'], ['b', '🌳 ዛፍ', 'm'], ['c', '📒 ደብተር', 'cm'], ['d', '🛣️ መንገድ', 'm']], H.measure),
+        listen('a', [{ v: 'a', visual: V.ruler(8, 10) }, { v: 'b', visual: V.ruler(5, 10) }, { v: 'c', visual: V.ruler(10, 10) }], { say: say('ስምንት ሳንቲ ሜትር', 'eight centimetres'), answer: 'a' }),
+        readRuler(3, 10, 'spoon', 'ማንኪያው', 'spoon')],
+      play: { game: 'balloon', rounds: [{ target: 10, balloons: [6, 4, 3, 8, 5, 9] }, { target: 15, balloons: [7, 8, 10, 2, 6, 12] }, { target: 20, balloons: [12, 8, 15, 3, 9, 14] }],
+        intro: T('ሁለት ሪባኖችን የሚያሳዩ ፊኛዎችን ፈንድተን የተጠየቀውን ርዝመት እንሥራ።', "Pop two ribbon balloons that add up to the length asked for.") }
+    };
+  },
+  g2_time: () => {
+    const read = (h, m, wrong) => choose(['ሰዓቱ ስንት ነው?', 'What time is it?'], [hhmm(h, m), ...wrong].map((t) => ({ v: t, label: t })), hhmm(h, m), V.clock(h, m), H.time);
+    const clocks = (list) => pairs(list.map(([h, m]) => [hhmm(h, m), { visual: V.clock(h, m) }]), ['እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።', "Let's match each time to its clock."], H.time);
+    const ethio = (hours) => pairs(hours.map((h) => [`${h}:00`, { label: `ሰዓት ${eth(h)}`, lang: 'am' }]), ['እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።', "Let's match each time to its Ethiopian time."], H.ethtime);
+    const side = (h, m, cards) => sortEx([`ከ${hhmm(h, m)} በፊት እና በኋላ ያሉትን እንለይ።`, `Let's sort: before ${hhmm(h, m)}, after ${hhmm(h, m)}.`], [['before', `ከ${hhmm(h, m)} በፊት`, `Before ${hhmm(h, m)}`], ['after', `ከ${hhmm(h, m)} በኋላ`, `After ${hhmm(h, m)}`]],
+      cards.map(([hh, mm], i) => ['c' + i, hhmm(hh, mm), hh * 60 + mm < h * 60 + m ? 'before' : 'after']), H.time);
+    const mins = (on, h, m) => numpad([`ትልቁ መርፌ ${word(on)} ላይ ነው። ስንት ደቂቃ ነው?`, `The long hand is on the ${word(on, 'en')}. How many minutes is that?`], m, V.clock(h, m), H.time);
+    const ethQ = (am) => ({ v: am, label: am });
+    return {
+      place: 'alarm', game: 'memory',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ትልቁ መርፌ ሶስት ላይ ነው። ስንት ደቂቃ ነው?', 'The long hand is on the three. How many minutes is that?'], [3, 15, 30], 15, V.clock(3, 15), H.time) },
+        { at: 'step:3', ex: choose(['በኢትዮጵያ አቆጣጠር ስንት ሰዓት ነው?', 'What time is it in Ethiopian time?'], [ethQ('ሰዓት 9 ከሩብ'), ethQ('ሰዓት 3 ከሩብ'), ethQ('ሰዓት 6 ከሩብ')], 'ሰዓት 9 ከሩብ', V.clock(3, 15), H.ethtime) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [clockAt(2, 0, 5, 'ሰዓቱን ሁለት ሰዓት እናድርግ።', "Set the clock to two o'clock."), clockAt(6, 30, 5, 'ሰዓቱን ስድስት ተኩል እናድርግ።', 'Set the clock to half past six.'),
+          clockAt(8, 45, 5, 'ሰዓቱን ስምንት ከአርባ አምስት እናድርግ።', 'Set the clock to eight forty-five.')],
+        [read(4, 0, ['12:20', '4:30']), read(9, 30, ['6:45', '10:30']), read(1, 25, ['5:05', '2:25'])],
+        [clocks([[3, 0], [6, 30]]), clocks([[11, 15], [2, 45], [7, 0]]), clocks([[5, 10], [8, 40], [12, 25]])],
+        [mins(6, 2, 30), mins(9, 7, 45), mins(11, 10, 55)],
+        [side(9, 0, [[8, 30], [9, 15], [8, 55], [10, 0]]), side(4, 30, [[4, 15], [4, 45], [3, 50], [5, 0], [4, 25]]), side(12, 0, [[11, 35], [12, 10], [10, 50], [12, 40], [11, 55]])],
+        [ethio([7, 8]), ethio([9, 10, 12]), ethio([3, 4, 6])]],
+      challenge: [clocks([[4, 15], [10, 30]]), side(12, 0, [[11, 30], [12, 5], [9, 0], [1, 0]]), ethio([6, 11]),
+        clockAt(5, 20, 5, 'ሰዓቱን አምስት ከሃያ እናድርግ።', 'Set the clock to five twenty.'),
+        tf('ሰዓቱ ሰባት ተኩል ነው።', 'The time is half past seven.', true, V.clock(7, 30))],
+      play: { game: 'memory', pairs: [
+        { n: '3:15', am: 'ሶስት ከሩብ', visual: V.clock(3, 15) }, { n: '6:30', am: 'ስድስት ተኩል', visual: V.clock(6, 30) },
+        { n: '9:00', am: 'ዘጠኝ ሰዓት', visual: V.clock(9, 0) }, { n: '12:45', am: 'አስራ ሁለት ከአርባ አምስት', visual: V.clock(12, 45) }],
+        intro: T('የሚመሳሰሉትን ካርዶች እንፈልግ፤ ሰዓቱ እና የሰዓቱ ሥዕል።', "Let's find matching cards: the time and its clock.") }
+    };
+  },
+  g2_shapes: () => {
+    const NAME = { triangle: 'ሶስት ማዕዘን', square: 'ካሬ', rectangle: 'አራት ማዕዘን', pentagon: 'ባለ አምስት ጎን', hexagon: 'ባለ ስድስት ጎን', circle: 'ክብ' };
+    const SIDES = { triangle: 3, 'right-triangle': 3, square: 4, rectangle: 4, rhombus: 4, trapezoid: 4, kite: 4, pentagon: 5, hexagon: 6 };
+    const pick1 = (am, en, shapes, ans) => choose([am, en], shapes.map((k) => ({ v: k, visual: V.shape(k) })), ans, null, H.shapes);
+    const names = (list) => pairs(list.map((k) => [{ label: NAME[k], lang: 'am' }, { visual: V.shape(k) }]), ['እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።', "Let's match each name to its shape."], H.shapes);
+    const bySides = (list, ns) => sortEx(['በጎኖቻቸው ብዛት እንለይ።', "Let's sort by the number of sides."], ns.map((n) => [String(n), `${n} ጎኖች`, `${n} sides`]), list.map((k, i) => ['c' + i, '', String(SIDES[k]), V.shape(k)]), H.shapes);
+    const sides = (k, n) => numpad(['ስንት ጎኖች አሉት?', 'How many sides does it have?'], n, V.shape(k), H.shapes);
+    return {
+      place: 'wall', game: 'memory',
+      checkpoints: [
+        { at: 'step:0', ex: choose(['ሶስት ማዕዘን ስንት ጎኖች አሉት?', 'How many sides does a triangle have?'], [3, 4, 5], 3, V.shape('triangle'), H.shapes) },
+        { at: 'step:2', ex: choose(['ባለ ስድስት ጎን ስንት ጎኖች አሉት?', 'How many sides does a hexagon have?'], [5, 6, 8], 6, V.shape('hexagon'), H.shapes) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [bySides(['triangle', 'square', 'right-triangle', 'rectangle'], [3, 4]), bySides(['triangle', 'square', 'pentagon', 'trapezoid', 'right-triangle'], [3, 4, 5]),
+          bySides(['kite', 'pentagon', 'hexagon', 'rectangle', 'pentagon'], [4, 5, 6])],
+        [pick1('ክቡ የትኛው ነው?', 'Which one is the circle?', ['square', 'circle', 'triangle'], 'circle'), pick1('ሶስት ማዕዘኑ የትኛው ነው?', 'Which one is the triangle?', ['rectangle', 'triangle', 'pentagon'], 'triangle'),
+          pick1('ባለ ስድስት ጎኑ የትኛው ነው?', 'Which one is the hexagon?', ['pentagon', 'hexagon', 'square'], 'hexagon')],
+        [names(['triangle', 'circle']), names(['square', 'triangle', 'circle']), names(['pentagon', 'hexagon', 'rectangle'])],
+        [sides('square', 4), sides('pentagon', 5), numpad(['ሁለት ካሬዎች በአጠቃላይ ስንት ጎኖች አሏቸው?', 'How many sides do two squares have altogether?'], 8, null, H.shapes)],
+        [tf('ክብ ሶስት ጎኖች አሉት።', 'A circle has three sides.', false, V.shape('circle')), tf('ይህ ካሬ ነው።', 'This is a square.', true, V.shape('square')),
+          tf('ይህ ባለ አምስት ጎን ነው።', 'This is a pentagon.', false, V.shape('hexagon'))],
+        [grid(2, 2), grid(3, 2), grid(3, 3)]],
+      challenge: [bySides(['hexagon', 'square', 'triangle', 'rectangle'], [3, 4, 6]), names(['rectangle', 'hexagon']), grid(4, 2),
+        listen('a', [{ v: 'a', visual: V.shape('circle') }, { v: 'b', visual: V.shape('square') }, { v: 'c', visual: V.shape('triangle') }], { say: say('ክብ', 'circle'), answer: 'a' }),
+        numpad(['አንድ ሶስት ማዕዘን እና አንድ ካሬ በአጠቃላይ ስንት ጎኖች አሏቸው?', 'How many sides do a triangle and a square have altogether?'], 7, null, H.shapes)],
+      play: { game: 'memory', pairs: [['triangle', 3], ['square', 4], ['pentagon', 5], ['hexagon', 6]].map(([k, n]) => ({ n, am: NAME[k], visual: V.shape(k) })),
+        intro: T('የሚመሳሰሉትን ካርዶች እንፈልግ፤ የጎኖች ብዛት እና ቅርጹ።', "Let's find matching cards: the number of sides and the shape.") }
+    };
+  },
+  g2_graphs: () => {
+    const fruitOpts = ['banana', 'mango', 'orange'].map((k) => opt(k, FRUIT[k].am, FRUIT[k].en));
+    return {
+      place: 'chart', game: 'market',
+      checkpoints: [
+        { at: 'step:1', ex: choose(['ብዙ ልጆች የመረጡት የትኛውን ፍራፍሬ ነው?', 'Which fruit did the most children choose?'], fruitOpts, 'mango', V.bars([4, 6, 2]), H.graph) },
+        { at: 'step:3', ex: choose(['በአጠቃላይ ስንት ልጆች ናቸው?', 'How many children are there altogether?'], [10, 12, 14], 12, V.bars([4, 6, 2]), H.graph) }],
+      reteach: ['step:0', 'end'],
+      guided: [
+        [columns([2, 3]), columns([3, 1, 2]), columns([4, 2, 3])],
+        [choose(['ስንት ልጆች ሙዝ መረጡ?', 'How many children chose bananas?'], [2, 4, 6], 4, V.bars([4, 6, 2]), H.graph),
+          choose(['ስንት ልጆች ብርቱካን መረጡ?', 'How many children chose oranges?'], [3, 4, 5], 4, V.bars([5, 3, 4]), H.graph),
+          choose(['ማንጎ ከብርቱካን በስንት ይበልጣል?', 'How many more chose mangoes than oranges?'], [2, 4, 6], 4, V.bars([3, 5, 1]), H.graph)],
+        [tf('ቡና የወደዱት አራት ልጆች ናቸው።', 'Four children liked coffee.', true, V.picto([['ቡና', 4], ['ሻይ', 2]])),
+          tf('ሻይ የወደዱት ከቡና ይበልጣሉ።', 'More children liked tea than coffee.', false, V.picto([['ቡና', 3], ['ሻይ', 1]])),
+          tf('ቡና እና ሻይ የወደዱት በአንድ ላይ ስድስት ናቸው።', 'Six children liked coffee or tea altogether.', true, V.picto([['ቡና', 4], ['ሻይ', 2]]))],
+        [numpad(['ዳዊት ስምንት ማንጎዎች ነበሩት፤ ሶስቱን ሰጠ። ስንት ቀሩት?', 'Dawit had eight mangoes and gave away three. How many are left?'], 5, null, H.graph),
+          numpad(['ሰላም አምስት እንቁላሎች ገዛች፤ እማማ አራት ጨመረች። ስንት ሆኑ?', 'Selam bought five eggs and Mama added four. How many are there now?'], 9, null, H.graph),
+          numpad(['በክፍሉ አስራ ሁለት ልጆች ነበሩ፤ አምስት ወጡ፣ ሶስት ገቡ። አሁን ስንት ናቸው?', 'There were twelve children in the room; five went out and three came in. How many are there now?'], 10, null, H.graph)],
+        [eqn([6, '−', 4, '=', '__'], 2, [2, 10, 4], { prompt: ['ማንጎ ከሙዝ በስንት ይበልጣል?', 'How many more chose mangoes than bananas?'], visual: V.bars([4, 6, 2]), hints: H.graph }),
+          eqn([4, '+', 6, '+', 2, '=', '__'], 12, [12, 10, 8], { prompt: ['በአጠቃላይ ስንት ልጆች ናቸው?', 'How many children altogether?'], visual: V.bars([4, 6, 2]), hints: H.graph }),
+          eqn([10, '−', 3, '+', 2, '=', '__'], 9, [9, 5, 15], { prompt: ['አስር ወፎች ነበሩ፤ ሶስቱ በረሩ፣ ሁለት መጡ። ስንት ናቸው?', 'There were ten birds; three flew away and two came. How many are there?'], hints: H.graph })],
+        [pay(12, 'ዳቦው እና ሙዙ', 'bread and bananas', [10, 5, 1, 1]), pay(18, 'እስክሪብቶው እና ላጲሱ', 'pen and eraser', [10, 5, 1, 1, 1, 1], { pic: 'pen' }),
+          pay(25, 'ደብተሩ እና እስክሪብቶው', 'exercise book and pen', [10, 10, 5, 5, 1], { pic: 'book' })]],
+      challenge: [columns([3, 4]), eqn([5, '+', 3, '=', '__'], 8, [8, 2, 53], { prompt: ['አምስት ልጆች ሙዝ፣ ሶስት ልጆች ማንጎ መረጡ። በአጠቃላይ ስንት ናቸው?', 'Five children chose bananas and three chose mangoes. How many altogether?'], hints: H.graph }),
+        pay(15, 'ሙዙ እና እንቁላሉ', 'bananas and eggs', [10, 5, 5, 1], { pic: 'egg' }), listen(N(12), [12, 21, 2]),
+        tf('ብርቱካን የመረጡት ከሙዝ ያንሳሉ።', 'Fewer children chose oranges than bananas.', true, V.bars([4, 6, 2]))],
+      play: { game: 'market', budget_currency: 'birr', rounds: [
+        { budget: 10, goods: [{ pic: 'bread', am: 'ዳቦ', en: 'Bread', price: 6 }, { pic: 'banana', am: 'ሙዝ', en: 'Bananas', price: 4 }, { pic: 'egg', am: 'እንቁላል', en: 'Eggs', price: 7 }] },
+        { budget: 20, goods: [{ pic: 'pen', am: 'እስክሪብቶ', en: 'Pen', price: 12 }, { pic: 'book', am: 'ደብተር', en: 'Exercise book', price: 8 }, { pic: 'banana', am: 'ሙዝ', en: 'Bananas', price: 5 }] },
+        { budget: N(30), goods: [{ pic: 'bag', am: 'ቦርሳ', en: 'Bag', price: 25 }, { pic: 'pen', am: 'እስክሪብቶ', en: 'Pen', price: 5 }, { pic: 'bread', am: 'ዳቦ', en: 'Bread', price: 10 }] }],
+        intro: T('ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።', "Let's go to the market! Buy things that use up exactly all our birr.") }
+    };
+  },
   // ---------------- Grade 3 ----------------
   g3_hundreds: () => ({
     place: 'store', game: 'memory',
@@ -1132,6 +1320,7 @@ const PLANS = {
 // ---------- assemble ----------
 const META = Object.fromEntries([...LK.lessons.map((l) => [l.id, Object.assign({ grade: 1 }, l)]), ...LK.lessonsG2.map((l) => [l.id, l]), ...LK.lessonsG3.map((l) => [l.id, l])]);
 const ORDER = ['count10', 'teens', 'compare', 'add10', 'sub10', 'make10', 'g2_placevalue', 'g2_add2d', 'g2_sub2d', 'g2_groups', 'g2_birr', 'g2_halves',
+  'g2_skip', 'g2_compare', 'g2_measure', 'g2_time', 'g2_shapes', 'g2_graphs',
   'g3_hundreds', 'g3_add3d', 'g3_sub3d', 'g3_times', 'g3_share', 'g3_fractions',
   'g3_round', 'g3_tables', 'g3_divide', 'g3_fracline', 'g3_measure', 'g3_time', 'g3_shapes', 'g3_area', 'g3_graphs'];
 function timeline(id) {

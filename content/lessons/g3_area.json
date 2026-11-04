@@ -50,12 +50,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ]
         }
@@ -68,7 +68,7 @@
           "type": "tap_choose",
           "prompt_am": "ዙሪያው ስንት ነው?",
           "prompt_en": "What is the perimeter?",
-          "audio_url": "audio/am/ex.g3_area.04.mp3",
+          "audio_url": "audio/am/ex.g3_area.02.mp3",
           "options": [
             {
               "v": 7
@@ -91,12 +91,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ]
         }
@@ -120,7 +120,7 @@
           "type": "drag_drop_count",
           "prompt_am": "ወለሉን በካሬ ሰቆች እንሸፍን፤ ሁለት ረድፎች፣ በእያንዳንዱ ሶስት።",
           "prompt_en": "Let's cover the floor with square tiles: 2 rows of 3.",
-          "audio_url": "audio/am/ex.g3_area.05.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.18.mp3",
           "items": {
             "thing": "square",
             "supply": 8,
@@ -143,12 +143,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 1
@@ -158,7 +158,7 @@
           "type": "drag_drop_count",
           "prompt_am": "ወለሉን በካሬ ሰቆች እንሸፍን፤ ሁለት ረድፎች፣ በእያንዳንዱ አራት።",
           "prompt_en": "Let's cover the floor with square tiles: 2 rows of 4.",
-          "audio_url": "audio/am/ex.g3_area.06.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.20.mp3",
           "items": {
             "thing": "square",
             "supply": 10,
@@ -181,12 +181,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 2
@@ -196,7 +196,7 @@
           "type": "drag_drop_count",
           "prompt_am": "ወለሉን በካሬ ሰቆች እንሸፍን፤ ሶስት ረድፎች፣ በእያንዳንዱ አራት።",
           "prompt_en": "Let's cover the floor with square tiles: 3 rows of 4.",
-          "audio_url": "audio/am/ex.g3_area.07.mp3",
+          "audio_url": "audio/am/ex.g3_area.03.mp3",
           "items": {
             "thing": "square",
             "supply": 12,
@@ -219,12 +219,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 3
@@ -239,7 +239,7 @@
           "type": "numpad",
           "prompt_am": "ስፋቱ ስንት ካሬ አሃድ ነው?",
           "prompt_en": "What is the area in square units?",
-          "audio_url": "audio/am/ex.g3_area.08.mp3",
+          "audio_url": "audio/am/ex.g3_area.04.mp3",
           "answer": 10,
           "visual": {
             "kind": "rect",
@@ -252,12 +252,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 1
@@ -267,7 +267,7 @@
           "type": "numpad",
           "prompt_am": "ስፋቱ ስንት ካሬ አሃድ ነው?",
           "prompt_en": "What is the area in square units?",
-          "audio_url": "audio/am/ex.g3_area.08.mp3",
+          "audio_url": "audio/am/ex.g3_area.04.mp3",
           "answer": 16,
           "visual": {
             "kind": "rect",
@@ -280,12 +280,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 2
@@ -295,7 +295,7 @@
           "type": "numpad",
           "prompt_am": "ስፋቱ ስንት ካሬ አሃድ ነው?",
           "prompt_en": "What is the area in square units?",
-          "audio_url": "audio/am/ex.g3_area.08.mp3",
+          "audio_url": "audio/am/ex.g3_area.04.mp3",
           "answer": 18,
           "visual": {
             "kind": "rect",
@@ -308,12 +308,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 3
@@ -328,7 +328,7 @@
           "type": "tap_choose",
           "prompt_am": "ዙሪያው ስንት ነው?",
           "prompt_en": "What is the perimeter?",
-          "audio_url": "audio/am/ex.g3_area.04.mp3",
+          "audio_url": "audio/am/ex.g3_area.02.mp3",
           "options": [
             {
               "v": 5
@@ -351,12 +351,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 1
@@ -366,7 +366,7 @@
           "type": "tap_choose",
           "prompt_am": "ዙሪያው ስንት ነው?",
           "prompt_en": "What is the perimeter?",
-          "audio_url": "audio/am/ex.g3_area.04.mp3",
+          "audio_url": "audio/am/ex.g3_area.02.mp3",
           "options": [
             {
               "v": 8
@@ -389,12 +389,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 2
@@ -404,7 +404,7 @@
           "type": "tap_choose",
           "prompt_am": "ዙሪያው ስንት ነው?",
           "prompt_en": "What is the perimeter?",
-          "audio_url": "audio/am/ex.g3_area.04.mp3",
+          "audio_url": "audio/am/ex.g3_area.02.mp3",
           "options": [
             {
               "v": 10
@@ -427,12 +427,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 3
@@ -447,7 +447,7 @@
           "type": "drag_equation",
           "prompt_am": "አምስት በሶስት የሆነ አራት ማዕዘን ስፋቱ ስንት ነው?",
           "prompt_en": "What is the area of a five by three rectangle?",
-          "audio_url": "audio/am/ex.g3_area.09.mp3",
+          "audio_url": "audio/am/ex.g3_area.05.mp3",
           "equation": [
             "5",
             "×",
@@ -470,12 +470,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 1
@@ -485,7 +485,7 @@
           "type": "drag_equation",
           "prompt_am": "አራት በሁለት የሆነ አራት ማዕዘን ዙሪያው ስንት ነው?",
           "prompt_en": "What is the perimeter of a four by two rectangle?",
-          "audio_url": "audio/am/ex.g3_area.10.mp3",
+          "audio_url": "audio/am/ex.g3_area.06.mp3",
           "equation": [
             "4",
             "+",
@@ -512,12 +512,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 2
@@ -527,7 +527,7 @@
           "type": "drag_equation",
           "prompt_am": "ስፋቱ ሃያ ስምንት፣ ርዝመቱ ሰባት ነው። ወርዱ ስንት ነው?",
           "prompt_en": "The area is twenty-eight and the length is seven. How wide is it?",
-          "audio_url": "audio/am/ex.g3_area.11.mp3",
+          "audio_url": "audio/am/ex.g3_area.07.mp3",
           "equation": [
             "7",
             "×",
@@ -550,12 +550,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 3
@@ -570,7 +570,7 @@
           "type": "drag_sort",
           "prompt_am": "ስፋታቸው አስራ ሁለት የሆኑትን እንለይ።",
           "prompt_en": "Let's sort: area twelve, not twelve.",
-          "audio_url": "audio/am/ex.g3_area.12.mp3",
+          "audio_url": "audio/am/ex.g3_area.08.mp3",
           "targets": [
             {
               "id": "yes",
@@ -635,12 +635,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 1
@@ -650,7 +650,7 @@
           "type": "drag_sort",
           "prompt_am": "ዙሪያቸው አስራ ሁለት የሆኑትን እንለይ።",
           "prompt_en": "Let's sort: perimeter twelve, not twelve.",
-          "audio_url": "audio/am/ex.g3_area.13.mp3",
+          "audio_url": "audio/am/ex.g3_area.09.mp3",
           "targets": [
             {
               "id": "yes",
@@ -726,12 +726,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 2
@@ -741,7 +741,7 @@
           "type": "drag_sort",
           "prompt_am": "ስፋታቸው ሃያ አራት የሆኑትን እንለይ።",
           "prompt_en": "Let's sort: area twenty-four, not twenty-four.",
-          "audio_url": "audio/am/ex.g3_area.14.mp3",
+          "audio_url": "audio/am/ex.g3_area.10.mp3",
           "targets": [
             {
               "id": "yes",
@@ -817,12 +817,12 @@
             {
               "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
               "en": "Area: count the squares that cover it, or multiply the rows.",
-              "audio_url": "audio/am/ex.g3_area.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.16.mp3"
             },
             {
               "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
               "en": "Perimeter: add all four sides.",
-              "audio_url": "audio/am/ex.g3_area.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.17.mp3"
             }
           ],
           "level": 3
@@ -837,7 +837,7 @@
           "type": "true_false",
           "prompt_am": "ልክ ነው ወይስ አይደለም? ስፋቱ ስምንት ካሬ አሃድ ነው።",
           "prompt_en": "True or not? The area is eight square units.",
-          "audio_url": "audio/am/ex.g3_area.15.mp3",
+          "audio_url": "audio/am/ex.g3_area.11.mp3",
           "statement_am": "ስፋቱ ስምንት ካሬ አሃድ ነው።",
           "statement_en": "The area is eight square units.",
           "visual": {
@@ -866,7 +866,7 @@
           "type": "true_false",
           "prompt_am": "ልክ ነው ወይስ አይደለም? ዙሪያው ስምንት ነው።",
           "prompt_en": "True or not? The perimeter is eight.",
-          "audio_url": "audio/am/ex.g3_area.16.mp3",
+          "audio_url": "audio/am/ex.g3_area.12.mp3",
           "statement_am": "ዙሪያው ስምንት ነው።",
           "statement_en": "The perimeter is eight.",
           "visual": {
@@ -895,7 +895,7 @@
           "type": "true_false",
           "prompt_am": "ልክ ነው ወይስ አይደለም? የዚህ ካሬ ስፋት እና ዙሪያ እኩል ቁጥሮች ናቸው።",
           "prompt_en": "True or not? The area and the perimeter of this square are the same number.",
-          "audio_url": "audio/am/ex.g3_area.17.mp3",
+          "audio_url": "audio/am/ex.g3_area.13.mp3",
           "statement_am": "የዚህ ካሬ ስፋት እና ዙሪያ እኩል ቁጥሮች ናቸው።",
           "statement_en": "The area and the perimeter of this square are the same number.",
           "visual": {
@@ -931,7 +931,7 @@
         "type": "tap_choose",
         "prompt_am": "ስፋት፦ ሶስት በአምስት?",
         "prompt_en": "Area: three by five?",
-        "audio_url": "audio/am/ex.g3_area.22.mp3",
+        "audio_url": "audio/am/ex.g3_area.17.mp3",
         "options": [
           {
             "v": 15
@@ -959,7 +959,7 @@
         "type": "tap_choose",
         "prompt_am": "ስፋት፦ አራት በአራት?",
         "prompt_en": "Area: four by four?",
-        "audio_url": "audio/am/ex.g3_area.23.mp3",
+        "audio_url": "audio/am/ex.g3_area.18.mp3",
         "options": [
           {
             "v": 16
@@ -987,7 +987,7 @@
         "type": "tap_choose",
         "prompt_am": "ዙሪያ፦ ሁለት በሁለት?",
         "prompt_en": "Perimeter: two by two?",
-        "audio_url": "audio/am/ex.g3_area.24.mp3",
+        "audio_url": "audio/am/ex.g3_area.19.mp3",
         "options": [
           {
             "v": 8
@@ -1015,7 +1015,7 @@
         "type": "tap_choose",
         "prompt_am": "ስፋት፦ ስድስት በሁለት?",
         "prompt_en": "Area: six by two?",
-        "audio_url": "audio/am/ex.g3_area.25.mp3",
+        "audio_url": "audio/am/ex.g3_area.20.mp3",
         "options": [
           {
             "v": 12
@@ -1043,7 +1043,7 @@
         "type": "tap_choose",
         "prompt_am": "ዙሪያ፦ አምስት በአንድ?",
         "prompt_en": "Perimeter: five by one?",
-        "audio_url": "audio/am/ex.g3_area.26.mp3",
+        "audio_url": "audio/am/ex.g3_area.21.mp3",
         "options": [
           {
             "v": 12
@@ -1079,7 +1079,7 @@
       "type": "drag_drop_count",
       "prompt_am": "ወለሉን በካሬ ሰቆች እንሸፍን፤ ሶስት ረድፎች፣ በእያንዳንዱ ሶስት።",
       "prompt_en": "Let's cover the floor with square tiles: 3 rows of 3.",
-      "audio_url": "audio/am/ex.g3_area.18.mp3",
+      "audio_url": "audio/am/ex.g2_shapes.19.mp3",
       "items": {
         "thing": "square",
         "supply": 11,
@@ -1102,12 +1102,12 @@
         {
           "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
           "en": "Area: count the squares that cover it, or multiply the rows.",
-          "audio_url": "audio/am/ex.g3_area.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.16.mp3"
         },
         {
           "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
           "en": "Perimeter: add all four sides.",
-          "audio_url": "audio/am/ex.g3_area.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.17.mp3"
         }
       ]
     },
@@ -1116,7 +1116,7 @@
       "type": "drag_equation",
       "prompt_am": "ስድስት በሶስት የሆነ አራት ማዕዘን ዙሪያው ስንት ነው?",
       "prompt_en": "What is the perimeter of a six by three rectangle?",
-      "audio_url": "audio/am/ex.g3_area.19.mp3",
+      "audio_url": "audio/am/ex.g3_area.14.mp3",
       "equation": [
         "6",
         "+",
@@ -1143,12 +1143,12 @@
         {
           "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
           "en": "Area: count the squares that cover it, or multiply the rows.",
-          "audio_url": "audio/am/ex.g3_area.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.16.mp3"
         },
         {
           "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
           "en": "Perimeter: add all four sides.",
-          "audio_url": "audio/am/ex.g3_area.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.17.mp3"
         }
       ]
     },
@@ -1157,7 +1157,7 @@
       "type": "drag_match_word",
       "prompt_am": "እያንዳንዱን ስፋት ከአራት ማዕዘኑ ጋር እናገናኝ።",
       "prompt_en": "Let's match each area to its rectangle.",
-      "audio_url": "audio/am/ex.g3_area.20.mp3",
+      "audio_url": "audio/am/ex.g3_area.15.mp3",
       "items": [
         {
           "id": "w0",
@@ -1196,12 +1196,12 @@
         {
           "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
           "en": "Area: count the squares that cover it, or multiply the rows.",
-          "audio_url": "audio/am/ex.g3_area.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.16.mp3"
         },
         {
           "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
           "en": "Perimeter: add all four sides.",
-          "audio_url": "audio/am/ex.g3_area.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.17.mp3"
         }
       ]
     },
@@ -1214,7 +1214,7 @@
       "say": {
         "am": "ስፋቱ ሃያ ካሬ አሃድ ነው",
         "en": "the area is twenty square units",
-        "audio_url": "audio/am/ex.g3_area.21.mp3"
+        "audio_url": "audio/am/ex.g3_area.16.mp3"
       },
       "options": [
         {
@@ -1264,7 +1264,7 @@
       "type": "numpad",
       "prompt_am": "ዙሪያው ስንት ነው?",
       "prompt_en": "What is the perimeter?",
-      "audio_url": "audio/am/ex.g3_area.04.mp3",
+      "audio_url": "audio/am/ex.g3_area.02.mp3",
       "answer": 20,
       "visual": {
         "kind": "rect",
@@ -1277,12 +1277,12 @@
         {
           "am": "ስፋት፦ የሚሸፍኑትን ካሬዎች እንቁጠር ወይም ረድፎችን እናባዛ።",
           "en": "Area: count the squares that cover it, or multiply the rows.",
-          "audio_url": "audio/am/ex.g3_area.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.16.mp3"
         },
         {
           "am": "ዙሪያ፦ አራቱንም ጎኖች እንደምር።",
           "en": "Perimeter: add all four sides.",
-          "audio_url": "audio/am/ex.g3_area.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.17.mp3"
         }
       ]
     }

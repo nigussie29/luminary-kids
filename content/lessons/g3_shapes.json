@@ -26,7 +26,7 @@
           "type": "tap_choose",
           "prompt_am": "ሶስት ማዕዘን ስንት ጎኖች አሉት?",
           "prompt_en": "How many sides does a triangle have?",
-          "audio_url": "audio/am/ex.g3_shapes.01.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.01.mp3",
           "options": [
             {
               "v": 3
@@ -47,12 +47,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ]
         }
@@ -65,7 +65,7 @@
           "type": "tap_choose",
           "prompt_am": "ካሬ ስንት እኩል ጎኖች አሉት?",
           "prompt_en": "How many equal sides does a square have?",
-          "audio_url": "audio/am/ex.g3_shapes.04.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.01.mp3",
           "options": [
             {
               "v": 2
@@ -86,12 +86,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ]
         }
@@ -115,7 +115,7 @@
           "type": "drag_sort",
           "prompt_am": "ሶስት ማዕዘኖችን እና ባለ አራት ጎኖችን እንለይ።",
           "prompt_en": "Let's sort: triangles, four-sided shapes.",
-          "audio_url": "audio/am/ex.g3_shapes.05.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.02.mp3",
           "targets": [
             {
               "id": "three",
@@ -172,12 +172,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 1
@@ -187,7 +187,7 @@
           "type": "drag_sort",
           "prompt_am": "ሶስት ማዕዘኖችን እና ባለ አራት ጎኖችን እንለይ።",
           "prompt_en": "Let's sort: triangles, four-sided shapes.",
-          "audio_url": "audio/am/ex.g3_shapes.05.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.02.mp3",
           "targets": [
             {
               "id": "three",
@@ -253,12 +253,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 2
@@ -268,7 +268,7 @@
           "type": "drag_sort",
           "prompt_am": "ባለ አራት ጎኖችን እና ያልሆኑትን እንለይ።",
           "prompt_en": "Let's sort: quadrilaterals, not quadrilaterals.",
-          "audio_url": "audio/am/ex.g3_shapes.06.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.03.mp3",
           "targets": [
             {
               "id": "four",
@@ -334,12 +334,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 3
@@ -354,7 +354,7 @@
           "type": "tap_choose",
           "prompt_am": "ካሬው የትኛው ነው?",
           "prompt_en": "Which one is the square?",
-          "audio_url": "audio/am/ex.g3_shapes.07.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.04.mp3",
           "options": [
             {
               "v": "rectangle",
@@ -384,12 +384,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 1
@@ -399,7 +399,7 @@
           "type": "tap_choose",
           "prompt_am": "አራት ማዕዘኑ የትኛው ነው?",
           "prompt_en": "Which one is the rectangle?",
-          "audio_url": "audio/am/ex.g3_shapes.08.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.05.mp3",
           "options": [
             {
               "v": "rhombus",
@@ -429,12 +429,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 2
@@ -444,7 +444,7 @@
           "type": "tap_choose",
           "prompt_am": "አምስት ጎኖች ያሉት የትኛው ነው?",
           "prompt_en": "Which one has five sides?",
-          "audio_url": "audio/am/ex.g3_shapes.09.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.06.mp3",
           "options": [
             {
               "v": "hexagon",
@@ -474,12 +474,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 3
@@ -494,7 +494,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
           "prompt_en": "Let's match each name to its shape.",
-          "audio_url": "audio/am/ex.g3_shapes.10.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.09.mp3",
           "items": [
             {
               "id": "w0",
@@ -531,12 +531,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 1
@@ -546,7 +546,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
           "prompt_en": "Let's match each name to its shape.",
-          "audio_url": "audio/am/ex.g3_shapes.10.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.09.mp3",
           "items": [
             {
               "id": "w0",
@@ -596,12 +596,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 2
@@ -611,7 +611,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
           "prompt_en": "Let's match each name to its shape.",
-          "audio_url": "audio/am/ex.g3_shapes.10.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.09.mp3",
           "items": [
             {
               "id": "w0",
@@ -661,12 +661,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 3
@@ -681,7 +681,7 @@
           "type": "numpad",
           "prompt_am": "ስንት ጎኖች አሉት?",
           "prompt_en": "How many sides does it have?",
-          "audio_url": "audio/am/ex.g3_shapes.11.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.10.mp3",
           "answer": 5,
           "visual": {
             "kind": "shape",
@@ -692,12 +692,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 1
@@ -707,7 +707,7 @@
           "type": "numpad",
           "prompt_am": "ስንት ጎኖች አሉት?",
           "prompt_en": "How many sides does it have?",
-          "audio_url": "audio/am/ex.g3_shapes.11.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.10.mp3",
           "answer": 6,
           "visual": {
             "kind": "shape",
@@ -718,12 +718,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 2
@@ -733,7 +733,7 @@
           "type": "numpad",
           "prompt_am": "አንድ ሶስት ማዕዘን እና አንድ ካሬ በአጠቃላይ ስንት ማዕዘኖች አሏቸው?",
           "prompt_en": "How many corners do a triangle and a square have altogether?",
-          "audio_url": "audio/am/ex.g3_shapes.12.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.07.mp3",
           "answer": 7,
           "visual": null,
           "max_digits": 2,
@@ -741,12 +741,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 3
@@ -761,7 +761,7 @@
           "type": "true_false",
           "prompt_am": "ልክ ነው ወይስ አይደለም? ካሬ አራት ማዕዘንም ነው።",
           "prompt_en": "True or not? A square is also a rectangle.",
-          "audio_url": "audio/am/ex.g3_shapes.13.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.08.mp3",
           "statement_am": "ካሬ አራት ማዕዘንም ነው።",
           "statement_en": "A square is also a rectangle.",
           "visual": {
@@ -788,7 +788,7 @@
           "type": "true_false",
           "prompt_am": "ልክ ነው ወይስ አይደለም? ይህ ቅርጽ አራት ጎኖች አሉት።",
           "prompt_en": "True or not? This shape has four sides.",
-          "audio_url": "audio/am/ex.g3_shapes.14.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.09.mp3",
           "statement_am": "ይህ ቅርጽ አራት ጎኖች አሉት።",
           "statement_en": "This shape has four sides.",
           "visual": {
@@ -815,7 +815,7 @@
           "type": "true_false",
           "prompt_am": "ልክ ነው ወይስ አይደለም? ክብ ማዕዘን የለውም።",
           "prompt_en": "True or not? A circle has no corners.",
-          "audio_url": "audio/am/ex.g3_shapes.15.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.10.mp3",
           "statement_am": "ክብ ማዕዘን የለውም።",
           "statement_en": "A circle has no corners.",
           "visual": {
@@ -847,7 +847,7 @@
           "type": "drag_sort",
           "prompt_am": "ቀጥ ያሉ ማዕዘኖች ያሏቸውን እና የሌሏቸውን እንለይ።",
           "prompt_en": "Let's sort: has square corners, has no square corners.",
-          "audio_url": "audio/am/ex.g3_shapes.16.mp3",
+          "audio_url": "audio/am/ex.g3_shapes.11.mp3",
           "targets": [
             {
               "id": "yes",
@@ -904,12 +904,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 1
@@ -919,7 +919,7 @@
           "type": "drag_sort",
           "prompt_am": "በጎኖቻቸው ብዛት እንለይ።",
           "prompt_en": "Let's sort by the number of sides.",
-          "audio_url": "audio/am/ex.g3_shapes.17.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.05.mp3",
           "targets": [
             {
               "id": "3",
@@ -990,12 +990,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 2
@@ -1005,7 +1005,7 @@
           "type": "drag_sort",
           "prompt_am": "በጎኖቻቸው ብዛት እንለይ።",
           "prompt_en": "Let's sort by the number of sides.",
-          "audio_url": "audio/am/ex.g3_shapes.17.mp3",
+          "audio_url": "audio/am/ex.g2_shapes.05.mp3",
           "targets": [
             {
               "id": "4",
@@ -1076,12 +1076,12 @@
             {
               "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
               "en": "Count the sides one by one.",
-              "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
             },
             {
               "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
               "en": "The corners are where the sides meet.",
-              "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
             }
           ],
           "level": 3
@@ -1129,7 +1129,7 @@
     "intro": {
       "am": "የሚመሳሰሉትን ካርዶች እንፈልግ፤ የጎኖች ብዛት እና ቅርጹ።",
       "en": "Let's find matching cards: the number of sides and the shape.",
-      "audio_url": "audio/am/ex.g3_shapes.20.mp3"
+      "audio_url": "audio/am/ex.g2_shapes.23.mp3"
     }
   },
   "challenge": [
@@ -1138,7 +1138,7 @@
       "type": "drag_sort",
       "prompt_am": "ባለ አራት ጎኖችን እና ያልሆኑትን እንለይ።",
       "prompt_en": "Let's sort: quadrilaterals, not quadrilaterals.",
-      "audio_url": "audio/am/ex.g3_shapes.06.mp3",
+      "audio_url": "audio/am/ex.g3_shapes.03.mp3",
       "targets": [
         {
           "id": "four",
@@ -1195,12 +1195,12 @@
         {
           "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
           "en": "Count the sides one by one.",
-          "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
         },
         {
           "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
           "en": "The corners are where the sides meet.",
-          "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
         }
       ]
     },
@@ -1209,7 +1209,7 @@
       "type": "drag_match_word",
       "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
       "prompt_en": "Let's match each name to its shape.",
-      "audio_url": "audio/am/ex.g3_shapes.10.mp3",
+      "audio_url": "audio/am/ex.g2_shapes.09.mp3",
       "items": [
         {
           "id": "w0",
@@ -1246,12 +1246,12 @@
         {
           "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
           "en": "Count the sides one by one.",
-          "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
         },
         {
           "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
           "en": "The corners are where the sides meet.",
-          "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
         }
       ]
     },
@@ -1260,7 +1260,7 @@
       "type": "drag_sort",
       "prompt_am": "በጎኖቻቸው ብዛት እንለይ።",
       "prompt_en": "Let's sort by the number of sides.",
-      "audio_url": "audio/am/ex.g3_shapes.17.mp3",
+      "audio_url": "audio/am/ex.g2_shapes.05.mp3",
       "targets": [
         {
           "id": "3",
@@ -1322,12 +1322,12 @@
         {
           "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
           "en": "Count the sides one by one.",
-          "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
         },
         {
           "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
           "en": "The corners are where the sides meet.",
-          "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
         }
       ]
     },
@@ -1340,7 +1340,7 @@
       "say": {
         "am": "ባለ ስድስት ጎን",
         "en": "hexagon",
-        "audio_url": "audio/am/ex.g3_shapes.18.mp3"
+        "audio_url": "audio/am/ex.g3_shapes.12.mp3"
       },
       "options": [
         {
@@ -1384,7 +1384,7 @@
       "type": "numpad",
       "prompt_am": "ሁለት ሶስት ማዕዘኖች በአጠቃላይ ስንት ጎኖች አሏቸው?",
       "prompt_en": "How many sides do two triangles have altogether?",
-      "audio_url": "audio/am/ex.g3_shapes.19.mp3",
+      "audio_url": "audio/am/ex.g3_shapes.13.mp3",
       "answer": 6,
       "visual": null,
       "max_digits": 2,
@@ -1392,12 +1392,12 @@
         {
           "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
           "en": "Count the sides one by one.",
-          "audio_url": "audio/am/ex.g3_shapes.02.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
         },
         {
           "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
           "en": "The corners are where the sides meet.",
-          "audio_url": "audio/am/ex.g3_shapes.03.mp3"
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
         }
       ]
     }

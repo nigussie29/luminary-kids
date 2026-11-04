@@ -43,12 +43,12 @@
             {
               "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
               "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-              "audio_url": "audio/am/ex.g3_round.01.mp3"
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
             },
             {
               "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
               "en": "The open side of the sign faces the bigger number.",
-              "audio_url": "audio/am/ex.g3_round.02.mp3"
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
             }
           ]
         }
@@ -61,7 +61,7 @@
           "type": "tap_choose",
           "prompt_am": "ሶስት መቶ አርባ ስምንት ለየትኛው መቶ ይቀርባል?",
           "prompt_en": "Which hundred is three hundred forty-eight closer to?",
-          "audio_url": "audio/am/ex.g3_round.03.mp3",
+          "audio_url": "audio/am/ex.g3_round.01.mp3",
           "options": [
             {
               "v": 300
@@ -76,12 +76,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ]
         }
@@ -105,7 +105,7 @@
           "type": "drag_equation",
           "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
           "prompt_en": "Let's put the right sign: greater than, less than or equal?",
-          "audio_url": "audio/am/ex.g3_round.06.mp3",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
           "equation": [
             "452",
             "__",
@@ -126,12 +126,12 @@
             {
               "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
               "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-              "audio_url": "audio/am/ex.g3_round.01.mp3"
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
             },
             {
               "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
               "en": "The open side of the sign faces the bigger number.",
-              "audio_url": "audio/am/ex.g3_round.02.mp3"
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
             }
           ],
           "level": 1
@@ -141,7 +141,7 @@
           "type": "drag_equation",
           "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
           "prompt_en": "Let's put the right sign: greater than, less than or equal?",
-          "audio_url": "audio/am/ex.g3_round.06.mp3",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
           "equation": [
             "608",
             "__",
@@ -162,12 +162,12 @@
             {
               "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
               "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-              "audio_url": "audio/am/ex.g3_round.01.mp3"
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
             },
             {
               "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
               "en": "The open side of the sign faces the bigger number.",
-              "audio_url": "audio/am/ex.g3_round.02.mp3"
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
             }
           ],
           "level": 2
@@ -177,7 +177,7 @@
           "type": "drag_equation",
           "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
           "prompt_en": "Let's put the right sign: greater than, less than or equal?",
-          "audio_url": "audio/am/ex.g3_round.06.mp3",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
           "equation": [
             "799",
             "__",
@@ -198,12 +198,12 @@
             {
               "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
               "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-              "audio_url": "audio/am/ex.g3_round.01.mp3"
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
             },
             {
               "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
               "en": "The open side of the sign faces the bigger number.",
-              "audio_url": "audio/am/ex.g3_round.02.mp3"
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
             }
           ],
           "level": 3
@@ -329,7 +329,7 @@
           "type": "drag_sort",
           "prompt_am": "ወደ ቅርብ አስር ስናጠጋጋ አርባ ወይስ ሃምሳ?",
           "prompt_en": "Round to the nearest ten: 40 or 50?",
-          "audio_url": "audio/am/ex.g3_round.07.mp3",
+          "audio_url": "audio/am/ex.g3_round.04.mp3",
           "targets": [
             {
               "id": "lo",
@@ -370,12 +370,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 1
@@ -385,7 +385,7 @@
           "type": "drag_sort",
           "prompt_am": "ወደ ቅርብ መቶ ስናጠጋጋ ሶስት መቶ ወይስ አራት መቶ?",
           "prompt_en": "Round to the nearest hundred: 300 or 400?",
-          "audio_url": "audio/am/ex.g3_round.08.mp3",
+          "audio_url": "audio/am/ex.g3_round.05.mp3",
           "targets": [
             {
               "id": "lo",
@@ -431,12 +431,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 2
@@ -446,7 +446,7 @@
           "type": "drag_sort",
           "prompt_am": "ወደ ቅርብ መቶ ስናጠጋጋ አምስት መቶ ወይስ ስድስት መቶ?",
           "prompt_en": "Round to the nearest hundred: 500 or 600?",
-          "audio_url": "audio/am/ex.g3_round.09.mp3",
+          "audio_url": "audio/am/ex.g3_round.06.mp3",
           "targets": [
             {
               "id": "lo",
@@ -492,12 +492,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 3
@@ -512,7 +512,7 @@
           "type": "tap_choose",
           "prompt_am": "ሰማንያ ሰባት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?",
           "prompt_en": "What is eighty-seven rounded to the nearest ten?",
-          "audio_url": "audio/am/ex.g3_round.10.mp3",
+          "audio_url": "audio/am/ex.g3_round.07.mp3",
           "options": [
             {
               "v": 80
@@ -530,12 +530,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 1
@@ -545,7 +545,7 @@
           "type": "tap_choose",
           "prompt_am": "ሁለት መቶ ሰላሳ አራት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?",
           "prompt_en": "What is two hundred thirty-four rounded to the nearest ten?",
-          "audio_url": "audio/am/ex.g3_round.11.mp3",
+          "audio_url": "audio/am/ex.g3_round.08.mp3",
           "options": [
             {
               "v": 200
@@ -563,12 +563,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 2
@@ -578,7 +578,7 @@
           "type": "tap_choose",
           "prompt_am": "ሰባት መቶ ስልሳ አምስት ወደ ቅርብ መቶ ሲጠጋጋ ስንት ይሆናል?",
           "prompt_en": "What is seven hundred sixty-five rounded to the nearest hundred?",
-          "audio_url": "audio/am/ex.g3_round.12.mp3",
+          "audio_url": "audio/am/ex.g3_round.09.mp3",
           "options": [
             {
               "v": 700
@@ -596,12 +596,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 3
@@ -616,7 +616,7 @@
           "type": "numpad",
           "prompt_am": "በ2፣ 5 እና 1 አሃዞች ትልቁን ቁጥር እንሥራ።",
           "prompt_en": "Make the biggest number with the digits 2, 5 and 1.",
-          "audio_url": "audio/am/ex.g3_round.13.mp3",
+          "audio_url": "audio/am/ex.g3_round.10.mp3",
           "answer": 521,
           "visual": null,
           "max_digits": 4,
@@ -624,12 +624,12 @@
             {
               "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
               "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-              "audio_url": "audio/am/ex.g3_round.01.mp3"
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
             },
             {
               "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
               "en": "The open side of the sign faces the bigger number.",
-              "audio_url": "audio/am/ex.g3_round.02.mp3"
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
             }
           ],
           "level": 1
@@ -639,7 +639,7 @@
           "type": "numpad",
           "prompt_am": "በ4፣ 0 እና 8 አሃዞች ትልቁን ቁጥር እንሥራ።",
           "prompt_en": "Make the biggest number with the digits 4, 0 and 8.",
-          "audio_url": "audio/am/ex.g3_round.14.mp3",
+          "audio_url": "audio/am/ex.g3_round.11.mp3",
           "answer": 840,
           "visual": null,
           "max_digits": 4,
@@ -647,12 +647,12 @@
             {
               "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
               "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-              "audio_url": "audio/am/ex.g3_round.01.mp3"
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
             },
             {
               "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
               "en": "The open side of the sign faces the bigger number.",
-              "audio_url": "audio/am/ex.g3_round.02.mp3"
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
             }
           ],
           "level": 2
@@ -662,7 +662,7 @@
           "type": "numpad",
           "prompt_am": "በ6፣ 1 እና 9 አሃዞች ትንሹን ቁጥር እንሥራ።",
           "prompt_en": "Make the smallest number with the digits 6, 1 and 9.",
-          "audio_url": "audio/am/ex.g3_round.15.mp3",
+          "audio_url": "audio/am/ex.g3_round.12.mp3",
           "answer": 169,
           "visual": null,
           "max_digits": 4,
@@ -670,12 +670,12 @@
             {
               "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
               "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-              "audio_url": "audio/am/ex.g3_round.01.mp3"
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
             },
             {
               "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
               "en": "The open side of the sign faces the bigger number.",
-              "audio_url": "audio/am/ex.g3_round.02.mp3"
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
             }
           ],
           "level": 3
@@ -690,7 +690,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።",
           "prompt_en": "Let's match each number to its nearest hundred.",
-          "audio_url": "audio/am/ex.g3_round.16.mp3",
+          "audio_url": "audio/am/ex.g3_round.13.mp3",
           "items": [
             {
               "id": "w0",
@@ -719,12 +719,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 1
@@ -734,7 +734,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።",
           "prompt_en": "Let's match each number to its nearest hundred.",
-          "audio_url": "audio/am/ex.g3_round.16.mp3",
+          "audio_url": "audio/am/ex.g3_round.13.mp3",
           "items": [
             {
               "id": "w0",
@@ -772,12 +772,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 2
@@ -787,7 +787,7 @@
           "type": "drag_match_word",
           "prompt_am": "እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።",
           "prompt_en": "Let's match each number to its nearest hundred.",
-          "audio_url": "audio/am/ex.g3_round.16.mp3",
+          "audio_url": "audio/am/ex.g3_round.13.mp3",
           "items": [
             {
               "id": "w0",
@@ -825,12 +825,12 @@
             {
               "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
               "en": "Which is it closer to? Look on the number line.",
-              "audio_url": "audio/am/ex.g3_round.04.mp3"
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
             },
             {
               "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
               "en": "Five or more rounds up.",
-              "audio_url": "audio/am/ex.g3_round.05.mp3"
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
             }
           ],
           "level": 3
@@ -864,12 +864,12 @@
           {
             "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
             "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-            "audio_url": "audio/am/ex.g3_round.01.mp3"
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
           },
           {
             "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
             "en": "The open side of the sign faces the bigger number.",
-            "audio_url": "audio/am/ex.g3_round.02.mp3"
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
           }
         ]
       },
@@ -895,12 +895,12 @@
           {
             "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
             "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-            "audio_url": "audio/am/ex.g3_round.01.mp3"
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
           },
           {
             "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
             "en": "The open side of the sign faces the bigger number.",
-            "audio_url": "audio/am/ex.g3_round.02.mp3"
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
           }
         ]
       },
@@ -926,12 +926,12 @@
           {
             "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
             "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-            "audio_url": "audio/am/ex.g3_round.01.mp3"
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
           },
           {
             "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
             "en": "The open side of the sign faces the bigger number.",
-            "audio_url": "audio/am/ex.g3_round.02.mp3"
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
           }
         ]
       },
@@ -957,12 +957,12 @@
           {
             "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
             "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-            "audio_url": "audio/am/ex.g3_round.01.mp3"
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
           },
           {
             "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
             "en": "The open side of the sign faces the bigger number.",
-            "audio_url": "audio/am/ex.g3_round.02.mp3"
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
           }
         ]
       },
@@ -988,12 +988,12 @@
           {
             "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
             "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-            "audio_url": "audio/am/ex.g3_round.01.mp3"
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
           },
           {
             "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
             "en": "The open side of the sign faces the bigger number.",
-            "audio_url": "audio/am/ex.g3_round.02.mp3"
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
           }
         ]
       }
@@ -1010,7 +1010,7 @@
       "type": "drag_equation",
       "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
       "prompt_en": "Let's put the right sign: greater than, less than or equal?",
-      "audio_url": "audio/am/ex.g3_round.06.mp3",
+      "audio_url": "audio/am/ex.g2_compare.04.mp3",
       "equation": [
         "563",
         "__",
@@ -1031,12 +1031,12 @@
         {
           "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
           "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
-          "audio_url": "audio/am/ex.g3_round.01.mp3"
+          "audio_url": "audio/am/ex.g2_compare.01.mp3"
         },
         {
           "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
           "en": "The open side of the sign faces the bigger number.",
-          "audio_url": "audio/am/ex.g3_round.02.mp3"
+          "audio_url": "audio/am/ex.g2_compare.02.mp3"
         }
       ]
     },
@@ -1045,7 +1045,7 @@
       "type": "drag_sort",
       "prompt_am": "ወደ ቅርብ አስር ስናጠጋጋ ስልሳ ወይስ ሰባ?",
       "prompt_en": "Round to the nearest ten: 60 or 70?",
-      "audio_url": "audio/am/ex.g3_round.17.mp3",
+      "audio_url": "audio/am/ex.g3_round.14.mp3",
       "targets": [
         {
           "id": "lo",
@@ -1086,12 +1086,12 @@
         {
           "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
           "en": "Which is it closer to? Look on the number line.",
-          "audio_url": "audio/am/ex.g3_round.04.mp3"
+          "audio_url": "audio/am/ex.g3_round.02.mp3"
         },
         {
           "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
           "en": "Five or more rounds up.",
-          "audio_url": "audio/am/ex.g3_round.05.mp3"
+          "audio_url": "audio/am/ex.g3_round.03.mp3"
         }
       ]
     },
@@ -1100,7 +1100,7 @@
       "type": "true_false",
       "prompt_am": "ልክ ነው ወይስ አይደለም? ሶስት መቶ አርባ ስምንት ከሶስት መቶ ሰማንያ አራት ይበልጣል።",
       "prompt_en": "True or not? Three hundred forty-eight is greater than three hundred eighty-four.",
-      "audio_url": "audio/am/ex.g3_round.18.mp3",
+      "audio_url": "audio/am/ex.g3_round.15.mp3",
       "statement_am": "ሶስት መቶ አርባ ስምንት ከሶስት መቶ ሰማንያ አራት ይበልጣል።",
       "statement_en": "Three hundred forty-eight is greater than three hundred eighty-four.",
       "answer": false,
@@ -1158,7 +1158,7 @@
       "type": "numpad",
       "prompt_am": "አራት መቶ ሃምሳ ሰባት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?",
       "prompt_en": "What is four hundred fifty-seven rounded to the nearest ten?",
-      "audio_url": "audio/am/ex.g3_round.19.mp3",
+      "audio_url": "audio/am/ex.g3_round.16.mp3",
       "answer": 460,
       "visual": null,
       "max_digits": 4,
@@ -1166,12 +1166,12 @@
         {
           "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
           "en": "Which is it closer to? Look on the number line.",
-          "audio_url": "audio/am/ex.g3_round.04.mp3"
+          "audio_url": "audio/am/ex.g3_round.02.mp3"
         },
         {
           "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
           "en": "Five or more rounds up.",
-          "audio_url": "audio/am/ex.g3_round.05.mp3"
+          "audio_url": "audio/am/ex.g3_round.03.mp3"
         }
       ]
     }

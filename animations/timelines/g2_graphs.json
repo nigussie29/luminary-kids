@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.133,
+  "step0": 9.767,
+  "step1": 13.8,
+  "step2": 17.433,
+  "step3": 21.067
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ሥዕላዊ ግራፍ እና አምድ ግራፍ",
+   "en": "Picture graphs and bar graphs",
+   "end": 3.333
+  },
+  {
+   "start": 4.133,
+   "am": "የሁለተኛ ክፍል ልጆች የሚወዱትን ፍራፍሬ መረጡ። በግራፍ እናሳየው።",
+   "en": "The Grade 2 children chose their favourite fruit. Let us show it on a graph.",
+   "end": 9.767
+  },
+  {
+   "start": 9.767,
+   "am": "አራት ልጆች ሙዝ፣ ስድስት ልጆች ማንጎ፣ ሁለት ልጆች ብርቱካን መረጡ።",
+   "en": "Four children chose bananas, six chose mangoes and two chose oranges.",
+   "end": 13.8
+  },
+  {
+   "start": 13.8,
+   "am": "ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን።",
+   "en": "We colour one box for each child.",
+   "end": 17.433
+  },
+  {
+   "start": 17.433,
+   "am": "ማንጎ ከሙዝ በሁለት ይበልጣል።",
+   "en": "Mangoes have two more than bananas.",
+   "end": 21.067
+  },
+  {
+   "start": 21.067,
+   "am": "በአጠቃላይ አስራ ሁለት ልጆች ናቸው።",
+   "en": "Altogether there are twelve children.",
+   "end": 25.0
+  }
+ ],
+ "duration": 28.6,
+ "lesson": "g2_graphs"
+}

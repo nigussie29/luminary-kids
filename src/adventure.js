@@ -86,6 +86,8 @@
     add10: ['የመደመር ጀግና', 'Addition hero'], sub10: ['የመቀነስ ጀግና', 'Subtraction hero'], make10: ['የአስር ጀግና', 'Ten hero'],
     g2_placevalue: ['የአስሮች ጌታ', 'Tens master'], g2_add2d: ['የቤተ መጽሐፍት ደማሪ', 'Library adder'], g2_sub2d: ['የገበያ ቀናሽ', 'Market subtractor'],
     g2_groups: ['የቡና ቡድን', 'Coffee groups'], g2_birr: ['የብር ቆጣሪ', 'Birr counter'], g2_halves: ['የእንጀራ አካፋይ', 'Injera sharer'],
+    g2_skip: ['ዘላይ ቆጣሪ', 'Skip counter'], g2_compare: ['ብልህ አወዳዳሪ', 'Sharp comparer'], g2_measure: ['የገዢ አንባቢ', 'Ruler reader'],
+    g2_time: ['የቡና ሰዓት', 'Coffee-time reader'], g2_shapes: ['የቅርጽ ቆጣሪ', 'Shape counter'], g2_graphs: ['የግራፍ ሠሪ', 'Graph maker'],
     g3_hundreds: ['የመቶዎች ጌታ', 'Hundreds master'], g3_add3d: ['የብርቱካን ደማሪ', 'Orchard adder'], g3_sub3d: ['የትምህርት ቤት ቀናሽ', 'School subtractor'],
     g3_times: ['የማባዛት ጀግና', 'Times hero'], g3_share: ['ፍትሃዊ አካፋይ', 'Fair sharer'], g3_fractions: ['የክፍልፋይ ጌታ', 'Fraction master'],
     g3_round: ['ብልህ አጠጋጋኝ', 'Clever rounder'], g3_tables: ['የሰንጠረዥ ጌታ', 'Times-table master'], g3_divide: ['የቡድን አካፋይ', 'Team divider'],
@@ -96,7 +98,7 @@
   const BADGE_ICON = { streak3: '🔥', streak7: '🌟', stars30: '🏅', stars50: '🏆', stars75: '👑' };
   const PLACE_ICON = { garden: '🌼', market: '🍊', school: '☕', road: '🛺', tree: '🥭', meadow: '🌻', home: '🪵', library: '📚', ceremony: '🫖', shop: '💵', kitchen: '🫓',
     store: '📦', orchard: '🧺', schoolyard: '🏫', field: '🌱', village: '🏡', feast: '🎉',
-    farm: '🍒', eggs: '🥚', playground: '⚽', path: '🛤️', scales: '⚖️', clocktower: '🕰️', house: '🏠', floor: '🧱', chart: '📊' };
+    steps: '👣', desk: '📏', alarm: '⏰', wall: '🔷', farm: '🍒', eggs: '🥚', playground: '⚽', path: '🛤️', scales: '⚖️', clocktower: '🕰️', house: '🏠', floor: '🧱', chart: '📊' };
   const GRADES = [1, 2, 3], MAP_END = { 1: '🏔️', 2: '🏰', 3: '🌄' };
 
   // ---------------- home: adventure map ----------------

@@ -146,11 +146,11 @@ function checkGame(p, where) {
   return p.game === 'race' ? p.questions.length : p.game === 'memory' ? p.pairs.length : p.rounds.length;
 }
 
-test('index lists 27 lessons (6 + 6 + 15) in order with places on the map', () => {
-  assert.strictEqual(lessons.length, 27);
-  assert.strictEqual(new Set(index.lessons.map((l) => `${l.grade}-${l.n}`)).size, 27);
+test('index lists 33 lessons (6 + 12 + 15) in order with places on the map', () => {
+  assert.strictEqual(lessons.length, 33);
+  assert.strictEqual(new Set(index.lessons.map((l) => `${l.grade}-${l.n}`)).size, 33);
   const seq = (n) => Array.from({ length: n }, (_, i) => i + 1);
-  for (const [g, n] of [[1, 6], [2, 6], [3, 15]]) assert.deepStrictEqual(index.lessons.filter((l) => l.grade === g).map((l) => l.n), seq(n), `grade ${g}`);
+  for (const [g, n] of [[1, 6], [2, 12], [3, 15]]) assert.deepStrictEqual(index.lessons.filter((l) => l.grade === g).map((l) => l.n), seq(n), `grade ${g}`);
   for (const k of ['replay', 'praise', 'tryAgain', 'celebrate']) assert.ok(index.common[k], k);
   assert.strictEqual(index.common.replay.am, 'ደግመህ/ደግመሽ አዳምጥ');
 });

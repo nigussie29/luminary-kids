@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.133,
+  "step0": 9.767,
+  "step1": 13.4,
+  "step2": 17.033,
+  "step3": 20.667
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ርዝመትን መለካት",
+   "en": "Measuring length",
+   "end": 3.333
+  },
+  {
+   "start": 4.133,
+   "am": "ሰላም እርሳሷን እና ደብተሯን በገዢ ልትለካ ነው።",
+   "en": "Selam is going to measure her pencil and her exercise book with a ruler.",
+   "end": 9.767
+  },
+  {
+   "start": 9.767,
+   "am": "ሁልጊዜ ከዜሮ እንጀምራለን።",
+   "en": "We always start at zero.",
+   "end": 13.4
+  },
+  {
+   "start": 13.4,
+   "am": "እርሳሱ እስከ ስምንት ይደርሳል፤ ርዝመቱ ስምንት ሳንቲ ሜትር ነው።",
+   "en": "The pencil reaches eight, so it is eight centimetres long.",
+   "end": 17.033
+  },
+  {
+   "start": 17.033,
+   "am": "ደብተሩ ሃያ ሳንቲ ሜትር ነው፤ ከእርሳሱ ይረዝማል።",
+   "en": "The exercise book is twenty centimetres, longer than the pencil.",
+   "end": 20.667
+  },
+  {
+   "start": 20.667,
+   "am": "እንደ በር ያሉ ትልልቅ ነገሮችን በሜትር እንለካለን።",
+   "en": "We measure big things like a door in metres.",
+   "end": 24.6
+  }
+ ],
+ "duration": 27.2,
+ "lesson": "g2_measure"
+}
