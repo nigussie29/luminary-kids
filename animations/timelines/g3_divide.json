@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.533,
+  "step0": 10.167,
+  "step1": 13.8,
+  "step2": 17.433,
+  "step3": 21.067
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ማካፈል እና ማባዛት",
+   "en": "Division and multiplication",
+   "end": 3.333
+  },
+  {
+   "start": 4.533,
+   "am": "ሃያ አራት ተማሪዎች ለጨዋታ በቡድን ይከፈላሉ። በእያንዳንዱ ቡድን ስድስት ተማሪዎች ይኖራሉ።",
+   "en": "Twenty-four students split into teams for a game. Each team will have six students.",
+   "end": 10.167
+  },
+  {
+   "start": 10.167,
+   "am": "ሃያ አራት ተማሪዎችን በስድስት በስድስት እንቧድናለን።",
+   "en": "We put the twenty-four students in groups of six.",
+   "end": 13.8
+  },
+  {
+   "start": 13.8,
+   "am": "አራት ቡድኖች ሆኑ።",
+   "en": "That makes four teams.",
+   "end": 17.433
+  },
+  {
+   "start": 17.433,
+   "am": "ሃያ አራት ሲካፈል ለስድስት አራት ነው።",
+   "en": "Twenty-four divided by six is four.",
+   "end": 21.067
+  },
+  {
+   "start": 21.067,
+   "am": "ምክንያቱም አራት ጊዜ ስድስት ሃያ አራት ነው።",
+   "en": "That is because four times six is twenty-four.",
+   "end": 25.0
+  }
+ ],
+ "duration": 28.6,
+ "lesson": "g3_divide"
+}

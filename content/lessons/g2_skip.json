@@ -1,0 +1,1118 @@
+{
+  "id": "g2_skip",
+  "grade": 2,
+  "n": 7,
+  "title": {
+    "am": "ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ",
+    "en": "Skip counting, even and odd",
+    "audio_url": "audio/am/lesson.g2_skip.title.mp3"
+  },
+  "place": "steps",
+  "video": {
+    "src": "video/g2_skip.mp4",
+    "src_low": "video/low/g2_skip.mp4",
+    "poster": "video/g2_skip.jpg",
+    "captions": {
+      "am": "video/g2_skip.am.vtt",
+      "en": "video/g2_skip.en.vtt"
+    },
+    "duration": 28.6,
+    "checkpoints": [
+      {
+        "t": 13.75,
+        "at": "step:1",
+        "exercise": {
+          "id": "g2_skip.01",
+          "type": "tap_choose",
+          "prompt_am": "ሁሉም ብርቱካኖች ጥንድ አላቸው?",
+          "prompt_en": "Does every orange have a partner?",
+          "audio_url": "audio/am/ex.g2_skip.01.mp3",
+          "options": [
+            {
+              "v": "yes",
+              "am": "አዎ",
+              "en": "Yes"
+            },
+            {
+              "v": "no",
+              "am": "አይ",
+              "en": "No"
+            }
+          ],
+          "answer": "yes",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "thing": "orange"
+          },
+          "hints": [
+            {
+              "am": "ጥንድ ጥንድ እናድርጋቸው፤ አንዱ ብቻውን ከቀረ ጎዶሎ ነው።",
+              "en": "Put them in pairs: if one is left on its own, the number is odd.",
+              "audio_url": "audio/am/ex.g2_skip.02.mp3"
+            },
+            {
+              "am": "ጥንድ ቁጥሮች በ0፣ 2፣ 4፣ 6 ወይም 8 ያልቃሉ።",
+              "en": "Even numbers end in 0, 2, 4, 6 or 8.",
+              "audio_url": "audio/am/ex.g2_skip.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 21.02,
+        "at": "step:3",
+        "exercise": {
+          "id": "g2_skip.02",
+          "type": "tap_choose",
+          "prompt_am": "በአምስት ስንቆጥር ከአስር ቀጥሎ ምን ይመጣል?",
+          "prompt_en": "Counting in fives, what comes after ten?",
+          "audio_url": "audio/am/ex.g2_skip.04.mp3",
+          "options": [
+            {
+              "v": 11
+            },
+            {
+              "v": 15
+            },
+            {
+              "v": 20
+            }
+          ],
+          "answer": 15,
+          "visual": null,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 10.12,
+      "end": 28.6,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g2_skip.03",
+          "type": "drag_drop_count",
+          "prompt_am": "ስድስት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።",
+          "prompt_en": "Let's put 6 oranges on plates, 2 on each plate.",
+          "audio_url": "audio/am/ex.g2_skip.07.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 6,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate3",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            }
+          ],
+          "answer": [
+            2,
+            2,
+            2
+          ],
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_skip.04",
+          "type": "drag_drop_count",
+          "prompt_am": "ስምንት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።",
+          "prompt_en": "Let's put 8 oranges on plates, 2 on each plate.",
+          "audio_url": "audio/am/ex.g2_skip.10.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 8,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate3",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate4",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            }
+          ],
+          "answer": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_skip.05",
+          "type": "drag_drop_count",
+          "prompt_am": "አስር ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።",
+          "prompt_en": "Let's put 10 oranges on plates, 2 on each plate.",
+          "audio_url": "audio/am/ex.g2_skip.11.mp3",
+          "items": {
+            "thing": "orange",
+            "supply": 10,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "plate1",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate2",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate3",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate4",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "plate5",
+              "kind": "tray",
+              "start": 0,
+              "need": 2
+            }
+          ],
+          "answer": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "hints": [
+            {
+              "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+              "en": "Think how many groups there are.",
+              "audio_url": "audio/am/ex.g2_skip.08.mp3"
+            },
+            {
+              "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+              "en": "Remember the times table: three times four is twelve.",
+              "audio_url": "audio/am/ex.g2_skip.09.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g2_skip.06",
+          "type": "tap_choose",
+          "prompt_am": "ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 2፣ 4፣ 6፣ …",
+          "prompt_en": "What number comes next? 2, 4, 6, …",
+          "audio_url": "audio/am/ex.g2_skip.12.mp3",
+          "options": [
+            {
+              "v": 7
+            },
+            {
+              "v": 8
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 8,
+          "visual": null,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_skip.07",
+          "type": "tap_choose",
+          "prompt_am": "ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 5፣ 10፣ 15፣ …",
+          "prompt_en": "What number comes next? 5, 10, 15, …",
+          "audio_url": "audio/am/ex.g2_skip.13.mp3",
+          "options": [
+            {
+              "v": 16
+            },
+            {
+              "v": 20
+            },
+            {
+              "v": 25
+            }
+          ],
+          "answer": 20,
+          "visual": null,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_skip.08",
+          "type": "tap_choose",
+          "prompt_am": "ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 10፣ 20፣ 30፣ …",
+          "prompt_en": "What number comes next? 10, 20, 30, …",
+          "audio_url": "audio/am/ex.g2_skip.14.mp3",
+          "options": [
+            {
+              "v": 31
+            },
+            {
+              "v": 40
+            },
+            {
+              "v": 50
+            }
+          ],
+          "answer": 40,
+          "visual": null,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g2_skip.09",
+          "type": "drag_sort",
+          "prompt_am": "ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።",
+          "prompt_en": "Let's sort: even numbers, odd numbers.",
+          "audio_url": "audio/am/ex.g2_skip.15.mp3",
+          "targets": [
+            {
+              "id": "even",
+              "am": "ጥንድ",
+              "en": "Even"
+            },
+            {
+              "id": "odd",
+              "am": "ጎዶሎ",
+              "en": "Odd"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "2"
+            },
+            {
+              "id": "c1",
+              "label": "5"
+            },
+            {
+              "id": "c2",
+              "label": "6"
+            },
+            {
+              "id": "c3",
+              "label": "7"
+            }
+          ],
+          "answer": {
+            "c0": "even",
+            "c1": "odd",
+            "c2": "even",
+            "c3": "odd"
+          },
+          "hints": [
+            {
+              "am": "ጥንድ ጥንድ እናድርጋቸው፤ አንዱ ብቻውን ከቀረ ጎዶሎ ነው።",
+              "en": "Put them in pairs: if one is left on its own, the number is odd.",
+              "audio_url": "audio/am/ex.g2_skip.02.mp3"
+            },
+            {
+              "am": "ጥንድ ቁጥሮች በ0፣ 2፣ 4፣ 6 ወይም 8 ያልቃሉ።",
+              "en": "Even numbers end in 0, 2, 4, 6 or 8.",
+              "audio_url": "audio/am/ex.g2_skip.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_skip.10",
+          "type": "drag_sort",
+          "prompt_am": "ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።",
+          "prompt_en": "Let's sort: even numbers, odd numbers.",
+          "audio_url": "audio/am/ex.g2_skip.15.mp3",
+          "targets": [
+            {
+              "id": "even",
+              "am": "ጥንድ",
+              "en": "Even"
+            },
+            {
+              "id": "odd",
+              "am": "ጎዶሎ",
+              "en": "Odd"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "10"
+            },
+            {
+              "id": "c1",
+              "label": "13"
+            },
+            {
+              "id": "c2",
+              "label": "14"
+            },
+            {
+              "id": "c3",
+              "label": "9"
+            },
+            {
+              "id": "c4",
+              "label": "18"
+            }
+          ],
+          "answer": {
+            "c0": "even",
+            "c1": "odd",
+            "c2": "even",
+            "c3": "odd",
+            "c4": "even"
+          },
+          "hints": [
+            {
+              "am": "ጥንድ ጥንድ እናድርጋቸው፤ አንዱ ብቻውን ከቀረ ጎዶሎ ነው።",
+              "en": "Put them in pairs: if one is left on its own, the number is odd.",
+              "audio_url": "audio/am/ex.g2_skip.02.mp3"
+            },
+            {
+              "am": "ጥንድ ቁጥሮች በ0፣ 2፣ 4፣ 6 ወይም 8 ያልቃሉ።",
+              "en": "Even numbers end in 0, 2, 4, 6 or 8.",
+              "audio_url": "audio/am/ex.g2_skip.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_skip.11",
+          "type": "drag_sort",
+          "prompt_am": "ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።",
+          "prompt_en": "Let's sort: even numbers, odd numbers.",
+          "audio_url": "audio/am/ex.g2_skip.15.mp3",
+          "targets": [
+            {
+              "id": "even",
+              "am": "ጥንድ",
+              "en": "Even"
+            },
+            {
+              "id": "odd",
+              "am": "ጎዶሎ",
+              "en": "Odd"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "21"
+            },
+            {
+              "id": "c1",
+              "label": "34"
+            },
+            {
+              "id": "c2",
+              "label": "47"
+            },
+            {
+              "id": "c3",
+              "label": "50"
+            },
+            {
+              "id": "c4",
+              "label": "16"
+            }
+          ],
+          "answer": {
+            "c0": "odd",
+            "c1": "even",
+            "c2": "odd",
+            "c3": "even",
+            "c4": "even"
+          },
+          "hints": [
+            {
+              "am": "ጥንድ ጥንድ እናድርጋቸው፤ አንዱ ብቻውን ከቀረ ጎዶሎ ነው።",
+              "en": "Put them in pairs: if one is left on its own, the number is odd.",
+              "audio_url": "audio/am/ex.g2_skip.02.mp3"
+            },
+            {
+              "am": "ጥንድ ቁጥሮች በ0፣ 2፣ 4፣ 6 ወይም 8 ያልቃሉ።",
+              "en": "Even numbers end in 0, 2, 4, 6 or 8.",
+              "audio_url": "audio/am/ex.g2_skip.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g2_skip.12",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 10,
+            "step": 2,
+            "labels": "ends"
+          },
+          "items": [
+            "4",
+            "8"
+          ],
+          "answer": [
+            "4",
+            "8"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_skip.13",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 50,
+            "step": 5,
+            "labels": "tens"
+          },
+          "items": [
+            "15",
+            "35"
+          ],
+          "answer": [
+            "15",
+            "35"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_skip.14",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "labels": "ends"
+          },
+          "items": [
+            "30",
+            "70",
+            "90"
+          ],
+          "answer": [
+            "30",
+            "70",
+            "90"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g2_skip.15",
+          "type": "numpad",
+          "prompt_am": "ስድስት ጥንዶች ስንት ናቸው?",
+          "prompt_en": "How many are six pairs?",
+          "audio_url": "audio/am/ex.g2_skip.16.mp3",
+          "answer": 12,
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "thing": "orange"
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_skip.16",
+          "type": "numpad",
+          "prompt_am": "ሶስት የአምስት ብር ኖቶች ስንት ብር ናቸው?",
+          "prompt_en": "How much are three five-birr notes?",
+          "audio_url": "audio/am/ex.g2_skip.17.mp3",
+          "answer": 15,
+          "visual": {
+            "kind": "birr",
+            "notes": [
+              5,
+              5,
+              5
+            ]
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_skip.17",
+          "type": "numpad",
+          "prompt_am": "አራት የአስር ብር ኖቶች ስንት ብር ናቸው?",
+          "prompt_en": "How much are four ten-birr notes?",
+          "audio_url": "audio/am/ex.g2_skip.18.mp3",
+          "answer": 40,
+          "visual": {
+            "kind": "birr",
+            "notes": [
+              10,
+              10,
+              10,
+              10
+            ]
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g2_skip.18",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ስምንት ጥንድ ቁጥር ነው።",
+          "prompt_en": "True or not? Eight is an even number.",
+          "audio_url": "audio/am/ex.g2_skip.19.mp3",
+          "statement_am": "ስምንት ጥንድ ቁጥር ነው።",
+          "statement_en": "Eight is an even number.",
+          "visual": {
+            "kind": "groups",
+            "groups": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "thing": "orange"
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_skip.19",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ዘጠኝ ጥንድ ቁጥር ነው።",
+          "prompt_en": "True or not? Nine is an even number.",
+          "audio_url": "audio/am/ex.g2_skip.20.mp3",
+          "statement_am": "ዘጠኝ ጥንድ ቁጥር ነው።",
+          "statement_en": "Nine is an even number.",
+          "visual": {
+            "kind": "group",
+            "thing": "orange",
+            "n": 9
+          },
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_skip.20",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? በአስር ስንቆጥር ከስልሳ ቀጥሎ ሰባ ይመጣል።",
+          "prompt_en": "True or not? Counting in tens, seventy comes after sixty.",
+          "audio_url": "audio/am/ex.g2_skip.21.mp3",
+          "statement_am": "በአስር ስንቆጥር ከስልሳ ቀጥሎ ሰባ ይመጣል።",
+          "statement_en": "Counting in tens, seventy comes after sixty.",
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "coffee",
+    "rounds": [
+      {
+        "n": 6,
+        "trays": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "n": 8,
+        "trays": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "n": 10,
+        "trays": [
+          5,
+          5
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።",
+      "en": "Let's pour coffee for the guests! Every tray gets the same number of cups.",
+      "audio_url": "audio/am/ex.g2_groups.19.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g2_skip.21",
+      "type": "drag_drop_count",
+      "prompt_am": "ስምንት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።",
+      "prompt_en": "Let's put 8 oranges on plates, 2 on each plate.",
+      "audio_url": "audio/am/ex.g2_skip.10.mp3",
+      "items": {
+        "thing": "orange",
+        "supply": 8,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "plate1",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate2",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate3",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        },
+        {
+          "id": "plate4",
+          "kind": "tray",
+          "start": 0,
+          "need": 2
+        }
+      ],
+      "answer": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "hints": [
+        {
+          "am": "ስንት ቡድኖች እንደሆኑ እናስብ።",
+          "en": "Think how many groups there are.",
+          "audio_url": "audio/am/ex.g2_skip.08.mp3"
+        },
+        {
+          "am": "የማባዛት ሰንጠረዥን እናስታውስ፤ ለምሳሌ ሶስት ጊዜ አራት አስራ ሁለት ነው።",
+          "en": "Remember the times table: three times four is twelve.",
+          "audio_url": "audio/am/ex.g2_skip.09.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_skip.22",
+      "type": "drag_sort",
+      "prompt_am": "ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።",
+      "prompt_en": "Let's sort: even numbers, odd numbers.",
+      "audio_url": "audio/am/ex.g2_skip.15.mp3",
+      "targets": [
+        {
+          "id": "even",
+          "am": "ጥንድ",
+          "en": "Even"
+        },
+        {
+          "id": "odd",
+          "am": "ጎዶሎ",
+          "en": "Odd"
+        }
+      ],
+      "items": [
+        {
+          "id": "c0",
+          "label": "11"
+        },
+        {
+          "id": "c1",
+          "label": "12"
+        },
+        {
+          "id": "c2",
+          "label": "3"
+        },
+        {
+          "id": "c3",
+          "label": "20"
+        }
+      ],
+      "answer": {
+        "c0": "odd",
+        "c1": "even",
+        "c2": "odd",
+        "c3": "even"
+      },
+      "hints": [
+        {
+          "am": "ጥንድ ጥንድ እናድርጋቸው፤ አንዱ ብቻውን ከቀረ ጎዶሎ ነው።",
+          "en": "Put them in pairs: if one is left on its own, the number is odd.",
+          "audio_url": "audio/am/ex.g2_skip.02.mp3"
+        },
+        {
+          "am": "ጥንድ ቁጥሮች በ0፣ 2፣ 4፣ 6 ወይም 8 ያልቃሉ።",
+          "en": "Even numbers end in 0, 2, 4, 6 or 8.",
+          "audio_url": "audio/am/ex.g2_skip.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_skip.23",
+      "type": "drag_numberline",
+      "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+      "prompt_en": "Let's put the numbers in their places on the number line.",
+      "audio_url": "audio/am/ex.count10.14.mp3",
+      "line": {
+        "min": 0,
+        "max": 20,
+        "step": 2,
+        "labels": "ends"
+      },
+      "items": [
+        "6",
+        "12",
+        "18"
+      ],
+      "answer": [
+        "6",
+        "12",
+        "18"
+      ],
+      "hints": [
+        {
+          "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+          "en": "Small numbers are on the left, big numbers on the right.",
+          "audio_url": "audio/am/ex.count10.15.mp3"
+        },
+        {
+          "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+          "en": "Count the marks from zero.",
+          "audio_url": "audio/am/ex.count10.16.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_skip.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሰላሳ",
+        "en": "thirty",
+        "audio_url": "audio/am/num.30.mp3"
+      },
+      "options": [
+        {
+          "v": 30
+        },
+        {
+          "v": 13
+        },
+        {
+          "v": 3
+        }
+      ],
+      "answer": 30,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_skip.25",
+      "type": "numpad",
+      "prompt_am": "በሁለት ስንቆጥር ከአስራ ስድስት ቀጥሎ ምን ይመጣል?",
+      "prompt_en": "Counting in twos, what comes after sixteen?",
+      "audio_url": "audio/am/ex.g2_skip.22.mp3",
+      "answer": 18,
+      "visual": null,
+      "max_digits": 3,
+      "hints": [
+        {
+          "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+          "en": "Count row by row; every row has the same number.",
+          "audio_url": "audio/am/ex.g2_skip.05.mp3"
+        },
+        {
+          "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+          "en": "Skip count, for example five, ten, fifteen.",
+          "audio_url": "audio/am/ex.g2_skip.06.mp3"
+        }
+      ]
+    }
+  ]
+}

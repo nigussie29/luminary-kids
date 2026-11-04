@@ -109,6 +109,7 @@
           "prompt_en": "Let's build 23 with tens and ones.",
           "audio_url": "audio/am/ex.g2_placevalue.03.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -140,6 +141,7 @@
           "prompt_en": "Let's build 46 with tens and ones.",
           "audio_url": "audio/am/ex.g2_placevalue.04.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -171,6 +173,7 @@
           "prompt_en": "Let's build 78 with tens and ones.",
           "audio_url": "audio/am/ex.g2_placevalue.05.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -924,6 +927,7 @@
       "prompt_en": "Let's build 65 with tens and ones.",
       "audio_url": "audio/am/ex.g2_placevalue.12.mp3",
       "items": {
+        "flats": false,
         "rods": true,
         "cubes": true
       },

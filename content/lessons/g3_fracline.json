@@ -1,0 +1,1213 @@
+{
+  "id": "g3_fracline",
+  "grade": 3,
+  "n": 10,
+  "title": {
+    "am": "ክፍልፋዮች በቁጥር መስመር ላይ",
+    "en": "Fractions on a number line",
+    "audio_url": "audio/am/lesson.g3_fracline.title.mp3"
+  },
+  "place": "path",
+  "video": {
+    "src": "video/g3_fracline.mp4",
+    "src_low": "video/low/g3_fracline.mp4",
+    "poster": "video/g3_fracline.jpg",
+    "captions": {
+      "am": "video/g3_fracline.am.vtt",
+      "en": "video/g3_fracline.en.vtt"
+    },
+    "duration": 28.767,
+    "checkpoints": [
+      {
+        "t": 13.35,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_fracline.01",
+          "type": "tap_choose",
+          "prompt_am": "እያንዳንዱ ዝላይ ስንት ነው?",
+          "prompt_en": "How long is each jump?",
+          "audio_url": "audio/am/ex.g3_fracline.01.mp3",
+          "options": [
+            {
+              "v": "1/2",
+              "label": "1/2"
+            },
+            {
+              "v": "1/4",
+              "label": "1/4"
+            },
+            {
+              "v": "1/3",
+              "label": "1/3"
+            }
+          ],
+          "answer": "1/4",
+          "visual": {
+            "kind": "fline",
+            "d": 4,
+            "at": 1
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 21.18,
+        "at": "step:3",
+        "exercise": {
+          "id": "g3_fracline.02",
+          "type": "tap_choose",
+          "prompt_am": "ሁለት ሩብ ከየትኛው ጋር እኩል ነው?",
+          "prompt_en": "Two quarters are equal to which?",
+          "audio_url": "audio/am/ex.g3_fracline.04.mp3",
+          "options": [
+            {
+              "v": "1/2",
+              "label": "1/2"
+            },
+            {
+              "v": "1/4",
+              "label": "1/4"
+            },
+            {
+              "v": "1",
+              "label": "1"
+            }
+          ],
+          "answer": "1/2",
+          "visual": {
+            "kind": "fline",
+            "d": 4,
+            "at": 2
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 9.72,
+      "end": 28.767,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_fracline.03",
+          "type": "drag_numberline",
+          "prompt_am": "ክፍልፋዮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the fractions in their places on the number line.",
+          "audio_url": "audio/am/ex.g3_fracline.05.mp3",
+          "line": {
+            "min": 0,
+            "max": 2,
+            "step": 1,
+            "labels": "ends",
+            "denom": 2
+          },
+          "items": [
+            "1"
+          ],
+          "answer": [
+            "1"
+          ],
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_fracline.04",
+          "type": "drag_numberline",
+          "prompt_am": "ክፍልፋዮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the fractions in their places on the number line.",
+          "audio_url": "audio/am/ex.g3_fracline.05.mp3",
+          "line": {
+            "min": 0,
+            "max": 4,
+            "step": 1,
+            "labels": "ends",
+            "denom": 4
+          },
+          "items": [
+            "1",
+            "3"
+          ],
+          "answer": [
+            "1",
+            "3"
+          ],
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_fracline.05",
+          "type": "drag_numberline",
+          "prompt_am": "ክፍልፋዮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the fractions in their places on the number line.",
+          "audio_url": "audio/am/ex.g3_fracline.05.mp3",
+          "line": {
+            "min": 0,
+            "max": 3,
+            "step": 1,
+            "labels": "ends",
+            "denom": 3
+          },
+          "items": [
+            "1",
+            "2"
+          ],
+          "answer": [
+            "1",
+            "2"
+          ],
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_fracline.06",
+          "type": "tap_choose",
+          "prompt_am": "ነጥቡ የት ነው?",
+          "prompt_en": "Where is the dot?",
+          "audio_url": "audio/am/ex.g3_fracline.06.mp3",
+          "options": [
+            {
+              "v": "1/4",
+              "label": "1/4"
+            },
+            {
+              "v": "1/2",
+              "label": "1/2"
+            },
+            {
+              "v": "3/4",
+              "label": "3/4"
+            }
+          ],
+          "answer": "1/4",
+          "visual": {
+            "kind": "fline",
+            "d": 4,
+            "at": 1
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_fracline.07",
+          "type": "tap_choose",
+          "prompt_am": "ነጥቡ የት ነው?",
+          "prompt_en": "Where is the dot?",
+          "audio_url": "audio/am/ex.g3_fracline.06.mp3",
+          "options": [
+            {
+              "v": "1/3",
+              "label": "1/3"
+            },
+            {
+              "v": "2/3",
+              "label": "2/3"
+            },
+            {
+              "v": "3/4",
+              "label": "3/4"
+            }
+          ],
+          "answer": "2/3",
+          "visual": {
+            "kind": "fline",
+            "d": 3,
+            "at": 2
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_fracline.08",
+          "type": "tap_choose",
+          "prompt_am": "ነጥቡ የት ነው?",
+          "prompt_en": "Where is the dot?",
+          "audio_url": "audio/am/ex.g3_fracline.06.mp3",
+          "options": [
+            {
+              "v": "5/6",
+              "label": "5/6"
+            },
+            {
+              "v": "4/6",
+              "label": "4/6"
+            },
+            {
+              "v": "1/6",
+              "label": "1/6"
+            }
+          ],
+          "answer": "5/6",
+          "visual": {
+            "kind": "fline",
+            "d": 6,
+            "at": 5
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_fracline.09",
+          "type": "drag_fraction",
+          "prompt_am": "ግማሽ እንዲሆን በሩብ ቁርጥራጮች እንሙላ።",
+          "prompt_en": "Let's make one half with quarter pieces.",
+          "audio_url": "audio/am/ex.g3_fracline.07.mp3",
+          "shape": "injera",
+          "parts": 4,
+          "items": [
+            {
+              "piece": "quarter",
+              "count": 4
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 2,
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_fracline.10",
+          "type": "drag_fraction",
+          "prompt_am": "ግማሽ እንዲሆን በስድስተኛ ቁርጥራጮች እንሙላ።",
+          "prompt_en": "Let's make one half with sixth pieces.",
+          "audio_url": "audio/am/ex.g3_fracline.08.mp3",
+          "shape": "injera",
+          "parts": 6,
+          "items": [
+            {
+              "piece": "sixth",
+              "count": 5
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 3,
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_fracline.11",
+          "type": "drag_fraction",
+          "prompt_am": "ሁለት ሶስተኛ እንዲሆን በስድስተኛ ቁርጥራጮች እንሙላ።",
+          "prompt_en": "Let's make two thirds with sixth pieces.",
+          "audio_url": "audio/am/ex.g3_fracline.09.mp3",
+          "shape": "injera",
+          "parts": 6,
+          "items": [
+            {
+              "piece": "sixth",
+              "count": 6
+            }
+          ],
+          "targets": [
+            {
+              "id": "injera",
+              "start": 0
+            }
+          ],
+          "answer": 4,
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_fracline.12",
+          "type": "drag_match_word",
+          "prompt_am": "እኩል የሆኑትን ክፍልፋዮች እናገናኝ።",
+          "prompt_en": "Let's match the fractions that are equal.",
+          "audio_url": "audio/am/ex.g3_fracline.10.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "1/2"
+            },
+            {
+              "id": "w1",
+              "label": "1"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "4/4"
+            },
+            {
+              "id": "t0",
+              "label": "2/4"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_fracline.13",
+          "type": "drag_match_word",
+          "prompt_am": "እኩል የሆኑትን ክፍልፋዮች እናገናኝ።",
+          "prompt_en": "Let's match the fractions that are equal.",
+          "audio_url": "audio/am/ex.g3_fracline.10.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "1/2"
+            },
+            {
+              "id": "w1",
+              "label": "1/3"
+            },
+            {
+              "id": "w2",
+              "label": "1"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "2/6"
+            },
+            {
+              "id": "t2",
+              "label": "3/3"
+            },
+            {
+              "id": "t0",
+              "label": "2/4"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_fracline.14",
+          "type": "drag_match_word",
+          "prompt_am": "እኩል የሆኑትን ክፍልፋዮች እናገናኝ።",
+          "prompt_en": "Let's match the fractions that are equal.",
+          "audio_url": "audio/am/ex.g3_fracline.10.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "2/3"
+            },
+            {
+              "id": "w1",
+              "label": "1/2"
+            },
+            {
+              "id": "w2",
+              "label": "3/4"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "3/6"
+            },
+            {
+              "id": "t2",
+              "label": "6/8"
+            },
+            {
+              "id": "t0",
+              "label": "4/6"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_fracline.15",
+          "type": "drag_sort",
+          "prompt_am": "ከግማሽ የሚያንሱትን እና የሚበልጡትን እንለይ።",
+          "prompt_en": "Let's sort: less than a half, more than a half.",
+          "audio_url": "audio/am/ex.g3_fracline.11.mp3",
+          "targets": [
+            {
+              "id": "less",
+              "am": "ከ1/2 ያንሳል",
+              "en": "Less than 1/2"
+            },
+            {
+              "id": "more",
+              "am": "ከ1/2 ይበልጣል",
+              "en": "More than 1/2"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "1/4"
+            },
+            {
+              "id": "c1",
+              "label": "3/4"
+            },
+            {
+              "id": "c2",
+              "label": "1/3"
+            },
+            {
+              "id": "c3",
+              "label": "2/3"
+            }
+          ],
+          "answer": {
+            "c0": "less",
+            "c1": "more",
+            "c2": "less",
+            "c3": "more"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_fracline.16",
+          "type": "drag_sort",
+          "prompt_am": "ከግማሽ የሚያንሱትን እና የሚበልጡትን እንለይ።",
+          "prompt_en": "Let's sort: less than a half, more than a half.",
+          "audio_url": "audio/am/ex.g3_fracline.11.mp3",
+          "targets": [
+            {
+              "id": "less",
+              "am": "ከ1/2 ያንሳል",
+              "en": "Less than 1/2"
+            },
+            {
+              "id": "more",
+              "am": "ከ1/2 ይበልጣል",
+              "en": "More than 1/2"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "1/6"
+            },
+            {
+              "id": "c1",
+              "label": "5/6"
+            },
+            {
+              "id": "c2",
+              "label": "3/4"
+            },
+            {
+              "id": "c3",
+              "label": "1/3"
+            },
+            {
+              "id": "c4",
+              "label": "4/6"
+            }
+          ],
+          "answer": {
+            "c0": "less",
+            "c1": "more",
+            "c2": "more",
+            "c3": "less",
+            "c4": "more"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_fracline.17",
+          "type": "drag_sort",
+          "prompt_am": "ከግማሽ የሚያንሱትን እና የሚበልጡትን እንለይ።",
+          "prompt_en": "Let's sort: less than a half, more than a half.",
+          "audio_url": "audio/am/ex.g3_fracline.11.mp3",
+          "targets": [
+            {
+              "id": "less",
+              "am": "ከ1/2 ያንሳል",
+              "en": "Less than 1/2"
+            },
+            {
+              "id": "more",
+              "am": "ከ1/2 ይበልጣል",
+              "en": "More than 1/2"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "2/6"
+            },
+            {
+              "id": "c1",
+              "label": "5/8"
+            },
+            {
+              "id": "c2",
+              "label": "3/8"
+            },
+            {
+              "id": "c3",
+              "label": "7/8"
+            },
+            {
+              "id": "c4",
+              "label": "2/3"
+            }
+          ],
+          "answer": {
+            "c0": "less",
+            "c1": "more",
+            "c2": "less",
+            "c3": "more",
+            "c4": "more"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+              "en": "Count the equal jumps from zero to one.",
+              "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+            },
+            {
+              "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+              "en": "Two quarters sit at the same place as one half.",
+              "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_fracline.18",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሁለት ሩብ ከግማሽ ጋር እኩል ነው።",
+          "prompt_en": "True or not? Two quarters are equal to one half.",
+          "audio_url": "audio/am/ex.g3_fracline.12.mp3",
+          "statement_am": "ሁለት ሩብ ከግማሽ ጋር እኩል ነው።",
+          "statement_en": "Two quarters are equal to one half.",
+          "visual": {
+            "kind": "fline",
+            "d": 4,
+            "at": 2
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_fracline.19",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? አንድ ሶስተኛ ከአንድ ሩብ ያንሳል።",
+          "prompt_en": "True or not? One third is less than one quarter.",
+          "audio_url": "audio/am/ex.g3_fracline.13.mp3",
+          "statement_am": "አንድ ሶስተኛ ከአንድ ሩብ ያንሳል።",
+          "statement_en": "One third is less than one quarter.",
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_fracline.20",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሶስት ሩብ ከአንድ ሙሉ ያንሳል።",
+          "prompt_en": "True or not? Three quarters are less than one whole.",
+          "audio_url": "audio/am/ex.g3_fracline.14.mp3",
+          "statement_am": "ሶስት ሩብ ከአንድ ሙሉ ያንሳል።",
+          "statement_en": "Three quarters are less than one whole.",
+          "visual": {
+            "kind": "fline",
+            "d": 4,
+            "at": 3
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "race",
+    "questions": [
+      {
+        "id": "g3_fracline.26",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "1/4",
+            "label": "1/4"
+          },
+          {
+            "v": "3/4",
+            "label": "3/4"
+          }
+        ],
+        "answer": "3/4",
+        "visual": null,
+        "hints": [
+          {
+            "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+            "en": "Count the equal jumps from zero to one.",
+            "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+          },
+          {
+            "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+            "en": "Two quarters sit at the same place as one half.",
+            "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_fracline.27",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "1/2",
+            "label": "1/2"
+          },
+          {
+            "v": "1/3",
+            "label": "1/3"
+          }
+        ],
+        "answer": "1/2",
+        "visual": null,
+        "hints": [
+          {
+            "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+            "en": "Count the equal jumps from zero to one.",
+            "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+          },
+          {
+            "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+            "en": "Two quarters sit at the same place as one half.",
+            "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_fracline.28",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "1/4",
+            "label": "1/4"
+          },
+          {
+            "v": "2/4",
+            "label": "2/4"
+          }
+        ],
+        "answer": "2/4",
+        "visual": null,
+        "hints": [
+          {
+            "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+            "en": "Count the equal jumps from zero to one.",
+            "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+          },
+          {
+            "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+            "en": "Two quarters sit at the same place as one half.",
+            "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_fracline.29",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "1",
+            "label": "1"
+          },
+          {
+            "v": "3/4",
+            "label": "3/4"
+          }
+        ],
+        "answer": "1",
+        "visual": null,
+        "hints": [
+          {
+            "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+            "en": "Count the equal jumps from zero to one.",
+            "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+          },
+          {
+            "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+            "en": "Two quarters sit at the same place as one half.",
+            "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_fracline.30",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "1/3",
+            "label": "1/3"
+          },
+          {
+            "v": "2/3",
+            "label": "2/3"
+          }
+        ],
+        "answer": "2/3",
+        "visual": null,
+        "hints": [
+          {
+            "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+            "en": "Count the equal jumps from zero to one.",
+            "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+          },
+          {
+            "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+            "en": "Two quarters sit at the same place as one half.",
+            "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።",
+      "en": "Let's race to Grandma's house! Each right answer moves us forward.",
+      "audio_url": "audio/am/ex.compare.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_fracline.21",
+      "type": "drag_numberline",
+      "prompt_am": "ግማሽን በሩብ መስመሩ ላይ እናስቀምጥ።",
+      "prompt_en": "Let's put one half on the quarters line.",
+      "audio_url": "audio/am/ex.g3_fracline.15.mp3",
+      "line": {
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "labels": "ends",
+        "denom": 4
+      },
+      "items": [
+        "2"
+      ],
+      "item_labels": [
+        "1/2"
+      ],
+      "answer": [
+        "2"
+      ],
+      "hints": [
+        {
+          "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+          "en": "Count the equal jumps from zero to one.",
+          "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+        },
+        {
+          "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+          "en": "Two quarters sit at the same place as one half.",
+          "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_fracline.22",
+      "type": "drag_fraction",
+      "prompt_am": "ሶስት ሩብ እናስቀምጥ።",
+      "prompt_en": "Let's put three quarters.",
+      "audio_url": "audio/am/ex.g3_fracline.16.mp3",
+      "shape": "injera",
+      "parts": 4,
+      "items": [
+        {
+          "piece": "quarter",
+          "count": 4
+        }
+      ],
+      "targets": [
+        {
+          "id": "injera",
+          "start": 0
+        }
+      ],
+      "answer": 3,
+      "hints": [
+        {
+          "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+          "en": "Count the equal jumps from zero to one.",
+          "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+        },
+        {
+          "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+          "en": "Two quarters sit at the same place as one half.",
+          "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_fracline.23",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሶስት ሩብ",
+        "en": "three quarters",
+        "audio_url": "audio/am/ex.g3_fracline.17.mp3"
+      },
+      "options": [
+        {
+          "v": "3/4",
+          "label": "3/4"
+        },
+        {
+          "v": "1/4",
+          "label": "1/4"
+        },
+        {
+          "v": "3/3",
+          "label": "3/3"
+        }
+      ],
+      "answer": "3/4",
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_fracline.24",
+      "type": "numpad",
+      "prompt_am": "ስንት ሩቦች አንድ ሙሉ ይሆናሉ?",
+      "prompt_en": "How many quarters make one whole?",
+      "audio_url": "audio/am/ex.g3_fracline.18.mp3",
+      "answer": 4,
+      "visual": {
+        "kind": "fline",
+        "d": 4,
+        "at": 4
+      },
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ከዜሮ እስከ አንድ ያሉትን እኩል ዝላዮች እንቁጠር።",
+          "en": "Count the equal jumps from zero to one.",
+          "audio_url": "audio/am/ex.g3_fracline.02.mp3"
+        },
+        {
+          "am": "ሁለት ሩብ ከግማሽ ጋር አንድ ቦታ ላይ ነው።",
+          "en": "Two quarters sit at the same place as one half.",
+          "audio_url": "audio/am/ex.g3_fracline.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_fracline.25",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ሁለት ስድስተኛ ከአንድ ሶስተኛ ጋር እኩል ነው።",
+      "prompt_en": "True or not? Two sixths are equal to one third.",
+      "audio_url": "audio/am/ex.g3_fracline.19.mp3",
+      "statement_am": "ሁለት ስድስተኛ ከአንድ ሶስተኛ ጋር እኩል ነው።",
+      "statement_en": "Two sixths are equal to one third.",
+      "visual": {
+        "kind": "fline",
+        "d": 6,
+        "at": 2
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    }
+  ]
+}

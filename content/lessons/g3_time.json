@@ -1,0 +1,1179 @@
+{
+  "id": "g3_time",
+  "grade": 3,
+  "n": 12,
+  "title": {
+    "am": "ሰዓት በደቂቃ",
+    "en": "Time to the minute",
+    "audio_url": "audio/am/lesson.g3_time.title.mp3"
+  },
+  "place": "clocktower",
+  "video": {
+    "src": "video/g3_time.mp4",
+    "src_low": "video/low/g3_time.mp4",
+    "poster": "video/g3_time.jpg",
+    "captions": {
+      "am": "video/g3_time.am.vtt",
+      "en": "video/g3_time.en.vtt"
+    },
+    "duration": 28.2,
+    "checkpoints": [
+      {
+        "t": 13.35,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_time.01",
+          "type": "tap_choose",
+          "prompt_am": "ትልቁ መርፌ አራት ላይ ነው። ስንት ደቂቃ ነው?",
+          "prompt_en": "The long hand is on the four. How many minutes is that?",
+          "audio_url": "audio/am/ex.g3_time.01.mp3",
+          "options": [
+            {
+              "v": 4
+            },
+            {
+              "v": 20
+            },
+            {
+              "v": 40
+            }
+          ],
+          "answer": 20,
+          "visual": {
+            "kind": "clock",
+            "h": 7,
+            "m": 20
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 20.62,
+        "at": "step:3",
+        "exercise": {
+          "id": "g3_time.02",
+          "type": "tap_choose",
+          "prompt_am": "ከአርባ ደቂቃ በኋላ ስንት ሰዓት ይሆናል?",
+          "prompt_en": "What time will it be forty minutes later?",
+          "audio_url": "audio/am/ex.g3_time.02.mp3",
+          "options": [
+            {
+              "v": "7:60",
+              "label": "7:60"
+            },
+            {
+              "v": "8:00",
+              "label": "8:00"
+            },
+            {
+              "v": "9:00",
+              "label": "9:00"
+            }
+          ],
+          "answer": "8:00",
+          "visual": {
+            "kind": "clock",
+            "h": 7,
+            "m": 20
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 9.72,
+      "end": 28.2,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_time.03",
+          "type": "clock",
+          "prompt_am": "ሰዓቱን አራት ከአስራ አምስት እናድርግ።",
+          "prompt_en": "Set the clock to four fifteen.",
+          "audio_url": "audio/am/ex.g3_time.03.mp3",
+          "answer": {
+            "h": 4,
+            "m": 15
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "step": 5,
+          "level": 1
+        },
+        {
+          "id": "g3_time.04",
+          "type": "clock",
+          "prompt_am": "ሰዓቱን ዘጠኝ ከአርባ እናድርግ።",
+          "prompt_en": "Set the clock to nine forty.",
+          "audio_url": "audio/am/ex.g3_time.04.mp3",
+          "answer": {
+            "h": 9,
+            "m": 40
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "step": 5,
+          "level": 2
+        },
+        {
+          "id": "g3_time.05",
+          "type": "clock",
+          "prompt_am": "ሰዓቱን ስድስት ከአርባ ስምንት እናድርግ።",
+          "prompt_en": "Set the clock to six forty-eight.",
+          "audio_url": "audio/am/ex.g3_time.05.mp3",
+          "answer": {
+            "h": 6,
+            "m": 48
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "step": 1,
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_time.06",
+          "type": "tap_choose",
+          "prompt_am": "ሰዓቱ ስንት ነው?",
+          "prompt_en": "What time is it?",
+          "audio_url": "audio/am/ex.g2_time.09.mp3",
+          "options": [
+            {
+              "v": "3:25",
+              "label": "3:25"
+            },
+            {
+              "v": "5:15",
+              "label": "5:15"
+            },
+            {
+              "v": "3:05",
+              "label": "3:05"
+            }
+          ],
+          "answer": "3:25",
+          "visual": {
+            "kind": "clock",
+            "h": 3,
+            "m": 25
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_time.07",
+          "type": "tap_choose",
+          "prompt_am": "ሰዓቱ ስንት ነው?",
+          "prompt_en": "What time is it?",
+          "audio_url": "audio/am/ex.g2_time.09.mp3",
+          "options": [
+            {
+              "v": "11:50",
+              "label": "11:50"
+            },
+            {
+              "v": "10:50",
+              "label": "10:50"
+            },
+            {
+              "v": "11:10",
+              "label": "11:10"
+            }
+          ],
+          "answer": "11:50",
+          "visual": {
+            "kind": "clock",
+            "h": 11,
+            "m": 50
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_time.08",
+          "type": "tap_choose",
+          "prompt_am": "ሰዓቱ ስንት ነው?",
+          "prompt_en": "What time is it?",
+          "audio_url": "audio/am/ex.g2_time.09.mp3",
+          "options": [
+            {
+              "v": "8:43",
+              "label": "8:43"
+            },
+            {
+              "v": "9:43",
+              "label": "9:43"
+            },
+            {
+              "v": "8:38",
+              "label": "8:38"
+            }
+          ],
+          "answer": "8:43",
+          "visual": {
+            "kind": "clock",
+            "h": 8,
+            "m": 43
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_time.09",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።",
+          "prompt_en": "Let's match each time to its clock.",
+          "audio_url": "audio/am/ex.g2_time.10.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "7:00"
+            },
+            {
+              "id": "w1",
+              "label": "3:30"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "clock",
+                "h": 3,
+                "m": 30
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "clock",
+                "h": 7,
+                "m": 0
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_time.10",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።",
+          "prompt_en": "Let's match each time to its clock.",
+          "audio_url": "audio/am/ex.g2_time.10.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "2:15"
+            },
+            {
+              "id": "w1",
+              "label": "9:45"
+            },
+            {
+              "id": "w2",
+              "label": "5:20"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "clock",
+                "h": 9,
+                "m": 45
+              }
+            },
+            {
+              "id": "t2",
+              "visual": {
+                "kind": "clock",
+                "h": 5,
+                "m": 20
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "clock",
+                "h": 2,
+                "m": 15
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_time.11",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።",
+          "prompt_en": "Let's match each time to its clock.",
+          "audio_url": "audio/am/ex.g2_time.10.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "4:10"
+            },
+            {
+              "id": "w1",
+              "label": "10:20"
+            },
+            {
+              "id": "w2",
+              "label": "12:55"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "clock",
+                "h": 10,
+                "m": 20
+              }
+            },
+            {
+              "id": "t2",
+              "visual": {
+                "kind": "clock",
+                "h": 12,
+                "m": 55
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "clock",
+                "h": 4,
+                "m": 10
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_time.12",
+          "type": "numpad",
+          "prompt_am": "8:10 ላይ ጀምሮ 8:40 ላይ አለቀ። ስንት ደቂቃ ፈጀ?",
+          "prompt_en": "It started at 8:10 and ended at 8:40. How many minutes did it take?",
+          "audio_url": "audio/am/ex.g3_time.06.mp3",
+          "answer": 30,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_time.13",
+          "type": "numpad",
+          "prompt_am": "9:25 ላይ ጀምሮ 10:00 ላይ አለቀ። ስንት ደቂቃ ፈጀ?",
+          "prompt_en": "It started at 9:25 and ended at 10:00. How many minutes did it take?",
+          "audio_url": "audio/am/ex.g3_time.07.mp3",
+          "answer": 35,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_time.14",
+          "type": "numpad",
+          "prompt_am": "1:45 ላይ ጀምሮ 2:20 ላይ አለቀ። ስንት ደቂቃ ፈጀ?",
+          "prompt_en": "It started at 1:45 and ended at 2:20. How many minutes did it take?",
+          "audio_url": "audio/am/ex.g3_time.08.mp3",
+          "answer": 35,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_time.15",
+          "type": "drag_sort",
+          "prompt_am": "ከ8:00 በፊት እና በኋላ ያሉትን እንለይ።",
+          "prompt_en": "Let's sort: before 8:00, after 8:00.",
+          "audio_url": "audio/am/ex.g3_time.09.mp3",
+          "targets": [
+            {
+              "id": "before",
+              "am": "ከ8:00 በፊት",
+              "en": "Before 8:00"
+            },
+            {
+              "id": "after",
+              "am": "ከ8:00 በኋላ",
+              "en": "After 8:00"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "7:45"
+            },
+            {
+              "id": "c1",
+              "label": "8:15"
+            },
+            {
+              "id": "c2",
+              "label": "7:59"
+            },
+            {
+              "id": "c3",
+              "label": "8:05"
+            }
+          ],
+          "answer": {
+            "c0": "before",
+            "c1": "after",
+            "c2": "before",
+            "c3": "after"
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_time.16",
+          "type": "drag_sort",
+          "prompt_am": "ከ3:30 በፊት እና በኋላ ያሉትን እንለይ።",
+          "prompt_en": "Let's sort: before 3:30, after 3:30.",
+          "audio_url": "audio/am/ex.g3_time.10.mp3",
+          "targets": [
+            {
+              "id": "before",
+              "am": "ከ3:30 በፊት",
+              "en": "Before 3:30"
+            },
+            {
+              "id": "after",
+              "am": "ከ3:30 በኋላ",
+              "en": "After 3:30"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "3:20"
+            },
+            {
+              "id": "c1",
+              "label": "3:40"
+            },
+            {
+              "id": "c2",
+              "label": "3:29"
+            },
+            {
+              "id": "c3",
+              "label": "3:31"
+            },
+            {
+              "id": "c4",
+              "label": "3:05"
+            }
+          ],
+          "answer": {
+            "c0": "before",
+            "c1": "after",
+            "c2": "before",
+            "c3": "after",
+            "c4": "before"
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_time.17",
+          "type": "drag_sort",
+          "prompt_am": "ከ12:00 በፊት እና በኋላ ያሉትን እንለይ።",
+          "prompt_en": "Let's sort: before 12:00, after 12:00.",
+          "audio_url": "audio/am/ex.g2_time.16.mp3",
+          "targets": [
+            {
+              "id": "before",
+              "am": "ከ12:00 በፊት",
+              "en": "Before 12:00"
+            },
+            {
+              "id": "after",
+              "am": "ከ12:00 በኋላ",
+              "en": "After 12:00"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "11:50"
+            },
+            {
+              "id": "c1",
+              "label": "12:10"
+            },
+            {
+              "id": "c2",
+              "label": "10:30"
+            },
+            {
+              "id": "c3",
+              "label": "12:45"
+            },
+            {
+              "id": "c4",
+              "label": "11:59"
+            }
+          ],
+          "answer": {
+            "c0": "before",
+            "c1": "after",
+            "c2": "before",
+            "c3": "after",
+            "c4": "before"
+          },
+          "hints": [
+            {
+              "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+              "en": "The short hand shows the hour, the long hand the minutes.",
+              "audio_url": "audio/am/ex.g2_halves.23.mp3"
+            },
+            {
+              "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+              "en": "Count by fives with the long hand: five, ten, fifteen…",
+              "audio_url": "audio/am/ex.g2_time.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_time.18",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each time to its Ethiopian time.",
+          "audio_url": "audio/am/ex.g2_time.17.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "7:00"
+            },
+            {
+              "id": "w1",
+              "label": "12:00"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "ሰዓት 6",
+              "lang": "am"
+            },
+            {
+              "id": "t0",
+              "label": "ሰዓት 1",
+              "lang": "am"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "የኢትዮጵያ ሰዓት ከስድስት ሰዓት ኋላ ነው፤ ሰባት ሰዓት በኢትዮጵያ አንድ ሰዓት ነው።",
+              "en": "Ethiopian time is six hours behind: seven o'clock is one o'clock in Ethiopian time.",
+              "audio_url": "audio/am/ex.g2_time.04.mp3"
+            },
+            {
+              "am": "ከሰዓቱ ስድስት እንቀንሳለን።",
+              "en": "Take six away from the hour.",
+              "audio_url": "audio/am/ex.g2_time.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_time.19",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each time to its Ethiopian time.",
+          "audio_url": "audio/am/ex.g2_time.17.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "8:00"
+            },
+            {
+              "id": "w1",
+              "label": "9:00"
+            },
+            {
+              "id": "w2",
+              "label": "6:00"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "ሰዓት 3",
+              "lang": "am"
+            },
+            {
+              "id": "t2",
+              "label": "ሰዓት 12",
+              "lang": "am"
+            },
+            {
+              "id": "t0",
+              "label": "ሰዓት 2",
+              "lang": "am"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "የኢትዮጵያ ሰዓት ከስድስት ሰዓት ኋላ ነው፤ ሰባት ሰዓት በኢትዮጵያ አንድ ሰዓት ነው።",
+              "en": "Ethiopian time is six hours behind: seven o'clock is one o'clock in Ethiopian time.",
+              "audio_url": "audio/am/ex.g2_time.04.mp3"
+            },
+            {
+              "am": "ከሰዓቱ ስድስት እንቀንሳለን።",
+              "en": "Take six away from the hour.",
+              "audio_url": "audio/am/ex.g2_time.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_time.20",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each time to its Ethiopian time.",
+          "audio_url": "audio/am/ex.g2_time.17.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "1:00"
+            },
+            {
+              "id": "w1",
+              "label": "3:00"
+            },
+            {
+              "id": "w2",
+              "label": "11:00"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "ሰዓት 9",
+              "lang": "am"
+            },
+            {
+              "id": "t2",
+              "label": "ሰዓት 5",
+              "lang": "am"
+            },
+            {
+              "id": "t0",
+              "label": "ሰዓት 7",
+              "lang": "am"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "የኢትዮጵያ ሰዓት ከስድስት ሰዓት ኋላ ነው፤ ሰባት ሰዓት በኢትዮጵያ አንድ ሰዓት ነው።",
+              "en": "Ethiopian time is six hours behind: seven o'clock is one o'clock in Ethiopian time.",
+              "audio_url": "audio/am/ex.g2_time.04.mp3"
+            },
+            {
+              "am": "ከሰዓቱ ስድስት እንቀንሳለን።",
+              "en": "Take six away from the hour.",
+              "audio_url": "audio/am/ex.g2_time.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "memory",
+    "pairs": [
+      {
+        "n": "7:20",
+        "am": "ሰባት ከሃያ",
+        "visual": {
+          "kind": "clock",
+          "h": 7,
+          "m": 20
+        }
+      },
+      {
+        "n": "3:45",
+        "am": "ሶስት ከአርባ አምስት",
+        "visual": {
+          "kind": "clock",
+          "h": 3,
+          "m": 45
+        }
+      },
+      {
+        "n": "10:05",
+        "am": "አስር ከአምስት",
+        "visual": {
+          "kind": "clock",
+          "h": 10,
+          "m": 5
+        }
+      },
+      {
+        "n": "12:30",
+        "am": "አስራ ሁለት ተኩል",
+        "visual": {
+          "kind": "clock",
+          "h": 12,
+          "m": 30
+        }
+      }
+    ],
+    "intro": {
+      "am": "የሚመሳሰሉትን ካርዶች እንፈልግ፤ ሰዓቱ እና የሰዓቱ ሥዕል።",
+      "en": "Let's find matching cards: the time and its clock.",
+      "audio_url": "audio/am/ex.g2_time.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_time.21",
+      "type": "drag_match_word",
+      "prompt_am": "እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።",
+      "prompt_en": "Let's match each time to its clock.",
+      "audio_url": "audio/am/ex.g2_time.10.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "6:45"
+        },
+        {
+          "id": "w1",
+          "label": "1:20"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "visual": {
+            "kind": "clock",
+            "h": 1,
+            "m": 20
+          }
+        },
+        {
+          "id": "t0",
+          "visual": {
+            "kind": "clock",
+            "h": 6,
+            "m": 45
+          }
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1"
+      },
+      "hints": [
+        {
+          "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+          "en": "The short hand shows the hour, the long hand the minutes.",
+          "audio_url": "audio/am/ex.g2_halves.23.mp3"
+        },
+        {
+          "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+          "en": "Count by fives with the long hand: five, ten, fifteen…",
+          "audio_url": "audio/am/ex.g2_time.02.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_time.22",
+      "type": "drag_sort",
+      "prompt_am": "ከ10:00 በፊት እና በኋላ ያሉትን እንለይ።",
+      "prompt_en": "Let's sort: before 10:00, after 10:00.",
+      "audio_url": "audio/am/ex.g3_time.11.mp3",
+      "targets": [
+        {
+          "id": "before",
+          "am": "ከ10:00 በፊት",
+          "en": "Before 10:00"
+        },
+        {
+          "id": "after",
+          "am": "ከ10:00 በኋላ",
+          "en": "After 10:00"
+        }
+      ],
+      "items": [
+        {
+          "id": "c0",
+          "label": "9:50"
+        },
+        {
+          "id": "c1",
+          "label": "10:25"
+        },
+        {
+          "id": "c2",
+          "label": "9:05"
+        },
+        {
+          "id": "c3",
+          "label": "10:01"
+        }
+      ],
+      "answer": {
+        "c0": "before",
+        "c1": "after",
+        "c2": "before",
+        "c3": "after"
+      },
+      "hints": [
+        {
+          "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+          "en": "The short hand shows the hour, the long hand the minutes.",
+          "audio_url": "audio/am/ex.g2_halves.23.mp3"
+        },
+        {
+          "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+          "en": "Count by fives with the long hand: five, ten, fifteen…",
+          "audio_url": "audio/am/ex.g2_time.02.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_time.23",
+      "type": "drag_match_word",
+      "prompt_am": "እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።",
+      "prompt_en": "Let's match each time to its Ethiopian time.",
+      "audio_url": "audio/am/ex.g2_time.17.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "2:00"
+        },
+        {
+          "id": "w1",
+          "label": "4:00"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "label": "ሰዓት 10",
+          "lang": "am"
+        },
+        {
+          "id": "t0",
+          "label": "ሰዓት 8",
+          "lang": "am"
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1"
+      },
+      "hints": [
+        {
+          "am": "የኢትዮጵያ ሰዓት ከስድስት ሰዓት ኋላ ነው፤ ሰባት ሰዓት በኢትዮጵያ አንድ ሰዓት ነው።",
+          "en": "Ethiopian time is six hours behind: seven o'clock is one o'clock in Ethiopian time.",
+          "audio_url": "audio/am/ex.g2_time.04.mp3"
+        },
+        {
+          "am": "ከሰዓቱ ስድስት እንቀንሳለን።",
+          "en": "Take six away from the hour.",
+          "audio_url": "audio/am/ex.g2_time.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_time.24",
+      "type": "clock",
+      "prompt_am": "ሰዓቱን አምስት ከሰላሳ አምስት እናድርግ።",
+      "prompt_en": "Set the clock to five thirty-five.",
+      "audio_url": "audio/am/ex.g3_time.12.mp3",
+      "answer": {
+        "h": 5,
+        "m": 35
+      },
+      "hints": [
+        {
+          "am": "ትንሹ መርፌ ሰዓቱን፣ ትልቁ መርፌ ደቂቃውን ያሳያል።",
+          "en": "The short hand shows the hour, the long hand the minutes.",
+          "audio_url": "audio/am/ex.g2_halves.23.mp3"
+        },
+        {
+          "am": "በትልቁ መርፌ ላይ በአምስት በአምስት እንቁጠር፦ አምስት፣ አስር፣ አስራ አምስት…",
+          "en": "Count by fives with the long hand: five, ten, fifteen…",
+          "audio_url": "audio/am/ex.g2_time.02.mp3"
+        }
+      ],
+      "step": 5
+    },
+    {
+      "id": "g3_time.25",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ሰዓቱ ዘጠኝ ከአስራ አምስት ነው።",
+      "prompt_en": "True or not? The time is nine fifteen.",
+      "audio_url": "audio/am/ex.g3_time.13.mp3",
+      "statement_am": "ሰዓቱ ዘጠኝ ከአስራ አምስት ነው።",
+      "statement_en": "The time is nine fifteen.",
+      "visual": {
+        "kind": "clock",
+        "h": 9,
+        "m": 15
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    }
+  ]
+}

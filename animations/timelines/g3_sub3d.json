@@ -1,0 +1,64 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.533,
+  "step0": 10.767,
+  "step1": 14.4,
+  "step2": 18.033,
+  "step3": 21.667,
+  "step4": 25.3,
+  "step5": 28.933
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ",
+   "en": "Subtracting three-digit numbers",
+   "end": 3.333
+  },
+  {
+   "start": 4.533,
+   "am": "በትምህርት ቤታችን አራት መቶ ሃምሳ ሁለት ተማሪዎች አሉ። ዛሬ ሁለት መቶ ሃያ ስምንት ተማሪዎች ለሽርሽር ሄዱ። ስንት ተማሪዎች ቀሩ?",
+   "en": "Our school has four hundred fifty-two students. Today two hundred twenty-eight students went on a trip. How many students stayed?",
+   "end": 10.167
+  },
+  {
+   "start": 10.767,
+   "am": "አራት መቶ ሃምሳ ሁለት ሲቀነስ ሁለት መቶ ሃያ ስምንት።",
+   "en": "Four hundred fifty-two minus two hundred twenty-eight.",
+   "end": 14.4
+  },
+  {
+   "start": 14.4,
+   "am": "ከሁለት ስምንት መውሰድ አንችልም፤ ስለዚህ አንድ አስር እንፈታለን።",
+   "en": "We cannot take eight from two, so we break one ten.",
+   "end": 18.033
+  },
+  {
+   "start": 18.033,
+   "am": "አሁን አራት አስሮች እና አስራ ሁለት አንዶች አሉ።",
+   "en": "Now there are four tens and twelve ones.",
+   "end": 21.667
+  },
+  {
+   "start": 21.667,
+   "am": "አስራ ሁለት ሲቀነስ ስምንት አራት ነው።",
+   "en": "Twelve minus eight is four.",
+   "end": 25.3
+  },
+  {
+   "start": 25.3,
+   "am": "አራት አስሮች ሲቀነስ ሁለት አስሮች ሁለት አስሮች ናቸው፤ አራት መቶዎች ሲቀነስ ሁለት መቶዎች ሁለት መቶዎች ናቸው።",
+   "en": "Four tens minus two tens is two tens; four hundreds minus two hundreds is two hundreds.",
+   "end": 28.933
+  },
+  {
+   "start": 28.933,
+   "am": "መልሱ ሁለት መቶ ሃያ አራት ነው።",
+   "en": "The answer is two hundred twenty-four.",
+   "end": 32.867
+  }
+ ],
+ "duration": 36.467,
+ "lesson": "g3_sub3d"
+}

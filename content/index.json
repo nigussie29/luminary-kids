@@ -143,6 +143,258 @@
         "audio_url": "audio/am/lesson.g2_halves.title.mp3"
       },
       "game": "memory"
+    },
+    {
+      "id": "g2_skip",
+      "grade": 2,
+      "n": 7,
+      "place": "steps",
+      "title": {
+        "am": "ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ",
+        "en": "Skip counting, even and odd",
+        "audio_url": "audio/am/lesson.g2_skip.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "g2_compare",
+      "grade": 2,
+      "n": 8,
+      "place": "eggs",
+      "title": {
+        "am": "የትኛው ይበልጣል?",
+        "en": "Which is greater?",
+        "audio_url": "audio/am/lesson.g2_compare.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g2_measure",
+      "grade": 2,
+      "n": 9,
+      "place": "desk",
+      "title": {
+        "am": "ርዝመትን መለካት",
+        "en": "Measuring length",
+        "audio_url": "audio/am/lesson.g2_measure.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g2_time",
+      "grade": 2,
+      "n": 10,
+      "place": "alarm",
+      "title": {
+        "am": "ሰዓት በአምስት ደቂቃ",
+        "en": "Time to five minutes",
+        "audio_url": "audio/am/lesson.g2_time.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g2_shapes",
+      "grade": 2,
+      "n": 11,
+      "place": "wall",
+      "title": {
+        "am": "ቅርጾች እና ጎኖቻቸው",
+        "en": "Shapes and their sides",
+        "audio_url": "audio/am/lesson.g2_shapes.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g2_graphs",
+      "grade": 2,
+      "n": 12,
+      "place": "chart",
+      "title": {
+        "am": "ሥዕላዊ ግራፍ እና አምድ ግራፍ",
+        "en": "Picture graphs and bar graphs",
+        "audio_url": "audio/am/lesson.g2_graphs.title.mp3"
+      },
+      "game": "market"
+    },
+    {
+      "id": "g3_hundreds",
+      "grade": 3,
+      "n": 1,
+      "place": "store",
+      "title": {
+        "am": "መቶዎች፣ አስሮች እና አንዶች",
+        "en": "Hundreds, tens and ones",
+        "audio_url": "audio/am/lesson.g3_hundreds.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_add3d",
+      "grade": 3,
+      "n": 2,
+      "place": "orchard",
+      "title": {
+        "am": "ባለ ሶስት አሃዝ ቁጥሮችን መደመር",
+        "en": "Adding three-digit numbers",
+        "audio_url": "audio/am/lesson.g3_add3d.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g3_sub3d",
+      "grade": 3,
+      "n": 3,
+      "place": "schoolyard",
+      "title": {
+        "am": "ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ",
+        "en": "Subtracting three-digit numbers",
+        "audio_url": "audio/am/lesson.g3_sub3d.title.mp3"
+      },
+      "game": "market"
+    },
+    {
+      "id": "g3_times",
+      "grade": 3,
+      "n": 4,
+      "place": "field",
+      "title": {
+        "am": "በረድፍ እናባዛ",
+        "en": "Multiplying in rows",
+        "audio_url": "audio/am/lesson.g3_times.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "g3_share",
+      "grade": 3,
+      "n": 5,
+      "place": "village",
+      "title": {
+        "am": "እኩል ማካፈል",
+        "en": "Sharing equally",
+        "audio_url": "audio/am/lesson.g3_share.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_fractions",
+      "grade": 3,
+      "n": 6,
+      "place": "feast",
+      "title": {
+        "am": "ሶስተኛ እና ሌሎች ክፍልፋዮች",
+        "en": "Thirds and other fractions",
+        "audio_url": "audio/am/lesson.g3_fractions.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_round",
+      "grade": 3,
+      "n": 7,
+      "place": "farm",
+      "title": {
+        "am": "ማወዳደር እና ማጠጋጋት",
+        "en": "Comparing and rounding",
+        "audio_url": "audio/am/lesson.g3_round.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_tables",
+      "grade": 3,
+      "n": 8,
+      "place": "eggs",
+      "title": {
+        "am": "የማባዛት ሰንጠረዥ እስከ አስር ጊዜ አስር",
+        "en": "Times tables to 10 × 10",
+        "audio_url": "audio/am/lesson.g3_tables.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_divide",
+      "grade": 3,
+      "n": 9,
+      "place": "playground",
+      "title": {
+        "am": "ማካፈል እና ማባዛት",
+        "en": "Division and multiplication",
+        "audio_url": "audio/am/lesson.g3_divide.title.mp3"
+      },
+      "game": "coffee"
+    },
+    {
+      "id": "g3_fracline",
+      "grade": 3,
+      "n": 10,
+      "place": "path",
+      "title": {
+        "am": "ክፍልፋዮች በቁጥር መስመር ላይ",
+        "en": "Fractions on a number line",
+        "audio_url": "audio/am/lesson.g3_fracline.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_measure",
+      "grade": 3,
+      "n": 11,
+      "place": "scales",
+      "title": {
+        "am": "ርዝመት፣ ክብደት እና መጠን",
+        "en": "Length, mass and liquids",
+        "audio_url": "audio/am/lesson.g3_measure.title.mp3"
+      },
+      "game": "balloon"
+    },
+    {
+      "id": "g3_time",
+      "grade": 3,
+      "n": 12,
+      "place": "clocktower",
+      "title": {
+        "am": "ሰዓት በደቂቃ",
+        "en": "Time to the minute",
+        "audio_url": "audio/am/lesson.g3_time.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_shapes",
+      "grade": 3,
+      "n": 13,
+      "place": "house",
+      "title": {
+        "am": "ቅርጾች",
+        "en": "Shapes",
+        "audio_url": "audio/am/lesson.g3_shapes.title.mp3"
+      },
+      "game": "memory"
+    },
+    {
+      "id": "g3_area",
+      "grade": 3,
+      "n": 14,
+      "place": "floor",
+      "title": {
+        "am": "ስፋት እና ዙሪያ",
+        "en": "Area and perimeter",
+        "audio_url": "audio/am/lesson.g3_area.title.mp3"
+      },
+      "game": "race"
+    },
+    {
+      "id": "g3_graphs",
+      "grade": 3,
+      "n": 15,
+      "place": "chart",
+      "title": {
+        "am": "ግራፎች እና የቃላት ጥያቄዎች",
+        "en": "Graphs and word problems",
+        "audio_url": "audio/am/lesson.g3_graphs.title.mp3"
+      },
+      "game": "market"
     }
   ],
   "common": {

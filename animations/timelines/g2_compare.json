@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.333,
+  "step0": 9.967,
+  "step1": 13.6,
+  "step2": 17.233,
+  "step3": 20.867
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "የትኛው ይበልጣል?",
+   "en": "Which is greater?",
+   "end": 3.333
+  },
+  {
+   "start": 4.333,
+   "am": "በገበያ ሁለት ነጋዴዎች እንቁላል ይሸጣሉ። አንዱ አርባ ሁለት፣ ሌላው ሃያ አራት እንቁላሎች አሉት።",
+   "en": "Two sellers at the market have eggs. One has forty-two, the other twenty-four.",
+   "end": 9.967
+  },
+  {
+   "start": 9.967,
+   "am": "መጀመሪያ አስሮቹን እናወዳድር፤ አራት አስሮች ከሁለት አስሮች ይበልጣሉ።",
+   "en": "First compare the tens: four tens are more than two tens.",
+   "end": 13.6
+  },
+  {
+   "start": 13.6,
+   "am": "ስለዚህ አርባ ሁለት ከሃያ አራት ይበልጣል።",
+   "en": "So forty-two is greater than twenty-four.",
+   "end": 17.233
+  },
+  {
+   "start": 17.233,
+   "am": "የምልክቱ ክፍት አፍ ወደ ትልቁ ቁጥር ይመለከታል።",
+   "en": "The open side of the sign faces the bigger number.",
+   "end": 20.867
+  },
+  {
+   "start": 20.867,
+   "am": "አስሮቹ እኩል ሲሆኑ አንዶቹን እናወዳድራለን።",
+   "en": "When the tens are equal, we compare the ones.",
+   "end": 24.8
+  }
+ ],
+ "duration": 27.4,
+ "lesson": "g2_compare"
+}

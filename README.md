@@ -1,7 +1,7 @@
-# Luminary Kids — የሂሳብ ጀብዱ (Grades 1–2)
+# Luminary Kids — የሂሳብ ጀብዱ (Grades 1–3)
 
-Amharic-first, hands-on math for children aged 5–8. Twelve lessons (six for Grade 1, six for Grade 2)
-on an adventure map. Each lesson is mostly the child **doing**: a short Manim story video that pauses for
+Amharic-first, hands-on math for children aged 5–9. 33 lessons (six for Grade 1, twelve for Grade 2, fifteen for Grade 3,
+covering the whole Grade 2 and Grade 3 outlines) on an adventure map. Each lesson is mostly the child **doing**: a short Manim story video that pauses for
 tap questions, guided drag-and-drop practice that adapts to the child, a mini-game, a five-question
 challenge, and a celebration with stars, a badge and new clothes for the child's character.
 The original Grade 1 practice runs, starting game and grown-ups report are still there as "Quick practice".
@@ -22,7 +22,7 @@ Wrong answers get a gentle hint; after two tries the answer is demonstrated. The
 
 ## Files
 
-- `content/build.js` — the 12 lesson plans (every exercise, in Amharic and English); writes
+- `content/build.js` — the 33 lesson plans (every exercise, in Amharic and English); writes
   `content/lessons/*.json`, `content/index.json`, `docs/lesson-plans.md` and the recording list.
   The exercise format is in `content/README.md`.
 - `src/activities.js` — the 16 exercise components (8 drag-and-drop types, tap, count, number pad, clock,
@@ -34,12 +34,12 @@ Wrong answers get a gentle hint; after two tries the answer is demonstrated. The
 - `src/sw.js` — offline service worker (caches lessons, narration and videos, plays cached video)
 - `src/lessons.css`, `src/admin.css` — styles for all of the above
 - `animations/` — Manim hook videos (see `animations/README.md`)
-- `src/i18n.js`, `src/lessons-g2.js` — lesson titles, stories and worked examples (send to reviewers)
+- `src/i18n.js`, `src/lessons-g2.js`, `src/lessons-g3.js` — lesson titles, stories and worked examples (send to reviewers)
 - `src/engine.js`, `src/app.js`, `src/art.js`, `src/narration.js`, `src/sounds.js` — the original app:
   question generators, interface, artwork, recorded-clip playback, chimes
 - `server.js` — serves the app, videos (with range requests), narration, lessons, `/admin` and its API
 - `test/content.test.js` — proves every lesson follows the design rules and every answer is right
-- `test/lessons_e2e.py` — plays all 12 lessons in a phone-sized browser with real drags and swipes
+- `test/lessons_e2e.py` — plays all 33 lessons in a phone-sized browser with real drags and swipes
 - `test/engine.test.js`, `test/smoke.py` — the original practice engine and quick-practice play-through
 
 ## Commands
@@ -50,7 +50,7 @@ node build.js                                 # build dist/luminary-kids.html an
 npm test                                      # engine + lesson-content checks
 node server.js                                # http://localhost:3000 (admin: set ADMIN_TOKEN)
 python3 test/lessons_e2e.py http://localhost:3000   # play every lesson in a browser
-python3 animations/render.py --all --std      # re-render the 12 hook videos (then rebuilds lessons + app)
+python3 animations/render.py --all --std      # re-render the 33 hook videos (then rebuilds lessons + app)
 ```
 
 ## Narration (the girl's voice)

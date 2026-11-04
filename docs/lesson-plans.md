@@ -802,3 +802,1415 @@ Re-teach clip after two misses: 8.9–24.3 s
 
 **Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
 
+## Grade 2 · Lesson 7 — ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ (Skip counting, even and odd)
+
+Place on the map: steps · Mini-game: coffee · Hook video: `video/g2_skip.mp4` (28.6 s) · Manim code: `animations/lessons/g2_skip.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ | Skip counting, even and odd | `lesson.g2_skip.title` |
+| 4.5 s | እማማ ብርቱካኖችን በጥንድ በጥንድ ታስቀምጣለች። በሁለት በሁለት እንቁጠር። | Mama sets out oranges in pairs. Let us count in twos. | `lesson.g2_skip.story` |
+| 10.2 s | ሁለት፣ አራት፣ ስድስት፣ ስምንት፣ አስር፤ በሁለት በሁለት ቆጠርን። | Two, four, six, eight, ten: we counted in twos. | `lesson.g2_skip.example.0` |
+| 13.8 s | ሁሉም ብርቱካኖች ጥንድ አላቸው፤ ስለዚህ አስር ጥንድ ቁጥር ነው። | Every orange has a partner, so ten is an even number. | `lesson.g2_skip.example.1` |
+| 17.4 s | አንድ ብርቱካን ብንጨምር አንዱ ብቻውን ይቀራል፤ አስራ አንድ ጎዶሎ ቁጥር ነው። | If we add one more orange, one is left on its own: eleven is an odd number. | `lesson.g2_skip.example.2` |
+| 21.1 s | በአምስት በአምስት ስንቆጥርም ፈጣን ነው፦ አምስት፣ አስር፣ አስራ አምስት፣ ሃያ። | Counting in fives is fast too: five, ten, fifteen, twenty. | `lesson.g2_skip.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ሁሉም ብርቱካኖች ጥንድ አላቸው?<br><small>Does every orange have a partner?</small> | yes | `ex.g2_skip.01.mp3` |
+| 21.0 s | tap_choose | በአምስት ስንቆጥር ከአስር ቀጥሎ ምን ይመጣል?<br><small>Counting in fives, what comes after ten?</small> | 15 | `ex.g2_skip.04.mp3` |
+
+Re-teach clip after two misses: 10.1–28.6 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | ስድስት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።<br><small>Let's put 6 oranges on plates, 2 on each plate.</small> | [2,2,2] | `ex.g2_skip.07.mp3` |
+| 1 · L2 | drag_drop_count | ስምንት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።<br><small>Let's put 8 oranges on plates, 2 on each plate.</small> | [2,2,2,2] | `ex.g2_skip.10.mp3` |
+| 1 · L3 | drag_drop_count | አስር ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።<br><small>Let's put 10 oranges on plates, 2 on each plate.</small> | [2,2,2,2,2] | `ex.g2_skip.11.mp3` |
+| 2 · L1 | tap_choose | ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 2፣ 4፣ 6፣ …<br><small>What number comes next? 2, 4, 6, …</small> | 8 | `ex.g2_skip.12.mp3` |
+| 2 · L2 | tap_choose | ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 5፣ 10፣ 15፣ …<br><small>What number comes next? 5, 10, 15, …</small> | 20 | `ex.g2_skip.13.mp3` |
+| 2 · L3 | tap_choose | ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 10፣ 20፣ 30፣ …<br><small>What number comes next? 10, 20, 30, …</small> | 40 | `ex.g2_skip.14.mp3` |
+| 3 · L1 | drag_sort | ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።<br><small>Let's sort: even numbers, odd numbers.</small> | {"c0":"even","c1":"odd","c2":"even","c3":"odd"} | `ex.g2_skip.15.mp3` |
+| 3 · L2 | drag_sort | ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።<br><small>Let's sort: even numbers, odd numbers.</small> | {"c0":"even","c1":"odd","c2":"even","c3":"odd","c4":"even"} | `ex.g2_skip.15.mp3` |
+| 3 · L3 | drag_sort | ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።<br><small>Let's sort: even numbers, odd numbers.</small> | {"c0":"odd","c1":"even","c2":"odd","c3":"even","c4":"even"} | `ex.g2_skip.15.mp3` |
+| 4 · L1 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["4","8"] | `ex.count10.14.mp3` |
+| 4 · L2 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["15","35"] | `ex.count10.14.mp3` |
+| 4 · L3 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["30","70","90"] | `ex.count10.14.mp3` |
+| 5 · L1 | numpad | ስድስት ጥንዶች ስንት ናቸው?<br><small>How many are six pairs?</small> | 12 | `ex.g2_skip.16.mp3` |
+| 5 · L2 | numpad | ሶስት የአምስት ብር ኖቶች ስንት ብር ናቸው?<br><small>How much are three five-birr notes?</small> | 15 | `ex.g2_skip.17.mp3` |
+| 5 · L3 | numpad | አራት የአስር ብር ኖቶች ስንት ብር ናቸው?<br><small>How much are four ten-birr notes?</small> | 40 | `ex.g2_skip.18.mp3` |
+| 6 · L1 | true_false | ልክ ነው ወይስ አይደለም? ስምንት ጥንድ ቁጥር ነው።<br><small>True or not? Eight is an even number.</small> | true | `ex.g2_skip.19.mp3` |
+| 6 · L2 | true_false | ልክ ነው ወይስ አይደለም? ዘጠኝ ጥንድ ቁጥር ነው።<br><small>True or not? Nine is an even number.</small> | false | `ex.g2_skip.20.mp3` |
+| 6 · L3 | true_false | ልክ ነው ወይስ አይደለም? በአስር ስንቆጥር ከስልሳ ቀጥሎ ሰባ ይመጣል።<br><small>True or not? Counting in tens, seventy comes after sixty.</small> | true | `ex.g2_skip.21.mp3` |
+
+### 4. Play — coffee
+
+ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።<br><small>Let's pour coffee for the guests! Every tray gets the same number of cups.</small> · `ex.g2_groups.19.mp3`
+
+```json
+[{"n":6,"trays":[2,2,2]},{"n":8,"trays":[2,2,2,2]},{"n":10,"trays":[5,5]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | ስምንት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።<br><small>Let's put 8 oranges on plates, 2 on each plate.</small> | [2,2,2,2] | `ex.g2_skip.10.mp3` |
+| 2 | drag_sort | ጥንድ እና ጎዶሎ ቁጥሮችን እንለይ።<br><small>Let's sort: even numbers, odd numbers.</small> | {"c0":"odd","c1":"even","c2":"odd","c3":"even"} | `ex.g2_skip.15.mp3` |
+| 3 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["6","12","18"] | `ex.count10.14.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 30 | `ex.count10.17.mp3` |
+| 5 | numpad | በሁለት ስንቆጥር ከአስራ ስድስት ቀጥሎ ምን ይመጣል?<br><small>Counting in twos, what comes after sixteen?</small> | 18 | `ex.g2_skip.22.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 2 · Lesson 8 — የትኛው ይበልጣል? (Which is greater?)
+
+Place on the map: eggs · Mini-game: race · Hook video: `video/g2_compare.mp4` (27.4 s) · Manim code: `animations/lessons/g2_compare.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | የትኛው ይበልጣል? | Which is greater? | `lesson.g2_compare.title` |
+| 4.3 s | በገበያ ሁለት ነጋዴዎች እንቁላል ይሸጣሉ። አንዱ አርባ ሁለት፣ ሌላው ሃያ አራት እንቁላሎች አሉት። | Two sellers at the market have eggs. One has forty-two, the other twenty-four. | `lesson.g2_compare.story` |
+| 10.0 s | መጀመሪያ አስሮቹን እናወዳድር፤ አራት አስሮች ከሁለት አስሮች ይበልጣሉ። | First compare the tens: four tens are more than two tens. | `lesson.g2_compare.example.0` |
+| 13.6 s | ስለዚህ አርባ ሁለት ከሃያ አራት ይበልጣል። | So forty-two is greater than twenty-four. | `lesson.g2_compare.example.1` |
+| 17.2 s | የምልክቱ ክፍት አፍ ወደ ትልቁ ቁጥር ይመለከታል። | The open side of the sign faces the bigger number. | `lesson.g2_compare.example.2` |
+| 20.9 s | አስሮቹ እኩል ሲሆኑ አንዶቹን እናወዳድራለን። | When the tens are equal, we compare the ones. | `lesson.g2_compare.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 9.9 s | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | a | `ex.compare.18.mp3` |
+| 17.2 s | tap_choose | ትክክለኛው ምልክት የትኛው ነው? 42 ⬜ 24<br><small>Which sign is right? 42 ⬜ 24</small> | > | `ex.g2_compare.03.mp3` |
+
+Re-teach clip after two misses: 9.9–27.4 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | < | `ex.g2_compare.04.mp3` |
+| 1 · L2 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | > | `ex.g2_compare.04.mp3` |
+| 1 · L3 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | = | `ex.g2_compare.04.mp3` |
+| 2 · L1 | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | b | `ex.compare.18.mp3` |
+| 2 · L2 | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | a | `ex.compare.18.mp3` |
+| 2 · L3 | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | a | `ex.compare.18.mp3` |
+| 3 · L1 | drag_sort | ከሰላሳ የሚያንሱትን እና የሚበልጡትን እንለይ።<br><small>Let's sort: less than 30, more than 30.</small> | {"c0":"less","c1":"more","c2":"less","c3":"more"} | `ex.g2_compare.05.mp3` |
+| 3 · L2 | drag_sort | ከሃምሳ የሚያንሱትን እና የሚበልጡትን እንለይ።<br><small>Let's sort: less than 50, more than 50.</small> | {"c0":"less","c1":"more","c2":"less","c3":"more","c4":"less"} | `ex.g2_compare.06.mp3` |
+| 3 · L3 | drag_sort | ከሰባ አምስት የሚያንሱትን እና የሚበልጡትን እንለይ።<br><small>Let's sort: less than 75, more than 75.</small> | {"c0":"less","c1":"more","c2":"more","c3":"less","c4":"more"} | `ex.g2_compare.07.mp3` |
+| 4 · L1 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["20","60"] | `ex.count10.14.mp3` |
+| 4 · L2 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["44","52","58"] | `ex.count10.14.mp3` |
+| 4 · L3 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["30","50","80"] | `ex.count10.14.mp3` |
+| 5 · L1 | numpad | በ3 እና 7 አሃዞች ትልቁን ቁጥር እንሥራ።<br><small>Make the biggest number with the digits 3 and 7.</small> | 73 | `ex.g2_compare.08.mp3` |
+| 5 · L2 | numpad | በ5 እና 2 አሃዞች ትንሹን ቁጥር እንሥራ።<br><small>Make the smallest number with the digits 5 and 2.</small> | 25 | `ex.g2_compare.09.mp3` |
+| 5 · L3 | numpad | በ8 እና 0 አሃዞች ትልቁን ቁጥር እንሥራ።<br><small>Make the biggest number with the digits 8 and 0.</small> | 80 | `ex.g2_compare.10.mp3` |
+| 6 · L1 | true_false | ልክ ነው ወይስ አይደለም? ሃምሳ ዘጠኝ ከስልሳ አንድ ይበልጣል።<br><small>True or not? Fifty-nine is greater than sixty-one.</small> | false | `ex.g2_compare.11.mp3` |
+| 6 · L2 | true_false | ልክ ነው ወይስ አይደለም? አርባ ስምንት ከሰማንያ አራት ያንሳል።<br><small>True or not? Forty-eight is less than eighty-four.</small> | true | `ex.g2_compare.12.mp3` |
+| 6 · L3 | true_false | ልክ ነው ወይስ አይደለም? ሰባ ሰባት እና ሰባ ሰባት እኩል ናቸው።<br><small>True or not? Seventy-seven and seventy-seven are equal.</small> | true | `ex.g2_compare.13.mp3` |
+
+### 4. Play — race
+
+ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።<br><small>Let's race to Grandma's house! Each right answer moves us forward.</small> · `ex.compare.20.mp3`
+
+```json
+[{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"b"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"a"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"b"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"a"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"b"}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | > | `ex.g2_compare.04.mp3` |
+| 2 | drag_sort | ከአርባ የሚያንሱትን እና የሚበልጡትን እንለይ።<br><small>Let's sort: less than 40, more than 40.</small> | {"c0":"more","c1":"less","c2":"less","c3":"more"} | `ex.g2_compare.14.mp3` |
+| 3 | drag_match_word | እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each word to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.11.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 72 | `ex.count10.17.mp3` |
+| 5 | numpad | በ9 እና 4 አሃዞች ትንሹን ቁጥር እንሥራ።<br><small>Make the smallest number with the digits 9 and 4.</small> | 49 | `ex.g2_compare.15.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 18 interactions in all.
+
+## Grade 2 · Lesson 9 — ርዝመትን መለካት (Measuring length)
+
+Place on the map: desk · Mini-game: balloon · Hook video: `video/g2_measure.mp4` (27.2 s) · Manim code: `animations/lessons/g2_measure.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ርዝመትን መለካት | Measuring length | `lesson.g2_measure.title` |
+| 4.1 s | ሰላም እርሳሷን እና ደብተሯን በገዢ ልትለካ ነው። | Selam is going to measure her pencil and her exercise book with a ruler. | `lesson.g2_measure.story` |
+| 9.8 s | ሁልጊዜ ከዜሮ እንጀምራለን። | We always start at zero. | `lesson.g2_measure.example.0` |
+| 13.4 s | እርሳሱ እስከ ስምንት ይደርሳል፤ ርዝመቱ ስምንት ሳንቲ ሜትር ነው። | The pencil reaches eight, so it is eight centimetres long. | `lesson.g2_measure.example.1` |
+| 17.0 s | ደብተሩ ሃያ ሳንቲ ሜትር ነው፤ ከእርሳሱ ይረዝማል። | The exercise book is twenty centimetres, longer than the pencil. | `lesson.g2_measure.example.2` |
+| 20.7 s | እንደ በር ያሉ ትልልቅ ነገሮችን በሜትር እንለካለን። | We measure big things like a door in metres. | `lesson.g2_measure.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.3 s | tap_choose | እርሳሱ ስንት ሳንቲ ሜትር ነው?<br><small>How many centimetres long is the pencil?</small> | 8 | `ex.g2_measure.01.mp3` |
+| 20.6 s | tap_choose | የበርን ቁመት በምን እንለካለን?<br><small>What do we use to measure how tall a door is?</small> | m | `ex.g2_measure.04.mp3` |
+
+Re-teach clip after two misses: 9.7–27.2 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_numberline | እርሳሱን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the pencil: put the flag on the number where it ends.</small> | ["5"] | `ex.g2_measure.05.mp3` |
+| 1 · L2 | drag_numberline | ዱላውን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the stick: put the flag on the number where it ends.</small> | ["7"] | `ex.g2_measure.06.mp3` |
+| 1 · L3 | drag_numberline | ማንኪያውን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the spoon: put the flag on the number where it ends.</small> | ["9"] | `ex.g2_measure.07.mp3` |
+| 2 · L1 | tap_choose | የትኛው ይረዝማል?<br><small>Which one is longer?</small> | b | `ex.g2_measure.08.mp3` |
+| 2 · L2 | tap_choose | የትኛው ይረዝማል?<br><small>Which one is longer?</small> | a | `ex.g2_measure.08.mp3` |
+| 2 · L3 | tap_choose | የትኛው ይረዝማል?<br><small>Which one is longer?</small> | b | `ex.g2_measure.08.mp3` |
+| 3 · L1 | numpad | ሪባኑ ስንት ሳንቲ ሜትር ነው?<br><small>How many centimetres long is the ribbon?</small> | 6 | `ex.g2_measure.09.mp3` |
+| 3 · L2 | numpad | ዱላው ስንት ሳንቲ ሜትር ነው?<br><small>How many centimetres long is the stick?</small> | 11 | `ex.g2_measure.10.mp3` |
+| 3 · L3 | numpad | እርሳሱ ስንት ሳንቲ ሜትር ነው?<br><small>How many centimetres long is the pencil?</small> | 14 | `ex.g2_measure.01.mp3` |
+| 4 · L1 | drag_equation | ሁለት ዱላዎች፦ ስምንት እና አምስት ሳንቲ ሜትር። አንድ ላይ ስንት ናቸው?<br><small>Two sticks: eight and five centimetres. How long are they together?</small> | 13 | `ex.g2_measure.11.mp3` |
+| 4 · L2 | drag_equation | አስራ አምስት ሳንቲ ሜትር ያለው ሪባን ከስድስት ሳንቲ ሜትሩ በስንት ይረዝማል?<br><small>How much longer is a fifteen-centimetre ribbon than a six-centimetre one?</small> | 9 | `ex.g2_measure.12.mp3` |
+| 4 · L3 | drag_equation | ሃያ ሳንቲ ሜትር ካለው ገመድ ተቆርጦ አስራ ሁለት ቀረ። ስንት ተቆረጠ?<br><small>Some was cut from a twenty-centimetre string and twelve is left. How much was cut?</small> | 8 | `ex.g2_measure.13.mp3` |
+| 5 · L1 | drag_sort | ከአንድ ሜትር የሚያጥሩትን እና የሚረዝሙትን እንለይ።<br><small>Let's sort: shorter than one metre, longer than one metre.</small> | {"a":"short","b":"long","c":"short","d":"long"} | `ex.g2_measure.14.mp3` |
+| 5 · L2 | drag_sort | በሳንቲ ሜትር ወይስ በሜትር እንለካለን?<br><small>Let's sort: measure in centimetres or in metres?</small> | {"a":"cm","b":"m","c":"cm","d":"m","e":"cm"} | `ex.g2_measure.15.mp3` |
+| 5 · L3 | drag_sort | ከአስር ሳንቲ ሜትር የሚያጥሩትን እና የሚረዝሙትን እንለይ።<br><small>Let's sort: shorter than ten centimetres, longer than ten centimetres.</small> | {"a":"short","b":"long","c":"short","d":"long","e":"short"} | `ex.g2_measure.16.mp3` |
+| 6 · L1 | true_false | ልክ ነው ወይስ አይደለም? እርሳሱ ስድስት ሳንቲ ሜትር ነው።<br><small>True or not? The pencil is six centimetres long.</small> | true | `ex.g2_measure.17.mp3` |
+| 6 · L2 | true_false | ልክ ነው ወይስ አይደለም? ዱላው ዘጠኝ ሳንቲ ሜትር ነው።<br><small>True or not? The stick is nine centimetres long.</small> | false | `ex.g2_measure.18.mp3` |
+| 6 · L3 | true_false | ልክ ነው ወይስ አይደለም? መለካት ከአንድ እንጀምራለን።<br><small>True or not? We start measuring at one.</small> | false | `ex.g2_measure.19.mp3` |
+
+### 4. Play — balloon
+
+ሁለት ሪባኖችን የሚያሳዩ ፊኛዎችን ፈንድተን የተጠየቀውን ርዝመት እንሥራ።<br><small>Pop two ribbon balloons that add up to the length asked for.</small> · `ex.g2_measure.24.mp3`
+
+```json
+[{"target":10,"balloons":[6,4,3,8,5,9]},{"target":15,"balloons":[7,8,10,2,6,12]},{"target":20,"balloons":[12,8,15,3,9,14]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_numberline | ሪባኑን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the ribbon: put the flag on the number where it ends.</small> | ["10"] | `ex.g2_measure.20.mp3` |
+| 2 | drag_equation | አስራ ሁለት ሳንቲ ሜትር ያለው እርሳስ ከሰባት ሳንቲ ሜትሩ በስንት ይረዝማል?<br><small>How much longer is a twelve-centimetre pencil than a seven-centimetre one?</small> | 5 | `ex.g2_measure.21.mp3` |
+| 3 | drag_sort | በሳንቲ ሜትር ወይስ በሜትር እንለካለን?<br><small>Let's sort: measure in centimetres or in metres?</small> | {"a":"cm","b":"m","c":"cm","d":"m"} | `ex.g2_measure.15.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | a | `ex.count10.17.mp3` |
+| 5 | numpad | ማንኪያው ስንት ሳንቲ ሜትር ነው?<br><small>How many centimetres long is the spoon?</small> | 3 | `ex.g2_measure.23.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 2 · Lesson 10 — ሰዓት በአምስት ደቂቃ (Time to five minutes)
+
+Place on the map: alarm · Mini-game: memory · Hook video: `video/g2_time.mp4` (28.2 s) · Manim code: `animations/lessons/g2_time.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ሰዓት በአምስት ደቂቃ | Time to five minutes | `lesson.g2_time.title` |
+| 4.1 s | አያቴ ከሰዓት በኋላ ቡና ታፈላለች። ሰዓቱን አብረን እናንብብ። | Grandma makes coffee in the afternoon. Let us read the clock together. | `lesson.g2_time.story` |
+| 9.8 s | ትንሹ መርፌ ከሶስት ትንሽ አልፏል፤ ሰዓቱ ሶስት ነው። | The short hand is just past three, so the hour is three. | `lesson.g2_time.example.0` |
+| 13.4 s | ትልቁ መርፌ ሶስት ላይ ነው፤ አምስት፣ አስር፣ አስራ አምስት ደቂቃ። | The long hand is on the three: five, ten, fifteen minutes. | `lesson.g2_time.example.1` |
+| 17.0 s | ሰዓቱ ሶስት ከአስራ አምስት ነው፤ ሶስት ከሩብም እንለዋለን። | The time is three fifteen; we also say quarter past three. | `lesson.g2_time.example.2` |
+| 20.7 s | በኢትዮጵያ አቆጣጠር ደግሞ ዘጠኝ ሰዓት ከሩብ ነው። | In Ethiopian time it is quarter past nine. | `lesson.g2_time.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.3 s | tap_choose | ትልቁ መርፌ ሶስት ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the three. How many minutes is that?</small> | 15 | `ex.g2_time.01.mp3` |
+| 20.6 s | tap_choose | በኢትዮጵያ አቆጣጠር ስንት ሰዓት ነው?<br><small>What time is it in Ethiopian time?</small> | ሰዓት 9 ከሩብ | `ex.g2_time.03.mp3` |
+
+Re-teach clip after two misses: 9.7–28.2 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | clock | ሰዓቱን ሁለት ሰዓት እናድርግ።<br><small>Set the clock to two o'clock.</small> | {"h":2,"m":0} | `ex.g2_time.06.mp3` |
+| 1 · L2 | clock | ሰዓቱን ስድስት ተኩል እናድርግ።<br><small>Set the clock to half past six.</small> | {"h":6,"m":30} | `ex.g2_time.07.mp3` |
+| 1 · L3 | clock | ሰዓቱን ስምንት ከአርባ አምስት እናድርግ።<br><small>Set the clock to eight forty-five.</small> | {"h":8,"m":45} | `ex.g2_time.08.mp3` |
+| 2 · L1 | tap_choose | ሰዓቱ ስንት ነው?<br><small>What time is it?</small> | 4:00 | `ex.g2_time.09.mp3` |
+| 2 · L2 | tap_choose | ሰዓቱ ስንት ነው?<br><small>What time is it?</small> | 9:30 | `ex.g2_time.09.mp3` |
+| 2 · L3 | tap_choose | ሰዓቱ ስንት ነው?<br><small>What time is it?</small> | 1:25 | `ex.g2_time.09.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.10.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.10.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.10.mp3` |
+| 4 · L1 | numpad | ትልቁ መርፌ ስድስት ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the six. How many minutes is that?</small> | 30 | `ex.g2_time.11.mp3` |
+| 4 · L2 | numpad | ትልቁ መርፌ ዘጠኝ ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the nine. How many minutes is that?</small> | 45 | `ex.g2_time.12.mp3` |
+| 4 · L3 | numpad | ትልቁ መርፌ አስራ አንድ ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the eleven. How many minutes is that?</small> | 55 | `ex.g2_time.13.mp3` |
+| 5 · L1 | drag_sort | ከ9:00 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 9:00, after 9:00.</small> | {"c0":"before","c1":"after","c2":"before","c3":"after"} | `ex.g2_time.14.mp3` |
+| 5 · L2 | drag_sort | ከ4:30 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 4:30, after 4:30.</small> | {"c0":"before","c1":"after","c2":"before","c3":"after","c4":"before"} | `ex.g2_time.15.mp3` |
+| 5 · L3 | drag_sort | ከ12:00 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 12:00, after 12:00.</small> | {"c0":"before","c1":"after","c2":"before","c3":"after","c4":"before"} | `ex.g2_time.16.mp3` |
+| 6 · L1 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.17.mp3` |
+| 6 · L2 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.17.mp3` |
+| 6 · L3 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.17.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ ሰዓቱ እና የሰዓቱ ሥዕል።<br><small>Let's find matching cards: the time and its clock.</small> · `ex.g2_time.20.mp3`
+
+```json
+[{"n":"3:15","am":"ሶስት ከሩብ","visual":{"kind":"clock","h":3,"m":15}},{"n":"6:30","am":"ስድስት ተኩል","visual":{"kind":"clock","h":6,"m":30}},{"n":"9:00","am":"ዘጠኝ ሰዓት","visual":{"kind":"clock","h":9,"m":0}},{"n":"12:45","am":"አስራ ሁለት ከአርባ አምስት","visual":{"kind":"clock","h":12,"m":45}}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.10.mp3` |
+| 2 | drag_sort | ከ12:00 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 12:00, after 12:00.</small> | {"c0":"before","c1":"after","c2":"before","c3":"before"} | `ex.g2_time.16.mp3` |
+| 3 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.17.mp3` |
+| 4 | clock | ሰዓቱን አምስት ከሃያ እናድርግ።<br><small>Set the clock to five twenty.</small> | {"h":5,"m":20} | `ex.g2_time.18.mp3` |
+| 5 | true_false | ልክ ነው ወይስ አይደለም? ሰዓቱ ሰባት ተኩል ነው።<br><small>True or not? The time is half past seven.</small> | true | `ex.g2_time.19.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
+
+## Grade 2 · Lesson 11 — ቅርጾች እና ጎኖቻቸው (Shapes and their sides)
+
+Place on the map: wall · Mini-game: memory · Hook video: `video/g2_shapes.mp4` (28.6 s) · Manim code: `animations/lessons/g2_shapes.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ቅርጾች እና ጎኖቻቸው | Shapes and their sides | `lesson.g2_shapes.title` |
+| 4.5 s | በትምህርት ቤቱ ግድግዳ ላይ ቅርጾች ተስለዋል። ጎኖቻቸውን እንቁጠር። | Shapes are painted on the school wall. Let us count their sides. | `lesson.g2_shapes.story` |
+| 10.2 s | ሶስት ማዕዘን ሶስት ጎኖች አሉት። | A triangle has three sides. | `lesson.g2_shapes.example.0` |
+| 13.8 s | ካሬ አራት እኩል ጎኖች አሉት። | A square has four equal sides. | `lesson.g2_shapes.example.1` |
+| 17.4 s | ባለ አምስት ጎን አምስት፣ ባለ ስድስት ጎን ደግሞ ስድስት ጎኖች አሏቸው። | A pentagon has five sides and a hexagon has six. | `lesson.g2_shapes.example.2` |
+| 21.1 s | ክብ ጎንም ማዕዘንም የለውም። | A circle has no sides and no corners. | `lesson.g2_shapes.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 10.1 s | tap_choose | ሶስት ማዕዘን ስንት ጎኖች አሉት?<br><small>How many sides does a triangle have?</small> | 3 | `ex.g2_shapes.01.mp3` |
+| 17.4 s | tap_choose | ባለ ስድስት ጎን ስንት ጎኖች አሉት?<br><small>How many sides does a hexagon have?</small> | 6 | `ex.g2_shapes.04.mp3` |
+
+Re-teach clip after two misses: 10.1–28.6 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_sort | በጎኖቻቸው ብዛት እንለይ።<br><small>Let's sort by the number of sides.</small> | {"c0":"3","c1":"4","c2":"3","c3":"4"} | `ex.g2_shapes.05.mp3` |
+| 1 · L2 | drag_sort | በጎኖቻቸው ብዛት እንለይ።<br><small>Let's sort by the number of sides.</small> | {"c0":"3","c1":"4","c2":"5","c3":"4","c4":"3"} | `ex.g2_shapes.05.mp3` |
+| 1 · L3 | drag_sort | በጎኖቻቸው ብዛት እንለይ።<br><small>Let's sort by the number of sides.</small> | {"c0":"4","c1":"5","c2":"6","c3":"4","c4":"5"} | `ex.g2_shapes.05.mp3` |
+| 2 · L1 | tap_choose | ክቡ የትኛው ነው?<br><small>Which one is the circle?</small> | circle | `ex.g2_shapes.06.mp3` |
+| 2 · L2 | tap_choose | ሶስት ማዕዘኑ የትኛው ነው?<br><small>Which one is the triangle?</small> | triangle | `ex.g2_shapes.07.mp3` |
+| 2 · L3 | tap_choose | ባለ ስድስት ጎኑ የትኛው ነው?<br><small>Which one is the hexagon?</small> | hexagon | `ex.g2_shapes.08.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_shapes.09.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_shapes.09.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_shapes.09.mp3` |
+| 4 · L1 | numpad | ስንት ጎኖች አሉት?<br><small>How many sides does it have?</small> | 4 | `ex.g2_shapes.10.mp3` |
+| 4 · L2 | numpad | ስንት ጎኖች አሉት?<br><small>How many sides does it have?</small> | 5 | `ex.g2_shapes.10.mp3` |
+| 4 · L3 | numpad | ሁለት ካሬዎች በአጠቃላይ ስንት ጎኖች አሏቸው?<br><small>How many sides do two squares have altogether?</small> | 8 | `ex.g2_shapes.11.mp3` |
+| 5 · L1 | true_false | ልክ ነው ወይስ አይደለም? ክብ ሶስት ጎኖች አሉት።<br><small>True or not? A circle has three sides.</small> | false | `ex.g2_shapes.12.mp3` |
+| 5 · L2 | true_false | ልክ ነው ወይስ አይደለም? ይህ ካሬ ነው።<br><small>True or not? This is a square.</small> | true | `ex.g2_shapes.13.mp3` |
+| 5 · L3 | true_false | ልክ ነው ወይስ አይደለም? ይህ ባለ አምስት ጎን ነው።<br><small>True or not? This is a pentagon.</small> | false | `ex.g2_shapes.14.mp3` |
+| 6 · L1 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሁለት ረድፎች፣ በእያንዳንዱ ሁለት።<br><small>Let's cover the floor with square tiles: 2 rows of 2.</small> | [4] | `ex.g2_shapes.15.mp3` |
+| 6 · L2 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሁለት ረድፎች፣ በእያንዳንዱ ሶስት።<br><small>Let's cover the floor with square tiles: 2 rows of 3.</small> | [6] | `ex.g2_shapes.18.mp3` |
+| 6 · L3 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሶስት ረድፎች፣ በእያንዳንዱ ሶስት።<br><small>Let's cover the floor with square tiles: 3 rows of 3.</small> | [9] | `ex.g2_shapes.19.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ የጎኖች ብዛት እና ቅርጹ።<br><small>Let's find matching cards: the number of sides and the shape.</small> · `ex.g2_shapes.23.mp3`
+
+```json
+[{"n":3,"am":"ሶስት ማዕዘን","visual":{"kind":"shape","shape":"triangle"}},{"n":4,"am":"ካሬ","visual":{"kind":"shape","shape":"square"}},{"n":5,"am":"ባለ አምስት ጎን","visual":{"kind":"shape","shape":"pentagon"}},{"n":6,"am":"ባለ ስድስት ጎን","visual":{"kind":"shape","shape":"hexagon"}}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_sort | በጎኖቻቸው ብዛት እንለይ።<br><small>Let's sort by the number of sides.</small> | {"c0":"6","c1":"4","c2":"3","c3":"4"} | `ex.g2_shapes.05.mp3` |
+| 2 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_shapes.09.mp3` |
+| 3 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሁለት ረድፎች፣ በእያንዳንዱ አራት።<br><small>Let's cover the floor with square tiles: 2 rows of 4.</small> | [8] | `ex.g2_shapes.20.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | a | `ex.count10.17.mp3` |
+| 5 | numpad | አንድ ሶስት ማዕዘን እና አንድ ካሬ በአጠቃላይ ስንት ጎኖች አሏቸው?<br><small>How many sides do a triangle and a square have altogether?</small> | 7 | `ex.g2_shapes.22.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
+
+## Grade 2 · Lesson 12 — ሥዕላዊ ግራፍ እና አምድ ግራፍ (Picture graphs and bar graphs)
+
+Place on the map: chart · Mini-game: market · Hook video: `video/g2_graphs.mp4` (28.6 s) · Manim code: `animations/lessons/g2_graphs.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ሥዕላዊ ግራፍ እና አምድ ግራፍ | Picture graphs and bar graphs | `lesson.g2_graphs.title` |
+| 4.1 s | የሁለተኛ ክፍል ልጆች የሚወዱትን ፍራፍሬ መረጡ። በግራፍ እናሳየው። | The Grade 2 children chose their favourite fruit. Let us show it on a graph. | `lesson.g2_graphs.story` |
+| 9.8 s | አራት ልጆች ሙዝ፣ ስድስት ልጆች ማንጎ፣ ሁለት ልጆች ብርቱካን መረጡ። | Four children chose bananas, six chose mangoes and two chose oranges. | `lesson.g2_graphs.example.0` |
+| 13.8 s | ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን። | We colour one box for each child. | `lesson.g2_graphs.example.1` |
+| 17.4 s | ማንጎ ከሙዝ በሁለት ይበልጣል። | Mangoes have two more than bananas. | `lesson.g2_graphs.example.2` |
+| 21.1 s | በአጠቃላይ አስራ ሁለት ልጆች ናቸው። | Altogether there are twelve children. | `lesson.g2_graphs.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ብዙ ልጆች የመረጡት የትኛውን ፍራፍሬ ነው?<br><small>Which fruit did the most children choose?</small> | mango | `ex.g2_graphs.01.mp3` |
+| 21.0 s | tap_choose | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children are there altogether?</small> | 12 | `ex.g2_graphs.04.mp3` |
+
+Re-teach clip after two misses: 9.7–28.6 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ ሁለት፣ ማንጎ ሶስት።<br><small>Let's build the graph: bananas 2, mangoes 3.</small> | [2,3] | `ex.g2_graphs.05.mp3` |
+| 1 · L2 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ ሶስት፣ ማንጎ አንድ፣ ብርቱካን ሁለት።<br><small>Let's build the graph: bananas 3, mangoes 1, oranges 2.</small> | [3,1,2] | `ex.g2_graphs.06.mp3` |
+| 1 · L3 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ አራት፣ ማንጎ ሁለት፣ ብርቱካን ሶስት።<br><small>Let's build the graph: bananas 4, mangoes 2, oranges 3.</small> | [4,2,3] | `ex.g2_graphs.07.mp3` |
+| 2 · L1 | tap_choose | ስንት ልጆች ሙዝ መረጡ?<br><small>How many children chose bananas?</small> | 4 | `ex.g2_graphs.08.mp3` |
+| 2 · L2 | tap_choose | ስንት ልጆች ብርቱካን መረጡ?<br><small>How many children chose oranges?</small> | 4 | `ex.g2_graphs.09.mp3` |
+| 2 · L3 | tap_choose | ማንጎ ከብርቱካን በስንት ይበልጣል?<br><small>How many more chose mangoes than oranges?</small> | 4 | `ex.g2_graphs.10.mp3` |
+| 3 · L1 | true_false | ልክ ነው ወይስ አይደለም? ቡና የወደዱት አራት ልጆች ናቸው።<br><small>True or not? Four children liked coffee.</small> | true | `ex.g2_graphs.11.mp3` |
+| 3 · L2 | true_false | ልክ ነው ወይስ አይደለም? ሻይ የወደዱት ከቡና ይበልጣሉ።<br><small>True or not? More children liked tea than coffee.</small> | false | `ex.g2_graphs.12.mp3` |
+| 3 · L3 | true_false | ልክ ነው ወይስ አይደለም? ቡና እና ሻይ የወደዱት በአንድ ላይ ስድስት ናቸው።<br><small>True or not? Six children liked coffee or tea altogether.</small> | true | `ex.g2_graphs.13.mp3` |
+| 4 · L1 | numpad | ዳዊት ስምንት ማንጎዎች ነበሩት፤ ሶስቱን ሰጠ። ስንት ቀሩት?<br><small>Dawit had eight mangoes and gave away three. How many are left?</small> | 5 | `ex.g2_graphs.14.mp3` |
+| 4 · L2 | numpad | ሰላም አምስት እንቁላሎች ገዛች፤ እማማ አራት ጨመረች። ስንት ሆኑ?<br><small>Selam bought five eggs and Mama added four. How many are there now?</small> | 9 | `ex.g2_graphs.15.mp3` |
+| 4 · L3 | numpad | በክፍሉ አስራ ሁለት ልጆች ነበሩ፤ አምስት ወጡ፣ ሶስት ገቡ። አሁን ስንት ናቸው?<br><small>There were twelve children in the room; five went out and three came in. How many are there now?</small> | 10 | `ex.g2_graphs.16.mp3` |
+| 5 · L1 | drag_equation | ማንጎ ከሙዝ በስንት ይበልጣል?<br><small>How many more chose mangoes than bananas?</small> | 2 | `ex.g2_graphs.17.mp3` |
+| 5 · L2 | drag_equation | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children altogether?</small> | 12 | `ex.g2_graphs.04.mp3` |
+| 5 · L3 | drag_equation | አስር ወፎች ነበሩ፤ ሶስቱ በረሩ፣ ሁለት መጡ። ስንት ናቸው?<br><small>There were ten birds; three flew away and two came. How many are there?</small> | 9 | `ex.g2_graphs.18.mp3` |
+| 6 · L1 | drag_make_change | ዳቦው እና ሙዙ አስራ ሁለት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The bread and bananas costs 12 birr. Let's pay exactly 12 birr.</small> | 12 | `ex.g2_graphs.19.mp3` |
+| 6 · L2 | drag_make_change | እስክሪብቶው እና ላጲሱ አስራ ስምንት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The pen and eraser costs 18 birr. Let's pay exactly 18 birr.</small> | 18 | `ex.g2_graphs.20.mp3` |
+| 6 · L3 | drag_make_change | ደብተሩ እና እስክሪብቶው ሃያ አምስት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The exercise book and pen costs 25 birr. Let's pay exactly 25 birr.</small> | 25 | `ex.g2_graphs.21.mp3` |
+
+### 4. Play — market
+
+ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።<br><small>Let's go to the market! Buy things that use up exactly all our birr.</small> · `ex.g2_birr.19.mp3`
+
+```json
+[{"budget":10,"goods":[{"pic":"bread","am":"ዳቦ","en":"Bread","price":6},{"pic":"banana","am":"ሙዝ","en":"Bananas","price":4},{"pic":"egg","am":"እንቁላል","en":"Eggs","price":7}]},{"budget":20,"goods":[{"pic":"pen","am":"እስክሪብቶ","en":"Pen","price":12},{"pic":"book","am":"ደብተር","en":"Exercise book","price":8},{"pic":"banana","am":"ሙዝ","en":"Bananas","price":5}]},{"budget":30,"goods":[{"pic":"bag","am":"ቦርሳ","en":"Bag","price":25},{"pic":"pen","am":"እስክሪብቶ","en":"Pen","price":5},{"pic":"bread","am":"ዳቦ","en":"Bread","price":10}]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ ሶስት፣ ማንጎ አራት።<br><small>Let's build the graph: bananas 3, mangoes 4.</small> | [3,4] | `ex.g2_graphs.22.mp3` |
+| 2 | drag_equation | አምስት ልጆች ሙዝ፣ ሶስት ልጆች ማንጎ መረጡ። በአጠቃላይ ስንት ናቸው?<br><small>Five children chose bananas and three chose mangoes. How many altogether?</small> | 8 | `ex.g2_graphs.23.mp3` |
+| 3 | drag_make_change | ሙዙ እና እንቁላሉ አስራ አምስት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The bananas and eggs costs 15 birr. Let's pay exactly 15 birr.</small> | 15 | `ex.g2_graphs.24.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 12 | `ex.count10.17.mp3` |
+| 5 | true_false | ልክ ነው ወይስ አይደለም? ብርቱካን የመረጡት ከሙዝ ያንሳሉ።<br><small>True or not? Fewer children chose oranges than bananas.</small> | true | `ex.g2_graphs.25.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 1 — መቶዎች፣ አስሮች እና አንዶች (Hundreds, tens and ones)
+
+Place on the map: store · Mini-game: memory · Hook video: `video/g3_hundreds.mp4` (30.0 s) · Manim code: `animations/lessons/g3_hundreds.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | መቶዎች፣ አስሮች እና አንዶች | Hundreds, tens and ones | `lesson.g3_hundreds.title` |
+| 4.3 s | ዛሬ በትልልቅ ቁጥሮች እንጫወታለን። አስር አስሮች ሲሰባሰቡ አንድ መቶ ይሆናሉ። | Today we play with big numbers. When ten tens come together, they make one hundred. | `lesson.g3_hundreds.story` |
+| 10.4 s | አስር አስሮች አንድ መቶ ይሆናሉ። | Ten tens make one hundred. | `lesson.g3_hundreds.example.0` |
+| 15.0 s | እዚህ ሁለት መቶዎች፣ አራት አስሮች እና አምስት አንዶች አሉ። | Here are two hundreds, four tens and five ones. | `lesson.g3_hundreds.example.1` |
+| 18.6 s | ሁለት መቶ፣ አርባ እና አምስት። | Two hundred, forty and five. | `lesson.g3_hundreds.example.2` |
+| 22.3 s | ቁጥሩ ሁለት መቶ አርባ አምስት ነው። | The number is two hundred forty-five. | `lesson.g3_hundreds.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 10.3 s | tap_choose | ስንት አስሮች አንድ መቶ ይሆናሉ?<br><small>How many tens make one hundred?</small> | 10 | `ex.g3_hundreds.01.mp3` |
+| 22.2 s | tap_choose | ቁጥሩ ስንት ነው?<br><small>What is the number?</small> | 245 | `ex.g3_hundreds.02.mp3` |
+
+Re-teach clip after two misses: 10.3–30.0 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_placevalue | መቶ ሰላሳ ሁለትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 132 with hundreds, tens and ones.</small> | 132 | `ex.g3_hundreds.03.mp3` |
+| 1 · L2 | drag_placevalue | ሁለት መቶ አርባ አምስትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 245 with hundreds, tens and ones.</small> | 245 | `ex.g3_hundreds.06.mp3` |
+| 1 · L3 | drag_placevalue | አራት መቶ ስድስትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 406 with hundreds, tens and ones.</small> | 406 | `ex.g3_hundreds.07.mp3` |
+| 2 · L1 | tap_choose | ስንት ነው?<br><small>How many is this?</small> | 213 | `ex.teens.08.mp3` |
+| 2 · L2 | tap_choose | ስንት ነው?<br><small>How many is this?</small> | 341 | `ex.teens.08.mp3` |
+| 2 · L3 | tap_choose | ስንት ነው?<br><small>How many is this?</small> | 507 | `ex.teens.08.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each word to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.11.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each word to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.11.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each word to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.11.mp3` |
+| 4 · L1 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["100","300"] | `ex.count10.14.mp3` |
+| 4 · L2 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["400","600","900"] | `ex.count10.14.mp3` |
+| 4 · L3 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["230","250","280"] | `ex.count10.14.mp3` |
+| 5 · L1 | numpad | ሶስት መቶዎች፣ አምስት አስሮች እና ሁለት አንዶች ስንት ናቸው?<br><small>What is three hundreds, five tens and two ones?</small> | 352 | `ex.g3_hundreds.08.mp3` |
+| 5 · L2 | numpad | ስድስት መቶዎች፣ ዜሮ አስሮች እና አራት አንዶች ስንት ናቸው?<br><small>What is six hundreds, zero tens and four ones?</small> | 604 | `ex.g3_hundreds.09.mp3` |
+| 5 · L3 | numpad | ስምንት መቶዎች እና ዘጠኝ አስሮች ስንት ናቸው?<br><small>What is eight hundreds and nine tens?</small> | 890 | `ex.g3_hundreds.10.mp3` |
+| 6 · L1 | drag_sort | ከአምስት መቶ የሚበልጡትን እና የሚያንሱትን እንለይ።<br><small>Let's sort: more than 500, less than 500.</small> | {"a":"more","b":"less","c":"more","d":"less"} | `ex.g3_hundreds.11.mp3` |
+| 6 · L2 | drag_sort | ከአምስት መቶ የሚበልጡትን እና የሚያንሱትን እንለይ።<br><small>Let's sort: more than 500, less than 500.</small> | {"a":"more","b":"less","c":"more","d":"less","e":"more"} | `ex.g3_hundreds.11.mp3` |
+| 6 · L3 | drag_sort | መቶዎቹ ሶስት የሆኑትን እና ያልሆኑትን እንለይ።<br><small>Let's sort: three hundreds, not three hundreds.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_hundreds.12.mp3` |
+| optional | speak | «ሁለት መቶ አርባ አምስት» ብለን ጮክ ብለን እንናገር።<br><small>Let's say «two hundred forty-five» out loud.</small> | 245 | `ex.g3_hundreds.13.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና የግዕዝ ቁጥር።<br><small>Let's find matching cards: number, word and Ge'ez numeral.</small> · `ex.teens.24.mp3`
+
+```json
+[{"n":100,"am":"መቶ","geez":"፻"},{"n":250,"am":"ሁለት መቶ ሃምሳ","geez":"፪፻፶"},{"n":408,"am":"አራት መቶ ስምንት","geez":"፬፻፰"},{"n":760,"am":"ሰባት መቶ ስልሳ","geez":"፯፻፷"}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_placevalue | ሶስት መቶ አስራ ስምንትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 318 with hundreds, tens and ones.</small> | 318 | `ex.g3_hundreds.14.mp3` |
+| 2 | drag_match_word | እያንዳንዱን የግዕዝ ቁጥር ከቁጥሩ ጋር እናገናኝ።<br><small>Let's match each Ge'ez numeral to its number.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.count10.26.mp3` |
+| 3 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 405 | `ex.count10.17.mp3` |
+| 4 | true_false | ልክ ነው ወይስ አይደለም? ሶስት መቶዎች እና ሁለት አንዶች ሶስት መቶ ሃያ ነው።<br><small>True or not? Three hundreds and two ones is three hundred twenty.</small> | false | `ex.g3_hundreds.15.mp3` |
+| 5 | trace | ቁጥር ሁለት መቶ አርባ አምስትን በጣታችን እንጻፍ።<br><small>Let's trace the number 245 with a finger.</small> | 245 | `ex.g3_hundreds.16.mp3` |
+
+**Counts:** 6 drag-and-drop · 5 other exercise types · 17 interactions in all.
+
+## Grade 3 · Lesson 2 — ባለ ሶስት አሃዝ ቁጥሮችን መደመር (Adding three-digit numbers)
+
+Place on the map: orchard · Mini-game: balloon · Hook video: `video/g3_add3d.mp4` (35.9 s) · Manim code: `animations/lessons/g3_add3d.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ባለ ሶስት አሃዝ ቁጥሮችን መደመር | Adding three-digit numbers | `lesson.g3_add3d.title` |
+| 4.5 s | ገበሬው በመጀመሪያው ቀን ሁለት መቶ ሰላሳ ስምንት ብርቱካኖችን፣ በሁለተኛው ቀን መቶ አርባ አምስት ብርቱካኖችን ለቀመ። | The farmer picked two hundred thirty-eight oranges on the first day and one hundred forty-five on the second day. | `lesson.g3_add3d.story` |
+| 10.2 s | ሁለት መቶ ሰላሳ ስምንት ሲደመር መቶ አርባ አምስት። | Two hundred thirty-eight plus one hundred forty-five. | `lesson.g3_add3d.example.0` |
+| 13.8 s | መጀመሪያ አንዶቹን እንደምር፦ ስምንት እና አምስት አስራ ሶስት ነው። | First add the ones: eight and five is thirteen. | `lesson.g3_add3d.example.1` |
+| 17.4 s | ሶስቱን እንጽፋለን፤ አንዱን አስር ወደ አስሮቹ እንወስዳለን። | We write the three and carry one ten to the tens. | `lesson.g3_add3d.example.2` |
+| 21.1 s | አስሮች፦ አንድ፣ ሶስት እና አራት ስምንት ናቸው። | Tens: one, three and four make eight. | `lesson.g3_add3d.example.3` |
+| 24.7 s | መቶዎች፦ ሁለት እና አንድ ሶስት ናቸው። | Hundreds: two and one make three. | `lesson.g3_add3d.example.4` |
+| 28.3 s | መልሱ ሶስት መቶ ሰማንያ ሶስት ነው። | The answer is three hundred eighty-three. | `lesson.g3_add3d.example.5` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ስምንት እና አምስት ስንት ነው?<br><small>What is eight and five?</small> | 13 | `ex.g3_add3d.01.mp3` |
+| 21.0 s | tap_choose | አንድ፣ ሶስት እና አራት ስንት ናቸው?<br><small>What are one, three and four together?</small> | 8 | `ex.g3_add3d.02.mp3` |
+
+Re-teach clip after two misses: 13.8–35.9 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 358 | `ex.teens.09.mp3` |
+| 1 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 383 | `ex.teens.09.mp3` |
+| 1 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 752 | `ex.teens.09.mp3` |
+| 2 · L1 | tap_choose | ሁለት መቶ ሲደመር ሶስት መቶ ስንት ነው?<br><small>What is two hundred plus three hundred?</small> | 500 | `ex.g3_add3d.05.mp3` |
+| 2 · L2 | tap_choose | ሶስት መቶ አርባ ሲደመር ሁለት መቶ ሃያ ስንት ነው?<br><small>What is three hundred forty plus two hundred twenty?</small> | 560 | `ex.g3_add3d.06.mp3` |
+| 2 · L3 | tap_choose | አራት መቶ ሰማንያ ሲደመር ሁለት መቶ ሃምሳ ስንት ነው?<br><small>What is four hundred eighty plus two hundred fifty?</small> | 730 | `ex.g3_add3d.07.mp3` |
+| 3 · L1 | drag_placevalue | ሶስት መቶ ሃምሳ ስምንትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 358 with hundreds, tens and ones.</small> | 358 | `ex.g3_add3d.08.mp3` |
+| 3 · L2 | drag_placevalue | ሶስት መቶ ሰማንያ ሶስትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 383 with hundreds, tens and ones.</small> | 383 | `ex.g3_add3d.09.mp3` |
+| 3 · L3 | drag_placevalue | አምስት መቶ አስራ ሰባትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 517 with hundreds, tens and ones.</small> | 517 | `ex.g3_add3d.10.mp3` |
+| 4 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 150 | `ex.teens.09.mp3` |
+| 4 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 250 | `ex.teens.09.mp3` |
+| 4 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 225 | `ex.teens.09.mp3` |
+| 5 · L1 | numpad | ሁለት መቶ ሃያ አራት ሲደመር መቶ ሰላሳ አምስት ስንት ነው?<br><small>What is two hundred twenty-four plus one hundred thirty-five?</small> | 359 | `ex.g3_add3d.11.mp3` |
+| 5 · L2 | numpad | ሶስት መቶ አርባ ስድስት ሲደመር መቶ ሃያ ስምንት ስንት ነው?<br><small>What is three hundred forty-six plus one hundred twenty-eight?</small> | 474 | `ex.g3_add3d.12.mp3` |
+| 5 · L3 | numpad | አምስት መቶ ሰማንያ ሰባት ሲደመር ሁለት መቶ ሰላሳ ስድስት ስንት ነው?<br><small>What is five hundred eighty-seven plus two hundred thirty-six?</small> | 823 | `ex.g3_add3d.13.mp3` |
+| 6 · L1 | drag_sort | አዲስ አስር የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: needs a new ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g2_add2d.12.mp3` |
+| 6 · L2 | drag_sort | አዲስ አስር የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: needs a new ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g2_add2d.12.mp3` |
+| 6 · L3 | drag_sort | አዲስ መቶ የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: needs a new hundred, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_add3d.14.mp3` |
+
+### 4. Play — balloon
+
+ሁለት ፊኛዎችን ፈንድተን የተጠየቀውን ቁጥር እንሥራ።<br><small>Pop two balloons that add up to the number.</small> · `ex.add10.16.mp3`
+
+```json
+[{"target":500,"balloons":[250,120,380,310,190,75]},{"target":700,"balloons":[350,260,440,125,515,90]},{"target":1000,"balloons":[600,450,400,275,725,150]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 634 | `ex.teens.09.mp3` |
+| 2 | drag_placevalue | አራት መቶ ሰባ ሁለትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።<br><small>Let's build 472 with hundreds, tens and ones.</small> | 472 | `ex.g3_add3d.15.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? መቶ ዘጠና ሲደመር አስር ሁለት መቶ ነው።<br><small>True or not? One hundred ninety plus ten is two hundred.</small> | true | `ex.g3_add3d.16.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 634 | `ex.count10.17.mp3` |
+| 5 | numpad | ሶስት መቶ ሃምሳ ሲደመር ሁለት መቶ ስልሳ ስንት ነው?<br><small>What is three hundred fifty plus two hundred sixty?</small> | 610 | `ex.g3_add3d.17.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 3 — ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ (Subtracting three-digit numbers)
+
+Place on the map: schoolyard · Mini-game: market · Hook video: `video/g3_sub3d.mp4` (36.5 s) · Manim code: `animations/lessons/g3_sub3d.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ | Subtracting three-digit numbers | `lesson.g3_sub3d.title` |
+| 4.5 s | በትምህርት ቤታችን አራት መቶ ሃምሳ ሁለት ተማሪዎች አሉ። ዛሬ ሁለት መቶ ሃያ ስምንት ተማሪዎች ለሽርሽር ሄዱ። ስንት ተማሪዎች ቀሩ? | Our school has four hundred fifty-two students. Today two hundred twenty-eight students went on a trip. How many students stayed? | `lesson.g3_sub3d.story` |
+| 10.8 s | አራት መቶ ሃምሳ ሁለት ሲቀነስ ሁለት መቶ ሃያ ስምንት። | Four hundred fifty-two minus two hundred twenty-eight. | `lesson.g3_sub3d.example.0` |
+| 14.4 s | ከሁለት ስምንት መውሰድ አንችልም፤ ስለዚህ አንድ አስር እንፈታለን። | We cannot take eight from two, so we break one ten. | `lesson.g3_sub3d.example.1` |
+| 18.0 s | አሁን አራት አስሮች እና አስራ ሁለት አንዶች አሉ። | Now there are four tens and twelve ones. | `lesson.g3_sub3d.example.2` |
+| 21.7 s | አስራ ሁለት ሲቀነስ ስምንት አራት ነው። | Twelve minus eight is four. | `lesson.g3_sub3d.example.3` |
+| 25.3 s | አራት አስሮች ሲቀነስ ሁለት አስሮች ሁለት አስሮች ናቸው፤ አራት መቶዎች ሲቀነስ ሁለት መቶዎች ሁለት መቶዎች ናቸው። | Four tens minus two tens is two tens; four hundreds minus two hundreds is two hundreds. | `lesson.g3_sub3d.example.4` |
+| 28.9 s | መልሱ ሁለት መቶ ሃያ አራት ነው። | The answer is two hundred twenty-four. | `lesson.g3_sub3d.example.5` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 14.3 s | tap_choose | ከሁለት አንዶች ስምንት መውሰድ እንችላለን?<br><small>Can we take eight ones from two ones?</small> | no | `ex.g3_sub3d.01.mp3` |
+| 21.6 s | tap_choose | አስራ ሁለት ሲቀነስ ስምንት ስንት ነው?<br><small>What is twelve minus eight?</small> | 4 | `ex.g3_sub3d.02.mp3` |
+
+Re-teach clip after two misses: 14.3–36.5 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 353 | `ex.teens.09.mp3` |
+| 1 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 224 | `ex.teens.09.mp3` |
+| 1 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 374 | `ex.teens.09.mp3` |
+| 2 · L1 | tap_choose | አራት መቶዎች፣ አምስት አስሮች እና ሁለት አንዶች = አራት መቶዎች፣ አራት አስሮች እና ስንት አንዶች?<br><small>4 hundreds, 5 tens and 2 ones = 4 hundreds, 4 tens and how many ones?</small> | 12 | `ex.g3_sub3d.05.mp3` |
+| 2 · L2 | tap_choose | ሶስት መቶዎች እና ስድስት አስሮች = ሶስት መቶዎች፣ አምስት አስሮች እና ስንት አንዶች?<br><small>3 hundreds and 6 tens = 3 hundreds, 5 tens and how many ones?</small> | 10 | `ex.g3_sub3d.06.mp3` |
+| 2 · L3 | tap_choose | አምስት መቶዎች = አራት መቶዎች እና ስንት አስሮች?<br><small>5 hundreds = 4 hundreds and how many tens?</small> | 10 | `ex.g3_sub3d.07.mp3` |
+| 3 · L1 | drag_placevalue | መቶ አስራ ሁለትን ያለ አስሮች እንሥራ።<br><small>Let's build one hundred twelve without any tens.</small> | 112 | `ex.g3_sub3d.08.mp3` |
+| 3 · L2 | drag_placevalue | መቶ ሰላሳ ሁለትን በሁለት አስሮች ብቻ እንሥራ።<br><small>Let's build one hundred thirty-two using only two tens.</small> | 132 | `ex.g3_sub3d.10.mp3` |
+| 3 · L3 | drag_placevalue | መቶ ሰላሳን ያለ መቶ፣ በአስሮች ብቻ እንሥራ።<br><small>Let's build one hundred thirty with tens only, no hundred.</small> | 130 | `ex.g3_sub3d.12.mp3` |
+| 4 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 200 | `ex.teens.09.mp3` |
+| 4 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 250 | `ex.teens.09.mp3` |
+| 4 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 425 | `ex.teens.09.mp3` |
+| 5 · L1 | numpad | አራት መቶ ሰባ አምስት ሲቀነስ መቶ ሰላሳ ሁለት ስንት ነው?<br><small>What is four hundred seventy-five minus one hundred thirty-two?</small> | 343 | `ex.g3_sub3d.15.mp3` |
+| 5 · L2 | numpad | አምስት መቶ ስልሳ ሶስት ሲቀነስ ሁለት መቶ አርባ ሰባት ስንት ነው?<br><small>What is five hundred sixty-three minus two hundred forty-seven?</small> | 316 | `ex.g3_sub3d.16.mp3` |
+| 5 · L3 | numpad | ሰባት መቶ ሲቀነስ ሶስት መቶ ስልሳ አምስት ስንት ነው?<br><small>What is seven hundred minus three hundred sixty-five?</small> | 335 | `ex.g3_sub3d.17.mp3` |
+| 6 · L1 | drag_sort | አስር መፍታት የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: must break a ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g2_sub2d.16.mp3` |
+| 6 · L2 | drag_sort | አስር መፍታት የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: must break a ten, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g2_sub2d.16.mp3` |
+| 6 · L3 | drag_sort | መቶ መፍታት የሚያስፈልጋቸውን እንለይ።<br><small>Let's sort: must break a hundred, doesn't.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_sub3d.18.mp3` |
+
+### 4. Play — market
+
+ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።<br><small>Let's go to the market! Buy things that use up exactly all our birr.</small> · `ex.g2_birr.19.mp3`
+
+```json
+[{"budget":200,"goods":[{"pic":"book","am":"መጽሐፍ","en":"Book","price":120},{"pic":"pen","am":"እስክሪብቶ","en":"Pen","price":80},{"pic":"bread","am":"ዳቦ","en":"Bread","price":150}]},{"budget":350,"goods":[{"pic":"shoes","am":"ጫማ","en":"Shoes","price":250},{"pic":"bag","am":"ቦርሳ","en":"Bag","price":175},{"pic":"banana","am":"ሙዝ","en":"Bananas","price":100}]},{"budget":500,"goods":[{"pic":"bag","am":"ቦርሳ","en":"Bag","price":325},{"pic":"book","am":"መጽሐፍ","en":"Book","price":175},{"pic":"egg","am":"እንቁላል","en":"Eggs","price":90}]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 356 | `ex.teens.09.mp3` |
+| 2 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["320","370"] | `ex.count10.14.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? አምስት መቶ ሲቀነስ መቶ አራት መቶ ነው።<br><small>True or not? Five hundred minus one hundred is four hundred.</small> | true | `ex.g3_sub3d.19.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 356 | `ex.count10.17.mp3` |
+| 5 | numpad | ስምንት መቶ ሲቀነስ ሶስት መቶ ሃምሳ ስንት ነው?<br><small>What is eight hundred minus three hundred fifty?</small> | 450 | `ex.g3_sub3d.20.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 4 — በረድፍ እናባዛ (Multiplying in rows)
+
+Place on the map: field · Mini-game: coffee · Hook video: `video/g3_times.mp4` (28.2 s) · Manim code: `animations/lessons/g3_times.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | በረድፍ እናባዛ | Multiplying in rows | `lesson.g3_times.title` |
+| 3.9 s | አባቴ በእርሻው ላይ የቡና ችግኞችን በረድፍ ተከለ። በእያንዳንዱ ረድፍ እኩል ችግኞች አሉ። | Father planted coffee seedlings in rows on the farm. Every row has the same number of seedlings. | `lesson.g3_times.story` |
+| 9.6 s | ሶስት ረድፎች አሉ፤ በእያንዳንዱ ረድፍ አምስት ችግኞች አሉ። | There are three rows, with five seedlings in each row. | `lesson.g3_times.example.0` |
+| 13.2 s | አምስት፣ አስር፣ አስራ አምስት። | Five, ten, fifteen. | `lesson.g3_times.example.1` |
+| 16.8 s | ሶስት ጊዜ አምስት እኩል ነው አስራ አምስት። | Three times five equals fifteen. | `lesson.g3_times.example.2` |
+| 20.5 s | ስናዞረው አምስት ረድፎች በሶስት በሶስት ይሆናሉ፤ አሁንም አስራ አምስት ነው። | When we turn it around, there are five rows of three; it is still fifteen. | `lesson.g3_times.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.2 s | tap_choose | ሶስት ረድፎች በአምስት በአምስት ስንት ችግኞች ናቸው?<br><small>How many seedlings are three rows of five?</small> | 15 | `ex.g3_times.01.mp3` |
+| 20.4 s | tap_choose | ስናዞረው ስንት ችግኞች ይሆናሉ?<br><small>When we turn it around, how many seedlings are there?</small> | 15 | `ex.g3_times.02.mp3` |
+
+Re-teach clip after two misses: 9.5–28.2 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።<br><small>Let's plant 3 seedlings in each row.</small> | [3,3] | `ex.g3_times.03.mp3` |
+| 1 · L2 | drag_drop_count | በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።<br><small>Let's plant 3 seedlings in each row.</small> | [3,3,3] | `ex.g3_times.03.mp3` |
+| 1 · L3 | drag_drop_count | በእያንዳንዱ ረድፍ አራት ችግኞችን እንትከል።<br><small>Let's plant 4 seedlings in each row.</small> | [4,4,4] | `ex.g3_times.04.mp3` |
+| 2 · L1 | tap_choose | ይህ የትኛው ነው?<br><small>Which one is this?</small> | a | `ex.g2_groups.08.mp3` |
+| 2 · L2 | tap_choose | ይህ የትኛው ነው?<br><small>Which one is this?</small> | b | `ex.g2_groups.08.mp3` |
+| 2 · L3 | tap_choose | ይህ የትኛው ነው?<br><small>Which one is this?</small> | c | `ex.g2_groups.08.mp3` |
+| 3 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 12 | `ex.teens.09.mp3` |
+| 3 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 30 | `ex.teens.09.mp3` |
+| 3 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 4 | `ex.teens.09.mp3` |
+| 4 · L1 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_times.05.mp3` |
+| 4 · L2 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_times.05.mp3` |
+| 4 · L3 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_times.05.mp3` |
+| 5 · L1 | numpad | አራት ጊዜ አምስት ስንት ነው?<br><small>What is four times five?</small> | 20 | `ex.g3_times.06.mp3` |
+| 5 · L2 | numpad | ስድስት ጊዜ ሶስት ስንት ነው?<br><small>What is six times three?</small> | 18 | `ex.g3_times.07.mp3` |
+| 5 · L3 | numpad | ስምንት ጊዜ አራት ስንት ነው?<br><small>What is eight times four?</small> | 32 | `ex.g3_times.08.mp3` |
+| 6 · L1 | drag_sort | አስራ ሁለት የሚሆኑትን እና የማይሆኑትን እንለይ።<br><small>Let's sort: makes 12, doesn't make 12.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g3_times.09.mp3` |
+| 6 · L2 | drag_sort | ሃያ አራት የሚሆኑትን እና የማይሆኑትን እንለይ።<br><small>Let's sort: makes 24, doesn't make 24.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_times.10.mp3` |
+| 6 · L3 | drag_sort | ሰላሳ ስድስት የሚሆኑትን እና የማይሆኑትን እንለይ።<br><small>Let's sort: makes 36, doesn't make 36.</small> | {"a":"yes","b":"yes","c":"no","d":"yes","e":"no"} | `ex.g3_times.11.mp3` |
+
+### 4. Play — coffee
+
+ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።<br><small>Let's pour coffee for the guests! Every tray gets the same number of cups.</small> · `ex.g2_groups.19.mp3`
+
+```json
+[{"n":8,"trays":[4,4]},{"n":12,"trays":[3,3,3,3]},{"n":15,"trays":[5,5,5]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | በእያንዳንዱ ረድፍ አምስት ችግኞችን እንትከል።<br><small>Let's plant 5 seedlings in each row.</small> | [5,5] | `ex.g3_times.12.mp3` |
+| 2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 4 | `ex.teens.09.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? ሶስት ጊዜ ስድስት ከስድስት ጊዜ ሶስት ጋር እኩል ነው።<br><small>True or not? Three times six equals six times three.</small> | true | `ex.g3_times.13.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 24 | `ex.count10.17.mp3` |
+| 5 | numpad | ዘጠኝ ጊዜ አምስት ስንት ነው?<br><small>What is nine times five?</small> | 45 | `ex.g3_times.15.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 5 — እኩል ማካፈል (Sharing equally)
+
+Place on the map: village · Mini-game: race · Hook video: `video/g3_share.mp4` (29.6 s) · Manim code: `animations/lessons/g3_share.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | እኩል ማካፈል | Sharing equally | `lesson.g3_share.title` |
+| 4.7 s | እማማ አስራ ሁለት ብርቱካኖችን ለሶስት ልጆች በእኩል ማካፈል ትፈልጋለች። ማንም ከሌላው መብለጥ የለበትም። | Mama wants to share twelve oranges equally among three children. Nobody should get more than anyone else. | `lesson.g3_share.story` |
+| 10.4 s | አንድ ለአንተ፣ አንድ ለአንቺ፣ አንድ ለእሱ፤ በዙር እናካፍላለን። | One for you, one for you, one for him: we share in turns. | `lesson.g3_share.example.0` |
+| 14.0 s | ሁሉም እስኪያልቁ እንቀጥላለን። | We keep going until they are all gone. | `lesson.g3_share.example.1` |
+| 18.2 s | እያንዳንዱ ልጅ አራት ብርቱካኖች አገኘ። | Each child gets four oranges. | `lesson.g3_share.example.2` |
+| 21.8 s | አስራ ሁለት ሲካፈል ለሶስት እኩል ነው አራት። | Twelve divided by three equals four. | `lesson.g3_share.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.9 s | tap_choose | ከአንድ ዙር በኋላ ስንት ብርቱካኖች ተሰጡ?<br><small>After one turn, how many oranges have been given out?</small> | 3 | `ex.g3_share.01.mp3` |
+| 18.1 s | tap_choose | እያንዳንዱ ልጅ ስንት ብርቱካኖች ያገኛል?<br><small>How many oranges does each child get?</small> | 4 | `ex.g3_share.04.mp3` |
+
+Re-teach clip after two misses: 10.3–29.6 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | ስድስት ብርቱካኖችን ለሁለት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 6 oranges equally on 2 plates.</small> | [3,3] | `ex.g3_share.05.mp3` |
+| 1 · L2 | drag_drop_count | ዘጠኝ ብርቱካኖችን ለሶስት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 9 oranges equally on 3 plates.</small> | [3,3,3] | `ex.g3_share.06.mp3` |
+| 1 · L3 | drag_drop_count | አስራ ሁለት ብርቱካኖችን ለአራት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 12 oranges equally on 4 plates.</small> | [3,3,3,3] | `ex.g3_share.07.mp3` |
+| 2 · L1 | tap_choose | ስምንት ሲካፈል ለሁለት ስንት ነው?<br><small>What is eight divided by two?</small> | 4 | `ex.g3_share.08.mp3` |
+| 2 · L2 | tap_choose | አስራ አምስት ሲካፈል ለሶስት ስንት ነው?<br><small>What is fifteen divided by three?</small> | 5 | `ex.g3_share.09.mp3` |
+| 2 · L3 | tap_choose | ሃያ ሲካፈል ለአራት ስንት ነው?<br><small>What is twenty divided by four?</small> | 5 | `ex.g3_share.10.mp3` |
+| 3 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 5 | `ex.teens.09.mp3` |
+| 3 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 6 | `ex.teens.09.mp3` |
+| 3 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 4 | `ex.teens.09.mp3` |
+| 4 · L1 | drag_match_word | እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።<br><small>Let's match each division to its answer.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_share.11.mp3` |
+| 4 · L2 | drag_match_word | እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።<br><small>Let's match each division to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_share.11.mp3` |
+| 4 · L3 | drag_match_word | እያንዳንዱን ማካፈል ከመልሱ ጋር እናገናኝ።<br><small>Let's match each division to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_share.11.mp3` |
+| 5 · L1 | numpad | አስራ ሁለት ብርቱካኖች ለአራት ልጆች ሲካፈሉ እያንዳንዱ ልጅ ስንት ያገኛል?<br><small>Twelve oranges are shared by four children. How many does each child get?</small> | 3 | `ex.g3_share.12.mp3` |
+| 5 · L2 | numpad | ሃያ ሲካፈል ለአምስት ስንት ነው?<br><small>What is twenty divided by five?</small> | 4 | `ex.g3_share.13.mp3` |
+| 5 · L3 | numpad | ሰላሳ ስድስት ሲካፈል ለአራት ስንት ነው?<br><small>What is thirty-six divided by four?</small> | 9 | `ex.g3_share.14.mp3` |
+| 6 · L1 | drag_sort | ለሶስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።<br><small>Let's sort: shares equally into 3, has some left over.</small> | {"a":"yes","b":"no","c":"yes","d":"no"} | `ex.g3_share.15.mp3` |
+| 6 · L2 | drag_sort | ለአራት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።<br><small>Let's sort: shares equally into 4, has some left over.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_share.16.mp3` |
+| 6 · L3 | drag_sort | ለአምስት በእኩል የሚካፈሉትን እና የማይካፈሉትን እንለይ።<br><small>Let's sort: shares equally into 5, has some left over.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_share.17.mp3` |
+
+### 4. Play — race
+
+ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።<br><small>Let's race to Grandma's house! Each right answer moves us forward.</small> · `ex.compare.20.mp3`
+
+```json
+[{"q":"ስምንት ሲካፈል ለሁለት?","options":[4,6],"answer":4},{"q":"አስራ አምስት ሲካፈል ለአምስት?","options":[3,10],"answer":3},{"q":"አስራ ሁለት ሲካፈል ለሶስት?","options":[4,9],"answer":4},{"q":"ሃያ ሲካፈል ለሁለት?","options":[10,18],"answer":10},{"q":"አስራ ስምንት ሲካፈል ለስድስት?","options":[3,12],"answer":3}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | አስር ብርቱካኖችን ለአምስት ሳህኖች በእኩል እናካፍል።<br><small>Let's share 10 oranges equally on 5 plates.</small> | [2,2,2,2,2] | `ex.g3_share.18.mp3` |
+| 2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 7 | `ex.teens.09.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? አስራ ስድስት ሲካፈል ለአራት አራት ነው።<br><small>True or not? Sixteen divided by four is four.</small> | true | `ex.g3_share.19.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 6 | `ex.count10.17.mp3` |
+| 5 | numpad | ሰላሳ ሲካፈል ለአምስት ስንት ነው?<br><small>What is thirty divided by five?</small> | 6 | `ex.g3_share.21.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 18 interactions in all.
+
+## Grade 3 · Lesson 6 — ሶስተኛ እና ሌሎች ክፍልፋዮች (Thirds and other fractions)
+
+Place on the map: feast · Mini-game: memory · Hook video: `video/g3_fractions.mp4` (28.8 s) · Manim code: `animations/lessons/g3_fractions.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ሶስተኛ እና ሌሎች ክፍልፋዮች | Thirds and other fractions | `lesson.g3_fractions.title` |
+| 4.5 s | እናቴ አንድ እንጀራ ለሶስት ልጆች በእኩል ታካፍላለች። እያንዳንዱ ልጅ ስንት ያገኛል? | Mother shares one injera equally among three children. How much does each child get? | `lesson.g3_fractions.story` |
+| 10.2 s | እንጀራውን በሶስት እኩል ክፍሎች ከፈለችው። | She divided the injera into three equal parts. | `lesson.g3_fractions.example.0` |
+| 13.8 s | እያንዳንዱ ክፍል አንድ ሶስተኛ ነው፤ እንዲህ እንጽፈዋለን፦ አንድ በሶስት። | Each part is one third; we write it like this: one over three. | `lesson.g3_fractions.example.1` |
+| 17.4 s | ሁለት ክፍሎች ሁለት ሶስተኛ ናቸው። | Two parts are two thirds. | `lesson.g3_fractions.example.2` |
+| 21.1 s | ሶስት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ። | Three thirds make one whole injera. | `lesson.g3_fractions.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ስንት እኩል ክፍሎች አሉ?<br><small>How many equal parts are there?</small> | 3 | `ex.g3_fractions.01.mp3` |
+| 21.0 s | tap_choose | ስንት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?<br><small>How many thirds make one whole injera?</small> | 3 | `ex.g3_fractions.03.mp3` |
+
+Re-teach clip after two misses: 10.1–28.8 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_fraction | አንድ ሶስተኛ እናስቀምጥ።<br><small>Let's put one third.</small> | 1 | `ex.g3_fractions.04.mp3` |
+| 1 · L2 | drag_fraction | ሁለት ሶስተኛ እናስቀምጥ።<br><small>Let's put two thirds.</small> | 2 | `ex.g3_fractions.05.mp3` |
+| 1 · L3 | drag_fraction | ግማሹን እንጀራ በስድስተኛ ቁርጥራጮች እንሙላ።<br><small>Let's fill half of the injera with sixth pieces.</small> | 3 | `ex.g3_fractions.06.mp3` |
+| 2 · L1 | tap_choose | አንድ ሶስተኛ የቀለመው የትኛው ነው?<br><small>Which one has one third coloured?</small> | b | `ex.g3_fractions.09.mp3` |
+| 2 · L2 | tap_choose | ሁለት ሶስተኛ የቀለመው የትኛው ነው?<br><small>Which one has two thirds coloured?</small> | a | `ex.g3_fractions.10.mp3` |
+| 2 · L3 | tap_choose | በሶስት እኩል ክፍሎች የተከፈለው የትኛው ነው?<br><small>Which one is cut into three equal parts?</small> | c | `ex.g3_fractions.11.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_fractions.12.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_fractions.12.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_fractions.12.mp3` |
+| 4 · L1 | numpad | የአስራ ሁለት ብርቱካኖች አንድ ሶስተኛ ስንት ነው?<br><small>What is one third of twelve oranges?</small> | 4 | `ex.g3_fractions.13.mp3` |
+| 4 · L2 | numpad | የስምንት ብርቱካኖች ሩብ ስንት ነው?<br><small>What is one quarter of eight oranges?</small> | 2 | `ex.g3_fractions.14.mp3` |
+| 4 · L3 | numpad | የአስራ አምስት ብርቱካኖች ሁለት ሶስተኛ ስንት ነው?<br><small>What is two thirds of fifteen oranges?</small> | 10 | `ex.g3_fractions.15.mp3` |
+| 5 · L1 | true_false | ልክ ነው ወይስ አይደለም? ይህ በሶስት እኩል ክፍሎች ተከፍሏል።<br><small>True or not? This is cut into three equal parts.</small> | true | `ex.g3_fractions.16.mp3` |
+| 5 · L2 | true_false | ልክ ነው ወይስ አይደለም? ይህ በሶስት እኩል ክፍሎች ተከፍሏል።<br><small>True or not? This is cut into three equal parts.</small> | false | `ex.g3_fractions.16.mp3` |
+| 5 · L3 | true_false | ልክ ነው ወይስ አይደለም? የቀለመው ክፍል አንድ ሶስተኛ ነው።<br><small>True or not? The coloured part is one third.</small> | false | `ex.g3_fractions.17.mp3` |
+| 6 · L1 | drag_sort | ሶስተኛዎችን እና ሶስተኛ ያልሆኑትን እንለይ።<br><small>Let's sort: thirds, not thirds.</small> | {"a":"yes","b":"no","c":"no","d":"yes"} | `ex.g3_fractions.18.mp3` |
+| 6 · L2 | drag_sort | እኩል ክፍሎችን እና እኩል ያልሆኑትን እንለይ።<br><small>Let's sort: equal parts, not equal parts.</small> | {"a":"yes","b":"no","c":"yes","d":"no","e":"yes"} | `ex.g3_fractions.19.mp3` |
+| 6 · L3 | drag_sort | ከግማሽ የሚበልጡትን እና የሚያንሱትን እንለይ።<br><small>Let's sort: more than a half, less than a half.</small> | {"a":"more","b":"less","c":"more","d":"less","e":"more"} | `ex.g3_fractions.20.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ ቁጥር፣ ቃል እና ሥዕል።<br><small>Let's find matching cards: number, word and picture.</small> · `ex.g2_halves.25.mp3`
+
+```json
+[{"n":"1/2","am":"ግማሽ","visual":{"kind":"injera","parts":2,"filled":1,"equal":true}},{"n":"1/3","am":"አንድ ሶስተኛ","visual":{"kind":"injera","parts":3,"filled":1,"equal":true}},{"n":"1/4","am":"ሩብ","visual":{"kind":"injera","parts":4,"filled":1,"equal":true}},{"n":"2/3","am":"ሁለት ሶስተኛ","visual":{"kind":"injera","parts":3,"filled":2,"equal":true}}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_fraction | ሁለት ሶስተኛ እናስቀምጥ።<br><small>Let's put two thirds.</small> | 2 | `ex.g3_fractions.05.mp3` |
+| 2 | drag_match_word | እያንዳንዱን ቃል ከክፍልፋዩ ጋር እናገናኝ።<br><small>Let's match each word to its fraction.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_fractions.12.mp3` |
+| 3 | drag_fraction | ሶስት ስድስተኛ እናስቀምጥ።<br><small>Let's put three sixths.</small> | 3 | `ex.g3_fractions.21.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | a | `ex.count10.17.mp3` |
+| 5 | numpad | ስንት ስድስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?<br><small>How many sixths make one whole injera?</small> | 6 | `ex.g3_fractions.23.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
+
+## Grade 3 · Lesson 7 — ማወዳደር እና ማጠጋጋት (Comparing and rounding)
+
+Place on the map: farm · Mini-game: race · Hook video: `video/g3_round.mp4` (28.8 s) · Manim code: `animations/lessons/g3_round.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ማወዳደር እና ማጠጋጋት | Comparing and rounding | `lesson.g3_round.title` |
+| 4.1 s | ሁለት ቡድኖች የቡና ፍሬ ለቀሙ። ቀዩ ቡድን ሶስት መቶ አርባ ስምንት፣ ሰማያዊው ቡድን ሶስት መቶ ሰማንያ አራት ፍሬዎች ለቀሙ። | Two teams picked coffee cherries. The red team picked three hundred forty-eight and the blue team three hundred eighty-four. | `lesson.g3_round.story` |
+| 10.4 s | የሁለቱም መቶዎች እኩል ናቸው፤ ስለዚህ አስሮቹን እናወዳድር። | Both numbers have the same hundreds, so we compare the tens. | `lesson.g3_round.example.0` |
+| 14.0 s | አራት አስሮች ከስምንት አስሮች ያንሳሉ፤ ሶስት መቶ አርባ ስምንት ያንሳል። | Four tens are fewer than eight tens, so three hundred forty-eight is less. | `lesson.g3_round.example.1` |
+| 17.6 s | በቁጥር መስመር ላይ ሶስት መቶ አርባ ስምንት ለሶስት መቶ ሃምሳ ይቀርባል። | On the number line, three hundred forty-eight is closest to three hundred fifty. | `lesson.g3_round.example.2` |
+| 21.3 s | ወደ ቅርብ መቶ ስናጠጋጋው ግን ሶስት መቶ ይሆናል። | Rounded to the nearest hundred, it is three hundred. | `lesson.g3_round.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.9 s | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | b | `ex.compare.18.mp3` |
+| 21.2 s | tap_choose | ሶስት መቶ አርባ ስምንት ለየትኛው መቶ ይቀርባል?<br><small>Which hundred is three hundred forty-eight closer to?</small> | 300 | `ex.g3_round.01.mp3` |
+
+Re-teach clip after two misses: 10.3–28.8 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | > | `ex.g2_compare.04.mp3` |
+| 1 · L2 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | < | `ex.g2_compare.04.mp3` |
+| 1 · L3 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | < | `ex.g2_compare.04.mp3` |
+| 2 · L1 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["340","370"] | `ex.count10.14.mp3` |
+| 2 · L2 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["520","550","580"] | `ex.count10.14.mp3` |
+| 2 · L3 | drag_numberline | ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the numbers in their places on the number line.</small> | ["300","700","900"] | `ex.count10.14.mp3` |
+| 3 · L1 | drag_sort | ወደ ቅርብ አስር ስናጠጋጋ አርባ ወይስ ሃምሳ?<br><small>Round to the nearest ten: 40 or 50?</small> | {"c0":"lo","c1":"hi","c2":"lo","c3":"hi"} | `ex.g3_round.04.mp3` |
+| 3 · L2 | drag_sort | ወደ ቅርብ መቶ ስናጠጋጋ ሶስት መቶ ወይስ አራት መቶ?<br><small>Round to the nearest hundred: 300 or 400?</small> | {"c0":"lo","c1":"hi","c2":"lo","c3":"hi","c4":"hi"} | `ex.g3_round.05.mp3` |
+| 3 · L3 | drag_sort | ወደ ቅርብ መቶ ስናጠጋጋ አምስት መቶ ወይስ ስድስት መቶ?<br><small>Round to the nearest hundred: 500 or 600?</small> | {"c0":"lo","c1":"hi","c2":"lo","c3":"hi","c4":"hi"} | `ex.g3_round.06.mp3` |
+| 4 · L1 | tap_choose | ሰማንያ ሰባት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?<br><small>What is eighty-seven rounded to the nearest ten?</small> | 90 | `ex.g3_round.07.mp3` |
+| 4 · L2 | tap_choose | ሁለት መቶ ሰላሳ አራት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?<br><small>What is two hundred thirty-four rounded to the nearest ten?</small> | 230 | `ex.g3_round.08.mp3` |
+| 4 · L3 | tap_choose | ሰባት መቶ ስልሳ አምስት ወደ ቅርብ መቶ ሲጠጋጋ ስንት ይሆናል?<br><small>What is seven hundred sixty-five rounded to the nearest hundred?</small> | 800 | `ex.g3_round.09.mp3` |
+| 5 · L1 | numpad | በ2፣ 5 እና 1 አሃዞች ትልቁን ቁጥር እንሥራ።<br><small>Make the biggest number with the digits 2, 5 and 1.</small> | 521 | `ex.g3_round.10.mp3` |
+| 5 · L2 | numpad | በ4፣ 0 እና 8 አሃዞች ትልቁን ቁጥር እንሥራ።<br><small>Make the biggest number with the digits 4, 0 and 8.</small> | 840 | `ex.g3_round.11.mp3` |
+| 5 · L3 | numpad | በ6፣ 1 እና 9 አሃዞች ትንሹን ቁጥር እንሥራ።<br><small>Make the smallest number with the digits 6, 1 and 9.</small> | 169 | `ex.g3_round.12.mp3` |
+| 6 · L1 | drag_match_word | እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።<br><small>Let's match each number to its nearest hundred.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_round.13.mp3` |
+| 6 · L2 | drag_match_word | እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።<br><small>Let's match each number to its nearest hundred.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_round.13.mp3` |
+| 6 · L3 | drag_match_word | እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።<br><small>Let's match each number to its nearest hundred.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_round.13.mp3` |
+
+### 4. Play — race
+
+ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።<br><small>Let's race to Grandma's house! Each right answer moves us forward.</small> · `ex.compare.20.mp3`
+
+```json
+[{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"b"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"a"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"b"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"a"},{"q":"የትኛው ይበልጣል?","options":["a","b"],"answer":"b"}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_equation | ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?<br><small>Let's put the right sign: greater than, less than or equal?</small> | > | `ex.g2_compare.04.mp3` |
+| 2 | drag_sort | ወደ ቅርብ አስር ስናጠጋጋ ስልሳ ወይስ ሰባ?<br><small>Round to the nearest ten: 60 or 70?</small> | {"c0":"lo","c1":"hi","c2":"hi","c3":"lo"} | `ex.g3_round.14.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? ሶስት መቶ አርባ ስምንት ከሶስት መቶ ሰማንያ አራት ይበልጣል።<br><small>True or not? Three hundred forty-eight is greater than three hundred eighty-four.</small> | false | `ex.g3_round.15.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 350 | `ex.count10.17.mp3` |
+| 5 | numpad | አራት መቶ ሃምሳ ሰባት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?<br><small>What is four hundred fifty-seven rounded to the nearest ten?</small> | 460 | `ex.g3_round.16.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 18 interactions in all.
+
+## Grade 3 · Lesson 8 — የማባዛት ሰንጠረዥ እስከ አስር ጊዜ አስር (Times tables to 10 × 10)
+
+Place on the map: eggs · Mini-game: memory · Hook video: `video/g3_tables.mp4` (28.0 s) · Manim code: `animations/lessons/g3_tables.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | የማባዛት ሰንጠረዥ እስከ አስር ጊዜ አስር | Times tables to 10 × 10 | `lesson.g3_tables.title` |
+| 3.9 s | በገበያው እንቁላሎች በሳጥን ይሸጣሉ። በእያንዳንዱ ሳጥን ስድስት እንቁላሎች አሉ። | At the market, eggs are sold in boxes. Each box holds six eggs. | `lesson.g3_tables.story` |
+| 9.6 s | አንድ ሳጥን ስድስት፣ ሁለት ሳጥኖች አስራ ሁለት፣ ሶስት ሳጥኖች አስራ ስምንት ናቸው። | One box is six, two boxes are twelve, three boxes are eighteen. | `lesson.g3_tables.example.0` |
+| 13.2 s | በስድስት በስድስት እየዘለልን እንቆጥራለን። | We skip count in sixes. | `lesson.g3_tables.example.1` |
+| 16.8 s | ሰባት ሳጥኖች፦ ሰባት ጊዜ ስድስት አርባ ሁለት ነው። | Seven boxes: seven times six is forty-two. | `lesson.g3_tables.example.2` |
+| 20.5 s | ስድስት ጊዜ ሰባትም አርባ ሁለት ነው። | Six times seven is forty-two too. | `lesson.g3_tables.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 9.5 s | tap_choose | ሶስት ሳጥኖች ስንት እንቁላሎች ናቸው?<br><small>How many eggs are in three boxes?</small> | 18 | `ex.g3_tables.01.mp3` |
+| 20.4 s | tap_choose | ስድስት ጊዜ ሰባት ስንት ነው?<br><small>What is six times seven?</small> | 42 | `ex.g3_tables.02.mp3` |
+
+Re-teach clip after two misses: 9.5–28.0 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 42 | `ex.teens.09.mp3` |
+| 1 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 48 | `ex.teens.09.mp3` |
+| 1 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 7 | `ex.teens.09.mp3` |
+| 2 · L1 | numpad | ሰባት ጊዜ ስምንት ስንት ነው?<br><small>What is seven times eight?</small> | 56 | `ex.g3_tables.03.mp3` |
+| 2 · L2 | numpad | ዘጠኝ ጊዜ ስድስት ስንት ነው?<br><small>What is nine times six?</small> | 54 | `ex.g3_tables.04.mp3` |
+| 2 · L3 | numpad | ስምንት ጊዜ ስምንት ስንት ነው?<br><small>What is eight times eight?</small> | 64 | `ex.g3_tables.05.mp3` |
+| 3 · L1 | drag_drop_count | በእያንዳንዱ ሳጥን አራት እንቁላሎችን እናስቀምጥ።<br><small>Let's put 4 eggs in each box.</small> | [4,4] | `ex.g3_tables.06.mp3` |
+| 3 · L2 | drag_drop_count | በእያንዳንዱ ሳጥን አምስት እንቁላሎችን እናስቀምጥ።<br><small>Let's put 5 eggs in each box.</small> | [5,5] | `ex.g3_tables.07.mp3` |
+| 3 · L3 | drag_drop_count | በእያንዳንዱ ሳጥን ስድስት እንቁላሎችን እናስቀምጥ።<br><small>Let's put 6 eggs in each box.</small> | [6,6] | `ex.g3_tables.08.mp3` |
+| 4 · L1 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_times.05.mp3` |
+| 4 · L2 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_times.05.mp3` |
+| 4 · L3 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_times.05.mp3` |
+| 5 · L1 | tap_choose | ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 7፣ 14፣ 21፣ …<br><small>What number comes next? 7, 14, 21, …</small> | 28 | `ex.g3_tables.09.mp3` |
+| 5 · L2 | tap_choose | ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 9፣ 18፣ 27፣ …<br><small>What number comes next? 9, 18, 27, …</small> | 36 | `ex.g3_tables.10.mp3` |
+| 5 · L3 | tap_choose | ቀጥሎ የሚመጣው ቁጥር የቱ ነው? 8፣ 16፣ 24፣ 32፣ …<br><small>What number comes next? 8, 16, 24, 32, …</small> | 40 | `ex.g3_tables.11.mp3` |
+| 6 · L1 | drag_sort | በስድስት ሰንጠረዥ ውስጥ ያሉትን እና የሌሉትን እንለይ።<br><small>Let's sort: in the 6 times table, not in it.</small> | {"c0":"yes","c1":"no","c2":"yes","c3":"no"} | `ex.g3_tables.12.mp3` |
+| 6 · L2 | drag_sort | በሰባት ሰንጠረዥ ውስጥ ያሉትን እና የሌሉትን እንለይ።<br><small>Let's sort: in the 7 times table, not in it.</small> | {"c0":"yes","c1":"no","c2":"yes","c3":"no","c4":"yes"} | `ex.g3_tables.13.mp3` |
+| 6 · L3 | drag_sort | በዘጠኝ ሰንጠረዥ ውስጥ ያሉትን እና የሌሉትን እንለይ።<br><small>Let's sort: in the 9 times table, not in it.</small> | {"c0":"yes","c1":"yes","c2":"no","c3":"no","c4":"yes"} | `ex.g3_tables.14.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ ማባዛት እና መልሱ።<br><small>Let's find matching cards: a multiplication and its answer.</small> · `ex.g3_tables.18.mp3`
+
+```json
+[{"n":42,"am":"6 × 7"},{"n":56,"am":"7 × 8"},{"n":72,"am":"8 × 9"},{"n":100,"am":"10 × 10"}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 56 | `ex.teens.09.mp3` |
+| 2 | drag_match_word | እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።<br><small>Let's match each multiplication to its answer.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_times.05.mp3` |
+| 3 | true_false | ልክ ነው ወይስ አይደለም? ዘጠኝ ጊዜ ስድስት ሃምሳ አራት ነው።<br><small>True or not? Nine times six is fifty-four.</small> | true | `ex.g3_tables.15.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 56 | `ex.count10.17.mp3` |
+| 5 | numpad | አስር ጊዜ አስር ስንት ነው?<br><small>What is ten times ten?</small> | 100 | `ex.g3_tables.17.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
+
+## Grade 3 · Lesson 9 — ማካፈል እና ማባዛት (Division and multiplication)
+
+Place on the map: playground · Mini-game: coffee · Hook video: `video/g3_divide.mp4` (28.6 s) · Manim code: `animations/lessons/g3_divide.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ማካፈል እና ማባዛት | Division and multiplication | `lesson.g3_divide.title` |
+| 4.5 s | ሃያ አራት ተማሪዎች ለጨዋታ በቡድን ይከፈላሉ። በእያንዳንዱ ቡድን ስድስት ተማሪዎች ይኖራሉ። | Twenty-four students split into teams for a game. Each team will have six students. | `lesson.g3_divide.story` |
+| 10.2 s | ሃያ አራት ተማሪዎችን በስድስት በስድስት እንቧድናለን። | We put the twenty-four students in groups of six. | `lesson.g3_divide.example.0` |
+| 13.8 s | አራት ቡድኖች ሆኑ። | That makes four teams. | `lesson.g3_divide.example.1` |
+| 17.4 s | ሃያ አራት ሲካፈል ለስድስት አራት ነው። | Twenty-four divided by six is four. | `lesson.g3_divide.example.2` |
+| 21.1 s | ምክንያቱም አራት ጊዜ ስድስት ሃያ አራት ነው። | That is because four times six is twenty-four. | `lesson.g3_divide.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ስንት ቡድኖች ሆኑ?<br><small>How many teams are there?</small> | 4 | `ex.g3_divide.01.mp3` |
+| 21.0 s | tap_choose | ሃያ አራት ሲካፈል ለስድስት አራት መሆኑን የሚያሳየው የትኛው ማባዛት ነው?<br><small>Which multiplication shows that twenty-four divided by six is four?</small> | a | `ex.g3_divide.02.mp3` |
+
+Re-teach clip after two misses: 10.1–28.6 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | ስምንት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ አራት አራት እናድርግ።<br><small>Let's put 8 oranges on plates, 4 on each plate.</small> | [4,4] | `ex.g3_divide.03.mp3` |
+| 1 · L2 | drag_drop_count | አስር ብርቱካኖችን በእያንዳንዱ ሳህን ላይ አምስት አምስት እናድርግ።<br><small>Let's put 10 oranges on plates, 5 on each plate.</small> | [5,5] | `ex.g3_divide.04.mp3` |
+| 1 · L3 | drag_drop_count | አስራ ሁለት ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሶስት ሶስት እናድርግ።<br><small>Let's put 12 oranges on plates, 3 on each plate.</small> | [3,3,3,3] | `ex.g3_divide.05.mp3` |
+| 2 · L1 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 4 | `ex.teens.09.mp3` |
+| 2 · L2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 7 | `ex.teens.09.mp3` |
+| 2 · L3 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 48 | `ex.teens.09.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።<br><small>Let's match each division to the multiplication that helps.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_divide.06.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።<br><small>Let's match each division to the multiplication that helps.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_divide.06.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።<br><small>Let's match each division to the multiplication that helps.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_divide.06.mp3` |
+| 4 · L1 | tap_choose | ሰላሳ ብርቱካኖች በአምስት በአምስት በከረጢት ቢቀመጡ ስንት ከረጢቶች ያስፈልጋሉ?<br><small>Thirty oranges go into bags of five. How many bags are needed?</small> | 6 | `ex.g3_divide.07.mp3` |
+| 4 · L2 | tap_choose | ሃያ ስምንት ልጆች በሰባት በሰባት ቡድን ቢሆኑ ስንት ቡድኖች ይሆናሉ?<br><small>Twenty-eight children make teams of seven. How many teams?</small> | 4 | `ex.g3_divide.08.mp3` |
+| 4 · L3 | tap_choose | አርባ አምስት ብር ለዘጠኝ ልጆች በእኩል ቢካፈል እያንዳንዱ ስንት ብር ያገኛል?<br><small>Forty-five birr is shared equally by nine children. How much does each get?</small> | 5 | `ex.g3_divide.09.mp3` |
+| 5 · L1 | numpad | አርባ ሁለት ሲካፈል ለሰባት ስንት ነው?<br><small>What is forty-two divided by seven?</small> | 6 | `ex.g3_divide.10.mp3` |
+| 5 · L2 | numpad | ሃምሳ ስድስት ሲካፈል ለስምንት ስንት ነው?<br><small>What is fifty-six divided by eight?</small> | 7 | `ex.g3_divide.11.mp3` |
+| 5 · L3 | numpad | ሰማንያ አንድ ሲካፈል ለዘጠኝ ስንት ነው?<br><small>What is eighty-one divided by nine?</small> | 9 | `ex.g3_divide.12.mp3` |
+| 6 · L1 | true_false | ልክ ነው ወይስ አይደለም? ሰላሳ ሲካፈል ለስድስት አምስት ነው፤ ምክንያቱም አምስት ጊዜ ስድስት ሰላሳ ነው።<br><small>True or not? Thirty divided by six is five, because five times six is thirty.</small> | true | `ex.g3_divide.13.mp3` |
+| 6 · L2 | true_false | ልክ ነው ወይስ አይደለም? ሰባት ጊዜ አራት ሃያ ስምንት ነው፤ ስለዚህ ሃያ ስምንት ሲካፈል ለአራት ስድስት ነው።<br><small>True or not? Seven times four is twenty-eight, so twenty-eight divided by four is six.</small> | false | `ex.g3_divide.14.mp3` |
+| 6 · L3 | true_false | ልክ ነው ወይስ አይደለም? ዘጠኝ ጊዜ ስምንት ሰባ ሁለት ነው፤ ስለዚህ ሰባ ሁለት ሲካፈል ለዘጠኝ ስምንት ነው።<br><small>True or not? Nine times eight is seventy-two, so seventy-two divided by nine is eight.</small> | true | `ex.g3_divide.15.mp3` |
+
+### 4. Play — coffee
+
+ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።<br><small>Let's pour coffee for the guests! Every tray gets the same number of cups.</small> · `ex.g2_groups.19.mp3`
+
+```json
+[{"n":12,"trays":[6,6]},{"n":15,"trays":[3,3,3,3,3]},{"n":14,"trays":[7,7]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | አስር ብርቱካኖችን በእያንዳንዱ ሳህን ላይ ሁለት ሁለት እናድርግ።<br><small>Let's put 10 oranges on plates, 2 on each plate.</small> | [2,2,2,2,2] | `ex.g2_skip.11.mp3` |
+| 2 | drag_equation | ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።<br><small>Let's fill the empty box with the right number.</small> | 9 | `ex.teens.09.mp3` |
+| 3 | drag_match_word | እያንዳንዱን ማካፈል ከሚረዳው ማባዛት ጋር እናገናኝ።<br><small>Let's match each division to the multiplication that helps.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_divide.06.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 6 | `ex.count10.17.mp3` |
+| 5 | numpad | ስልሳ አራት ሲካፈል ለስምንት ስንት ነው?<br><small>What is sixty-four divided by eight?</small> | 8 | `ex.g3_divide.17.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 10 — ክፍልፋዮች በቁጥር መስመር ላይ (Fractions on a number line)
+
+Place on the map: path · Mini-game: race · Hook video: `video/g3_fracline.mp4` (28.8 s) · Manim code: `animations/lessons/g3_fracline.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ክፍልፋዮች በቁጥር መስመር ላይ | Fractions on a number line | `lesson.g3_fracline.title` |
+| 4.1 s | ከቤት እስከ ትምህርት ቤት ያለውን መንገድ በአራት እኩል ክፍሎች እንከፍለው። ሰላም ምን ያህል ተጓዘች? | Let us split the road from home to school into four equal parts. How far has Selam walked? | `lesson.g3_fracline.story` |
+| 9.8 s | ከዜሮ እስከ አንድ ያለውን መስመር በአራት እኩል ክፍሎች እንከፍላለን። | We split the line from zero to one into four equal parts. | `lesson.g3_fracline.example.0` |
+| 13.4 s | እያንዳንዱ ዝላይ አንድ ሩብ ነው፤ አንድ ሩብ፣ ሁለት ሩብ፣ ሶስት ሩብ፣ አራት ሩብ። | Each jump is one quarter: one quarter, two quarters, three quarters, four quarters. | `lesson.g3_fracline.example.1` |
+| 17.6 s | ሁለት ሩብ ከግማሽ ጋር በአንድ ቦታ ላይ ነው። | Two quarters is at the same place as one half. | `lesson.g3_fracline.example.2` |
+| 21.2 s | ስለዚህ ሁለት ሩብ እና ግማሽ እኩል ናቸው። | So two quarters and one half are equal. | `lesson.g3_fracline.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.3 s | tap_choose | እያንዳንዱ ዝላይ ስንት ነው?<br><small>How long is each jump?</small> | 1/4 | `ex.g3_fracline.01.mp3` |
+| 21.2 s | tap_choose | ሁለት ሩብ ከየትኛው ጋር እኩል ነው?<br><small>Two quarters are equal to which?</small> | 1/2 | `ex.g3_fracline.04.mp3` |
+
+Re-teach clip after two misses: 9.7–28.8 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_numberline | ክፍልፋዮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the fractions in their places on the number line.</small> | ["1"] | `ex.g3_fracline.05.mp3` |
+| 1 · L2 | drag_numberline | ክፍልፋዮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the fractions in their places on the number line.</small> | ["1","3"] | `ex.g3_fracline.05.mp3` |
+| 1 · L3 | drag_numberline | ክፍልፋዮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።<br><small>Let's put the fractions in their places on the number line.</small> | ["1","2"] | `ex.g3_fracline.05.mp3` |
+| 2 · L1 | tap_choose | ነጥቡ የት ነው?<br><small>Where is the dot?</small> | 1/4 | `ex.g3_fracline.06.mp3` |
+| 2 · L2 | tap_choose | ነጥቡ የት ነው?<br><small>Where is the dot?</small> | 2/3 | `ex.g3_fracline.06.mp3` |
+| 2 · L3 | tap_choose | ነጥቡ የት ነው?<br><small>Where is the dot?</small> | 5/6 | `ex.g3_fracline.06.mp3` |
+| 3 · L1 | drag_fraction | ግማሽ እንዲሆን በሩብ ቁርጥራጮች እንሙላ።<br><small>Let's make one half with quarter pieces.</small> | 2 | `ex.g3_fracline.07.mp3` |
+| 3 · L2 | drag_fraction | ግማሽ እንዲሆን በስድስተኛ ቁርጥራጮች እንሙላ።<br><small>Let's make one half with sixth pieces.</small> | 3 | `ex.g3_fracline.08.mp3` |
+| 3 · L3 | drag_fraction | ሁለት ሶስተኛ እንዲሆን በስድስተኛ ቁርጥራጮች እንሙላ።<br><small>Let's make two thirds with sixth pieces.</small> | 4 | `ex.g3_fracline.09.mp3` |
+| 4 · L1 | drag_match_word | እኩል የሆኑትን ክፍልፋዮች እናገናኝ።<br><small>Let's match the fractions that are equal.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_fracline.10.mp3` |
+| 4 · L2 | drag_match_word | እኩል የሆኑትን ክፍልፋዮች እናገናኝ።<br><small>Let's match the fractions that are equal.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_fracline.10.mp3` |
+| 4 · L3 | drag_match_word | እኩል የሆኑትን ክፍልፋዮች እናገናኝ።<br><small>Let's match the fractions that are equal.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g3_fracline.10.mp3` |
+| 5 · L1 | drag_sort | ከግማሽ የሚያንሱትን እና የሚበልጡትን እንለይ።<br><small>Let's sort: less than a half, more than a half.</small> | {"c0":"less","c1":"more","c2":"less","c3":"more"} | `ex.g3_fracline.11.mp3` |
+| 5 · L2 | drag_sort | ከግማሽ የሚያንሱትን እና የሚበልጡትን እንለይ።<br><small>Let's sort: less than a half, more than a half.</small> | {"c0":"less","c1":"more","c2":"more","c3":"less","c4":"more"} | `ex.g3_fracline.11.mp3` |
+| 5 · L3 | drag_sort | ከግማሽ የሚያንሱትን እና የሚበልጡትን እንለይ።<br><small>Let's sort: less than a half, more than a half.</small> | {"c0":"less","c1":"more","c2":"less","c3":"more","c4":"more"} | `ex.g3_fracline.11.mp3` |
+| 6 · L1 | true_false | ልክ ነው ወይስ አይደለም? ሁለት ሩብ ከግማሽ ጋር እኩል ነው።<br><small>True or not? Two quarters are equal to one half.</small> | true | `ex.g3_fracline.12.mp3` |
+| 6 · L2 | true_false | ልክ ነው ወይስ አይደለም? አንድ ሶስተኛ ከአንድ ሩብ ያንሳል።<br><small>True or not? One third is less than one quarter.</small> | false | `ex.g3_fracline.13.mp3` |
+| 6 · L3 | true_false | ልክ ነው ወይስ አይደለም? ሶስት ሩብ ከአንድ ሙሉ ያንሳል።<br><small>True or not? Three quarters are less than one whole.</small> | true | `ex.g3_fracline.14.mp3` |
+
+### 4. Play — race
+
+ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።<br><small>Let's race to Grandma's house! Each right answer moves us forward.</small> · `ex.compare.20.mp3`
+
+```json
+[{"q":"የትኛው ይበልጣል?","options":["1/4","3/4"],"answer":"3/4"},{"q":"የትኛው ይበልጣል?","options":["1/2","1/3"],"answer":"1/2"},{"q":"የትኛው ይበልጣል?","options":["1/4","2/4"],"answer":"2/4"},{"q":"የትኛው ይበልጣል?","options":["1","3/4"],"answer":"1"},{"q":"የትኛው ይበልጣል?","options":["1/3","2/3"],"answer":"2/3"}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_numberline | ግማሽን በሩብ መስመሩ ላይ እናስቀምጥ።<br><small>Let's put one half on the quarters line.</small> | ["2"] | `ex.g3_fracline.15.mp3` |
+| 2 | drag_fraction | ሶስት ሩብ እናስቀምጥ።<br><small>Let's put three quarters.</small> | 3 | `ex.g3_fracline.16.mp3` |
+| 3 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 3/4 | `ex.count10.17.mp3` |
+| 4 | numpad | ስንት ሩቦች አንድ ሙሉ ይሆናሉ?<br><small>How many quarters make one whole?</small> | 4 | `ex.g3_fracline.18.mp3` |
+| 5 | true_false | ልክ ነው ወይስ አይደለም? ሁለት ስድስተኛ ከአንድ ሶስተኛ ጋር እኩል ነው።<br><small>True or not? Two sixths are equal to one third.</small> | true | `ex.g3_fracline.19.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 18 interactions in all.
+
+## Grade 3 · Lesson 11 — ርዝመት፣ ክብደት እና መጠን (Length, mass and liquids)
+
+Place on the map: scales · Mini-game: balloon · Hook video: `video/g3_measure.mp4` (27.4 s) · Manim code: `animations/lessons/g3_measure.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ርዝመት፣ ክብደት እና መጠን | Length, mass and liquids | `lesson.g3_measure.title` |
+| 4.3 s | ዛሬ በገበያ ዕቃዎችን እንለካለን፦ ርዝመትን፣ ክብደትን እና የፈሳሽ መጠንን። | Today at the market we measure things: length, mass and how much liquid. | `lesson.g3_measure.story` |
+| 10.0 s | እርሳሱን ከዜሮ ጀምረን በገዢ እንለካለን፤ ርዝመቱ አስራ ሁለት ሳንቲ ሜትር ነው። | We measure the pencil with a ruler, starting at zero: it is twelve centimetres long. | `lesson.g3_measure.example.0` |
+| 13.6 s | የጤፍ ከረጢቱን በሚዛን እንመዝናለን፤ ክብደቱ ሶስት ኪሎ ግራም ነው። | We weigh the bag of teff on a scale: it is three kilograms. | `lesson.g3_measure.example.1` |
+| 17.2 s | ጀሪካኑ አምስት ሊትር ውሃ ይይዛል። | The jerrycan holds five litres of water. | `lesson.g3_measure.example.2` |
+| 20.9 s | ለርዝመት ሜትር እና ሳንቲ ሜትር፣ ለክብደት ኪሎ ግራም፣ ለፈሳሽ ሊትር እንጠቀማለን። | We use metres and centimetres for length, kilograms for mass and litres for liquids. | `lesson.g3_measure.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 9.9 s | tap_choose | እርሳሱ ስንት ሳንቲ ሜትር ይረዝማል?<br><small>How many centimetres long is the pencil?</small> | 12 | `ex.g3_measure.01.mp3` |
+| 17.2 s | tap_choose | ጀሪካኑ ስንት ሊትር ውሃ ይይዛል?<br><small>How many litres of water does the jerrycan hold?</small> | 5 | `ex.g3_measure.02.mp3` |
+
+Re-teach clip after two misses: 9.9–27.4 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_numberline | እርሳሱን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the pencil: put the flag on the number where it ends.</small> | ["8"] | `ex.g2_measure.05.mp3` |
+| 1 · L2 | drag_numberline | ዱላውን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the stick: put the flag on the number where it ends.</small> | ["11"] | `ex.g2_measure.06.mp3` |
+| 1 · L3 | drag_numberline | ሪባኑን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the ribbon: put the flag on the number where it ends.</small> | ["13"] | `ex.g2_measure.20.mp3` |
+| 2 · L1 | tap_choose | የበሩን ቁመት በምን እንለካለን?<br><small>What do we use to measure how tall a door is?</small> | m | `ex.g3_measure.03.mp3` |
+| 2 · L2 | tap_choose | የውሃ ጠርሙስ በምን ይለካል?<br><small>What do we use to measure a bottle of water?</small> | l | `ex.g3_measure.04.mp3` |
+| 2 · L3 | tap_choose | የእርሳስ ርዝመትን በምን እንለካለን?<br><small>What do we use to measure a pencil's length?</small> | cm | `ex.g3_measure.05.mp3` |
+| 3 · L1 | numpad | ከረጢቱ ስንት ኪሎ ግራም ይመዝናል?<br><small>How many kilograms does the bag weigh?</small> | 4 | `ex.g3_measure.06.mp3` |
+| 3 · L2 | numpad | ከረጢቱ ስንት ኪሎ ግራም ይመዝናል?<br><small>How many kilograms does the bag weigh?</small> | 7 | `ex.g3_measure.06.mp3` |
+| 3 · L3 | numpad | ከረጢቱ ስንት ኪሎ ግራም ይመዝናል?<br><small>How many kilograms does the bag weigh?</small> | 15 | `ex.g3_measure.06.mp3` |
+| 4 · L1 | tap_choose | ስንት ሊትር ውሃ አለ?<br><small>How many litres of water are there?</small> | 2 | `ex.g3_measure.07.mp3` |
+| 4 · L2 | tap_choose | ስንት ሊትር ውሃ አለ?<br><small>How many litres of water are there?</small> | 4 | `ex.g3_measure.07.mp3` |
+| 4 · L3 | tap_choose | ስንት ሊትር ውሃ አለ?<br><small>How many litres of water are there?</small> | 6 | `ex.g3_measure.07.mp3` |
+| 5 · L1 | drag_sort | ከአንድ ሜትር የሚያጥሩትን እና የሚረዝሙትን እንለይ።<br><small>Let's sort: shorter than one metre, longer than one metre.</small> | {"a":"short","b":"long","c":"short","d":"long"} | `ex.g2_measure.14.mp3` |
+| 5 · L2 | drag_sort | ከአንድ ኪሎ ግራም የሚቀሉትን እና የሚከብዱትን እንለይ።<br><small>Let's sort: lighter than one kilogram, heavier than one kilogram.</small> | {"a":"light","b":"heavy","c":"light","d":"heavy","e":"light"} | `ex.g3_measure.08.mp3` |
+| 5 · L3 | drag_sort | ከአንድ ሊትር ያነሰ እና የበለጠ የሚይዙትን እንለይ።<br><small>Let's sort: holds less than one litre, holds more than one litre.</small> | {"a":"less","b":"more","c":"less","d":"more","e":"more"} | `ex.g3_measure.09.mp3` |
+| 6 · L1 | drag_equation | ሁለት ሪባኖች፦ አስራ ሁለት ሳንቲ ሜትር እና ስምንት ሳንቲ ሜትር። በአጠቃላይ ስንት ናቸው?<br><small>Two ribbons: twelve centimetres and eight centimetres. How long are they together?</small> | 20 | `ex.g3_measure.10.mp3` |
+| 6 · L2 | drag_equation | ጀሪካኑ አምስት ሊትር ነበረው፤ ሁለት ሊትር ተጠጣ። ስንት ሊትር ቀረ?<br><small>The jerrycan had five litres; two litres were drunk. How many litres are left?</small> | 3 | `ex.g3_measure.11.mp3` |
+| 6 · L3 | drag_equation | አንድ ሜትር መቶ ሳንቲ ሜትር ነው። ሰላሳ አምስት ሳንቲ ሜትር ቢቆረጥ ስንት ይቀራል?<br><small>One metre is one hundred centimetres. If thirty-five centimetres are cut off, how much is left?</small> | 65 | `ex.g3_measure.12.mp3` |
+
+### 4. Play — balloon
+
+ሁለት ሪባኖችን የሚያሳዩ ፊኛዎችን ፈንድተን የተጠየቀውን ርዝመት እንሥራ።<br><small>Pop two ribbon balloons that add up to the length asked for.</small> · `ex.g2_measure.24.mp3`
+
+```json
+[{"target":20,"balloons":[12,8,15,3,6,11]},{"target":50,"balloons":[25,30,20,15,35,5]},{"target":100,"balloons":[60,45,40,55,25,70]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_numberline | ማንኪያውን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።<br><small>Let's measure the spoon: put the flag on the number where it ends.</small> | ["9"] | `ex.g2_measure.07.mp3` |
+| 2 | drag_equation | አምስት ጠርሙሶች፣ እያንዳንዳቸው ሁለት ሊትር። በአጠቃላይ ስንት ሊትር?<br><small>Five bottles of two litres each. How many litres altogether?</small> | 10 | `ex.g3_measure.13.mp3` |
+| 3 | drag_match_word | እኩል የሆኑትን እናገናኝ።<br><small>Let's match the ones that are equal.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_measure.14.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | a | `ex.count10.17.mp3` |
+| 5 | true_false | ልክ ነው ወይስ አይደለም? ይህ ጀሪካን ሶስት ሊትር ውሃ አለው።<br><small>True or not? This jerrycan has three litres of water.</small> | true | `ex.g3_measure.16.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+
+## Grade 3 · Lesson 12 — ሰዓት በደቂቃ (Time to the minute)
+
+Place on the map: clocktower · Mini-game: memory · Hook video: `video/g3_time.mp4` (28.2 s) · Manim code: `animations/lessons/g3_time.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ሰዓት በደቂቃ | Time to the minute | `lesson.g3_time.title` |
+| 4.1 s | ሰላም በየቀኑ ጠዋት ወደ ትምህርት ቤት ትሄዳለች። ሰዓቱን አብረን እናንብብ። | Selam walks to school every morning. Let us read the clock together. | `lesson.g3_time.story` |
+| 9.8 s | ትንሹ መርፌ ከሰባት ትንሽ አልፏል፤ ሰዓቱ ሰባት ነው። | The short hand is just past seven, so the hour is seven. | `lesson.g3_time.example.0` |
+| 13.4 s | ትልቁ መርፌ አራት ላይ ነው፤ በአምስት በአምስት ስንቆጥር ሃያ ደቂቃ ነው። | The long hand is on the four: counting by fives, that is twenty minutes. | `lesson.g3_time.example.1` |
+| 17.0 s | ሰዓቱ ሰባት ከሃያ ነው፤ በኢትዮጵያ አቆጣጠር ደግሞ ከጠዋቱ አንድ ሰዓት ከሃያ ነው። | The time is seven twenty; in Ethiopian time it is twenty past one in the morning. | `lesson.g3_time.example.2` |
+| 20.7 s | ከአርባ ደቂቃ በኋላ ስምንት ሰዓት ይሆናል፤ ትምህርት ይጀምራል። | Forty minutes later it is eight o'clock, and school begins. | `lesson.g3_time.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.3 s | tap_choose | ትልቁ መርፌ አራት ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the four. How many minutes is that?</small> | 20 | `ex.g3_time.01.mp3` |
+| 20.6 s | tap_choose | ከአርባ ደቂቃ በኋላ ስንት ሰዓት ይሆናል?<br><small>What time will it be forty minutes later?</small> | 8:00 | `ex.g3_time.02.mp3` |
+
+Re-teach clip after two misses: 9.7–28.2 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | clock | ሰዓቱን አራት ከአስራ አምስት እናድርግ።<br><small>Set the clock to four fifteen.</small> | {"h":4,"m":15} | `ex.g3_time.03.mp3` |
+| 1 · L2 | clock | ሰዓቱን ዘጠኝ ከአርባ እናድርግ።<br><small>Set the clock to nine forty.</small> | {"h":9,"m":40} | `ex.g3_time.04.mp3` |
+| 1 · L3 | clock | ሰዓቱን ስድስት ከአርባ ስምንት እናድርግ።<br><small>Set the clock to six forty-eight.</small> | {"h":6,"m":48} | `ex.g3_time.05.mp3` |
+| 2 · L1 | tap_choose | ሰዓቱ ስንት ነው?<br><small>What time is it?</small> | 3:25 | `ex.g2_time.09.mp3` |
+| 2 · L2 | tap_choose | ሰዓቱ ስንት ነው?<br><small>What time is it?</small> | 11:50 | `ex.g2_time.09.mp3` |
+| 2 · L3 | tap_choose | ሰዓቱ ስንት ነው?<br><small>What time is it?</small> | 8:43 | `ex.g2_time.09.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.10.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.10.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.10.mp3` |
+| 4 · L1 | numpad | 8:10 ላይ ጀምሮ 8:40 ላይ አለቀ። ስንት ደቂቃ ፈጀ?<br><small>It started at 8:10 and ended at 8:40. How many minutes did it take?</small> | 30 | `ex.g3_time.06.mp3` |
+| 4 · L2 | numpad | 9:25 ላይ ጀምሮ 10:00 ላይ አለቀ። ስንት ደቂቃ ፈጀ?<br><small>It started at 9:25 and ended at 10:00. How many minutes did it take?</small> | 35 | `ex.g3_time.07.mp3` |
+| 4 · L3 | numpad | 1:45 ላይ ጀምሮ 2:20 ላይ አለቀ። ስንት ደቂቃ ፈጀ?<br><small>It started at 1:45 and ended at 2:20. How many minutes did it take?</small> | 35 | `ex.g3_time.08.mp3` |
+| 5 · L1 | drag_sort | ከ8:00 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 8:00, after 8:00.</small> | {"c0":"before","c1":"after","c2":"before","c3":"after"} | `ex.g3_time.09.mp3` |
+| 5 · L2 | drag_sort | ከ3:30 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 3:30, after 3:30.</small> | {"c0":"before","c1":"after","c2":"before","c3":"after","c4":"before"} | `ex.g3_time.10.mp3` |
+| 5 · L3 | drag_sort | ከ12:00 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 12:00, after 12:00.</small> | {"c0":"before","c1":"after","c2":"before","c3":"after","c4":"before"} | `ex.g2_time.16.mp3` |
+| 6 · L1 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.17.mp3` |
+| 6 · L2 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.17.mp3` |
+| 6 · L3 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_time.17.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ ሰዓቱ እና የሰዓቱ ሥዕል።<br><small>Let's find matching cards: the time and its clock.</small> · `ex.g2_time.20.mp3`
+
+```json
+[{"n":"7:20","am":"ሰባት ከሃያ","visual":{"kind":"clock","h":7,"m":20}},{"n":"3:45","am":"ሶስት ከአርባ አምስት","visual":{"kind":"clock","h":3,"m":45}},{"n":"10:05","am":"አስር ከአምስት","visual":{"kind":"clock","h":10,"m":5}},{"n":"12:30","am":"አስራ ሁለት ተኩል","visual":{"kind":"clock","h":12,"m":30}}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_match_word | እያንዳንዱን ሰዓት ከሰዓቱ ሥዕል ጋር እናገናኝ።<br><small>Let's match each time to its clock.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.10.mp3` |
+| 2 | drag_sort | ከ10:00 በፊት እና በኋላ ያሉትን እንለይ።<br><small>Let's sort: before 10:00, after 10:00.</small> | {"c0":"before","c1":"after","c2":"before","c3":"after"} | `ex.g3_time.11.mp3` |
+| 3 | drag_match_word | እያንዳንዱን ሰዓት ከኢትዮጵያ ሰዓቱ ጋር እናገናኝ።<br><small>Let's match each time to its Ethiopian time.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_time.17.mp3` |
+| 4 | clock | ሰዓቱን አምስት ከሰላሳ አምስት እናድርግ።<br><small>Set the clock to five thirty-five.</small> | {"h":5,"m":35} | `ex.g3_time.12.mp3` |
+| 5 | true_false | ልክ ነው ወይስ አይደለም? ሰዓቱ ዘጠኝ ከአስራ አምስት ነው።<br><small>True or not? The time is nine fifteen.</small> | true | `ex.g3_time.13.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
+
+## Grade 3 · Lesson 13 — ቅርጾች (Shapes)
+
+Place on the map: house · Mini-game: memory · Hook video: `video/g3_shapes.mp4` (28.4 s) · Manim code: `animations/lessons/g3_shapes.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ቅርጾች | Shapes | `lesson.g3_shapes.title` |
+| 4.3 s | በመስኮት፣ በበር እና በጣሪያ ላይ ብዙ ቅርጾች አሉ። ጎኖቻቸውን እና ማዕዘኖቻቸውን እንቁጠር። | Windows, doors and roofs have many shapes. Let us count their sides and corners. | `lesson.g3_shapes.story` |
+| 10.0 s | ሶስት ማዕዘን ሶስት ጎኖች እና ሶስት ማዕዘኖች አሉት። | A triangle has three sides and three corners. | `lesson.g3_shapes.example.0` |
+| 13.6 s | አራት ማዕዘን አራት ጎኖች አሉት፤ ተቃራኒ ጎኖቹ እኩል ናቸው። | A rectangle has four sides, and its opposite sides are equal. | `lesson.g3_shapes.example.1` |
+| 17.2 s | ካሬ አራት እኩል ጎኖች እና አራት ቀጥ ያሉ ማዕዘኖች አሉት። | A square has four equal sides and four square corners. | `lesson.g3_shapes.example.2` |
+| 20.9 s | አራት ጎኖች ያሉት ቅርጽ ሁሉ ባለ አራት ጎን ይባላል። | Every shape with four sides is called a quadrilateral. | `lesson.g3_shapes.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 9.9 s | tap_choose | ሶስት ማዕዘን ስንት ጎኖች አሉት?<br><small>How many sides does a triangle have?</small> | 3 | `ex.g2_shapes.01.mp3` |
+| 17.2 s | tap_choose | ካሬ ስንት እኩል ጎኖች አሉት?<br><small>How many equal sides does a square have?</small> | 4 | `ex.g3_shapes.01.mp3` |
+
+Re-teach clip after two misses: 9.9–28.4 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_sort | ሶስት ማዕዘኖችን እና ባለ አራት ጎኖችን እንለይ።<br><small>Let's sort: triangles, four-sided shapes.</small> | {"c0":"three","c1":"four","c2":"three","c3":"four"} | `ex.g3_shapes.02.mp3` |
+| 1 · L2 | drag_sort | ሶስት ማዕዘኖችን እና ባለ አራት ጎኖችን እንለይ።<br><small>Let's sort: triangles, four-sided shapes.</small> | {"c0":"four","c1":"three","c2":"four","c3":"three","c4":"four"} | `ex.g3_shapes.02.mp3` |
+| 1 · L3 | drag_sort | ባለ አራት ጎኖችን እና ያልሆኑትን እንለይ።<br><small>Let's sort: quadrilaterals, not quadrilaterals.</small> | {"c0":"other","c1":"four","c2":"four","c3":"other","c4":"four"} | `ex.g3_shapes.03.mp3` |
+| 2 · L1 | tap_choose | ካሬው የትኛው ነው?<br><small>Which one is the square?</small> | square | `ex.g3_shapes.04.mp3` |
+| 2 · L2 | tap_choose | አራት ማዕዘኑ የትኛው ነው?<br><small>Which one is the rectangle?</small> | rectangle | `ex.g3_shapes.05.mp3` |
+| 2 · L3 | tap_choose | አምስት ጎኖች ያሉት የትኛው ነው?<br><small>Which one has five sides?</small> | pentagon | `ex.g3_shapes.06.mp3` |
+| 3 · L1 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_shapes.09.mp3` |
+| 3 · L2 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_shapes.09.mp3` |
+| 3 · L3 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1","w2":"t2"} | `ex.g2_shapes.09.mp3` |
+| 4 · L1 | numpad | ስንት ጎኖች አሉት?<br><small>How many sides does it have?</small> | 5 | `ex.g2_shapes.10.mp3` |
+| 4 · L2 | numpad | ስንት ጎኖች አሉት?<br><small>How many sides does it have?</small> | 6 | `ex.g2_shapes.10.mp3` |
+| 4 · L3 | numpad | አንድ ሶስት ማዕዘን እና አንድ ካሬ በአጠቃላይ ስንት ማዕዘኖች አሏቸው?<br><small>How many corners do a triangle and a square have altogether?</small> | 7 | `ex.g3_shapes.07.mp3` |
+| 5 · L1 | true_false | ልክ ነው ወይስ አይደለም? ካሬ አራት ማዕዘንም ነው።<br><small>True or not? A square is also a rectangle.</small> | true | `ex.g3_shapes.08.mp3` |
+| 5 · L2 | true_false | ልክ ነው ወይስ አይደለም? ይህ ቅርጽ አራት ጎኖች አሉት።<br><small>True or not? This shape has four sides.</small> | false | `ex.g3_shapes.09.mp3` |
+| 5 · L3 | true_false | ልክ ነው ወይስ አይደለም? ክብ ማዕዘን የለውም።<br><small>True or not? A circle has no corners.</small> | true | `ex.g3_shapes.10.mp3` |
+| 6 · L1 | drag_sort | ቀጥ ያሉ ማዕዘኖች ያሏቸውን እና የሌሏቸውን እንለይ።<br><small>Let's sort: has square corners, has no square corners.</small> | {"c0":"yes","c1":"no","c2":"yes","c3":"no"} | `ex.g3_shapes.11.mp3` |
+| 6 · L2 | drag_sort | በጎኖቻቸው ብዛት እንለይ።<br><small>Let's sort by the number of sides.</small> | {"c0":"3","c1":"4","c2":"5","c3":"4","c4":"3"} | `ex.g2_shapes.05.mp3` |
+| 6 · L3 | drag_sort | በጎኖቻቸው ብዛት እንለይ።<br><small>Let's sort by the number of sides.</small> | {"c0":"4","c1":"5","c2":"6","c3":"4","c4":"5"} | `ex.g2_shapes.05.mp3` |
+
+### 4. Play — memory
+
+የሚመሳሰሉትን ካርዶች እንፈልግ፤ የጎኖች ብዛት እና ቅርጹ።<br><small>Let's find matching cards: the number of sides and the shape.</small> · `ex.g2_shapes.23.mp3`
+
+```json
+[{"n":3,"am":"ሶስት ማዕዘን","visual":{"kind":"shape","shape":"triangle"}},{"n":4,"am":"አራት ማዕዘን","visual":{"kind":"shape","shape":"rectangle"}},{"n":5,"am":"ባለ አምስት ጎን","visual":{"kind":"shape","shape":"pentagon"}},{"n":6,"am":"ባለ ስድስት ጎን","visual":{"kind":"shape","shape":"hexagon"}}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_sort | ባለ አራት ጎኖችን እና ያልሆኑትን እንለይ።<br><small>Let's sort: quadrilaterals, not quadrilaterals.</small> | {"c0":"four","c1":"other","c2":"other","c3":"four"} | `ex.g3_shapes.03.mp3` |
+| 2 | drag_match_word | እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።<br><small>Let's match each name to its shape.</small> | {"w0":"t0","w1":"t1"} | `ex.g2_shapes.09.mp3` |
+| 3 | drag_sort | በጎኖቻቸው ብዛት እንለይ።<br><small>Let's sort by the number of sides.</small> | {"c0":"6","c1":"4","c2":"3","c3":"4"} | `ex.g2_shapes.05.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | a | `ex.count10.17.mp3` |
+| 5 | numpad | ሁለት ሶስት ማዕዘኖች በአጠቃላይ ስንት ጎኖች አሏቸው?<br><small>How many sides do two triangles have altogether?</small> | 6 | `ex.g3_shapes.13.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 17 interactions in all.
+
+## Grade 3 · Lesson 14 — ስፋት እና ዙሪያ (Area and perimeter)
+
+Place on the map: floor · Mini-game: race · Hook video: `video/g3_area.mp4` (28.2 s) · Manim code: `animations/lessons/g3_area.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ስፋት እና ዙሪያ | Area and perimeter | `lesson.g3_area.title` |
+| 4.1 s | አባቴ የወጥ ቤቱን ወለል በካሬ ሰቆች ሊሸፍን ነው። ስንት ሰቆች ያስፈልጉታል? | Father is covering the kitchen floor with square tiles. How many tiles does he need? | `lesson.g3_area.story` |
+| 9.8 s | ወለሉ ሶስት ረድፎች አሉት፤ በእያንዳንዱ ረድፍ አራት ሰቆች አሉ። | The floor has three rows with four tiles in each row. | `lesson.g3_area.example.0` |
+| 13.4 s | ሶስት ጊዜ አራት አስራ ሁለት ነው፤ ስፋቱ አስራ ሁለት ካሬ አሃዶች ነው። | Three times four is twelve, so the area is twelve square units. | `lesson.g3_area.example.1` |
+| 17.0 s | ዙሪያውን ለማግኘት ጎኖቹን እንደምራለን፦ አራት፣ ሶስት፣ አራት እና ሶስት። | To find the perimeter we add the sides: four, three, four and three. | `lesson.g3_area.example.2` |
+| 20.7 s | ዙሪያው አስራ አራት አሃዶች ነው። | The perimeter is fourteen units. | `lesson.g3_area.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.3 s | tap_choose | ስንት ሰቆች ናቸው?<br><small>How many tiles are there?</small> | 12 | `ex.g3_area.01.mp3` |
+| 20.6 s | tap_choose | ዙሪያው ስንት ነው?<br><small>What is the perimeter?</small> | 14 | `ex.g3_area.02.mp3` |
+
+Re-teach clip after two misses: 9.7–28.2 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሁለት ረድፎች፣ በእያንዳንዱ ሶስት።<br><small>Let's cover the floor with square tiles: 2 rows of 3.</small> | [6] | `ex.g2_shapes.18.mp3` |
+| 1 · L2 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሁለት ረድፎች፣ በእያንዳንዱ አራት።<br><small>Let's cover the floor with square tiles: 2 rows of 4.</small> | [8] | `ex.g2_shapes.20.mp3` |
+| 1 · L3 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሶስት ረድፎች፣ በእያንዳንዱ አራት።<br><small>Let's cover the floor with square tiles: 3 rows of 4.</small> | [12] | `ex.g3_area.03.mp3` |
+| 2 · L1 | numpad | ስፋቱ ስንት ካሬ አሃድ ነው?<br><small>What is the area in square units?</small> | 10 | `ex.g3_area.04.mp3` |
+| 2 · L2 | numpad | ስፋቱ ስንት ካሬ አሃድ ነው?<br><small>What is the area in square units?</small> | 16 | `ex.g3_area.04.mp3` |
+| 2 · L3 | numpad | ስፋቱ ስንት ካሬ አሃድ ነው?<br><small>What is the area in square units?</small> | 18 | `ex.g3_area.04.mp3` |
+| 3 · L1 | tap_choose | ዙሪያው ስንት ነው?<br><small>What is the perimeter?</small> | 10 | `ex.g3_area.02.mp3` |
+| 3 · L2 | tap_choose | ዙሪያው ስንት ነው?<br><small>What is the perimeter?</small> | 16 | `ex.g3_area.02.mp3` |
+| 3 · L3 | tap_choose | ዙሪያው ስንት ነው?<br><small>What is the perimeter?</small> | 20 | `ex.g3_area.02.mp3` |
+| 4 · L1 | drag_equation | አምስት በሶስት የሆነ አራት ማዕዘን ስፋቱ ስንት ነው?<br><small>What is the area of a five by three rectangle?</small> | 15 | `ex.g3_area.05.mp3` |
+| 4 · L2 | drag_equation | አራት በሁለት የሆነ አራት ማዕዘን ዙሪያው ስንት ነው?<br><small>What is the perimeter of a four by two rectangle?</small> | 12 | `ex.g3_area.06.mp3` |
+| 4 · L3 | drag_equation | ስፋቱ ሃያ ስምንት፣ ርዝመቱ ሰባት ነው። ወርዱ ስንት ነው?<br><small>The area is twenty-eight and the length is seven. How wide is it?</small> | 4 | `ex.g3_area.07.mp3` |
+| 5 · L1 | drag_sort | ስፋታቸው አስራ ሁለት የሆኑትን እንለይ።<br><small>Let's sort: area twelve, not twelve.</small> | {"c0":"yes","c1":"yes","c2":"no","c3":"no"} | `ex.g3_area.08.mp3` |
+| 5 · L2 | drag_sort | ዙሪያቸው አስራ ሁለት የሆኑትን እንለይ።<br><small>Let's sort: perimeter twelve, not twelve.</small> | {"c0":"yes","c1":"yes","c2":"no","c3":"no","c4":"yes"} | `ex.g3_area.09.mp3` |
+| 5 · L3 | drag_sort | ስፋታቸው ሃያ አራት የሆኑትን እንለይ።<br><small>Let's sort: area twenty-four, not twenty-four.</small> | {"c0":"yes","c1":"yes","c2":"no","c3":"no","c4":"yes"} | `ex.g3_area.10.mp3` |
+| 6 · L1 | true_false | ልክ ነው ወይስ አይደለም? ስፋቱ ስምንት ካሬ አሃድ ነው።<br><small>True or not? The area is eight square units.</small> | true | `ex.g3_area.11.mp3` |
+| 6 · L2 | true_false | ልክ ነው ወይስ አይደለም? ዙሪያው ስምንት ነው።<br><small>True or not? The perimeter is eight.</small> | true | `ex.g3_area.12.mp3` |
+| 6 · L3 | true_false | ልክ ነው ወይስ አይደለም? የዚህ ካሬ ስፋት እና ዙሪያ እኩል ቁጥሮች ናቸው።<br><small>True or not? The area and the perimeter of this square are the same number.</small> | true | `ex.g3_area.13.mp3` |
+
+### 4. Play — race
+
+ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።<br><small>Let's race to Grandma's house! Each right answer moves us forward.</small> · `ex.compare.20.mp3`
+
+```json
+[{"q":"ስፋት፦ ሶስት በአምስት?","options":[15,8],"answer":15},{"q":"ስፋት፦ አራት በአራት?","options":[16,8],"answer":16},{"q":"ዙሪያ፦ ሁለት በሁለት?","options":[8,4],"answer":8},{"q":"ስፋት፦ ስድስት በሁለት?","options":[12,8],"answer":12},{"q":"ዙሪያ፦ አምስት በአንድ?","options":[12,5],"answer":12}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | ወለሉን በካሬ ሰቆች እንሸፍን፤ ሶስት ረድፎች፣ በእያንዳንዱ ሶስት።<br><small>Let's cover the floor with square tiles: 3 rows of 3.</small> | [9] | `ex.g2_shapes.19.mp3` |
+| 2 | drag_equation | ስድስት በሶስት የሆነ አራት ማዕዘን ዙሪያው ስንት ነው?<br><small>What is the perimeter of a six by three rectangle?</small> | 18 | `ex.g3_area.14.mp3` |
+| 3 | drag_match_word | እያንዳንዱን ስፋት ከአራት ማዕዘኑ ጋር እናገናኝ።<br><small>Let's match each area to its rectangle.</small> | {"w0":"t0","w1":"t1"} | `ex.g3_area.15.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | a | `ex.count10.17.mp3` |
+| 5 | numpad | ዙሪያው ስንት ነው?<br><small>What is the perimeter?</small> | 20 | `ex.g3_area.02.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 18 interactions in all.
+
+## Grade 3 · Lesson 15 — ግራፎች እና የቃላት ጥያቄዎች (Graphs and word problems)
+
+Place on the map: chart · Mini-game: market · Hook video: `video/g3_graphs.mp4` (28.6 s) · Manim code: `animations/lessons/g3_graphs.py`
+
+### 1. Hook video script
+
+| Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
+|---|---|---|---|
+| 0.0 s | ግራፎች እና የቃላት ጥያቄዎች | Graphs and word problems | `lesson.g3_graphs.title` |
+| 4.1 s | የክፍላችን ልጆች የሚወዱትን ፍራፍሬ ተጠየቁ። መልሶቹን በግራፍ እናሳይ። | The children in our class were asked which fruit they like best. Let us show the answers on a graph. | `lesson.g3_graphs.story` |
+| 9.8 s | ሰባት ልጆች ሙዝ፣ አምስት ልጆች ማንጎ፣ ሶስት ልጆች ብርቱካን ወደዱ። | Seven children liked bananas, five liked mangoes and three liked oranges. | `lesson.g3_graphs.example.0` |
+| 13.8 s | ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን፤ ረጅሙ አምድ የሙዝ ነው። | We colour one box for each child; the tallest bar is bananas. | `lesson.g3_graphs.example.1` |
+| 17.4 s | ሙዝ ከማንጎ በሁለት ይበልጣል። | Bananas have two more than mangoes. | `lesson.g3_graphs.example.2` |
+| 21.1 s | በአጠቃላይ ሰባት፣ አምስት እና ሶስት አስራ አምስት ልጆች ናቸው። | Altogether seven, five and three make fifteen children. | `lesson.g3_graphs.example.3` |
+
+### 2. Watch & tap — video checkpoints
+
+| Pauses at | Type | Question | Answer | Audio |
+|---|---|---|---|---|
+| 13.8 s | tap_choose | ረጅሙ አምድ የትኛው ነው?<br><small>Which bar is the tallest?</small> | banana | `ex.g3_graphs.01.mp3` |
+| 21.0 s | tap_choose | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children are there altogether?</small> | 15 | `ex.g2_graphs.04.mp3` |
+
+Re-teach clip after two misses: 9.7–28.6 s
+
+### 3. Guided practice (three levels per slot)
+
+| Slot · level | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 · L1 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ ሶስት፣ ማንጎ ሁለት።<br><small>Let's build the graph: bananas 3, mangoes 2.</small> | [3,2] | `ex.g3_graphs.02.mp3` |
+| 1 · L2 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ አራት፣ ማንጎ ሁለት፣ ብርቱካን ሶስት።<br><small>Let's build the graph: bananas 4, mangoes 2, oranges 3.</small> | [4,2,3] | `ex.g2_graphs.07.mp3` |
+| 1 · L3 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ አምስት፣ ማንጎ ሶስት፣ ብርቱካን አራት።<br><small>Let's build the graph: bananas 5, mangoes 3, oranges 4.</small> | [5,3,4] | `ex.g3_graphs.03.mp3` |
+| 2 · L1 | tap_choose | ስንት ልጆች ማንጎ ወደዱ?<br><small>How many children liked mangoes?</small> | 5 | `ex.g3_graphs.04.mp3` |
+| 2 · L2 | tap_choose | ሙዝ ከብርቱካን በስንት ይበልጣል?<br><small>How many more liked bananas than oranges?</small> | 4 | `ex.g3_graphs.05.mp3` |
+| 2 · L3 | tap_choose | የትኞቹ ሁለት ፍራፍሬዎች በአንድ ላይ አስር ልጆች ናቸው?<br><small>Which two fruits together make ten children?</small> | mo | `ex.g3_graphs.06.mp3` |
+| 3 · L1 | numpad | ሰላም አስር ብር ነበራት። ሶስት ብር እስክሪብቶ እና ሁለት ብር ከረሜላ ገዛች። ስንት ብር ቀራት?<br><small>Selam had ten birr. She bought a pen for three birr and a sweet for two birr. How much is left?</small> | 5 | `ex.g3_graphs.07.mp3` |
+| 3 · L2 | numpad | አራት ሳጥኖች፣ በእያንዳንዱ ስድስት እንቁላሎች። አምስቱ ተሰበሩ። ስንት ደህና እንቁላሎች ቀሩ?<br><small>Four boxes with six eggs in each. Five broke. How many good eggs are left?</small> | 19 | `ex.g3_graphs.08.mp3` |
+| 3 · L3 | numpad | ሶስት ጓደኞች እያንዳንዳቸው ስምንት ማንጎዎች አሏቸው። ሁሉንም በአራት ቅርጫቶች በእኩል አካፈሉ። በአንዱ ቅርጫት ስንት አሉ?<br><small>Three friends have eight mangoes each. They share them all equally into four baskets. How many are in each basket?</small> | 6 | `ex.g3_graphs.09.mp3` |
+| 4 · L1 | drag_equation | ሙዝ ከማንጎ በስንት ይበልጣል? ሰባት ሲቀነስ አምስት።<br><small>How many more liked bananas than mangoes? Seven minus five.</small> | 2 | `ex.g3_graphs.10.mp3` |
+| 4 · L2 | drag_equation | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children altogether?</small> | 12 | `ex.g2_graphs.04.mp3` |
+| 4 · L3 | drag_equation | ሶስት ሳጥኖች በአራት በአራት እና ሁለት ብቻቸውን። ስንት ናቸው?<br><small>Three boxes of four and two more on their own. How many?</small> | 14 | `ex.g3_graphs.11.mp3` |
+| 5 · L1 | true_false | ልክ ነው ወይስ አይደለም? ቡና የወደዱት ከሻይ በሁለት ይበልጣሉ።<br><small>True or not? Two more children liked coffee than tea.</small> | true | `ex.g3_graphs.12.mp3` |
+| 5 · L2 | true_false | ልክ ነው ወይስ አይደለም? እያንዳንዱ ስኒ ሁለት ልጆች ነው። ቡና የወደዱት ስድስት ናቸው።<br><small>True or not? Each cup stands for two children. Six children liked coffee.</small> | true | `ex.g3_graphs.13.mp3` |
+| 5 · L3 | true_false | ልክ ነው ወይስ አይደለም? በዚህ የነጥብ ግራፍ ላይ ሁለት ልጆች ሶስት ወንድሞች እና እህቶች አሏቸው።<br><small>True or not? On this line plot, two children have three brothers and sisters.</small> | true | `ex.g3_graphs.14.mp3` |
+| 6 · L1 | drag_make_change | ዳቦው እና ሙዙ አስራ አምስት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The bread and bananas costs 15 birr. Let's pay exactly 15 birr.</small> | 15 | `ex.g3_graphs.15.mp3` |
+| 6 · L2 | drag_make_change | እስክሪብቶው እና ደብተሩ ሰላሳ ሰባት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The pen and exercise book costs 37 birr. Let's pay exactly 37 birr.</small> | 37 | `ex.g3_graphs.16.mp3` |
+| 6 · L3 | drag_make_change | ጫማው እና ካልሲው ስልሳ አራት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The shoes and socks costs 64 birr. Let's pay exactly 64 birr.</small> | 64 | `ex.g3_graphs.17.mp3` |
+
+### 4. Play — market
+
+ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።<br><small>Let's go to the market! Buy things that use up exactly all our birr.</small> · `ex.g2_birr.19.mp3`
+
+```json
+[{"budget":30,"goods":[{"pic":"bread","am":"ዳቦ","en":"Bread","price":12},{"pic":"banana","am":"ሙዝ","en":"Bananas","price":18},{"pic":"egg","am":"እንቁላል","en":"Eggs","price":25}]},{"budget":50,"goods":[{"pic":"pen","am":"እስክሪብቶ","en":"Pen","price":15},{"pic":"book","am":"ደብተር","en":"Exercise book","price":20},{"pic":"banana","am":"ሙዝ","en":"Bananas","price":15}]},{"budget":100,"goods":[{"pic":"shoes","am":"ጫማ","en":"Shoes","price":65},{"pic":"bag","am":"ቦርሳ","en":"Bag","price":80},{"pic":"book","am":"ደብተር","en":"Exercise book","price":35}]}]
+```
+
+### 5. Challenge
+
+| # | Type | Prompt | Answer | Audio |
+|---|---|---|---|---|
+| 1 | drag_drop_count | ግራፉን እንሥራ፦ ሙዝ ስድስት፣ ማንጎ ሶስት።<br><small>Let's build the graph: bananas 6, mangoes 3.</small> | [6,3] | `ex.g3_graphs.18.mp3` |
+| 2 | drag_equation | አስር ብርቱካኖች ነበሩ፤ ሶስቱ ተበሉ፣ አራቱ ተሰጡ። ስንት ቀሩ?<br><small>There were ten oranges; three were eaten and four were given away. How many are left?</small> | 3 | `ex.g3_graphs.19.mp3` |
+| 3 | drag_make_change | ሙዙ እና እንቁላሉ ሃያ ስምንት ብር ነው። ትክክለኛውን ብር እንክፈል።<br><small>The bananas and eggs costs 28 birr. Let's pay exactly 28 birr.</small> | 28 | `ex.g3_graphs.20.mp3` |
+| 4 | listen_choose | እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።<br><small>Let's listen, then tap the number we hear.</small> | 15 | `ex.count10.17.mp3` |
+| 5 | tap_choose | በዚህ የነጥብ ግራፍ ላይ ብዙ ልጆች ስንት ወንድሞች እና እህቶች አሏቸው?<br><small>On this line plot, how many brothers and sisters do most children have?</small> | 2 | `ex.g3_graphs.21.mp3` |
+
+**Counts:** 6 drag-and-drop · 4 other exercise types · 16 interactions in all.
+

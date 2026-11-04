@@ -1,0 +1,1405 @@
+{
+  "id": "g3_shapes",
+  "grade": 3,
+  "n": 13,
+  "title": {
+    "am": "ቅርጾች",
+    "en": "Shapes",
+    "audio_url": "audio/am/lesson.g3_shapes.title.mp3"
+  },
+  "place": "house",
+  "video": {
+    "src": "video/g3_shapes.mp4",
+    "src_low": "video/low/g3_shapes.mp4",
+    "poster": "video/g3_shapes.jpg",
+    "captions": {
+      "am": "video/g3_shapes.am.vtt",
+      "en": "video/g3_shapes.en.vtt"
+    },
+    "duration": 28.4,
+    "checkpoints": [
+      {
+        "t": 9.92,
+        "at": "step:0",
+        "exercise": {
+          "id": "g3_shapes.01",
+          "type": "tap_choose",
+          "prompt_am": "ሶስት ማዕዘን ስንት ጎኖች አሉት?",
+          "prompt_en": "How many sides does a triangle have?",
+          "audio_url": "audio/am/ex.g2_shapes.01.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            }
+          ],
+          "answer": 3,
+          "visual": {
+            "kind": "shape",
+            "shape": "triangle"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 17.18,
+        "at": "step:2",
+        "exercise": {
+          "id": "g3_shapes.02",
+          "type": "tap_choose",
+          "prompt_am": "ካሬ ስንት እኩል ጎኖች አሉት?",
+          "prompt_en": "How many equal sides does a square have?",
+          "audio_url": "audio/am/ex.g3_shapes.01.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "shape",
+            "shape": "square"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 9.92,
+      "end": 28.4,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_shapes.03",
+          "type": "drag_sort",
+          "prompt_am": "ሶስት ማዕዘኖችን እና ባለ አራት ጎኖችን እንለይ።",
+          "prompt_en": "Let's sort: triangles, four-sided shapes.",
+          "audio_url": "audio/am/ex.g3_shapes.02.mp3",
+          "targets": [
+            {
+              "id": "three",
+              "am": "ሶስት ማዕዘን",
+              "en": "Triangle"
+            },
+            {
+              "id": "four",
+              "am": "ባለ አራት ጎን",
+              "en": "Four sides"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "triangle"
+              }
+            },
+            {
+              "id": "c1",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "square"
+              }
+            },
+            {
+              "id": "c2",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "right-triangle"
+              }
+            },
+            {
+              "id": "c3",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "rectangle"
+              }
+            }
+          ],
+          "answer": {
+            "c0": "three",
+            "c1": "four",
+            "c2": "three",
+            "c3": "four"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_shapes.04",
+          "type": "drag_sort",
+          "prompt_am": "ሶስት ማዕዘኖችን እና ባለ አራት ጎኖችን እንለይ።",
+          "prompt_en": "Let's sort: triangles, four-sided shapes.",
+          "audio_url": "audio/am/ex.g3_shapes.02.mp3",
+          "targets": [
+            {
+              "id": "three",
+              "am": "ሶስት ማዕዘን",
+              "en": "Triangle"
+            },
+            {
+              "id": "four",
+              "am": "ባለ አራት ጎን",
+              "en": "Four sides"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "rhombus"
+              }
+            },
+            {
+              "id": "c1",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "triangle"
+              }
+            },
+            {
+              "id": "c2",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "trapezoid"
+              }
+            },
+            {
+              "id": "c3",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "right-triangle"
+              }
+            },
+            {
+              "id": "c4",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "square"
+              }
+            }
+          ],
+          "answer": {
+            "c0": "four",
+            "c1": "three",
+            "c2": "four",
+            "c3": "three",
+            "c4": "four"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_shapes.05",
+          "type": "drag_sort",
+          "prompt_am": "ባለ አራት ጎኖችን እና ያልሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: quadrilaterals, not quadrilaterals.",
+          "audio_url": "audio/am/ex.g3_shapes.03.mp3",
+          "targets": [
+            {
+              "id": "four",
+              "am": "ባለ አራት ጎን",
+              "en": "Quadrilateral"
+            },
+            {
+              "id": "other",
+              "am": "አይደለም",
+              "en": "Not one"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "pentagon"
+              }
+            },
+            {
+              "id": "c1",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "kite"
+              }
+            },
+            {
+              "id": "c2",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "parallelogram"
+              }
+            },
+            {
+              "id": "c3",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "hexagon"
+              }
+            },
+            {
+              "id": "c4",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "trapezoid"
+              }
+            }
+          ],
+          "answer": {
+            "c0": "other",
+            "c1": "four",
+            "c2": "four",
+            "c3": "other",
+            "c4": "four"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_shapes.06",
+          "type": "tap_choose",
+          "prompt_am": "ካሬው የትኛው ነው?",
+          "prompt_en": "Which one is the square?",
+          "audio_url": "audio/am/ex.g3_shapes.04.mp3",
+          "options": [
+            {
+              "v": "rectangle",
+              "visual": {
+                "kind": "shape",
+                "shape": "rectangle"
+              }
+            },
+            {
+              "v": "square",
+              "visual": {
+                "kind": "shape",
+                "shape": "square"
+              }
+            },
+            {
+              "v": "triangle",
+              "visual": {
+                "kind": "shape",
+                "shape": "triangle"
+              }
+            }
+          ],
+          "answer": "square",
+          "visual": null,
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_shapes.07",
+          "type": "tap_choose",
+          "prompt_am": "አራት ማዕዘኑ የትኛው ነው?",
+          "prompt_en": "Which one is the rectangle?",
+          "audio_url": "audio/am/ex.g3_shapes.05.mp3",
+          "options": [
+            {
+              "v": "rhombus",
+              "visual": {
+                "kind": "shape",
+                "shape": "rhombus"
+              }
+            },
+            {
+              "v": "trapezoid",
+              "visual": {
+                "kind": "shape",
+                "shape": "trapezoid"
+              }
+            },
+            {
+              "v": "rectangle",
+              "visual": {
+                "kind": "shape",
+                "shape": "rectangle"
+              }
+            }
+          ],
+          "answer": "rectangle",
+          "visual": null,
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_shapes.08",
+          "type": "tap_choose",
+          "prompt_am": "አምስት ጎኖች ያሉት የትኛው ነው?",
+          "prompt_en": "Which one has five sides?",
+          "audio_url": "audio/am/ex.g3_shapes.06.mp3",
+          "options": [
+            {
+              "v": "hexagon",
+              "visual": {
+                "kind": "shape",
+                "shape": "hexagon"
+              }
+            },
+            {
+              "v": "pentagon",
+              "visual": {
+                "kind": "shape",
+                "shape": "pentagon"
+              }
+            },
+            {
+              "v": "kite",
+              "visual": {
+                "kind": "shape",
+                "shape": "kite"
+              }
+            }
+          ],
+          "answer": "pentagon",
+          "visual": null,
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_shapes.09",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each name to its shape.",
+          "audio_url": "audio/am/ex.g2_shapes.09.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "ሶስት ማዕዘን",
+              "lang": "am"
+            },
+            {
+              "id": "w1",
+              "label": "ካሬ",
+              "lang": "am"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "shape",
+                "shape": "square"
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "shape",
+                "shape": "triangle"
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_shapes.10",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each name to its shape.",
+          "audio_url": "audio/am/ex.g2_shapes.09.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "ሶስት ማዕዘን",
+              "lang": "am"
+            },
+            {
+              "id": "w1",
+              "label": "ካሬ",
+              "lang": "am"
+            },
+            {
+              "id": "w2",
+              "label": "አራት ማዕዘን",
+              "lang": "am"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "shape",
+                "shape": "square"
+              }
+            },
+            {
+              "id": "t2",
+              "visual": {
+                "kind": "shape",
+                "shape": "rectangle"
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "shape",
+                "shape": "triangle"
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_shapes.11",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each name to its shape.",
+          "audio_url": "audio/am/ex.g2_shapes.09.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "ባለ አምስት ጎን",
+              "lang": "am"
+            },
+            {
+              "id": "w1",
+              "label": "ባለ ስድስት ጎን",
+              "lang": "am"
+            },
+            {
+              "id": "w2",
+              "label": "ክብ",
+              "lang": "am"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "visual": {
+                "kind": "shape",
+                "shape": "hexagon"
+              }
+            },
+            {
+              "id": "t2",
+              "visual": {
+                "kind": "shape",
+                "shape": "circle"
+              }
+            },
+            {
+              "id": "t0",
+              "visual": {
+                "kind": "shape",
+                "shape": "pentagon"
+              }
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_shapes.12",
+          "type": "numpad",
+          "prompt_am": "ስንት ጎኖች አሉት?",
+          "prompt_en": "How many sides does it have?",
+          "audio_url": "audio/am/ex.g2_shapes.10.mp3",
+          "answer": 5,
+          "visual": {
+            "kind": "shape",
+            "shape": "pentagon"
+          },
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_shapes.13",
+          "type": "numpad",
+          "prompt_am": "ስንት ጎኖች አሉት?",
+          "prompt_en": "How many sides does it have?",
+          "audio_url": "audio/am/ex.g2_shapes.10.mp3",
+          "answer": 6,
+          "visual": {
+            "kind": "shape",
+            "shape": "hexagon"
+          },
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_shapes.14",
+          "type": "numpad",
+          "prompt_am": "አንድ ሶስት ማዕዘን እና አንድ ካሬ በአጠቃላይ ስንት ማዕዘኖች አሏቸው?",
+          "prompt_en": "How many corners do a triangle and a square have altogether?",
+          "audio_url": "audio/am/ex.g3_shapes.07.mp3",
+          "answer": 7,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_shapes.15",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ካሬ አራት ማዕዘንም ነው።",
+          "prompt_en": "True or not? A square is also a rectangle.",
+          "audio_url": "audio/am/ex.g3_shapes.08.mp3",
+          "statement_am": "ካሬ አራት ማዕዘንም ነው።",
+          "statement_en": "A square is also a rectangle.",
+          "visual": {
+            "kind": "shape",
+            "shape": "square"
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_shapes.16",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ይህ ቅርጽ አራት ጎኖች አሉት።",
+          "prompt_en": "True or not? This shape has four sides.",
+          "audio_url": "audio/am/ex.g3_shapes.09.mp3",
+          "statement_am": "ይህ ቅርጽ አራት ጎኖች አሉት።",
+          "statement_en": "This shape has four sides.",
+          "visual": {
+            "kind": "shape",
+            "shape": "pentagon"
+          },
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_shapes.17",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ክብ ማዕዘን የለውም።",
+          "prompt_en": "True or not? A circle has no corners.",
+          "audio_url": "audio/am/ex.g3_shapes.10.mp3",
+          "statement_am": "ክብ ማዕዘን የለውም።",
+          "statement_en": "A circle has no corners.",
+          "visual": {
+            "kind": "shape",
+            "shape": "circle"
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_shapes.18",
+          "type": "drag_sort",
+          "prompt_am": "ቀጥ ያሉ ማዕዘኖች ያሏቸውን እና የሌሏቸውን እንለይ።",
+          "prompt_en": "Let's sort: has square corners, has no square corners.",
+          "audio_url": "audio/am/ex.g3_shapes.11.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "ቀጥ ያሉ ማዕዘኖች",
+              "en": "Square corners"
+            },
+            {
+              "id": "no",
+              "am": "የሉትም",
+              "en": "No square corners"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "square"
+              }
+            },
+            {
+              "id": "c1",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "triangle"
+              }
+            },
+            {
+              "id": "c2",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "rectangle"
+              }
+            },
+            {
+              "id": "c3",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "rhombus"
+              }
+            }
+          ],
+          "answer": {
+            "c0": "yes",
+            "c1": "no",
+            "c2": "yes",
+            "c3": "no"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_shapes.19",
+          "type": "drag_sort",
+          "prompt_am": "በጎኖቻቸው ብዛት እንለይ።",
+          "prompt_en": "Let's sort by the number of sides.",
+          "audio_url": "audio/am/ex.g2_shapes.05.mp3",
+          "targets": [
+            {
+              "id": "3",
+              "am": "3 ጎኖች",
+              "en": "3 sides"
+            },
+            {
+              "id": "4",
+              "am": "4 ጎኖች",
+              "en": "4 sides"
+            },
+            {
+              "id": "5",
+              "am": "5 ጎኖች",
+              "en": "5 sides"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "triangle"
+              }
+            },
+            {
+              "id": "c1",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "square"
+              }
+            },
+            {
+              "id": "c2",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "pentagon"
+              }
+            },
+            {
+              "id": "c3",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "trapezoid"
+              }
+            },
+            {
+              "id": "c4",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "right-triangle"
+              }
+            }
+          ],
+          "answer": {
+            "c0": "3",
+            "c1": "4",
+            "c2": "5",
+            "c3": "4",
+            "c4": "3"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_shapes.20",
+          "type": "drag_sort",
+          "prompt_am": "በጎኖቻቸው ብዛት እንለይ።",
+          "prompt_en": "Let's sort by the number of sides.",
+          "audio_url": "audio/am/ex.g2_shapes.05.mp3",
+          "targets": [
+            {
+              "id": "4",
+              "am": "4 ጎኖች",
+              "en": "4 sides"
+            },
+            {
+              "id": "5",
+              "am": "5 ጎኖች",
+              "en": "5 sides"
+            },
+            {
+              "id": "6",
+              "am": "6 ጎኖች",
+              "en": "6 sides"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "kite"
+              }
+            },
+            {
+              "id": "c1",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "pentagon"
+              }
+            },
+            {
+              "id": "c2",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "hexagon"
+              }
+            },
+            {
+              "id": "c3",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "rectangle"
+              }
+            },
+            {
+              "id": "c4",
+              "label": "",
+              "visual": {
+                "kind": "shape",
+                "shape": "pentagon"
+              }
+            }
+          ],
+          "answer": {
+            "c0": "4",
+            "c1": "5",
+            "c2": "6",
+            "c3": "4",
+            "c4": "5"
+          },
+          "hints": [
+            {
+              "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+              "en": "Count the sides one by one.",
+              "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+            },
+            {
+              "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+              "en": "The corners are where the sides meet.",
+              "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "memory",
+    "pairs": [
+      {
+        "n": 3,
+        "am": "ሶስት ማዕዘን",
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle"
+        }
+      },
+      {
+        "n": 4,
+        "am": "አራት ማዕዘን",
+        "visual": {
+          "kind": "shape",
+          "shape": "rectangle"
+        }
+      },
+      {
+        "n": 5,
+        "am": "ባለ አምስት ጎን",
+        "visual": {
+          "kind": "shape",
+          "shape": "pentagon"
+        }
+      },
+      {
+        "n": 6,
+        "am": "ባለ ስድስት ጎን",
+        "visual": {
+          "kind": "shape",
+          "shape": "hexagon"
+        }
+      }
+    ],
+    "intro": {
+      "am": "የሚመሳሰሉትን ካርዶች እንፈልግ፤ የጎኖች ብዛት እና ቅርጹ።",
+      "en": "Let's find matching cards: the number of sides and the shape.",
+      "audio_url": "audio/am/ex.g2_shapes.23.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_shapes.21",
+      "type": "drag_sort",
+      "prompt_am": "ባለ አራት ጎኖችን እና ያልሆኑትን እንለይ።",
+      "prompt_en": "Let's sort: quadrilaterals, not quadrilaterals.",
+      "audio_url": "audio/am/ex.g3_shapes.03.mp3",
+      "targets": [
+        {
+          "id": "four",
+          "am": "ባለ አራት ጎን",
+          "en": "Quadrilateral"
+        },
+        {
+          "id": "other",
+          "am": "አይደለም",
+          "en": "Not one"
+        }
+      ],
+      "items": [
+        {
+          "id": "c0",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "parallelogram"
+          }
+        },
+        {
+          "id": "c1",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "triangle"
+          }
+        },
+        {
+          "id": "c2",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "hexagon"
+          }
+        },
+        {
+          "id": "c3",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "square"
+          }
+        }
+      ],
+      "answer": {
+        "c0": "four",
+        "c1": "other",
+        "c2": "other",
+        "c3": "four"
+      },
+      "hints": [
+        {
+          "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+          "en": "Count the sides one by one.",
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+        },
+        {
+          "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+          "en": "The corners are where the sides meet.",
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_shapes.22",
+      "type": "drag_match_word",
+      "prompt_am": "እያንዳንዱን ስም ከቅርጹ ጋር እናገናኝ።",
+      "prompt_en": "Let's match each name to its shape.",
+      "audio_url": "audio/am/ex.g2_shapes.09.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "አራት ማዕዘን",
+          "lang": "am"
+        },
+        {
+          "id": "w1",
+          "label": "ባለ ስድስት ጎን",
+          "lang": "am"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "visual": {
+            "kind": "shape",
+            "shape": "hexagon"
+          }
+        },
+        {
+          "id": "t0",
+          "visual": {
+            "kind": "shape",
+            "shape": "rectangle"
+          }
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1"
+      },
+      "hints": [
+        {
+          "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+          "en": "Count the sides one by one.",
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+        },
+        {
+          "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+          "en": "The corners are where the sides meet.",
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_shapes.23",
+      "type": "drag_sort",
+      "prompt_am": "በጎኖቻቸው ብዛት እንለይ።",
+      "prompt_en": "Let's sort by the number of sides.",
+      "audio_url": "audio/am/ex.g2_shapes.05.mp3",
+      "targets": [
+        {
+          "id": "3",
+          "am": "3 ጎኖች",
+          "en": "3 sides"
+        },
+        {
+          "id": "4",
+          "am": "4 ጎኖች",
+          "en": "4 sides"
+        },
+        {
+          "id": "6",
+          "am": "6 ጎኖች",
+          "en": "6 sides"
+        }
+      ],
+      "items": [
+        {
+          "id": "c0",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "hexagon"
+          }
+        },
+        {
+          "id": "c1",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "square"
+          }
+        },
+        {
+          "id": "c2",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "triangle"
+          }
+        },
+        {
+          "id": "c3",
+          "label": "",
+          "visual": {
+            "kind": "shape",
+            "shape": "kite"
+          }
+        }
+      ],
+      "answer": {
+        "c0": "6",
+        "c1": "4",
+        "c2": "3",
+        "c3": "4"
+      },
+      "hints": [
+        {
+          "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+          "en": "Count the sides one by one.",
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+        },
+        {
+          "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+          "en": "The corners are where the sides meet.",
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_shapes.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ባለ ስድስት ጎን",
+        "en": "hexagon",
+        "audio_url": "audio/am/ex.g3_shapes.12.mp3"
+      },
+      "options": [
+        {
+          "v": "a",
+          "visual": {
+            "kind": "shape",
+            "shape": "hexagon"
+          }
+        },
+        {
+          "v": "b",
+          "visual": {
+            "kind": "shape",
+            "shape": "pentagon"
+          }
+        },
+        {
+          "v": "c",
+          "visual": {
+            "kind": "shape",
+            "shape": "square"
+          }
+        }
+      ],
+      "answer": "a",
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_shapes.25",
+      "type": "numpad",
+      "prompt_am": "ሁለት ሶስት ማዕዘኖች በአጠቃላይ ስንት ጎኖች አሏቸው?",
+      "prompt_en": "How many sides do two triangles have altogether?",
+      "audio_url": "audio/am/ex.g3_shapes.13.mp3",
+      "answer": 6,
+      "visual": null,
+      "max_digits": 2,
+      "hints": [
+        {
+          "am": "ጎኖቹን አንድ በአንድ እንቁጠር።",
+          "en": "Count the sides one by one.",
+          "audio_url": "audio/am/ex.g2_shapes.02.mp3"
+        },
+        {
+          "am": "ማዕዘኖቹ ጎኖቹ የሚገናኙበት ቦታ ናቸው።",
+          "en": "The corners are where the sides meet.",
+          "audio_url": "audio/am/ex.g2_shapes.03.mp3"
+        }
+      ]
+    }
+  ]
+}
