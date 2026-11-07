@@ -16,10 +16,10 @@
       "am": "video/g3_hundreds.am.vtt",
       "en": "video/g3_hundreds.en.vtt"
     },
-    "duration": 30,
+    "duration": 29.5,
     "checkpoints": [
       {
-        "t": 10.32,
+        "t": 10.78,
         "at": "step:0",
         "exercise": {
           "id": "g3_hundreds.01",
@@ -101,8 +101,8 @@
       }
     ],
     "reteach": {
-      "start": 10.32,
-      "end": 30,
+      "start": 10.78,
+      "end": 29.5,
       "at": [
         "step:0",
         "end"

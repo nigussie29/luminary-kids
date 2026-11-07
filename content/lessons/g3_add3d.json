@@ -16,10 +16,10 @@
       "am": "video/g3_add3d.am.vtt",
       "en": "video/g3_add3d.en.vtt"
     },
-    "duration": 35.867,
+    "duration": 40.6,
     "checkpoints": [
       {
-        "t": 13.75,
+        "t": 17.25,
         "at": "step:1",
         "exercise": {
           "id": "g3_add3d.01",
@@ -54,7 +54,7 @@
         }
       },
       {
-        "t": 21.02,
+        "t": 26.18,
         "at": "step:3",
         "exercise": {
           "id": "g3_add3d.02",
@@ -90,8 +90,8 @@
       }
     ],
     "reteach": {
-      "start": 13.75,
-      "end": 35.867,
+      "start": 17.25,
+      "end": 40.6,
       "at": [
         "step:1",
         "end"

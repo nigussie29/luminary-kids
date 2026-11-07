@@ -1,64 +1,64 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 4.533,
-  "step0": 10.767,
-  "step1": 14.4,
-  "step2": 18.033,
-  "step3": 21.667,
-  "step4": 25.3,
-  "step5": 28.933
+  "story": 5.0,
+  "step0": 14.5,
+  "step1": 18.9,
+  "step2": 23.733,
+  "step3": 27.6,
+  "step4": 31.0,
+  "step5": 38.6
  },
  "cues": [
   {
    "start": 0.0,
    "am": "ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ",
    "en": "Subtracting three-digit numbers",
-   "end": 3.333
+   "end": 3.8
   },
   {
-   "start": 4.533,
+   "start": 5.0,
    "am": "በትምህርት ቤታችን አራት መቶ ሃምሳ ሁለት ተማሪዎች አሉ። ዛሬ ሁለት መቶ ሃያ ስምንት ተማሪዎች ለሽርሽር ሄዱ። ስንት ተማሪዎች ቀሩ?",
    "en": "Our school has four hundred fifty-two students. Today two hundred twenty-eight students went on a trip. How many students stayed?",
-   "end": 10.167
+   "end": 13.9
   },
   {
-   "start": 10.767,
+   "start": 14.5,
    "am": "አራት መቶ ሃምሳ ሁለት ሲቀነስ ሁለት መቶ ሃያ ስምንት።",
    "en": "Four hundred fifty-two minus two hundred twenty-eight.",
-   "end": 14.4
+   "end": 18.9
   },
   {
-   "start": 14.4,
+   "start": 18.9,
    "am": "ከሁለት ስምንት መውሰድ አንችልም፤ ስለዚህ አንድ አስር እንፈታለን።",
    "en": "We cannot take eight from two, so we break one ten.",
-   "end": 18.033
+   "end": 23.733
   },
   {
-   "start": 18.033,
+   "start": 23.733,
    "am": "አሁን አራት አስሮች እና አስራ ሁለት አንዶች አሉ።",
    "en": "Now there are four tens and twelve ones.",
-   "end": 21.667
+   "end": 27.6
   },
   {
-   "start": 21.667,
+   "start": 27.6,
    "am": "አስራ ሁለት ሲቀነስ ስምንት አራት ነው።",
    "en": "Twelve minus eight is four.",
-   "end": 25.3
+   "end": 31.0
   },
   {
-   "start": 25.3,
+   "start": 31.0,
    "am": "አራት አስሮች ሲቀነስ ሁለት አስሮች ሁለት አስሮች ናቸው፤ አራት መቶዎች ሲቀነስ ሁለት መቶዎች ሁለት መቶዎች ናቸው።",
    "en": "Four tens minus two tens is two tens; four hundreds minus two hundreds is two hundreds.",
-   "end": 28.933
+   "end": 38.6
   },
   {
-   "start": 28.933,
+   "start": 38.6,
    "am": "መልሱ ሁለት መቶ ሃያ አራት ነው።",
    "en": "The answer is two hundred twenty-four.",
-   "end": 32.867
+   "end": 41.967
   }
  ],
- "duration": 36.467,
+ "duration": 45.567,
  "lesson": "g3_sub3d"
 }

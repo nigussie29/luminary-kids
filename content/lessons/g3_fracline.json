@@ -16,10 +16,10 @@
       "am": "video/g3_fracline.am.vtt",
       "en": "video/g3_fracline.en.vtt"
     },
-    "duration": 28.767,
+    "duration": 32.067,
     "checkpoints": [
       {
-        "t": 13.35,
+        "t": 15.68,
         "at": "step:1",
         "exercise": {
           "id": "g3_fracline.01",
@@ -62,7 +62,7 @@
         }
       },
       {
-        "t": 21.18,
+        "t": 24.48,
         "at": "step:3",
         "exercise": {
           "id": "g3_fracline.02",
@@ -106,8 +106,8 @@
       }
     ],
     "reteach": {
-      "start": 9.72,
-      "end": 28.767,
+      "start": 10.75,
+      "end": 32.067,
       "at": [
         "step:0",
         "end"

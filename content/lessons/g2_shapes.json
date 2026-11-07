@@ -16,10 +16,10 @@
       "am": "video/g2_shapes.am.vtt",
       "en": "video/g2_shapes.en.vtt"
     },
-    "duration": 28.6,
+    "duration": 27.2,
     "checkpoints": [
       {
-        "t": 10.12,
+        "t": 9.35,
         "at": "step:0",
         "exercise": {
           "id": "g2_shapes.01",
@@ -58,7 +58,7 @@
         }
       },
       {
-        "t": 17.38,
+        "t": 15.25,
         "at": "step:2",
         "exercise": {
           "id": "g2_shapes.02",
@@ -98,8 +98,8 @@
       }
     ],
     "reteach": {
-      "start": 10.12,
-      "end": 28.6,
+      "start": 9.35,
+      "end": 27.2,
       "at": [
         "step:0",
         "end"

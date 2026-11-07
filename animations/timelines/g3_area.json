@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 4.133,
-  "step0": 9.767,
-  "step1": 13.4,
-  "step2": 17.033,
-  "step3": 20.667
+  "story": 3.633,
+  "step0": 9.4,
+  "step1": 14.4,
+  "step2": 19.5,
+  "step3": 24.433
  },
  "cues": [
   {
    "start": 0.0,
    "am": "ስፋት እና ዙሪያ",
    "en": "Area and perimeter",
-   "end": 3.333
+   "end": 2.833
   },
   {
-   "start": 4.133,
+   "start": 3.633,
    "am": "አባቴ የወጥ ቤቱን ወለል በካሬ ሰቆች ሊሸፍን ነው። ስንት ሰቆች ያስፈልጉታል?",
    "en": "Father is covering the kitchen floor with square tiles. How many tiles does he need?",
-   "end": 9.767
+   "end": 9.4
   },
   {
-   "start": 9.767,
+   "start": 9.4,
    "am": "ወለሉ ሶስት ረድፎች አሉት፤ በእያንዳንዱ ረድፍ አራት ሰቆች አሉ።",
    "en": "The floor has three rows with four tiles in each row.",
-   "end": 13.4
+   "end": 14.4
   },
   {
-   "start": 13.4,
+   "start": 14.4,
    "am": "ሶስት ጊዜ አራት አስራ ሁለት ነው፤ ስፋቱ አስራ ሁለት ካሬ አሃዶች ነው።",
    "en": "Three times four is twelve, so the area is twelve square units.",
-   "end": 17.033
+   "end": 19.5
   },
   {
-   "start": 17.033,
+   "start": 19.5,
    "am": "ዙሪያውን ለማግኘት ጎኖቹን እንደምራለን፦ አራት፣ ሶስት፣ አራት እና ሶስት።",
    "en": "To find the perimeter we add the sides: four, three, four and three.",
-   "end": 20.667
+   "end": 24.433
   },
   {
-   "start": 20.667,
+   "start": 24.433,
    "am": "ዙሪያው አስራ አራት አሃዶች ነው።",
    "en": "The perimeter is fourteen units.",
-   "end": 24.6
+   "end": 27.6
   }
  ],
- "duration": 28.2,
+ "duration": 31.2,
  "lesson": "g3_area"
 }

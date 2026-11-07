@@ -16,10 +16,10 @@
       "am": "video/g2_time.am.vtt",
       "en": "video/g2_time.en.vtt"
     },
-    "duration": 28.2,
+    "duration": 30.067,
     "checkpoints": [
       {
-        "t": 13.35,
+        "t": 13.05,
         "at": "step:1",
         "exercise": {
           "id": "g2_time.01",
@@ -59,7 +59,7 @@
         }
       },
       {
-        "t": 20.62,
+        "t": 22.18,
         "at": "step:3",
         "exercise": {
           "id": "g2_time.02",
@@ -103,8 +103,8 @@
       }
     ],
     "reteach": {
-      "start": 9.72,
-      "end": 28.2,
+      "start": 8.78,
+      "end": 30.067,
       "at": [
         "step:0",
         "end"

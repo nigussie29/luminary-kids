@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 4.533,
-  "step0": 10.167,
-  "step1": 13.8,
-  "step2": 17.433,
-  "step3": 21.067
+  "story": 4.367,
+  "step0": 9.4,
+  "step1": 12.467,
+  "step2": 15.3,
+  "step3": 20.533
  },
  "cues": [
   {
    "start": 0.0,
    "am": "ቅርጾች እና ጎኖቻቸው",
    "en": "Shapes and their sides",
-   "end": 3.333
+   "end": 3.167
   },
   {
-   "start": 4.533,
+   "start": 4.367,
    "am": "በትምህርት ቤቱ ግድግዳ ላይ ቅርጾች ተስለዋል። ጎኖቻቸውን እንቁጠር።",
    "en": "Shapes are painted on the school wall. Let us count their sides.",
-   "end": 10.167
+   "end": 9.4
   },
   {
-   "start": 10.167,
+   "start": 9.4,
    "am": "ሶስት ማዕዘን ሶስት ጎኖች አሉት።",
    "en": "A triangle has three sides.",
-   "end": 13.8
+   "end": 12.467
   },
   {
-   "start": 13.8,
+   "start": 12.467,
    "am": "ካሬ አራት እኩል ጎኖች አሉት።",
    "en": "A square has four equal sides.",
-   "end": 17.433
+   "end": 15.3
   },
   {
-   "start": 17.433,
+   "start": 15.3,
    "am": "ባለ አምስት ጎን አምስት፣ ባለ ስድስት ጎን ደግሞ ስድስት ጎኖች አሏቸው።",
    "en": "A pentagon has five sides and a hexagon has six.",
-   "end": 21.067
+   "end": 20.533
   },
   {
-   "start": 21.067,
+   "start": 20.533,
    "am": "ክብ ጎንም ማዕዘንም የለውም።",
    "en": "A circle has no sides and no corners.",
-   "end": 25.0
+   "end": 23.6
   }
  ],
- "duration": 28.6,
+ "duration": 27.2,
  "lesson": "g2_shapes"
 }

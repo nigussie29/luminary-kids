@@ -16,10 +16,10 @@
       "am": "video/g3_fractions.am.vtt",
       "en": "video/g3_fractions.en.vtt"
     },
-    "duration": 28.8,
+    "duration": 31.067,
     "checkpoints": [
       {
-        "t": 13.75,
+        "t": 14.62,
         "at": "step:1",
         "exercise": {
           "id": "g3_fractions.01",
@@ -60,7 +60,7 @@
         }
       },
       {
-        "t": 21.02,
+        "t": 23.05,
         "at": "step:3",
         "exercise": {
           "id": "g3_fractions.02",
@@ -102,8 +102,8 @@
       }
     ],
     "reteach": {
-      "start": 10.12,
-      "end": 28.8,
+      "start": 10.92,
+      "end": 31.067,
       "at": [
         "step:0",
         "end"

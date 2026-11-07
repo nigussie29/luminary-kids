@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 4.533,
-  "step0": 10.167,
-  "step1": 13.8,
-  "step2": 17.433,
-  "step3": 21.067
+  "story": 4.733,
+  "step0": 10.967,
+  "step1": 14.667,
+  "step2": 19.833,
+  "step3": 23.1
  },
  "cues": [
   {
    "start": 0.0,
    "am": "ሶስተኛ እና ሌሎች ክፍልፋዮች",
    "en": "Thirds and other fractions",
-   "end": 3.333
+   "end": 3.533
   },
   {
-   "start": 4.533,
+   "start": 4.733,
    "am": "እናቴ አንድ እንጀራ ለሶስት ልጆች በእኩል ታካፍላለች። እያንዳንዱ ልጅ ስንት ያገኛል?",
    "en": "Mother shares one injera equally among three children. How much does each child get?",
-   "end": 10.167
+   "end": 10.967
   },
   {
-   "start": 10.167,
+   "start": 10.967,
    "am": "እንጀራውን በሶስት እኩል ክፍሎች ከፈለችው።",
    "en": "She divided the injera into three equal parts.",
-   "end": 13.8
+   "end": 14.667
   },
   {
-   "start": 13.8,
+   "start": 14.667,
    "am": "እያንዳንዱ ክፍል አንድ ሶስተኛ ነው፤ እንዲህ እንጽፈዋለን፦ አንድ በሶስት።",
    "en": "Each part is one third; we write it like this: one over three.",
-   "end": 17.433
+   "end": 19.833
   },
   {
-   "start": 17.433,
+   "start": 19.833,
    "am": "ሁለት ክፍሎች ሁለት ሶስተኛ ናቸው።",
    "en": "Two parts are two thirds.",
-   "end": 21.067
+   "end": 23.1
   },
   {
-   "start": 21.067,
+   "start": 23.1,
    "am": "ሶስት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ።",
    "en": "Three thirds make one whole injera.",
-   "end": 25.0
+   "end": 27.267
   }
  ],
- "duration": 28.8,
+ "duration": 31.067,
  "lesson": "g3_fractions"
 }

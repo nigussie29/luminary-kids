@@ -16,10 +16,10 @@
       "am": "video/g3_sub3d.am.vtt",
       "en": "video/g3_sub3d.en.vtt"
     },
-    "duration": 36.467,
+    "duration": 45.567,
     "checkpoints": [
       {
-        "t": 14.35,
+        "t": 18.85,
         "at": "step:1",
         "exercise": {
           "id": "g3_sub3d.01",
@@ -55,7 +55,7 @@
         }
       },
       {
-        "t": 21.62,
+        "t": 27.55,
         "at": "step:3",
         "exercise": {
           "id": "g3_sub3d.02",
@@ -91,8 +91,8 @@
       }
     ],
     "reteach": {
-      "start": 14.35,
-      "end": 36.467,
+      "start": 18.85,
+      "end": 45.567,
       "at": [
         "step:1",
         "end"

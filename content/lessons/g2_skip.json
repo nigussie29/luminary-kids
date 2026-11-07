@@ -16,10 +16,10 @@
       "am": "video/g2_skip.am.vtt",
       "en": "video/g2_skip.en.vtt"
     },
-    "duration": 28.6,
+    "duration": 33.767,
     "checkpoints": [
       {
-        "t": 13.75,
+        "t": 14.65,
         "at": "step:1",
         "exercise": {
           "id": "g2_skip.01",
@@ -66,7 +66,7 @@
         }
       },
       {
-        "t": 21.02,
+        "t": 24.68,
         "at": "step:3",
         "exercise": {
           "id": "g2_skip.02",
@@ -103,8 +103,8 @@
       }
     ],
     "reteach": {
-      "start": 10.12,
-      "end": 28.6,
+      "start": 10.32,
+      "end": 33.767,
       "at": [
         "step:0",
         "end"

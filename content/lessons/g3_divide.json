@@ -16,10 +16,10 @@
       "am": "video/g3_divide.am.vtt",
       "en": "video/g3_divide.en.vtt"
     },
-    "duration": 28.6,
+    "duration": 28.5,
     "checkpoints": [
       {
-        "t": 13.75,
+        "t": 15.18,
         "at": "step:1",
         "exercise": {
           "id": "g3_divide.01",
@@ -64,7 +64,7 @@
         }
       },
       {
-        "t": 21.02,
+        "t": 20.88,
         "at": "step:3",
         "exercise": {
           "id": "g3_divide.02",
@@ -104,8 +104,8 @@
       }
     ],
     "reteach": {
-      "start": 10.12,
-      "end": 28.6,
+      "start": 10.82,
+      "end": 28.5,
       "at": [
         "step:0",
         "end"

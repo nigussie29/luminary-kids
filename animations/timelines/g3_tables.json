@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 3.933,
-  "step0": 9.567,
-  "step1": 13.2,
-  "step2": 16.833,
-  "step3": 20.467
+  "story": 4.667,
+  "step0": 10.667,
+  "step1": 16.5,
+  "step2": 20.2,
+  "step3": 24.3
  },
  "cues": [
   {
    "start": 0.0,
    "am": "የማባዛት ሰንጠረዥ እስከ አስር ጊዜ አስር",
    "en": "Times tables to 10 × 10",
-   "end": 3.333
+   "end": 4.067
   },
   {
-   "start": 3.933,
+   "start": 4.667,
    "am": "በገበያው እንቁላሎች በሳጥን ይሸጣሉ። በእያንዳንዱ ሳጥን ስድስት እንቁላሎች አሉ።",
    "en": "At the market, eggs are sold in boxes. Each box holds six eggs.",
-   "end": 9.567
+   "end": 10.667
   },
   {
-   "start": 9.567,
+   "start": 10.667,
    "am": "አንድ ሳጥን ስድስት፣ ሁለት ሳጥኖች አስራ ሁለት፣ ሶስት ሳጥኖች አስራ ስምንት ናቸው።",
    "en": "One box is six, two boxes are twelve, three boxes are eighteen.",
-   "end": 13.2
+   "end": 16.5
   },
   {
-   "start": 13.2,
+   "start": 16.5,
    "am": "በስድስት በስድስት እየዘለልን እንቆጥራለን።",
    "en": "We skip count in sixes.",
-   "end": 16.833
+   "end": 20.2
   },
   {
-   "start": 16.833,
+   "start": 20.2,
    "am": "ሰባት ሳጥኖች፦ ሰባት ጊዜ ስድስት አርባ ሁለት ነው።",
    "en": "Seven boxes: seven times six is forty-two.",
-   "end": 20.467
+   "end": 24.3
   },
   {
-   "start": 20.467,
+   "start": 24.3,
    "am": "ስድስት ጊዜ ሰባትም አርባ ሁለት ነው።",
    "en": "Six times seven is forty-two too.",
-   "end": 24.4
+   "end": 28.033
   }
  ],
- "duration": 28.0,
+ "duration": 31.633,
  "lesson": "g3_tables"
 }

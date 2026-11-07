@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 4.133,
-  "step0": 9.767,
-  "step1": 13.4,
-  "step2": 17.6,
-  "step3": 21.233
+  "story": 4.2,
+  "step0": 10.8,
+  "step1": 15.733,
+  "step2": 20.933,
+  "step3": 24.533
  },
  "cues": [
   {
    "start": 0.0,
    "am": "ክፍልፋዮች በቁጥር መስመር ላይ",
    "en": "Fractions on a number line",
-   "end": 3.333
+   "end": 3.4
   },
   {
-   "start": 4.133,
+   "start": 4.2,
    "am": "ከቤት እስከ ትምህርት ቤት ያለውን መንገድ በአራት እኩል ክፍሎች እንከፍለው። ሰላም ምን ያህል ተጓዘች?",
    "en": "Let us split the road from home to school into four equal parts. How far has Selam walked?",
-   "end": 9.767
+   "end": 10.8
   },
   {
-   "start": 9.767,
+   "start": 10.8,
    "am": "ከዜሮ እስከ አንድ ያለውን መስመር በአራት እኩል ክፍሎች እንከፍላለን።",
    "en": "We split the line from zero to one into four equal parts.",
-   "end": 13.4
+   "end": 15.733
   },
   {
-   "start": 13.4,
+   "start": 15.733,
    "am": "እያንዳንዱ ዝላይ አንድ ሩብ ነው፤ አንድ ሩብ፣ ሁለት ሩብ፣ ሶስት ሩብ፣ አራት ሩብ።",
    "en": "Each jump is one quarter: one quarter, two quarters, three quarters, four quarters.",
-   "end": 17.6
+   "end": 20.933
   },
   {
-   "start": 17.6,
+   "start": 20.933,
    "am": "ሁለት ሩብ ከግማሽ ጋር በአንድ ቦታ ላይ ነው።",
    "en": "Two quarters is at the same place as one half.",
-   "end": 21.233
+   "end": 24.533
   },
   {
-   "start": 21.233,
+   "start": 24.533,
    "am": "ስለዚህ ሁለት ሩብ እና ግማሽ እኩል ናቸው።",
    "en": "So two quarters and one half are equal.",
-   "end": 25.167
+   "end": 28.467
   }
  ],
- "duration": 28.767,
+ "duration": 32.067,
  "lesson": "g3_fracline"
 }

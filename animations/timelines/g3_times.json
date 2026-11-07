@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 3.933,
-  "step0": 9.567,
-  "step1": 13.2,
-  "step2": 16.833,
-  "step3": 20.467
+  "story": 3.3,
+  "step0": 9.833,
+  "step1": 14.5,
+  "step2": 17.3,
+  "step3": 20.833
  },
  "cues": [
   {
    "start": 0.0,
    "am": "በረድፍ እናባዛ",
    "en": "Multiplying in rows",
-   "end": 3.333
+   "end": 2.7
   },
   {
-   "start": 3.933,
+   "start": 3.3,
    "am": "አባቴ በእርሻው ላይ የቡና ችግኞችን በረድፍ ተከለ። በእያንዳንዱ ረድፍ እኩል ችግኞች አሉ።",
    "en": "Father planted coffee seedlings in rows on the farm. Every row has the same number of seedlings.",
-   "end": 9.567
+   "end": 9.833
   },
   {
-   "start": 9.567,
+   "start": 9.833,
    "am": "ሶስት ረድፎች አሉ፤ በእያንዳንዱ ረድፍ አምስት ችግኞች አሉ።",
    "en": "There are three rows, with five seedlings in each row.",
-   "end": 13.2
+   "end": 14.5
   },
   {
-   "start": 13.2,
+   "start": 14.5,
    "am": "አምስት፣ አስር፣ አስራ አምስት።",
    "en": "Five, ten, fifteen.",
-   "end": 16.833
+   "end": 17.3
   },
   {
-   "start": 16.833,
+   "start": 17.3,
    "am": "ሶስት ጊዜ አምስት እኩል ነው አስራ አምስት።",
    "en": "Three times five equals fifteen.",
-   "end": 20.467
+   "end": 20.833
   },
   {
-   "start": 20.467,
+   "start": 20.833,
    "am": "ስናዞረው አምስት ረድፎች በሶስት በሶስት ይሆናሉ፤ አሁንም አስራ አምስት ነው።",
    "en": "When we turn it around, there are five rows of three; it is still fifteen.",
-   "end": 24.4
+   "end": 26.7
   }
  ],
- "duration": 28.2,
+ "duration": 30.5,
  "lesson": "g3_times"
 }

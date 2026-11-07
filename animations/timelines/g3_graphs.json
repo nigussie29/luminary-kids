@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 4.133,
-  "step0": 9.767,
-  "step1": 13.8,
-  "step2": 17.433,
-  "step3": 21.067
+  "story": 4.533,
+  "step0": 10.3,
+  "step1": 15.833,
+  "step2": 20.633,
+  "step3": 23.567
  },
  "cues": [
   {
    "start": 0.0,
    "am": "ግራፎች እና የቃላት ጥያቄዎች",
    "en": "Graphs and word problems",
-   "end": 3.333
+   "end": 3.733
   },
   {
-   "start": 4.133,
+   "start": 4.533,
    "am": "የክፍላችን ልጆች የሚወዱትን ፍራፍሬ ተጠየቁ። መልሶቹን በግራፍ እናሳይ።",
    "en": "The children in our class were asked which fruit they like best. Let us show the answers on a graph.",
-   "end": 9.767
+   "end": 10.3
   },
   {
-   "start": 9.767,
+   "start": 10.3,
    "am": "ሰባት ልጆች ሙዝ፣ አምስት ልጆች ማንጎ፣ ሶስት ልጆች ብርቱካን ወደዱ።",
    "en": "Seven children liked bananas, five liked mangoes and three liked oranges.",
-   "end": 13.8
+   "end": 15.833
   },
   {
-   "start": 13.8,
+   "start": 15.833,
    "am": "ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን፤ ረጅሙ አምድ የሙዝ ነው።",
    "en": "We colour one box for each child; the tallest bar is bananas.",
-   "end": 17.433
+   "end": 20.633
   },
   {
-   "start": 17.433,
+   "start": 20.633,
    "am": "ሙዝ ከማንጎ በሁለት ይበልጣል።",
    "en": "Bananas have two more than mangoes.",
-   "end": 21.067
+   "end": 23.567
   },
   {
-   "start": 21.067,
+   "start": 23.567,
    "am": "በአጠቃላይ ሰባት፣ አምስት እና ሶስት አስራ አምስት ልጆች ናቸው።",
    "en": "Altogether seven, five and three make fifteen children.",
-   "end": 25.0
+   "end": 28.667
   }
  ],
- "duration": 28.6,
+ "duration": 32.267,
  "lesson": "g3_graphs"
 }

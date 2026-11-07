@@ -804,27 +804,27 @@ Re-teach clip after two misses: 8.9–24.3 s
 
 ## Grade 2 · Lesson 7 — ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ (Skip counting, even and odd)
 
-Place on the map: steps · Mini-game: coffee · Hook video: `video/g2_skip.mp4` (28.6 s) · Manim code: `animations/lessons/g2_skip.py`
+Place on the map: steps · Mini-game: coffee · Hook video: `video/g2_skip.mp4` (33.8 s) · Manim code: `animations/lessons/g2_skip.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ | Skip counting, even and odd | `lesson.g2_skip.title` |
-| 4.5 s | እማማ ብርቱካኖችን በጥንድ በጥንድ ታስቀምጣለች። በሁለት በሁለት እንቁጠር። | Mama sets out oranges in pairs. Let us count in twos. | `lesson.g2_skip.story` |
-| 10.2 s | ሁለት፣ አራት፣ ስድስት፣ ስምንት፣ አስር፤ በሁለት በሁለት ቆጠርን። | Two, four, six, eight, ten: we counted in twos. | `lesson.g2_skip.example.0` |
-| 13.8 s | ሁሉም ብርቱካኖች ጥንድ አላቸው፤ ስለዚህ አስር ጥንድ ቁጥር ነው። | Every orange has a partner, so ten is an even number. | `lesson.g2_skip.example.1` |
-| 17.4 s | አንድ ብርቱካን ብንጨምር አንዱ ብቻውን ይቀራል፤ አስራ አንድ ጎዶሎ ቁጥር ነው። | If we add one more orange, one is left on its own: eleven is an odd number. | `lesson.g2_skip.example.2` |
-| 21.1 s | በአምስት በአምስት ስንቆጥርም ፈጣን ነው፦ አምስት፣ አስር፣ አስራ አምስት፣ ሃያ። | Counting in fives is fast too: five, ten, fifteen, twenty. | `lesson.g2_skip.example.3` |
+| 4.8 s | እማማ ብርቱካኖችን በጥንድ በጥንድ ታስቀምጣለች። በሁለት በሁለት እንቁጠር። | Mama sets out oranges in pairs. Let us count in twos. | `lesson.g2_skip.story` |
+| 10.4 s | ሁለት፣ አራት፣ ስድስት፣ ስምንት፣ አስር፤ በሁለት በሁለት ቆጠርን። | Two, four, six, eight, ten: we counted in twos. | `lesson.g2_skip.example.0` |
+| 14.7 s | ሁሉም ብርቱካኖች ጥንድ አላቸው፤ ስለዚህ አስር ጥንድ ቁጥር ነው። | Every orange has a partner, so ten is an even number. | `lesson.g2_skip.example.1` |
+| 19.3 s | አንድ ብርቱካን ብንጨምር አንዱ ብቻውን ይቀራል፤ አስራ አንድ ጎዶሎ ቁጥር ነው። | If we add one more orange, one is left on its own: eleven is an odd number. | `lesson.g2_skip.example.2` |
+| 24.7 s | በአምስት በአምስት ስንቆጥርም ፈጣን ነው፦ አምስት፣ አስር፣ አስራ አምስት፣ ሃያ። | Counting in fives is fast too: five, ten, fifteen, twenty. | `lesson.g2_skip.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.8 s | tap_choose | ሁሉም ብርቱካኖች ጥንድ አላቸው?<br><small>Does every orange have a partner?</small> | yes | `ex.g2_skip.01.mp3` |
-| 21.0 s | tap_choose | በአምስት ስንቆጥር ከአስር ቀጥሎ ምን ይመጣል?<br><small>Counting in fives, what comes after ten?</small> | 15 | `ex.g2_skip.04.mp3` |
+| 14.7 s | tap_choose | ሁሉም ብርቱካኖች ጥንድ አላቸው?<br><small>Does every orange have a partner?</small> | yes | `ex.g2_skip.01.mp3` |
+| 24.7 s | tap_choose | በአምስት ስንቆጥር ከአስር ቀጥሎ ምን ይመጣል?<br><small>Counting in fives, what comes after ten?</small> | 15 | `ex.g2_skip.04.mp3` |
 
-Re-teach clip after two misses: 10.1–28.6 s
+Re-teach clip after two misses: 10.3–33.8 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -871,27 +871,27 @@ Re-teach clip after two misses: 10.1–28.6 s
 
 ## Grade 2 · Lesson 8 — የትኛው ይበልጣል? (Which is greater?)
 
-Place on the map: eggs · Mini-game: race · Hook video: `video/g2_compare.mp4` (27.4 s) · Manim code: `animations/lessons/g2_compare.py`
+Place on the map: eggs · Mini-game: race · Hook video: `video/g2_compare.mp4` (30.2 s) · Manim code: `animations/lessons/g2_compare.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | የትኛው ይበልጣል? | Which is greater? | `lesson.g2_compare.title` |
-| 4.3 s | በገበያ ሁለት ነጋዴዎች እንቁላል ይሸጣሉ። አንዱ አርባ ሁለት፣ ሌላው ሃያ አራት እንቁላሎች አሉት። | Two sellers at the market have eggs. One has forty-two, the other twenty-four. | `lesson.g2_compare.story` |
-| 10.0 s | መጀመሪያ አስሮቹን እናወዳድር፤ አራት አስሮች ከሁለት አስሮች ይበልጣሉ። | First compare the tens: four tens are more than two tens. | `lesson.g2_compare.example.0` |
-| 13.6 s | ስለዚህ አርባ ሁለት ከሃያ አራት ይበልጣል። | So forty-two is greater than twenty-four. | `lesson.g2_compare.example.1` |
-| 17.2 s | የምልክቱ ክፍት አፍ ወደ ትልቁ ቁጥር ይመለከታል። | The open side of the sign faces the bigger number. | `lesson.g2_compare.example.2` |
-| 20.9 s | አስሮቹ እኩል ሲሆኑ አንዶቹን እናወዳድራለን። | When the tens are equal, we compare the ones. | `lesson.g2_compare.example.3` |
+| 3.7 s | በገበያ ሁለት ነጋዴዎች እንቁላል ይሸጣሉ። አንዱ አርባ ሁለት፣ ሌላው ሃያ አራት እንቁላሎች አሉት። | Two sellers at the market have eggs. One has forty-two, the other twenty-four. | `lesson.g2_compare.story` |
+| 10.5 s | መጀመሪያ አስሮቹን እናወዳድር፤ አራት አስሮች ከሁለት አስሮች ይበልጣሉ። | First compare the tens: four tens are more than two tens. | `lesson.g2_compare.example.0` |
+| 15.6 s | ስለዚህ አርባ ሁለት ከሃያ አራት ይበልጣል። | So forty-two is greater than twenty-four. | `lesson.g2_compare.example.1` |
+| 19.2 s | የምልክቱ ክፍት አፍ ወደ ትልቁ ቁጥር ይመለከታል። | The open side of the sign faces the bigger number. | `lesson.g2_compare.example.2` |
+| 23.2 s | አስሮቹ እኩል ሲሆኑ አንዶቹን እናወዳድራለን። | When the tens are equal, we compare the ones. | `lesson.g2_compare.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 9.9 s | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | a | `ex.compare.18.mp3` |
-| 17.2 s | tap_choose | ትክክለኛው ምልክት የትኛው ነው? 42 ⬜ 24<br><small>Which sign is right? 42 ⬜ 24</small> | > | `ex.g2_compare.03.mp3` |
+| 10.4 s | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | a | `ex.compare.18.mp3` |
+| 19.2 s | tap_choose | ትክክለኛው ምልክት የትኛው ነው? 42 ⬜ 24<br><small>Which sign is right? 42 ⬜ 24</small> | > | `ex.g2_compare.03.mp3` |
 
-Re-teach clip after two misses: 9.9–27.4 s
+Re-teach clip after two misses: 10.4–30.2 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -938,27 +938,27 @@ Re-teach clip after two misses: 9.9–27.4 s
 
 ## Grade 2 · Lesson 9 — ርዝመትን መለካት (Measuring length)
 
-Place on the map: desk · Mini-game: balloon · Hook video: `video/g2_measure.mp4` (27.2 s) · Manim code: `animations/lessons/g2_measure.py`
+Place on the map: desk · Mini-game: balloon · Hook video: `video/g2_measure.mp4` (26.6 s) · Manim code: `animations/lessons/g2_measure.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ርዝመትን መለካት | Measuring length | `lesson.g2_measure.title` |
-| 4.1 s | ሰላም እርሳሷን እና ደብተሯን በገዢ ልትለካ ነው። | Selam is going to measure her pencil and her exercise book with a ruler. | `lesson.g2_measure.story` |
-| 9.8 s | ሁልጊዜ ከዜሮ እንጀምራለን። | We always start at zero. | `lesson.g2_measure.example.0` |
-| 13.4 s | እርሳሱ እስከ ስምንት ይደርሳል፤ ርዝመቱ ስምንት ሳንቲ ሜትር ነው። | The pencil reaches eight, so it is eight centimetres long. | `lesson.g2_measure.example.1` |
-| 17.0 s | ደብተሩ ሃያ ሳንቲ ሜትር ነው፤ ከእርሳሱ ይረዝማል። | The exercise book is twenty centimetres, longer than the pencil. | `lesson.g2_measure.example.2` |
-| 20.7 s | እንደ በር ያሉ ትልልቅ ነገሮችን በሜትር እንለካለን። | We measure big things like a door in metres. | `lesson.g2_measure.example.3` |
+| 3.5 s | ሰላም እርሳሷን እና ደብተሯን በገዢ ልትለካ ነው። | Selam is going to measure her pencil and her exercise book with a ruler. | `lesson.g2_measure.story` |
+| 7.7 s | ሁልጊዜ ከዜሮ እንጀምራለን። | We always start at zero. | `lesson.g2_measure.example.0` |
+| 10.6 s | እርሳሱ እስከ ስምንት ይደርሳል፤ ርዝመቱ ስምንት ሳንቲ ሜትር ነው። | The pencil reaches eight, so it is eight centimetres long. | `lesson.g2_measure.example.1` |
+| 15.4 s | ደብተሩ ሃያ ሳንቲ ሜትር ነው፤ ከእርሳሱ ይረዝማል። | The exercise book is twenty centimetres, longer than the pencil. | `lesson.g2_measure.example.2` |
+| 19.5 s | እንደ በር ያሉ ትልልቅ ነገሮችን በሜትር እንለካለን። | We measure big things like a door in metres. | `lesson.g2_measure.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.3 s | tap_choose | እርሳሱ ስንት ሳንቲ ሜትር ነው?<br><small>How many centimetres long is the pencil?</small> | 8 | `ex.g2_measure.01.mp3` |
-| 20.6 s | tap_choose | የበርን ቁመት በምን እንለካለን?<br><small>What do we use to measure how tall a door is?</small> | m | `ex.g2_measure.04.mp3` |
+| 10.5 s | tap_choose | እርሳሱ ስንት ሳንቲ ሜትር ነው?<br><small>How many centimetres long is the pencil?</small> | 8 | `ex.g2_measure.01.mp3` |
+| 19.5 s | tap_choose | የበርን ቁመት በምን እንለካለን?<br><small>What do we use to measure how tall a door is?</small> | m | `ex.g2_measure.04.mp3` |
 
-Re-teach clip after two misses: 9.7–27.2 s
+Re-teach clip after two misses: 7.7–26.6 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1005,27 +1005,27 @@ Re-teach clip after two misses: 9.7–27.2 s
 
 ## Grade 2 · Lesson 10 — ሰዓት በአምስት ደቂቃ (Time to five minutes)
 
-Place on the map: alarm · Mini-game: memory · Hook video: `video/g2_time.mp4` (28.2 s) · Manim code: `animations/lessons/g2_time.py`
+Place on the map: alarm · Mini-game: memory · Hook video: `video/g2_time.mp4` (30.1 s) · Manim code: `animations/lessons/g2_time.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ሰዓት በአምስት ደቂቃ | Time to five minutes | `lesson.g2_time.title` |
-| 4.1 s | አያቴ ከሰዓት በኋላ ቡና ታፈላለች። ሰዓቱን አብረን እናንብብ። | Grandma makes coffee in the afternoon. Let us read the clock together. | `lesson.g2_time.story` |
-| 9.8 s | ትንሹ መርፌ ከሶስት ትንሽ አልፏል፤ ሰዓቱ ሶስት ነው። | The short hand is just past three, so the hour is three. | `lesson.g2_time.example.0` |
-| 13.4 s | ትልቁ መርፌ ሶስት ላይ ነው፤ አምስት፣ አስር፣ አስራ አምስት ደቂቃ። | The long hand is on the three: five, ten, fifteen minutes. | `lesson.g2_time.example.1` |
-| 17.0 s | ሰዓቱ ሶስት ከአስራ አምስት ነው፤ ሶስት ከሩብም እንለዋለን። | The time is three fifteen; we also say quarter past three. | `lesson.g2_time.example.2` |
-| 20.7 s | በኢትዮጵያ አቆጣጠር ደግሞ ዘጠኝ ሰዓት ከሩብ ነው። | In Ethiopian time it is quarter past nine. | `lesson.g2_time.example.3` |
+| 3.9 s | አያቴ ከሰዓት በኋላ ቡና ታፈላለች። ሰዓቱን አብረን እናንብብ። | Grandma makes coffee in the afternoon. Let us read the clock together. | `lesson.g2_time.story` |
+| 8.8 s | ትንሹ መርፌ ከሶስት ትንሽ አልፏል፤ ሰዓቱ ሶስት ነው። | The short hand is just past three, so the hour is three. | `lesson.g2_time.example.0` |
+| 13.1 s | ትልቁ መርፌ ሶስት ላይ ነው፤ አምስት፣ አስር፣ አስራ አምስት ደቂቃ። | The long hand is on the three: five, ten, fifteen minutes. | `lesson.g2_time.example.1` |
+| 17.8 s | ሰዓቱ ሶስት ከአስራ አምስት ነው፤ ሶስት ከሩብም እንለዋለን። | The time is three fifteen; we also say quarter past three. | `lesson.g2_time.example.2` |
+| 22.2 s | በኢትዮጵያ አቆጣጠር ደግሞ ዘጠኝ ሰዓት ከሩብ ነው። | In Ethiopian time it is quarter past nine. | `lesson.g2_time.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.3 s | tap_choose | ትልቁ መርፌ ሶስት ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the three. How many minutes is that?</small> | 15 | `ex.g2_time.01.mp3` |
-| 20.6 s | tap_choose | በኢትዮጵያ አቆጣጠር ስንት ሰዓት ነው?<br><small>What time is it in Ethiopian time?</small> | ሰዓት 9 ከሩብ | `ex.g2_time.03.mp3` |
+| 13.1 s | tap_choose | ትልቁ መርፌ ሶስት ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the three. How many minutes is that?</small> | 15 | `ex.g2_time.01.mp3` |
+| 22.2 s | tap_choose | በኢትዮጵያ አቆጣጠር ስንት ሰዓት ነው?<br><small>What time is it in Ethiopian time?</small> | ሰዓት 9 ከሩብ | `ex.g2_time.03.mp3` |
 
-Re-teach clip after two misses: 9.7–28.2 s
+Re-teach clip after two misses: 8.8–30.1 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1072,27 +1072,27 @@ Re-teach clip after two misses: 9.7–28.2 s
 
 ## Grade 2 · Lesson 11 — ቅርጾች እና ጎኖቻቸው (Shapes and their sides)
 
-Place on the map: wall · Mini-game: memory · Hook video: `video/g2_shapes.mp4` (28.6 s) · Manim code: `animations/lessons/g2_shapes.py`
+Place on the map: wall · Mini-game: memory · Hook video: `video/g2_shapes.mp4` (27.2 s) · Manim code: `animations/lessons/g2_shapes.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ቅርጾች እና ጎኖቻቸው | Shapes and their sides | `lesson.g2_shapes.title` |
-| 4.5 s | በትምህርት ቤቱ ግድግዳ ላይ ቅርጾች ተስለዋል። ጎኖቻቸውን እንቁጠር። | Shapes are painted on the school wall. Let us count their sides. | `lesson.g2_shapes.story` |
-| 10.2 s | ሶስት ማዕዘን ሶስት ጎኖች አሉት። | A triangle has three sides. | `lesson.g2_shapes.example.0` |
-| 13.8 s | ካሬ አራት እኩል ጎኖች አሉት። | A square has four equal sides. | `lesson.g2_shapes.example.1` |
-| 17.4 s | ባለ አምስት ጎን አምስት፣ ባለ ስድስት ጎን ደግሞ ስድስት ጎኖች አሏቸው። | A pentagon has five sides and a hexagon has six. | `lesson.g2_shapes.example.2` |
-| 21.1 s | ክብ ጎንም ማዕዘንም የለውም። | A circle has no sides and no corners. | `lesson.g2_shapes.example.3` |
+| 4.4 s | በትምህርት ቤቱ ግድግዳ ላይ ቅርጾች ተስለዋል። ጎኖቻቸውን እንቁጠር። | Shapes are painted on the school wall. Let us count their sides. | `lesson.g2_shapes.story` |
+| 9.4 s | ሶስት ማዕዘን ሶስት ጎኖች አሉት። | A triangle has three sides. | `lesson.g2_shapes.example.0` |
+| 12.5 s | ካሬ አራት እኩል ጎኖች አሉት። | A square has four equal sides. | `lesson.g2_shapes.example.1` |
+| 15.3 s | ባለ አምስት ጎን አምስት፣ ባለ ስድስት ጎን ደግሞ ስድስት ጎኖች አሏቸው። | A pentagon has five sides and a hexagon has six. | `lesson.g2_shapes.example.2` |
+| 20.5 s | ክብ ጎንም ማዕዘንም የለውም። | A circle has no sides and no corners. | `lesson.g2_shapes.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 10.1 s | tap_choose | ሶስት ማዕዘን ስንት ጎኖች አሉት?<br><small>How many sides does a triangle have?</small> | 3 | `ex.g2_shapes.01.mp3` |
-| 17.4 s | tap_choose | ባለ ስድስት ጎን ስንት ጎኖች አሉት?<br><small>How many sides does a hexagon have?</small> | 6 | `ex.g2_shapes.04.mp3` |
+| 9.3 s | tap_choose | ሶስት ማዕዘን ስንት ጎኖች አሉት?<br><small>How many sides does a triangle have?</small> | 3 | `ex.g2_shapes.01.mp3` |
+| 15.3 s | tap_choose | ባለ ስድስት ጎን ስንት ጎኖች አሉት?<br><small>How many sides does a hexagon have?</small> | 6 | `ex.g2_shapes.04.mp3` |
 
-Re-teach clip after two misses: 10.1–28.6 s
+Re-teach clip after two misses: 9.3–27.2 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1139,27 +1139,27 @@ Re-teach clip after two misses: 10.1–28.6 s
 
 ## Grade 2 · Lesson 12 — ሥዕላዊ ግራፍ እና አምድ ግራፍ (Picture graphs and bar graphs)
 
-Place on the map: chart · Mini-game: market · Hook video: `video/g2_graphs.mp4` (28.6 s) · Manim code: `animations/lessons/g2_graphs.py`
+Place on the map: chart · Mini-game: market · Hook video: `video/g2_graphs.mp4` (28.7 s) · Manim code: `animations/lessons/g2_graphs.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ሥዕላዊ ግራፍ እና አምድ ግራፍ | Picture graphs and bar graphs | `lesson.g2_graphs.title` |
-| 4.1 s | የሁለተኛ ክፍል ልጆች የሚወዱትን ፍራፍሬ መረጡ። በግራፍ እናሳየው። | The Grade 2 children chose their favourite fruit. Let us show it on a graph. | `lesson.g2_graphs.story` |
-| 9.8 s | አራት ልጆች ሙዝ፣ ስድስት ልጆች ማንጎ፣ ሁለት ልጆች ብርቱካን መረጡ። | Four children chose bananas, six chose mangoes and two chose oranges. | `lesson.g2_graphs.example.0` |
-| 13.8 s | ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን። | We colour one box for each child. | `lesson.g2_graphs.example.1` |
-| 17.4 s | ማንጎ ከሙዝ በሁለት ይበልጣል። | Mangoes have two more than bananas. | `lesson.g2_graphs.example.2` |
-| 21.1 s | በአጠቃላይ አስራ ሁለት ልጆች ናቸው። | Altogether there are twelve children. | `lesson.g2_graphs.example.3` |
+| 4.2 s | የሁለተኛ ክፍል ልጆች የሚወዱትን ፍራፍሬ መረጡ። በግራፍ እናሳየው። | The Grade 2 children chose their favourite fruit. Let us show it on a graph. | `lesson.g2_graphs.story` |
+| 9.5 s | አራት ልጆች ሙዝ፣ ስድስት ልጆች ማንጎ፣ ሁለት ልጆች ብርቱካን መረጡ። | Four children chose bananas, six chose mangoes and two chose oranges. | `lesson.g2_graphs.example.0` |
+| 14.9 s | ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን። | We colour one box for each child. | `lesson.g2_graphs.example.1` |
+| 18.4 s | ማንጎ ከሙዝ በሁለት ይበልጣል። | Mangoes have two more than bananas. | `lesson.g2_graphs.example.2` |
+| 21.4 s | በአጠቃላይ አስራ ሁለት ልጆች ናቸው። | Altogether there are twelve children. | `lesson.g2_graphs.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.8 s | tap_choose | ብዙ ልጆች የመረጡት የትኛውን ፍራፍሬ ነው?<br><small>Which fruit did the most children choose?</small> | mango | `ex.g2_graphs.01.mp3` |
-| 21.0 s | tap_choose | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children are there altogether?</small> | 12 | `ex.g2_graphs.04.mp3` |
+| 14.8 s | tap_choose | ብዙ ልጆች የመረጡት የትኛውን ፍራፍሬ ነው?<br><small>Which fruit did the most children choose?</small> | mango | `ex.g2_graphs.01.mp3` |
+| 21.4 s | tap_choose | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children are there altogether?</small> | 12 | `ex.g2_graphs.04.mp3` |
 
-Re-teach clip after two misses: 9.7–28.6 s
+Re-teach clip after two misses: 9.4–28.7 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1206,27 +1206,27 @@ Re-teach clip after two misses: 9.7–28.6 s
 
 ## Grade 3 · Lesson 1 — መቶዎች፣ አስሮች እና አንዶች (Hundreds, tens and ones)
 
-Place on the map: store · Mini-game: memory · Hook video: `video/g3_hundreds.mp4` (30.0 s) · Manim code: `animations/lessons/g3_hundreds.py`
+Place on the map: store · Mini-game: memory · Hook video: `video/g3_hundreds.mp4` (29.5 s) · Manim code: `animations/lessons/g3_hundreds.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | መቶዎች፣ አስሮች እና አንዶች | Hundreds, tens and ones | `lesson.g3_hundreds.title` |
-| 4.3 s | ዛሬ በትልልቅ ቁጥሮች እንጫወታለን። አስር አስሮች ሲሰባሰቡ አንድ መቶ ይሆናሉ። | Today we play with big numbers. When ten tens come together, they make one hundred. | `lesson.g3_hundreds.story` |
-| 10.4 s | አስር አስሮች አንድ መቶ ይሆናሉ። | Ten tens make one hundred. | `lesson.g3_hundreds.example.0` |
+| 4.4 s | ዛሬ በትልልቅ ቁጥሮች እንጫወታለን። አስር አስሮች ሲሰባሰቡ አንድ መቶ ይሆናሉ። | Today we play with big numbers. When ten tens come together, they make one hundred. | `lesson.g3_hundreds.story` |
+| 10.8 s | አስር አስሮች አንድ መቶ ይሆናሉ። | Ten tens make one hundred. | `lesson.g3_hundreds.example.0` |
 | 15.0 s | እዚህ ሁለት መቶዎች፣ አራት አስሮች እና አምስት አንዶች አሉ። | Here are two hundreds, four tens and five ones. | `lesson.g3_hundreds.example.1` |
-| 18.6 s | ሁለት መቶ፣ አርባ እና አምስት። | Two hundred, forty and five. | `lesson.g3_hundreds.example.2` |
+| 19.5 s | ሁለት መቶ፣ አርባ እና አምስት። | Two hundred, forty and five. | `lesson.g3_hundreds.example.2` |
 | 22.3 s | ቁጥሩ ሁለት መቶ አርባ አምስት ነው። | The number is two hundred forty-five. | `lesson.g3_hundreds.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 10.3 s | tap_choose | ስንት አስሮች አንድ መቶ ይሆናሉ?<br><small>How many tens make one hundred?</small> | 10 | `ex.g3_hundreds.01.mp3` |
+| 10.8 s | tap_choose | ስንት አስሮች አንድ መቶ ይሆናሉ?<br><small>How many tens make one hundred?</small> | 10 | `ex.g3_hundreds.01.mp3` |
 | 22.2 s | tap_choose | ቁጥሩ ስንት ነው?<br><small>What is the number?</small> | 245 | `ex.g3_hundreds.02.mp3` |
 
-Re-teach clip after two misses: 10.3–30.0 s
+Re-teach clip after two misses: 10.8–29.5 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1274,29 +1274,29 @@ Re-teach clip after two misses: 10.3–30.0 s
 
 ## Grade 3 · Lesson 2 — ባለ ሶስት አሃዝ ቁጥሮችን መደመር (Adding three-digit numbers)
 
-Place on the map: orchard · Mini-game: balloon · Hook video: `video/g3_add3d.mp4` (35.9 s) · Manim code: `animations/lessons/g3_add3d.py`
+Place on the map: orchard · Mini-game: balloon · Hook video: `video/g3_add3d.mp4` (40.6 s) · Manim code: `animations/lessons/g3_add3d.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ባለ ሶስት አሃዝ ቁጥሮችን መደመር | Adding three-digit numbers | `lesson.g3_add3d.title` |
-| 4.5 s | ገበሬው በመጀመሪያው ቀን ሁለት መቶ ሰላሳ ስምንት ብርቱካኖችን፣ በሁለተኛው ቀን መቶ አርባ አምስት ብርቱካኖችን ለቀመ። | The farmer picked two hundred thirty-eight oranges on the first day and one hundred forty-five on the second day. | `lesson.g3_add3d.story` |
-| 10.2 s | ሁለት መቶ ሰላሳ ስምንት ሲደመር መቶ አርባ አምስት። | Two hundred thirty-eight plus one hundred forty-five. | `lesson.g3_add3d.example.0` |
-| 13.8 s | መጀመሪያ አንዶቹን እንደምር፦ ስምንት እና አምስት አስራ ሶስት ነው። | First add the ones: eight and five is thirteen. | `lesson.g3_add3d.example.1` |
-| 17.4 s | ሶስቱን እንጽፋለን፤ አንዱን አስር ወደ አስሮቹ እንወስዳለን። | We write the three and carry one ten to the tens. | `lesson.g3_add3d.example.2` |
-| 21.1 s | አስሮች፦ አንድ፣ ሶስት እና አራት ስምንት ናቸው። | Tens: one, three and four make eight. | `lesson.g3_add3d.example.3` |
-| 24.7 s | መቶዎች፦ ሁለት እና አንድ ሶስት ናቸው። | Hundreds: two and one make three. | `lesson.g3_add3d.example.4` |
-| 28.3 s | መልሱ ሶስት መቶ ሰማንያ ሶስት ነው። | The answer is three hundred eighty-three. | `lesson.g3_add3d.example.5` |
+| 5.0 s | ገበሬው በመጀመሪያው ቀን ሁለት መቶ ሰላሳ ስምንት ብርቱካኖችን፣ በሁለተኛው ቀን መቶ አርባ አምስት ብርቱካኖችን ለቀመ። | The farmer picked two hundred thirty-eight oranges on the first day and one hundred forty-five on the second day. | `lesson.g3_add3d.story` |
+| 13.1 s | ሁለት መቶ ሰላሳ ስምንት ሲደመር መቶ አርባ አምስት። | Two hundred thirty-eight plus one hundred forty-five. | `lesson.g3_add3d.example.0` |
+| 17.3 s | መጀመሪያ አንዶቹን እንደምር፦ ስምንት እና አምስት አስራ ሶስት ነው። | First add the ones: eight and five is thirteen. | `lesson.g3_add3d.example.1` |
+| 21.9 s | ሶስቱን እንጽፋለን፤ አንዱን አስር ወደ አስሮቹ እንወስዳለን። | We write the three and carry one ten to the tens. | `lesson.g3_add3d.example.2` |
+| 26.2 s | አስሮች፦ አንድ፣ ሶስት እና አራት ስምንት ናቸው። | Tens: one, three and four make eight. | `lesson.g3_add3d.example.3` |
+| 30.0 s | መቶዎች፦ ሁለት እና አንድ ሶስት ናቸው። | Hundreds: two and one make three. | `lesson.g3_add3d.example.4` |
+| 33.3 s | መልሱ ሶስት መቶ ሰማንያ ሶስት ነው። | The answer is three hundred eighty-three. | `lesson.g3_add3d.example.5` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.8 s | tap_choose | ስምንት እና አምስት ስንት ነው?<br><small>What is eight and five?</small> | 13 | `ex.g3_add3d.01.mp3` |
-| 21.0 s | tap_choose | አንድ፣ ሶስት እና አራት ስንት ናቸው?<br><small>What are one, three and four together?</small> | 8 | `ex.g3_add3d.02.mp3` |
+| 17.3 s | tap_choose | ስምንት እና አምስት ስንት ነው?<br><small>What is eight and five?</small> | 13 | `ex.g3_add3d.01.mp3` |
+| 26.2 s | tap_choose | አንድ፣ ሶስት እና አራት ስንት ናቸው?<br><small>What are one, three and four together?</small> | 8 | `ex.g3_add3d.02.mp3` |
 
-Re-teach clip after two misses: 13.8–35.9 s
+Re-teach clip after two misses: 17.3–40.6 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1343,29 +1343,29 @@ Re-teach clip after two misses: 13.8–35.9 s
 
 ## Grade 3 · Lesson 3 — ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ (Subtracting three-digit numbers)
 
-Place on the map: schoolyard · Mini-game: market · Hook video: `video/g3_sub3d.mp4` (36.5 s) · Manim code: `animations/lessons/g3_sub3d.py`
+Place on the map: schoolyard · Mini-game: market · Hook video: `video/g3_sub3d.mp4` (45.6 s) · Manim code: `animations/lessons/g3_sub3d.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ባለ ሶስት አሃዝ ቁጥሮችን መቀነስ | Subtracting three-digit numbers | `lesson.g3_sub3d.title` |
-| 4.5 s | በትምህርት ቤታችን አራት መቶ ሃምሳ ሁለት ተማሪዎች አሉ። ዛሬ ሁለት መቶ ሃያ ስምንት ተማሪዎች ለሽርሽር ሄዱ። ስንት ተማሪዎች ቀሩ? | Our school has four hundred fifty-two students. Today two hundred twenty-eight students went on a trip. How many students stayed? | `lesson.g3_sub3d.story` |
-| 10.8 s | አራት መቶ ሃምሳ ሁለት ሲቀነስ ሁለት መቶ ሃያ ስምንት። | Four hundred fifty-two minus two hundred twenty-eight. | `lesson.g3_sub3d.example.0` |
-| 14.4 s | ከሁለት ስምንት መውሰድ አንችልም፤ ስለዚህ አንድ አስር እንፈታለን። | We cannot take eight from two, so we break one ten. | `lesson.g3_sub3d.example.1` |
-| 18.0 s | አሁን አራት አስሮች እና አስራ ሁለት አንዶች አሉ። | Now there are four tens and twelve ones. | `lesson.g3_sub3d.example.2` |
-| 21.7 s | አስራ ሁለት ሲቀነስ ስምንት አራት ነው። | Twelve minus eight is four. | `lesson.g3_sub3d.example.3` |
-| 25.3 s | አራት አስሮች ሲቀነስ ሁለት አስሮች ሁለት አስሮች ናቸው፤ አራት መቶዎች ሲቀነስ ሁለት መቶዎች ሁለት መቶዎች ናቸው። | Four tens minus two tens is two tens; four hundreds minus two hundreds is two hundreds. | `lesson.g3_sub3d.example.4` |
-| 28.9 s | መልሱ ሁለት መቶ ሃያ አራት ነው። | The answer is two hundred twenty-four. | `lesson.g3_sub3d.example.5` |
+| 5.0 s | በትምህርት ቤታችን አራት መቶ ሃምሳ ሁለት ተማሪዎች አሉ። ዛሬ ሁለት መቶ ሃያ ስምንት ተማሪዎች ለሽርሽር ሄዱ። ስንት ተማሪዎች ቀሩ? | Our school has four hundred fifty-two students. Today two hundred twenty-eight students went on a trip. How many students stayed? | `lesson.g3_sub3d.story` |
+| 14.5 s | አራት መቶ ሃምሳ ሁለት ሲቀነስ ሁለት መቶ ሃያ ስምንት። | Four hundred fifty-two minus two hundred twenty-eight. | `lesson.g3_sub3d.example.0` |
+| 18.9 s | ከሁለት ስምንት መውሰድ አንችልም፤ ስለዚህ አንድ አስር እንፈታለን። | We cannot take eight from two, so we break one ten. | `lesson.g3_sub3d.example.1` |
+| 23.7 s | አሁን አራት አስሮች እና አስራ ሁለት አንዶች አሉ። | Now there are four tens and twelve ones. | `lesson.g3_sub3d.example.2` |
+| 27.6 s | አስራ ሁለት ሲቀነስ ስምንት አራት ነው። | Twelve minus eight is four. | `lesson.g3_sub3d.example.3` |
+| 31.0 s | አራት አስሮች ሲቀነስ ሁለት አስሮች ሁለት አስሮች ናቸው፤ አራት መቶዎች ሲቀነስ ሁለት መቶዎች ሁለት መቶዎች ናቸው። | Four tens minus two tens is two tens; four hundreds minus two hundreds is two hundreds. | `lesson.g3_sub3d.example.4` |
+| 38.6 s | መልሱ ሁለት መቶ ሃያ አራት ነው። | The answer is two hundred twenty-four. | `lesson.g3_sub3d.example.5` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 14.3 s | tap_choose | ከሁለት አንዶች ስምንት መውሰድ እንችላለን?<br><small>Can we take eight ones from two ones?</small> | no | `ex.g3_sub3d.01.mp3` |
-| 21.6 s | tap_choose | አስራ ሁለት ሲቀነስ ስምንት ስንት ነው?<br><small>What is twelve minus eight?</small> | 4 | `ex.g3_sub3d.02.mp3` |
+| 18.9 s | tap_choose | ከሁለት አንዶች ስምንት መውሰድ እንችላለን?<br><small>Can we take eight ones from two ones?</small> | no | `ex.g3_sub3d.01.mp3` |
+| 27.6 s | tap_choose | አስራ ሁለት ሲቀነስ ስምንት ስንት ነው?<br><small>What is twelve minus eight?</small> | 4 | `ex.g3_sub3d.02.mp3` |
 
-Re-teach clip after two misses: 14.3–36.5 s
+Re-teach clip after two misses: 18.9–45.6 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1412,27 +1412,27 @@ Re-teach clip after two misses: 14.3–36.5 s
 
 ## Grade 3 · Lesson 4 — በረድፍ እናባዛ (Multiplying in rows)
 
-Place on the map: field · Mini-game: coffee · Hook video: `video/g3_times.mp4` (28.2 s) · Manim code: `animations/lessons/g3_times.py`
+Place on the map: field · Mini-game: coffee · Hook video: `video/g3_times.mp4` (30.5 s) · Manim code: `animations/lessons/g3_times.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | በረድፍ እናባዛ | Multiplying in rows | `lesson.g3_times.title` |
-| 3.9 s | አባቴ በእርሻው ላይ የቡና ችግኞችን በረድፍ ተከለ። በእያንዳንዱ ረድፍ እኩል ችግኞች አሉ። | Father planted coffee seedlings in rows on the farm. Every row has the same number of seedlings. | `lesson.g3_times.story` |
-| 9.6 s | ሶስት ረድፎች አሉ፤ በእያንዳንዱ ረድፍ አምስት ችግኞች አሉ። | There are three rows, with five seedlings in each row. | `lesson.g3_times.example.0` |
-| 13.2 s | አምስት፣ አስር፣ አስራ አምስት። | Five, ten, fifteen. | `lesson.g3_times.example.1` |
-| 16.8 s | ሶስት ጊዜ አምስት እኩል ነው አስራ አምስት። | Three times five equals fifteen. | `lesson.g3_times.example.2` |
-| 20.5 s | ስናዞረው አምስት ረድፎች በሶስት በሶስት ይሆናሉ፤ አሁንም አስራ አምስት ነው። | When we turn it around, there are five rows of three; it is still fifteen. | `lesson.g3_times.example.3` |
+| 3.3 s | አባቴ በእርሻው ላይ የቡና ችግኞችን በረድፍ ተከለ። በእያንዳንዱ ረድፍ እኩል ችግኞች አሉ። | Father planted coffee seedlings in rows on the farm. Every row has the same number of seedlings. | `lesson.g3_times.story` |
+| 9.8 s | ሶስት ረድፎች አሉ፤ በእያንዳንዱ ረድፍ አምስት ችግኞች አሉ። | There are three rows, with five seedlings in each row. | `lesson.g3_times.example.0` |
+| 14.5 s | አምስት፣ አስር፣ አስራ አምስት። | Five, ten, fifteen. | `lesson.g3_times.example.1` |
+| 17.3 s | ሶስት ጊዜ አምስት እኩል ነው አስራ አምስት። | Three times five equals fifteen. | `lesson.g3_times.example.2` |
+| 20.8 s | ስናዞረው አምስት ረድፎች በሶስት በሶስት ይሆናሉ፤ አሁንም አስራ አምስት ነው። | When we turn it around, there are five rows of three; it is still fifteen. | `lesson.g3_times.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.2 s | tap_choose | ሶስት ረድፎች በአምስት በአምስት ስንት ችግኞች ናቸው?<br><small>How many seedlings are three rows of five?</small> | 15 | `ex.g3_times.01.mp3` |
-| 20.4 s | tap_choose | ስናዞረው ስንት ችግኞች ይሆናሉ?<br><small>When we turn it around, how many seedlings are there?</small> | 15 | `ex.g3_times.02.mp3` |
+| 14.4 s | tap_choose | ሶስት ረድፎች በአምስት በአምስት ስንት ችግኞች ናቸው?<br><small>How many seedlings are three rows of five?</small> | 15 | `ex.g3_times.01.mp3` |
+| 20.8 s | tap_choose | ስናዞረው ስንት ችግኞች ይሆናሉ?<br><small>When we turn it around, how many seedlings are there?</small> | 15 | `ex.g3_times.02.mp3` |
 
-Re-teach clip after two misses: 9.5–28.2 s
+Re-teach clip after two misses: 9.8–30.5 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1479,27 +1479,27 @@ Re-teach clip after two misses: 9.5–28.2 s
 
 ## Grade 3 · Lesson 5 — እኩል ማካፈል (Sharing equally)
 
-Place on the map: village · Mini-game: race · Hook video: `video/g3_share.mp4` (29.6 s) · Manim code: `animations/lessons/g3_share.py`
+Place on the map: village · Mini-game: race · Hook video: `video/g3_share.mp4` (31.7 s) · Manim code: `animations/lessons/g3_share.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | እኩል ማካፈል | Sharing equally | `lesson.g3_share.title` |
-| 4.7 s | እማማ አስራ ሁለት ብርቱካኖችን ለሶስት ልጆች በእኩል ማካፈል ትፈልጋለች። ማንም ከሌላው መብለጥ የለበትም። | Mama wants to share twelve oranges equally among three children. Nobody should get more than anyone else. | `lesson.g3_share.story` |
-| 10.4 s | አንድ ለአንተ፣ አንድ ለአንቺ፣ አንድ ለእሱ፤ በዙር እናካፍላለን። | One for you, one for you, one for him: we share in turns. | `lesson.g3_share.example.0` |
-| 14.0 s | ሁሉም እስኪያልቁ እንቀጥላለን። | We keep going until they are all gone. | `lesson.g3_share.example.1` |
-| 18.2 s | እያንዳንዱ ልጅ አራት ብርቱካኖች አገኘ። | Each child gets four oranges. | `lesson.g3_share.example.2` |
-| 21.8 s | አስራ ሁለት ሲካፈል ለሶስት እኩል ነው አራት። | Twelve divided by three equals four. | `lesson.g3_share.example.3` |
+| 4.0 s | እማማ አስራ ሁለት ብርቱካኖችን ለሶስት ልጆች በእኩል ማካፈል ትፈልጋለች። ማንም ከሌላው መብለጥ የለበትም። | Mama wants to share twelve oranges equally among three children. Nobody should get more than anyone else. | `lesson.g3_share.story` |
+| 11.5 s | አንድ ለአንተ፣ አንድ ለአንቺ፣ አንድ ለእሱ፤ በዙር እናካፍላለን። | One for you, one for you, one for him: we share in turns. | `lesson.g3_share.example.0` |
+| 16.1 s | ሁሉም እስኪያልቁ እንቀጥላለን። | We keep going until they are all gone. | `lesson.g3_share.example.1` |
+| 20.3 s | እያንዳንዱ ልጅ አራት ብርቱካኖች አገኘ። | Each child gets four oranges. | `lesson.g3_share.example.2` |
+| 23.9 s | አስራ ሁለት ሲካፈል ለሶስት እኩል ነው አራት። | Twelve divided by three equals four. | `lesson.g3_share.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.9 s | tap_choose | ከአንድ ዙር በኋላ ስንት ብርቱካኖች ተሰጡ?<br><small>After one turn, how many oranges have been given out?</small> | 3 | `ex.g3_share.01.mp3` |
-| 18.1 s | tap_choose | እያንዳንዱ ልጅ ስንት ብርቱካኖች ያገኛል?<br><small>How many oranges does each child get?</small> | 4 | `ex.g3_share.04.mp3` |
+| 16.1 s | tap_choose | ከአንድ ዙር በኋላ ስንት ብርቱካኖች ተሰጡ?<br><small>After one turn, how many oranges have been given out?</small> | 3 | `ex.g3_share.01.mp3` |
+| 20.3 s | tap_choose | እያንዳንዱ ልጅ ስንት ብርቱካኖች ያገኛል?<br><small>How many oranges does each child get?</small> | 4 | `ex.g3_share.04.mp3` |
 
-Re-teach clip after two misses: 10.3–29.6 s
+Re-teach clip after two misses: 11.4–31.7 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1546,27 +1546,27 @@ Re-teach clip after two misses: 10.3–29.6 s
 
 ## Grade 3 · Lesson 6 — ሶስተኛ እና ሌሎች ክፍልፋዮች (Thirds and other fractions)
 
-Place on the map: feast · Mini-game: memory · Hook video: `video/g3_fractions.mp4` (28.8 s) · Manim code: `animations/lessons/g3_fractions.py`
+Place on the map: feast · Mini-game: memory · Hook video: `video/g3_fractions.mp4` (31.1 s) · Manim code: `animations/lessons/g3_fractions.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ሶስተኛ እና ሌሎች ክፍልፋዮች | Thirds and other fractions | `lesson.g3_fractions.title` |
-| 4.5 s | እናቴ አንድ እንጀራ ለሶስት ልጆች በእኩል ታካፍላለች። እያንዳንዱ ልጅ ስንት ያገኛል? | Mother shares one injera equally among three children. How much does each child get? | `lesson.g3_fractions.story` |
-| 10.2 s | እንጀራውን በሶስት እኩል ክፍሎች ከፈለችው። | She divided the injera into three equal parts. | `lesson.g3_fractions.example.0` |
-| 13.8 s | እያንዳንዱ ክፍል አንድ ሶስተኛ ነው፤ እንዲህ እንጽፈዋለን፦ አንድ በሶስት። | Each part is one third; we write it like this: one over three. | `lesson.g3_fractions.example.1` |
-| 17.4 s | ሁለት ክፍሎች ሁለት ሶስተኛ ናቸው። | Two parts are two thirds. | `lesson.g3_fractions.example.2` |
-| 21.1 s | ሶስት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ። | Three thirds make one whole injera. | `lesson.g3_fractions.example.3` |
+| 4.7 s | እናቴ አንድ እንጀራ ለሶስት ልጆች በእኩል ታካፍላለች። እያንዳንዱ ልጅ ስንት ያገኛል? | Mother shares one injera equally among three children. How much does each child get? | `lesson.g3_fractions.story` |
+| 11.0 s | እንጀራውን በሶስት እኩል ክፍሎች ከፈለችው። | She divided the injera into three equal parts. | `lesson.g3_fractions.example.0` |
+| 14.7 s | እያንዳንዱ ክፍል አንድ ሶስተኛ ነው፤ እንዲህ እንጽፈዋለን፦ አንድ በሶስት። | Each part is one third; we write it like this: one over three. | `lesson.g3_fractions.example.1` |
+| 19.8 s | ሁለት ክፍሎች ሁለት ሶስተኛ ናቸው። | Two parts are two thirds. | `lesson.g3_fractions.example.2` |
+| 23.1 s | ሶስት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ። | Three thirds make one whole injera. | `lesson.g3_fractions.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.8 s | tap_choose | ስንት እኩል ክፍሎች አሉ?<br><small>How many equal parts are there?</small> | 3 | `ex.g3_fractions.01.mp3` |
-| 21.0 s | tap_choose | ስንት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?<br><small>How many thirds make one whole injera?</small> | 3 | `ex.g3_fractions.03.mp3` |
+| 14.6 s | tap_choose | ስንት እኩል ክፍሎች አሉ?<br><small>How many equal parts are there?</small> | 3 | `ex.g3_fractions.01.mp3` |
+| 23.1 s | tap_choose | ስንት ሶስተኛዎች አንድ ሙሉ እንጀራ ይሆናሉ?<br><small>How many thirds make one whole injera?</small> | 3 | `ex.g3_fractions.03.mp3` |
 
-Re-teach clip after two misses: 10.1–28.8 s
+Re-teach clip after two misses: 10.9–31.1 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1613,27 +1613,27 @@ Re-teach clip after two misses: 10.1–28.8 s
 
 ## Grade 3 · Lesson 7 — ማወዳደር እና ማጠጋጋት (Comparing and rounding)
 
-Place on the map: farm · Mini-game: race · Hook video: `video/g3_round.mp4` (28.8 s) · Manim code: `animations/lessons/g3_round.py`
+Place on the map: farm · Mini-game: race · Hook video: `video/g3_round.mp4` (36.5 s) · Manim code: `animations/lessons/g3_round.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ማወዳደር እና ማጠጋጋት | Comparing and rounding | `lesson.g3_round.title` |
-| 4.1 s | ሁለት ቡድኖች የቡና ፍሬ ለቀሙ። ቀዩ ቡድን ሶስት መቶ አርባ ስምንት፣ ሰማያዊው ቡድን ሶስት መቶ ሰማንያ አራት ፍሬዎች ለቀሙ። | Two teams picked coffee cherries. The red team picked three hundred forty-eight and the blue team three hundred eighty-four. | `lesson.g3_round.story` |
-| 10.4 s | የሁለቱም መቶዎች እኩል ናቸው፤ ስለዚህ አስሮቹን እናወዳድር። | Both numbers have the same hundreds, so we compare the tens. | `lesson.g3_round.example.0` |
-| 14.0 s | አራት አስሮች ከስምንት አስሮች ያንሳሉ፤ ሶስት መቶ አርባ ስምንት ያንሳል። | Four tens are fewer than eight tens, so three hundred forty-eight is less. | `lesson.g3_round.example.1` |
-| 17.6 s | በቁጥር መስመር ላይ ሶስት መቶ አርባ ስምንት ለሶስት መቶ ሃምሳ ይቀርባል። | On the number line, three hundred forty-eight is closest to three hundred fifty. | `lesson.g3_round.example.2` |
-| 21.3 s | ወደ ቅርብ መቶ ስናጠጋጋው ግን ሶስት መቶ ይሆናል። | Rounded to the nearest hundred, it is three hundred. | `lesson.g3_round.example.3` |
+| 4.0 s | ሁለት ቡድኖች የቡና ፍሬ ለቀሙ። ቀዩ ቡድን ሶስት መቶ አርባ ስምንት፣ ሰማያዊው ቡድን ሶስት መቶ ሰማንያ አራት ፍሬዎች ለቀሙ። | Two teams picked coffee cherries. The red team picked three hundred forty-eight and the blue team three hundred eighty-four. | `lesson.g3_round.story` |
+| 13.1 s | የሁለቱም መቶዎች እኩል ናቸው፤ ስለዚህ አስሮቹን እናወዳድር። | Both numbers have the same hundreds, so we compare the tens. | `lesson.g3_round.example.0` |
+| 17.6 s | አራት አስሮች ከስምንት አስሮች ያንሳሉ፤ ሶስት መቶ አርባ ስምንት ያንሳል። | Four tens are fewer than eight tens, so three hundred forty-eight is less. | `lesson.g3_round.example.1` |
+| 23.0 s | በቁጥር መስመር ላይ ሶስት መቶ አርባ ስምንት ለሶስት መቶ ሃምሳ ይቀርባል። | On the number line, three hundred forty-eight is closest to three hundred fifty. | `lesson.g3_round.example.2` |
+| 28.4 s | ወደ ቅርብ መቶ ስናጠጋጋው ግን ሶስት መቶ ይሆናል። | Rounded to the nearest hundred, it is three hundred. | `lesson.g3_round.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.9 s | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | b | `ex.compare.18.mp3` |
-| 21.2 s | tap_choose | ሶስት መቶ አርባ ስምንት ለየትኛው መቶ ይቀርባል?<br><small>Which hundred is three hundred forty-eight closer to?</small> | 300 | `ex.g3_round.01.mp3` |
+| 17.6 s | tap_choose | የትኛው ይበልጣል?<br><small>Which is greater?</small> | b | `ex.compare.18.mp3` |
+| 28.4 s | tap_choose | ሶስት መቶ አርባ ስምንት ለየትኛው መቶ ይቀርባል?<br><small>Which hundred is three hundred forty-eight closer to?</small> | 300 | `ex.g3_round.01.mp3` |
 
-Re-teach clip after two misses: 10.3–28.8 s
+Re-teach clip after two misses: 13.1–36.5 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1680,27 +1680,27 @@ Re-teach clip after two misses: 10.3–28.8 s
 
 ## Grade 3 · Lesson 8 — የማባዛት ሰንጠረዥ እስከ አስር ጊዜ አስር (Times tables to 10 × 10)
 
-Place on the map: eggs · Mini-game: memory · Hook video: `video/g3_tables.mp4` (28.0 s) · Manim code: `animations/lessons/g3_tables.py`
+Place on the map: eggs · Mini-game: memory · Hook video: `video/g3_tables.mp4` (31.6 s) · Manim code: `animations/lessons/g3_tables.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | የማባዛት ሰንጠረዥ እስከ አስር ጊዜ አስር | Times tables to 10 × 10 | `lesson.g3_tables.title` |
-| 3.9 s | በገበያው እንቁላሎች በሳጥን ይሸጣሉ። በእያንዳንዱ ሳጥን ስድስት እንቁላሎች አሉ። | At the market, eggs are sold in boxes. Each box holds six eggs. | `lesson.g3_tables.story` |
-| 9.6 s | አንድ ሳጥን ስድስት፣ ሁለት ሳጥኖች አስራ ሁለት፣ ሶስት ሳጥኖች አስራ ስምንት ናቸው። | One box is six, two boxes are twelve, three boxes are eighteen. | `lesson.g3_tables.example.0` |
-| 13.2 s | በስድስት በስድስት እየዘለልን እንቆጥራለን። | We skip count in sixes. | `lesson.g3_tables.example.1` |
-| 16.8 s | ሰባት ሳጥኖች፦ ሰባት ጊዜ ስድስት አርባ ሁለት ነው። | Seven boxes: seven times six is forty-two. | `lesson.g3_tables.example.2` |
-| 20.5 s | ስድስት ጊዜ ሰባትም አርባ ሁለት ነው። | Six times seven is forty-two too. | `lesson.g3_tables.example.3` |
+| 4.7 s | በገበያው እንቁላሎች በሳጥን ይሸጣሉ። በእያንዳንዱ ሳጥን ስድስት እንቁላሎች አሉ። | At the market, eggs are sold in boxes. Each box holds six eggs. | `lesson.g3_tables.story` |
+| 10.7 s | አንድ ሳጥን ስድስት፣ ሁለት ሳጥኖች አስራ ሁለት፣ ሶስት ሳጥኖች አስራ ስምንት ናቸው። | One box is six, two boxes are twelve, three boxes are eighteen. | `lesson.g3_tables.example.0` |
+| 16.5 s | በስድስት በስድስት እየዘለልን እንቆጥራለን። | We skip count in sixes. | `lesson.g3_tables.example.1` |
+| 20.2 s | ሰባት ሳጥኖች፦ ሰባት ጊዜ ስድስት አርባ ሁለት ነው። | Seven boxes: seven times six is forty-two. | `lesson.g3_tables.example.2` |
+| 24.3 s | ስድስት ጊዜ ሰባትም አርባ ሁለት ነው። | Six times seven is forty-two too. | `lesson.g3_tables.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 9.5 s | tap_choose | ሶስት ሳጥኖች ስንት እንቁላሎች ናቸው?<br><small>How many eggs are in three boxes?</small> | 18 | `ex.g3_tables.01.mp3` |
-| 20.4 s | tap_choose | ስድስት ጊዜ ሰባት ስንት ነው?<br><small>What is six times seven?</small> | 42 | `ex.g3_tables.02.mp3` |
+| 10.6 s | tap_choose | ሶስት ሳጥኖች ስንት እንቁላሎች ናቸው?<br><small>How many eggs are in three boxes?</small> | 18 | `ex.g3_tables.01.mp3` |
+| 24.3 s | tap_choose | ስድስት ጊዜ ሰባት ስንት ነው?<br><small>What is six times seven?</small> | 42 | `ex.g3_tables.02.mp3` |
 
-Re-teach clip after two misses: 9.5–28.0 s
+Re-teach clip after two misses: 10.6–31.6 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1747,27 +1747,27 @@ Re-teach clip after two misses: 9.5–28.0 s
 
 ## Grade 3 · Lesson 9 — ማካፈል እና ማባዛት (Division and multiplication)
 
-Place on the map: playground · Mini-game: coffee · Hook video: `video/g3_divide.mp4` (28.6 s) · Manim code: `animations/lessons/g3_divide.py`
+Place on the map: playground · Mini-game: coffee · Hook video: `video/g3_divide.mp4` (28.5 s) · Manim code: `animations/lessons/g3_divide.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ማካፈል እና ማባዛት | Division and multiplication | `lesson.g3_divide.title` |
-| 4.5 s | ሃያ አራት ተማሪዎች ለጨዋታ በቡድን ይከፈላሉ። በእያንዳንዱ ቡድን ስድስት ተማሪዎች ይኖራሉ። | Twenty-four students split into teams for a game. Each team will have six students. | `lesson.g3_divide.story` |
-| 10.2 s | ሃያ አራት ተማሪዎችን በስድስት በስድስት እንቧድናለን። | We put the twenty-four students in groups of six. | `lesson.g3_divide.example.0` |
-| 13.8 s | አራት ቡድኖች ሆኑ። | That makes four teams. | `lesson.g3_divide.example.1` |
-| 17.4 s | ሃያ አራት ሲካፈል ለስድስት አራት ነው። | Twenty-four divided by six is four. | `lesson.g3_divide.example.2` |
-| 21.1 s | ምክንያቱም አራት ጊዜ ስድስት ሃያ አራት ነው። | That is because four times six is twenty-four. | `lesson.g3_divide.example.3` |
+| 4.2 s | ሃያ አራት ተማሪዎች ለጨዋታ በቡድን ይከፈላሉ። በእያንዳንዱ ቡድን ስድስት ተማሪዎች ይኖራሉ። | Twenty-four students split into teams for a game. Each team will have six students. | `lesson.g3_divide.story` |
+| 10.9 s | ሃያ አራት ተማሪዎችን በስድስት በስድስት እንቧድናለን። | We put the twenty-four students in groups of six. | `lesson.g3_divide.example.0` |
+| 15.2 s | አራት ቡድኖች ሆኑ። | That makes four teams. | `lesson.g3_divide.example.1` |
+| 17.6 s | ሃያ አራት ሲካፈል ለስድስት አራት ነው። | Twenty-four divided by six is four. | `lesson.g3_divide.example.2` |
+| 20.9 s | ምክንያቱም አራት ጊዜ ስድስት ሃያ አራት ነው። | That is because four times six is twenty-four. | `lesson.g3_divide.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.8 s | tap_choose | ስንት ቡድኖች ሆኑ?<br><small>How many teams are there?</small> | 4 | `ex.g3_divide.01.mp3` |
-| 21.0 s | tap_choose | ሃያ አራት ሲካፈል ለስድስት አራት መሆኑን የሚያሳየው የትኛው ማባዛት ነው?<br><small>Which multiplication shows that twenty-four divided by six is four?</small> | a | `ex.g3_divide.02.mp3` |
+| 15.2 s | tap_choose | ስንት ቡድኖች ሆኑ?<br><small>How many teams are there?</small> | 4 | `ex.g3_divide.01.mp3` |
+| 20.9 s | tap_choose | ሃያ አራት ሲካፈል ለስድስት አራት መሆኑን የሚያሳየው የትኛው ማባዛት ነው?<br><small>Which multiplication shows that twenty-four divided by six is four?</small> | a | `ex.g3_divide.02.mp3` |
 
-Re-teach clip after two misses: 10.1–28.6 s
+Re-teach clip after two misses: 10.8–28.5 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1814,27 +1814,27 @@ Re-teach clip after two misses: 10.1–28.6 s
 
 ## Grade 3 · Lesson 10 — ክፍልፋዮች በቁጥር መስመር ላይ (Fractions on a number line)
 
-Place on the map: path · Mini-game: race · Hook video: `video/g3_fracline.mp4` (28.8 s) · Manim code: `animations/lessons/g3_fracline.py`
+Place on the map: path · Mini-game: race · Hook video: `video/g3_fracline.mp4` (32.1 s) · Manim code: `animations/lessons/g3_fracline.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ክፍልፋዮች በቁጥር መስመር ላይ | Fractions on a number line | `lesson.g3_fracline.title` |
-| 4.1 s | ከቤት እስከ ትምህርት ቤት ያለውን መንገድ በአራት እኩል ክፍሎች እንከፍለው። ሰላም ምን ያህል ተጓዘች? | Let us split the road from home to school into four equal parts. How far has Selam walked? | `lesson.g3_fracline.story` |
-| 9.8 s | ከዜሮ እስከ አንድ ያለውን መስመር በአራት እኩል ክፍሎች እንከፍላለን። | We split the line from zero to one into four equal parts. | `lesson.g3_fracline.example.0` |
-| 13.4 s | እያንዳንዱ ዝላይ አንድ ሩብ ነው፤ አንድ ሩብ፣ ሁለት ሩብ፣ ሶስት ሩብ፣ አራት ሩብ። | Each jump is one quarter: one quarter, two quarters, three quarters, four quarters. | `lesson.g3_fracline.example.1` |
-| 17.6 s | ሁለት ሩብ ከግማሽ ጋር በአንድ ቦታ ላይ ነው። | Two quarters is at the same place as one half. | `lesson.g3_fracline.example.2` |
-| 21.2 s | ስለዚህ ሁለት ሩብ እና ግማሽ እኩል ናቸው። | So two quarters and one half are equal. | `lesson.g3_fracline.example.3` |
+| 4.2 s | ከቤት እስከ ትምህርት ቤት ያለውን መንገድ በአራት እኩል ክፍሎች እንከፍለው። ሰላም ምን ያህል ተጓዘች? | Let us split the road from home to school into four equal parts. How far has Selam walked? | `lesson.g3_fracline.story` |
+| 10.8 s | ከዜሮ እስከ አንድ ያለውን መስመር በአራት እኩል ክፍሎች እንከፍላለን። | We split the line from zero to one into four equal parts. | `lesson.g3_fracline.example.0` |
+| 15.7 s | እያንዳንዱ ዝላይ አንድ ሩብ ነው፤ አንድ ሩብ፣ ሁለት ሩብ፣ ሶስት ሩብ፣ አራት ሩብ። | Each jump is one quarter: one quarter, two quarters, three quarters, four quarters. | `lesson.g3_fracline.example.1` |
+| 20.9 s | ሁለት ሩብ ከግማሽ ጋር በአንድ ቦታ ላይ ነው። | Two quarters is at the same place as one half. | `lesson.g3_fracline.example.2` |
+| 24.5 s | ስለዚህ ሁለት ሩብ እና ግማሽ እኩል ናቸው። | So two quarters and one half are equal. | `lesson.g3_fracline.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.3 s | tap_choose | እያንዳንዱ ዝላይ ስንት ነው?<br><small>How long is each jump?</small> | 1/4 | `ex.g3_fracline.01.mp3` |
-| 21.2 s | tap_choose | ሁለት ሩብ ከየትኛው ጋር እኩል ነው?<br><small>Two quarters are equal to which?</small> | 1/2 | `ex.g3_fracline.04.mp3` |
+| 15.7 s | tap_choose | እያንዳንዱ ዝላይ ስንት ነው?<br><small>How long is each jump?</small> | 1/4 | `ex.g3_fracline.01.mp3` |
+| 24.5 s | tap_choose | ሁለት ሩብ ከየትኛው ጋር እኩል ነው?<br><small>Two quarters are equal to which?</small> | 1/2 | `ex.g3_fracline.04.mp3` |
 
-Re-teach clip after two misses: 9.7–28.8 s
+Re-teach clip after two misses: 10.8–32.1 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1881,7 +1881,7 @@ Re-teach clip after two misses: 9.7–28.8 s
 
 ## Grade 3 · Lesson 11 — ርዝመት፣ ክብደት እና መጠን (Length, mass and liquids)
 
-Place on the map: scales · Mini-game: balloon · Hook video: `video/g3_measure.mp4` (27.4 s) · Manim code: `animations/lessons/g3_measure.py`
+Place on the map: scales · Mini-game: balloon · Hook video: `video/g3_measure.mp4` (32.5 s) · Manim code: `animations/lessons/g3_measure.py`
 
 ### 1. Hook video script
 
@@ -1889,19 +1889,19 @@ Place on the map: scales · Mini-game: balloon · Hook video: `video/g3_measure.
 |---|---|---|---|
 | 0.0 s | ርዝመት፣ ክብደት እና መጠን | Length, mass and liquids | `lesson.g3_measure.title` |
 | 4.3 s | ዛሬ በገበያ ዕቃዎችን እንለካለን፦ ርዝመትን፣ ክብደትን እና የፈሳሽ መጠንን። | Today at the market we measure things: length, mass and how much liquid. | `lesson.g3_measure.story` |
-| 10.0 s | እርሳሱን ከዜሮ ጀምረን በገዢ እንለካለን፤ ርዝመቱ አስራ ሁለት ሳንቲ ሜትር ነው። | We measure the pencil with a ruler, starting at zero: it is twelve centimetres long. | `lesson.g3_measure.example.0` |
-| 13.6 s | የጤፍ ከረጢቱን በሚዛን እንመዝናለን፤ ክብደቱ ሶስት ኪሎ ግራም ነው። | We weigh the bag of teff on a scale: it is three kilograms. | `lesson.g3_measure.example.1` |
-| 17.2 s | ጀሪካኑ አምስት ሊትር ውሃ ይይዛል። | The jerrycan holds five litres of water. | `lesson.g3_measure.example.2` |
-| 20.9 s | ለርዝመት ሜትር እና ሳንቲ ሜትር፣ ለክብደት ኪሎ ግራም፣ ለፈሳሽ ሊትር እንጠቀማለን። | We use metres and centimetres for length, kilograms for mass and litres for liquids. | `lesson.g3_measure.example.3` |
+| 9.8 s | እርሳሱን ከዜሮ ጀምረን በገዢ እንለካለን፤ ርዝመቱ አስራ ሁለት ሳንቲ ሜትር ነው። | We measure the pencil with a ruler, starting at zero: it is twelve centimetres long. | `lesson.g3_measure.example.0` |
+| 15.5 s | የጤፍ ከረጢቱን በሚዛን እንመዝናለን፤ ክብደቱ ሶስት ኪሎ ግራም ነው። | We weigh the bag of teff on a scale: it is three kilograms. | `lesson.g3_measure.example.1` |
+| 20.5 s | ጀሪካኑ አምስት ሊትር ውሃ ይይዛል። | The jerrycan holds five litres of water. | `lesson.g3_measure.example.2` |
+| 23.7 s | ለርዝመት ሜትር እና ሳንቲ ሜትር፣ ለክብደት ኪሎ ግራም፣ ለፈሳሽ ሊትር እንጠቀማለን። | We use metres and centimetres for length, kilograms for mass and litres for liquids. | `lesson.g3_measure.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 9.9 s | tap_choose | እርሳሱ ስንት ሳንቲ ሜትር ይረዝማል?<br><small>How many centimetres long is the pencil?</small> | 12 | `ex.g3_measure.01.mp3` |
-| 17.2 s | tap_choose | ጀሪካኑ ስንት ሊትር ውሃ ይይዛል?<br><small>How many litres of water does the jerrycan hold?</small> | 5 | `ex.g3_measure.02.mp3` |
+| 9.7 s | tap_choose | እርሳሱ ስንት ሳንቲ ሜትር ይረዝማል?<br><small>How many centimetres long is the pencil?</small> | 12 | `ex.g3_measure.01.mp3` |
+| 20.4 s | tap_choose | ጀሪካኑ ስንት ሊትር ውሃ ይይዛል?<br><small>How many litres of water does the jerrycan hold?</small> | 5 | `ex.g3_measure.02.mp3` |
 
-Re-teach clip after two misses: 9.9–27.4 s
+Re-teach clip after two misses: 9.7–32.5 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -1948,27 +1948,27 @@ Re-teach clip after two misses: 9.9–27.4 s
 
 ## Grade 3 · Lesson 12 — ሰዓት በደቂቃ (Time to the minute)
 
-Place on the map: clocktower · Mini-game: memory · Hook video: `video/g3_time.mp4` (28.2 s) · Manim code: `animations/lessons/g3_time.py`
+Place on the map: clocktower · Mini-game: memory · Hook video: `video/g3_time.mp4` (32.9 s) · Manim code: `animations/lessons/g3_time.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ሰዓት በደቂቃ | Time to the minute | `lesson.g3_time.title` |
-| 4.1 s | ሰላም በየቀኑ ጠዋት ወደ ትምህርት ቤት ትሄዳለች። ሰዓቱን አብረን እናንብብ። | Selam walks to school every morning. Let us read the clock together. | `lesson.g3_time.story` |
-| 9.8 s | ትንሹ መርፌ ከሰባት ትንሽ አልፏል፤ ሰዓቱ ሰባት ነው። | The short hand is just past seven, so the hour is seven. | `lesson.g3_time.example.0` |
-| 13.4 s | ትልቁ መርፌ አራት ላይ ነው፤ በአምስት በአምስት ስንቆጥር ሃያ ደቂቃ ነው። | The long hand is on the four: counting by fives, that is twenty minutes. | `lesson.g3_time.example.1` |
-| 17.0 s | ሰዓቱ ሰባት ከሃያ ነው፤ በኢትዮጵያ አቆጣጠር ደግሞ ከጠዋቱ አንድ ሰዓት ከሃያ ነው። | The time is seven twenty; in Ethiopian time it is twenty past one in the morning. | `lesson.g3_time.example.2` |
-| 20.7 s | ከአርባ ደቂቃ በኋላ ስምንት ሰዓት ይሆናል፤ ትምህርት ይጀምራል። | Forty minutes later it is eight o'clock, and school begins. | `lesson.g3_time.example.3` |
+| 3.5 s | ሰላም በየቀኑ ጠዋት ወደ ትምህርት ቤት ትሄዳለች። ሰዓቱን አብረን እናንብብ። | Selam walks to school every morning. Let us read the clock together. | `lesson.g3_time.story` |
+| 8.8 s | ትንሹ መርፌ ከሰባት ትንሽ አልፏል፤ ሰዓቱ ሰባት ነው። | The short hand is just past seven, so the hour is seven. | `lesson.g3_time.example.0` |
+| 13.1 s | ትልቁ መርፌ አራት ላይ ነው፤ በአምስት በአምስት ስንቆጥር ሃያ ደቂቃ ነው። | The long hand is on the four: counting by fives, that is twenty minutes. | `lesson.g3_time.example.1` |
+| 18.3 s | ሰዓቱ ሰባት ከሃያ ነው፤ በኢትዮጵያ አቆጣጠር ደግሞ ከጠዋቱ አንድ ሰዓት ከሃያ ነው። | The time is seven twenty; in Ethiopian time it is twenty past one in the morning. | `lesson.g3_time.example.2` |
+| 24.3 s | ከአርባ ደቂቃ በኋላ ስምንት ሰዓት ይሆናል፤ ትምህርት ይጀምራል። | Forty minutes later it is eight o'clock, and school begins. | `lesson.g3_time.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.3 s | tap_choose | ትልቁ መርፌ አራት ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the four. How many minutes is that?</small> | 20 | `ex.g3_time.01.mp3` |
-| 20.6 s | tap_choose | ከአርባ ደቂቃ በኋላ ስንት ሰዓት ይሆናል?<br><small>What time will it be forty minutes later?</small> | 8:00 | `ex.g3_time.02.mp3` |
+| 13.0 s | tap_choose | ትልቁ መርፌ አራት ላይ ነው። ስንት ደቂቃ ነው?<br><small>The long hand is on the four. How many minutes is that?</small> | 20 | `ex.g3_time.01.mp3` |
+| 24.3 s | tap_choose | ከአርባ ደቂቃ በኋላ ስንት ሰዓት ይሆናል?<br><small>What time will it be forty minutes later?</small> | 8:00 | `ex.g3_time.02.mp3` |
 
-Re-teach clip after two misses: 9.7–28.2 s
+Re-teach clip after two misses: 8.7–32.9 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -2015,27 +2015,27 @@ Re-teach clip after two misses: 9.7–28.2 s
 
 ## Grade 3 · Lesson 13 — ቅርጾች (Shapes)
 
-Place on the map: house · Mini-game: memory · Hook video: `video/g3_shapes.mp4` (28.4 s) · Manim code: `animations/lessons/g3_shapes.py`
+Place on the map: house · Mini-game: memory · Hook video: `video/g3_shapes.mp4` (31.5 s) · Manim code: `animations/lessons/g3_shapes.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ቅርጾች | Shapes | `lesson.g3_shapes.title` |
-| 4.3 s | በመስኮት፣ በበር እና በጣሪያ ላይ ብዙ ቅርጾች አሉ። ጎኖቻቸውን እና ማዕዘኖቻቸውን እንቁጠር። | Windows, doors and roofs have many shapes. Let us count their sides and corners. | `lesson.g3_shapes.story` |
-| 10.0 s | ሶስት ማዕዘን ሶስት ጎኖች እና ሶስት ማዕዘኖች አሉት። | A triangle has three sides and three corners. | `lesson.g3_shapes.example.0` |
-| 13.6 s | አራት ማዕዘን አራት ጎኖች አሉት፤ ተቃራኒ ጎኖቹ እኩል ናቸው። | A rectangle has four sides, and its opposite sides are equal. | `lesson.g3_shapes.example.1` |
-| 17.2 s | ካሬ አራት እኩል ጎኖች እና አራት ቀጥ ያሉ ማዕዘኖች አሉት። | A square has four equal sides and four square corners. | `lesson.g3_shapes.example.2` |
-| 20.9 s | አራት ጎኖች ያሉት ቅርጽ ሁሉ ባለ አራት ጎን ይባላል። | Every shape with four sides is called a quadrilateral. | `lesson.g3_shapes.example.3` |
+| 3.3 s | በመስኮት፣ በበር እና በጣሪያ ላይ ብዙ ቅርጾች አሉ። ጎኖቻቸውን እና ማዕዘኖቻቸውን እንቁጠር። | Windows, doors and roofs have many shapes. Let us count their sides and corners. | `lesson.g3_shapes.story` |
+| 9.8 s | ሶስት ማዕዘን ሶስት ጎኖች እና ሶስት ማዕዘኖች አሉት። | A triangle has three sides and three corners. | `lesson.g3_shapes.example.0` |
+| 14.1 s | አራት ማዕዘን አራት ጎኖች አሉት፤ ተቃራኒ ጎኖቹ እኩል ናቸው። | A rectangle has four sides, and its opposite sides are equal. | `lesson.g3_shapes.example.1` |
+| 18.9 s | ካሬ አራት እኩል ጎኖች እና አራት ቀጥ ያሉ ማዕዘኖች አሉት። | A square has four equal sides and four square corners. | `lesson.g3_shapes.example.2` |
+| 23.4 s | አራት ጎኖች ያሉት ቅርጽ ሁሉ ባለ አራት ጎን ይባላል። | Every shape with four sides is called a quadrilateral. | `lesson.g3_shapes.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 9.9 s | tap_choose | ሶስት ማዕዘን ስንት ጎኖች አሉት?<br><small>How many sides does a triangle have?</small> | 3 | `ex.g2_shapes.01.mp3` |
-| 17.2 s | tap_choose | ካሬ ስንት እኩል ጎኖች አሉት?<br><small>How many equal sides does a square have?</small> | 4 | `ex.g3_shapes.01.mp3` |
+| 9.7 s | tap_choose | ሶስት ማዕዘን ስንት ጎኖች አሉት?<br><small>How many sides does a triangle have?</small> | 3 | `ex.g2_shapes.01.mp3` |
+| 18.9 s | tap_choose | ካሬ ስንት እኩል ጎኖች አሉት?<br><small>How many equal sides does a square have?</small> | 4 | `ex.g3_shapes.01.mp3` |
 
-Re-teach clip after two misses: 9.9–28.4 s
+Re-teach clip after two misses: 9.7–31.5 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -2082,27 +2082,27 @@ Re-teach clip after two misses: 9.9–28.4 s
 
 ## Grade 3 · Lesson 14 — ስፋት እና ዙሪያ (Area and perimeter)
 
-Place on the map: floor · Mini-game: race · Hook video: `video/g3_area.mp4` (28.2 s) · Manim code: `animations/lessons/g3_area.py`
+Place on the map: floor · Mini-game: race · Hook video: `video/g3_area.mp4` (31.2 s) · Manim code: `animations/lessons/g3_area.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ስፋት እና ዙሪያ | Area and perimeter | `lesson.g3_area.title` |
-| 4.1 s | አባቴ የወጥ ቤቱን ወለል በካሬ ሰቆች ሊሸፍን ነው። ስንት ሰቆች ያስፈልጉታል? | Father is covering the kitchen floor with square tiles. How many tiles does he need? | `lesson.g3_area.story` |
-| 9.8 s | ወለሉ ሶስት ረድፎች አሉት፤ በእያንዳንዱ ረድፍ አራት ሰቆች አሉ። | The floor has three rows with four tiles in each row. | `lesson.g3_area.example.0` |
-| 13.4 s | ሶስት ጊዜ አራት አስራ ሁለት ነው፤ ስፋቱ አስራ ሁለት ካሬ አሃዶች ነው። | Three times four is twelve, so the area is twelve square units. | `lesson.g3_area.example.1` |
-| 17.0 s | ዙሪያውን ለማግኘት ጎኖቹን እንደምራለን፦ አራት፣ ሶስት፣ አራት እና ሶስት። | To find the perimeter we add the sides: four, three, four and three. | `lesson.g3_area.example.2` |
-| 20.7 s | ዙሪያው አስራ አራት አሃዶች ነው። | The perimeter is fourteen units. | `lesson.g3_area.example.3` |
+| 3.6 s | አባቴ የወጥ ቤቱን ወለል በካሬ ሰቆች ሊሸፍን ነው። ስንት ሰቆች ያስፈልጉታል? | Father is covering the kitchen floor with square tiles. How many tiles does he need? | `lesson.g3_area.story` |
+| 9.4 s | ወለሉ ሶስት ረድፎች አሉት፤ በእያንዳንዱ ረድፍ አራት ሰቆች አሉ። | The floor has three rows with four tiles in each row. | `lesson.g3_area.example.0` |
+| 14.4 s | ሶስት ጊዜ አራት አስራ ሁለት ነው፤ ስፋቱ አስራ ሁለት ካሬ አሃዶች ነው። | Three times four is twelve, so the area is twelve square units. | `lesson.g3_area.example.1` |
+| 19.5 s | ዙሪያውን ለማግኘት ጎኖቹን እንደምራለን፦ አራት፣ ሶስት፣ አራት እና ሶስት። | To find the perimeter we add the sides: four, three, four and three. | `lesson.g3_area.example.2` |
+| 24.4 s | ዙሪያው አስራ አራት አሃዶች ነው። | The perimeter is fourteen units. | `lesson.g3_area.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.3 s | tap_choose | ስንት ሰቆች ናቸው?<br><small>How many tiles are there?</small> | 12 | `ex.g3_area.01.mp3` |
-| 20.6 s | tap_choose | ዙሪያው ስንት ነው?<br><small>What is the perimeter?</small> | 14 | `ex.g3_area.02.mp3` |
+| 14.3 s | tap_choose | ስንት ሰቆች ናቸው?<br><small>How many tiles are there?</small> | 12 | `ex.g3_area.01.mp3` |
+| 24.4 s | tap_choose | ዙሪያው ስንት ነው?<br><small>What is the perimeter?</small> | 14 | `ex.g3_area.02.mp3` |
 
-Re-teach clip after two misses: 9.7–28.2 s
+Re-teach clip after two misses: 9.3–31.2 s
 
 ### 3. Guided practice (three levels per slot)
 
@@ -2149,27 +2149,27 @@ Re-teach clip after two misses: 9.7–28.2 s
 
 ## Grade 3 · Lesson 15 — ግራፎች እና የቃላት ጥያቄዎች (Graphs and word problems)
 
-Place on the map: chart · Mini-game: market · Hook video: `video/g3_graphs.mp4` (28.6 s) · Manim code: `animations/lessons/g3_graphs.py`
+Place on the map: chart · Mini-game: market · Hook video: `video/g3_graphs.mp4` (32.3 s) · Manim code: `animations/lessons/g3_graphs.py`
 
 ### 1. Hook video script
 
 | Time | Amharic (burned-in caption) | English (optional subtitle) | Audio |
 |---|---|---|---|
 | 0.0 s | ግራፎች እና የቃላት ጥያቄዎች | Graphs and word problems | `lesson.g3_graphs.title` |
-| 4.1 s | የክፍላችን ልጆች የሚወዱትን ፍራፍሬ ተጠየቁ። መልሶቹን በግራፍ እናሳይ። | The children in our class were asked which fruit they like best. Let us show the answers on a graph. | `lesson.g3_graphs.story` |
-| 9.8 s | ሰባት ልጆች ሙዝ፣ አምስት ልጆች ማንጎ፣ ሶስት ልጆች ብርቱካን ወደዱ። | Seven children liked bananas, five liked mangoes and three liked oranges. | `lesson.g3_graphs.example.0` |
-| 13.8 s | ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን፤ ረጅሙ አምድ የሙዝ ነው። | We colour one box for each child; the tallest bar is bananas. | `lesson.g3_graphs.example.1` |
-| 17.4 s | ሙዝ ከማንጎ በሁለት ይበልጣል። | Bananas have two more than mangoes. | `lesson.g3_graphs.example.2` |
-| 21.1 s | በአጠቃላይ ሰባት፣ አምስት እና ሶስት አስራ አምስት ልጆች ናቸው። | Altogether seven, five and three make fifteen children. | `lesson.g3_graphs.example.3` |
+| 4.5 s | የክፍላችን ልጆች የሚወዱትን ፍራፍሬ ተጠየቁ። መልሶቹን በግራፍ እናሳይ። | The children in our class were asked which fruit they like best. Let us show the answers on a graph. | `lesson.g3_graphs.story` |
+| 10.3 s | ሰባት ልጆች ሙዝ፣ አምስት ልጆች ማንጎ፣ ሶስት ልጆች ብርቱካን ወደዱ። | Seven children liked bananas, five liked mangoes and three liked oranges. | `lesson.g3_graphs.example.0` |
+| 15.8 s | ለእያንዳንዱ ልጅ አንድ ሳጥን እንቀባለን፤ ረጅሙ አምድ የሙዝ ነው። | We colour one box for each child; the tallest bar is bananas. | `lesson.g3_graphs.example.1` |
+| 20.6 s | ሙዝ ከማንጎ በሁለት ይበልጣል። | Bananas have two more than mangoes. | `lesson.g3_graphs.example.2` |
+| 23.6 s | በአጠቃላይ ሰባት፣ አምስት እና ሶስት አስራ አምስት ልጆች ናቸው። | Altogether seven, five and three make fifteen children. | `lesson.g3_graphs.example.3` |
 
 ### 2. Watch & tap — video checkpoints
 
 | Pauses at | Type | Question | Answer | Audio |
 |---|---|---|---|---|
-| 13.8 s | tap_choose | ረጅሙ አምድ የትኛው ነው?<br><small>Which bar is the tallest?</small> | banana | `ex.g3_graphs.01.mp3` |
-| 21.0 s | tap_choose | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children are there altogether?</small> | 15 | `ex.g2_graphs.04.mp3` |
+| 15.8 s | tap_choose | ረጅሙ አምድ የትኛው ነው?<br><small>Which bar is the tallest?</small> | banana | `ex.g3_graphs.01.mp3` |
+| 23.5 s | tap_choose | በአጠቃላይ ስንት ልጆች ናቸው?<br><small>How many children are there altogether?</small> | 15 | `ex.g2_graphs.04.mp3` |
 
-Re-teach clip after two misses: 9.7–28.6 s
+Re-teach clip after two misses: 10.3–32.3 s
 
 ### 3. Guided practice (three levels per slot)
 

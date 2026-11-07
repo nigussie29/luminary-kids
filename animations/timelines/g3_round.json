@@ -1,50 +1,50 @@
 {
  "marks": {
   "title": 0.0,
-  "story": 4.133,
-  "step0": 10.367,
-  "step1": 14.0,
-  "step2": 17.633,
-  "step3": 21.267
+  "story": 3.967,
+  "step0": 13.133,
+  "step1": 17.633,
+  "step2": 23.033,
+  "step3": 28.433
  },
  "cues": [
   {
    "start": 0.0,
    "am": "ማወዳደር እና ማጠጋጋት",
    "en": "Comparing and rounding",
-   "end": 3.333
+   "end": 3.167
   },
   {
-   "start": 4.133,
+   "start": 3.967,
    "am": "ሁለት ቡድኖች የቡና ፍሬ ለቀሙ። ቀዩ ቡድን ሶስት መቶ አርባ ስምንት፣ ሰማያዊው ቡድን ሶስት መቶ ሰማንያ አራት ፍሬዎች ለቀሙ።",
    "en": "Two teams picked coffee cherries. The red team picked three hundred forty-eight and the blue team three hundred eighty-four.",
-   "end": 9.767
+   "end": 12.533
   },
   {
-   "start": 10.367,
+   "start": 13.133,
    "am": "የሁለቱም መቶዎች እኩል ናቸው፤ ስለዚህ አስሮቹን እናወዳድር።",
    "en": "Both numbers have the same hundreds, so we compare the tens.",
-   "end": 14.0
-  },
-  {
-   "start": 14.0,
-   "am": "አራት አስሮች ከስምንት አስሮች ያንሳሉ፤ ሶስት መቶ አርባ ስምንት ያንሳል።",
-   "en": "Four tens are fewer than eight tens, so three hundred forty-eight is less.",
    "end": 17.633
   },
   {
    "start": 17.633,
-   "am": "በቁጥር መስመር ላይ ሶስት መቶ አርባ ስምንት ለሶስት መቶ ሃምሳ ይቀርባል።",
-   "en": "On the number line, three hundred forty-eight is closest to three hundred fifty.",
-   "end": 21.267
+   "am": "አራት አስሮች ከስምንት አስሮች ያንሳሉ፤ ሶስት መቶ አርባ ስምንት ያንሳል።",
+   "en": "Four tens are fewer than eight tens, so three hundred forty-eight is less.",
+   "end": 23.033
   },
   {
-   "start": 21.267,
+   "start": 23.033,
+   "am": "በቁጥር መስመር ላይ ሶስት መቶ አርባ ስምንት ለሶስት መቶ ሃምሳ ይቀርባል።",
+   "en": "On the number line, three hundred forty-eight is closest to three hundred fifty.",
+   "end": 28.433
+  },
+  {
+   "start": 28.433,
    "am": "ወደ ቅርብ መቶ ስናጠጋጋው ግን ሶስት መቶ ይሆናል።",
    "en": "Rounded to the nearest hundred, it is three hundred.",
-   "end": 25.2
+   "end": 32.867
   }
  ],
- "duration": 28.8,
+ "duration": 36.467,
  "lesson": "g3_round"
 }
