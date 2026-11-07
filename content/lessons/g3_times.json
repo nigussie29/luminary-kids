@@ -1,0 +1,1131 @@
+{
+  "id": "g3_times",
+  "grade": 3,
+  "n": 4,
+  "title": {
+    "am": "በረድፍ እናባዛ",
+    "en": "Multiplying in rows",
+    "audio_url": "audio/am/lesson.g3_times.title.mp3"
+  },
+  "place": "field",
+  "video": {
+    "src": "video/g3_times.mp4",
+    "src_low": "video/low/g3_times.mp4",
+    "poster": "video/g3_times.jpg",
+    "captions": {
+      "am": "video/g3_times.am.vtt",
+      "en": "video/g3_times.en.vtt"
+    },
+    "duration": 30.5,
+    "checkpoints": [
+      {
+        "t": 14.45,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_times.01",
+          "type": "tap_choose",
+          "prompt_am": "ሶስት ረድፎች በአምስት በአምስት ስንት ችግኞች ናቸው?",
+          "prompt_en": "How many seedlings are three rows of five?",
+          "audio_url": "audio/am/ex.g3_times.01.mp3",
+          "options": [
+            {
+              "v": 8
+            },
+            {
+              "v": 15
+            },
+            {
+              "v": 35
+            }
+          ],
+          "answer": 15,
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 5,
+            "thing": "seedling"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 20.78,
+        "at": "step:3",
+        "exercise": {
+          "id": "g3_times.02",
+          "type": "tap_choose",
+          "prompt_am": "ስናዞረው ስንት ችግኞች ይሆናሉ?",
+          "prompt_en": "When we turn it around, how many seedlings are there?",
+          "audio_url": "audio/am/ex.g3_times.02.mp3",
+          "options": [
+            {
+              "v": 8
+            },
+            {
+              "v": 15
+            },
+            {
+              "v": 53
+            }
+          ],
+          "answer": 15,
+          "visual": {
+            "kind": "array",
+            "rows": 5,
+            "cols": 3,
+            "thing": "seedling"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 9.78,
+      "end": 30.5,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_times.03",
+          "type": "drag_drop_count",
+          "prompt_am": "በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።",
+          "prompt_en": "Let's plant 3 seedlings in each row.",
+          "audio_url": "audio/am/ex.g3_times.03.mp3",
+          "items": {
+            "thing": "seedling",
+            "supply": 8,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "row1",
+              "kind": "row",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "row2",
+              "kind": "row",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_times.04",
+          "type": "drag_drop_count",
+          "prompt_am": "በእያንዳንዱ ረድፍ ሶስት ችግኞችን እንትከል።",
+          "prompt_en": "Let's plant 3 seedlings in each row.",
+          "audio_url": "audio/am/ex.g3_times.03.mp3",
+          "items": {
+            "thing": "seedling",
+            "supply": 11,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "row1",
+              "kind": "row",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "row2",
+              "kind": "row",
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "row3",
+              "kind": "row",
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            3,
+            3,
+            3
+          ],
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_times.05",
+          "type": "drag_drop_count",
+          "prompt_am": "በእያንዳንዱ ረድፍ አራት ችግኞችን እንትከል።",
+          "prompt_en": "Let's plant 4 seedlings in each row.",
+          "audio_url": "audio/am/ex.g3_times.04.mp3",
+          "items": {
+            "thing": "seedling",
+            "supply": 14,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "row1",
+              "kind": "row",
+              "start": 0,
+              "need": 4
+            },
+            {
+              "id": "row2",
+              "kind": "row",
+              "start": 0,
+              "need": 4
+            },
+            {
+              "id": "row3",
+              "kind": "row",
+              "start": 0,
+              "need": 4
+            }
+          ],
+          "answer": [
+            4,
+            4,
+            4
+          ],
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_times.06",
+          "type": "tap_choose",
+          "prompt_am": "ይህ የትኛው ነው?",
+          "prompt_en": "Which one is this?",
+          "audio_url": "audio/am/ex.g2_groups.08.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "2 × 4"
+            },
+            {
+              "v": "b",
+              "label": "2 + 4"
+            },
+            {
+              "v": "c",
+              "label": "4 × 4"
+            }
+          ],
+          "answer": "a",
+          "visual": {
+            "kind": "array",
+            "rows": 2,
+            "cols": 4,
+            "thing": "seedling"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_times.07",
+          "type": "tap_choose",
+          "prompt_am": "ይህ የትኛው ነው?",
+          "prompt_en": "Which one is this?",
+          "audio_url": "audio/am/ex.g2_groups.08.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "3 + 5"
+            },
+            {
+              "v": "b",
+              "label": "3 × 5"
+            },
+            {
+              "v": "c",
+              "label": "5 × 5"
+            }
+          ],
+          "answer": "b",
+          "visual": {
+            "kind": "array",
+            "rows": 3,
+            "cols": 5,
+            "thing": "seedling"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_times.08",
+          "type": "tap_choose",
+          "prompt_am": "ይህ የትኛው ነው?",
+          "prompt_en": "Which one is this?",
+          "audio_url": "audio/am/ex.g2_groups.08.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "4 × 4"
+            },
+            {
+              "v": "b",
+              "label": "4 + 6"
+            },
+            {
+              "v": "c",
+              "label": "4 × 6"
+            }
+          ],
+          "answer": "c",
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 6,
+            "thing": "seedling"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_times.09",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "3",
+            "×",
+            "4",
+            "=",
+            "__"
+          ],
+          "items": [
+            "12",
+            "7",
+            "34"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "12",
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_times.10",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "5",
+            "×",
+            "6",
+            "=",
+            "__"
+          ],
+          "items": [
+            "30",
+            "11",
+            "35"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "30",
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_times.11",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "7",
+            "×",
+            "__",
+            "=",
+            "28"
+          ],
+          "items": [
+            "4",
+            "21",
+            "5"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "4",
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_times.12",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each multiplication to its answer.",
+          "audio_url": "audio/am/ex.g3_times.05.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "2 × 5"
+            },
+            {
+              "id": "w1",
+              "label": "3 × 3"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "9"
+            },
+            {
+              "id": "t0",
+              "label": "10"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_times.13",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each multiplication to its answer.",
+          "audio_url": "audio/am/ex.g3_times.05.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "4 × 5"
+            },
+            {
+              "id": "w1",
+              "label": "3 × 6"
+            },
+            {
+              "id": "w2",
+              "label": "2 × 7"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "18"
+            },
+            {
+              "id": "t2",
+              "label": "14"
+            },
+            {
+              "id": "t0",
+              "label": "20"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_times.14",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ማባዛት ከመልሱ ጋር እናገናኝ።",
+          "prompt_en": "Let's match each multiplication to its answer.",
+          "audio_url": "audio/am/ex.g3_times.05.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "6 × 6"
+            },
+            {
+              "id": "w1",
+              "label": "4 × 8"
+            },
+            {
+              "id": "w2",
+              "label": "7 × 5"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "32"
+            },
+            {
+              "id": "t2",
+              "label": "35"
+            },
+            {
+              "id": "t0",
+              "label": "36"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_times.15",
+          "type": "numpad",
+          "prompt_am": "አራት ጊዜ አምስት ስንት ነው?",
+          "prompt_en": "What is four times five?",
+          "audio_url": "audio/am/ex.g3_times.06.mp3",
+          "answer": 20,
+          "visual": {
+            "kind": "array",
+            "rows": 4,
+            "cols": 5,
+            "thing": "seedling"
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_times.16",
+          "type": "numpad",
+          "prompt_am": "ስድስት ጊዜ ሶስት ስንት ነው?",
+          "prompt_en": "What is six times three?",
+          "audio_url": "audio/am/ex.g3_times.07.mp3",
+          "answer": 18,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_times.17",
+          "type": "numpad",
+          "prompt_am": "ስምንት ጊዜ አራት ስንት ነው?",
+          "prompt_en": "What is eight times four?",
+          "audio_url": "audio/am/ex.g3_times.08.mp3",
+          "answer": 32,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_times.18",
+          "type": "drag_sort",
+          "prompt_am": "አስራ ሁለት የሚሆኑትን እና የማይሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: makes 12, doesn't make 12.",
+          "audio_url": "audio/am/ex.g3_times.09.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "12 ነው",
+              "en": "Makes 12"
+            },
+            {
+              "id": "no",
+              "am": "12 አይደለም",
+              "en": "Not 12"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "3 × 4"
+            },
+            {
+              "id": "b",
+              "label": "2 × 5"
+            },
+            {
+              "id": "c",
+              "label": "2 × 6"
+            },
+            {
+              "id": "d",
+              "label": "3 × 3"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_times.19",
+          "type": "drag_sort",
+          "prompt_am": "ሃያ አራት የሚሆኑትን እና የማይሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: makes 24, doesn't make 24.",
+          "audio_url": "audio/am/ex.g3_times.10.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "24 ነው",
+              "en": "Makes 24"
+            },
+            {
+              "id": "no",
+              "am": "24 አይደለም",
+              "en": "Not 24"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "4 × 6"
+            },
+            {
+              "id": "b",
+              "label": "3 × 7"
+            },
+            {
+              "id": "c",
+              "label": "8 × 3"
+            },
+            {
+              "id": "d",
+              "label": "5 × 5"
+            },
+            {
+              "id": "e",
+              "label": "6 × 4"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_times.20",
+          "type": "drag_sort",
+          "prompt_am": "ሰላሳ ስድስት የሚሆኑትን እና የማይሆኑትን እንለይ።",
+          "prompt_en": "Let's sort: makes 36, doesn't make 36.",
+          "audio_url": "audio/am/ex.g3_times.11.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "36 ነው",
+              "en": "Makes 36"
+            },
+            {
+              "id": "no",
+              "am": "36 አይደለም",
+              "en": "Not 36"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "4 × 9"
+            },
+            {
+              "id": "b",
+              "label": "6 × 6"
+            },
+            {
+              "id": "c",
+              "label": "5 × 7"
+            },
+            {
+              "id": "d",
+              "label": "9 × 4"
+            },
+            {
+              "id": "e",
+              "label": "8 × 5"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "yes",
+            "c": "no",
+            "d": "yes",
+            "e": "no"
+          },
+          "hints": [
+            {
+              "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+              "en": "Count row by row; every row has the same number.",
+              "audio_url": "audio/am/ex.g2_skip.05.mp3"
+            },
+            {
+              "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+              "en": "Skip count, for example five, ten, fifteen.",
+              "audio_url": "audio/am/ex.g2_skip.06.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "coffee",
+    "rounds": [
+      {
+        "n": 8,
+        "trays": [
+          4,
+          4
+        ]
+      },
+      {
+        "n": 12,
+        "trays": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "n": 15,
+        "trays": [
+          5,
+          5,
+          5
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ለእንግዶቹ ቡና እንቅዳ! እያንዳንዱ ትሪ እኩል ስኒዎች ይኑረው።",
+      "en": "Let's pour coffee for the guests! Every tray gets the same number of cups.",
+      "audio_url": "audio/am/ex.g2_groups.19.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_times.21",
+      "type": "drag_drop_count",
+      "prompt_am": "በእያንዳንዱ ረድፍ አምስት ችግኞችን እንትከል።",
+      "prompt_en": "Let's plant 5 seedlings in each row.",
+      "audio_url": "audio/am/ex.g3_times.12.mp3",
+      "items": {
+        "thing": "seedling",
+        "supply": 12,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "row1",
+          "kind": "row",
+          "start": 0,
+          "need": 5
+        },
+        {
+          "id": "row2",
+          "kind": "row",
+          "start": 0,
+          "need": 5
+        }
+      ],
+      "answer": [
+        5,
+        5
+      ],
+      "hints": [
+        {
+          "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+          "en": "Count row by row; every row has the same number.",
+          "audio_url": "audio/am/ex.g2_skip.05.mp3"
+        },
+        {
+          "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+          "en": "Skip count, for example five, ten, fifteen.",
+          "audio_url": "audio/am/ex.g2_skip.06.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_times.22",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "4",
+        "×",
+        "5",
+        "=",
+        "5",
+        "×",
+        "__"
+      ],
+      "items": [
+        "4",
+        "5",
+        "20"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "4",
+      "hints": [
+        {
+          "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+          "en": "Count row by row; every row has the same number.",
+          "audio_url": "audio/am/ex.g2_skip.05.mp3"
+        },
+        {
+          "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+          "en": "Skip count, for example five, ten, fifteen.",
+          "audio_url": "audio/am/ex.g2_skip.06.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_times.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ሶስት ጊዜ ስድስት ከስድስት ጊዜ ሶስት ጋር እኩል ነው።",
+      "prompt_en": "True or not? Three times six equals six times three.",
+      "audio_url": "audio/am/ex.g3_times.13.mp3",
+      "statement_am": "ሶስት ጊዜ ስድስት ከስድስት ጊዜ ሶስት ጋር እኩል ነው።",
+      "statement_en": "Three times six equals six times three.",
+      "visual": {
+        "kind": "array",
+        "rows": 3,
+        "cols": 6,
+        "thing": "seedling"
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_times.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ስድስት ጊዜ አራት",
+        "en": "six times four",
+        "audio_url": "audio/am/ex.g3_times.14.mp3"
+      },
+      "options": [
+        {
+          "v": 24
+        },
+        {
+          "v": 42
+        },
+        {
+          "v": 10
+        }
+      ],
+      "answer": 24,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_times.25",
+      "type": "numpad",
+      "prompt_am": "ዘጠኝ ጊዜ አምስት ስንት ነው?",
+      "prompt_en": "What is nine times five?",
+      "audio_url": "audio/am/ex.g3_times.15.mp3",
+      "answer": 45,
+      "visual": null,
+      "max_digits": 3,
+      "hints": [
+        {
+          "am": "በረድፍ እንቁጠር፤ በእያንዳንዱ ረድፍ እኩል አሉ።",
+          "en": "Count row by row; every row has the same number.",
+          "audio_url": "audio/am/ex.g2_skip.05.mp3"
+        },
+        {
+          "am": "በዝላይ እንቁጠር፤ ለምሳሌ አምስት፣ አስር፣ አስራ አምስት።",
+          "en": "Skip count, for example five, ten, fifteen.",
+          "audio_url": "audio/am/ex.g2_skip.06.mp3"
+        }
+      ]
+    }
+  ]
+}

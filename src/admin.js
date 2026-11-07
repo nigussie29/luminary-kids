@@ -21,7 +21,7 @@
     drag_equation: { equation: ['3', '+', '__', '=', '7'], items: ['4', '3', '10'], targets: [{ id: 'blank' }], answer: '4' },
     drag_sort: { targets: [{ id: 'more', am: 'ከ5 ይበልጣል', en: 'More than 5' }, { id: 'less', am: 'ከ5 ያንሳል', en: 'Fewer than 5' }], items: [{ id: 'a', label: '7' }, { id: 'b', label: '2' }], answer: { a: 'more', b: 'less' } },
     drag_numberline: { line: { min: 0, max: 10, step: 1, labels: 'ends' }, items: ['3', '7'], answer: ['3', '7'] },
-    drag_placevalue: { items: { rods: true, cubes: true }, targets: [{ id: 'mat' }], answer: 34, max_tens: 9 },
+    drag_placevalue: { items: { flats: false, rods: true, cubes: true }, targets: [{ id: 'mat' }], answer: 34, max_tens: 9 },
     drag_match_word: { items: [{ id: 'w0', label: 'አምስት', lang: 'am' }, { id: 'w1', label: 'ሶስት', lang: 'am' }], targets: [{ id: 't0', label: '5' }, { id: 't1', label: '3' }], answer: { w0: 't0', w1: 't1' } },
     drag_make_change: { price: 15, item: { am: 'ዳቦው', en: 'bread', pic: 'bread' }, items: [10, 5, 5, 1, 1], targets: [{ id: 'counter' }], answer: 15 },
     drag_fraction: { shape: 'injera', parts: 4, items: [{ piece: 'quarter', count: 4 }], targets: [{ id: 'injera', start: 0 }], answer: 2 },
@@ -48,7 +48,7 @@
       if (!e.equation.includes('__')) p.push('The equation needs an empty box: __');
       if (!e.items.map(String).includes(String(e.answer))) p.push('The answer tile is missing from the tiles.');
       const parts = e.equation.map((x) => (x === '__' ? String(e.answer) : x)), k = parts.indexOf('=');
-      const ev = (t) => { let v = Number(t[0]); for (let i = 1; i < t.length; i += 2) { const n = Number(t[i + 1]); v = t[i] === '+' ? v + n : t[i] === '−' || t[i] === '-' ? v - n : t[i] === '×' ? v * n : NaN; } return v; };
+      const ev = (t) => { let v = Number(t[0]); for (let i = 1; i < t.length; i += 2) { const n = Number(t[i + 1]); v = t[i] === '+' ? v + n : t[i] === '−' || t[i] === '-' ? v - n : t[i] === '×' ? v * n : t[i] === '÷' ? v / n : NaN; } return v; };
       if (k < 1 || ev(parts.slice(0, k)) !== ev(parts.slice(k + 1))) p.push(`${parts.join(' ')} does not balance.`);
     }
     if (e.type === 'drag_make_change') {

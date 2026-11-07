@@ -1,0 +1,997 @@
+{
+  "id": "g3_add3d",
+  "grade": 3,
+  "n": 2,
+  "title": {
+    "am": "ባለ ሶስት አሃዝ ቁጥሮችን መደመር",
+    "en": "Adding three-digit numbers",
+    "audio_url": "audio/am/lesson.g3_add3d.title.mp3"
+  },
+  "place": "orchard",
+  "video": {
+    "src": "video/g3_add3d.mp4",
+    "src_low": "video/low/g3_add3d.mp4",
+    "poster": "video/g3_add3d.jpg",
+    "captions": {
+      "am": "video/g3_add3d.am.vtt",
+      "en": "video/g3_add3d.en.vtt"
+    },
+    "duration": 40.6,
+    "checkpoints": [
+      {
+        "t": 17.25,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_add3d.01",
+          "type": "tap_choose",
+          "prompt_am": "ስምንት እና አምስት ስንት ነው?",
+          "prompt_en": "What is eight and five?",
+          "audio_url": "audio/am/ex.g3_add3d.01.mp3",
+          "options": [
+            {
+              "v": 12
+            },
+            {
+              "v": 13
+            },
+            {
+              "v": 14
+            }
+          ],
+          "answer": 13,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 26.18,
+        "at": "step:3",
+        "exercise": {
+          "id": "g3_add3d.02",
+          "type": "tap_choose",
+          "prompt_am": "አንድ፣ ሶስት እና አራት ስንት ናቸው?",
+          "prompt_en": "What are one, three and four together?",
+          "audio_url": "audio/am/ex.g3_add3d.02.mp3",
+          "options": [
+            {
+              "v": 7
+            },
+            {
+              "v": 8
+            },
+            {
+              "v": 9
+            }
+          ],
+          "answer": 8,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 17.25,
+      "end": 40.6,
+      "at": [
+        "step:1",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_add3d.03",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "213",
+            "+",
+            "145",
+            "=",
+            "__"
+          ],
+          "items": [
+            "358",
+            "368",
+            "258"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "358",
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_add3d.04",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "238",
+            "+",
+            "145",
+            "=",
+            "__"
+          ],
+          "items": [
+            "383",
+            "373",
+            "3713"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "383",
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_add3d.05",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "467",
+            "+",
+            "285",
+            "=",
+            "__"
+          ],
+          "items": [
+            "752",
+            "642",
+            "652"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "752",
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_add3d.06",
+          "type": "tap_choose",
+          "prompt_am": "ሁለት መቶ ሲደመር ሶስት መቶ ስንት ነው?",
+          "prompt_en": "What is two hundred plus three hundred?",
+          "audio_url": "audio/am/ex.g3_add3d.05.mp3",
+          "options": [
+            {
+              "v": 5
+            },
+            {
+              "v": 50
+            },
+            {
+              "v": 500
+            }
+          ],
+          "answer": 500,
+          "visual": null,
+          "hints": [
+            {
+              "am": "አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One flat is a hundred; one rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.g3_hundreds.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።",
+              "en": "Put the hundreds first, then the tens, then the ones.",
+              "audio_url": "audio/am/ex.g3_hundreds.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_add3d.07",
+          "type": "tap_choose",
+          "prompt_am": "ሶስት መቶ አርባ ሲደመር ሁለት መቶ ሃያ ስንት ነው?",
+          "prompt_en": "What is three hundred forty plus two hundred twenty?",
+          "audio_url": "audio/am/ex.g3_add3d.06.mp3",
+          "options": [
+            {
+              "v": 560
+            },
+            {
+              "v": 650
+            },
+            {
+              "v": 56
+            }
+          ],
+          "answer": 560,
+          "visual": null,
+          "hints": [
+            {
+              "am": "አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One flat is a hundred; one rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.g3_hundreds.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።",
+              "en": "Put the hundreds first, then the tens, then the ones.",
+              "audio_url": "audio/am/ex.g3_hundreds.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_add3d.08",
+          "type": "tap_choose",
+          "prompt_am": "አራት መቶ ሰማንያ ሲደመር ሁለት መቶ ሃምሳ ስንት ነው?",
+          "prompt_en": "What is four hundred eighty plus two hundred fifty?",
+          "audio_url": "audio/am/ex.g3_add3d.07.mp3",
+          "options": [
+            {
+              "v": 630
+            },
+            {
+              "v": 730
+            },
+            {
+              "v": 6130
+            }
+          ],
+          "answer": 730,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_add3d.09",
+          "type": "drag_placevalue",
+          "prompt_am": "ሶስት መቶ ሃምሳ ስምንትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።",
+          "prompt_en": "Let's build 358 with hundreds, tens and ones.",
+          "audio_url": "audio/am/ex.g3_add3d.08.mp3",
+          "items": {
+            "flats": true,
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat"
+            }
+          ],
+          "answer": 358,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One flat is a hundred; one rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.g3_hundreds.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።",
+              "en": "Put the hundreds first, then the tens, then the ones.",
+              "audio_url": "audio/am/ex.g3_hundreds.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_add3d.10",
+          "type": "drag_placevalue",
+          "prompt_am": "ሶስት መቶ ሰማንያ ሶስትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።",
+          "prompt_en": "Let's build 383 with hundreds, tens and ones.",
+          "audio_url": "audio/am/ex.g3_add3d.09.mp3",
+          "items": {
+            "flats": true,
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat"
+            }
+          ],
+          "answer": 383,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One flat is a hundred; one rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.g3_hundreds.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።",
+              "en": "Put the hundreds first, then the tens, then the ones.",
+              "audio_url": "audio/am/ex.g3_hundreds.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_add3d.11",
+          "type": "drag_placevalue",
+          "prompt_am": "አምስት መቶ አስራ ሰባትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።",
+          "prompt_en": "Let's build 517 with hundreds, tens and ones.",
+          "audio_url": "audio/am/ex.g3_add3d.10.mp3",
+          "items": {
+            "flats": true,
+            "rods": true,
+            "cubes": true
+          },
+          "targets": [
+            {
+              "id": "mat"
+            }
+          ],
+          "answer": 517,
+          "max_tens": 9,
+          "hints": [
+            {
+              "am": "አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+              "en": "One flat is a hundred; one rod is ten; one cube is one.",
+              "audio_url": "audio/am/ex.g3_hundreds.04.mp3"
+            },
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።",
+              "en": "Put the hundreds first, then the tens, then the ones.",
+              "audio_url": "audio/am/ex.g3_hundreds.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_add3d.12",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "300",
+            "+",
+            "__",
+            "=",
+            "450"
+          ],
+          "items": [
+            "150",
+            "750",
+            "15"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "150",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_add3d.13",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "250",
+            "+",
+            "__",
+            "=",
+            "500"
+          ],
+          "items": [
+            "250",
+            "350",
+            "750"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "250",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_add3d.14",
+          "type": "drag_equation",
+          "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+          "prompt_en": "Let's fill the empty box with the right number.",
+          "audio_url": "audio/am/ex.teens.09.mp3",
+          "equation": [
+            "375",
+            "+",
+            "__",
+            "=",
+            "600"
+          ],
+          "items": [
+            "225",
+            "325",
+            "975"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "225",
+          "hints": [
+            {
+              "am": "ሁለቱ ጎኖች እኩል መሆን አለባቸው።",
+              "en": "Both sides must be equal.",
+              "audio_url": "audio/am/ex.teens.10.mp3"
+            },
+            {
+              "am": "በጣታችን ወይም በቁጥር መስመር ቆጥረን እንፈትሽ።",
+              "en": "Check by counting on your fingers or on a number line.",
+              "audio_url": "audio/am/ex.teens.11.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_add3d.15",
+          "type": "numpad",
+          "prompt_am": "ሁለት መቶ ሃያ አራት ሲደመር መቶ ሰላሳ አምስት ስንት ነው?",
+          "prompt_en": "What is two hundred twenty-four plus one hundred thirty-five?",
+          "audio_url": "audio/am/ex.g3_add3d.11.mp3",
+          "answer": 359,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_add3d.16",
+          "type": "numpad",
+          "prompt_am": "ሶስት መቶ አርባ ስድስት ሲደመር መቶ ሃያ ስምንት ስንት ነው?",
+          "prompt_en": "What is three hundred forty-six plus one hundred twenty-eight?",
+          "audio_url": "audio/am/ex.g3_add3d.12.mp3",
+          "answer": 474,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_add3d.17",
+          "type": "numpad",
+          "prompt_am": "አምስት መቶ ሰማንያ ሰባት ሲደመር ሁለት መቶ ሰላሳ ስድስት ስንት ነው?",
+          "prompt_en": "What is five hundred eighty-seven plus two hundred thirty-six?",
+          "audio_url": "audio/am/ex.g3_add3d.13.mp3",
+          "answer": 823,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_add3d.18",
+          "type": "drag_sort",
+          "prompt_am": "አዲስ አስር የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: needs a new ten, doesn't.",
+          "audio_url": "audio/am/ex.g2_add2d.12.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አዲስ አስር",
+              "en": "New ten"
+            },
+            {
+              "id": "no",
+              "am": "አዲስ አስር የለም",
+              "en": "No new ten"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "238 + 145"
+            },
+            {
+              "id": "b",
+              "label": "213 + 145"
+            },
+            {
+              "id": "c",
+              "label": "306 + 117"
+            },
+            {
+              "id": "d",
+              "label": "420 + 356"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no"
+          },
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_add3d.19",
+          "type": "drag_sort",
+          "prompt_am": "አዲስ አስር የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: needs a new ten, doesn't.",
+          "audio_url": "audio/am/ex.g2_add2d.12.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አዲስ አስር",
+              "en": "New ten"
+            },
+            {
+              "id": "no",
+              "am": "አዲስ አስር የለም",
+              "en": "No new ten"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "129 + 243"
+            },
+            {
+              "id": "b",
+              "label": "512 + 136"
+            },
+            {
+              "id": "c",
+              "label": "455 + 327"
+            },
+            {
+              "id": "d",
+              "label": "601 + 294"
+            },
+            {
+              "id": "e",
+              "label": "348 + 236"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_add3d.20",
+          "type": "drag_sort",
+          "prompt_am": "አዲስ መቶ የሚያስፈልጋቸውን እንለይ።",
+          "prompt_en": "Let's sort: needs a new hundred, doesn't.",
+          "audio_url": "audio/am/ex.g3_add3d.14.mp3",
+          "targets": [
+            {
+              "id": "yes",
+              "am": "አዲስ መቶ",
+              "en": "New hundred"
+            },
+            {
+              "id": "no",
+              "am": "አዲስ መቶ የለም",
+              "en": "No new hundred"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "250 + 360"
+            },
+            {
+              "id": "b",
+              "label": "120 + 340"
+            },
+            {
+              "id": "c",
+              "label": "475 + 150"
+            },
+            {
+              "id": "d",
+              "label": "610 + 280"
+            },
+            {
+              "id": "e",
+              "label": "380 + 430"
+            }
+          ],
+          "answer": {
+            "a": "yes",
+            "b": "no",
+            "c": "yes",
+            "d": "no",
+            "e": "yes"
+          },
+          "hints": [
+            {
+              "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+              "en": "Start with the ones, then the tens, then the hundreds.",
+              "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+            },
+            {
+              "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+              "en": "When we make ten, we carry it to the next place.",
+              "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "balloon",
+    "rounds": [
+      {
+        "target": 500,
+        "balloons": [
+          250,
+          120,
+          380,
+          310,
+          190,
+          75
+        ]
+      },
+      {
+        "target": 700,
+        "balloons": [
+          350,
+          260,
+          440,
+          125,
+          515,
+          90
+        ]
+      },
+      {
+        "target": 1000,
+        "balloons": [
+          600,
+          450,
+          400,
+          275,
+          725,
+          150
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ሁለት ፊኛዎችን ፈንድተን የተጠየቀውን ቁጥር እንሥራ።",
+      "en": "Pop two balloons that add up to the number.",
+      "audio_url": "audio/am/ex.add10.16.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_add3d.21",
+      "type": "drag_equation",
+      "prompt_am": "ባዶውን ቦታ በትክክለኛው ቁጥር እንሙላ።",
+      "prompt_en": "Let's fill the empty box with the right number.",
+      "audio_url": "audio/am/ex.teens.09.mp3",
+      "equation": [
+        "356",
+        "+",
+        "278",
+        "=",
+        "__"
+      ],
+      "items": [
+        "634",
+        "524",
+        "5214"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "634",
+      "hints": [
+        {
+          "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+          "en": "Start with the ones, then the tens, then the hundreds.",
+          "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+        },
+        {
+          "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+          "en": "When we make ten, we carry it to the next place.",
+          "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_add3d.22",
+      "type": "drag_placevalue",
+      "prompt_am": "አራት መቶ ሰባ ሁለትን በመቶዎች፣ በአስሮች እና በአንዶች እንሥራ።",
+      "prompt_en": "Let's build 472 with hundreds, tens and ones.",
+      "audio_url": "audio/am/ex.g3_add3d.15.mp3",
+      "items": {
+        "flats": true,
+        "rods": true,
+        "cubes": true
+      },
+      "targets": [
+        {
+          "id": "mat"
+        }
+      ],
+      "answer": 472,
+      "max_tens": 9,
+      "hints": [
+        {
+          "am": "አንድ ጠፍጣፋ መቶ ነው፤ አንድ ዘንግ አስር ነው፤ አንድ ኩብ አንድ ነው።",
+          "en": "One flat is a hundred; one rod is ten; one cube is one.",
+          "audio_url": "audio/am/ex.g3_hundreds.04.mp3"
+        },
+        {
+          "am": "መጀመሪያ መቶዎቹን፣ ከዚያ አስሮቹን፣ በመጨረሻ አንዶቹን እናስቀምጥ።",
+          "en": "Put the hundreds first, then the tens, then the ones.",
+          "audio_url": "audio/am/ex.g3_hundreds.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_add3d.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? መቶ ዘጠና ሲደመር አስር ሁለት መቶ ነው።",
+      "prompt_en": "True or not? One hundred ninety plus ten is two hundred.",
+      "audio_url": "audio/am/ex.g3_add3d.16.mp3",
+      "statement_am": "መቶ ዘጠና ሲደመር አስር ሁለት መቶ ነው።",
+      "statement_en": "One hundred ninety plus ten is two hundred.",
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_add3d.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ስድስት መቶ ሰላሳ አራት",
+        "en": "six hundred thirty-four",
+        "audio_url": "audio/am/num.634.mp3"
+      },
+      "options": [
+        {
+          "v": 634
+        },
+        {
+          "v": 436
+        },
+        {
+          "v": 364
+        }
+      ],
+      "answer": 634,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_add3d.25",
+      "type": "numpad",
+      "prompt_am": "ሶስት መቶ ሃምሳ ሲደመር ሁለት መቶ ስልሳ ስንት ነው?",
+      "prompt_en": "What is three hundred fifty plus two hundred sixty?",
+      "audio_url": "audio/am/ex.g3_add3d.17.mp3",
+      "answer": 610,
+      "visual": null,
+      "max_digits": 4,
+      "hints": [
+        {
+          "am": "ከአንዶቹ እንጀምር፤ ከዚያ አስሮቹን፣ ከዚያ መቶዎቹን።",
+          "en": "Start with the ones, then the tens, then the hundreds.",
+          "audio_url": "audio/am/ex.g3_add3d.03.mp3"
+        },
+        {
+          "am": "አስር ሲሞላ ወደሚቀጥለው ቦታ እንወስዳለን።",
+          "en": "When we make ten, we carry it to the next place.",
+          "audio_url": "audio/am/ex.g3_add3d.04.mp3"
+        }
+      ]
+    }
+  ]
+}

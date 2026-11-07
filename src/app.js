@@ -127,7 +127,7 @@
     const reserve = S.reserve ? `<div class="panel" role="status"><b>Pilot checkout opens with wave 1.</b><p>To reserve a place now, email the Luminary Academy team with your child's grade and your city. We reply within two working days.</p><div class="copyrow"><code id="mail">support@theluminaryacademy.net</code><button class="btn small alt" data-act="copy" data-target="mail">Copy address</button></div></div>` : '';
     return `<main>
     <section class="hero"><div class="wrap">
-      <div><span class="eyebrow">Grades 1–2 · Hands-on lessons</span>
+      <div><span class="eyebrow">Grades 1–3 · Hands-on lessons</span>
         <h1>${lang() === 'am' ? `<span class="am" lang="am">${T.h1a}</span><span class="am" lang="am" style="display:block">${T.h1b}</span>` : `<span class="am" lang="am">ሂሳብ በአማርኛ</span>${T.h1a} ${T.h1b}`}</h1>
         <p class="lead ${lang() === 'am' ? 'am' : ''}">${esc(T.lead)}</p>
         <div class="ctas"><button class="btn adey" data-act="sample" data-skill="count10">${esc(T.play)}</button><button class="btn alt" data-act="gate">${esc(T.setup)}</button></div>
@@ -178,7 +178,7 @@
       <h2>Questions parents ask</h2>
       <details class="faq"><summary>Does my child need to read Amharic?</summary><p>No. Every question has a picture, and a listen button reads it aloud. Today the listen button uses your device's Amharic voice when it has one; recorded narration by an Amharic-speaking teacher is being added during the pilot.</p></details>
       <details class="faq"><summary>Which curriculum does it follow?</summary><p>The unit covers Grade 1 number skills found in international standards such as the US Common Core. Ethiopian teachers are reviewing how each lesson lines up with the Ethiopian Grade 1 syllabus, and we will publish that mapping once it is checked.</p></details>
-      <details class="faq"><summary>What ages is it for?</summary><p>Children about 5 to 8: Grade 1 works with numbers to 20, Grade 2 with numbers to 100, money, equal groups and halves. The starting game finds the right level for quick practice.</p></details>
+      <details class="faq"><summary>What ages is it for?</summary><p>Children about 5 to 9: Grade 1 works with numbers to 20, Grade 2 with numbers to 100, skip counting, even and odd, money, equal groups, halves, measuring, telling time, shapes and graphs, and Grade 3 with numbers to 1000, times tables to 10 × 10, division, fractions, measuring, time, shapes, area and graphs. The starting game finds the right level for quick practice.</p></details>
       <details class="faq"><summary>Does it work on a phone with weak internet?</summary><p>Yes. It runs in a phone browser, switches to small videos on slow connections, and keeps working if the signal drops mid-lesson. On the grown-ups page you can download every lesson so it works with no internet at all.</p></details>
       <details class="faq"><summary>What information do you collect?</summary><p>In the pilot, progress is saved only in this browser on this device, under a nickname you choose. We do not ask for your child's full name, photo or email. You can copy a backup code or delete everything from the grown-ups page. Details are in our <button class="linkbtn inline" data-act="legal" data-v="privacy">privacy notice</button>.</p></details>
       <details class="faq"><summary>Can our Saturday school or tutoring center use it?</summary><p>Yes. Class accounts with teacher assignments are planned after the family pilot. Email us to join the school waiting list.</p></details>

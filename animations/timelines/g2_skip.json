@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.767,
+  "step0": 10.367,
+  "step1": 14.7,
+  "step2": 19.3,
+  "step3": 24.733
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ዘለን እንቁጠር፤ ጥንድ እና ጎዶሎ",
+   "en": "Skip counting, even and odd",
+   "end": 3.567
+  },
+  {
+   "start": 4.767,
+   "am": "እማማ ብርቱካኖችን በጥንድ በጥንድ ታስቀምጣለች። በሁለት በሁለት እንቁጠር።",
+   "en": "Mama sets out oranges in pairs. Let us count in twos.",
+   "end": 10.367
+  },
+  {
+   "start": 10.367,
+   "am": "ሁለት፣ አራት፣ ስድስት፣ ስምንት፣ አስር፤ በሁለት በሁለት ቆጠርን።",
+   "en": "Two, four, six, eight, ten: we counted in twos.",
+   "end": 14.7
+  },
+  {
+   "start": 14.7,
+   "am": "ሁሉም ብርቱካኖች ጥንድ አላቸው፤ ስለዚህ አስር ጥንድ ቁጥር ነው።",
+   "en": "Every orange has a partner, so ten is an even number.",
+   "end": 19.3
+  },
+  {
+   "start": 19.3,
+   "am": "አንድ ብርቱካን ብንጨምር አንዱ ብቻውን ይቀራል፤ አስራ አንድ ጎዶሎ ቁጥር ነው።",
+   "en": "If we add one more orange, one is left on its own: eleven is an odd number.",
+   "end": 24.733
+  },
+  {
+   "start": 24.733,
+   "am": "በአምስት በአምስት ስንቆጥርም ፈጣን ነው፦ አምስት፣ አስር፣ አስራ አምስት፣ ሃያ።",
+   "en": "Counting in fives is fast too: five, ten, fifteen, twenty.",
+   "end": 30.167
+  }
+ ],
+ "duration": 33.767,
+ "lesson": "g2_skip"
+}

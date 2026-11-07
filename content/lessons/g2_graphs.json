@@ -1,0 +1,1253 @@
+{
+  "id": "g2_graphs",
+  "grade": 2,
+  "n": 12,
+  "title": {
+    "am": "ሥዕላዊ ግራፍ እና አምድ ግራፍ",
+    "en": "Picture graphs and bar graphs",
+    "audio_url": "audio/am/lesson.g2_graphs.title.mp3"
+  },
+  "place": "chart",
+  "video": {
+    "src": "video/g2_graphs.mp4",
+    "src_low": "video/low/g2_graphs.mp4",
+    "poster": "video/g2_graphs.jpg",
+    "captions": {
+      "am": "video/g2_graphs.am.vtt",
+      "en": "video/g2_graphs.en.vtt"
+    },
+    "duration": 28.7,
+    "checkpoints": [
+      {
+        "t": 14.82,
+        "at": "step:1",
+        "exercise": {
+          "id": "g2_graphs.01",
+          "type": "tap_choose",
+          "prompt_am": "ብዙ ልጆች የመረጡት የትኛውን ፍራፍሬ ነው?",
+          "prompt_en": "Which fruit did the most children choose?",
+          "audio_url": "audio/am/ex.g2_graphs.01.mp3",
+          "options": [
+            {
+              "v": "banana",
+              "am": "ሙዝ",
+              "en": "Bananas"
+            },
+            {
+              "v": "mango",
+              "am": "ማንጎ",
+              "en": "Mangoes"
+            },
+            {
+              "v": "orange",
+              "am": "ብርቱካን",
+              "en": "Oranges"
+            }
+          ],
+          "answer": "mango",
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "am": "ሙዝ",
+                "label": "Bananas",
+                "n": 4
+              },
+              {
+                "am": "ማንጎ",
+                "label": "Mangoes",
+                "n": 6
+              },
+              {
+                "am": "ብርቱካን",
+                "label": "Oranges",
+                "n": 2
+              }
+            ]
+          },
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 21.35,
+        "at": "step:3",
+        "exercise": {
+          "id": "g2_graphs.02",
+          "type": "tap_choose",
+          "prompt_am": "በአጠቃላይ ስንት ልጆች ናቸው?",
+          "prompt_en": "How many children are there altogether?",
+          "audio_url": "audio/am/ex.g2_graphs.04.mp3",
+          "options": [
+            {
+              "v": 10
+            },
+            {
+              "v": 12
+            },
+            {
+              "v": 14
+            }
+          ],
+          "answer": 12,
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "am": "ሙዝ",
+                "label": "Bananas",
+                "n": 4
+              },
+              {
+                "am": "ማንጎ",
+                "label": "Mangoes",
+                "n": 6
+              },
+              {
+                "am": "ብርቱካን",
+                "label": "Oranges",
+                "n": 2
+              }
+            ]
+          },
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 9.42,
+      "end": 28.7,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g2_graphs.03",
+          "type": "drag_drop_count",
+          "prompt_am": "ግራፉን እንሥራ፦ ሙዝ ሁለት፣ ማንጎ ሶስት።",
+          "prompt_en": "Let's build the graph: bananas 2, mangoes 3.",
+          "audio_url": "audio/am/ex.g2_graphs.05.mp3",
+          "items": {
+            "thing": "block",
+            "supply": 7,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "banana",
+              "kind": "column",
+              "label": {
+                "am": "ሙዝ",
+                "en": "Bananas"
+              },
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "mango",
+              "kind": "column",
+              "label": {
+                "am": "ማንጎ",
+                "en": "Mangoes"
+              },
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            2,
+            3
+          ],
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_graphs.04",
+          "type": "drag_drop_count",
+          "prompt_am": "ግራፉን እንሥራ፦ ሙዝ ሶስት፣ ማንጎ አንድ፣ ብርቱካን ሁለት።",
+          "prompt_en": "Let's build the graph: bananas 3, mangoes 1, oranges 2.",
+          "audio_url": "audio/am/ex.g2_graphs.06.mp3",
+          "items": {
+            "thing": "block",
+            "supply": 8,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "banana",
+              "kind": "column",
+              "label": {
+                "am": "ሙዝ",
+                "en": "Bananas"
+              },
+              "start": 0,
+              "need": 3
+            },
+            {
+              "id": "mango",
+              "kind": "column",
+              "label": {
+                "am": "ማንጎ",
+                "en": "Mangoes"
+              },
+              "start": 0,
+              "need": 1
+            },
+            {
+              "id": "orange",
+              "kind": "column",
+              "label": {
+                "am": "ብርቱካን",
+                "en": "Oranges"
+              },
+              "start": 0,
+              "need": 2
+            }
+          ],
+          "answer": [
+            3,
+            1,
+            2
+          ],
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_graphs.05",
+          "type": "drag_drop_count",
+          "prompt_am": "ግራፉን እንሥራ፦ ሙዝ አራት፣ ማንጎ ሁለት፣ ብርቱካን ሶስት።",
+          "prompt_en": "Let's build the graph: bananas 4, mangoes 2, oranges 3.",
+          "audio_url": "audio/am/ex.g2_graphs.07.mp3",
+          "items": {
+            "thing": "block",
+            "supply": 11,
+            "mode": "add"
+          },
+          "targets": [
+            {
+              "id": "banana",
+              "kind": "column",
+              "label": {
+                "am": "ሙዝ",
+                "en": "Bananas"
+              },
+              "start": 0,
+              "need": 4
+            },
+            {
+              "id": "mango",
+              "kind": "column",
+              "label": {
+                "am": "ማንጎ",
+                "en": "Mangoes"
+              },
+              "start": 0,
+              "need": 2
+            },
+            {
+              "id": "orange",
+              "kind": "column",
+              "label": {
+                "am": "ብርቱካን",
+                "en": "Oranges"
+              },
+              "start": 0,
+              "need": 3
+            }
+          ],
+          "answer": [
+            4,
+            2,
+            3
+          ],
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g2_graphs.06",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ልጆች ሙዝ መረጡ?",
+          "prompt_en": "How many children chose bananas?",
+          "audio_url": "audio/am/ex.g2_graphs.08.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 6
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "am": "ሙዝ",
+                "label": "Bananas",
+                "n": 4
+              },
+              {
+                "am": "ማንጎ",
+                "label": "Mangoes",
+                "n": 6
+              },
+              {
+                "am": "ብርቱካን",
+                "label": "Oranges",
+                "n": 2
+              }
+            ]
+          },
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_graphs.07",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ልጆች ብርቱካን መረጡ?",
+          "prompt_en": "How many children chose oranges?",
+          "audio_url": "audio/am/ex.g2_graphs.09.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "am": "ሙዝ",
+                "label": "Bananas",
+                "n": 5
+              },
+              {
+                "am": "ማንጎ",
+                "label": "Mangoes",
+                "n": 3
+              },
+              {
+                "am": "ብርቱካን",
+                "label": "Oranges",
+                "n": 4
+              }
+            ]
+          },
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_graphs.08",
+          "type": "tap_choose",
+          "prompt_am": "ማንጎ ከብርቱካን በስንት ይበልጣል?",
+          "prompt_en": "How many more chose mangoes than oranges?",
+          "audio_url": "audio/am/ex.g2_graphs.10.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 6
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "am": "ሙዝ",
+                "label": "Bananas",
+                "n": 3
+              },
+              {
+                "am": "ማንጎ",
+                "label": "Mangoes",
+                "n": 5
+              },
+              {
+                "am": "ብርቱካን",
+                "label": "Oranges",
+                "n": 1
+              }
+            ]
+          },
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g2_graphs.09",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ቡና የወደዱት አራት ልጆች ናቸው።",
+          "prompt_en": "True or not? Four children liked coffee.",
+          "audio_url": "audio/am/ex.g2_graphs.11.mp3",
+          "statement_am": "ቡና የወደዱት አራት ልጆች ናቸው።",
+          "statement_en": "Four children liked coffee.",
+          "visual": {
+            "kind": "picto",
+            "thing": "cup",
+            "key": 1,
+            "rows": [
+              {
+                "am": "ቡና",
+                "n": 4
+              },
+              {
+                "am": "ሻይ",
+                "n": 2
+              }
+            ]
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_graphs.10",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሻይ የወደዱት ከቡና ይበልጣሉ።",
+          "prompt_en": "True or not? More children liked tea than coffee.",
+          "audio_url": "audio/am/ex.g2_graphs.12.mp3",
+          "statement_am": "ሻይ የወደዱት ከቡና ይበልጣሉ።",
+          "statement_en": "More children liked tea than coffee.",
+          "visual": {
+            "kind": "picto",
+            "thing": "cup",
+            "key": 1,
+            "rows": [
+              {
+                "am": "ቡና",
+                "n": 3
+              },
+              {
+                "am": "ሻይ",
+                "n": 1
+              }
+            ]
+          },
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_graphs.11",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ቡና እና ሻይ የወደዱት በአንድ ላይ ስድስት ናቸው።",
+          "prompt_en": "True or not? Six children liked coffee or tea altogether.",
+          "audio_url": "audio/am/ex.g2_graphs.13.mp3",
+          "statement_am": "ቡና እና ሻይ የወደዱት በአንድ ላይ ስድስት ናቸው።",
+          "statement_en": "Six children liked coffee or tea altogether.",
+          "visual": {
+            "kind": "picto",
+            "thing": "cup",
+            "key": 1,
+            "rows": [
+              {
+                "am": "ቡና",
+                "n": 4
+              },
+              {
+                "am": "ሻይ",
+                "n": 2
+              }
+            ]
+          },
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g2_graphs.12",
+          "type": "numpad",
+          "prompt_am": "ዳዊት ስምንት ማንጎዎች ነበሩት፤ ሶስቱን ሰጠ። ስንት ቀሩት?",
+          "prompt_en": "Dawit had eight mangoes and gave away three. How many are left?",
+          "audio_url": "audio/am/ex.g2_graphs.14.mp3",
+          "answer": 5,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_graphs.13",
+          "type": "numpad",
+          "prompt_am": "ሰላም አምስት እንቁላሎች ገዛች፤ እማማ አራት ጨመረች። ስንት ሆኑ?",
+          "prompt_en": "Selam bought five eggs and Mama added four. How many are there now?",
+          "audio_url": "audio/am/ex.g2_graphs.15.mp3",
+          "answer": 9,
+          "visual": null,
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_graphs.14",
+          "type": "numpad",
+          "prompt_am": "በክፍሉ አስራ ሁለት ልጆች ነበሩ፤ አምስት ወጡ፣ ሶስት ገቡ። አሁን ስንት ናቸው?",
+          "prompt_en": "There were twelve children in the room; five went out and three came in. How many are there now?",
+          "audio_url": "audio/am/ex.g2_graphs.16.mp3",
+          "answer": 10,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g2_graphs.15",
+          "type": "drag_equation",
+          "prompt_am": "ማንጎ ከሙዝ በስንት ይበልጣል?",
+          "prompt_en": "How many more chose mangoes than bananas?",
+          "audio_url": "audio/am/ex.g2_graphs.17.mp3",
+          "equation": [
+            "6",
+            "−",
+            "4",
+            "=",
+            "__"
+          ],
+          "items": [
+            "2",
+            "10",
+            "4"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "2",
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "am": "ሙዝ",
+                "label": "Bananas",
+                "n": 4
+              },
+              {
+                "am": "ማንጎ",
+                "label": "Mangoes",
+                "n": 6
+              },
+              {
+                "am": "ብርቱካን",
+                "label": "Oranges",
+                "n": 2
+              }
+            ]
+          },
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_graphs.16",
+          "type": "drag_equation",
+          "prompt_am": "በአጠቃላይ ስንት ልጆች ናቸው?",
+          "prompt_en": "How many children altogether?",
+          "audio_url": "audio/am/ex.g2_graphs.04.mp3",
+          "equation": [
+            "4",
+            "+",
+            "6",
+            "+",
+            "2",
+            "=",
+            "__"
+          ],
+          "items": [
+            "12",
+            "10",
+            "8"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "12",
+          "visual": {
+            "kind": "bars",
+            "bars": [
+              {
+                "am": "ሙዝ",
+                "label": "Bananas",
+                "n": 4
+              },
+              {
+                "am": "ማንጎ",
+                "label": "Mangoes",
+                "n": 6
+              },
+              {
+                "am": "ብርቱካን",
+                "label": "Oranges",
+                "n": 2
+              }
+            ]
+          },
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_graphs.17",
+          "type": "drag_equation",
+          "prompt_am": "አስር ወፎች ነበሩ፤ ሶስቱ በረሩ፣ ሁለት መጡ። ስንት ናቸው?",
+          "prompt_en": "There were ten birds; three flew away and two came. How many are there?",
+          "audio_url": "audio/am/ex.g2_graphs.18.mp3",
+          "equation": [
+            "10",
+            "−",
+            "3",
+            "+",
+            "2",
+            "=",
+            "__"
+          ],
+          "items": [
+            "9",
+            "5",
+            "15"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "9",
+          "hints": [
+            {
+              "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+              "en": "Follow the top of the bar across and read the number.",
+              "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+            },
+            {
+              "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+              "en": "Solve it in two steps: first one part, then the other.",
+              "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g2_graphs.18",
+          "type": "drag_make_change",
+          "prompt_am": "ዳቦው እና ሙዙ አስራ ሁለት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The bread and bananas costs 12 birr. Let's pay exactly 12 birr.",
+          "audio_url": "audio/am/ex.g2_graphs.19.mp3",
+          "price": 12,
+          "item": {
+            "am": "ዳቦው እና ሙዙ",
+            "en": "bread and bananas",
+            "pic": "bread"
+          },
+          "items": [
+            10,
+            5,
+            1,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 12,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_graphs.19",
+          "type": "drag_make_change",
+          "prompt_am": "እስክሪብቶው እና ላጲሱ አስራ ስምንት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The pen and eraser costs 18 birr. Let's pay exactly 18 birr.",
+          "audio_url": "audio/am/ex.g2_graphs.20.mp3",
+          "price": 18,
+          "item": {
+            "am": "እስክሪብቶው እና ላጲሱ",
+            "en": "pen and eraser",
+            "pic": "pen"
+          },
+          "items": [
+            10,
+            5,
+            1,
+            1,
+            1,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 18,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_graphs.20",
+          "type": "drag_make_change",
+          "prompt_am": "ደብተሩ እና እስክሪብቶው ሃያ አምስት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+          "prompt_en": "The exercise book and pen costs 25 birr. Let's pay exactly 25 birr.",
+          "audio_url": "audio/am/ex.g2_graphs.21.mp3",
+          "price": 25,
+          "item": {
+            "am": "ደብተሩ እና እስክሪብቶው",
+            "en": "exercise book and pen",
+            "pic": "book"
+          },
+          "items": [
+            10,
+            10,
+            5,
+            5,
+            1
+          ],
+          "targets": [
+            {
+              "id": "counter"
+            }
+          ],
+          "answer": 25,
+          "hints": [
+            {
+              "am": "ከትልቁ ገንዘብ እንጀምር።",
+              "en": "Start with the biggest money.",
+              "audio_url": "audio/am/ex.g2_birr.04.mp3"
+            },
+            {
+              "am": "ድምሩን እየቆጠርን እንጨምር።",
+              "en": "Keep a running total as you add.",
+              "audio_url": "audio/am/ex.g2_birr.05.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "market",
+    "budget_currency": "birr",
+    "rounds": [
+      {
+        "budget": 10,
+        "goods": [
+          {
+            "pic": "bread",
+            "am": "ዳቦ",
+            "en": "Bread",
+            "price": 6
+          },
+          {
+            "pic": "banana",
+            "am": "ሙዝ",
+            "en": "Bananas",
+            "price": 4
+          },
+          {
+            "pic": "egg",
+            "am": "እንቁላል",
+            "en": "Eggs",
+            "price": 7
+          }
+        ]
+      },
+      {
+        "budget": 20,
+        "goods": [
+          {
+            "pic": "pen",
+            "am": "እስክሪብቶ",
+            "en": "Pen",
+            "price": 12
+          },
+          {
+            "pic": "book",
+            "am": "ደብተር",
+            "en": "Exercise book",
+            "price": 8
+          },
+          {
+            "pic": "banana",
+            "am": "ሙዝ",
+            "en": "Bananas",
+            "price": 5
+          }
+        ]
+      },
+      {
+        "budget": 30,
+        "goods": [
+          {
+            "pic": "bag",
+            "am": "ቦርሳ",
+            "en": "Bag",
+            "price": 25
+          },
+          {
+            "pic": "pen",
+            "am": "እስክሪብቶ",
+            "en": "Pen",
+            "price": 5
+          },
+          {
+            "pic": "bread",
+            "am": "ዳቦ",
+            "en": "Bread",
+            "price": 10
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ገበያ እንሂድ! ያለንን ብር በሙሉ የሚጨርሱ ዕቃዎችን እንግዛ።",
+      "en": "Let's go to the market! Buy things that use up exactly all our birr.",
+      "audio_url": "audio/am/ex.g2_birr.19.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g2_graphs.21",
+      "type": "drag_drop_count",
+      "prompt_am": "ግራፉን እንሥራ፦ ሙዝ ሶስት፣ ማንጎ አራት።",
+      "prompt_en": "Let's build the graph: bananas 3, mangoes 4.",
+      "audio_url": "audio/am/ex.g2_graphs.22.mp3",
+      "items": {
+        "thing": "block",
+        "supply": 9,
+        "mode": "add"
+      },
+      "targets": [
+        {
+          "id": "banana",
+          "kind": "column",
+          "label": {
+            "am": "ሙዝ",
+            "en": "Bananas"
+          },
+          "start": 0,
+          "need": 3
+        },
+        {
+          "id": "mango",
+          "kind": "column",
+          "label": {
+            "am": "ማንጎ",
+            "en": "Mangoes"
+          },
+          "start": 0,
+          "need": 4
+        }
+      ],
+      "answer": [
+        3,
+        4
+      ],
+      "hints": [
+        {
+          "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+          "en": "Follow the top of the bar across and read the number.",
+          "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+        },
+        {
+          "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+          "en": "Solve it in two steps: first one part, then the other.",
+          "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_graphs.22",
+      "type": "drag_equation",
+      "prompt_am": "አምስት ልጆች ሙዝ፣ ሶስት ልጆች ማንጎ መረጡ። በአጠቃላይ ስንት ናቸው?",
+      "prompt_en": "Five children chose bananas and three chose mangoes. How many altogether?",
+      "audio_url": "audio/am/ex.g2_graphs.23.mp3",
+      "equation": [
+        "5",
+        "+",
+        "3",
+        "=",
+        "__"
+      ],
+      "items": [
+        "8",
+        "2",
+        "53"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "8",
+      "hints": [
+        {
+          "am": "የአምዱን ጫፍ ተከትለን ቁጥሩን እናንብብ።",
+          "en": "Follow the top of the bar across and read the number.",
+          "audio_url": "audio/am/ex.g2_graphs.02.mp3"
+        },
+        {
+          "am": "ጥያቄውን በሁለት ደረጃ እንፍታ፤ መጀመሪያ አንዱን፣ ከዚያ ሌላውን።",
+          "en": "Solve it in two steps: first one part, then the other.",
+          "audio_url": "audio/am/ex.g2_graphs.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_graphs.23",
+      "type": "drag_make_change",
+      "prompt_am": "ሙዙ እና እንቁላሉ አስራ አምስት ብር ነው። ትክክለኛውን ብር እንክፈል።",
+      "prompt_en": "The bananas and eggs costs 15 birr. Let's pay exactly 15 birr.",
+      "audio_url": "audio/am/ex.g2_graphs.24.mp3",
+      "price": 15,
+      "item": {
+        "am": "ሙዙ እና እንቁላሉ",
+        "en": "bananas and eggs",
+        "pic": "egg"
+      },
+      "items": [
+        10,
+        5,
+        5,
+        1
+      ],
+      "targets": [
+        {
+          "id": "counter"
+        }
+      ],
+      "answer": 15,
+      "hints": [
+        {
+          "am": "ከትልቁ ገንዘብ እንጀምር።",
+          "en": "Start with the biggest money.",
+          "audio_url": "audio/am/ex.g2_birr.04.mp3"
+        },
+        {
+          "am": "ድምሩን እየቆጠርን እንጨምር።",
+          "en": "Keep a running total as you add.",
+          "audio_url": "audio/am/ex.g2_birr.05.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_graphs.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "አስራ ሁለት",
+        "en": "twelve",
+        "audio_url": "audio/am/num.12.mp3"
+      },
+      "options": [
+        {
+          "v": 12
+        },
+        {
+          "v": 21
+        },
+        {
+          "v": 2
+        }
+      ],
+      "answer": 12,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_graphs.25",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ብርቱካን የመረጡት ከሙዝ ያንሳሉ።",
+      "prompt_en": "True or not? Fewer children chose oranges than bananas.",
+      "audio_url": "audio/am/ex.g2_graphs.25.mp3",
+      "statement_am": "ብርቱካን የመረጡት ከሙዝ ያንሳሉ።",
+      "statement_en": "Fewer children chose oranges than bananas.",
+      "visual": {
+        "kind": "bars",
+        "bars": [
+          {
+            "am": "ሙዝ",
+            "label": "Bananas",
+            "n": 4
+          },
+          {
+            "am": "ማንጎ",
+            "label": "Mangoes",
+            "n": 6
+          },
+          {
+            "am": "ብርቱካን",
+            "label": "Oranges",
+            "n": 2
+          }
+        ]
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    }
+  ]
+}

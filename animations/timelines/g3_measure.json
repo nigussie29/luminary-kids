@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.3,
+  "step0": 9.767,
+  "step1": 15.467,
+  "step2": 20.467,
+  "step3": 23.733
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ርዝመት፣ ክብደት እና መጠን",
+   "en": "Length, mass and liquids",
+   "end": 3.3
+  },
+  {
+   "start": 4.3,
+   "am": "ዛሬ በገበያ ዕቃዎችን እንለካለን፦ ርዝመትን፣ ክብደትን እና የፈሳሽ መጠንን።",
+   "en": "Today at the market we measure things: length, mass and how much liquid.",
+   "end": 9.767
+  },
+  {
+   "start": 9.767,
+   "am": "እርሳሱን ከዜሮ ጀምረን በገዢ እንለካለን፤ ርዝመቱ አስራ ሁለት ሳንቲ ሜትር ነው።",
+   "en": "We measure the pencil with a ruler, starting at zero: it is twelve centimetres long.",
+   "end": 15.467
+  },
+  {
+   "start": 15.467,
+   "am": "የጤፍ ከረጢቱን በሚዛን እንመዝናለን፤ ክብደቱ ሶስት ኪሎ ግራም ነው።",
+   "en": "We weigh the bag of teff on a scale: it is three kilograms.",
+   "end": 20.467
+  },
+  {
+   "start": 20.467,
+   "am": "ጀሪካኑ አምስት ሊትር ውሃ ይይዛል።",
+   "en": "The jerrycan holds five litres of water.",
+   "end": 23.733
+  },
+  {
+   "start": 23.733,
+   "am": "ለርዝመት ሜትር እና ሳንቲ ሜትር፣ ለክብደት ኪሎ ግራም፣ ለፈሳሽ ሊትር እንጠቀማለን።",
+   "en": "We use metres and centimetres for length, kilograms for mass and litres for liquids.",
+   "end": 29.867
+  }
+ ],
+ "duration": 32.467,
+ "lesson": "g3_measure"
+}

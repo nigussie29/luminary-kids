@@ -1,0 +1,64 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.967,
+  "step0": 13.133,
+  "step1": 17.3,
+  "step2": 21.9,
+  "step3": 26.233,
+  "step4": 30.0,
+  "step5": 33.267
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ባለ ሶስት አሃዝ ቁጥሮችን መደመር",
+   "en": "Adding three-digit numbers",
+   "end": 3.767
+  },
+  {
+   "start": 4.967,
+   "am": "ገበሬው በመጀመሪያው ቀን ሁለት መቶ ሰላሳ ስምንት ብርቱካኖችን፣ በሁለተኛው ቀን መቶ አርባ አምስት ብርቱካኖችን ለቀመ።",
+   "en": "The farmer picked two hundred thirty-eight oranges on the first day and one hundred forty-five on the second day.",
+   "end": 13.133
+  },
+  {
+   "start": 13.133,
+   "am": "ሁለት መቶ ሰላሳ ስምንት ሲደመር መቶ አርባ አምስት።",
+   "en": "Two hundred thirty-eight plus one hundred forty-five.",
+   "end": 17.3
+  },
+  {
+   "start": 17.3,
+   "am": "መጀመሪያ አንዶቹን እንደምር፦ ስምንት እና አምስት አስራ ሶስት ነው።",
+   "en": "First add the ones: eight and five is thirteen.",
+   "end": 21.9
+  },
+  {
+   "start": 21.9,
+   "am": "ሶስቱን እንጽፋለን፤ አንዱን አስር ወደ አስሮቹ እንወስዳለን።",
+   "en": "We write the three and carry one ten to the tens.",
+   "end": 26.233
+  },
+  {
+   "start": 26.233,
+   "am": "አስሮች፦ አንድ፣ ሶስት እና አራት ስምንት ናቸው።",
+   "en": "Tens: one, three and four make eight.",
+   "end": 30.0
+  },
+  {
+   "start": 30.0,
+   "am": "መቶዎች፦ ሁለት እና አንድ ሶስት ናቸው።",
+   "en": "Hundreds: two and one make three.",
+   "end": 33.267
+  },
+  {
+   "start": 33.267,
+   "am": "መልሱ ሶስት መቶ ሰማንያ ሶስት ነው።",
+   "en": "The answer is three hundred eighty-three.",
+   "end": 37.0
+  }
+ ],
+ "duration": 40.6,
+ "lesson": "g3_add3d"
+}

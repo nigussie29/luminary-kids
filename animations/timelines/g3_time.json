@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 3.467,
+  "step0": 8.767,
+  "step1": 13.067,
+  "step2": 18.3,
+  "step3": 24.3
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "ሰዓት በደቂቃ",
+   "en": "Time to the minute",
+   "end": 2.667
+  },
+  {
+   "start": 3.467,
+   "am": "ሰላም በየቀኑ ጠዋት ወደ ትምህርት ቤት ትሄዳለች። ሰዓቱን አብረን እናንብብ።",
+   "en": "Selam walks to school every morning. Let us read the clock together.",
+   "end": 8.767
+  },
+  {
+   "start": 8.767,
+   "am": "ትንሹ መርፌ ከሰባት ትንሽ አልፏል፤ ሰዓቱ ሰባት ነው።",
+   "en": "The short hand is just past seven, so the hour is seven.",
+   "end": 13.067
+  },
+  {
+   "start": 13.067,
+   "am": "ትልቁ መርፌ አራት ላይ ነው፤ በአምስት በአምስት ስንቆጥር ሃያ ደቂቃ ነው።",
+   "en": "The long hand is on the four: counting by fives, that is twenty minutes.",
+   "end": 18.3
+  },
+  {
+   "start": 18.3,
+   "am": "ሰዓቱ ሰባት ከሃያ ነው፤ በኢትዮጵያ አቆጣጠር ደግሞ ከጠዋቱ አንድ ሰዓት ከሃያ ነው።",
+   "en": "The time is seven twenty; in Ethiopian time it is twenty past one in the morning.",
+   "end": 24.3
+  },
+  {
+   "start": 24.3,
+   "am": "ከአርባ ደቂቃ በኋላ ስምንት ሰዓት ይሆናል፤ ትምህርት ይጀምራል።",
+   "en": "Forty minutes later it is eight o'clock, and school begins.",
+   "end": 29.3
+  }
+ ],
+ "duration": 32.9,
+ "lesson": "g3_time"
+}

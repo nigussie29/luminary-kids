@@ -109,6 +109,7 @@
           "prompt_en": "Let's build 13 with tens and ones.",
           "audio_url": "audio/am/ex.teens.03.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -140,6 +141,7 @@
           "prompt_en": "Let's build 16 with tens and ones.",
           "audio_url": "audio/am/ex.teens.06.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -171,6 +173,7 @@
           "prompt_en": "Let's build 19 with tens and ones.",
           "audio_url": "audio/am/ex.teens.07.mp3",
           "items": {
+            "flats": false,
             "rods": true,
             "cubes": true
           },
@@ -859,6 +862,7 @@
       "prompt_en": "Let's build 17 with tens and ones.",
       "audio_url": "audio/am/ex.teens.21.mp3",
       "items": {
+        "flats": false,
         "rods": true,
         "cubes": true
       },

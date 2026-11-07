@@ -1,6 +1,6 @@
 <title>Lesson editor · Luminary Kids</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Luminary Kids — Amharic-first hands-on math lessons for Grades 1–2.">
+<meta name="description" content="Luminary Kids — Amharic-first hands-on math lessons for Grades 1–3.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Baloo+2:wght@700;800&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap">
@@ -479,6 +479,11 @@ html.reduce .pop, html.reduce .pulse, html.reduce .ex.wobble, html.reduce .shake
 .dd-target.bajaj .dd-count { bottom: 8px; }
 .dd-target.tray { background: #e7c79b; border: 4px solid #a8763c; border-radius: 50%; min-height: 110px; padding-top: 18px; }
 .dd-target.tray.static { min-width: 180px; }
+.dd-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; max-width: 420px; }
+.dd-group .dd-target.tray { min-width: 0; min-height: 104px; padding: 14px 8px 28px; }
+.dd-group .dd-target .dd-in { gap: 0; }
+.dd-group .dd-target .piece svg { width: 38px; height: 38px; }
+.dd-target.row { background: linear-gradient(#9a6436, #7a4a22); border: 3px solid #5c3a12; border-radius: 14px; min-height: 84px; min-width: 280px; padding: 8px 10px 30px; }
 .dd-target.tree { background: radial-gradient(circle at 50% 40%, #6fbf73 0 58%, transparent 59%), linear-gradient(#7a4a22, #7a4a22) center bottom / 26px 40% no-repeat; min-height: 240px; min-width: 280px; padding: 28px 30px 90px; }
 .dd-target.tenframe .dd-in { display: grid; grid-template-columns: repeat(5, 62px); gap: 0; border: 3px solid var(--ink); border-radius: 8px; background: #fff; }
 .dd-target.tenframe .cell { width: 62px; height: 62px; border: 1.5px solid var(--ink); display: grid; place-items: center; }
@@ -516,7 +521,7 @@ html.reduce .pop, html.reduce .pulse, html.reduce .ex.wobble, html.reduce .shake
 
 .pv { width: 100%; display: grid; gap: 12px; }
 .pv-src { display: flex; gap: 20px; justify-content: center; align-items: center; padding: 10px; background: var(--tray); border-radius: 18px; }
-.src-rod, .src-cube { display: inline-grid; place-items: center; min-width: 72px; min-height: 72px; background: var(--surface); border-radius: 14px; border: 3px solid var(--line); }
+.src-flat, .src-rod, .src-cube { display: inline-grid; place-items: center; min-width: 72px; min-height: 72px; background: var(--surface); border-radius: 14px; border: 3px solid var(--line); }
 .pv-mat { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .pv-col { position: relative; min-height: 170px; border-radius: 18px; padding: 8px 8px 34px; text-align: center; }
 .pv-col.tens { background: var(--lake-soft); }
@@ -525,8 +530,17 @@ html.reduce .pop, html.reduce .pulse, html.reduce .ex.wobble, html.reduce .shake
 .pv-col.ones .pv-in { display: grid; grid-template-columns: repeat(5, 34px); justify-content: center; }
 .pv-n { position: absolute; bottom: 6px; left: 0; right: 0; font: 800 1.4rem var(--f-display); }
 .pv-total { text-align: center; font: 800 2.4rem var(--f-display); }
-.piece.rod, .piece.cube { min-width: 0; min-height: 0; }
-.piece.cube.bundling { animation: bundle .5s forwards; }
+.piece.rod, .piece.cube, .piece.flat { min-width: 0; min-height: 0; }
+.piece.cube.bundling, .piece.rod.bundling { animation: bundle .5s forwards; }
+/* hundreds, tens and ones: three narrower columns */
+.pv-col.hundreds { background: var(--berry-soft); }
+.pv.h3 .pv-src { gap: 12px; }
+.pv.h3 .pv-mat { grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.pv.h3 .pv-col { padding: 8px 4px 34px; min-width: 0; }
+.pv.h3 .pv-col > b { font-size: .9rem; }
+.pv.h3 .pv-in { gap: 3px; }
+.pv.h3 .pv-col.ones .pv-in { grid-template-columns: repeat(5, 22px); gap: 2px; }
+svg.vis.wide { width: min(100%, 420px); }
 @keyframes bundle { to { transform: translateX(-60px) scale(.6); opacity: 0; } }
 
 .match-slots { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
@@ -693,6 +707,27 @@ html.reduce .balloon { animation: none; }
   :root:not([data-theme="light"]) .adv-map { background: linear-gradient(180deg, #183a29, #1a2338 60%, #3d3313); }
   :root:not([data-theme="light"]) .dd-target.tenframe .dd-in, :root:not([data-theme="light"]) .tf-card, :root:not([data-theme="light"]) .trace canvas { background: #fff; color: #1d2540; }
 }
+
+/* ===== Grade 3: rulers, fraction lines, area grids, graph columns, shapes, picture graphs ===== */
+.nl.dense .tick em { font-size: .72rem; left: -16px; width: 32px; }
+.nl.ruler { background: linear-gradient(#fbe7a6, #fbe7a6) 0 62px / 100% 40px no-repeat; border-radius: 6px; }
+.nl-obj { position: absolute; left: 0; top: 18px; height: 26px; pointer-events: none; }
+.nl-obj svg { display: block; }
+.tile.flag { color: var(--berry); }
+.dd-target.grid { min-width: 0; background: var(--surface); border: 3px solid var(--ink); border-radius: 8px; padding: 0 0 42px; }
+.dd-target.grid .dd-in { display: grid; grid-template-columns: repeat(var(--cols), 48px); gap: 0; max-width: none; }
+.dd-target.grid .cell { width: 48px; height: 48px; border: 1.5px dashed #9aa4b5; display: grid; place-items: center; }
+.dd-cols { display: flex; gap: 8px; justify-content: center; width: 100%; max-width: 420px; }
+.dd-target.column { min-width: 0; flex: 1; min-height: 230px; background: var(--lake-soft); border-radius: 14px; padding: 6px 4px 30px; display: flex; flex-direction: column; }
+.dd-target.column .dd-in { flex-direction: column-reverse; justify-content: flex-start; align-items: center; flex: 1; gap: 0; }
+.dd-target.column .dd-in .piece svg { width: 34px; height: 30px; }
+.dd-label { display: block; text-align: center; font-size: .9rem; margin-bottom: 4px; }
+.vis.shape { display: inline-block; }
+.vis.picto { display: grid; gap: 6px; text-align: start; }
+.picto-row { display: grid; grid-template-columns: 70px 1fr; align-items: center; gap: 6px; }
+.picto-row span { display: flex; flex-wrap: wrap; gap: 2px; }
+.vis-ruler { width: min(100%, 330px); }
+.opt .vis.vis-ruler { max-width: none; width: min(260px, 70vw); }
 
 /* lesson editor */
 .adm-top { display: flex; gap: 12px; align-items: center; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
@@ -1241,7 +1276,10 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
   const EXTRA = {
     bean: () => '<ellipse cx="0" cy="0" rx="11" ry="15" fill="#5a3418" transform="rotate(25)"/><path d="M-3 -12 Q4 0 -3 12" stroke="#2e1a0c" stroke-width="2.5" fill="none" transform="rotate(25)"/>',
     egg: () => '<ellipse cx="0" cy="2" rx="13" ry="17" fill="#fbf3e4" stroke="#c9b48c" stroke-width="1.5"/><ellipse cx="-4" cy="-4" rx="4" ry="6" fill="#fff" opacity=".8"/>',
-    book: () => '<rect x="-15" y="-12" width="30" height="24" rx="3" fill="#1f7a8c"/><rect x="-12" y="-9" width="24" height="18" rx="2" fill="#fbf7ef"/><path d="M0 -9 v18" stroke="#1f7a8c" stroke-width="2"/>'
+    book: () => '<rect x="-15" y="-12" width="30" height="24" rx="3" fill="#1f7a8c"/><rect x="-12" y="-9" width="24" height="18" rx="2" fill="#fbf7ef"/><path d="M0 -9 v18" stroke="#1f7a8c" stroke-width="2"/>',
+    square: () => '<rect x="-17" y="-17" width="34" height="34" rx="3" fill="#2f8f5b" stroke="#1d5e3a" stroke-width="2"/><path d="M-17 -6 H17 M-6 -17 V17" stroke="#3fa86c" stroke-width="1.5" opacity=".6"/>',
+    block: () => '<rect x="-17" y="-15" width="34" height="30" rx="4" fill="#1f7a8c" stroke="#123f4a" stroke-width="2"/>',
+    seedling: () => '<path d="M-14 16 Q0 8 14 16 Z" fill="#7a4a22"/><path d="M0 14 V-6" stroke="#2f6b3b" stroke-width="3" stroke-linecap="round"/><path d="M0 -2 Q-14 -6 -15 -17 Q-3 -15 0 -2 Z" fill="#2f8f5b"/><path d="M0 -6 Q12 -9 14 -19 Q3 -18 0 -6 Z" fill="#3fa86c"/>'
   };
   const thingBody = (thing, i = 0) => (EXTRA[thing] ? `<g class="obj">${EXTRA[thing](i)}</g>` : A.object ? A.object(thing, 0, 0, i) : '');
   const objSVG = (thing, i = 0, size = 56) => `<svg viewBox="-24 -24 48 48" width="${size}" height="${size}" aria-hidden="true">${thingBody(thing, i)}</svg>`;
@@ -1251,6 +1289,11 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     let s = ''; for (let k = 0; k < 10; k++) s += `<rect x="0" y="${k * 10}" width="10" height="10" fill="#1f7a8c" stroke="#123f4a" stroke-width="1"/>`;
     return `<svg viewBox="-1 -1 12 102" width="${14 * scale}" height="${120 * scale}" aria-hidden="true">${s}</svg>`;
   }
+  function flat(scale = 1) { // a hundred: ten rods side by side
+    let s = ''; for (let i = 0; i < 10; i++) for (let k = 0; k < 10; k++) s += `<rect x="${i * 10}" y="${k * 10}" width="10" height="10" fill="#b8456e" stroke="#6e2241" stroke-width="1"/>`;
+    return `<svg viewBox="-1 -1 102 102" width="${56 * scale}" height="${56 * scale}" aria-hidden="true">${s}</svg>`;
+  }
+  ACT.flat = flat;
   const cube = (scale = 1) => `<svg viewBox="-1 -1 12 12" width="${22 * scale}" height="${22 * scale}" aria-hidden="true"><rect width="10" height="10" fill="#f2b705" stroke="#8a6a00" stroke-width="1"/></svg>`;
   ACT.rod = rod; ACT.cube = cube;
 
@@ -1262,7 +1305,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
   }
   ACT.money = money;
 
-  // injera cut into `parts` (1, 2 or 4). filled = parts coloured. equal=false draws an uneven cut.
+  // injera cut into `parts` (1, 2, 3, 4, 6 or 8). filled = parts coloured. equal=false draws an uneven cut.
   function injera(parts, filled, equal = true, size = 96) {
     const r = 44, c = 48, col = '#f2b705';
     let s = `<circle cx="${c}" cy="${c}" r="${r}" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/>`;
@@ -1275,6 +1318,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
       if (filled) s += `<path d="M${x} ${c - dy} A${r} ${r} 0 0 1 ${x} ${c + dy} Z" fill="${col}" opacity=".9"/>`;
       s += `<path d="M${x} ${c - dy} V${c + dy}" stroke="#1d2540" stroke-width="3"/>`;
       if (parts === 4) s += `<path d="M${c - r} ${c + 8} H${c + r}" stroke="#1d2540" stroke-width="3"/>`;
+      if (parts === 3) { const x2 = c - 30, dy2 = Math.sqrt(r * r - (x2 - c) * (x2 - c)); s += `<path d="M${x2} ${c - dy2} V${c + dy2}" stroke="#1d2540" stroke-width="3"/>`; }
     } else if (parts > 1) {
       const step = 360 / parts;
       for (let k = 0; k < filled; k++) {
@@ -1312,10 +1356,18 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
       }
       case 'tens_ones': {
         let s = '';
-        for (let t = 0; t < v.tens; t++) s += `<g transform="translate(${8 + t * 18} 6)">${rodBody()}</g>`;
-        const x0 = 8 + v.tens * 18 + 14;
+        // hundreds flats in up to two rows, so a picture with several hundreds stays readable on a phone
+        const hs = v.hundreds || 0, hr = hs > 2 ? 2 : 1, hc = Math.ceil(hs / hr), hx = 8 + hc * 124;
+        for (let k = 0; k < hs; k++) s += `<g transform="translate(${8 + (k % hc) * 124} ${6 + Math.floor(k / hc) * 124})">${flatBody()}</g>`;
+        for (let t = 0; t < v.tens; t++) s += `<g transform="translate(${hx + t * 18} 6)">${rodBody()}</g>`;
+        const x0 = hx + v.tens * 18 + 14;
         for (let o = 0; o < v.ones; o++) s += `<rect x="${x0 + (o % 5) * 14}" y="${6 + Math.floor(o / 5) * 14}" width="12" height="12" fill="#f2b705" stroke="#8a6a00"/>`;
-        return `<svg class="vis" viewBox="0 0 ${x0 + 80} 130" role="img" aria-label="${v.tens} tens ${v.ones} ones">${s}</svg>`;
+        return `<svg class="vis ${hs ? 'wide' : ''}" viewBox="0 0 ${x0 + 80} ${hr > 1 ? 254 : 130}" role="img" aria-label="${hs ? hs + ' hundreds ' : ''}${v.tens} tens ${v.ones} ones">${s}</svg>`;
+      }
+      case 'array': { // rows × cols of things, e.g. seedlings planted in rows
+        const sz = opts.small ? 26 : v.cols > 6 ? 30 : 40; let s = '';
+        for (let r = 0; r < v.rows; r++) for (let c = 0; c < v.cols; c++) s += `<g transform="translate(${sz / 2 + 4 + c * sz} ${sz / 2 + 4 + r * sz}) scale(${sz / 48})">${thingBody(v.thing || 'seedling', r * v.cols + c)}</g>`;
+        return `<svg class="vis" viewBox="0 0 ${v.cols * sz + 8} ${v.rows * sz + 8}" style="max-width:${v.cols * sz + 8}px" role="img" aria-label="${v.rows} rows of ${v.cols}">${s}</svg>`;
       }
       case 'tenframe': {
         let s = '<rect x="4" y="4" width="250" height="100" rx="6" fill="#fff" stroke="#1d2540" stroke-width="3"/>';
@@ -1328,9 +1380,86 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
       case 'injera': return `<div class="vis" role="img" aria-label="injera">${injera(v.parts, v.filled, v.equal !== false, opts.small ? 72 : 110)}</div>`;
       case 'groups': return `<div class="vis groups" role="img" aria-label="${v.groups.join(', ')}">${v.groups.map((n) => `<span class="grp">${Array.from({ length: n }, (_, i) => objSVG(v.thing || 'cup', i, opts.small ? 22 : 30)).join('')}</span>`).join('')}</div>`;
       case 'text': return `<div class="vis vis-text">${esc(v.text)}</div>`;
+      case 'rect': { // w × h units; grid lines for area, side lengths for perimeter
+        const u = opts.small ? 18 : 30, W = v.w * u, Hh = v.h * u, pad = v.labels ? 30 : 6; let s = '';
+        if (v.grid) for (let i = 0; i < v.w; i++) for (let k = 0; k < v.h; k++) s += `<rect x="${pad + i * u}" y="${pad + k * u}" width="${u}" height="${u}" fill="${v.fill && i + k * v.w < v.fill ? '#9fd8b4' : '#fff'}" stroke="#9aa4b5" stroke-width="1"/>`;
+        s += `<rect x="${pad}" y="${pad}" width="${W}" height="${Hh}" fill="${v.grid ? 'none' : '#dcf1e4'}" stroke="#1d2540" stroke-width="3"/>`;
+        if (v.labels) s += `<text x="${pad + W / 2}" y="${pad - 8}" text-anchor="middle" font-size="16" font-weight="700" fill="#1f7a8c" font-family="Noto Sans, sans-serif">${v.w}</text><text x="${pad + W + 8}" y="${pad + Hh / 2 + 6}" font-size="16" font-weight="700" fill="#b8456e" font-family="Noto Sans, sans-serif">${v.h}</text><text x="${pad + W / 2}" y="${pad + Hh + 20}" text-anchor="middle" font-size="16" font-weight="700" fill="#1f7a8c" font-family="Noto Sans, sans-serif">${v.w}</text><text x="${pad - 8}" y="${pad + Hh / 2 + 6}" text-anchor="end" font-size="16" font-weight="700" fill="#b8456e" font-family="Noto Sans, sans-serif">${v.h}</text>`;
+        return `<svg class="vis" viewBox="0 0 ${W + pad * 2} ${Hh + pad * 2}" style="max-width:${W + pad * 2}px" role="img" aria-label="${v.w} by ${v.h}">${s}</svg>`;
+      }
+      case 'shape': return `<svg class="vis shape" viewBox="0 0 100 100" width="${opts.small ? 70 : 120}" height="${opts.small ? 70 : 120}" role="img" aria-label="${esc(v.shape)}">${shapeBody(v.shape, v.color)}</svg>`;
+      case 'bars': { // bar graph: one bar per row, a scale on the left
+        const top = v.max || Math.max(...v.bars.map((b) => b.n)), bw = 52, gap = 20, H2 = 150, u = H2 / top; let s = '';
+        for (let k = 0; k <= top; k += v.step || 1) s += `<path d="M34 ${10 + H2 - k * u} H${40 + v.bars.length * (bw + gap)}" stroke="#d3dcdb" stroke-width="1"/><text x="28" y="${15 + H2 - k * u}" text-anchor="end" font-size="12" fill="#586178" font-family="Noto Sans, sans-serif">${k}</text>`;
+        v.bars.forEach((b, i) => { const x = 46 + i * (bw + gap); s += `<rect x="${x}" y="${10 + H2 - b.n * u}" width="${bw}" height="${b.n * u}" rx="4" fill="${['#1f7a8c', '#f2b705', '#b8456e', '#2f8f5b', '#7a5bb5'][i % 5]}"/><text x="${x + bw / 2}" y="${H2 + 30}" text-anchor="middle" font-size="14" fill="#1d2540" font-family="Noto Sans Ethiopic, Noto Sans, sans-serif">${esc(b.am || b.label)}</text>`; });
+        return `<svg class="vis" viewBox="0 0 ${50 + v.bars.length * (bw + gap)} ${H2 + 40}" role="img" aria-label="bar graph">${s}</svg>`;
+      }
+      case 'picto': // picture graph: a row of pictures per item (each picture = v.key)
+        return `<div class="vis picto" role="img" aria-label="picture graph">${v.rows.map((r) => `<div class="picto-row"><b lang="am">${esc(r.am || r.label)}</b><span>${Array.from({ length: r.n }, (_, i) => objSVG(v.thing || 'square', i, opts.small ? 18 : 26)).join('')}</span></div>`).join('')}${v.key > 1 ? `<small dir="ltr">${objSVG(v.thing || 'square', 0, 16)} = ${v.key}</small>` : ''}</div>`;
+      case 'clock': return `<svg class="vis" viewBox="0 0 200 200" width="${opts.small ? 90 : 170}" height="${opts.small ? 90 : 170}" role="img" aria-label="${v.h}:${String(v.m).padStart(2, '0')}">${clockFace(v.h, v.m)}</svg>`;
+      case 'scale': { // kitchen scale; the needle points at v.kg on a dial from 0 to v.max (numbers sit outside the needle's reach)
+        const max = v.max || 10, ang = (k) => (-120 + 240 * k / max) * Math.PI / 180, C = 125, R = 44;
+        let s = '<rect x="20" y="58" width="160" height="126" rx="18" fill="#d9eef2" stroke="#1d2540" stroke-width="3"/><rect x="40" y="30" width="120" height="20" rx="6" fill="#c9d3d8" stroke="#1d2540" stroke-width="2"/>';
+        s += `<circle cx="100" cy="${C}" r="${R}" fill="#fff" stroke="#1d2540" stroke-width="2"/>`;
+        for (let k = 0; k <= max; k++) {
+          const b = ang(k), lab = max <= 10 || k % 5 === 0;
+          s += `<path d="M${(100 + (R - 8) * Math.sin(b)).toFixed(1)} ${(C - (R - 8) * Math.cos(b)).toFixed(1)} L${(100 + (R - 1) * Math.sin(b)).toFixed(1)} ${(C - (R - 1) * Math.cos(b)).toFixed(1)}" stroke="#1d2540" stroke-width="2"/>`;
+          if (lab) s += `<text x="${(100 + (R + 11) * Math.sin(b)).toFixed(1)}" y="${(C + 4 - (R + 11) * Math.cos(b)).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="700" fill="#1d2540" font-family="Noto Sans, sans-serif">${k}</text>`;
+        }
+        const a = ang(v.kg);
+        s += `<path d="M100 ${C} L${(100 + (R - 4) * Math.sin(a)).toFixed(1)} ${(C - (R - 4) * Math.cos(a)).toFixed(1)}" stroke="#b8456e" stroke-width="3.5" stroke-linecap="round" opacity=".85"/><circle cx="100" cy="${C}" r="4" fill="#b8456e"/><text x="100" y="${C + 26}" text-anchor="middle" font-size="12" font-weight="700" fill="#586178" font-family="Noto Sans, sans-serif">kg</text>`;
+        return `<svg class="vis" viewBox="0 0 200 190" width="${opts.small ? 90 : 170}" role="img" aria-label="${v.kg} kg">${s}</svg>`;
+      }
+      case 'jug': { // measuring jug filled to v.l litres (marks every litre up to v.max)
+        const max = v.max || 5, Hj = 140, top = 30, lvl = Hj * v.l / max; let s = `<path d="M40 ${top} V${top + Hj} Q40 ${top + Hj + 10} 50 ${top + Hj + 10} H130 Q140 ${top + Hj + 10} 140 ${top + Hj} V${top}" fill="none" stroke="#1d2540" stroke-width="3"/>`;
+        s = `<rect x="42" y="${top + Hj - lvl}" width="96" height="${lvl + 8}" fill="#9fd3e0"/>` + s;
+        for (let k = 1; k <= max; k++) s += `<path d="M120 ${top + Hj - Hj * k / max} H140" stroke="#1d2540" stroke-width="2"/><text x="150" y="${top + Hj - Hj * k / max + 5}" font-size="14" font-family="Noto Sans, sans-serif">${k} L</text>`;
+        return `<svg class="vis" viewBox="0 0 190 190" width="${opts.small ? 90 : 160}" role="img" aria-label="${v.l} litres">${s}</svg>`;
+      }
+      case 'lineplot': { // line plot: an ✕ above a number for each answer (v.counts: { value: how many })
+        const keys = Object.keys(v.counts).map(Number), lo = v.min != null ? v.min : Math.min(...keys), hi = v.max != null ? v.max : Math.max(...keys);
+        const W = 300, step = W / (hi - lo || 1); let s = `<path d="M10 ${150} H${W + 30}" stroke="#1d2540" stroke-width="3"/>`;
+        for (let k = lo; k <= hi; k++) {
+          const x = 20 + (k - lo) * step;
+          s += `<path d="M${x} 143 V157" stroke="#1d2540" stroke-width="2"/><text x="${x}" y="176" text-anchor="middle" font-size="16" font-weight="700" fill="#586178" font-family="Noto Sans, sans-serif">${k}</text>`;
+          for (let j = 0; j < (v.counts[k] || 0); j++) s += `<text x="${x}" y="${134 - j * 24}" text-anchor="middle" font-size="22" font-weight="800" fill="#b8456e" font-family="Noto Sans, sans-serif">✕</text>`;
+        }
+        return `<svg class="vis" viewBox="0 0 ${W + 40} 186" role="img" aria-label="line plot">${s}</svg>`;
+      }
+      case 'fline': { // 0 to 1 cut into v.d equal jumps, with a dot at v.at jumps
+        let s = '<path d="M20 40 H300" stroke="#1d2540" stroke-width="4"/>';
+        for (let k = 0; k <= v.d; k++) { const x = 20 + 280 * k / v.d; s += `<path d="M${x} 28 V52" stroke="#1d2540" stroke-width="3"/>${k === 0 || k === v.d ? `<text x="${x}" y="76" text-anchor="middle" font-size="18" font-weight="700" fill="#586178" font-family="Noto Sans, sans-serif">${k ? 1 : 0}</text>` : ''}`; }
+        s += `<circle cx="${20 + 280 * v.at / v.d}" cy="40" r="10" fill="#b8456e"/>`;
+        return `<svg class="vis" viewBox="0 0 320 84" role="img" aria-label="number line">${s}</svg>`;
+      }
+      case 'ruler': { // an object lying on a ruler, starting at 0
+        const max = v.max || 15, u = 300 / max; let s = `<rect x="5" y="0" width="${max * u + 20}" height="40" fill="#fbe7a6" stroke="#8a6a00" stroke-width="2"/>`;
+        for (let k = 0; k <= max; k++) s += `<path d="M${15 + k * u} 0 v${k % 5 ? 10 : 16}" stroke="#1d2540" stroke-width="1.5"/><text x="${15 + k * u}" y="32" text-anchor="middle" font-size="11" font-family="Noto Sans, sans-serif">${k}</text>`;
+        return `<div class="vis vis-ruler" role="img" aria-label="ruler"><div style="margin-left:${(15 / 330) * 100}%;width:${(v.length * u / 330) * 100}%">${measureThing(v.thing || 'pencil')}</div><svg viewBox="0 0 330 42" width="100%" aria-hidden="true">${s}</svg></div>`;
+      }
       default: return '';
     }
   }
+  function shapeBody(shape, color = '#1f7a8c') {
+    const P = {
+      triangle: 'M50 10 L90 85 L10 85 Z', square: 'M15 15 H85 V85 H15 Z', rectangle: 'M5 28 H95 V72 H5 Z',
+      rhombus: 'M50 8 L88 50 L50 92 L12 50 Z', trapezoid: 'M28 25 H72 L94 78 H6 Z', parallelogram: 'M28 25 H94 L72 75 H6 Z',
+      pentagon: 'M50 8 L92 40 L76 90 H24 L8 40 Z', hexagon: 'M28 12 H72 L94 50 L72 88 H28 L6 50 Z', kite: 'M50 6 L80 38 L50 94 L20 38 Z',
+      'right-triangle': 'M15 15 V85 H85 Z'
+    };
+    if (shape === 'circle') return `<circle cx="50" cy="50" r="40" fill="${color}" fill-opacity=".25" stroke="${color}" stroke-width="4"/>`;
+    return `<path d="${P[shape] || P.square}" fill="${color}" fill-opacity=".25" stroke="${color}" stroke-width="4" stroke-linejoin="round"/>`;
+  }
+  ACT.shapeBody = shapeBody;
+  function clockFace(h, m) {
+    let s = '<circle cx="100" cy="100" r="96" fill="#fff" stroke="#1d2540" stroke-width="4"/>';
+    for (let k = 0; k < 60; k++) { const a = k * 6 * Math.PI / 180, r1 = k % 5 ? 90 : 85; s += `<path d="M${(100 + r1 * Math.sin(a)).toFixed(1)} ${(100 - r1 * Math.cos(a)).toFixed(1)} L${(100 + 94 * Math.sin(a)).toFixed(1)} ${(100 - 94 * Math.cos(a)).toFixed(1)}" stroke="#586178" stroke-width="${k % 5 ? 1 : 2.5}"/>`; }
+    for (let k = 1; k <= 12; k++) { const a = (k * 30 - 90) * Math.PI / 180; s += `<text x="${(100 + 74 * Math.cos(a)).toFixed(1)}" y="${(100 + 74 * Math.sin(a) + 7).toFixed(1)}" text-anchor="middle" font-size="20" font-weight="700" fill="#1d2540" font-family="Noto Sans, sans-serif">${k}</text>`; }
+    const ha = ((h % 12) + m / 60) * 30, ma = m * 6;
+    return s + `<path d="M100 100 L100 52" stroke="#1d2540" stroke-width="9" stroke-linecap="round" transform="rotate(${ha} 100 100)"/><path d="M100 100 L100 22" stroke="#b8456e" stroke-width="6" stroke-linecap="round" transform="rotate(${ma} 100 100)"/><circle cx="100" cy="100" r="7" fill="#1d2540"/>`;
+  }
+  ACT.clockFace = clockFace;
+  function flatBody() { let s = ''; for (let i = 0; i < 10; i++) for (let k = 0; k < 10; k++) s += `<rect x="${i * 11.5}" y="${k * 11.5}" width="11.5" height="11.5" fill="#b8456e" stroke="#6e2241"/>`; return s; }
   function rodBody() { let s = ''; for (let k = 0; k < 10; k++) s += `<rect x="0" y="${k * 11.5}" width="12" height="11.5" fill="#1f7a8c" stroke="#123f4a"/>`; return s; }
   ACT.visual = visual;
 
@@ -1552,20 +1681,24 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     targets.filter((t) => t.match).forEach((t) => {
       wrap.appendChild(h(`<div class="dd-ref"><div class="dd-target tray static">${Array.from({ length: t.match }, (_, i) => `<span class="piece static">${objSVG(thing, i, 46)}</span>`).join('')}</div><span class="dd-count">${t.match}</span></div>`));
     });
+    // three or more trays / plates sit two to a row, so every plate and the supply fit on a phone screen
+    const group = targets.filter((t) => t.kind === 'tray').length >= 3 ? wrap.appendChild(h('<div class="dd-group"></div>'))
+      : targets.some((t) => t.kind === 'column') ? wrap.appendChild(h('<div class="dd-cols"></div>')) : null;
     const zones = targets.map((t) => {
       const kind = t.kind || 'basket';
-      const z = h(`<div class="dd-target ${kind}" data-id="${t.id}" aria-label="${esc(kind)}"><div class="dd-in"></div>${kind === 'basket' ? '<div class="basket-front" aria-hidden="true"></div>' : ''}${kind === 'bajaj' ? '<i class="wheel l" aria-hidden="true"></i><i class="wheel r" aria-hidden="true"></i>' : ''}<span class="dd-count" aria-live="polite">${t.count}</span></div>`);
+      const z = h(`<div class="dd-target ${kind}" data-id="${t.id}" aria-label="${esc(kind)}" ${kind === 'grid' ? `style="--cols:${t.cols}"` : ''}>${t.label ? `<b class="dd-label">${api.T(t.label.am, t.label.en)}</b>` : ''}<div class="dd-in"></div>${kind === 'basket' ? '<div class="basket-front" aria-hidden="true"></div>' : ''}${kind === 'bajaj' ? '<i class="wheel l" aria-hidden="true"></i><i class="wheel r" aria-hidden="true"></i>' : ''}<span class="dd-count" aria-live="polite">${t.count}</span></div>`);
       const inner = z.querySelector('.dd-in');
       if (kind === 'tenframe') for (let i = 0; i < 10; i++) inner.appendChild(h(`<span class="cell" data-i="${i}"></span>`));
+      if (kind === 'grid') for (let i = 0; i < t.cols * t.rows; i++) inner.appendChild(h(`<span class="cell" data-i="${i}"></span>`));
       for (let i = 0; i < t.start; i++) {
-        const p = h(`<span class="piece ${remove ? '' : 'static'}">${objSVG(thing, i, kind === 'tenframe' ? 40 : 46)}</span>`);
+        const p = h(`<span class="piece ${remove ? '' : 'static'}">${objSVG(thing, i, kind === 'tenframe' ? 40 : kind === 'grid' ? 42 : 46)}</span>`);
         place(z, inner, p, kind);
         if (remove) dragPiece(p);
       }
-      wrap.appendChild(z); ACT.zone(z); z._t = t; return z;
+      (group || wrap).appendChild(z); ACT.zone(z); z._t = t; return z;
     });
     function place(z, inner, p, kind) {
-      if (kind === 'tenframe') { const cell = [...inner.children].find((c) => !c.firstChild); if (cell) cell.appendChild(p); else inner.appendChild(p); }
+      if (kind === 'tenframe' || kind === 'grid') { const cell = [...inner.children].find((c) => !c.firstChild); if (cell) cell.appendChild(p); else inner.appendChild(p); }
       else inner.appendChild(p);
     }
     const supply = h('<div class="dd-supply zone-home"></div>');
@@ -1620,7 +1753,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
   // Drag a number tile into the empty box of an equation.
   TYPES.drag_equation = (api) => {
     const { ex, body } = api;
-    body.innerHTML = `${ex.visual ? visual(ex.visual) : ''}<div class="eqn" dir="ltr">${ex.equation.map((p) => (p === '__' ? '<span class="blank" aria-label="empty box"></span>' : `<span class="tok ${/^[+−×=]$/.test(p) ? 'op' : ''}">${esc(p)}</span>`)).join('')}</div><div class="tiles zone-home"></div>`;
+    body.innerHTML = `${ex.visual ? visual(ex.visual) : ''}<div class="eqn" dir="ltr">${ex.equation.map((p) => (p === '__' ? '<span class="blank" aria-label="empty box"></span>' : `<span class="tok ${/^[+−×÷=<>]$/.test(p) ? 'op' : ''}">${esc(p)}</span>`)).join('')}</div><div class="tiles zone-home"></div>`;
     const blank = body.querySelector('.blank'), tiles = body.querySelector('.tiles');
     ACT.zone(blank);
     ex.items.forEach((v) => {
@@ -1653,23 +1786,39 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     return { demo, solve: () => demo().then(() => api.right()) };
   };
 
+  // things to measure on a ruler, drawn to stretch across the given width
+  function measureThing(kind) {
+    const S = {
+      pencil: '<svg viewBox="0 0 200 24" preserveAspectRatio="none" width="100%" height="24"><rect x="0" y="3" width="176" height="18" fill="#f2b705" stroke="#8a6a00" stroke-width="1.5"/><rect x="0" y="3" width="14" height="18" fill="#e58f74"/><path d="M176 3 L200 12 L176 21 Z" fill="#e9c99a" stroke="#8a6a00" stroke-width="1.5"/><path d="M193 9.5 L200 12 L193 14.5 Z" fill="#1d2540"/></svg>',
+      stick: '<svg viewBox="0 0 200 18" preserveAspectRatio="none" width="100%" height="18"><rect x="0" y="4" width="200" height="10" rx="5" fill="#a0672b" stroke="#5c3a12" stroke-width="1.5"/></svg>',
+      ribbon: '<svg viewBox="0 0 200 18" preserveAspectRatio="none" width="100%" height="18"><rect x="0" y="3" width="200" height="12" fill="#b8456e"/><path d="M0 9 H200" stroke="#f2b705" stroke-width="2" stroke-dasharray="6 5"/></svg>',
+      spoon: '<svg viewBox="0 0 200 26" preserveAspectRatio="none" width="100%" height="26"><rect x="0" y="10" width="150" height="7" rx="3" fill="#a0672b"/><ellipse cx="174" cy="13" rx="26" ry="12" fill="#c98f4a" stroke="#7a4f1d" stroke-width="1.5"/></svg>'
+    };
+    return S[kind] || S.stick;
+  }
+
   // Put numbers in their places on a number line.
   TYPES.drag_numberline = (api) => {
-    const { ex, body } = api, { min, max, step, labels } = ex.line;
+    const { ex, body } = api, { min, max, step, labels, denom, object } = ex.line;
     const n = (max - min) / step;
+    // denom: values are numerators, shown as fractions (2 on a quarter line reads 2/4); 0 and 1 stay whole
+    const lab = (v) => (denom ? (Number(v) === 0 ? '0' : Number(v) === denom ? '1' : `${v}/${denom}`) : String(v));
     let ticks = '';
     for (let k = 0; k <= n; k++) {
       const v = min + k * step, x = (k / n) * 100;
-      const show = labels === 'tens' ? v % 10 === 0 : labels === 'none' ? k === 0 : (k === 0 || k === n);
-      ticks += `<span class="tick" style="left:${x}%" data-v="${v}"><i></i>${show ? `<em>${v}</em>` : ''}<span class="slot" data-v="${v}"></span></span>`;
+      const show = labels === 'all' ? true : labels === 'tens' ? v % 10 === 0 : labels === 'none' ? k === 0 : (k === 0 || k === n);
+      ticks += `<span class="tick" style="left:${x}%" data-v="${v}"><i></i>${show ? `<em>${lab(v)}</em>` : ''}<span class="slot" data-v="${v}"></span></span>`;
     }
-    body.innerHTML = `<div class="nl"><div class="nl-line"></div>${ticks}</div><div class="tiles zone-home"></div>`;
+    // a ruler: the thing to measure lies along the line from 0; the child drags the flag to where it ends
+    const obj = object ? `<div class="nl-obj" style="width:${((object.length - min) / (max - min)) * 100}%">${measureThing(object.thing || 'pencil')}</div>` : '';
+    body.innerHTML = `<div class="nl ${object ? 'ruler' : ''} ${labels === 'all' && n > 10 ? 'dense' : ''}">${obj}<div class="nl-line"></div>${ticks}</div><div class="tiles zone-home"></div>`;
     const line = body.querySelector('.nl'), tiles = body.querySelector('.tiles');
     const slots = [...body.querySelectorAll('.slot')];
     slots.forEach((s) => ACT.zone(s));
     let left = ex.items.length;
     ex.items.forEach((v) => {
-      const t = h(`<span class="tile small" data-v="${esc(v)}">${esc(v)}</span>`); tiles.appendChild(t);
+      const label = object ? '▼' : (ex.item_labels && ex.item_labels[ex.items.indexOf(v)]) || lab(v);
+      const t = h(`<span class="tile small ${object ? 'flag' : ''}" data-v="${esc(v)}" ${object ? 'aria-label="end of the object"' : ''}>${esc(label)}</span>`); tiles.appendChild(t);
       ACT.drag(t, {
         zones: () => slots.filter((s) => !s.firstChild),
         drop: (z, el, pt) => {
@@ -1685,60 +1834,76 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     return { demo, solve: () => demo().then(() => api.right()) };
   };
 
-  // Build a number with tens rods and ones cubes. Ten loose cubes bundle themselves into a rod.
+  // Build a number with (hundreds flats,) tens rods and ones cubes. Ten loose cubes bundle themselves
+  // into a rod and ten rods into a flat, unless the exercise fixes how many tens / hundreds to use
+  // (targets[0].tens / .hundreds — "build 342 with only 2 hundreds" practises breaking a hundred).
   TYPES.drag_placevalue = (api) => {
-    const { ex, body } = api, fixed = ex.targets[0].tens;
-    body.innerHTML = `<div class="pv">
-      <div class="pv-src"><span class="src-rod" aria-label="ten">${rod()}</span><span class="src-cube" aria-label="one">${cube(2)}</span></div>
-      <div class="pv-mat"><div class="pv-col tens"><b>${api.T('አስሮች', 'Tens')}</b><div class="pv-in"></div><span class="pv-n">0</span></div>
-        <div class="pv-col ones"><b>${api.T('አንዶች', 'Ones')}</b><div class="pv-in"></div><span class="pv-n">0</span></div></div>
+    const { ex, body } = api, tg = ex.targets[0], fixT = tg.tens, fixH = tg.hundreds;
+    const hasH = !!(ex.items && ex.items.flats) || ex.answer >= 100;
+    const col = (k, am, en) => `<div class="pv-col ${k}"><b>${api.T(am, en)}</b><div class="pv-in"></div><span class="pv-n">0</span></div>`;
+    body.innerHTML = `<div class="pv ${hasH ? 'h3' : ''}">
+      <div class="pv-src">${hasH ? `<span class="src-flat" aria-label="hundred">${flat(1.15)}</span>` : ''}<span class="src-rod" aria-label="ten">${rod()}</span><span class="src-cube" aria-label="one">${cube(2)}</span></div>
+      <div class="pv-mat">${hasH ? col('hundreds', 'መቶዎች', 'Hundreds') : ''}${col('tens', 'አስሮች', 'Tens')}${col('ones', 'አንዶች', 'Ones')}</div>
       <div class="pv-total" dir="ltr"><span class="t">0</span></div></div>`;
-    const tensCol = body.querySelector('.pv-col.tens'), onesCol = body.querySelector('.pv-col.ones');
-    const tIn = tensCol.querySelector('.pv-in'), oIn = onesCol.querySelector('.pv-in');
-    const st = { t: 0, o: 0 };
-    [tensCol, onesCol].forEach((c) => ACT.zone(c));
+    const cols = { flat: body.querySelector('.pv-col.hundreds'), rod: body.querySelector('.pv-col.tens'), cube: body.querySelector('.pv-col.ones') };
+    const ins = Object.fromEntries(Object.entries(cols).map(([k, c]) => [k, c && c.querySelector('.pv-in')]));
+    const st = { flat: 0, rod: 0, cube: 0 };
+    const VAL = { flat: 100, rod: 10, cube: 1 };
+    Object.values(cols).forEach((c) => c && ACT.zone(c));
     const home = body.querySelector('.pv-src'); ACT.zone(home);
-    const total = () => st.t * 10 + st.o;
+    const total = () => st.flat * 100 + st.rod * 10 + st.cube;
     function show() {
-      tensCol.querySelector('.pv-n').textContent = st.t; onesCol.querySelector('.pv-n').textContent = st.o;
+      for (const k in cols) if (cols[k]) cols[k].querySelector('.pv-n').textContent = st[k];
       body.querySelector('.pv-total .t').textContent = total();
     }
-    function addPiece(kind) {
-      const p = h(`<span class="piece ${kind}">${kind === 'rod' ? rod(0.9) : cube(1.4)}</span>`);
-      (kind === 'rod' ? tIn : oIn).appendChild(p); pop(p);
+    const pic = (k) => (k === 'flat' ? flat(hasH ? 0.62 : 0.8) : k === 'rod' ? rod(hasH ? 0.62 : 0.9) : cube(hasH ? 1.05 : 1.4));
+    function addPiece(k) {
+      const p = h(`<span class="piece ${k}">${pic(k)}</span>`);
+      ins[k].appendChild(p); pop(p);
       ACT.drag(p, { zones: () => [home], drop: () => { // drag back off the mat to remove
-        p.remove(); if (kind === 'rod') st.t--; else st.o--; show(); return 'keep-place';
+        p.remove(); st[k]--; show(); return 'keep-place';
       } });
     }
-    async function bundle() { // ten ones → one ten
-      const cubes = [...oIn.querySelectorAll('.piece.cube')].slice(0, 10);
-      cubes.forEach((c) => c.classList.add('bundling'));
+    async function bundle(from, to, line) { // ten ones → one ten; ten tens → one hundred
+      const ps = [...ins[from].querySelectorAll('.piece.' + from)].slice(0, 10);
+      ps.forEach((c) => c.classList.add('bundling'));
       await wait(reduce() ? 0 : 500);
-      cubes.forEach((c) => c.remove()); st.o -= 10; st.t++; addPiece('rod'); show();
-      api.say && api.say({ am: 'አስር አንዶች አንድ አስር ይሆናሉ።', en: 'Ten ones make one ten.', audio_url: 'audio/am/lesson.g2_add2d.example.2.mp3' });
+      ps.forEach((c) => c.remove()); st[from] -= 10; st[to]++; addPiece(to); show();
+      api.say && api.say(line);
     }
-    function accept(kind) {
-      if (kind === 'rod') {
-        if ((fixed != null && st.t >= fixed) || (fixed == null && total() + 10 > ex.answer)) { api.wrong(); return false; }
-        st.t++; addPiece('rod');
-      } else {
-        if (total() + 1 > ex.answer) { api.wrong(); return false; }
-        st.o++; addPiece('cube');
-      }
-      show(); api.progress(Math.min(10, kind === 'rod' ? st.t : st.o));
-      if (fixed == null && st.o === 10) bundle().then(check); else check();
+    const ONE_TEN = { am: 'አስር አንዶች አንድ አስር ይሆናሉ።', en: 'Ten ones make one ten.', audio_url: 'audio/am/lesson.g2_add2d.example.2.mp3' };
+    const ONE_HUNDRED = { am: 'አስር አስሮች አንድ መቶ ይሆናሉ።', en: 'Ten tens make one hundred.', audio_url: 'audio/am/lesson.g3_hundreds.example.0.mp3' };
+    function accept(k) {
+      const fixed = k === 'flat' ? fixH : k === 'rod' ? fixT : null;
+      if (fixed != null ? st[k] >= fixed : total() + VAL[k] > ex.answer) { api.wrong(); return false; }
+      if (total() + VAL[k] > ex.answer) { api.wrong(); return false; }
+      st[k]++; addPiece(k);
+      show(); api.progress(Math.min(10, st[k]));
+      (async () => {
+        if (k === 'cube' && fixT == null && st.cube === 10) await bundle('cube', 'rod', ONE_TEN);
+        if (hasH && fixH == null && st.rod === 10) await bundle('rod', 'flat', ONE_HUNDRED);
+        check();
+      })();
       return true;
     }
-    function check() { if (total() === ex.answer && (fixed == null ? st.o < 10 : st.t === fixed)) api.right(); }
-    const srcRod = body.querySelector('.src-rod'), srcCube = body.querySelector('.src-cube');
-    ACT.drag(srcRod, { clone: true, zones: () => [tensCol, onesCol], drop: (z) => (z === tensCol ? accept('rod') : (api.wrong(), false)) });
-    ACT.drag(srcCube, { clone: true, zones: () => [tensCol, onesCol], drop: (z) => (z === onesCol ? accept('cube') : (api.wrong(), false)) });
-    const want = () => ({ t: fixed != null ? fixed : Math.floor(ex.answer / 10), o: ex.answer - 10 * (fixed != null ? fixed : Math.floor(ex.answer / 10)) });
+    function check() {
+      if (total() !== ex.answer) return;
+      if (fixT == null ? st.cube >= 10 : st.rod !== fixT) return;
+      if (hasH && (fixH == null ? st.rod >= 10 : st.flat !== fixH)) return;
+      api.right();
+    }
+    const src = { flat: body.querySelector('.src-flat'), rod: body.querySelector('.src-rod'), cube: body.querySelector('.src-cube') };
+    for (const k in src) if (src[k]) ACT.drag(src[k], { clone: true, zones: () => Object.values(cols).filter(Boolean), drop: (z) => (z === cols[k] ? accept(k) : (api.wrong(), false)) });
+    function want() {
+      const hh = hasH ? (fixH != null ? fixH : Math.floor(ex.answer / 100)) : 0;
+      const t = fixT != null ? fixT : Math.floor((ex.answer - 100 * hh) / 10);
+      return { flat: hh, rod: t, cube: ex.answer - 100 * hh - 10 * t };
+    }
     async function demo() {
-      tIn.innerHTML = ''; oIn.innerHTML = ''; st.t = 0; st.o = 0; show();
+      for (const k in ins) if (ins[k]) ins[k].innerHTML = '';
+      st.flat = 0; st.rod = 0; st.cube = 0; show();
       const w = want();
-      for (let i = 0; i < w.t; i++) { st.t++; addPiece('rod'); show(); await wait(reduce() ? 0 : 280); }
-      for (let i = 0; i < w.o; i++) { st.o++; addPiece('cube'); show(); await wait(reduce() ? 0 : 160); }
+      for (const k of ['flat', 'rod', 'cube']) for (let i = 0; i < w[k]; i++) { st[k]++; addPiece(k); show(); await wait(reduce() ? 0 : k === 'cube' ? 160 : 280); }
     }
     return { demo, solve: () => demo().then(() => api.right()) };
   };
@@ -1797,34 +1962,42 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     return { demo, solve: () => demo().then(() => api.right()) };
   };
 
-  // Fill an injera with half and quarter pieces.
+  // Fill an injera with fraction pieces. `parts` (default 4) is how many equal parts make the whole;
+  // a "half" piece covers parts/2 of them, every other piece (quarter, third, sixth…) covers one.
   TYPES.drag_fraction = (api) => {
-    const { ex, body } = api;
-    const filled = [false, false, false, false];
+    const { ex, body } = api, P = ex.parts || 4;
+    const filled = Array.from({ length: P }, () => false);
     for (let i = 0; i < (ex.targets[0].start || 0); i++) filled[i] = true;
     body.innerHTML = `<div class="frac"><div class="inj zone">${injera(1, 0, true, 200)}<svg class="inj-fill" viewBox="0 0 96 96" width="200" height="200" aria-hidden="true"></svg></div><div class="pieces zone-home"></div></div>
-      <p class="frac-count" dir="ltr"><b>0</b>/4</p>`;
+      <p class="frac-count" dir="ltr"><b>0</b>/${P}</p>`;
     const inj = body.querySelector('.inj'), fillSvg = body.querySelector('.inj-fill'), pieces = body.querySelector('.pieces');
     ACT.zone(inj);
-    const sector = (k) => { const c = 48, r = 44, a1 = (k * 90 - 90) * Math.PI / 180, a2 = ((k + 1) * 90 - 90) * Math.PI / 180; return `M${c} ${c} L${(c + r * Math.cos(a1)).toFixed(1)} ${(c + r * Math.sin(a1)).toFixed(1)} A${r} ${r} 0 0 1 ${(c + r * Math.cos(a2)).toFixed(1)} ${(c + r * Math.sin(a2)).toFixed(1)} Z`; };
+    const ang = (k) => (k * 360 / P - 90) * Math.PI / 180;
+    const sector = (k, n = 1, c = 48, r = 44) => `M${c} ${c} L${(c + r * Math.cos(ang(k))).toFixed(1)} ${(c + r * Math.sin(ang(k))).toFixed(1)} A${r} ${r} 0 ${n * 360 / P > 180 ? 1 : 0} 1 ${(c + r * Math.cos(ang(k + n))).toFixed(1)} ${(c + r * Math.sin(ang(k + n))).toFixed(1)} Z`;
     function draw() {
       fillSvg.innerHTML = filled.map((f, k) => (f ? `<path d="${sector(k)}" fill="#f2b705" opacity=".9"/>` : '')).join('') +
-        [0, 1, 2, 3].map((k) => `<path d="M48 48 L${(48 + 44 * Math.cos((k * 90 - 90) * Math.PI / 180)).toFixed(1)} ${(48 + 44 * Math.sin((k * 90 - 90) * Math.PI / 180)).toFixed(1)}" stroke="#1d2540" stroke-width="1.5" stroke-dasharray="3 3"/>`).join('');
+        filled.map((_, k) => `<path d="M48 48 L${(48 + 44 * Math.cos(ang(k))).toFixed(1)} ${(48 + 44 * Math.sin(ang(k))).toFixed(1)}" stroke="#1d2540" stroke-width="1.5" stroke-dasharray="3 3"/>`).join('');
       body.querySelector('.frac-count b').textContent = filled.filter(Boolean).length;
     }
     draw();
-    const pieceSVG = (kind) => (kind === 'half'
-      ? '<svg viewBox="0 0 96 52" width="96" height="52" aria-hidden="true"><path d="M4 48 A44 44 0 0 1 92 48 Z" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/><circle cx="30" cy="34" r="2" fill="#c9b68e"/><circle cx="58" cy="26" r="2" fill="#c9b68e"/></svg>'
-      : '<svg viewBox="0 0 52 52" width="58" height="58" aria-hidden="true"><path d="M4 48 L4 4 A44 44 0 0 1 48 48 Z" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/><circle cx="18" cy="30" r="2" fill="#c9b68e"/></svg>');
+    const sizeOf = (kind) => (kind === 'half' ? P / 2 : 1);
+    function pieceSVG(kind) { // the piece on its own, cropped to its shape, at the size it has on the injera
+      const n = sizeOf(kind), pts = [[48, 48]];
+      for (let i = 0; i <= 24; i++) { const a = ang(0) + (i / 24) * n * 2 * Math.PI / P; pts.push([48 + 44 * Math.cos(a), 48 + 44 * Math.sin(a)]); }
+      const xs = pts.map((q) => q[0]), ys = pts.map((q) => q[1]);
+      const x0 = Math.min(...xs) - 3, y0 = Math.min(...ys) - 3, w = Math.max(...xs) + 3 - x0, hh = Math.max(...ys) + 3 - y0;
+      const k = 200 / 96; // same scale as the 200px injera
+      return `<svg viewBox="${x0.toFixed(1)} ${y0.toFixed(1)} ${w.toFixed(1)} ${hh.toFixed(1)}" width="${Math.round(w * k * 0.62)}" height="${Math.round(hh * k * 0.62)}" aria-hidden="true"><path d="${sector(0, n)}" fill="#e9dcc0" stroke="#b59a6a" stroke-width="3"/><circle cx="${(48 + 26 * Math.cos(ang(0) + n * Math.PI / P)).toFixed(1)}" cy="${(48 + 26 * Math.sin(ang(0) + n * Math.PI / P)).toFixed(1)}" r="2" fill="#c9b68e"/></svg>`;
+    }
     function slotFor(kind) {
-      if (kind === 'quarter') { const k = filled.indexOf(false); return k < 0 ? null : [k]; }
-      for (let k = 0; k < 4; k++) if (!filled[k] && !filled[(k + 1) % 4]) return [k, (k + 1) % 4];
+      const n = sizeOf(kind);
+      for (let k = 0; k < P; k++) { let ok = true; for (let j = 0; j < n; j++) if (filled[(k + j) % P]) ok = false; if (ok) return Array.from({ length: n }, (_, j) => (k + j) % P); }
       return null;
     }
     ex.items.forEach((p) => { for (let i = 0; i < p.count; i++) {
       const el = h(`<span class="fpiece ${p.piece}" data-kind="${p.piece}" aria-label="${p.piece}">${pieceSVG(p.piece)}</span>`); pieces.appendChild(el);
       ACT.drag(el, { zones: () => [inj], drop: (z, e2) => {
-        const size = p.piece === 'half' ? 2 : 1, now = filled.filter(Boolean).length, s = slotFor(p.piece);
+        const size = sizeOf(p.piece), now = filled.filter(Boolean).length, s = slotFor(p.piece);
         if (!s || now + size > ex.answer) { api.wrong(); return false; }
         s.forEach((k) => { filled[k] = true; }); e2.remove(); draw(); pop(inj); api.progress(now + size);
         if (now + size === ex.answer) api.right();
@@ -1834,7 +2007,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     async function demo() {
       let need = ex.answer - filled.filter(Boolean).length;
       for (const el of [...pieces.querySelectorAll('.fpiece')]) {
-        const size = el.dataset.kind === 'half' ? 2 : 1; if (size > need) continue;
+        const size = sizeOf(el.dataset.kind); if (size > need) continue;
         const s = slotFor(el.dataset.kind); if (!s) continue;
         await flyTo(el, inj); s.forEach((k) => { filled[k] = true; }); el.remove(); draw(); need -= size; if (!need) break;
       }
@@ -1858,7 +2031,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     let done = false;
     const el = options(api, opts, (o, b) => {
       if (done) return;
-      if (typeof o.v === 'number' && o.v <= 100) api.sayNum(o.v);
+      if (typeof o.v === 'number' && o.v <= 1000) api.sayNum(o.v);
       if (String(o.v) === String(answer)) { done = true; b.classList.add('right'); pop(b); api.right(); }
       else { b.classList.add('nope'); b.disabled = true; api.wrong(); }
     });
@@ -1963,7 +2136,8 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     body.querySelectorAll('.hand').forEach((g) => {
       g.style.cursor = 'grab'; g.style.touchAction = 'none';
       g.addEventListener('pointerdown', (e) => { active = g.dataset.h; g.setPointerCapture(e.pointerId); e.preventDefault(); });
-      g.addEventListener('pointermove', (e) => { if (active !== g.dataset.h) return; const a = toAngle(e); ang[active] = active === 'minute' ? Math.round(a / 30) * 30 % 360 : Math.round(a / 15) * 15 % 360; setHand(active); });
+      const mStep = (ex.step || 5) * 6; // degrees per minute step
+      g.addEventListener('pointermove', (e) => { if (active !== g.dataset.h) return; const a = toAngle(e); ang[active] = active === 'minute' ? Math.round(a / mStep) * mStep % 360 : Math.round(a / 15) * 15 % 360; setHand(active); });
       g.addEventListener('pointerup', () => { if (active) LK.sfx && LK.sfx.tap && LK.sfx.tap(); active = null; });
     });
     // tap on the face also moves the closest-fitting hand (helps small fingers)
@@ -1971,7 +2145,9 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     body.querySelector('.ck').addEventListener('click', () => {
       if (done) return;
       const m = Math.round(ang.minute / 6) % 60, hourPos = ang.hour / 30; // 0–12
-      const hOk = ex.answer.m === 30 ? Math.abs(hourPos - (ex.answer.h % 12 + 0.5)) <= 0.5 : Math.abs(((hourPos - ex.answer.h % 12) + 12) % 12) <= 0.25 || Math.abs(((ex.answer.h % 12 - hourPos) + 12) % 12) <= 0.25;
+      // the short hand must be on the hour, moved along towards the next hour as the minutes pass (half an hour of slack)
+      const want = (ex.answer.h % 12) + ex.answer.m / 60, diff = Math.abs(((hourPos - want) % 12 + 18) % 12 - 6);
+      const hOk = diff <= (ex.answer.m === 0 ? 0.25 : 0.5);
       if (m === ex.answer.m && hOk) { done = true; svg.classList.add('right'); api.right(); } else api.wrong();
     });
     const target = () => ({ minute: ex.answer.m * 6, hour: ((ex.answer.h % 12) + ex.answer.m / 60) * 30 });
@@ -2173,7 +2349,8 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     }
     function advance() { r++; if (r < rounds.length) round(); else api.end(); }
     round();
-    return { solve: () => { if (!api.foot.querySelector('button')) return; round.demo().then(() => { const b = api.foot.querySelector('button'); if (b) b.click(); }); } };
+    let busy = false; // a demo already pouring must not be restarted
+    return { solve: () => { if (busy || !api.foot.querySelector('button')) return; busy = true; round.demo().then(() => { busy = false; const b = api.foot.querySelector('button'); if (b) b.click(); }); } };
   };
 
   // ---- Market run: spend exactly the budget ----
@@ -2327,7 +2504,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
     drag_equation: { equation: ['3', '+', '__', '=', '7'], items: ['4', '3', '10'], targets: [{ id: 'blank' }], answer: '4' },
     drag_sort: { targets: [{ id: 'more', am: 'ከ5 ይበልጣል', en: 'More than 5' }, { id: 'less', am: 'ከ5 ያንሳል', en: 'Fewer than 5' }], items: [{ id: 'a', label: '7' }, { id: 'b', label: '2' }], answer: { a: 'more', b: 'less' } },
     drag_numberline: { line: { min: 0, max: 10, step: 1, labels: 'ends' }, items: ['3', '7'], answer: ['3', '7'] },
-    drag_placevalue: { items: { rods: true, cubes: true }, targets: [{ id: 'mat' }], answer: 34, max_tens: 9 },
+    drag_placevalue: { items: { flats: false, rods: true, cubes: true }, targets: [{ id: 'mat' }], answer: 34, max_tens: 9 },
     drag_match_word: { items: [{ id: 'w0', label: 'አምስት', lang: 'am' }, { id: 'w1', label: 'ሶስት', lang: 'am' }], targets: [{ id: 't0', label: '5' }, { id: 't1', label: '3' }], answer: { w0: 't0', w1: 't1' } },
     drag_make_change: { price: 15, item: { am: 'ዳቦው', en: 'bread', pic: 'bread' }, items: [10, 5, 5, 1, 1], targets: [{ id: 'counter' }], answer: 15 },
     drag_fraction: { shape: 'injera', parts: 4, items: [{ piece: 'quarter', count: 4 }], targets: [{ id: 'injera', start: 0 }], answer: 2 },
@@ -2354,7 +2531,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.LK;
       if (!e.equation.includes('__')) p.push('The equation needs an empty box: __');
       if (!e.items.map(String).includes(String(e.answer))) p.push('The answer tile is missing from the tiles.');
       const parts = e.equation.map((x) => (x === '__' ? String(e.answer) : x)), k = parts.indexOf('=');
-      const ev = (t) => { let v = Number(t[0]); for (let i = 1; i < t.length; i += 2) { const n = Number(t[i + 1]); v = t[i] === '+' ? v + n : t[i] === '−' || t[i] === '-' ? v - n : t[i] === '×' ? v * n : NaN; } return v; };
+      const ev = (t) => { let v = Number(t[0]); for (let i = 1; i < t.length; i += 2) { const n = Number(t[i + 1]); v = t[i] === '+' ? v + n : t[i] === '−' || t[i] === '-' ? v - n : t[i] === '×' ? v * n : t[i] === '÷' ? v / n : NaN; } return v; };
       if (k < 1 || ev(parts.slice(0, k)) !== ev(parts.slice(k + 1))) p.push(`${parts.join(' ')} does not balance.`);
     }
     if (e.type === 'drag_make_change') {

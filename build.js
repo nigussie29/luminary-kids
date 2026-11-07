@@ -1,7 +1,7 @@
 // node build.js → dist/luminary-kids.html (one self-contained page) + dist/narration-script.csv
 const fs = require('fs'), path = require('path');
 const src = (f) => fs.readFileSync(path.join(__dirname, 'src', f), 'utf8');
-const files = ['i18n.js', 'engine.js', 'art.js', 'narration.js', 'legal.js', 'sounds.js', 'lessons-g2.js', 'activities.js', 'games.js', 'adventure.js', 'app.js'];
+const files = ['i18n.js', 'engine.js', 'art.js', 'narration.js', 'legal.js', 'sounds.js', 'lessons-g2.js', 'lessons-g3.js', 'activities.js', 'games.js', 'adventure.js', 'app.js'];
 // Lesson content is built into the page too, so a lesson keeps working if the connection drops.
 const contentDir = path.join(__dirname, 'content');
 const index = JSON.parse(fs.readFileSync(path.join(contentDir, 'index.json'), 'utf8'));

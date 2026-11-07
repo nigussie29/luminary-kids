@@ -1,9 +1,10 @@
 // node animations/export_lessons.js → animations/lessons.json + dist/narration-script-videos.csv
-// The animations read every Amharic and English string from src/i18n.js and src/lessons-g2.js
+// The animations read every Amharic and English string from src/i18n.js, src/lessons-g2.js and src/lessons-g3.js
 // (via this file), so lesson text is written and reviewed in one place.
 const fs = require('fs'), path = require('path');
 require(path.join(__dirname, '..', 'src', 'i18n.js'));
 require(path.join(__dirname, '..', 'src', 'lessons-g2.js'));
+require(path.join(__dirname, '..', 'src', 'lessons-g3.js'));
 const { numWords, tensWords, things, glossary, prompts } = globalThis.LK;
 
 // Worked examples are split into sentences ("steps"), each with its own narration clip
@@ -15,16 +16,16 @@ const withSteps = (l) => {
   if (am.length !== en.length) throw new Error(`${l.id}: ${am.length} Amharic vs ${en.length} English sentences in the example`);
   return { ...l, steps: am.map((a, i) => ({ am: a, en: en[i] })) };
 };
-const lessons = [...globalThis.LK.lessons, ...globalThis.LK.lessonsG2].map(withSteps);
+const lessons = [...globalThis.LK.lessons, ...globalThis.LK.lessonsG2, ...globalThis.LK.lessonsG3].map(withSteps);
 
 const out = path.join(__dirname, 'lessons.json');
 fs.writeFileSync(out, JSON.stringify({ lessons, numWords, tensWords, things, glossary, prompts }, null, 2));
 
-// Recording script for the video clips: Grade 2 titles and stories (Grade 1's are in build.js's
+// Recording script for the video clips: Grade 2 and 3 titles and stories (Grade 1's are in build.js's
 // script) and, for every lesson, each sentence of the worked example on its own.
 const rows = [];
 for (const l of lessons) {
-  if (globalThis.LK.lessonsG2.some((g) => g.id === l.id)) {
+  if ([...globalThis.LK.lessonsG2, ...globalThis.LK.lessonsG3].some((g) => g.id === l.id)) {
     rows.push([`lesson.${l.id}.title`, l.title.am, l.title.en]);
     rows.push([`lesson.${l.id}.story`, l.story.am, l.story.en]);
   }

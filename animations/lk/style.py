@@ -42,8 +42,17 @@ def lesson(lesson_id):
 
 
 def number_word(n, lang="am"):
-    """Number word 0–100 in Amharic ('ሰላሳ አራት') or English ('thirty-four')."""
+    """Number word 0–1000 in Amharic ('ሁለት መቶ አርባ አምስት') or English ('two hundred forty-five')."""
     d = data()
+    if n == 1000:
+        return "አንድ ሺህ" if lang == "am" else "one thousand"
+    if n >= 100:
+        h, rest = divmod(n, 100)
+        if lang == "am":
+            head = "መቶ" if h == 1 else f"{d['numWords']['am'][h]} መቶ"
+        else:
+            head = f"{d['numWords']['en'][h]} hundred"
+        return f"{head} {number_word(rest, lang)}" if rest else head
     if n <= 20:
         return d["numWords"][lang][n]
     tens, ones = divmod(n, 10)

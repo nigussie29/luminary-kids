@@ -7,6 +7,8 @@ from manim import Scene
 from . import voice
 from .parts import *  # noqa: F401,F403
 from .parts2 import *  # noqa: F401,F403
+from .parts3 import *  # noqa: F401,F403
+from .parts4 import *  # noqa: F401,F403
 from .style import *  # noqa: F401,F403
 from .style import ANIM, setup
 

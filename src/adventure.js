@@ -49,7 +49,10 @@
     { id: 'gabi', slot: 'shawl', stars: 15, am: 'ጋቢ', en: 'Gabi wrap' },
     { id: 'kofia', slot: 'head', stars: 18, am: 'ኮፍያ', en: 'Embroidered cap' },
     { id: 'sandals', slot: 'feet', stars: 21, am: 'ጫማ', en: 'Sandals' },
-    { id: 'suit', slot: 'outfit', stars: 27, am: 'የሀበሻ ልብስ', en: 'Habesha suit' }
+    { id: 'suit', slot: 'outfit', stars: 27, am: 'የሀበሻ ልብስ', en: 'Habesha suit' },
+    { id: 'masinko', slot: 'hand', stars: 33, am: 'ማሲንቆ', en: 'Masinko' },
+    { id: 'kuta', slot: 'shawl', stars: 42, am: 'ኩታ', en: 'Kuta shawl' },
+    { id: 'jantila', slot: 'hand', stars: 51, am: 'ጃንጥላ', en: 'Ceremonial umbrella' }
   ];
   ADV.clothes = CLOTHES;
   const SKIN = { selam: '#8d5a3b', dawit: '#6b4228', hana: '#a8714d', yonas: '#5e3a24' };
@@ -64,13 +67,16 @@
     const legs = w.outfit === 'kemis' ? `<rect x="46" y="150" width="9" height="12" fill="${skin}"/><rect x="65" y="150" width="9" height="12" fill="${skin}"/>` : '';
     const feet = w.feet === 'sandals' ? '<path d="M40 162 h18 M62 162 h18" stroke="#7a4a22" stroke-width="6" stroke-linecap="round"/><path d="M49 156 v6 M71 156 v6" stroke="#b8456e" stroke-width="2.5"/>' : '<path d="M42 162 h15 M63 162 h15" stroke="#3b2a20" stroke-width="6" stroke-linecap="round"/>';
     const shawl = w.shawl === 'netela' ? `<path d="M34 72 Q60 92 86 72 L92 104 Q60 118 28 104 Z" fill="#fff" opacity=".93" stroke="#e6dccb"/><path d="M28 104 Q60 118 92 104" stroke="#2f8f5b" stroke-width="3" fill="none"/><path d="M29 100 Q60 114 91 100" stroke="#f2b705" stroke-width="2" fill="none" stroke-dasharray="4 3"/>`
-      : w.shawl === 'gabi' ? '<path d="M32 70 Q60 86 88 70 L94 124 Q60 134 26 124 Z" fill="#f4efe3" stroke="#d2c6ae" stroke-width="2"/><path d="M26 124 Q60 134 94 124" stroke="#b8456e" stroke-width="3" fill="none"/>' : '';
+      : w.shawl === 'gabi' ? '<path d="M32 70 Q60 86 88 70 L94 124 Q60 134 26 124 Z" fill="#f4efe3" stroke="#d2c6ae" stroke-width="2"/><path d="M26 124 Q60 134 94 124" stroke="#b8456e" stroke-width="3" fill="none"/>'
+      : w.shawl === 'kuta' ? '<path d="M36 70 Q60 84 84 70 L88 96 Q60 108 32 96 Z" fill="#fff" opacity=".95" stroke="#e6dccb"/><path d="M32 96 Q60 108 88 96" stroke="#1f7a8c" stroke-width="4" fill="none"/><path d="M33 92 Q60 104 87 92" stroke="#b8456e" stroke-width="2" fill="none"/><path d="M34 88 Q60 100 86 88" stroke="#f2b705" stroke-width="2" fill="none" stroke-dasharray="3 3"/>' : '';
+    const hand = w.hand === 'masinko' ? '<g transform="rotate(-18 92 112)"><path d="M92 126 L102 112 L92 98 L82 112 Z" fill="#a0672b" stroke="#5c3a12" stroke-width="2"/><path d="M84 112 h16" stroke="#f4efe3" stroke-width="3"/><rect x="90.5" y="58" width="3" height="42" fill="#5c3a12"/><path d="M92 60 V124" stroke="#f4efe3" stroke-width="1"/><path d="M78 92 Q94 84 104 70" stroke="#7a4a22" stroke-width="2" fill="none"/></g>'
+      : w.hand === 'jantila' ? '<path d="M92 118 V52" stroke="#5c3a12" stroke-width="3"/><path d="M68 56 Q92 22 116 56 Z" fill="#b8456e" stroke="#7a2848" stroke-width="2"/><path d="M68 56 Q80 62 92 56 Q104 62 116 56" fill="none" stroke="#f2b705" stroke-width="3"/><circle cx="92" cy="33" r="3" fill="#f2b705"/>' : '';
     const neck = w.neck === 'beads' ? '<path d="M48 70 Q60 82 72 70" fill="none" stroke="#b8456e" stroke-width="4" stroke-dasharray="1 5" stroke-linecap="round"/>' : '';
     const face = `<circle cx="60" cy="44" r="22" fill="${skin}"/><circle cx="52" cy="44" r="2.8" fill="#2b1d14"/><circle cx="68" cy="44" r="2.8" fill="#2b1d14"/><path d="M52 53 Q60 59 68 53" stroke="#2b1d14" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="47" cy="51" r="3" fill="#e58f74" opacity=".45"/><circle cx="73" cy="51" r="3" fill="#e58f74" opacity=".45"/>`;
     const hair = '<path d="M38 42 Q38 18 60 18 Q82 18 82 42 Q76 28 60 28 Q44 28 38 42 Z" fill="#1d130d"/>';
     const head = w.head === 'crown' ? `<g>${[0, 1, 2, 3, 4].map((i) => `<circle cx="${42 + i * 9}" cy="${22 - (i === 2 ? 4 : i % 2 ? 2 : 0)}" r="5.5" fill="#f2b705" stroke="#c28f00"/>`).join('')}<path d="M40 25 Q60 16 80 25" stroke="#2f8f5b" stroke-width="3" fill="none"/></g>`
       : w.head === 'kofia' ? '<path d="M40 30 Q40 14 60 14 Q80 14 80 30 Z" fill="#fbf7ef" stroke="#d9cbb0" stroke-width="2"/><path d="M41 27 H79" stroke="#1f7a8c" stroke-width="3"/><path d="M42 23 H78" stroke="#f2b705" stroke-width="2" stroke-dasharray="3 3"/>' : '';
-    return `<svg class="avatar" viewBox="0 0 120 170" width="${opts.size || 120}" height="${(opts.size || 120) * 170 / 120}" role="img" aria-label="avatar"><ellipse cx="60" cy="164" rx="34" ry="5" fill="#000" opacity=".08"/>${legs}${feet}${arms}${body}${shawl}${neck}${face}${hair}${head}</svg>`;
+    return `<svg class="avatar" viewBox="0 0 120 170" width="${opts.size || 120}" height="${(opts.size || 120) * 170 / 120}" role="img" aria-label="avatar"><ellipse cx="60" cy="164" rx="34" ry="5" fill="#000" opacity=".08"/>${legs}${feet}${arms}${body}${shawl}${neck}${face}${hair}${head}${hand}</svg>`;
   }
   ADV.avatar = avatar;
 
@@ -80,16 +86,28 @@
     add10: ['የመደመር ጀግና', 'Addition hero'], sub10: ['የመቀነስ ጀግና', 'Subtraction hero'], make10: ['የአስር ጀግና', 'Ten hero'],
     g2_placevalue: ['የአስሮች ጌታ', 'Tens master'], g2_add2d: ['የቤተ መጽሐፍት ደማሪ', 'Library adder'], g2_sub2d: ['የገበያ ቀናሽ', 'Market subtractor'],
     g2_groups: ['የቡና ቡድን', 'Coffee groups'], g2_birr: ['የብር ቆጣሪ', 'Birr counter'], g2_halves: ['የእንጀራ አካፋይ', 'Injera sharer'],
-    streak3: ['ሶስት ቀናት በተከታታይ', '3 days in a row'], streak7: ['አንድ ሳምንት በተከታታይ', '7 days in a row'], stars30: ['ሰላሳ ኮከቦች', '30 stars']
+    g2_skip: ['ዘላይ ቆጣሪ', 'Skip counter'], g2_compare: ['ብልህ አወዳዳሪ', 'Sharp comparer'], g2_measure: ['የገዢ አንባቢ', 'Ruler reader'],
+    g2_time: ['የቡና ሰዓት', 'Coffee-time reader'], g2_shapes: ['የቅርጽ ቆጣሪ', 'Shape counter'], g2_graphs: ['የግራፍ ሠሪ', 'Graph maker'],
+    g3_hundreds: ['የመቶዎች ጌታ', 'Hundreds master'], g3_add3d: ['የብርቱካን ደማሪ', 'Orchard adder'], g3_sub3d: ['የትምህርት ቤት ቀናሽ', 'School subtractor'],
+    g3_times: ['የማባዛት ጀግና', 'Times hero'], g3_share: ['ፍትሃዊ አካፋይ', 'Fair sharer'], g3_fractions: ['የክፍልፋይ ጌታ', 'Fraction master'],
+    g3_round: ['ብልህ አጠጋጋኝ', 'Clever rounder'], g3_tables: ['የሰንጠረዥ ጌታ', 'Times-table master'], g3_divide: ['የቡድን አካፋይ', 'Team divider'],
+    g3_fracline: ['የመንገድ ክፍልፋይ', 'Fraction walker'], g3_measure: ['ጎበዝ ለኪ', 'Good measurer'], g3_time: ['የሰዓት ጠባቂ', 'Time keeper'],
+    g3_shapes: ['የቅርጽ መርማሪ', 'Shape detective'], g3_area: ['የወለል ሰሪ', 'Floor builder'], g3_graphs: ['የግራፍ አንባቢ', 'Graph reader'],
+    stars50: ['ሃምሳ ኮከቦች', '50 stars'], stars75: ['ሰባ አምስት ኮከቦች', '75 stars'], streak3: ['ሶስት ቀናት በተከታታይ', '3 days in a row'], streak7: ['አንድ ሳምንት በተከታታይ', '7 days in a row'], stars30: ['ሰላሳ ኮከቦች', '30 stars']
   };
-  const BADGE_ICON = { streak3: '🔥', streak7: '🌟', stars30: '🏅' };
-  const PLACE_ICON = { garden: '🌼', market: '🍊', school: '☕', road: '🛺', tree: '🥭', meadow: '🌻', home: '🪵', library: '📚', ceremony: '🫖', shop: '💵', kitchen: '🫓' };
+  const BADGE_ICON = { streak3: '🔥', streak7: '🌟', stars30: '🏅', stars50: '🏆', stars75: '👑' };
+  const PLACE_ICON = { garden: '🌼', market: '🍊', school: '☕', road: '🛺', tree: '🥭', meadow: '🌻', home: '🪵', library: '📚', ceremony: '🫖', shop: '💵', kitchen: '🫓',
+    store: '📦', orchard: '🧺', schoolyard: '🏫', field: '🌱', village: '🏡', feast: '🎉',
+    steps: '👣', desk: '📏', alarm: '⏰', wall: '🔷', farm: '🍒', eggs: '🥚', playground: '⚽', path: '🛤️', scales: '⚖️', clocktower: '🕰️', house: '🏠', floor: '🧱', chart: '📊' };
+  const GRADES = [1, 2, 3], MAP_END = { 1: '🏔️', 2: '🏰', 3: '🌄' };
 
   // ---------------- home: adventure map ----------------
   ADV.homeHTML = function () {
     const p = P(); const lang = APP.lang(); const T = (am, en) => LK.act.T({ lang, showEn: APP.st().showEn }, am, en);
     const idx = ADV.index().lessons;
-    const grade = ADV.grade || (idx.some((l) => l.grade === 1 && !(p.lessons[l.id] && p.lessons[l.id].done)) ? 1 : 2);
+    // open on the first grade that still has a lesson to finish
+    const grades = GRADES.filter((g) => idx.some((l) => l.grade === g));
+    const grade = ADV.grade || grades.find((g) => idx.some((l) => l.grade === g && !(p.lessons[l.id] && p.lessons[l.id].done))) || grades[grades.length - 1];
     ADV.grade = grade;
     const list = idx.filter((l) => l.grade === grade);
     const unlocked = (i) => i === 0 || (p.lessons[list[i - 1].id] && p.lessons[list[i - 1].id].done) || (p.lessons[list[i].id] && p.lessons[list[i].id].done);
@@ -112,9 +130,9 @@
         <div class="adv-stats"><span class="stat"><b class="tnum">${stars}</b> ★ ${T('ኮከቦች', 'stars')}</span><span class="stat streak ${p.streak.last === today() ? 'lit' : ''}"><b class="tnum">${p.streak.days}</b> 🔥 ${T('ተከታታይ ቀናት', 'day streak')}</span>
           ${next ? `<span class="stat small">${T(`${next.am} በ${next.stars} ★`, `${next.en} at ${next.stars} ★`)}</span>` : ''}</div>
       </div>
-      <div class="grade-tabs" role="tablist">${[1, 2].map((g) => `<button role="tab" aria-selected="${g === grade}" data-adv="grade" data-g="${g}">${T(`${g}ኛ ክፍል`, `Grade ${g}`)}</button>`).join('')}</div>
+      <div class="grade-tabs" role="tablist">${grades.map((g) => `<button role="tab" aria-selected="${g === grade}" data-adv="grade" data-g="${g}">${T(`${g}ኛ ክፍል`, `Grade ${g}`)}</button>`).join('')}</div>
       <div class="adv-map" style="height:${pts.length * rowH + 30}px"><svg class="trail" viewBox="0 0 ${W} ${pts.length * rowH + 30}" preserveAspectRatio="none" aria-hidden="true"><path d="${d}" fill="none" stroke="#d9b27c" stroke-width="16" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="6 9"/></svg>${places}
-        <span class="map-end" style="left:${(pts[pts.length - 1].x / W) * 100}%;top:${pts[pts.length - 1].y + 70}px" aria-hidden="true">${grade === 1 ? '🏔️' : '🏰'}</span></div>
+        <span class="map-end" style="left:${(pts[pts.length - 1].x / W) * 100}%;top:${pts[pts.length - 1].y + 70}px" aria-hidden="true">${MAP_END[grade] || '🏰'}</span></div>
       ${p.badges.length ? `<div class="badges"><b>${T('ሽልማቶች', 'Badges')}</b><div class="row">${p.badges.map((b) => `<span class="badge-chip" title="${esc((BADGE_NAMES[b] || [b, b])[1])}">${BADGE_ICON[b] || PLACE_ICON[(ADV.index().lessons.find((l) => l.id === b) || {}).place] || '⭐'}<small>${T(...(BADGE_NAMES[b] || [b, b]))}</small></span>`).join('')}</div></div>` : ''}
     </section>`;
   };
@@ -325,6 +343,8 @@
     if (p.streak.days >= 3) add('streak3');
     if (p.streak.days >= 7) add('streak7');
     if (totalStars(p) >= 30) add('stars30');
+    if (totalStars(p) >= 50) add('stars50');
+    if (totalStars(p) >= 75) add('stars75');
     const unlocked = CLOTHES.filter((c) => c.stars > before && c.stars <= totalStars(p));
     unlocked.forEach((c) => { if (!p.wardrobe.owned.includes(c.id)) p.wardrobe.owned.push(c.id); });
     p.log.push({ id: s.id, at: Date.now(), stars, mins: Math.round((Date.now() - s.started) / 6e4), level: s.level, firstTry: rec.firstTry, total: rec.total });

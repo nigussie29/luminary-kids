@@ -1,0 +1,50 @@
+{
+ "marks": {
+  "title": 0.0,
+  "story": 4.033,
+  "step0": 11.5,
+  "step1": 16.133,
+  "step2": 20.333,
+  "step3": 23.9
+ },
+ "cues": [
+  {
+   "start": 0.0,
+   "am": "እኩል ማካፈል",
+   "en": "Sharing equally",
+   "end": 2.633
+  },
+  {
+   "start": 4.033,
+   "am": "እማማ አስራ ሁለት ብርቱካኖችን ለሶስት ልጆች በእኩል ማካፈል ትፈልጋለች። ማንም ከሌላው መብለጥ የለበትም።",
+   "en": "Mama wants to share twelve oranges equally among three children. Nobody should get more than anyone else.",
+   "end": 11.5
+  },
+  {
+   "start": 11.5,
+   "am": "አንድ ለአንተ፣ አንድ ለአንቺ፣ አንድ ለእሱ፤ በዙር እናካፍላለን።",
+   "en": "One for you, one for you, one for him: we share in turns.",
+   "end": 16.133
+  },
+  {
+   "start": 16.133,
+   "am": "ሁሉም እስኪያልቁ እንቀጥላለን።",
+   "en": "We keep going until they are all gone.",
+   "end": 20.333
+  },
+  {
+   "start": 20.333,
+   "am": "እያንዳንዱ ልጅ አራት ብርቱካኖች አገኘ።",
+   "en": "Each child gets four oranges.",
+   "end": 23.9
+  },
+  {
+   "start": 23.9,
+   "am": "አስራ ሁለት ሲካፈል ለሶስት እኩል ነው አራት።",
+   "en": "Twelve divided by three equals four.",
+   "end": 27.867
+  }
+ ],
+ "duration": 31.667,
+ "lesson": "g3_share"
+}

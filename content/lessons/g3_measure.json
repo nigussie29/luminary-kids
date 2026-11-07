@@ -1,0 +1,1096 @@
+{
+  "id": "g3_measure",
+  "grade": 3,
+  "n": 11,
+  "title": {
+    "am": "ርዝመት፣ ክብደት እና መጠን",
+    "en": "Length, mass and liquids",
+    "audio_url": "audio/am/lesson.g3_measure.title.mp3"
+  },
+  "place": "scales",
+  "video": {
+    "src": "video/g3_measure.mp4",
+    "src_low": "video/low/g3_measure.mp4",
+    "poster": "video/g3_measure.jpg",
+    "captions": {
+      "am": "video/g3_measure.am.vtt",
+      "en": "video/g3_measure.en.vtt"
+    },
+    "duration": 32.467,
+    "checkpoints": [
+      {
+        "t": 9.72,
+        "at": "step:0",
+        "exercise": {
+          "id": "g3_measure.01",
+          "type": "tap_choose",
+          "prompt_am": "እርሳሱ ስንት ሳንቲ ሜትር ይረዝማል?",
+          "prompt_en": "How many centimetres long is the pencil?",
+          "audio_url": "audio/am/ex.g3_measure.01.mp3",
+          "options": [
+            {
+              "v": 10
+            },
+            {
+              "v": 12
+            },
+            {
+              "v": 15
+            }
+          ],
+          "answer": 12,
+          "visual": {
+            "kind": "ruler",
+            "length": 12,
+            "max": 15,
+            "thing": "pencil"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 20.42,
+        "at": "step:2",
+        "exercise": {
+          "id": "g3_measure.02",
+          "type": "tap_choose",
+          "prompt_am": "ጀሪካኑ ስንት ሊትር ውሃ ይይዛል?",
+          "prompt_en": "How many litres of water does the jerrycan hold?",
+          "audio_url": "audio/am/ex.g3_measure.02.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 5
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 5,
+          "visual": {
+            "kind": "jug",
+            "l": 5,
+            "max": 5
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 9.72,
+      "end": 32.467,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_measure.03",
+          "type": "drag_numberline",
+          "prompt_am": "እርሳሱን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።",
+          "prompt_en": "Let's measure the pencil: put the flag on the number where it ends.",
+          "audio_url": "audio/am/ex.g2_measure.05.mp3",
+          "line": {
+            "min": 0,
+            "max": 12,
+            "step": 1,
+            "labels": "all",
+            "object": {
+              "thing": "pencil",
+              "length": 8
+            },
+            "unit": "cm"
+          },
+          "items": [
+            "8"
+          ],
+          "answer": [
+            "8"
+          ],
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_measure.04",
+          "type": "drag_numberline",
+          "prompt_am": "ዱላውን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።",
+          "prompt_en": "Let's measure the stick: put the flag on the number where it ends.",
+          "audio_url": "audio/am/ex.g2_measure.06.mp3",
+          "line": {
+            "min": 0,
+            "max": 15,
+            "step": 1,
+            "labels": "all",
+            "object": {
+              "thing": "stick",
+              "length": 11
+            },
+            "unit": "cm"
+          },
+          "items": [
+            "11"
+          ],
+          "answer": [
+            "11"
+          ],
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_measure.05",
+          "type": "drag_numberline",
+          "prompt_am": "ሪባኑን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።",
+          "prompt_en": "Let's measure the ribbon: put the flag on the number where it ends.",
+          "audio_url": "audio/am/ex.g2_measure.20.mp3",
+          "line": {
+            "min": 0,
+            "max": 15,
+            "step": 1,
+            "labels": "all",
+            "object": {
+              "thing": "ribbon",
+              "length": 13
+            },
+            "unit": "cm"
+          },
+          "items": [
+            "13"
+          ],
+          "answer": [
+            "13"
+          ],
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_measure.06",
+          "type": "tap_choose",
+          "prompt_am": "የበሩን ቁመት በምን እንለካለን?",
+          "prompt_en": "What do we use to measure how tall a door is?",
+          "audio_url": "audio/am/ex.g3_measure.03.mp3",
+          "options": [
+            {
+              "v": "m",
+              "am": "ሜትር",
+              "en": "metres"
+            },
+            {
+              "v": "kg",
+              "am": "ኪሎ ግራም",
+              "en": "kilograms"
+            },
+            {
+              "v": "l",
+              "am": "ሊትር",
+              "en": "litres"
+            }
+          ],
+          "answer": "m",
+          "visual": null,
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_measure.07",
+          "type": "tap_choose",
+          "prompt_am": "የውሃ ጠርሙስ በምን ይለካል?",
+          "prompt_en": "What do we use to measure a bottle of water?",
+          "audio_url": "audio/am/ex.g3_measure.04.mp3",
+          "options": [
+            {
+              "v": "kg",
+              "am": "ኪሎ ግራም",
+              "en": "kilograms"
+            },
+            {
+              "v": "l",
+              "am": "ሊትር",
+              "en": "litres"
+            },
+            {
+              "v": "cm",
+              "am": "ሳንቲ ሜትር",
+              "en": "centimetres"
+            }
+          ],
+          "answer": "l",
+          "visual": null,
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_measure.08",
+          "type": "tap_choose",
+          "prompt_am": "የእርሳስ ርዝመትን በምን እንለካለን?",
+          "prompt_en": "What do we use to measure a pencil's length?",
+          "audio_url": "audio/am/ex.g3_measure.05.mp3",
+          "options": [
+            {
+              "v": "m",
+              "am": "ሜትር",
+              "en": "metres"
+            },
+            {
+              "v": "cm",
+              "am": "ሳንቲ ሜትር",
+              "en": "centimetres"
+            },
+            {
+              "v": "kg",
+              "am": "ኪሎ ግራም",
+              "en": "kilograms"
+            }
+          ],
+          "answer": "cm",
+          "visual": null,
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_measure.09",
+          "type": "numpad",
+          "prompt_am": "ከረጢቱ ስንት ኪሎ ግራም ይመዝናል?",
+          "prompt_en": "How many kilograms does the bag weigh?",
+          "audio_url": "audio/am/ex.g3_measure.06.mp3",
+          "answer": 4,
+          "visual": {
+            "kind": "scale",
+            "kg": 4,
+            "max": 10
+          },
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_measure.10",
+          "type": "numpad",
+          "prompt_am": "ከረጢቱ ስንት ኪሎ ግራም ይመዝናል?",
+          "prompt_en": "How many kilograms does the bag weigh?",
+          "audio_url": "audio/am/ex.g3_measure.06.mp3",
+          "answer": 7,
+          "visual": {
+            "kind": "scale",
+            "kg": 7,
+            "max": 10
+          },
+          "max_digits": 2,
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_measure.11",
+          "type": "numpad",
+          "prompt_am": "ከረጢቱ ስንት ኪሎ ግራም ይመዝናል?",
+          "prompt_en": "How many kilograms does the bag weigh?",
+          "audio_url": "audio/am/ex.g3_measure.06.mp3",
+          "answer": 15,
+          "visual": {
+            "kind": "scale",
+            "kg": 15,
+            "max": 20
+          },
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_measure.12",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ሊትር ውሃ አለ?",
+          "prompt_en": "How many litres of water are there?",
+          "audio_url": "audio/am/ex.g3_measure.07.mp3",
+          "options": [
+            {
+              "v": 2
+            },
+            {
+              "v": 3
+            },
+            {
+              "v": 5
+            }
+          ],
+          "answer": 2,
+          "visual": {
+            "kind": "jug",
+            "l": 2,
+            "max": 5
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_measure.13",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ሊትር ውሃ አለ?",
+          "prompt_en": "How many litres of water are there?",
+          "audio_url": "audio/am/ex.g3_measure.07.mp3",
+          "options": [
+            {
+              "v": 3
+            },
+            {
+              "v": 4
+            },
+            {
+              "v": 5
+            }
+          ],
+          "answer": 4,
+          "visual": {
+            "kind": "jug",
+            "l": 4,
+            "max": 5
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_measure.14",
+          "type": "tap_choose",
+          "prompt_am": "ስንት ሊትር ውሃ አለ?",
+          "prompt_en": "How many litres of water are there?",
+          "audio_url": "audio/am/ex.g3_measure.07.mp3",
+          "options": [
+            {
+              "v": 4
+            },
+            {
+              "v": 6
+            },
+            {
+              "v": 10
+            }
+          ],
+          "answer": 6,
+          "visual": {
+            "kind": "jug",
+            "l": 6,
+            "max": 10
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_measure.15",
+          "type": "drag_sort",
+          "prompt_am": "ከአንድ ሜትር የሚያጥሩትን እና የሚረዝሙትን እንለይ።",
+          "prompt_en": "Let's sort: shorter than one metre, longer than one metre.",
+          "audio_url": "audio/am/ex.g2_measure.14.mp3",
+          "targets": [
+            {
+              "id": "short",
+              "am": "ከ1 ሜትር ያጥራል",
+              "en": "Shorter than 1 m"
+            },
+            {
+              "id": "long",
+              "am": "ከ1 ሜትር ይረዝማል",
+              "en": "Longer than 1 m"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "✏️ እርሳስ"
+            },
+            {
+              "id": "b",
+              "label": "🚪 በር"
+            },
+            {
+              "id": "c",
+              "label": "🥄 ማንኪያ"
+            },
+            {
+              "id": "d",
+              "label": "🚌 አውቶቡስ"
+            }
+          ],
+          "answer": {
+            "a": "short",
+            "b": "long",
+            "c": "short",
+            "d": "long"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_measure.16",
+          "type": "drag_sort",
+          "prompt_am": "ከአንድ ኪሎ ግራም የሚቀሉትን እና የሚከብዱትን እንለይ።",
+          "prompt_en": "Let's sort: lighter than one kilogram, heavier than one kilogram.",
+          "audio_url": "audio/am/ex.g3_measure.08.mp3",
+          "targets": [
+            {
+              "id": "light",
+              "am": "ከ1 ኪሎ ግራም ያንሳል",
+              "en": "Lighter than 1 kg"
+            },
+            {
+              "id": "heavy",
+              "am": "ከ1 ኪሎ ግራም ይበልጣል",
+              "en": "Heavier than 1 kg"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "🪶 ላባ"
+            },
+            {
+              "id": "b",
+              "label": "🍉 ሐብሐብ"
+            },
+            {
+              "id": "c",
+              "label": "✏️ እርሳስ"
+            },
+            {
+              "id": "d",
+              "label": "🛍️ የጤፍ ከረጢት"
+            },
+            {
+              "id": "e",
+              "label": "🥚 እንቁላል"
+            }
+          ],
+          "answer": {
+            "a": "light",
+            "b": "heavy",
+            "c": "light",
+            "d": "heavy",
+            "e": "light"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_measure.17",
+          "type": "drag_sort",
+          "prompt_am": "ከአንድ ሊትር ያነሰ እና የበለጠ የሚይዙትን እንለይ።",
+          "prompt_en": "Let's sort: holds less than one litre, holds more than one litre.",
+          "audio_url": "audio/am/ex.g3_measure.09.mp3",
+          "targets": [
+            {
+              "id": "less",
+              "am": "ከ1 ሊትር ያንሳል",
+              "en": "Less than 1 L"
+            },
+            {
+              "id": "more",
+              "am": "ከ1 ሊትር ይበልጣል",
+              "en": "More than 1 L"
+            }
+          ],
+          "items": [
+            {
+              "id": "a",
+              "label": "☕ ስኒ"
+            },
+            {
+              "id": "b",
+              "label": "🪣 ባልዲ"
+            },
+            {
+              "id": "c",
+              "label": "🥄 ማንኪያ"
+            },
+            {
+              "id": "d",
+              "label": "🛢️ በርሜል"
+            },
+            {
+              "id": "e",
+              "label": "🛁 ገንዳ"
+            }
+          ],
+          "answer": {
+            "a": "less",
+            "b": "more",
+            "c": "less",
+            "d": "more",
+            "e": "more"
+          },
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_measure.18",
+          "type": "drag_equation",
+          "prompt_am": "ሁለት ሪባኖች፦ አስራ ሁለት ሳንቲ ሜትር እና ስምንት ሳንቲ ሜትር። በአጠቃላይ ስንት ናቸው?",
+          "prompt_en": "Two ribbons: twelve centimetres and eight centimetres. How long are they together?",
+          "audio_url": "audio/am/ex.g3_measure.10.mp3",
+          "equation": [
+            "12",
+            "+",
+            "8",
+            "=",
+            "__"
+          ],
+          "items": [
+            "20",
+            "4",
+            "128"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "20",
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_measure.19",
+          "type": "drag_equation",
+          "prompt_am": "ጀሪካኑ አምስት ሊትር ነበረው፤ ሁለት ሊትር ተጠጣ። ስንት ሊትር ቀረ?",
+          "prompt_en": "The jerrycan had five litres; two litres were drunk. How many litres are left?",
+          "audio_url": "audio/am/ex.g3_measure.11.mp3",
+          "equation": [
+            "5",
+            "−",
+            "2",
+            "=",
+            "__"
+          ],
+          "items": [
+            "3",
+            "7",
+            "52"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "3",
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_measure.20",
+          "type": "drag_equation",
+          "prompt_am": "አንድ ሜትር መቶ ሳንቲ ሜትር ነው። ሰላሳ አምስት ሳንቲ ሜትር ቢቆረጥ ስንት ይቀራል?",
+          "prompt_en": "One metre is one hundred centimetres. If thirty-five centimetres are cut off, how much is left?",
+          "audio_url": "audio/am/ex.g3_measure.12.mp3",
+          "equation": [
+            "100",
+            "−",
+            "35",
+            "=",
+            "__"
+          ],
+          "items": [
+            "65",
+            "75",
+            "135"
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "65",
+          "hints": [
+            {
+              "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+              "en": "Start at zero and read the number where the end reaches.",
+              "audio_url": "audio/am/ex.g2_measure.02.mp3"
+            },
+            {
+              "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+              "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+              "audio_url": "audio/am/ex.g2_measure.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "balloon",
+    "rounds": [
+      {
+        "target": 20,
+        "balloons": [
+          12,
+          8,
+          15,
+          3,
+          6,
+          11
+        ]
+      },
+      {
+        "target": 50,
+        "balloons": [
+          25,
+          30,
+          20,
+          15,
+          35,
+          5
+        ]
+      },
+      {
+        "target": 100,
+        "balloons": [
+          60,
+          45,
+          40,
+          55,
+          25,
+          70
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ሁለት ሪባኖችን የሚያሳዩ ፊኛዎችን ፈንድተን የተጠየቀውን ርዝመት እንሥራ።",
+      "en": "Pop two ribbon balloons that add up to the length asked for.",
+      "audio_url": "audio/am/ex.g2_measure.24.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_measure.21",
+      "type": "drag_numberline",
+      "prompt_am": "ማንኪያውን እንለካ፤ ጫፉ የደረሰበት ቁጥር ላይ ምልክቱን እናስቀምጥ።",
+      "prompt_en": "Let's measure the spoon: put the flag on the number where it ends.",
+      "audio_url": "audio/am/ex.g2_measure.07.mp3",
+      "line": {
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "labels": "all",
+        "object": {
+          "thing": "spoon",
+          "length": 9
+        },
+        "unit": "cm"
+      },
+      "items": [
+        "9"
+      ],
+      "answer": [
+        "9"
+      ],
+      "hints": [
+        {
+          "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+          "en": "Start at zero and read the number where the end reaches.",
+          "audio_url": "audio/am/ex.g2_measure.02.mp3"
+        },
+        {
+          "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+          "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+          "audio_url": "audio/am/ex.g2_measure.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_measure.22",
+      "type": "drag_equation",
+      "prompt_am": "አምስት ጠርሙሶች፣ እያንዳንዳቸው ሁለት ሊትር። በአጠቃላይ ስንት ሊትር?",
+      "prompt_en": "Five bottles of two litres each. How many litres altogether?",
+      "audio_url": "audio/am/ex.g3_measure.13.mp3",
+      "equation": [
+        "5",
+        "×",
+        "2",
+        "=",
+        "__"
+      ],
+      "items": [
+        "10",
+        "7",
+        "52"
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": "10",
+      "hints": [
+        {
+          "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+          "en": "Start at zero and read the number where the end reaches.",
+          "audio_url": "audio/am/ex.g2_measure.02.mp3"
+        },
+        {
+          "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+          "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+          "audio_url": "audio/am/ex.g2_measure.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_measure.23",
+      "type": "drag_match_word",
+      "prompt_am": "እኩል የሆኑትን እናገናኝ።",
+      "prompt_en": "Let's match the ones that are equal.",
+      "audio_url": "audio/am/ex.g3_measure.14.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "1 ሜትር"
+        },
+        {
+          "id": "w1",
+          "label": "1 ኪሎ ግራም"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "label": "1000 ግራም"
+        },
+        {
+          "id": "t0",
+          "label": "100 ሳ.ሜ"
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1"
+      },
+      "hints": [
+        {
+          "am": "ከዜሮ እንጀምር፤ ጫፉ የደረሰበትን ቁጥር እናንብብ።",
+          "en": "Start at zero and read the number where the end reaches.",
+          "audio_url": "audio/am/ex.g2_measure.02.mp3"
+        },
+        {
+          "am": "ርዝመት በሜትር እና በሳንቲ ሜትር፣ ክብደት በኪሎ ግራም፣ ፈሳሽ በሊትር ይለካል።",
+          "en": "Length is in metres and centimetres, mass in kilograms, liquids in litres.",
+          "audio_url": "audio/am/ex.g2_measure.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_measure.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሶስት ኪሎ ግራም",
+        "en": "three kilograms",
+        "audio_url": "audio/am/ex.g3_measure.15.mp3"
+      },
+      "options": [
+        {
+          "v": "a",
+          "visual": {
+            "kind": "scale",
+            "kg": 3,
+            "max": 10
+          }
+        },
+        {
+          "v": "b",
+          "visual": {
+            "kind": "scale",
+            "kg": 5,
+            "max": 10
+          }
+        },
+        {
+          "v": "c",
+          "visual": {
+            "kind": "scale",
+            "kg": 8,
+            "max": 10
+          }
+        }
+      ],
+      "answer": "a",
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_measure.25",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ይህ ጀሪካን ሶስት ሊትር ውሃ አለው።",
+      "prompt_en": "True or not? This jerrycan has three litres of water.",
+      "audio_url": "audio/am/ex.g3_measure.16.mp3",
+      "statement_am": "ይህ ጀሪካን ሶስት ሊትር ውሃ አለው።",
+      "statement_en": "This jerrycan has three litres of water.",
+      "visual": {
+        "kind": "jug",
+        "l": 3,
+        "max": 5
+      },
+      "answer": true,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    }
+  ]
+}

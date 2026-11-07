@@ -1,0 +1,1179 @@
+{
+  "id": "g3_round",
+  "grade": 3,
+  "n": 7,
+  "title": {
+    "am": "ማወዳደር እና ማጠጋጋት",
+    "en": "Comparing and rounding",
+    "audio_url": "audio/am/lesson.g3_round.title.mp3"
+  },
+  "place": "farm",
+  "video": {
+    "src": "video/g3_round.mp4",
+    "src_low": "video/low/g3_round.mp4",
+    "poster": "video/g3_round.jpg",
+    "captions": {
+      "am": "video/g3_round.am.vtt",
+      "en": "video/g3_round.en.vtt"
+    },
+    "duration": 36.467,
+    "checkpoints": [
+      {
+        "t": 17.58,
+        "at": "step:1",
+        "exercise": {
+          "id": "g3_round.01",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ይበልጣል?",
+          "prompt_en": "Which is greater?",
+          "audio_url": "audio/am/ex.compare.18.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "348"
+            },
+            {
+              "v": "b",
+              "label": "384"
+            }
+          ],
+          "answer": "b",
+          "visual": null,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 28.38,
+        "at": "step:3",
+        "exercise": {
+          "id": "g3_round.02",
+          "type": "tap_choose",
+          "prompt_am": "ሶስት መቶ አርባ ስምንት ለየትኛው መቶ ይቀርባል?",
+          "prompt_en": "Which hundred is three hundred forty-eight closer to?",
+          "audio_url": "audio/am/ex.g3_round.01.mp3",
+          "options": [
+            {
+              "v": 300
+            },
+            {
+              "v": 400
+            }
+          ],
+          "answer": 300,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 13.08,
+      "end": 36.467,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g3_round.03",
+          "type": "drag_equation",
+          "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+          "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
+          "equation": [
+            "452",
+            "__",
+            "425"
+          ],
+          "items": [
+            "<",
+            ">",
+            "="
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": ">",
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_round.04",
+          "type": "drag_equation",
+          "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+          "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
+          "equation": [
+            "608",
+            "__",
+            "680"
+          ],
+          "items": [
+            "<",
+            ">",
+            "="
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "<",
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_round.05",
+          "type": "drag_equation",
+          "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+          "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
+          "equation": [
+            "799",
+            "__",
+            "801"
+          ],
+          "items": [
+            "<",
+            ">",
+            "="
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "<",
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g3_round.06",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 300,
+            "max": 400,
+            "step": 10,
+            "labels": "ends"
+          },
+          "items": [
+            "340",
+            "370"
+          ],
+          "answer": [
+            "340",
+            "370"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_round.07",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 500,
+            "max": 600,
+            "step": 10,
+            "labels": "ends"
+          },
+          "items": [
+            "520",
+            "550",
+            "580"
+          ],
+          "answer": [
+            "520",
+            "550",
+            "580"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_round.08",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 1000,
+            "step": 100,
+            "labels": "ends"
+          },
+          "items": [
+            "300",
+            "700",
+            "900"
+          ],
+          "answer": [
+            "300",
+            "700",
+            "900"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g3_round.09",
+          "type": "drag_sort",
+          "prompt_am": "ወደ ቅርብ አስር ስናጠጋጋ አርባ ወይስ ሃምሳ?",
+          "prompt_en": "Round to the nearest ten: 40 or 50?",
+          "audio_url": "audio/am/ex.g3_round.04.mp3",
+          "targets": [
+            {
+              "id": "lo",
+              "am": "40",
+              "en": "40"
+            },
+            {
+              "id": "hi",
+              "am": "50",
+              "en": "50"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "43"
+            },
+            {
+              "id": "c1",
+              "label": "47"
+            },
+            {
+              "id": "c2",
+              "label": "41"
+            },
+            {
+              "id": "c3",
+              "label": "48"
+            }
+          ],
+          "answer": {
+            "c0": "lo",
+            "c1": "hi",
+            "c2": "lo",
+            "c3": "hi"
+          },
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_round.10",
+          "type": "drag_sort",
+          "prompt_am": "ወደ ቅርብ መቶ ስናጠጋጋ ሶስት መቶ ወይስ አራት መቶ?",
+          "prompt_en": "Round to the nearest hundred: 300 or 400?",
+          "audio_url": "audio/am/ex.g3_round.05.mp3",
+          "targets": [
+            {
+              "id": "lo",
+              "am": "300",
+              "en": "300"
+            },
+            {
+              "id": "hi",
+              "am": "400",
+              "en": "400"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "320"
+            },
+            {
+              "id": "c1",
+              "label": "380"
+            },
+            {
+              "id": "c2",
+              "label": "349"
+            },
+            {
+              "id": "c3",
+              "label": "351"
+            },
+            {
+              "id": "c4",
+              "label": "399"
+            }
+          ],
+          "answer": {
+            "c0": "lo",
+            "c1": "hi",
+            "c2": "lo",
+            "c3": "hi",
+            "c4": "hi"
+          },
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_round.11",
+          "type": "drag_sort",
+          "prompt_am": "ወደ ቅርብ መቶ ስናጠጋጋ አምስት መቶ ወይስ ስድስት መቶ?",
+          "prompt_en": "Round to the nearest hundred: 500 or 600?",
+          "audio_url": "audio/am/ex.g3_round.06.mp3",
+          "targets": [
+            {
+              "id": "lo",
+              "am": "500",
+              "en": "500"
+            },
+            {
+              "id": "hi",
+              "am": "600",
+              "en": "600"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "549"
+            },
+            {
+              "id": "c1",
+              "label": "551"
+            },
+            {
+              "id": "c2",
+              "label": "507"
+            },
+            {
+              "id": "c3",
+              "label": "586"
+            },
+            {
+              "id": "c4",
+              "label": "550"
+            }
+          ],
+          "answer": {
+            "c0": "lo",
+            "c1": "hi",
+            "c2": "lo",
+            "c3": "hi",
+            "c4": "hi"
+          },
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g3_round.12",
+          "type": "tap_choose",
+          "prompt_am": "ሰማንያ ሰባት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?",
+          "prompt_en": "What is eighty-seven rounded to the nearest ten?",
+          "audio_url": "audio/am/ex.g3_round.07.mp3",
+          "options": [
+            {
+              "v": 80
+            },
+            {
+              "v": 85
+            },
+            {
+              "v": 90
+            }
+          ],
+          "answer": 90,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_round.13",
+          "type": "tap_choose",
+          "prompt_am": "ሁለት መቶ ሰላሳ አራት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?",
+          "prompt_en": "What is two hundred thirty-four rounded to the nearest ten?",
+          "audio_url": "audio/am/ex.g3_round.08.mp3",
+          "options": [
+            {
+              "v": 200
+            },
+            {
+              "v": 230
+            },
+            {
+              "v": 240
+            }
+          ],
+          "answer": 230,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_round.14",
+          "type": "tap_choose",
+          "prompt_am": "ሰባት መቶ ስልሳ አምስት ወደ ቅርብ መቶ ሲጠጋጋ ስንት ይሆናል?",
+          "prompt_en": "What is seven hundred sixty-five rounded to the nearest hundred?",
+          "audio_url": "audio/am/ex.g3_round.09.mp3",
+          "options": [
+            {
+              "v": 700
+            },
+            {
+              "v": 760
+            },
+            {
+              "v": 800
+            }
+          ],
+          "answer": 800,
+          "visual": null,
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g3_round.15",
+          "type": "numpad",
+          "prompt_am": "በ2፣ 5 እና 1 አሃዞች ትልቁን ቁጥር እንሥራ።",
+          "prompt_en": "Make the biggest number with the digits 2, 5 and 1.",
+          "audio_url": "audio/am/ex.g3_round.10.mp3",
+          "answer": 521,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_round.16",
+          "type": "numpad",
+          "prompt_am": "በ4፣ 0 እና 8 አሃዞች ትልቁን ቁጥር እንሥራ።",
+          "prompt_en": "Make the biggest number with the digits 4, 0 and 8.",
+          "audio_url": "audio/am/ex.g3_round.11.mp3",
+          "answer": 840,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_round.17",
+          "type": "numpad",
+          "prompt_am": "በ6፣ 1 እና 9 አሃዞች ትንሹን ቁጥር እንሥራ።",
+          "prompt_en": "Make the smallest number with the digits 6, 1 and 9.",
+          "audio_url": "audio/am/ex.g3_round.12.mp3",
+          "answer": 169,
+          "visual": null,
+          "max_digits": 4,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g3_round.18",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።",
+          "prompt_en": "Let's match each number to its nearest hundred.",
+          "audio_url": "audio/am/ex.g3_round.13.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "312"
+            },
+            {
+              "id": "w1",
+              "label": "587"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "600"
+            },
+            {
+              "id": "t0",
+              "label": "300"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1"
+          },
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g3_round.19",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።",
+          "prompt_en": "Let's match each number to its nearest hundred.",
+          "audio_url": "audio/am/ex.g3_round.13.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "149"
+            },
+            {
+              "id": "w1",
+              "label": "451"
+            },
+            {
+              "id": "w2",
+              "label": "650"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "500"
+            },
+            {
+              "id": "t2",
+              "label": "700"
+            },
+            {
+              "id": "t0",
+              "label": "100"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g3_round.20",
+          "type": "drag_match_word",
+          "prompt_am": "እያንዳንዱን ቁጥር ከቅርብ መቶው ጋር እናገናኝ።",
+          "prompt_en": "Let's match each number to its nearest hundred.",
+          "audio_url": "audio/am/ex.g3_round.13.mp3",
+          "items": [
+            {
+              "id": "w0",
+              "label": "249"
+            },
+            {
+              "id": "w1",
+              "label": "251"
+            },
+            {
+              "id": "w2",
+              "label": "849"
+            }
+          ],
+          "targets": [
+            {
+              "id": "t1",
+              "label": "300"
+            },
+            {
+              "id": "t2",
+              "label": "800"
+            },
+            {
+              "id": "t0",
+              "label": "200"
+            }
+          ],
+          "answer": {
+            "w0": "t0",
+            "w1": "t1",
+            "w2": "t2"
+          },
+          "hints": [
+            {
+              "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+              "en": "Which is it closer to? Look on the number line.",
+              "audio_url": "audio/am/ex.g3_round.02.mp3"
+            },
+            {
+              "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+              "en": "Five or more rounds up.",
+              "audio_url": "audio/am/ex.g3_round.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "race",
+    "questions": [
+      {
+        "id": "g3_round.26",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "256"
+          },
+          {
+            "v": "b",
+            "label": "265"
+          }
+        ],
+        "answer": "b",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_round.27",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "910"
+          },
+          {
+            "v": "b",
+            "label": "901"
+          }
+        ],
+        "answer": "a",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_round.28",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "478"
+          },
+          {
+            "v": "b",
+            "label": "487"
+          }
+        ],
+        "answer": "b",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_round.29",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "630"
+          },
+          {
+            "v": "b",
+            "label": "603"
+          }
+        ],
+        "answer": "a",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g3_round.30",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "199"
+          },
+          {
+            "v": "b",
+            "label": "201"
+          }
+        ],
+        "answer": "b",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።",
+      "en": "Let's race to Grandma's house! Each right answer moves us forward.",
+      "audio_url": "audio/am/ex.compare.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g3_round.21",
+      "type": "drag_equation",
+      "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+      "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+      "audio_url": "audio/am/ex.g2_compare.04.mp3",
+      "equation": [
+        "563",
+        "__",
+        "536"
+      ],
+      "items": [
+        "<",
+        ">",
+        "="
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": ">",
+      "hints": [
+        {
+          "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+          "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+          "audio_url": "audio/am/ex.g2_compare.01.mp3"
+        },
+        {
+          "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+          "en": "The open side of the sign faces the bigger number.",
+          "audio_url": "audio/am/ex.g2_compare.02.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_round.22",
+      "type": "drag_sort",
+      "prompt_am": "ወደ ቅርብ አስር ስናጠጋጋ ስልሳ ወይስ ሰባ?",
+      "prompt_en": "Round to the nearest ten: 60 or 70?",
+      "audio_url": "audio/am/ex.g3_round.14.mp3",
+      "targets": [
+        {
+          "id": "lo",
+          "am": "60",
+          "en": "60"
+        },
+        {
+          "id": "hi",
+          "am": "70",
+          "en": "70"
+        }
+      ],
+      "items": [
+        {
+          "id": "c0",
+          "label": "62"
+        },
+        {
+          "id": "c1",
+          "label": "68"
+        },
+        {
+          "id": "c2",
+          "label": "65"
+        },
+        {
+          "id": "c3",
+          "label": "61"
+        }
+      ],
+      "answer": {
+        "c0": "lo",
+        "c1": "hi",
+        "c2": "hi",
+        "c3": "lo"
+      },
+      "hints": [
+        {
+          "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+          "en": "Which is it closer to? Look on the number line.",
+          "audio_url": "audio/am/ex.g3_round.02.mp3"
+        },
+        {
+          "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+          "en": "Five or more rounds up.",
+          "audio_url": "audio/am/ex.g3_round.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_round.23",
+      "type": "true_false",
+      "prompt_am": "ልክ ነው ወይስ አይደለም? ሶስት መቶ አርባ ስምንት ከሶስት መቶ ሰማንያ አራት ይበልጣል።",
+      "prompt_en": "True or not? Three hundred forty-eight is greater than three hundred eighty-four.",
+      "audio_url": "audio/am/ex.g3_round.15.mp3",
+      "statement_am": "ሶስት መቶ አርባ ስምንት ከሶስት መቶ ሰማንያ አራት ይበልጣል።",
+      "statement_en": "Three hundred forty-eight is greater than three hundred eighty-four.",
+      "answer": false,
+      "hints": [
+        {
+          "am": "ሥዕሉን በደንብ እንመልከት።",
+          "en": "Look at the picture carefully.",
+          "audio_url": "audio/am/ex.count10.02.mp3"
+        },
+        {
+          "am": "ቆጥረን እንፈትሽ።",
+          "en": "Count to check.",
+          "audio_url": "audio/am/ex.count10.03.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_round.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሶስት መቶ ሃምሳ",
+        "en": "three hundred fifty",
+        "audio_url": "audio/am/num.350.mp3"
+      },
+      "options": [
+        {
+          "v": 350
+        },
+        {
+          "v": 305
+        },
+        {
+          "v": 530
+        }
+      ],
+      "answer": 350,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g3_round.25",
+      "type": "numpad",
+      "prompt_am": "አራት መቶ ሃምሳ ሰባት ወደ ቅርብ አስር ሲጠጋጋ ስንት ይሆናል?",
+      "prompt_en": "What is four hundred fifty-seven rounded to the nearest ten?",
+      "audio_url": "audio/am/ex.g3_round.16.mp3",
+      "answer": 460,
+      "visual": null,
+      "max_digits": 4,
+      "hints": [
+        {
+          "am": "ቁጥሩ ለየትኛው ይቀርባል? በቁጥር መስመር ላይ እንየው።",
+          "en": "Which is it closer to? Look on the number line.",
+          "audio_url": "audio/am/ex.g3_round.02.mp3"
+        },
+        {
+          "am": "አምስት ወይም ከዚያ በላይ ከሆነ ወደ ላይ እናጠጋጋለን።",
+          "en": "Five or more rounds up.",
+          "audio_url": "audio/am/ex.g3_round.03.mp3"
+        }
+      ]
+    }
+  ]
+}

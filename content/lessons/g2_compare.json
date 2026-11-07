@@ -1,0 +1,1161 @@
+{
+  "id": "g2_compare",
+  "grade": 2,
+  "n": 8,
+  "title": {
+    "am": "የትኛው ይበልጣል?",
+    "en": "Which is greater?",
+    "audio_url": "audio/am/lesson.g2_compare.title.mp3"
+  },
+  "place": "eggs",
+  "video": {
+    "src": "video/g2_compare.mp4",
+    "src_low": "video/low/g2_compare.mp4",
+    "poster": "video/g2_compare.jpg",
+    "captions": {
+      "am": "video/g2_compare.am.vtt",
+      "en": "video/g2_compare.en.vtt"
+    },
+    "duration": 30.233,
+    "checkpoints": [
+      {
+        "t": 10.42,
+        "at": "step:0",
+        "exercise": {
+          "id": "g2_compare.01",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ይበልጣል?",
+          "prompt_en": "Which is greater?",
+          "audio_url": "audio/am/ex.compare.18.mp3",
+          "options": [
+            {
+              "v": "a",
+              "label": "42"
+            },
+            {
+              "v": "b",
+              "label": "24"
+            }
+          ],
+          "answer": "a",
+          "visual": null,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ]
+        }
+      },
+      {
+        "t": 19.18,
+        "at": "step:2",
+        "exercise": {
+          "id": "g2_compare.02",
+          "type": "tap_choose",
+          "prompt_am": "ትክክለኛው ምልክት የትኛው ነው? 42 ⬜ 24",
+          "prompt_en": "Which sign is right? 42 ⬜ 24",
+          "audio_url": "audio/am/ex.g2_compare.03.mp3",
+          "options": [
+            {
+              "v": "<",
+              "label": "<"
+            },
+            {
+              "v": ">",
+              "label": ">"
+            },
+            {
+              "v": "=",
+              "label": "="
+            }
+          ],
+          "answer": ">",
+          "visual": null,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ]
+        }
+      }
+    ],
+    "reteach": {
+      "start": 10.42,
+      "end": 30.233,
+      "at": [
+        "step:0",
+        "end"
+      ]
+    }
+  },
+  "guided": [
+    {
+      "slot": 1,
+      "levels": [
+        {
+          "id": "g2_compare.03",
+          "type": "drag_equation",
+          "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+          "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
+          "equation": [
+            "35",
+            "__",
+            "53"
+          ],
+          "items": [
+            "<",
+            ">",
+            "="
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "<",
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_compare.04",
+          "type": "drag_equation",
+          "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+          "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
+          "equation": [
+            "67",
+            "__",
+            "61"
+          ],
+          "items": [
+            "<",
+            ">",
+            "="
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": ">",
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_compare.05",
+          "type": "drag_equation",
+          "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+          "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+          "audio_url": "audio/am/ex.g2_compare.04.mp3",
+          "equation": [
+            "80",
+            "__",
+            "80"
+          ],
+          "items": [
+            "<",
+            ">",
+            "="
+          ],
+          "targets": [
+            {
+              "id": "blank"
+            }
+          ],
+          "answer": "=",
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "levels": [
+        {
+          "id": "g2_compare.06",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ይበልጣል?",
+          "prompt_en": "Which is greater?",
+          "audio_url": "audio/am/ex.compare.18.mp3",
+          "options": [
+            {
+              "v": "a",
+              "visual": {
+                "kind": "tens_ones",
+                "tens": 3,
+                "ones": 4
+              }
+            },
+            {
+              "v": "b",
+              "visual": {
+                "kind": "tens_ones",
+                "tens": 4,
+                "ones": 3
+              }
+            }
+          ],
+          "answer": "b",
+          "visual": null,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_compare.07",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ይበልጣል?",
+          "prompt_en": "Which is greater?",
+          "audio_url": "audio/am/ex.compare.18.mp3",
+          "options": [
+            {
+              "v": "a",
+              "visual": {
+                "kind": "tens_ones",
+                "tens": 5,
+                "ones": 6
+              }
+            },
+            {
+              "v": "b",
+              "visual": {
+                "kind": "tens_ones",
+                "tens": 5,
+                "ones": 2
+              }
+            }
+          ],
+          "answer": "a",
+          "visual": null,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_compare.08",
+          "type": "tap_choose",
+          "prompt_am": "የትኛው ይበልጣል?",
+          "prompt_en": "Which is greater?",
+          "audio_url": "audio/am/ex.compare.18.mp3",
+          "options": [
+            {
+              "v": "a",
+              "visual": {
+                "kind": "tens_ones",
+                "tens": 7,
+                "ones": 0
+              }
+            },
+            {
+              "v": "b",
+              "visual": {
+                "kind": "tens_ones",
+                "tens": 6,
+                "ones": 9
+              }
+            }
+          ],
+          "answer": "a",
+          "visual": null,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "levels": [
+        {
+          "id": "g2_compare.09",
+          "type": "drag_sort",
+          "prompt_am": "ከሰላሳ የሚያንሱትን እና የሚበልጡትን እንለይ።",
+          "prompt_en": "Let's sort: less than 30, more than 30.",
+          "audio_url": "audio/am/ex.g2_compare.05.mp3",
+          "targets": [
+            {
+              "id": "less",
+              "am": "ከ30 ያንሳል",
+              "en": "Less than 30"
+            },
+            {
+              "id": "more",
+              "am": "ከ30 ይበልጣል",
+              "en": "More than 30"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "12"
+            },
+            {
+              "id": "c1",
+              "label": "45"
+            },
+            {
+              "id": "c2",
+              "label": "28"
+            },
+            {
+              "id": "c3",
+              "label": "39"
+            }
+          ],
+          "answer": {
+            "c0": "less",
+            "c1": "more",
+            "c2": "less",
+            "c3": "more"
+          },
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_compare.10",
+          "type": "drag_sort",
+          "prompt_am": "ከሃምሳ የሚያንሱትን እና የሚበልጡትን እንለይ።",
+          "prompt_en": "Let's sort: less than 50, more than 50.",
+          "audio_url": "audio/am/ex.g2_compare.06.mp3",
+          "targets": [
+            {
+              "id": "less",
+              "am": "ከ50 ያንሳል",
+              "en": "Less than 50"
+            },
+            {
+              "id": "more",
+              "am": "ከ50 ይበልጣል",
+              "en": "More than 50"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "49"
+            },
+            {
+              "id": "c1",
+              "label": "51"
+            },
+            {
+              "id": "c2",
+              "label": "15"
+            },
+            {
+              "id": "c3",
+              "label": "60"
+            },
+            {
+              "id": "c4",
+              "label": "38"
+            }
+          ],
+          "answer": {
+            "c0": "less",
+            "c1": "more",
+            "c2": "less",
+            "c3": "more",
+            "c4": "less"
+          },
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_compare.11",
+          "type": "drag_sort",
+          "prompt_am": "ከሰባ አምስት የሚያንሱትን እና የሚበልጡትን እንለይ።",
+          "prompt_en": "Let's sort: less than 75, more than 75.",
+          "audio_url": "audio/am/ex.g2_compare.07.mp3",
+          "targets": [
+            {
+              "id": "less",
+              "am": "ከ75 ያንሳል",
+              "en": "Less than 75"
+            },
+            {
+              "id": "more",
+              "am": "ከ75 ይበልጣል",
+              "en": "More than 75"
+            }
+          ],
+          "items": [
+            {
+              "id": "c0",
+              "label": "74"
+            },
+            {
+              "id": "c1",
+              "label": "76"
+            },
+            {
+              "id": "c2",
+              "label": "90"
+            },
+            {
+              "id": "c3",
+              "label": "68"
+            },
+            {
+              "id": "c4",
+              "label": "81"
+            }
+          ],
+          "answer": {
+            "c0": "less",
+            "c1": "more",
+            "c2": "more",
+            "c3": "less",
+            "c4": "more"
+          },
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "levels": [
+        {
+          "id": "g2_compare.12",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "labels": "ends"
+          },
+          "items": [
+            "20",
+            "60"
+          ],
+          "answer": [
+            "20",
+            "60"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_compare.13",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 40,
+            "max": 60,
+            "step": 2,
+            "labels": "ends"
+          },
+          "items": [
+            "44",
+            "52",
+            "58"
+          ],
+          "answer": [
+            "44",
+            "52",
+            "58"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_compare.14",
+          "type": "drag_numberline",
+          "prompt_am": "ቁጥሮቹን በቁጥር መስመሩ ላይ በትክክለኛው ቦታ እናስቀምጥ።",
+          "prompt_en": "Let's put the numbers in their places on the number line.",
+          "audio_url": "audio/am/ex.count10.14.mp3",
+          "line": {
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "labels": "none"
+          },
+          "items": [
+            "30",
+            "50",
+            "80"
+          ],
+          "answer": [
+            "30",
+            "50",
+            "80"
+          ],
+          "hints": [
+            {
+              "am": "ትናንሽ ቁጥሮች በግራ፣ ትልልቅ ቁጥሮች በቀኝ ናቸው።",
+              "en": "Small numbers are on the left, big numbers on the right.",
+              "audio_url": "audio/am/ex.count10.15.mp3"
+            },
+            {
+              "am": "ከዜሮ ጀምረን ምልክቶቹን እንቁጠር።",
+              "en": "Count the marks from zero.",
+              "audio_url": "audio/am/ex.count10.16.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "levels": [
+        {
+          "id": "g2_compare.15",
+          "type": "numpad",
+          "prompt_am": "በ3 እና 7 አሃዞች ትልቁን ቁጥር እንሥራ።",
+          "prompt_en": "Make the biggest number with the digits 3 and 7.",
+          "audio_url": "audio/am/ex.g2_compare.08.mp3",
+          "answer": 73,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_compare.16",
+          "type": "numpad",
+          "prompt_am": "በ5 እና 2 አሃዞች ትንሹን ቁጥር እንሥራ።",
+          "prompt_en": "Make the smallest number with the digits 5 and 2.",
+          "audio_url": "audio/am/ex.g2_compare.09.mp3",
+          "answer": 25,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_compare.17",
+          "type": "numpad",
+          "prompt_am": "በ8 እና 0 አሃዞች ትልቁን ቁጥር እንሥራ።",
+          "prompt_en": "Make the biggest number with the digits 8 and 0.",
+          "audio_url": "audio/am/ex.g2_compare.10.mp3",
+          "answer": 80,
+          "visual": null,
+          "max_digits": 3,
+          "hints": [
+            {
+              "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+              "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+              "audio_url": "audio/am/ex.g2_compare.01.mp3"
+            },
+            {
+              "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+              "en": "The open side of the sign faces the bigger number.",
+              "audio_url": "audio/am/ex.g2_compare.02.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "levels": [
+        {
+          "id": "g2_compare.18",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሃምሳ ዘጠኝ ከስልሳ አንድ ይበልጣል።",
+          "prompt_en": "True or not? Fifty-nine is greater than sixty-one.",
+          "audio_url": "audio/am/ex.g2_compare.11.mp3",
+          "statement_am": "ሃምሳ ዘጠኝ ከስልሳ አንድ ይበልጣል።",
+          "statement_en": "Fifty-nine is greater than sixty-one.",
+          "answer": false,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "id": "g2_compare.19",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? አርባ ስምንት ከሰማንያ አራት ያንሳል።",
+          "prompt_en": "True or not? Forty-eight is less than eighty-four.",
+          "audio_url": "audio/am/ex.g2_compare.12.mp3",
+          "statement_am": "አርባ ስምንት ከሰማንያ አራት ያንሳል።",
+          "statement_en": "Forty-eight is less than eighty-four.",
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "id": "g2_compare.20",
+          "type": "true_false",
+          "prompt_am": "ልክ ነው ወይስ አይደለም? ሰባ ሰባት እና ሰባ ሰባት እኩል ናቸው።",
+          "prompt_en": "True or not? Seventy-seven and seventy-seven are equal.",
+          "audio_url": "audio/am/ex.g2_compare.13.mp3",
+          "statement_am": "ሰባ ሰባት እና ሰባ ሰባት እኩል ናቸው።",
+          "statement_en": "Seventy-seven and seventy-seven are equal.",
+          "answer": true,
+          "hints": [
+            {
+              "am": "ሥዕሉን በደንብ እንመልከት።",
+              "en": "Look at the picture carefully.",
+              "audio_url": "audio/am/ex.count10.02.mp3"
+            },
+            {
+              "am": "ቆጥረን እንፈትሽ።",
+              "en": "Count to check.",
+              "audio_url": "audio/am/ex.count10.03.mp3"
+            }
+          ],
+          "level": 3
+        }
+      ]
+    }
+  ],
+  "extra": [],
+  "play": {
+    "game": "race",
+    "questions": [
+      {
+        "id": "g2_compare.26",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "29"
+          },
+          {
+            "v": "b",
+            "label": "92"
+          }
+        ],
+        "answer": "b",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_compare.27",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "60"
+          },
+          {
+            "v": "b",
+            "label": "58"
+          }
+        ],
+        "answer": "a",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_compare.28",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "33"
+          },
+          {
+            "v": "b",
+            "label": "38"
+          }
+        ],
+        "answer": "b",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_compare.29",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "71"
+          },
+          {
+            "v": "b",
+            "label": "17"
+          }
+        ],
+        "answer": "a",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      },
+      {
+        "id": "g2_compare.30",
+        "type": "tap_choose",
+        "prompt_am": "የትኛው ይበልጣል?",
+        "prompt_en": "Which is greater?",
+        "audio_url": "audio/am/ex.compare.18.mp3",
+        "options": [
+          {
+            "v": "a",
+            "label": "45"
+          },
+          {
+            "v": "b",
+            "label": "54"
+          }
+        ],
+        "answer": "b",
+        "visual": null,
+        "hints": [
+          {
+            "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+            "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+            "audio_url": "audio/am/ex.g2_compare.01.mp3"
+          },
+          {
+            "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+            "en": "The open side of the sign faces the bigger number.",
+            "audio_url": "audio/am/ex.g2_compare.02.mp3"
+          }
+        ]
+      }
+    ],
+    "intro": {
+      "am": "ወደ አያቴ ቤት እንሩጥ! በትክክል ስንመልስ ወደ ፊት እንሄዳለን።",
+      "en": "Let's race to Grandma's house! Each right answer moves us forward.",
+      "audio_url": "audio/am/ex.compare.20.mp3"
+    }
+  },
+  "challenge": [
+    {
+      "id": "g2_compare.21",
+      "type": "drag_equation",
+      "prompt_am": "ትክክለኛውን ምልክት እናስቀምጥ፦ ይበልጣል፣ ያንሳል ወይስ እኩል?",
+      "prompt_en": "Let's put the right sign: greater than, less than or equal?",
+      "audio_url": "audio/am/ex.g2_compare.04.mp3",
+      "equation": [
+        "91",
+        "__",
+        "19"
+      ],
+      "items": [
+        "<",
+        ">",
+        "="
+      ],
+      "targets": [
+        {
+          "id": "blank"
+        }
+      ],
+      "answer": ">",
+      "hints": [
+        {
+          "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+          "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+          "audio_url": "audio/am/ex.g2_compare.01.mp3"
+        },
+        {
+          "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+          "en": "The open side of the sign faces the bigger number.",
+          "audio_url": "audio/am/ex.g2_compare.02.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_compare.22",
+      "type": "drag_sort",
+      "prompt_am": "ከአርባ የሚያንሱትን እና የሚበልጡትን እንለይ።",
+      "prompt_en": "Let's sort: less than 40, more than 40.",
+      "audio_url": "audio/am/ex.g2_compare.14.mp3",
+      "targets": [
+        {
+          "id": "less",
+          "am": "ከ40 ያንሳል",
+          "en": "Less than 40"
+        },
+        {
+          "id": "more",
+          "am": "ከ40 ይበልጣል",
+          "en": "More than 40"
+        }
+      ],
+      "items": [
+        {
+          "id": "c0",
+          "label": "41"
+        },
+        {
+          "id": "c1",
+          "label": "14"
+        },
+        {
+          "id": "c2",
+          "label": "39"
+        },
+        {
+          "id": "c3",
+          "label": "93"
+        }
+      ],
+      "answer": {
+        "c0": "more",
+        "c1": "less",
+        "c2": "less",
+        "c3": "more"
+      },
+      "hints": [
+        {
+          "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+          "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+          "audio_url": "audio/am/ex.g2_compare.01.mp3"
+        },
+        {
+          "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+          "en": "The open side of the sign faces the bigger number.",
+          "audio_url": "audio/am/ex.g2_compare.02.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_compare.23",
+      "type": "drag_match_word",
+      "prompt_am": "እያንዳንዱን ቃል ከቁጥሩ ጋር እናገናኝ።",
+      "prompt_en": "Let's match each word to its number.",
+      "audio_url": "audio/am/ex.count10.11.mp3",
+      "items": [
+        {
+          "id": "w0",
+          "label": "ሃያ ሰባት",
+          "lang": "am",
+          "audio_url": "audio/am/num.27.mp3"
+        },
+        {
+          "id": "w1",
+          "label": "ሰባ ሁለት",
+          "lang": "am",
+          "audio_url": "audio/am/num.72.mp3"
+        },
+        {
+          "id": "w2",
+          "label": "ሰባ",
+          "lang": "am",
+          "audio_url": "audio/am/num.70.mp3"
+        }
+      ],
+      "targets": [
+        {
+          "id": "t1",
+          "label": "72"
+        },
+        {
+          "id": "t2",
+          "label": "70"
+        },
+        {
+          "id": "t0",
+          "label": "27"
+        }
+      ],
+      "answer": {
+        "w0": "t0",
+        "w1": "t1",
+        "w2": "t2"
+      },
+      "hints": [
+        {
+          "am": "ቃሉን ቀስ ብለን እናንብብ።",
+          "en": "Read the word slowly.",
+          "audio_url": "audio/am/ex.count10.12.mp3"
+        },
+        {
+          "am": "በድምፅ ቁልፉ እናዳምጥ።",
+          "en": "Tap the sound button to listen.",
+          "audio_url": "audio/am/ex.count10.13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_compare.24",
+      "type": "listen_choose",
+      "prompt_am": "እናዳምጥ፤ የሰማነውን ቁጥር እንንካ።",
+      "prompt_en": "Let's listen, then tap the number we hear.",
+      "audio_url": "audio/am/ex.count10.17.mp3",
+      "say": {
+        "am": "ሰባ ሁለት",
+        "en": "seventy-two",
+        "audio_url": "audio/am/num.72.mp3"
+      },
+      "options": [
+        {
+          "v": 72
+        },
+        {
+          "v": 27
+        },
+        {
+          "v": 70
+        }
+      ],
+      "answer": 72,
+      "hints": [
+        {
+          "am": "እንደገና እናዳምጥ።",
+          "en": "Listen again.",
+          "audio_url": "audio/am/ex.count10.18.mp3"
+        },
+        {
+          "am": "ቁጥሩን በሹክሹክታ እንድገመው።",
+          "en": "Whisper the number back to yourself.",
+          "audio_url": "audio/am/ex.count10.19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "g2_compare.25",
+      "type": "numpad",
+      "prompt_am": "በ9 እና 4 አሃዞች ትንሹን ቁጥር እንሥራ።",
+      "prompt_en": "Make the smallest number with the digits 9 and 4.",
+      "audio_url": "audio/am/ex.g2_compare.15.mp3",
+      "answer": 49,
+      "visual": null,
+      "max_digits": 3,
+      "hints": [
+        {
+          "am": "መጀመሪያ መቶዎቹን፣ እኩል ከሆኑ አስሮቹን፣ ከዚያ አንዶቹን እናወዳድር።",
+          "en": "Compare the hundreds first; if they are equal, the tens; then the ones.",
+          "audio_url": "audio/am/ex.g2_compare.01.mp3"
+        },
+        {
+          "am": "የአዞው አፍ ወደ ትልቁ ቁጥር ይከፈታል።",
+          "en": "The open side of the sign faces the bigger number.",
+          "audio_url": "audio/am/ex.g2_compare.02.mp3"
+        }
+      ]
+    }
+  ]
+}

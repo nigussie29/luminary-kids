@@ -11,12 +11,12 @@ const DRAG = new Set(['drag_drop_count', 'drag_equation', 'drag_sort', 'drag_num
 const VIDEO = !process.env.SKIP_VIDEO; // SKIP_VIDEO=1 checks content before the videos are rendered
 const OTHER = new Set(['tap_choose', 'tap_count', 'numpad', 'clock', 'trace', 'listen_choose', 'true_false', 'speak']);
 
-// evaluate "a op b op c" left to right (child-level arithmetic: + − ×)
+// evaluate "a op b op c" left to right (child-level arithmetic: + − × ÷)
 function evalSide(tokens) {
   let v = Number(tokens[0]);
   for (let i = 1; i < tokens.length; i += 2) {
     const op = tokens[i], n = Number(tokens[i + 1]);
-    v = op === '+' ? v + n : op === '−' ? v - n : op === '×' ? v * n : NaN;
+    v = op === '+' ? v + n : op === '−' ? v - n : op === '×' ? v * n : op === '÷' ? v / n : NaN;
   }
   return v;
 }
@@ -36,9 +36,10 @@ function checkExercise(e, where) {
   switch (e.type) {
     case 'drag_equation': {
       const parts = e.equation.map((p) => (p === '__' ? e.answer : p));
-      const eq = parts.indexOf('=');
-      assert.ok(eq > 0, `${at}: no =`);
-      assert.strictEqual(evalSide(parts.slice(0, eq)), evalSide(parts.slice(eq + 1)), `${at}: ${parts.join(' ')} does not balance`);
+      const sign = parts.findIndex((p) => ['=', '<', '>'].includes(p) && p !== undefined);
+      assert.ok(sign > 0, `${at}: no = < or >`);
+      const l = evalSide(parts.slice(0, sign)), r = evalSide(parts.slice(sign + 1)), op = parts[sign];
+      assert.ok(op === '=' ? l === r : op === '<' ? l < r : l > r, `${at}: ${parts.join(' ')} is not true`);
       assert.ok(e.items.includes(e.answer), `${at}: answer tile missing`);
       assert.strictEqual(new Set(e.items).size, e.items.length, `${at}: duplicate tiles`);
       break;
@@ -64,13 +65,18 @@ function checkExercise(e, where) {
     case 'drag_numberline': {
       const { min, max, step } = e.line;
       e.items.forEach((v) => { const n = Number(v); assert.ok(n >= min && n <= max && (n - min) % step === 0, `${at}: ${v} not on the line`); });
+      if (e.line.object) assert.deepStrictEqual(e.items, [String(e.line.object.length)], `${at}: the flag must go where the object ends`);
+      if (e.item_labels) assert.strictEqual(e.item_labels.length, e.items.length, `${at}: one label per tile`);
       assert.ok((max - min) / step <= 20, `${at}: too many ticks`);
       break;
     }
     case 'drag_placevalue': {
-      assert.ok(e.answer >= 1 && e.answer <= 99, `${at}: out of range`);
-      const t = e.targets[0].tens;
-      if (t !== undefined && t !== null) { const o = e.answer - 10 * t; assert.ok(o >= 10 && o <= 19, `${at}: ${o} ones is not "break one ten"`); }
+      assert.ok(e.answer >= 1 && e.answer <= 999, `${at}: out of range`);
+      const t = e.targets[0].tens, hu = e.targets[0].hundreds;
+      const H = hu != null ? hu : Math.floor(e.answer / 100);
+      if (t !== undefined && t !== null) { const o = e.answer - 100 * H - 10 * t; assert.ok(o >= 10 && o <= 19, `${at}: ${o} ones is not "break one ten"`); }
+      if (hu !== undefined && hu !== null) { const r = e.answer - 100 * hu; assert.ok(r >= 100 && r <= 199, `${at}: ${r} is not "break one hundred"`); }
+      if (e.answer >= 100) assert.ok(e.items.flats, `${at}: needs hundreds flats`);
       break;
     }
     case 'drag_match_word':
@@ -83,9 +89,10 @@ function checkExercise(e, where) {
       assert.ok(e.items.reduce((a, b) => a + b, 0) > e.price, `${at}: wallet must hold more than the price`);
       break;
     case 'drag_fraction': {
-      const sizes = e.items.flatMap((p) => Array(p.count).fill(p.piece === 'half' ? 2 : 1));
+      const P = e.parts || 4;
+      const sizes = e.items.flatMap((p) => Array(p.count).fill(p.piece === 'half' ? P / 2 : 1));
       const need = e.answer - (e.targets[0].start || 0);
-      assert.ok(need > 0 && subsetSums(sizes).has(need), `${at}: pieces cannot make ${e.answer}/4`);
+      assert.ok(need > 0 && e.answer <= P && subsetSums(sizes).has(need), `${at}: pieces cannot make ${e.answer}/${P}`);
       break;
     }
     case 'tap_choose': case 'listen_choose':
@@ -105,7 +112,7 @@ function checkExercise(e, where) {
       assert.strictEqual(typeof e.answer, 'boolean', `${at}: answer`);
       break;
     case 'clock':
-      assert.ok(e.answer.h >= 1 && e.answer.h <= 12 && [0, 30].includes(e.answer.m), `${at}: time`);
+      assert.ok(e.answer.h >= 1 && e.answer.h <= 12 && Number.isInteger(e.answer.m) && e.answer.m >= 0 && e.answer.m < 60 && e.answer.m % (e.step || 5) === 0, `${at}: time`);
       break;
     case 'trace':
       assert.ok(e.text && e.text.length <= 4, `${at}: text`);
@@ -116,8 +123,12 @@ function checkExercise(e, where) {
     default:
   }
   // pictures must agree with the numbers in tens/ones questions
-  if (e.visual && e.visual.kind === 'tens_ones' && e.type === 'tap_choose' && typeof e.answer === 'number' && !/how many ones/i.test(e.prompt_en)) {
-    assert.strictEqual(e.visual.tens * 10 + e.visual.ones, e.answer, `${at}: tens/ones picture ≠ answer`);
+  const vis = e.visual;
+  if (vis && vis.kind === 'tens_ones' && ['tap_choose', 'numpad'].includes(e.type) && typeof e.answer === 'number' && !/how many (ones|tens)/i.test(e.prompt_en)) {
+    assert.strictEqual((vis.hundreds || 0) * 100 + vis.tens * 10 + vis.ones, e.answer, `${at}: place-value picture ≠ answer`);
+  }
+  if (vis && vis.kind === 'array' && ['tap_choose', 'numpad'].includes(e.type) && typeof e.answer === 'number') {
+    assert.strictEqual(vis.rows * vis.cols, e.answer, `${at}: array picture ≠ answer`);
   }
 }
 
@@ -129,15 +140,17 @@ function checkGame(p, where) {
     assert.ok(ok, `${at}: no pair makes ${r.target}`);
   });
   if (p.game === 'market') p.rounds.forEach((r) => assert.ok(subsetSums(r.goods.map((g) => g.price)).has(r.budget), `${at}: cannot spend exactly ${r.budget}`));
-  if (p.game === 'coffee') p.rounds.forEach((r) => { assert.ok(r.n >= 2 && r.n <= 12); if (r.trays) assert.strictEqual(r.trays.reduce((a, b) => a + b, 0), r.n, `${at}: trays ≠ n`); });
+  if (p.game === 'coffee') p.rounds.forEach((r) => { assert.ok(r.n >= 2 && r.n <= (r.trays ? 15 : 12), `${at}: ${r.n} cups`); if (r.trays) assert.strictEqual(r.trays.reduce((a, b) => a + b, 0), r.n, `${at}: trays ≠ n`); });
   if (p.game === 'memory') assert.ok(p.pairs.length >= 3, `${at}: pairs`);
   if (p.game === 'race') p.questions.forEach((q) => checkExercise(q, at));
   return p.game === 'race' ? p.questions.length : p.game === 'memory' ? p.pairs.length : p.rounds.length;
 }
 
-test('index lists 12 lessons in order with places on the map', () => {
-  assert.strictEqual(lessons.length, 12);
-  assert.strictEqual(new Set(index.lessons.map((l) => `${l.grade}-${l.n}`)).size, 12);
+test('index lists 33 lessons (6 + 12 + 15) in order with places on the map', () => {
+  assert.strictEqual(lessons.length, 33);
+  assert.strictEqual(new Set(index.lessons.map((l) => `${l.grade}-${l.n}`)).size, 33);
+  const seq = (n) => Array.from({ length: n }, (_, i) => i + 1);
+  for (const [g, n] of [[1, 6], [2, 12], [3, 15]]) assert.deepStrictEqual(index.lessons.filter((l) => l.grade === g).map((l) => l.n), seq(n), `grade ${g}`);
   for (const k of ['replay', 'praise', 'tryAgain', 'celebrate']) assert.ok(index.common[k], k);
   assert.strictEqual(index.common.replay.am, 'ደግመህ/ደግመሽ አዳምጥ');
 });
